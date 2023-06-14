@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/new-blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/new-blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/new-blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/new-blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/new-blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lingzhem.github.io","root":"/new-blog/","images":"/new-blog/images","scheme":"Muse","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/new-blog/js/config.js"></script>
+
+    <meta name="description" content="Determine and Configure hardware settingsConfiguring the Firmware and Core HardwareUnderstanding the Role of FirmwareOn older workstations and servers, this firmware was called the Basic Input&#x2F;Output">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DetermineAndConfigureHardwareSettings">
+<meta property="og:url" content="https://lingzhem.github.io/2023/06/14/DetermineAndConfigureHardwareSettings/index.html">
+<meta property="og:site_name" content="モウ blog">
+<meta property="og:description" content="Determine and Configure hardware settingsConfiguring the Firmware and Core HardwareUnderstanding the Role of FirmwareOn older workstations and servers, this firmware was called the Basic Input&#x2F;Output">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-14T10:44:54.000Z">
+<meta property="article:modified_time" content="2023-06-14T11:20:31.980Z">
+<meta property="article:author" content="モウ レイテツ">
+<meta property="article:tag" content="LPIC-1">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lingzhem.github.io/2023/06/14/DetermineAndConfigureHardwareSettings/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lingzhem.github.io/2023/06/14/DetermineAndConfigureHardwareSettings/","path":"2023/06/14/DetermineAndConfigureHardwareSettings/","title":"DetermineAndConfigureHardwareSettings"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>DetermineAndConfigureHardwareSettings | モウ blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/new-blog/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/new-blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">モウ blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">keep thinking</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Determine-and-Configure-hardware-settings"><span class="nav-number">1.</span> <span class="nav-text">Determine and Configure hardware settings</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuring-the-Firmware-and-Core-Hardware"><span class="nav-number">1.1.</span> <span class="nav-text">Configuring the Firmware and Core Hardware</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Understanding-the-Role-of-Firmware"><span class="nav-number">1.1.1.</span> <span class="nav-text">Understanding the Role of Firmware</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-BIOS-Startup"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">The BIOS Startup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-UEFI-Startup"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">The UEFI Startup</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Device-Interfaces"><span class="nav-number">1.1.2.</span> <span class="nav-text">Device Interfaces</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PCI-Boards"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">PCI Boards</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-USB-Interface"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">The USB Interface</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-GPIO-Interface"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">The GPIO Interface</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-dev-Directory"><span class="nav-number">1.1.3.</span> <span class="nav-text">The &#x2F;dev Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-proc-Directory"><span class="nav-number">1.1.4.</span> <span class="nav-text">The &#x2F;proc Directory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Interrupt-Requests"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">Interrupt Requests</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#I-x2F-O-Ports"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">I&#x2F;O Ports</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">モウ レイテツ</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/new-blog/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://lingzhem.github.io/2023/06/14/DetermineAndConfigureHardwareSettings/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/new-blog/images/avatar.gif">
+      <meta itemprop="name" content="モウ レイテツ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="モウ blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="DetermineAndConfigureHardwareSettings | モウ blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          DetermineAndConfigureHardwareSettings
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-06-14 19:44:54 / Modified: 20:20:31" itemprop="dateCreated datePublished" datetime="2023-06-14T19:44:54+09:00">2023-06-14</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="Determine-and-Configure-hardware-settings"><a href="#Determine-and-Configure-hardware-settings" class="headerlink" title="Determine and Configure hardware settings"></a>Determine and Configure hardware settings</h1><h2 id="Configuring-the-Firmware-and-Core-Hardware"><a href="#Configuring-the-Firmware-and-Core-Hardware" class="headerlink" title="Configuring the Firmware and Core Hardware"></a>Configuring the Firmware and Core Hardware</h2><h3 id="Understanding-the-Role-of-Firmware"><a href="#Understanding-the-Role-of-Firmware" class="headerlink" title="Understanding the Role of Firmware"></a>Understanding the Role of Firmware</h3><p>On older workstations and servers, this firmware was called the <code>Basic Input/Output System</code> (<strong>BIOS</strong>). On newer workstations and servers, a new method, called the <code>Unified Extensible Firmware Interface</code> (<strong>UEFI</strong>), is responsible for maintaining the system hardware status and launching an installed operating system.</p>
+<h4 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h4><p>When booting from a hard drive, you must designate which hard drive, and partition on the hard drive, the BIOS should load the boot loader program from. This is done by defi ning a <code>master boot record</code> (<strong>MBR</strong>).</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file; it can point to any type of program, including another boot loader program. You can create a primary boot loader program that points to a secondary boot loader program, which provides options to load multiple operating systems. This process is called chainloading.</p>
+</blockquote>
+<h4 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h4><p>Instead of relying on a single boot sector on a hard drive to hold the boot loader program, UEFI specifi es a special disk partition, called the <code>EFI System Partition</code> (<strong>ESP</strong>), to store boot loader programs. This allows for any size of boot loader program, plus the ability to store multiple boot loader programs for multiple operating systems.</p>
+<p>The ESP setup utilizes the old Microsoft File Allocation Table (FAT) fi lesystem to store the boot loader programs. On Linux systems, the ESP is typically mounted in the <code>/boot/efi</code> directory, and the boot loader fi les are typically stored using the <code>.efi</code> filename extension, such as linux.efi .</p>
+<h3 id="Device-Interfaces"><a href="#Device-Interfaces" class="headerlink" title="Device Interfaces"></a>Device Interfaces</h3><p>Each device you connect to your Linux system uses some type of standard protocol to communicate with the system hardware. The Linux kernel software must know how to send data to and receive data from the hardware device using those protocols.</p>
+<h4 id="PCI-Boards"><a href="#PCI-Boards" class="headerlink" title="PCI Boards"></a>PCI Boards</h4><p>The <code>Peripheral Component Interconnect</code> (<strong>PCI</strong>) standard as a method for connecting hardware boards to PC motherboards.</p>
+<ul>
+<li><p><strong>Internal hard drives</strong>: Hard drives using the Serial Advanced Technology Attachment(SATA) and the Small Computer System Interface (SCSI) interface often use PCI boards to connect with workstations or servers. The Linux kernel automatically recognizes both SATA and SCSI hard drives connected to PCI boards.</p>
+</li>
+<li><p>External hard drives: Network hard drives using the Fibre Channel standard provide a high-speed shared drive environment for server environments. To communicate on a fiber channel network, the server usually uses PCI boards that support the host bus adapter (HBA) standard.</p>
+</li>
+<li><p><strong>Network interface cards</strong>: Hard-wired network cards allow you to connect the workstation or server to a local area network (LAN) using the common RJ-45 cable standard. These types of connections are mostly found in high-speed network environments that require high throughput to the network.</p>
+</li>
+<li><p>Wireless cards:</p>
+</li>
+<li><p>Bluetooth devices:</p>
+</li>
+<li><p>Video accelerators:</p>
+</li>
+<li><p>Audio cards:</p>
+</li>
+</ul>
+<h4 id="The-USB-Interface"><a href="#The-USB-Interface" class="headerlink" title="The USB Interface"></a>The USB Interface</h4><h4 id="The-GPIO-Interface"><a href="#The-GPIO-Interface" class="headerlink" title="The GPIO Interface"></a>The GPIO Interface</h4><h3 id="The-dev-Directory"><a href="#The-dev-Directory" class="headerlink" title="The /dev Directory"></a>The <code>/dev</code> Directory</h3><p>After the Linux kernel communicates with a device on an interface, it must be able to transfer data to and from the device. This is done using <code>device files</code>. Device fi les are fi les that the Linux kernel creates in the special <code>/dev</code> directory to interface with hardware devices.</p>
+<p>There are two types of device fi les in Linux, based on how Linux transfers data to the device:</p>
+<ul>
+<li><strong>Character device files</strong>: Transfer data one character at a time. This method is often used for serial devices such as terminals and USB devices.</li>
+<li><strong>Block device files</strong>: Transfer data in large blocks of data. This method is often used for high-speed data transfer devices such as hard drives and network cards.</li>
+</ul>
+<p>The type of device file is denoted by the first letter in the permissions list.</p>
+<pre><code class="Shell">$ ls -al sd* tty*
+brw-rw---- 1 root disk 8, 0 Feb 16 17:49 sda
+brw-rw---- 1 root disk 8, 1 Feb 16 17:49 sda1
+crw-rw-rw- 1 root tty 5, 0 Feb 16 17:49 tty
+crw--w---- 1 root tty 4, 0 Feb 16 17:49 tty0
+crw--w---- 1 gdm tty 4, 1 Feb 16 17:49 tty1
+</code></pre>
+<h3 id="The-proc-Directory"><a href="#The-proc-Directory" class="headerlink" title="The /proc Directory"></a>The <code>/proc</code> Directory</h3><p>The <code>/proc</code> directory is one of the most important tools you can use when troubleshooting hardware issues on a Linux system. It’s not a physical directory on the filesystem, but instead a virtual directory that the kernel dynamically populates to provide access to information<br>about the system hardware settings and status.</p>
+<p>Various &#x2F;proc files are available for different system features, including the interrupt requests (IRQs), input&#x2F;output (I&#x2F;O) ports, and direct memory access (DMA) channels in use on the system by hardware devices. This section discusses the files used to monitor these features and how you can access them.</p>
+<h4 id="Interrupt-Requests"><a href="#Interrupt-Requests" class="headerlink" title="Interrupt Requests"></a>Interrupt Requests</h4><p>Interrupt requests (IRQs) allow hardware devices to indicate when they have data to send to the CPU.</p>
+<pre><code>$ cat /proc/interrupts
+</code></pre>
+<h4 id="I-x2F-O-Ports"><a href="#I-x2F-O-Ports" class="headerlink" title="I&#x2F;O Ports"></a>I&#x2F;O Ports</h4><pre><code>$ sudo cat /proc/ioports
+</code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/new-blog/tags/LPIC-1/" rel="tag"># LPIC-1</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/new-blog/2023/06/14/course19/" rel="prev" title="course19">
+                  <i class="fa fa-chevron-left"></i> course19
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">モウ レイテツ</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/new-blog/js/comments.js"></script><script src="/new-blog/js/utils.js"></script><script src="/new-blog/js/motion.js"></script><script src="/new-blog/js/schemes/muse.js"></script><script src="/new-blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
