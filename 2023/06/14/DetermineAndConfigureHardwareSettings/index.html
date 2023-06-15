@@ -27,7 +27,7 @@
 <meta property="og:description" content="Determine and Configure hardware settingsConfiguring the Firmware and Core HardwareUnderstanding the Role of FirmwareOn older workstations and servers, this firmware was called the Basic Input&#x2F;Output">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-14T10:44:54.000Z">
-<meta property="article:modified_time" content="2023-06-14T11:20:31.980Z">
+<meta property="article:modified_time" content="2023-06-14T11:24:01.989Z">
 <meta property="article:author" content="モウ レイテツ">
 <meta property="article:tag" content="LPIC-1">
 <meta name="twitter:card" content="summary">
@@ -106,7 +106,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Determine-and-Configure-hardware-settings"><span class="nav-number">1.</span> <span class="nav-text">Determine and Configure hardware settings</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuring-the-Firmware-and-Core-Hardware"><span class="nav-number">1.1.</span> <span class="nav-text">Configuring the Firmware and Core Hardware</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Understanding-the-Role-of-Firmware"><span class="nav-number">1.1.1.</span> <span class="nav-text">Understanding the Role of Firmware</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-BIOS-Startup"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">The BIOS Startup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-UEFI-Startup"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">The UEFI Startup</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Device-Interfaces"><span class="nav-number">1.1.2.</span> <span class="nav-text">Device Interfaces</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PCI-Boards"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">PCI Boards</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-USB-Interface"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">The USB Interface</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-GPIO-Interface"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">The GPIO Interface</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-dev-Directory"><span class="nav-number">1.1.3.</span> <span class="nav-text">The &#x2F;dev Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-proc-Directory"><span class="nav-number">1.1.4.</span> <span class="nav-text">The &#x2F;proc Directory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Interrupt-Requests"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">Interrupt Requests</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#I-x2F-O-Ports"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">I&#x2F;O Ports</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Determine-and-Configure-hardware-settings"><span class="nav-number">1.</span> <span class="nav-text">Determine and Configure hardware settings</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuring-the-Firmware-and-Core-Hardware"><span class="nav-number">1.1.</span> <span class="nav-text">Configuring the Firmware and Core Hardware</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Understanding-the-Role-of-Firmware"><span class="nav-number">1.1.1.</span> <span class="nav-text">Understanding the Role of Firmware</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-BIOS-Startup"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">The BIOS Startup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-UEFI-Startup"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">The UEFI Startup</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Device-Interfaces"><span class="nav-number">1.1.2.</span> <span class="nav-text">Device Interfaces</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PCI-Boards"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">PCI Boards</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-USB-Interface"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">The USB Interface</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-GPIO-Interface"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">The GPIO Interface</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-dev-Directory"><span class="nav-number">1.1.3.</span> <span class="nav-text">The &#x2F;dev Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-proc-Directory"><span class="nav-number">1.1.4.</span> <span class="nav-text">The &#x2F;proc Directory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Interrupt-Requests"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">Interrupt Requests</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#I-x2F-O-Ports"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">I&#x2F;O Ports</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Direct-Memory-Access"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">Direct Memory Access</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-sys-Directory"><span class="nav-number">1.1.5.</span> <span class="nav-text">The &#x2F;sys Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hardware-Modules"><span class="nav-number">1.1.6.</span> <span class="nav-text">Hardware Modules</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Storage-Basics"><span class="nav-number">1.1.7.</span> <span class="nav-text">Storage Basics</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -119,7 +119,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/new-blog/archives/">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -181,7 +181,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-06-14 19:44:54 / Modified: 20:20:31" itemprop="dateCreated datePublished" datetime="2023-06-14T19:44:54+09:00">2023-06-14</time>
+      <time title="Created: 2023-06-14 19:44:54 / Modified: 20:24:01" itemprop="dateCreated datePublished" datetime="2023-06-14T19:44:54+09:00">2023-06-14</time>
     </span>
 
   
@@ -239,7 +239,7 @@ crw--w---- 1 gdm tty 4, 1 Feb 16 17:49 tty1
 </code></pre>
 <h4 id="I-x2F-O-Ports"><a href="#I-x2F-O-Ports" class="headerlink" title="I&#x2F;O Ports"></a>I&#x2F;O Ports</h4><pre><code>$ sudo cat /proc/ioports
 </code></pre>
-
+<h4 id="Direct-Memory-Access"><a href="#Direct-Memory-Access" class="headerlink" title="Direct Memory Access"></a>Direct Memory Access</h4><h3 id="The-sys-Directory"><a href="#The-sys-Directory" class="headerlink" title="The /sys Directory"></a>The <code>/sys</code> Directory</h3><h3 id="Hardware-Modules"><a href="#Hardware-Modules" class="headerlink" title="Hardware Modules"></a>Hardware Modules</h3><h3 id="Storage-Basics"><a href="#Storage-Basics" class="headerlink" title="Storage Basics"></a>Storage Basics</h3>
     </div>
 
     
@@ -260,6 +260,9 @@ crw--w---- 1 gdm tty 4, 1 Feb 16 17:49 tty1
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/new-blog/2023/06/15/course20/" rel="next" title="course20">
+                  course20 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
