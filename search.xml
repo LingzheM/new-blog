@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BootTheSystem</title>
+    <url>/new-blog/2023/06/17/BootTheSystem/</url>
+    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
+<span id="more"></span>
+
+<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
+<ol>
+<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
+<li>The boot loader runs and determines what Linux kernel program to load.</li>
+<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
+<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
+</ol>
+<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
+<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
+<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
+<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
+<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
+<ul>
+<li>An internal hard drive</li>
+<li>An external hard drive</li>
+<li>A CD&#x2F;DVD drive</li>
+<li>A USB flash drive</li>
+<li>A network server</li>
+</ul>
+<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
+</blockquote>
+<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
+<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
+<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
+<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
+<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
+<p>The GRUB Legacy configuration file consists of two sections:</p>
+<ul>
+<li>Global definitions</li>
+<li>Operating system boot definitions</li>
+</ul>
+<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
+<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
+<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
+<ul>
+<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
+<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
+</ul>
+<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
+[…]
+set root=(hd1,1)
+linux16 /vmlinuz[…]
+initrd /initramfs[…]
+&#125;
+menuentry &quot;Windows&quot; &#123;
+set root=(hd0,1)
+[…]
+&#125;
+</code></pre>
+<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
+<p>For GRUB2, the commands to remember are as follows:</p>
+<ul>
+<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
+<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
+<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+</ul>
+<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
+<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chapter 3 Configuring Hardware</title>
+    <url>/new-blog/2023/06/14/DetermineAndConfigureHardwareSettings/</url>
+    <content><![CDATA[<h1 id="Chapter-3-Configuring-Hardware"><a href="#Chapter-3-Configuring-Hardware" class="headerlink" title="Chapter 3 Configuring Hardware"></a>Chapter 3 Configuring Hardware</h1><p>[] </p>
+<span id="more"></span>
+
+<h1 id="Configuring-the-Firmware-and-Core-Hardware"><a href="#Configuring-the-Firmware-and-Core-Hardware" class="headerlink" title="Configuring the Firmware and Core Hardware"></a>Configuring the Firmware and Core Hardware</h1><h2 id="Understanding-the-Role-of-Firmware"><a href="#Understanding-the-Role-of-Firmware" class="headerlink" title="Understanding the Role of Firmware"></a>Understanding the Role of Firmware</h2><p>On older workstations and servers, this firmware was called the <code>Basic Input/Output System</code> (<strong>BIOS</strong>). On newer workstations and servers, a new method, called the <code>Unified Extensible Firmware Interface</code> (<strong>UEFI</strong>), is responsible for maintaining the system hardware status and launching an installed operating system.</p>
+<h3 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h3><p>When booting from a hard drive, you must designate which hard drive, and partition on the hard drive, the BIOS should load the boot loader program from. This is done by defining a <code>master boot record</code> (<strong>MBR</strong>).</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file; it can point to any type of program, including another boot loader program. You can create a primary boot loader program that points to a secondary boot loader program, which provides options to load multiple operating systems. This process is called chainloading.</p>
+</blockquote>
+<h3 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h3><p>Instead of relying on a single boot sector on a hard drive to hold the boot loader program, UEFI specifies a special disk partition, called the <code>EFI System Partition</code> (<strong>ESP</strong>), to store boot loader programs. This allows for any size of boot loader program, plus the ability to store multiple boot loader programs for multiple operating systems.</p>
+<p>The ESP setup utilizes the old Microsoft File Allocation Table (FAT) fi lesystem to store the boot loader programs. On Linux systems, the ESP is typically mounted in the <code>/boot/efi</code> directory, and the boot loader fi les are typically stored using the <code>.efi</code> filename extension, such as linux.efi .</p>
+<h2 id="Device-Interfaces"><a href="#Device-Interfaces" class="headerlink" title="Device Interfaces"></a>Device Interfaces</h2><p>Each device you connect to your Linux system uses some type of standard protocol to communicate with the system hardware. The Linux kernel software must know how to send data to and receive data from the hardware device using those protocols.</p>
+<h3 id="PCI-Boards"><a href="#PCI-Boards" class="headerlink" title="PCI Boards"></a>PCI Boards</h3><p>The <code>Peripheral Component Interconnect</code> (<strong>PCI</strong>) standard as a method for connecting hardware boards to PC motherboards.</p>
+<ul>
+<li><p><strong>Internal hard drives</strong>: Hard drives using the Serial Advanced Technology Attachment(SATA) and the Small Computer System Interface (SCSI) interface often use PCI boards to connect with workstations or servers. The Linux kernel automatically recognizes both SATA and SCSI hard drives connected to PCI boards.</p>
+</li>
+<li><p>External hard drives: Network hard drives using the Fibre Channel standard provide a high-speed shared drive environment for server environments. To communicate on a fiber channel network, the server usually uses PCI boards that support the host bus adapter (HBA) standard.</p>
+</li>
+<li><p><strong>Network interface cards</strong>: Hard-wired network cards allow you to connect the workstation or server to a local area network (LAN) using the common RJ-45 cable standard. These types of connections are mostly found in high-speed network environments that require high throughput to the network.</p>
+</li>
+<li><p>Wireless cards:</p>
+</li>
+<li><p>Bluetooth devices:</p>
+</li>
+<li><p>Video accelerators:</p>
+</li>
+<li><p>Audio cards:</p>
+</li>
+</ul>
+<h3 id="The-USB-Interface"><a href="#The-USB-Interface" class="headerlink" title="The USB Interface"></a>The USB Interface</h3><h3 id="The-GPIO-Interface"><a href="#The-GPIO-Interface" class="headerlink" title="The GPIO Interface"></a>The GPIO Interface</h3><h2 id="The-dev-Directory"><a href="#The-dev-Directory" class="headerlink" title="The /dev Directory"></a>The <code>/dev</code> Directory</h2><p>After the Linux kernel communicates with a device on an interface, it must be able to transfer data to and from the device. This is done using <code>device files</code>. Device fi les are fi les that the Linux kernel creates in the special <code>/dev</code> directory to interface with hardware devices.</p>
+<p>There are two types of device fi les in Linux, based on how Linux transfers data to the device:</p>
+<ul>
+<li><strong>Character device files</strong>: Transfer data one character at a time. This method is often used for serial devices such as terminals and USB devices.</li>
+<li><strong>Block device files</strong>: Transfer data in large blocks of data. This method is often used for high-speed data transfer devices such as hard drives and network cards.</li>
+</ul>
+<p>The type of device file is denoted by the first letter in the permissions list.</p>
+<pre><code class="Shell">$ ls -al sd* tty*
+brw-rw---- 1 root disk 8, 0 Feb 16 17:49 sda
+brw-rw---- 1 root disk 8, 1 Feb 16 17:49 sda1
+crw-rw-rw- 1 root tty 5, 0 Feb 16 17:49 tty
+crw--w---- 1 root tty 4, 0 Feb 16 17:49 tty0
+crw--w---- 1 gdm tty 4, 1 Feb 16 17:49 tty1
+</code></pre>
+<h2 id="The-proc-Directory"><a href="#The-proc-Directory" class="headerlink" title="The /proc Directory"></a>The <code>/proc</code> Directory</h2><p>The <code>/proc</code> directory is one of the most important tools you can use when troubleshooting hardware issues on a Linux system. It’s not a physical directory on the filesystem, but instead a virtual directory that the kernel dynamically populates to provide access to information<br>about the system hardware settings and status.</p>
+<p>Various <code>/proc</code> files are available for different system features, including the interrupt requests (IRQs), input&#x2F;output (I&#x2F;O) ports, and direct memory access (DMA) channels in use on the system by hardware devices. This section discusses the files used to monitor these features and how you can access them.</p>
+<h3 id="Interrupt-Requests"><a href="#Interrupt-Requests" class="headerlink" title="Interrupt Requests"></a>Interrupt Requests</h3><p>Interrupt requests (IRQs) allow hardware devices to indicate when they have data to send to the CPU.</p>
+<pre><code>$ cat /proc/interrupts
+</code></pre>
+<p>Some IRQs are reserved by the system for specific hardware devices, such as <strong>0 for the system timer</strong> and 1 for the system keyboard. Other IRQs are assigned by the system as devices are detected at boot time.</p>
+<h3 id="I-x2F-O-Ports"><a href="#I-x2F-O-Ports" class="headerlink" title="I&#x2F;O Ports"></a>I&#x2F;O Ports</h3><p>The system I&#x2F;O ports are locations in memory where the CPU can send data to and receive data from the hardware device.</p>
+<pre><code>$ sudo cat /proc/ioports
+</code></pre>
+<h3 id="Direct-Memory-Access"><a href="#Direct-Memory-Access" class="headerlink" title="Direct Memory Access"></a>Direct Memory Access</h3><p>Using I&#x2F;O ports to send data to the CPU can be somewhat slow. To speed things up, many devices use direct memory access (DMA) channels. DMA channels do what the name implies—they send data from a hardware device directly to memory on the system, without having to wait for the CPU. The CPU can then read those memory locations to access the data when it’s ready.</p>
+<pre><code>$ cat /proc/dma
+</code></pre>
+<h2 id="The-sys-Directory"><a href="#The-sys-Directory" class="headerlink" title="The /sys Directory"></a>The <code>/sys</code> Directory</h2><h2 id="Working-with-Devices"><a href="#Working-with-Devices" class="headerlink" title="Working with Devices"></a>Working with Devices</h2><h3 id="Finding-Devices"><a href="#Finding-Devices" class="headerlink" title="Finding Devices"></a>Finding Devices</h3><p>One of the first tasks for a new Linux administrator is to find the different devices installed on the Linux system.</p>
+<p>The <code>lsdev</code> command-line command displays information about the hardware devices installed on the Linux system. It retrieves information from the <code>/proc/interrupts</code>, <code>/proc/ioports</code>, and <code>/proc/dma</code> virtual files and combines them together in one output.</p>
+<pre><code class="Shell">$ sudo lsdev
+Device DMA IRQ I/O Ports
+...
+acpi 9
+ACPI 4000-4003 4004-4005 4008-400b 4020-4021
+ahci d240-d247 d248-d24b d250-d257 d258-d25b
+ata_piix 14 15 0170-0177 01f0-01f7 0376-0376 03f6-03f6
+cascade 4
+dma 0080-008f
+dma1 0000-001f
+dma2 00c0-00df
+e1000 d010-d017
+enp0s3 19
+fpu 00f0-00ff
+i8042 1 12
+Intel d100-d1ff d200-d23f
+keyboard 0060-0060 0064-0064
+ohci_hcd:usb1 22
+PCI 0000-0cf7 0cf8-0cff 0d00-ffff
+</code></pre>
+<p>The <code>lsblk</code> command displays information about the block devices installed on the Linux system. By default, the <code>lsblk</code> command displays all block devices.</p>
+<h3 id="Working-with-PCI-Cards"><a href="#Working-with-PCI-Cards" class="headerlink" title="Working with PCI Cards"></a>Working with PCI Cards</h3><p>The <code>lspci</code> command allows you to view the currently installed and recognized PCI and PCIe cards on the Linux system.</p>
+<h3 id="Working-with-USB-Devices"><a href="#Working-with-USB-Devices" class="headerlink" title="Working with USB Devices"></a>Working with USB Devices</h3><p>You can view the basic information about USB devices connected to your Linux system by using the <code>lsusb</code> command.</p>
+<h2 id="Hardware-Modules"><a href="#Hardware-Modules" class="headerlink" title="Hardware Modules"></a>Hardware Modules</h2><p>The Linux kernel needs device drivers to communicate with the hardware devices installed on your Linux system. However, compiling device drivers for all known hardware devices into the kernel would make for an extremely large kernel binary file.</p>
+<p>To avoid that situation, the Linux kernel uses kernel modules , which are individual hardware driver files that can be linked into the kernel at runtime. That way, the system can link only the modules needed for the hardware present on your system.</p>
+<p>You should be familiar with a few different files when working with modules. You’ve already seen that the modules required to support a kernel are stored in the <code>/lib/modules</code> directory.</p>
+<p>Each kernel has its own directory for its own modules (such as <code>/lib/modules/4.3.3</code>), allowing you to create separate modules for each kernel version on the system if needed.</p>
+<p><strong>The modules the kernel will load at boot time are listed in the <code>/etc/</code>modules file</strong>, one per line. Most hardware modules can be loaded dynamically as the system automatically detects hardware devices, so this file may not contain very many modules.</p>
+<p>The kernel module configurations are stored in the <code>/etc/modules.conf</code> configuration file.</p>
+<h3 id="Listing-Installed-Modules"><a href="#Listing-Installed-Modules" class="headerlink" title="Listing Installed Modules"></a>Listing Installed Modules</h3><p>The first command is lsmod, which lists all modules installed on your system.</p>
+<pre><code class="Shell">$ lsmod
+Module Size Used by
+</code></pre>
+<h3 id="Getting-Module-Information"><a href="#Getting-Module-Information" class="headerlink" title="Getting Module Information"></a>Getting Module Information</h3><p>If you need more information about a specific module, use the <code>modinfo</code> command.</p>
+<h3 id="Installing-New-Modules"><a href="#Installing-New-Modules" class="headerlink" title="Installing New Modules"></a>Installing New Modules</h3><ul>
+<li>insmod</li>
+<li>modprobe</li>
+</ul>
+<h3 id="Removing-Modules"><a href="#Removing-Modules" class="headerlink" title="Removing Modules"></a>Removing Modules</h3><p>The <code>rmmod</code> command removes a module by specifying the module name.However, our friend the modprobe command can also remove modules for us, so you don’t need to memorize another command. Instead, just use the –r option with the modprobe command:</p>
+<pre><code class="Shell">$ sudo modprobe -rv btusb
+rmmod btusb
+</code></pre>
+<h1 id="Storage-Basics"><a href="#Storage-Basics" class="headerlink" title="Storage Basics"></a>Storage Basics</h1><p>This section describes the different methods that Linux uses in connecting and using both HDD and SSD devices.</p>
+<h2 id="Types-of-Drives"><a href="#Types-of-Drives" class="headerlink" title="Types of Drives"></a>Types of Drives</h2><p>they both interface with the Linux system using the same methods. There are three main types of drive connections that you’ll run into with Linux systems:</p>
+<ul>
+<li><code>Parallel Advanced Technology Attachment (PATA)</code> connects drives using a parallel interface, which requires a wide cable. PATA supports two devices per adapter.</li>
+<li><code>Serial Advanced Technology Attachment (SATA)</code> connects drives using a serial interface, but at a much faster speed than PATA. SATA supports up to four devices per adapter.</li>
+<li><code>Small Computer System Interface (SCSI)</code> connects drives using a parallel interface, but with the speed of SATA. SCSI supports up to eight devices per adapter.</li>
+</ul>
+<p>When you connect a drive to a Linux system, the Linux kernel assigns the drive device a file in the &#x2F;dev directory.</p>
+<p>For PATA devices, this file is named &#x2F;dev&#x2F;hdx, where x is a letter representing the individual drive, starting with a. For SATA and SCSI devices, Linux uses &#x2F;dev&#x2F;sdx, where x is a letter representing the individual drive, again, starting with a. Thus, to reference the first<br>SATA device on the system, you’d use &#x2F;dev&#x2F;sda, then for the second device &#x2F;dev&#x2F;sdb, and so on.</p>
+<h2 id="Drive-Partitions"><a href="#Drive-Partitions" class="headerlink" title="Drive Partitions"></a>Drive Partitions</h2><p>Partitioning drives can help you better organize your data, such as segmenting operating system data from user data.</p>
+<p>Partitions must be tracked by some type of indexing system on the drive. <strong>Systems that use the old BIOS boot loader method use the <code>master boot record (MBR)</code> method for managing disk partitions</strong>. This method supports only up to four primary partitions on a drive.<br>Each primary partition itself, however, can be split into multiple extended partitions.</p>
+<p>Systems that use the UEFI boot loader method use the more advanced GUID Partition Table (GPT) method for managing partitions, which supports up to 128 partitions on a drive. Linux assigns the partition numbers in the order that the partition appears on the drive, starting with number 1.</p>
+<p>Linux creates &#x2F;dev files for each separate disk partition. It attaches the partition number to the end of the device name and numbers the primary partitions starting at 1, so the first primary partition on the first SATA drive would be &#x2F;dev&#x2F;sda1. MBR extended partitions are numbered starting at 5, so the first extended artition is assigned the file &#x2F;dev&#x2F;sda5.</p>
+<h2 id="Automatic-Drive-Detection"><a href="#Automatic-Drive-Detection" class="headerlink" title="Automatic Drive Detection"></a>Automatic Drive Detection</h2><h2 id="Storage-Alternatives"><a href="#Storage-Alternatives" class="headerlink" title="Storage Alternatives"></a>Storage Alternatives</h2><p>To accommodate more dynamic storage options, as well as fault-tolerance features,Linux has incorporated a few advanced storage management techniques. This section covers<br>three of the more popular techniques.</p>
+<h3 id="Multipath"><a href="#Multipath" class="headerlink" title="Multipath"></a>Multipath</h3><p>The Linux kernel now supports Device Mapper (DM) multipathing, which allows you to configure multiple paths between the Linux system and network storage devices.</p>
+<p>The Linux DM multipathing tools include</p>
+<ul>
+<li>dm-multipath: The kernel module that provides multipath support</li>
+<li>multipath: A command-line command for viewing multipath devices</li>
+<li>multipathd: A background process for monitoring paths and activating&#x2F;deactivating<br>paths</li>
+<li>kpartx: A command-line tool for creating device entries for multipath storage devices</li>
+</ul>
+<p>The DM multipathing feature uses the dynamic <code>/dev/mapper</code> device file directory in Linux.</p>
+<h3 id="Logical-Volume-Manager"><a href="#Logical-Volume-Manager" class="headerlink" title="Logical Volume Manager"></a>Logical Volume Manager</h3><p>The Linux Logical Volume Manager (LMV) also utilizes the <code>/dev/mapper</code> dynamic device directory to allow you to create virtual drive devices. You can aggregate multiple physical<br>drive partitions into virtual volumes, which you then treat as a single partition on your system.</p>
+<p>For each physical partition, you must mark the partition type as the Linux LVM filesystem type in fdisk or gdisk. Then, you must use several LVM tools to create and manage the logical volumes:</p>
+<ul>
+<li><code>pvcreate</code>: Creates a physical volume</li>
+<li><code>vgcreate</code>: Groups physical volumes into a volume group</li>
+<li><code>lvcreate</code>: Creates a logical volume from partitions in each physical volume</li>
+</ul>
+<h3 id="Using-RAID-Technology"><a href="#Using-RAID-Technology" class="headerlink" title="Using RAID Technology"></a>Using RAID Technology</h3><p>Redundant Array of Inexpensive Disks (RAID) technology has changed the data storage environment for most data centers. RAID technology allows you to improve data access performance and reliability, as well as implement data redundancy for fault tolerance by combining multiple drives into one virtual drive.</p>
+<h2 id="Partitioning-Tools"><a href="#Partitioning-Tools" class="headerlink" title="Partitioning Tools"></a>Partitioning Tools</h2><p>After you connect a drive to your Linux system you’ll need to create partitions on it (even if there’s only one partition). Linux provides several tools for working with raw storage devices to create partitions.</p>
+<h3 id="Working-with-fdisk"><a href="#Working-with-fdisk" class="headerlink" title="Working with fdisk"></a>Working with fdisk</h3><h3 id="Working-with-gdisk"><a href="#Working-with-gdisk" class="headerlink" title="Working with gdisk"></a>Working with gdisk</h3><h3 id="The-GNU-parted-Command"><a href="#The-GNU-parted-Command" class="headerlink" title="The GNU parted Command"></a>The GNU parted Command</h3><h3 id="Graphical-Tools"><a href="#Graphical-Tools" class="headerlink" title="Graphical Tools"></a>Graphical Tools</h3><h2 id="Understanding-Filesystems"><a href="#Understanding-Filesystems" class="headerlink" title="Understanding Filesystems"></a>Understanding Filesystems</h2><p>Linux utilizes filesystems to manage data stored on storage<br>devices. A filesystem maintains a map to locate each file placed in the storage device. This section describes the Linux filesystem and shows how you can locate fi les and directories contained within it.</p>
+<h3 id="The-Virtual-Directory"><a href="#The-Virtual-Directory" class="headerlink" title="The Virtual Directory"></a>The Virtual Directory</h3><p>The Linux virtual directory structure contains a single base directory, called the root directory. The root directory lists fi les and directories beneath it based on the directory path used to get to them, similar to the way Windows does it.</p>
+<p>For example, a Linux file path could look like this:</p>
+<p><code>/home/rich/Documents/test.doc</code></p>
+<p>As for the path itself, also notice that there’s no drive letter. The path indicates only that the file test.doc is stored in the Documents directory for the user rich; it doesn’t give you any clues as to which physical device contains the file.</p>
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x2F;boot</td>
+<td>Contains boot loader files used to boot the system</td>
+</tr>
+<tr>
+<td>&#x2F;etc</td>
+<td>Contains system and application configuration files</td>
+</tr>
+<tr>
+<td>&#x2F;home</td>
+<td>Contains user data files</td>
+</tr>
+</tbody></table>
+<h3 id="Maneuvering-Around-the-Filesystem"><a href="#Maneuvering-Around-the-Filesystem" class="headerlink" title="Maneuvering Around the Filesystem"></a>Maneuvering Around the Filesystem</h3><h2 id="Formatting-Filesystems"><a href="#Formatting-Filesystems" class="headerlink" title="Formatting Filesystems"></a>Formatting Filesystems</h2><h3 id="Common-Filesystem-Types"><a href="#Common-Filesystem-Types" class="headerlink" title="Common Filesystem Types"></a>Common Filesystem Types</h3><h4 id="Linux-Filesystems"><a href="#Linux-Filesystems" class="headerlink" title="Linux Filesystems"></a>Linux Filesystems</h4><h4 id="Non-Linux-Filesystems"><a href="#Non-Linux-Filesystems" class="headerlink" title="Non-Linux Filesystems"></a>Non-Linux Filesystems</h4><h3 id="Creating-Filesystems"><a href="#Creating-Filesystems" class="headerlink" title="Creating Filesystems"></a>Creating Filesystems</h3><h2 id="Mounting-Filesystems"><a href="#Mounting-Filesystems" class="headerlink" title="Mounting Filesystems"></a>Mounting Filesystems</h2><p>After you’ve formatted a drive partition with a fi lesystem, you can add it to the virtual directory on your Linux system. This process is called mounting the filesystem.</p>
+<h3 id="Manually-Mounting-Devices"><a href="#Manually-Mounting-Devices" class="headerlink" title="Manually Mounting Devices"></a>Manually Mounting Devices</h3><p>To <strong>temporarily</strong> mount a fi lesystem to the Linux virtual directory, use the mount command.The basic format for the mount command is<br><code>mount -f fstype device mountpoint</code><br>Use the -f command-line option to specify the fi lesystem type of the device:</p>
+<pre><code>$ sudo mount -t ext4 /dev/sdb1 /media/usb1
+</code></pre>
+<h3 id="Automatically-Mounting-Devices"><a href="#Automatically-Mounting-Devices" class="headerlink" title="Automatically Mounting Devices"></a>Automatically Mounting Devices</h3><p>For permanent storage devices, Linux maintains the <code>/etc/fstab</code> file to indicate which drive devices should be mounted to the virtual directory at boot time. </p>
+<h2 id="Managing-Filesystems"><a href="#Managing-Filesystems" class="headerlink" title="Managing Filesystems"></a>Managing Filesystems</h2><h3 id="Retrieving-Filesystem-Stats"><a href="#Retrieving-Filesystem-Stats" class="headerlink" title="Retrieving Filesystem Stats"></a>Retrieving Filesystem Stats</h3><p>As you use your Linux system, there’s no doubt that at some point you’ll need to <strong>monitor disk performance and usage</strong>. A few different tools are available to help you do that:</p>
+<ul>
+<li>df : Displays disk usage by partition</li>
+<li>du : Displays disk usage by directory; good for finding users or applications that are<br>taking up the most disk space</li>
+<li>iostat : Displays a real-time chart of disk statistics by partition</li>
+<li>lsblk : Displays current partition sizes and mount points</li>
+</ul>
+<h3 id="Filesystem-Tools"><a href="#Filesystem-Tools" class="headerlink" title="Filesystem Tools"></a>Filesystem Tools</h3><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><h2 id="Exam-Essentials"><a href="#Exam-Essentials" class="headerlink" title="Exam Essentials"></a>Exam Essentials</h2><p>Describe how the BIOS and UEFI work on Linux sys.</p>
+<p>Explain the steps necessary to add a new hard drive to a Linux system.</p>
+<p>Explain the tools available in Linux for managing and maintaining filesystems.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/2023/06/13/JavaScriptPageOne/</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
+</code></pre>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜関係なく・無視して</title>
+    <url>/new-blog/2023/06/17/course11/</url>
+    <content><![CDATA[<h1 id="11課-〜関係なく・無視して"><a href="#11課-〜関係なく・無視して" class="headerlink" title="11課　〜関係なく・無視して"></a>11課　〜関係なく・無視して</h1><p>[復習]</p>
+<ul>
+<li>彼女は僕の予定を<u>考えないで</u>、自分でどんどん旅行計画を立ててしまう。</li>
+<li>とても疲れているとき<u>は別として</u>、私は毎日ジョギングをする。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜を問わず"><a href="#〜を問わず" class="headerlink" title="〜を問わず"></a>〜を問わず</h2><p>意味　〜がどうかは問題ではなく、どれにも同じことが言える</p>
+<p>例文　</p>
+<blockquote>
+<p>明日のパーティーは参加者<u>を問わず</u>、関係ない方も大丈夫です。</p>
+</blockquote>
+<p>接続　名＋を問わず</p>
+<p>注意　</p>
+<ol>
+<li>いろいろな違いや幅のある言葉や対立する言葉につく。</li>
+</ol>
+<h2 id="〜にかかわりなく・〜にかかわらず"><a href="#〜にかかわりなく・〜にかかわらず" class="headerlink" title="〜にかかわりなく・〜にかかわらず"></a>〜にかかわりなく・〜にかかわらず</h2><p>意味　〜には関係なく同じようになる</p>
+<p>例文　</p>
+<blockquote>
+<p>理由が何であるか<u>にかかわりなく</u>、一度納入した入学金はお返しできません</p>
+</blockquote>
+<p>接続　名＋にかかわりなく・にかかわらず</p>
+<p>注意　</p>
+<ol>
+<li>幅のある言葉言葉につく。</li>
+<li>また、対立する言葉にもつく。</li>
+</ol>
+<h2 id="〜もかまわず"><a href="#〜もかまわず" class="headerlink" title="〜もかまわず"></a>〜もかまわず</h2><p>説明　dont mind, dont care about</p>
+<p>意味　普通なら気にする〜のことを気にしないで行動する。(I act without concern for things that would normally be of concern.)</p>
+<p>例文　</p>
+<blockquote>
+<p>心配や他の人の見方もかまわず、自分の努力で結果が出ました。<br>母は人を待たせているの<u>もかまわず</u>、まだ鏡の前に化粧している。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-な／-である）＋の＋もかまわず</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通でない行動、意外感のある行動を表す文を来る。</li>
+<li>話者の希望・意向を表す文は来ない。</li>
+</ol>
+<h3 id="〜はともかく（として）"><a href="#〜はともかく（として）" class="headerlink" title="〜はともかく（として）"></a>〜はともかく（として）</h3><p>説明　leaving A aside, B is …</p>
+<p>意味　ほかにもっと強調したいことがあるので、〜はとりあえず考えないでおく。（With the desire to emphasize something further, I will temporarily set aside thoughts about the aforementioned matter.）</p>
+<p>例文　</p>
+<blockquote>
+<p>本当かどうか<u>はともかくとして</u>、その話は面白い</p>
+</blockquote>
+<p>接続　<br>    名＋はともかく（として）<br>    普通形現在（）＋の＋はともかく（として）</p>
+<p>注意　</p>
+<ol>
+<li>話者が、後のことに比べてそれほど重要ではないと思っていることを表す言葉につく。</li>
+<li>後には、「〜」よりもっと強調したいことを言う。</li>
+</ol>
+<h3 id="〜はさておき"><a href="#〜はさておき" class="headerlink" title="〜はさておき"></a>〜はさておき</h3><p>意味　〜は今、考えの外に置いて。さて：そのままの状態、おき：置きます</p>
+<p>例文　</p>
+<blockquote>
+<p>飲み会をするなら、細かいこと<u>はさておき</u>、まず場所と時間を決めなくては。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋はさておき</p>
+<p>注意</p>
+<ol>
+<li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>強く否定する・強く否定しない</title>
+    <url>/new-blog/2023/06/17/course12/</url>
+    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
+<ul>
+<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
+<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
+<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
+<p>例文</p>
+<blockquote>
+<p>日本旅行中に富士山を登るわけがないよ。登山は私の得意なことではないし、時間的にも難しいかもしれないから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
+<p>注意　</p>
+<ol>
+<li>話者が絶対そうではないと確信しているときの言い方。</li>
+</ol>
+<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
+<p>例文</p>
+<blockquote>
+<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
+<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。</p>
+<h3 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h3><p>意味　絶対〜ない(話し言葉)</p>
+<p>例文</p>
+<blockquote>
+<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
+<p>注意　</p>
+<ol>
+<li>少し感情的に強く否定する文。</li>
+</ol>
+<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
+<p>例文</p>
+<blockquote>
+<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
+<p>注意　</p>
+<ol>
+<li>部分的否定する場合は、</li>
+</ol>
+<h2 id="〜というものではない・-〜というものでもない"><a href="#〜というものではない・-〜というものでもない" class="headerlink" title="〜というものではない・　〜というものでもない"></a>〜というものではない・　〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
+<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
+<p>例文</p>
+<blockquote>
+<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。</p>
+</blockquote>
+<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
+<p>注意　</p>
+<ol>
+<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
+<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜（話題）は</title>
+    <url>/new-blog/2023/06/17/course13/</url>
+    <content><![CDATA[<h1 id="〜（話題）は"><a href="#〜（話題）は" class="headerlink" title="〜（話題）は"></a>〜（話題）は</h1><p>[復習]</p>
+<ul>
+<li>昼ご飯<u>は</u>いつも食堂で食べますが、晩ご飯<u>は</u>うちで自分で作ります。</li>
+<li>「すずめの涙ほど」<u>というのは</u>、とても少ないという意味である。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜とは"><a href="#〜とは" class="headerlink" title="〜とは"></a>〜とは</h2><p>意味　〜という言葉を説明・定義する。<span style="color:green">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>夢の仕事とは、私にとって作家になることです。言葉で感情や世界を表現し、人々に感動を与えることができるという意味を持っています。</p>
+</blockquote>
+<p>接続　名＋とは</p>
+<p>注意　</p>
+<ol>
+<li>「〜というのは」の硬い言い方。</li>
+<li>後には、その言葉の意味や本質を説明する文が来る。</li>
+</ol>
+<h3 id="〜といえば"><a href="#〜といえば" class="headerlink" title="〜といえば"></a>〜といえば</h3><p>意味A　話題に出てきた〜という言葉を取り上げ、それに関連のある別の話に導く</p>
+<p>例文</p>
+<blockquote>
+<p>このコーヒー、ハワイのお土産ですか。ハワイといえば、さちこさんが来月ハワイで結婚式をするだろうですよ。</p>
+</blockquote>
+<p>接続　取り上げる言葉＋といえば</p>
+<p>注意　</p>
+<p>1. </p>
+<p>意味B　〜ということを一応認めておいて、その後で本当に言いたいことを言う。</p>
+<p>例文</p>
+<blockquote>
+<p>今のアパート、駅から遠いので不便<u>といえば</u>不便ですが、静かでいいですよ。</p>
+</blockquote>
+<p>接続　普通形（ナ形（だ）・名（だ））＋といえば</p>
+<p>注意　</p>
+<p>1. </p>
+<h2 id="〜というと・〜といえば・〜といったら"><a href="#〜というと・〜といえば・〜といったら" class="headerlink" title="〜というと・〜といえば・〜といったら"></a>〜というと・〜といえば・〜といったら</h2><p>意味　〜という言葉からすぐに思いつくことを言う</p>
+<p>例文</p>
+<blockquote>
+<p>旅行先というと、私は自然豊かな山岳地帯が好きです。特に北海道の美しい景色と美食に魅了されます。</p>
+</blockquote>
+<p>接続　名・動・形普通形＋というと・といえば・といったら</p>
+<p>注意</p>
+<h2 id="〜（のこと）となると"><a href="#〜（のこと）となると" class="headerlink" title="〜（のこと）となると"></a>〜（のこと）となると</h2><p>意味　〜の話題・〜に関連することに対しては、普通とは違う態度になることを強調する</p>
+<p>例文</p>
+<blockquote>
+<p>佐藤さんは、好きな歌手<u>のこととなると</u>話が止まらない。</p>
+</blockquote>
+<p>接続　名＋（のこと）となると</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通ではない態度に変わるという意味の文が来る。</li>
+</ol>
+<h2 id="〜といったら"><a href="#〜といったら" class="headerlink" title="〜といったら"></a>〜といったら</h2><p>意味　〜の程度が普通ではないということを強調する</p>
+<p>例文</p>
+<blockquote>
+<p>　締め切り前の仕事の忙しさ<u>といったら</u>、君には想像もできないと思うよ。</p>
+</blockquote>
+<p>接続　名＋といったら</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通ではない程度だという意味の文、驚きを表す文が来る。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜けれど</title>
+    <url>/new-blog/2023/06/18/course14/</url>
+    <content><![CDATA[<h1 id="〜けれど"><a href="#〜けれど" class="headerlink" title="〜けれど"></a>〜けれど</h1><p>[復習]</p>
+<ul>
+<li>返すのはいつでもいいと言いた<u>けど</u>、返さなくていいとは言っていない。</li>
+<li>せっかく富士山の近くまでに行った<u>のに</u>、天気が悪くてよく見えなかった。</li>
+<li>忙しく<u>ても</u>、メールの返事は必ず書きたい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜にもかかわらず"><a href="#〜にもかかわらず" class="headerlink" title="〜にもかかわらず"></a>〜にもかかわらず</h2><p>説明　despite; though; although; in spite of</p>
+<p>意味　〜には影響されないで、あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>悪天候<u>にもかかわらず</u>、作業を続けている。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋にもかかわらず</p>
+<p>注意　</p>
+<ol>
+<li>全体として、前の事実に影響きれないことに対する驚き・意外感を表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<h2 id="〜ものの・〜とはいうものの"><a href="#〜ものの・〜とはいうものの" class="headerlink" title="〜ものの・〜とはいうものの"></a>〜ものの・〜とはいうものの</h2><p>意味　〜は事実なのだが、その事実から当然想像されることが起こらない。</p>
+<p>例文</p>
+<blockquote>
+<p>明日の天気です。関東地方は晴れる<u>ものの</u>、風が強いため寒く感じられるでしょう。</p>
+</blockquote>
+<p>接続<br>    動・形普通形（ナ形<del>だ</del>ーな&#x2F;ーである）＋ものの<br>    名・普通形（ナ形（だ））＋とはいうものの</p>
+<p>注意</p>
+<ol>
+<li>事実または確実性が高いことにつく。</li>
+</ol>
+<h2 id="〜ながら（も）"><a href="#〜ながら（も）" class="headerlink" title="〜ながら（も）"></a>〜ながら（も）</h2><p>意味　〜という状態から予想されることとは違う・「〜けれども」と前置きする。</p>
+<p>例文</p>
+<blockquote>
+<p>毎日この道を通ってい<u>ながら</u>、ここにこんなすてきな店があるとは気がつかなかった。</p>
+</blockquote>
+<p>接続　動<del>ます</del>・イ形・ナ形&#x2F;-であり・名-であり＋ながら（も）</p>
+<p>注意</p>
+<ol>
+<li>状態を表す言葉につくことが多い。</li>
+<li>マイナス評価の言葉につく。</li>
+</ol>
+<h3 id="〜つつ（も）"><a href="#〜つつ（も）" class="headerlink" title="〜つつ（も）"></a>〜つつ（も）</h3><p>意味　〜という心の動きとは、行動が違っている。</p>
+<p>例文</p>
+<blockquote>
+<p>危険だと知り<u>つつ</u>、山道を登り続けた。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋つつ（も）</p>
+<p>注意</p>
+<h2 id="〜といっても"><a href="#〜といっても" class="headerlink" title="〜といっても"></a>〜といっても</h2><p>意味　実際は〜ということから想像されるイメージとは違っている</p>
+<p>例文</p>
+<blockquote>
+<p>今もわたしの仕事はきつい。でも、きつい<u>といっても</u>、前の会社にいたときほどではない。</p>
+</blockquote>
+<p>接続　名・普通形＋といっても</p>
+<p>注意</p>
+<ol>
+<li>後には、「〜」からイメージされることとは違うという意味の文。</li>
+</ol>
+<h2 id="〜からといって"><a href="#〜からといって" class="headerlink" title="〜からといって"></a>〜からといって</h2><p>説明　just because A it is not enough to B</p>
+<p>意味　ただ〜という理由だけでは、その理由から普通に予想されることは成立しない</p>
+<p>例文　子供だ<u>からといって</u>許せない。</p>
+<p>接続　普通形＋からといって</p>
+<p>注意</p>
+<ol>
+<li>「〜だから当然…だ」という文を否定する言い方。</li>
+<li>後には、部分否定の表現が来ることが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>course15</title>
+    <url>/new-blog/2023/06/18/course15/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>〜だから（理由）−１</title>
+    <url>/new-blog/2023/06/13/course16/</url>
+    <content><![CDATA[<h1 id="〜だから（理由）−１"><a href="#〜だから（理由）−１" class="headerlink" title="〜だから（理由）−１"></a>〜だから（理由）−１</h1><p>[復習]</p>
+<ul>
+<li>時間がなかった<u>ので</u>、十分な準備ができなかった。</li>
+<li>試験のことが気になっ<u>て</u>、なかなか眠れなかった。</li>
+<li>事故があったために、道路が渋滞した。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜によって"><a href="#〜によって" class="headerlink" title="〜によって"></a>〜によって</h2><p>意味　〜が原因で、ある結果になる・〜という手段や方法であることをする</p>
+<p>例文　</p>
+<blockquote>
+<p>今朝、中央線は踏切内で起きた事故<u>によって</u>、ダイヤが大きく乱れた<br>仕事をコンピューター化すること<u>により</u>、労働力不足は解決できるのではないか</p>
+</blockquote>
+<p>接続　<br>    名＋によって<br>    名＋による＋名</p>
+<p>注意　</p>
+<ol>
+<li>手段の意味では、日常的な道具などを個人的に使う場合は使いにくいが、</li>
+</ol>
+<p>練習</p>
+<h2 id="〜ものだから・〜もので・〜もの"><a href="#〜ものだから・〜もので・〜もの" class="headerlink" title="〜ものだから・〜もので・〜もの"></a>〜ものだから・〜もので・〜もの</h2><p>意味　「〜ので…」と言い訳をする</p>
+<p>例文　</p>
+<blockquote>
+<p>私、近眼な<u>もんで</u>、お顔がよく見えなかったんです。</p>
+</blockquote>
+<p>接続<br>    普通形（ナ形<del>だ</del> ーな・名<del>だ</del> ーな）＋ものだから・もので<br>    普通形＋もの</p>
+<p>注意　</p>
+<ol>
+<li>個人的な言い訳を言う。</li>
+<li>後には命令や意向を表す文は来ない。</li>
+<li>「ものですから、もので」の後の文も、省略されることがある。「もんだから、もんで、もん」は、さらにくだけた言い方。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>The house is small (narrow) <span style="color:green">[so &#x2F; therefore]</span> you cant put big furniture in (it).</p>
+</blockquote>
+<blockquote>
+<p> I’m sorry I’m late, I got caught in a traffic jam.</p>
+</blockquote>
+<h2 id="〜おかげだ／〜せいだ"><a href="#〜おかげだ／〜せいだ" class="headerlink" title="〜おかげだ／〜せいだ"></a>〜おかげだ／〜せいだ</h2><p>意味　〜の影響で、いい結果／悪い結果になった。</p>
+<p>例文</p>
+<blockquote>
+<p>いい天気が続いている<u>おかげで</u>、工事が思ったより早く進んでいます。<br>今年の春は気温が低い日が多かった<u>せいで</u>、桜の開花が遅い。</p>
+</blockquote>
+<p>接続　名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋おかげだ／せいだ</p>
+<p>注意　</p>
+<ol>
+<li>話者の意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<h2 id="〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）"><a href="#〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）" class="headerlink" title="〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）"></a>〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）</h2><p>意味　とても〜ので、普通ではない結果になってしまった</p>
+<p>例文　</p>
+<blockquote>
+<p>10年ぶりで兄に会った。兄の<u>あまりの</u>変化<u>に</u>言葉が出なかった。</p>
+</blockquote>
+<p>接続　<br>    名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋あまり<br>    あまりの＋名＋に</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通ではない結果（悪い結果が多い）を表す文が来る。</li>
+<li>話者の希望・意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<h2 id="〜につき"><a href="#〜につき" class="headerlink" title="〜につき"></a>〜につき</h2><p>意味　「〜の理由で、ある状態になる」と公に知らせる。</p>
+<p>例文　</p>
+<blockquote>
+<p>トイレはただ今清掃中<u>につき</u>、ご利用になれません。</p>
+</blockquote>
+<p>接続　名＋につき</p>
+<p>注意　</p>
+<ol>
+<li>現時点での状況を表す言葉につく。</li>
+<li>張り紙や公式文書などに使う。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜できない・困難だ・〜できる</title>
+    <url>/new-blog/2023/06/13/course18/</url>
+    <content><![CDATA[<h1 id="〜できない・困難だ・〜できる"><a href="#〜できない・困難だ・〜できる" class="headerlink" title="〜できない・困難だ・〜できる"></a>〜できない・困難だ・〜できる</h1><p>[復習]</p>
+<ul>
+<li>あの人の話は信じ<u>られない</u>。</li>
+<li>この文は複雑でわかり<u>にくい</u>。</li>
+<li>社長室に一人ではちょっと入り<u>づらい</u>ですよ。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜がたい（difficult-to）"><a href="#〜がたい（difficult-to）" class="headerlink" title="〜がたい（difficult to）"></a>〜がたい（difficult to）</h2><p>意味 〜することが難しい・〜できない。</p>
+<p>例文</p>
+<blockquote>
+<p>留学中、自分の国では得<u>がたい</u>経験をたくさんした。<br>これは正解ではないが、間違っているとも言い<u>がたい</u>。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋がたい</p>
+<p>注意　</p>
+<ol>
+<li>能力的にできないという意味では使わない。</li>
+<li>主に心の働きを表す動詞や発言を表す動詞につく。</li>
+</ol>
+<p>練習<br>    Situation: You are trying to lift a heavy object but find it extremely difficult. Describe your struggle using the grammar point “〜がたい.”<br>    Sentence: この重い荷物を持ち上げるのは本当に力がたいです。</p>
+<h2 id="〜わけにはいかない・〜わけにもいかない（cannot）"><a href="#〜わけにはいかない・〜わけにもいかない（cannot）" class="headerlink" title="〜わけにはいかない・〜わけにもいかない（cannot）"></a>〜わけにはいかない・〜わけにもいかない（cannot）</h2><p>意味　社会的常識に反する・心理的抵抗があるなどの事情があって、〜できない。</p>
+<p>例文　</p>
+<blockquote>
+<p>もう終電は終わってしまった。会社に泊まる<u>わけにもいかず</u>、困っている。</p>
+</blockquote>
+<p>接続　動辞書形＋わけにはいかない・わけにもいかない</p>
+<p>注意　</p>
+<ol>
+<li>能力的にできないという意味では使わない。</li>
+</ol>
+<p>練習<br>    Situation: Your friend invites you to a party, but you have an important exam the next day. Decline the invitation using the grammar point “〜わけにはいかない.”<br>    Sentence: 大切な試験が明日あるので、パーティーに行くわけにはいきません。</p>
+<h2 id="〜かねる（hesitate-to-cannot-hard-to-do）"><a href="#〜かねる（hesitate-to-cannot-hard-to-do）" class="headerlink" title="〜かねる（hesitate to, cannot, hard to do）"></a>〜かねる（hesitate to, cannot, hard to do）</h2><p>意味　その状況・その条件・話者の立場では〜できない。</p>
+<p>例文　</p>
+<blockquote>
+<p>子供が泣いているのを見<u>かねて</u>、結局宿題を手伝ってやった。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋かねる</p>
+<p>注意</p>
+<ol>
+<li>能力的にできないという意味では使わない。</li>
+<li>丁寧に断る場合などに使う。</li>
+</ol>
+<p>練習<br>    Situation: You are asked to sing in front of a large audience, but you have a terrible singing voice. Express your inability to do so using the grammar point “〜かねる.”<br>    Sentence: 自分の歌声が拙くて、たくさんの観客の前で歌うことがかねます。</p>
+<h2 id="〜ようがない（no-way-to）"><a href="#〜ようがない（no-way-to）" class="headerlink" title="〜ようがない（no way to）"></a>〜ようがない（no way to）</h2><p>意味　〜したくても、どのようにしたらいいかわからない・可能性が全くない</p>
+<p>例文</p>
+<blockquote>
+<p>これだけしっかり準備したのだ。悪い結果になり<u>ようがない</u>だろう。<br>駅からここまではまっすぐ歩いてくるだけだから、迷い<u>ようがない</u>と思うけどね。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋ようがない</p>
+<p>注意　</p>
+<ol>
+<li>方法が全くないという意味、または「〜はずがない」という意味で使う。</li>
+<li>不可能であるというニュアンスを強調する。</li>
+</ol>
+<p>練習<br>    Situation: Your friend asks you to lend them a significant amount of money, but you don’t have the means to do so. Explain your situation using the grammar point “〜ようがない.”<br>    Sentence: 申し訳ありませんが、たくさんのお金を貸すようがありません。</p>
+<h2 id="〜どころではない"><a href="#〜どころではない" class="headerlink" title="〜どころではない"></a>〜どころではない</h2><p>意味　〜できる状況ではない。</p>
+<p>例文</p>
+<blockquote>
+<p>この国の経済はどんどん悪くなっていて、よくなる<u>どころではない</u></p>
+</blockquote>
+<p>接続　名・動辞書形＋どころではない</p>
+<p>注意　</p>
+<ol>
+<li>余裕がないという事情のため、期待していることや想像していることが全くできないという意味で使う。</li>
+</ol>
+<p>練習<br>    Situation: You have a lot of pending work and deadlines, and your friend asks you to go on a trip. Express that it’s impossible for you to go using the grammar point “〜どころではない.”<br>    Sentence: 今はたくさんの仕事や締切があって、旅行に行くどころではありません。</p>
+<h2 id="〜得る／〜得ない"><a href="#〜得る／〜得ない" class="headerlink" title="〜得る／〜得ない"></a>〜得る／〜得ない</h2><p>意味　〜できる・その可能性がある／〜できない・その可能性がない。</p>
+<p>例文</p>
+<blockquote>
+<p>経済の成長と環境保護は両立し<u>得る</u>はずだ。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋得る・得ない</p>
+<p>注意</p>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜だから（理由）-2</title>
+    <url>/new-blog/2023/06/12/course17/</url>
+    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
+
+<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
+<p>例文　</p>
+<blockquote>
+<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
+<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
+<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
+<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
+</code></pre>
+<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
+<p>例文　</p>
+<blockquote>
+<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
+</blockquote>
+<p>接続　名＋のことだから</p>
+<p>注意　</p>
+<ol>
+<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
+</ol>
+<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
+<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
+</code></pre>
+<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
+<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
+<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
+<p>注意　</p>
+<ol>
+<li>「名だ」の形には接続しない。</li>
+<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
+<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
+</code></pre>
+<h2 id="〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）"><a href="#〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）" class="headerlink" title="〜ばかりに（because (of a negative thing); simply because; simply on account of）"></a>〜ばかりに（because (of a negative thing); simply because; simply on account of）</h2><p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
+<p>例文 </p>
+<blockquote>
+<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
+<p>注意　</p>
+<ol>
+<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
+<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
+</code></pre>
+<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
+<p>例文</p>
+<blockquote>
+<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
+<p>注意　</p>
+<ol>
+<li>文全体で、一般的に当然と思われることを表す。</li>
+<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
+</ol>
+<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
+<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
+</code></pre>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜を見て評価すると・〜の立場で評価すると</title>
+    <url>/new-blog/2023/06/14/course19/</url>
+    <content><![CDATA[<h1 id="〜を見て評価すると・〜の立場で評価すると"><a href="#〜を見て評価すると・〜の立場で評価すると" class="headerlink" title="〜を見て評価すると・〜の立場で評価すると"></a>〜を見て評価すると・〜の立場で評価すると</h1><p>[復習]</p>
+<ul>
+<li>八十歳という年齢<u>を考えると</u>、うちの祖父は若々しい。</li>
+<li>教師の立場<u>から言うと</u>、素直な生徒の方が扱いやすいのだろう。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わりに（は）"><a href="#〜わりに（は）" class="headerlink" title="〜わりに（は）"></a>〜わりに（は）</h2><p>意味　〜という基準から考えられる程度と違っている。</p>
+<p>例文　この料理は安い材料で簡単にできる<u>わりには</u>豪華に見える。</p>
+<p>接続　名-の・動・形普通形（ナ形<del>だ</del>-な／-である）＋わりに（は）</p>
+<p>注意　</p>
+<ol>
+<li>意味や程度に幅がる言葉につく。</li>
+<li>後には、予想される程度とは合わないという評価を言う文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にしては"><a href="#〜にしては" class="headerlink" title="〜にしては"></a>〜にしては</h2><p>意味　〜という事実。標準から考える・予想外だ。</p>
+<p>例文　</p>
+<blockquote>
+<p>今日は2月<u>にしては</u>暖かかった</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にしては</p>
+<p>注意　</p>
+<ol>
+<li>幅がなく、ある特定のことにつくことが多い。</li>
+<li>後には、予想されることと違うという評価を言う文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）"><a href="#〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）" class="headerlink" title="〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）"></a>〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）</h2><p>意味　〜という条件から期待されるとおりだ。</p>
+<p>例文　</p>
+<blockquote>
+<p>彼は10年も日本に住んでいる<u>だけあって</u>、日本のことをよく知っている。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な）＋だけ（のことは）ある</p>
+<p>注意　</p>
+<ol>
+<li>「〜だけあって」の後には、評価が高いことを表す文が来る。</li>
+<li>未来や推量を表す文は来ない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜として"><a href="#〜として" class="headerlink" title="〜として"></a>〜として</h2><p>　<br>意味　〜という立場・資格・役割・名目で、あることをする・ある状態である。</p>
+<p>例文　</p>
+<blockquote>
+<p>京都は日本の歴史的な古い町<u>として</u>知られている。</p>
+</blockquote>
+<p>接続　名＋として</p>
+<p>注意　</p>
+<ol>
+<li>後には、行為・状態を表す動詞、価値付けの言葉（知られている・有名）や判断・評価を表す言葉が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にとって"><a href="#〜にとって" class="headerlink" title="〜にとって"></a>〜にとって</h2><p>意味　（いろいろな考え方がある中で）〜の考えでは、あることが言える。</p>
+<p>例文　</p>
+<blockquote>
+<p>この小石はほかの人<u>にとって</u>普通の石ですが、わたし<u>にとって</u>宝物なのです。</p>
+</blockquote>
+<p>接続　名＋にとって</p>
+<p>注意</p>
+<ol>
+<li>主に人を表す名詞につく。</li>
+<li>後には、その人がどう評価しているを表す文が来る。</li>
+<li>動作を表す文は来ない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"><a href="#〜にしたら・〜にすれば・〜にしてみれば・〜にしても" class="headerlink" title="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"></a>〜にしたら・〜にすれば・〜にしてみれば・〜にしても</h2><p>意味　〜の立場になってみれば・〜の立場から言っても、あることが言える。</p>
+<p>例文</p>
+<blockquote>
+<p>たばこを吸う人<u>にすれば</u>、たばこの害についての話題は避けたいだろうと思う。</p>
+</blockquote>
+<p>接続　名＋にしたら・にすれば・にしてみれば・にしても</p>
+<p>注意</p>
+<ol>
+<li>ふつう、話者以外の人を表す言葉につく。</li>
+<li>後には、その人の立場に立って、その人の気持ちを推量して言う文が来る。</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>結果はどうなったか</title>
+    <url>/new-blog/2023/06/15/course20/</url>
+    <content><![CDATA[<h1 id="20課-結果はどうなったか"><a href="#20課-結果はどうなったか" class="headerlink" title="20課　結果はどうなったか"></a>20課　結果はどうなったか</h1><p>[復習]</p>
+<ul>
+<li>窓を開ける<u>と</u>雪が降ってい<u>た</u>。</li>
+<li>電話で問い合わせ<u>みたら</u>、彼女はもう日本にはいないという返事だっ<u>た</u>。</li>
+<li>子供が朝家を出<u>たまま</u>、まだ帰ってこない。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜たところ（just-as-I’d-right-at-the-moment-when-I’d）"><a href="#〜たところ（just-as-I’d-right-at-the-moment-when-I’d）" class="headerlink" title="〜たところ（just as I’d, right at the moment when I’d）"></a>〜たところ（just as I’d, right at the moment when I’d）</h2><p>意味　〜してみたら、ある結果になった・ある状態がわかった。</p>
+<p>例文</p>
+<blockquote>
+<p>２、3日休みたいと課長に相談し<u>たところ</u>、二週間休んでもいいと言われた。<br>この新商品を使いてみたいかどうか聞いてみ<u>たところ</u>、80％の人が「使いたい」と答えた。  </p>
+</blockquote>
+<p>接続　動た形＋ところ</p>
+<p>注意　</p>
+<ol>
+<li>過去の一度だけの出来事について言う。</li>
+<li>後には、結果を表す文が来る。</li>
+<li>「〜たら…た」という形の文に比べて、結果はどうだったに重点を置いている。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>Situation: You went to a restaurant with high expectations based on the recommendations, but the food was disappointing. Describe your experience using the grammar point “〜たところ.”<br>そのレストランに大きな期待を持って行ったところ、食べ物が残念だ。<br>レストランに行ってみたところ、期待していたほどの料理ではありませんでした。</p>
+</blockquote>
+<h2 id="〜きり（just-for-good-once-and-for-all-keeps-on-same-state-）"><a href="#〜きり（just-for-good-once-and-for-all-keeps-on-same-state-）" class="headerlink" title="〜きり（just, for good, once and for all (keeps on same state)）"></a>〜きり（just, for good, once and for all (keeps on same state)）</h2><p>意味　〜という動作の後、そのままずっと同じ状態が続く。</p>
+<p>例文</p>
+<blockquote>
+<p>父は朝、出かけた<u>きり</u>なんです。まだ戻ってきていません。</p>
+</blockquote>
+<p>接続 動た形＋きり</p>
+<p>注意</p>
+<ol>
+<li>後には、次に予想されることが起きていない状態を表す文が来る。</li>
+<li>否定文が多い。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>Situation: You waited for your friend at the designated meeting spot for a long time, but they never showed up. Express your frustration using the grammar point “〜きり.”<br>約束した場を待っていたきり、彼らはあまり来ない。</p>
+</blockquote>
+<h2 id="〜あげく（in-the-end-afterall）"><a href="#〜あげく（in-the-end-afterall）" class="headerlink" title="〜あげく（in the end, afterall）"></a>〜あげく（in the end, afterall）</h2><p>意味　いろいろ〜した後で、結局残念な結果になった。</p>
+<p>例文</p>
+<blockquote>
+<p>いろいろ文句を言った<u>あげく</u>、その客は何も買わずに帰った。</p>
+</blockquote>
+<p>接続　名ーの・動た形＋あげく</p>
+<p>注意　</p>
+<ol>
+<li>大変な状態が続いたという意味の文につく。</li>
+<li>後には、いい結果を表す文はあまり来ない。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>Situation: You studied diligently for an exam, but despite your efforts, you ended up failing. Share your disappointment using the grammar point “〜あげく.”<br>その試験に努力したあげく、最後の結果が合格できません</p>
+</blockquote>
+<h2 id="〜末（に）（in-the-end-result）"><a href="#〜末（に）（in-the-end-result）" class="headerlink" title="〜末（に）（in the end, result）"></a>〜末（に）（in the end, result）</h2><p>意味　いろいろ〜した後で、最終的にあ結果になった。</p>
+<p>例文　</p>
+<blockquote>
+<p>アップダウンの<u>末に</u>手に入れた安定感。</p>
+</blockquote>
+<p>接続 名ーの・動た形＋末（に）</p>
+<p>注意</p>
+<ol>
+<li>大変な状態が続いたという意味の文につく。</li>
+<li>後には、結末や決断を表す文が来る。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>Situation: You’ve been saving money for a long time, and now you finally have enough to buy the camera you’ve always wanted. Describe your excitement and anticipation using the grammar point “〜末（に）.”<br>貯金していた末に、欲しいカメラを買うことができる。<br>長い間貯金してきた末に、ついに欲しかったカメラを買えます。</p>
+</blockquote>
+<h2 id="〜ところだった"><a href="#〜ところだった" class="headerlink" title="〜ところだった"></a>〜ところだった</h2><p>意味　〜という状況になる一歩手前だったが、実際にはそうならなかった。</p>
+<p>例文</p>
+<blockquote>
+<p>朝寝坊して、危うく試験が受けられない<u>ところだった</u>。</p>
+</blockquote>
+<p>接続　動辞書形／ない形＋ところだった</p>
+<p>注意</p>
+<p>練習</p>
+<h2 id="〜ずじまいだ"><a href="#〜ずじまいだ" class="headerlink" title="〜ずじまいだ"></a>〜ずじまいだ</h2><p>意味　〜ようと思っていたのに、結局できなかった・〜ないで終わった</p>
+<p>例文</p>
+<blockquote>
+<p>彼女にラブレターを書いたけれど、勇気がなくて出せ<u>ずじまいだった</u>。</p>
+</blockquote>
+<p>接続　動<del>ない</del>＋ずじまいだ</p>
+<p>注意</p>
+<ol>
+<li>まだチャンスがある場合には使わない。</li>
+<li>過去形の文が多い。</li>
+</ol>
+<p>練習</p>
+<blockquote>
+<p>Situation: You worked hard on a project, but in the end, it didn’t meet your expectations and you feel unsatisfied. Express your sense of dissatisfaction using the grammar point “〜ずじまいだ.”<br>一生懸命プロジェクトに取り組んだけれど、結局思ったようにならず、満足できずじまいです。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>強く言う・軽く言う</title>
+    <url>/new-blog/2023/06/17/course21/</url>
+    <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
+<ul>
+<li>今年<u>こそ</u>日記を書き続けよう。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜ぐらい・〜くらい"><a href="#〜ぐらい・〜くらい" class="headerlink" title="〜ぐらい・〜くらい"></a>〜ぐらい・〜くらい</h2><p>意味　〜は程度が軽い・最低限の程度だ。</p>
+<p>例文</p>
+<blockquote>
+<p>うちに帰ってきたら、自分の靴<u>ぐらい</u>ちゃんと並べなさい。</p>
+</blockquote>
+<p>接続　名・動・形普通形（ナ形<del>だ</del>-な）＋ぐらい・くらい</p>
+<p>注意</p>
+<ol>
+<li>話者が程度が軽いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜など・〜なんか・〜なんて"><a href="#〜など・〜なんか・〜なんて" class="headerlink" title="〜など・〜なんか・〜なんて"></a>〜など・〜なんか・〜なんて</h2><p>意味　〜は価値が低い・大切でははい。</p>
+<p>例文</p>
+<blockquote>
+<p>あの人の言ったこと<u>など</u>気にすることはありません。<br>新聞記者に<u>なんか</u>ならなければよかった。仕事がきつすぎる。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋など・なんか・なんて</p>
+<p>注意</p>
+<ol>
+<li>話者が価値が低いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まで・〜までして・〜てまで"><a href="#〜まで・〜までして・〜てまで" class="headerlink" title="〜まで・〜までして・〜てまで"></a>〜まで・〜までして・〜てまで</h2><p>意味　〜という極端な程度のもの・ことも、ある状態・あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>一番に賛成してくれると思っていた母<u>まで</u>私の結婚に反対した。<br>遊園地では、みんな長い時間並ん<u>でまで</u>ジェットコースターに乗りたがる。</p>
+</blockquote>
+<p>接続<br>    名（＋助詞）＋まで・までして<br>    動て形＋まで</p>
+<p>注意</p>
+<ol>
+<li>極端で意外性のある例を示す言葉につく。</li>
+<li>「〜までして・〜てまで」は話者が驚いたり呆れたりするような手段・事態を示し</li>
+</ol>
+<p>練習</p>
+<h2 id="〜として〜ない"><a href="#〜として〜ない" class="headerlink" title="〜として〜ない"></a>〜として〜ない</h2><p>意味　あることを「最低限度の〜も全くない」と否定する。</p>
+<p>例文</p>
+<blockquote>
+<p>人生に無駄なものは何一つ<u>としてない</u>。失敗も必ず何かの役に立つはずだ。<br>彼の提案にだれ一人<u>として</u>反対でき<u>なかった</u>。</p>
+</blockquote>
+<p>接続 （何・だれ＋）一＋助数詞＋として〜ない</p>
+<p>注意</p>
+<ol>
+<li>最低の単位「一＋助数詞」につく。後には、否定文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜さえ"><a href="#〜さえ" class="headerlink" title="〜さえ"></a>〜さえ</h2><p>意味　〜のような極端例もそうだから、ほかのことはもちろんだ。</p>
+<p>例文</p>
+<blockquote>
+<p>日本に来たばかりのときは、ひらがな<u>さえ</u>読めなかった。<br>この料理は簡単だ。料理の苦手なわたしで<u>さえ</u>失敗しなかった。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>後には、話者の意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<p>練習</p>
+<p>意味　〜という一つの条件が満たされれば、ほかのことは問題にならない。</p>
+<p>例文</p>
+<blockquote>
+<p>雨<u>さえ</u>降らなければ、ハイキングに出かけられますね。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>「〜さえ〜ば・〜さえ〜なら・〜さえ〜たら」という形で必要最低限の条件を示す。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜てでも"><a href="#〜てでも" class="headerlink" title="〜てでも"></a>〜てでも</h2><p>意味　普通はしないような〜という手段を使う覚悟で、あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>熱があるが、大切な約束があるので、どんなことをし<u>てでも</u>行かなければならない。</p>
+</blockquote>
+<p>接続　動て形＋でも</p>
+<p>注意</p>
+<ol>
+<li>極端な手段を表す動詞につく。後には、話者の希望・意向をを表す文が来る。</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜だろうと思う</title>
+    <url>/new-blog/2023/06/18/course22/</url>
+    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
+<ul>
+<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
+<li>あしたは雨が降る<u>かもしれない</u>。</li>
+<li>林さんは今日ここに来る<u>はずだ</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
+<p>例文</p>
+<blockquote>
+<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
+</blockquote>
+<p>接続　普通形＋とみえる</p>
+<p>注意　</p>
+<ol>
+<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
+<li>推量した人は文中に表れない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
+<p>例文　</p>
+<blockquote>
+<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋かねない</p>
+<p>注意　</p>
+<ol>
+<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
+<li>「〜おそれがある」よりも原因がはっきりしている。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
+<p>例文　</p>
+<blockquote>
+<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
+</blockquote>
+<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
+<p>注意　</p>
+<ol>
+<li>ニュース、解説などで使う。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
+<p>例文</p>
+<blockquote>
+<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
+</blockquote>
+<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
+<p>注意</p>
+<ol>
+<li>丁寧形・過去形では使わない。</li>
+<li>ふつう、一人称が主語になることはない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
+<p>練習</p>
+<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
+<p>例文　</p>
+<blockquote>
+<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
+<p>注意</p>
+<ol>
+<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>course23</title>
+    <url>/new-blog/2023/06/18/course23/</url>
+    <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
+<ul>
+<li>これはいい作品だ<u>と思います</u></li>
+</ul>
+<span id="more"></span>
+
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+</search>
