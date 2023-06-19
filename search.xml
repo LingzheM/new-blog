@@ -1,47 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>朝のニュース</title>
+    <title>朝のニュース(230619)</title>
     <url>/new-blog/2023/06/19/230619/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<span id="more"></span>
+
+<blockquote>
 <blockquote>
 <blockquote>
 </blockquote>
@@ -172,6 +136,44 @@ set root=(hd0,1)
 </ul>
 <p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
 <h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
       <categories>
         <category>LPIC</category>
       </categories>
@@ -681,72 +683,78 @@ const greeting = &quot;Hello &quot;;
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>〜だから（理由）-2</title>
-    <url>/new-blog/2023/06/12/course17/</url>
-    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
+    <title>〜だから（理由）−１</title>
+    <url>/new-blog/2023/06/13/course16/</url>
+    <content><![CDATA[<h1 id="〜だから（理由）−１"><a href="#〜だから（理由）−１" class="headerlink" title="〜だから（理由）−１"></a>〜だから（理由）−１</h1><p>[復習]</p>
+<ul>
+<li>時間がなかった<u>ので</u>、十分な準備ができなかった。</li>
+<li>試験のことが気になっ<u>て</u>、なかなか眠れなかった。</li>
+<li>事故があったために、道路が渋滞した。</li>
+</ul>
+<span id="more"></span>
 
-<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
+<h2 id="〜によって"><a href="#〜によって" class="headerlink" title="〜によって"></a>〜によって</h2><p>意味　〜が原因で、ある結果になる・〜という手段や方法であることをする</p>
 <p>例文　</p>
 <blockquote>
-<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
+<p>今朝、中央線は踏切内で起きた事故<u>によって</u>、ダイヤが大きく乱れた<br>仕事をコンピューター化すること<u>により</u>、労働力不足は解決できるのではないか</p>
 </blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
-<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
-<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
-<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
-</code></pre>
-<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
+<p>接続　<br>    名＋によって<br>    名＋による＋名</p>
+<p>注意　</p>
+<ol>
+<li>手段の意味では、日常的な道具などを個人的に使う場合は使いにくいが、</li>
+</ol>
+<p>練習</p>
+<h2 id="〜ものだから・〜もので・〜もの"><a href="#〜ものだから・〜もので・〜もの" class="headerlink" title="〜ものだから・〜もので・〜もの"></a>〜ものだから・〜もので・〜もの</h2><p>意味　「〜ので…」と言い訳をする</p>
 <p>例文　</p>
 <blockquote>
-<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
+<p>私、近眼な<u>もんで</u>、お顔がよく見えなかったんです。</p>
 </blockquote>
-<p>接続　名＋のことだから</p>
+<p>接続<br>    普通形（ナ形<del>だ</del> ーな・名<del>だ</del> ーな）＋ものだから・もので<br>    普通形＋もの</p>
 <p>注意　</p>
 <ol>
-<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
+<li>個人的な言い訳を言う。</li>
+<li>後には命令や意向を表す文は来ない。</li>
+<li>「ものですから、もので」の後の文も、省略されることがある。「もんだから、もんで、もん」は、さらにくだけた言い方。</li>
 </ol>
-<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
-<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
-</code></pre>
-<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
-<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
-<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
-<p>注意　</p>
-<ol>
-<li>「名だ」の形には接続しない。</li>
-<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
-<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
-</code></pre>
-<h2 id="〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）"><a href="#〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）" class="headerlink" title="〜ばかりに（because (of a negative thing); simply because; simply on account of）"></a>〜ばかりに（because (of a negative thing); simply because; simply on account of）</h2><p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
-<p>例文 </p>
+<p>練習</p>
 <blockquote>
-<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
+<p>The house is small (narrow) <span style="color:green">[so &#x2F; therefore]</span> you cant put big furniture in (it).</p>
 </blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
-<p>注意　</p>
-<ol>
-<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
-<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
-</code></pre>
-<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
+<blockquote>
+<p> I’m sorry I’m late, I got caught in a traffic jam.</p>
+</blockquote>
+<h2 id="〜おかげだ／〜せいだ"><a href="#〜おかげだ／〜せいだ" class="headerlink" title="〜おかげだ／〜せいだ"></a>〜おかげだ／〜せいだ</h2><p>意味　〜の影響で、いい結果／悪い結果になった。</p>
 <p>例文</p>
 <blockquote>
-<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
+<p>いい天気が続いている<u>おかげで</u>、工事が思ったより早く進んでいます。<br>今年の春は気温が低い日が多かった<u>せいで</u>、桜の開花が遅い。</p>
 </blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
+<p>接続　名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋おかげだ／せいだ</p>
 <p>注意　</p>
 <ol>
-<li>文全体で、一般的に当然と思われることを表す。</li>
-<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
+<li>話者の意向を表す文や働きかけの文は来ない。</li>
 </ol>
-<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
-<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
-</code></pre>
+<h2 id="〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）"><a href="#〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）" class="headerlink" title="〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）"></a>〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）</h2><p>意味　とても〜ので、普通ではない結果になってしまった</p>
+<p>例文　</p>
+<blockquote>
+<p>10年ぶりで兄に会った。兄の<u>あまりの</u>変化<u>に</u>言葉が出なかった。</p>
+</blockquote>
+<p>接続　<br>    名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋あまり<br>    あまりの＋名＋に</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通ではない結果（悪い結果が多い）を表す文が来る。</li>
+<li>話者の希望・意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<h2 id="〜につき"><a href="#〜につき" class="headerlink" title="〜につき"></a>〜につき</h2><p>意味　「〜の理由で、ある状態になる」と公に知らせる。</p>
+<p>例文　</p>
+<blockquote>
+<p>トイレはただ今清掃中<u>につき</u>、ご利用になれません。</p>
+</blockquote>
+<p>接続　名＋につき</p>
+<p>注意　</p>
+<ol>
+<li>現時点での状況を表す言葉につく。</li>
+<li>張り紙や公式文書などに使う。</li>
+</ol>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -843,78 +851,72 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>〜だから（理由）−１</title>
-    <url>/new-blog/2023/06/13/course16/</url>
-    <content><![CDATA[<h1 id="〜だから（理由）−１"><a href="#〜だから（理由）−１" class="headerlink" title="〜だから（理由）−１"></a>〜だから（理由）−１</h1><p>[復習]</p>
-<ul>
-<li>時間がなかった<u>ので</u>、十分な準備ができなかった。</li>
-<li>試験のことが気になっ<u>て</u>、なかなか眠れなかった。</li>
-<li>事故があったために、道路が渋滞した。</li>
-</ul>
-<span id="more"></span>
+    <title>〜だから（理由）-2</title>
+    <url>/new-blog/2023/06/12/course17/</url>
+    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
 
-<h2 id="〜によって"><a href="#〜によって" class="headerlink" title="〜によって"></a>〜によって</h2><p>意味　〜が原因で、ある結果になる・〜という手段や方法であることをする</p>
+<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
 <p>例文　</p>
 <blockquote>
-<p>今朝、中央線は踏切内で起きた事故<u>によって</u>、ダイヤが大きく乱れた<br>仕事をコンピューター化すること<u>により</u>、労働力不足は解決できるのではないか</p>
+<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
 </blockquote>
-<p>接続　<br>    名＋によって<br>    名＋による＋名</p>
-<p>注意　</p>
-<ol>
-<li>手段の意味では、日常的な道具などを個人的に使う場合は使いにくいが、</li>
-</ol>
-<p>練習</p>
-<h2 id="〜ものだから・〜もので・〜もの"><a href="#〜ものだから・〜もので・〜もの" class="headerlink" title="〜ものだから・〜もので・〜もの"></a>〜ものだから・〜もので・〜もの</h2><p>意味　「〜ので…」と言い訳をする</p>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
+<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
+<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
+<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
+</code></pre>
+<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
 <p>例文　</p>
 <blockquote>
-<p>私、近眼な<u>もんで</u>、お顔がよく見えなかったんです。</p>
+<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
 </blockquote>
-<p>接続<br>    普通形（ナ形<del>だ</del> ーな・名<del>だ</del> ーな）＋ものだから・もので<br>    普通形＋もの</p>
+<p>接続　名＋のことだから</p>
 <p>注意　</p>
 <ol>
-<li>個人的な言い訳を言う。</li>
-<li>後には命令や意向を表す文は来ない。</li>
-<li>「ものですから、もので」の後の文も、省略されることがある。「もんだから、もんで、もん」は、さらにくだけた言い方。</li>
+<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
 </ol>
-<p>練習</p>
+<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
+<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
+</code></pre>
+<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
+<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
+<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
+<p>注意　</p>
+<ol>
+<li>「名だ」の形には接続しない。</li>
+<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
+<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
+</code></pre>
+<h2 id="〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）"><a href="#〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）" class="headerlink" title="〜ばかりに（because (of a negative thing); simply because; simply on account of）"></a>〜ばかりに（because (of a negative thing); simply because; simply on account of）</h2><p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
+<p>例文 </p>
 <blockquote>
-<p>The house is small (narrow) <span style="color:green">[so &#x2F; therefore]</span> you cant put big furniture in (it).</p>
+<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
 </blockquote>
-<blockquote>
-<p> I’m sorry I’m late, I got caught in a traffic jam.</p>
-</blockquote>
-<h2 id="〜おかげだ／〜せいだ"><a href="#〜おかげだ／〜せいだ" class="headerlink" title="〜おかげだ／〜せいだ"></a>〜おかげだ／〜せいだ</h2><p>意味　〜の影響で、いい結果／悪い結果になった。</p>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
+<p>注意　</p>
+<ol>
+<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
+<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
+</code></pre>
+<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
 <p>例文</p>
 <blockquote>
-<p>いい天気が続いている<u>おかげで</u>、工事が思ったより早く進んでいます。<br>今年の春は気温が低い日が多かった<u>せいで</u>、桜の開花が遅い。</p>
+<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
 </blockquote>
-<p>接続　名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋おかげだ／せいだ</p>
+<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
 <p>注意　</p>
 <ol>
-<li>話者の意向を表す文や働きかけの文は来ない。</li>
+<li>文全体で、一般的に当然と思われることを表す。</li>
+<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
 </ol>
-<h2 id="〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）"><a href="#〜あまり・あまりの〜に（Due-to-a-condition-x2F-state-being-in-excess-a-result-occurs-）" class="headerlink" title="〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）"></a>〜あまり・あまりの〜に（Due to a condition&#x2F;state being in excess, a result occurs.）</h2><p>意味　とても〜ので、普通ではない結果になってしまった</p>
-<p>例文　</p>
-<blockquote>
-<p>10年ぶりで兄に会った。兄の<u>あまりの</u>変化<u>に</u>言葉が出なかった。</p>
-</blockquote>
-<p>接続　<br>    名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋あまり<br>    あまりの＋名＋に</p>
-<p>注意　</p>
-<ol>
-<li>後には、普通ではない結果（悪い結果が多い）を表す文が来る。</li>
-<li>話者の希望・意向を表す文や働きかけの文は来ない。</li>
-</ol>
-<h2 id="〜につき"><a href="#〜につき" class="headerlink" title="〜につき"></a>〜につき</h2><p>意味　「〜の理由で、ある状態になる」と公に知らせる。</p>
-<p>例文　</p>
-<blockquote>
-<p>トイレはただ今清掃中<u>につき</u>、ご利用になれません。</p>
-</blockquote>
-<p>接続　名＋につき</p>
-<p>注意　</p>
-<ol>
-<li>現時点での状況を表す言葉につく。</li>
-<li>張り紙や公式文書などに使う。</li>
-</ol>
+<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
+<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
+</code></pre>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -1010,282 +1012,6 @@ const greeting = &quot;Hello &quot;;
       <tags>
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だろうと思う</title>
-    <url>/new-blog/2023/06/18/course22/</url>
-    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
-<ul>
-<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
-<li>あしたは雨が降る<u>かもしれない</u>。</li>
-<li>林さんは今日ここに来る<u>はずだ</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
-<p>例文</p>
-<blockquote>
-<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
-</blockquote>
-<p>接続　普通形＋とみえる</p>
-<p>注意　</p>
-<ol>
-<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
-<li>推量した人は文中に表れない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
-<p>例文　</p>
-<blockquote>
-<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋かねない</p>
-<p>注意　</p>
-<ol>
-<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
-<li>「〜おそれがある」よりも原因がはっきりしている。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
-<p>例文　</p>
-<blockquote>
-<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
-</blockquote>
-<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
-<p>注意　</p>
-<ol>
-<li>ニュース、解説などで使う。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
-<p>例文</p>
-<blockquote>
-<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
-</blockquote>
-<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
-<p>注意</p>
-<ol>
-<li>丁寧形・過去形では使わない。</li>
-<li>ふつう、一人称が主語になることはない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
-<p>練習</p>
-<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
-<p>例文　</p>
-<blockquote>
-<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
-<p>注意</p>
-<ol>
-<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
-</ol>
-<p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>express subjectivity</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>強く言う・軽く言う</title>
-    <url>/new-blog/2023/06/17/course21/</url>
-    <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
-<ul>
-<li>今年<u>こそ</u>日記を書き続けよう。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜ぐらい・〜くらい"><a href="#〜ぐらい・〜くらい" class="headerlink" title="〜ぐらい・〜くらい"></a>〜ぐらい・〜くらい</h2><p>意味　〜は程度が軽い・最低限の程度だ。</p>
-<p>例文</p>
-<blockquote>
-<p>うちに帰ってきたら、自分の靴<u>ぐらい</u>ちゃんと並べなさい。</p>
-</blockquote>
-<p>接続　名・動・形普通形（ナ形<del>だ</del>-な）＋ぐらい・くらい</p>
-<p>注意</p>
-<ol>
-<li>話者が程度が軽いと考えている言葉につく。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜など・〜なんか・〜なんて"><a href="#〜など・〜なんか・〜なんて" class="headerlink" title="〜など・〜なんか・〜なんて"></a>〜など・〜なんか・〜なんて</h2><p>意味　〜は価値が低い・大切でははい。</p>
-<p>例文</p>
-<blockquote>
-<p>あの人の言ったこと<u>など</u>気にすることはありません。<br>新聞記者に<u>なんか</u>ならなければよかった。仕事がきつすぎる。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋など・なんか・なんて</p>
-<p>注意</p>
-<ol>
-<li>話者が価値が低いと考えている言葉につく。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜まで・〜までして・〜てまで"><a href="#〜まで・〜までして・〜てまで" class="headerlink" title="〜まで・〜までして・〜てまで"></a>〜まで・〜までして・〜てまで</h2><p>意味　〜という極端な程度のもの・ことも、ある状態・あることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>一番に賛成してくれると思っていた母<u>まで</u>私の結婚に反対した。<br>遊園地では、みんな長い時間並ん<u>でまで</u>ジェットコースターに乗りたがる。</p>
-</blockquote>
-<p>接続<br>    名（＋助詞）＋まで・までして<br>    動て形＋まで</p>
-<p>注意</p>
-<ol>
-<li>極端で意外性のある例を示す言葉につく。</li>
-<li>「〜までして・〜てまで」は話者が驚いたり呆れたりするような手段・事態を示し</li>
-</ol>
-<p>練習</p>
-<h2 id="〜として〜ない"><a href="#〜として〜ない" class="headerlink" title="〜として〜ない"></a>〜として〜ない</h2><p>意味　あることを「最低限度の〜も全くない」と否定する。</p>
-<p>例文</p>
-<blockquote>
-<p>人生に無駄なものは何一つ<u>としてない</u>。失敗も必ず何かの役に立つはずだ。<br>彼の提案にだれ一人<u>として</u>反対でき<u>なかった</u>。</p>
-</blockquote>
-<p>接続 （何・だれ＋）一＋助数詞＋として〜ない</p>
-<p>注意</p>
-<ol>
-<li>最低の単位「一＋助数詞」につく。後には、否定文が来る。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜さえ"><a href="#〜さえ" class="headerlink" title="〜さえ"></a>〜さえ</h2><p>意味　〜のような極端例もそうだから、ほかのことはもちろんだ。</p>
-<p>例文</p>
-<blockquote>
-<p>日本に来たばかりのときは、ひらがな<u>さえ</u>読めなかった。<br>この料理は簡単だ。料理の苦手なわたしで<u>さえ</u>失敗しなかった。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋さえ</p>
-<p>注意</p>
-<ol>
-<li>後には、話者の意向を表す文や働きかけの文は来ない。</li>
-</ol>
-<p>練習</p>
-<p>意味　〜という一つの条件が満たされれば、ほかのことは問題にならない。</p>
-<p>例文</p>
-<blockquote>
-<p>雨<u>さえ</u>降らなければ、ハイキングに出かけられますね。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋さえ</p>
-<p>注意</p>
-<ol>
-<li>「〜さえ〜ば・〜さえ〜なら・〜さえ〜たら」という形で必要最低限の条件を示す。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜てでも"><a href="#〜てでも" class="headerlink" title="〜てでも"></a>〜てでも</h2><p>意味　普通はしないような〜という手段を使う覚悟で、あることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>熱があるが、大切な約束があるので、どんなことをし<u>てでも</u>行かなければならない。</p>
-</blockquote>
-<p>接続　動て形＋でも</p>
-<p>注意</p>
-<ol>
-<li>極端な手段を表す動詞につく。後には、話者の希望・意向をを表す文が来る。</li>
-</ol>
-<p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>感想を言う・主張する</title>
-    <url>/new-blog/2023/06/18/course23/</url>
-    <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
-<ul>
-<li>これはいい作品だ<u>と思います</u></li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜ものだ"><a href="#〜ものだ" class="headerlink" title="〜ものだ"></a>〜ものだ</h2><p>意味　一般的に見て、本来〜だ・〜というのは真理だ。</p>
-<p>例文　</p>
-<blockquote>
-<p>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</p>
-</blockquote>
-<p>接続　動辞書形／ない形・イ形い・ナ形な＋ものだ</p>
-<p>注意　</p>
-<ol>
-<li>過去形では使わない。</li>
-</ol>
-<h2 id="〜というものだ"><a href="#〜というものだ" class="headerlink" title="〜というものだ"></a>〜というものだ</h2><p>意味　常識的に見て、まさに〜だ。</p>
-<p>例文</p>
-<blockquote>
-<p>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。<br>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というものだ</p>
-<p>注意</p>
-<ol>
-<li>ある状況について、「常識的に考えて〜だ」という評価を示す。</li>
-</ol>
-<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>説明　nothing more than</p>
-<p>意味　ただ〜だけて、それ以上ではない。</p>
-<p>例文</p>
-<blockquote>
-<p>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にすぎない</p>
-<p>注意</p>
-<ol>
-<li>話者が特別ではない・重要ではない・少ないと思っていることにつく。</li>
-</ol>
-<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>説明　nothing but; merely; none other than</p>
-<p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>将来この国を支えるのは、若い君たち<u>にほかなりません</u></p>
-</blockquote>
-<p>接続 名＋にほかならない</p>
-<p>注意</p>
-<ol>
-<li>話者の断定的な判断を表す言い方。</li>
-</ol>
-<h2 id="〜に越したことはない"><a href="#〜に越したことはない" class="headerlink" title="〜に越したことはない"></a>〜に越したことはない</h2><p>説明　it’s best to; it’s safest to; there’s nothing better than</p>
-<p>意味　当然のことだが〜ほうがいい。</p>
-<p>例文</p>
-<blockquote>
-<p>旅行の荷物は軽い<u>に越したことはない</u></p>
-</blockquote>
-<p>接続　普通形現在（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋に越したことはない</p>
-<p>注意　</p>
-<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>説明　</p>
-<ol>
-<li>having no choice but to …; all one can do is …; there’s nothing to do except …</li>
-<li>having nothing but …; there is only …; having only …; having no more than …​</li>
-</ol>
-<p>意味　〜以外に選択肢・可能性・方法がない</p>
-<p>例文</p>
-<blockquote>
-<p>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u><br>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></p>
-</blockquote>
-<p>接続　動辞書形＋しかない・よりほかない</p>
-<p>注意</p>
-<ol>
-<li>「ほかに選択の余地がないので、仕方なくこの選択肢を選ぶ」という話者の気持ちを表す。</li>
-</ol>
-<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>説明　should (not); must (not)</p>
-<p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
-<p>例文</p>
-<blockquote>
-<p>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</p>
-</blockquote>
-<p>接続　<br>動辞書形＋べきだ・べきではない　<span style="color:red">する→するべき・すべき</span><br>動辞書形＋べき・べきではない＋名</p>
-<p>注意</p>
-<ol>
-<li>話者の主張を述べる。</li>
-<li>規則で決まっていることには使わない。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>express subjectivity</tag>
       </tags>
   </entry>
   <entry>
@@ -1390,6 +1116,282 @@ const greeting = &quot;Hello &quot;;
       <tags>
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>強く言う・軽く言う</title>
+    <url>/new-blog/2023/06/17/course21/</url>
+    <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
+<ul>
+<li>今年<u>こそ</u>日記を書き続けよう。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜ぐらい・〜くらい"><a href="#〜ぐらい・〜くらい" class="headerlink" title="〜ぐらい・〜くらい"></a>〜ぐらい・〜くらい</h2><p>意味　〜は程度が軽い・最低限の程度だ。</p>
+<p>例文</p>
+<blockquote>
+<p>うちに帰ってきたら、自分の靴<u>ぐらい</u>ちゃんと並べなさい。</p>
+</blockquote>
+<p>接続　名・動・形普通形（ナ形<del>だ</del>-な）＋ぐらい・くらい</p>
+<p>注意</p>
+<ol>
+<li>話者が程度が軽いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜など・〜なんか・〜なんて"><a href="#〜など・〜なんか・〜なんて" class="headerlink" title="〜など・〜なんか・〜なんて"></a>〜など・〜なんか・〜なんて</h2><p>意味　〜は価値が低い・大切でははい。</p>
+<p>例文</p>
+<blockquote>
+<p>あの人の言ったこと<u>など</u>気にすることはありません。<br>新聞記者に<u>なんか</u>ならなければよかった。仕事がきつすぎる。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋など・なんか・なんて</p>
+<p>注意</p>
+<ol>
+<li>話者が価値が低いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まで・〜までして・〜てまで"><a href="#〜まで・〜までして・〜てまで" class="headerlink" title="〜まで・〜までして・〜てまで"></a>〜まで・〜までして・〜てまで</h2><p>意味　〜という極端な程度のもの・ことも、ある状態・あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>一番に賛成してくれると思っていた母<u>まで</u>私の結婚に反対した。<br>遊園地では、みんな長い時間並ん<u>でまで</u>ジェットコースターに乗りたがる。</p>
+</blockquote>
+<p>接続<br>    名（＋助詞）＋まで・までして<br>    動て形＋まで</p>
+<p>注意</p>
+<ol>
+<li>極端で意外性のある例を示す言葉につく。</li>
+<li>「〜までして・〜てまで」は話者が驚いたり呆れたりするような手段・事態を示し</li>
+</ol>
+<p>練習</p>
+<h2 id="〜として〜ない"><a href="#〜として〜ない" class="headerlink" title="〜として〜ない"></a>〜として〜ない</h2><p>意味　あることを「最低限度の〜も全くない」と否定する。</p>
+<p>例文</p>
+<blockquote>
+<p>人生に無駄なものは何一つ<u>としてない</u>。失敗も必ず何かの役に立つはずだ。<br>彼の提案にだれ一人<u>として</u>反対でき<u>なかった</u>。</p>
+</blockquote>
+<p>接続 （何・だれ＋）一＋助数詞＋として〜ない</p>
+<p>注意</p>
+<ol>
+<li>最低の単位「一＋助数詞」につく。後には、否定文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜さえ"><a href="#〜さえ" class="headerlink" title="〜さえ"></a>〜さえ</h2><p>意味　〜のような極端例もそうだから、ほかのことはもちろんだ。</p>
+<p>例文</p>
+<blockquote>
+<p>日本に来たばかりのときは、ひらがな<u>さえ</u>読めなかった。<br>この料理は簡単だ。料理の苦手なわたしで<u>さえ</u>失敗しなかった。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>後には、話者の意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<p>練習</p>
+<p>意味　〜という一つの条件が満たされれば、ほかのことは問題にならない。</p>
+<p>例文</p>
+<blockquote>
+<p>雨<u>さえ</u>降らなければ、ハイキングに出かけられますね。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>「〜さえ〜ば・〜さえ〜なら・〜さえ〜たら」という形で必要最低限の条件を示す。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜てでも"><a href="#〜てでも" class="headerlink" title="〜てでも"></a>〜てでも</h2><p>意味　普通はしないような〜という手段を使う覚悟で、あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>熱があるが、大切な約束があるので、どんなことをし<u>てでも</u>行かなければならない。</p>
+</blockquote>
+<p>接続　動て形＋でも</p>
+<p>注意</p>
+<ol>
+<li>極端な手段を表す動詞につく。後には、話者の希望・意向をを表す文が来る。</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜だろうと思う</title>
+    <url>/new-blog/2023/06/18/course22/</url>
+    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
+<ul>
+<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
+<li>あしたは雨が降る<u>かもしれない</u>。</li>
+<li>林さんは今日ここに来る<u>はずだ</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
+<p>例文</p>
+<blockquote>
+<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
+</blockquote>
+<p>接続　普通形＋とみえる</p>
+<p>注意　</p>
+<ol>
+<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
+<li>推量した人は文中に表れない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
+<p>例文　</p>
+<blockquote>
+<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋かねない</p>
+<p>注意　</p>
+<ol>
+<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
+<li>「〜おそれがある」よりも原因がはっきりしている。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
+<p>例文　</p>
+<blockquote>
+<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
+</blockquote>
+<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
+<p>注意　</p>
+<ol>
+<li>ニュース、解説などで使う。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
+<p>例文</p>
+<blockquote>
+<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
+</blockquote>
+<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
+<p>注意</p>
+<ol>
+<li>丁寧形・過去形では使わない。</li>
+<li>ふつう、一人称が主語になることはない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
+<p>練習</p>
+<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
+<p>例文　</p>
+<blockquote>
+<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
+<p>注意</p>
+<ol>
+<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>感想を言う・主張する</title>
+    <url>/new-blog/2023/06/18/course23/</url>
+    <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
+<ul>
+<li>これはいい作品だ<u>と思います</u></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜ものだ"><a href="#〜ものだ" class="headerlink" title="〜ものだ"></a>〜ものだ</h2><p>意味　一般的に見て、本来〜だ・〜というのは真理だ。</p>
+<p>例文　</p>
+<blockquote>
+<p>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</p>
+</blockquote>
+<p>接続　動辞書形／ない形・イ形い・ナ形な＋ものだ</p>
+<p>注意　</p>
+<ol>
+<li>過去形では使わない。</li>
+</ol>
+<h2 id="〜というものだ"><a href="#〜というものだ" class="headerlink" title="〜というものだ"></a>〜というものだ</h2><p>意味　常識的に見て、まさに〜だ。</p>
+<p>例文</p>
+<blockquote>
+<p>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。<br>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というものだ</p>
+<p>注意</p>
+<ol>
+<li>ある状況について、「常識的に考えて〜だ」という評価を示す。</li>
+</ol>
+<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>説明　nothing more than</p>
+<p>意味　ただ〜だけて、それ以上ではない。</p>
+<p>例文</p>
+<blockquote>
+<p>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にすぎない</p>
+<p>注意</p>
+<ol>
+<li>話者が特別ではない・重要ではない・少ないと思っていることにつく。</li>
+</ol>
+<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>説明　nothing but; merely; none other than</p>
+<p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>将来この国を支えるのは、若い君たち<u>にほかなりません</u></p>
+</blockquote>
+<p>接続 名＋にほかならない</p>
+<p>注意</p>
+<ol>
+<li>話者の断定的な判断を表す言い方。</li>
+</ol>
+<h2 id="〜に越したことはない"><a href="#〜に越したことはない" class="headerlink" title="〜に越したことはない"></a>〜に越したことはない</h2><p>説明　it’s best to; it’s safest to; there’s nothing better than</p>
+<p>意味　当然のことだが〜ほうがいい。</p>
+<p>例文</p>
+<blockquote>
+<p>旅行の荷物は軽い<u>に越したことはない</u></p>
+</blockquote>
+<p>接続　普通形現在（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋に越したことはない</p>
+<p>注意　</p>
+<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>説明　</p>
+<ol>
+<li>having no choice but to …; all one can do is …; there’s nothing to do except …</li>
+<li>having nothing but …; there is only …; having only …; having no more than …​</li>
+</ol>
+<p>意味　〜以外に選択肢・可能性・方法がない</p>
+<p>例文</p>
+<blockquote>
+<p>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u><br>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></p>
+</blockquote>
+<p>接続　動辞書形＋しかない・よりほかない</p>
+<p>注意</p>
+<ol>
+<li>「ほかに選択の余地がないので、仕方なくこの選択肢を選ぶ」という話者の気持ちを表す。</li>
+</ol>
+<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>説明　should (not); must (not)</p>
+<p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
+<p>例文</p>
+<blockquote>
+<p>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</p>
+</blockquote>
+<p>接続　<br>動辞書形＋べきだ・べきではない　<span style="color:red">する→するべき・すべき</span><br>動辞書形＋べき・べきではない＋名</p>
+<p>注意</p>
+<ol>
+<li>話者の主張を述べる。</li>
+<li>規則で決まっていることには使わない。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>express subjectivity</tag>
       </tags>
   </entry>
 </search>
