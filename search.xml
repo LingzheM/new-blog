@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>夜のニュース</title>
+    <url>/new-blog/2023/06/20/230620/</url>
+    <content><![CDATA[<p>第 11 管区 海上 保安 本部 に より ます と 今日 午前 11 時 50 分 頃 沖縄 県 糸満 市 の 沖合い およそ 12 キロ の 位置 に ある 旅館 小 付近 で ダイビング 中 に 7 人 が 行方 不明 に なっ た と ダイビング 船 の インストラクター から 通報 が あり まし た 。<br>7 人 の うち 2 人 は インストラクター 5 人 は 客 で 行方 不明 と なっ た 場所 から 数 キロメートル 離れ た 会場 で 発見 さ れ 午後 3 時 過ぎ まで に 全員 無事 救助 さ れ まし た 。<br>7 人 は 潜っ て 潮 に 流さ れ ながら 海中 を 移動 する<br>ドリフトダイビング と 呼ば れる ダイビング を し て い た という こと で 海上保安庁 が 当時 の 状況 を 詳しく 調べ て い ます 。<br>こんばんは 無事 救助 さ れ た という こと です 。<br>けれども 夏 に 向け て 海 の レジャー など 川 の レジャー 増える と 思い ます ので お気 を 付け いただき たい です ね そうですね 。<br>できる こと 気 を つけ て いき たい もの です ね 。</p>
+<p>では まずは こちら の ニュース です</p>
+<p>Apple や Google の よう な 会社 に なっ て みせる と 豪語 し ネズミ 講 で およそ 2 億 8000 万 円 を 集め た として 起訴 さ れ た 男 は 初 公判 で 起訴 内容 を 否認 し まし た 。<br>峯岸 さん ネズミ 講 し て た ん です か<br>去年 11 月 捜査 員 に 連行 さ れる 際 に 頑張っ て くる と 話し た 。<br>健康 食品 販売 会社 社長 峯岸 正治 被告<br>みんな の たま ご クラブ と 称し ネズミ 講 を 運営 し た 罪 に 問わ れ て い ます 。<br>安心 し て 待っ て て ください 大 化け し ます よ 。<br>Google や そういう ね Apple と 同じ よう な 会社 に なっ て みせ ます ので 今 耐える 時 です から<br>逮捕 前 JNN の 取材 に こう 答え て い た 峯岸 被告<br>みんな の 卵 クラブ の からくり は 会員 が 栄養 価 が 高い と 歌う 卵 90 個 13 , 900 円 で 毎月 購入 し 新規 会員 を 紹介 すれ ば 最低 で も 2 万 5000 円 の 配当 を 得 られる という もの です 。<br>典型 的 な ネズミ 講 と 見 られ ます が 峯岸 国 は これ を 高齢 者 の 年金 システム とも 主張 し て い まし た 。<br>ほら これ が 事実 な ん です よ<br>毎月 欲しい おじいちゃん お ばあちゃん たち は じゃあ 誰 が どう する の 政治 家 が 何 か し てる か 父親 が 何 か し てる か 。<br>この よう な 手口 で 去年 5 月 まで に 会員 1 万 人 余り から およそ 2 億 8000 万 円 を 集め た と さ れる 峯岸 被告 。<br>今日 の 初 公判 で 裁判 長 から ネズミ 講 を 運営 しよ う と し た こと は と 問わ れる と<br>あり ませ ん 基礎 内容 を 否認 し まし た<br>また 資金 が 毎月 集める の か と 問わ れる と 毎月 で は ない 買い たい 時 に 買え ば いい 被害 者 が 出 ない 運営 の 仕方 を し て いる ので<br>また 弁護士 は ネズミ 講 など で は なく 卵 の 販売 組織 だ と 主張 し 争う 方針 を 示し まし た 。</p>
+<p>昨日 正午 頃 八雲 町 野田 追い の 国道 5 号線 で 都市 間 高速 バス と 養豚 会社 の 運搬 用 の トラック が 正面 衝突 し バス の 乗客 3 人 と それぞれ の 運転 手 の 合わせ て 5 人 が 死亡 し バス の 乗客 12 人 が 怪我 を し た 事故<br>トラック は 当時 豚 30 頭 を 積み 農場 から 食肉 加工 場 へ 向かう 途中 で 近く を 走行 し て い た 車 の ドライブ レコーダー から トラック が 対向 車線 に はみ出し た の が 事故 の 原因 と み られ て い ます 。<br>この たび 大変 ご 迷惑 を おかけ し まし て 本当に 申し訳 ござい ませ ん 。<br>直近 の 3 ヶ月 の 状況 を 荷重 労働 に あたる よう な 労働 時間 に は なっ て い なかっ た と 。<br>事故 で は バス の 対向 車線 側 が 衝突 で 大きく 壊れ まし た が バス の 運行 会社 に より ます と 亡くなっ た 乗客 3 人 は 運転 席 の すぐ 後ろ の 窓側 に 座っ て い た という こと です 。<br>普通 に 元気 に 出勤 し て くる ん じゃ ない か という 風 に ちょっと まさか し て しまう ぐらい 高級 な 出来事 でし た ね<br>仕事 の 面 で は 本当に きっちり 発言 も し て くれる そういう 頼り に し てる 職員 でし た 。<br>警察 は 午後 から 現場 の 国道 で 事故 の 痕跡 など を 確認 し 引き続き 当時 の 状況 を 調べ て い ます</p>
+<p>重要 法案 を ほぼ 成立 さ せ 今 の 国会 を 乗り切っ た 形 の 岸田 総理 です が ここ に き て 内閣 支持 率 が 下落 する など また 新た な 困難 に 直面 し て い ます 。<br>まさか こんな こと は 起こら ない と 思っ て い た こうした いくつ も の まさか を 実感 せ ざる を 得 ませ ん 。<br>昨日 母校 早稲田大学 で 後輩 ら を 前 に これ まで の 歩み を 振り返っ た 岸田 総理 。<br>今回 も まさかの 事態 な の でしょ う か この 週末 に 行わ れ た 報道 各社 の 世論 調査 で いずれ も 岸田 内閣 の 支持 率 が 下落 し た の です 。<br>一気に 10 ポイント 以上 下がっ た 調査 も あり まし た 。<br>町 で は 他 に あの とっ て 変われ ば いい な という 政権 が 特に ない ので 。<br>外交 ばっかり もう ちょっと 日本 に 目 を 向け て くれ ない か な って いう 。<br>あんまり 素敵 な 噂 も 聞か ない じゃ ない です か ご 家族 の 写真 撮っ ちゃっ たり する よう な やつ と か 。<br>中でも 反発 が 強かっ た の が<br>マイ ナンバー とか あん だけ ね<br>不具合 が 出 てる のに<br>情報 が 漏れ たり とかいう お話 も たま に 聞か れる ので ご 清聴 を 発信 し て もらい たく ない し<br>マイ ナンバー でしょ う ね<br>地元 で も 高齢 者 の 問い合わせ が すごい<br>マイナンバーカード を めぐり 相次ぐ トラブル が 不満 に つながっ て いる よう です<br>来年 秋 に 予定 さ れ て いる 紙 の 保険 証 の 廃止 を 延期 する よう 求める 声 も あり ます が<br>政府 の 方針 通り に 進める こと は 河野 大臣 から 発言 が あっ た 通り で あり ます<br>関係 者 に より ます と 岸田 総理 は この 週末 まで 高揚 感 に 満ち た 様子 だっ た と いい ます<br>解散 カード を 切る 素振り を 見せ た 結果 国会 運営 や 選挙 区 調整 が スムーズ に 進ん だ こと<br>に 自信 を 深め て い た という こと です<br>今回 は 勉強 に なっ た<br>最大 の 収穫 は 解散 権 を 取っ て おく こと が でき た こと だ<br>その後 明らか に なっ た 支持 率 の 下落<br>総理 は 新た な 困難 に 直面 し て い ます</p>
+<p>北朝鮮 が 重要 政策 を 決定 する 朝鮮 労働党 の 中央 委員 会 拡大 総会 で 軍事 偵察 衛生 の 打ち上げ を 早期 に 再び 実施 する 方針 が 示さ れ まし た<br>金 正 恩 総 書記 が 出席 し た 朝鮮 労働党 の 中央 委員 会 拡大 総会<br>議題 に 上がっ た の は 宇宙 開発 で 先月 製 の 軍事 偵察 衛星 の 打ち上げ 失敗 は 最も 重大 な 欠陥 だっ た と し まし た<br>報告 で は 衛星 打ち上げ 準備 を 責任 を 負っ て 推進 し た 幹部 ら の 無責任 者 が 辛辣 に 批判 さ れ た<br>そして 失敗 の 原因 を 徹底的 に 分析 し た 上 で 早期 に 再び 打ち上げる 方針 を 示し まし た<br>一方 で 北朝鮮 メディア は キム 総 書記 が 演説 を 行っ た と は 伝え て おら ず 韓国 統一 省 は 非常 に 異例 だ と 指摘 し て い ます<br>成果 が なく 演説 する こと は 難しかっ た と 推定 し て いる<br>総会 で は 北朝鮮 は 強力 な 核兵器 の 増産 実績 を 継続 し て 生み出す とも 強調<br>核 を 増産 し て いく 姿勢 を 鮮明 に し て い ます</p>
+<p>チャット GPT は 教育 現場 でも 使える の か<br>現場 で の 取材 から AI に 何 が でき て 何 が でき ない の か が 見え て き まし た<br>高校 1 年生 レベル の 問題 を 作っ て ください<br>という 風 に 入力 を する と こんな 形 で です ね<br>もう 今 リアルタイム で 問題 を 作っ て もらっ て いる の が<br>静岡 県 に ある 御殿場 西 高校 生成 AI チャット GPT の 活用 について 教育 ベンチャー 企業 を 招い た 研修 が 行わ れ まし た<br>我々 教員 って じゃあ 何 の ため に いる の か<br>改めて 考え直さ ない と おそらく<br>我々 は 本当に AI に 仕事 取っ て 代わら れ ちゃう ん じゃ ない<br>本当に AI が 先生 の 代わり を 務める こと が できる の でしょ う か<br>研修 を 受け た 先生 が 部活 の 資料 を 作ら せ て みる と<br>自分 まだ 教員 2 年 目 な の も あっ て 事務 作業 を 全然 あの 効率 よく まだ でき ない ので<br>ちゃんと GPT が こう やっ て 丁寧 に 作っ て くれる ので そこ は すごく 捗っ てる な っていう<br>精製 AI は 学習 し た 膨大 な データ から 質問 に対して 最も 正解 に 近い 内容 を 答える もの です<br>これ まで 先生 たち が ゼロ から 始め て い た 仕事 を 7 割 くらい まで 手伝っ て くれる 優秀 な アシスタント に は なり そう だ と 言い ます<br>一方 で 精製 AI が 苦手 な こと も 分かっ て き まし た<br>AI に 作ら せ た 数学 の 問題 回答 まで 考え させ て みる と<br>そんな きれい に なら ない 気 が する ん です けど<br>先生 が 計算 する と やはり 答え は 間違っ て い まし た<br>授業 で 生徒 に も AI を 使っ て み て もらい ます<br>あと チャット GPT に 力 を 借り て 図形 で の 証明 を ちょっと 完成 さ せ て もらお う か な と<br>数学 の 証明 方法 を 見つけ て もらお う と し まし た が<br>聞い た 数式 は これ 証明 が でき て も 正面 に なら なく ない みたい な<br>思っ た 通り の 回答 が 返っ て き ませ ん<br>生成 AI は あくまで データ の 中 から 正解 に 近い 内容 を 寄せ 集め て 文章 を 作っ て いる だけ<br>自分 で 数式 を 解い て いる わけ で は ない ので 100 点 満点 の 正解 を 求め られる 数学 は 今 の ところ 苦手 な よう です<br>授業 の 本質 的 な ところ に 時間 を かけ れ ない って の が 今 まで の 教育 で あっ た と 思う ん です けど<br>そこ を AI に 任せ て 人間 が 考える べき 場所 に フル に 使える よう な 形 で<br>教育 現場 で 使っ て み て 見え て き た AI の 得意 不得意<br>AI が 教育 を 変える の か 模索 は 続い て いく と 言い ます<br>AI が どん だけ 発展 し て も 人 が 一番 中心 に 僕 は ずっと いる と 思う ん です よ<br>自分 の 学校 だ と この 部分 だけ 使え そう だ よ ね って<br>怖がら ず に 使っ て 自分 たち の 自分 たち ルール を 決め て いっ て もらえ たら<br>続い て 新型 コロナ ウイルス について です<br>政府 は 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある として 高齢 者 など に 改めて ワクチン 接種 の 検討 を 呼びかけ まし た<br>全国 の 定点 医療 機関 から 報告 さ れる 1 週間 ごと の 患者 数 で 見る と 緩やか な 増加 傾向 に ある と 認識 し て い ます<br>松野 官房 長官 は 過去 の 状況 を 踏まえる と 今後 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある と 述べ まし た<br>その 上 で 高齢 者 や 基礎 疾患 の ある 人 など は 重症 化 を 防ぐ ため ワクチン の 接種 を 検討 する よう<br>改めて 呼びかけ まし た<br>また 急激 な 感染 拡大 で 医療 の 逼迫 が 見込ま れる 場合 は 国民 へ の 感染 対策 の 呼びかけ の 強化 など を 行う と 述べ まし た</p>
+<p>日本 マクドナルド は 東京 名古屋 大阪 エリア の 都心 部 の 184 店舗 で 一部 商品 を 値上げ する と 発表 し まし た<br>値上げ は 来月 19 日 から で ビッグ マック は 通常 450 円 です が 都心 店 で は 500 円 に 準 都心 店 で は 470 円 に し ます<br>ポテト の M サイズ は 通常 330 円 の ところ 都心 店 で は 370 円 に 準 都心 店 で は 340 円 に 引き上げ ます 一方 ハンバーガー や ポテト の S サイズ など は 価格 を 据え置く と し て い ます</p>
+]]></content>
+      <categories>
+        <category>News</category>
+      </categories>
+      <tags>
+        <tag>News</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>朝のニュース(230619)</title>
     <url>/new-blog/2023/06/19/230619/</url>
     <content><![CDATA[<span id="more"></span>
@@ -68,117 +125,23 @@
       </tags>
   </entry>
   <entry>
-    <title>BootTheSystem</title>
-    <url>/new-blog/2023/06/17/BootTheSystem/</url>
-    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
-<span id="more"></span>
-
-<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
-<ol>
-<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
-<li>The boot loader runs and determines what Linux kernel program to load.</li>
-<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
-<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
-</ol>
-<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
-<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
-<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
-<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
-<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
-<ul>
-<li>An internal hard drive</li>
-<li>An external hard drive</li>
-<li>A CD&#x2F;DVD drive</li>
-<li>A USB flash drive</li>
-<li>A network server</li>
-</ul>
-<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
-<blockquote>
-<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
-</blockquote>
-<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
-<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
-<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
-<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
-<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
-<p>The GRUB Legacy configuration file consists of two sections:</p>
-<ul>
-<li>Global definitions</li>
-<li>Operating system boot definitions</li>
-</ul>
-<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
-<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
-<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
-<ul>
-<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
-<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
-</ul>
-<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
-[…]
-set root=(hd1,1)
-linux16 /vmlinuz[…]
-initrd /initramfs[…]
-&#125;
-menuentry &quot;Windows&quot; &#123;
-set root=(hd0,1)
-[…]
-&#125;
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/2023/06/13/JavaScriptPageOne/</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
 </code></pre>
-<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
-<p>For GRUB2, the commands to remember are as follows:</p>
-<ul>
-<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
-<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
-<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-</ul>
-<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
-<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
       <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -363,23 +326,72 @@ rmmod btusb
       </tags>
   </entry>
   <entry>
-    <title>JavaScriptPageOne</title>
-    <url>/new-blog/2023/06/13/JavaScriptPageOne/</url>
-    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
-<pre><code>let caught = 5 * 5;
-</code></pre>
-<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
-<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
-<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
-<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
-<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
-<pre><code>var name = &quot;Ayda&quot;;
-const greeting = &quot;Hello &quot;;
-</code></pre>
-<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
-<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+    <title>強く否定する・強く否定しない</title>
+    <url>/new-blog/2023/06/17/course12/</url>
+    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
+<ul>
+<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
+<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
+<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
+<p>例文</p>
+<blockquote>
+<p>日本旅行中に富士山を登るわけがないよ。登山は私の得意なことではないし、時間的にも難しいかもしれないから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
+<p>注意　</p>
+<ol>
+<li>話者が絶対そうではないと確信しているときの言い方。</li>
+</ol>
+<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
+<p>例文</p>
+<blockquote>
+<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
+<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。</p>
+<h3 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h3><p>意味　絶対〜ない(話し言葉)</p>
+<p>例文</p>
+<blockquote>
+<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
+<p>注意　</p>
+<ol>
+<li>少し感情的に強く否定する文。</li>
+</ol>
+<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
+<p>例文</p>
+<blockquote>
+<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
+<p>注意　</p>
+<ol>
+<li>部分的否定する場合は、</li>
+</ol>
+<h2 id="〜というものではない・-〜というものでもない"><a href="#〜というものではない・-〜というものでもない" class="headerlink" title="〜というものではない・　〜というものでもない"></a>〜というものではない・　〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
+<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
+<p>例文</p>
+<blockquote>
+<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。</p>
+</blockquote>
+<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
+<p>注意　</p>
+<ol>
+<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
+<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
       </tags>
   </entry>
   <entry>
@@ -446,75 +458,6 @@ const greeting = &quot;Hello &quot;;
 <p>注意</p>
 <ol>
 <li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>強く否定する・強く否定しない</title>
-    <url>/new-blog/2023/06/17/course12/</url>
-    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
-<ul>
-<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
-<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
-<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
-<p>例文</p>
-<blockquote>
-<p>日本旅行中に富士山を登るわけがないよ。登山は私の得意なことではないし、時間的にも難しいかもしれないから。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
-<p>注意　</p>
-<ol>
-<li>話者が絶対そうではないと確信しているときの言い方。</li>
-</ol>
-<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
-<p>例文</p>
-<blockquote>
-<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
-<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。</p>
-<h3 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h3><p>意味　絶対〜ない(話し言葉)</p>
-<p>例文</p>
-<blockquote>
-<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
-<p>注意　</p>
-<ol>
-<li>少し感情的に強く否定する文。</li>
-</ol>
-<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
-<p>例文</p>
-<blockquote>
-<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
-<p>注意　</p>
-<ol>
-<li>部分的否定する場合は、</li>
-</ol>
-<h2 id="〜というものではない・-〜というものでもない"><a href="#〜というものではない・-〜というものでもない" class="headerlink" title="〜というものではない・　〜というものでもない"></a>〜というものではない・　〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
-<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
-<p>例文</p>
-<blockquote>
-<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。</p>
-</blockquote>
-<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
-<p>注意　</p>
-<ol>
-<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
-<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
 </ol>
 ]]></content>
       <categories>
@@ -765,6 +708,82 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>〜だから（理由）-2</title>
+    <url>/new-blog/2023/06/12/course17/</url>
+    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
+
+<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
+<p>例文　</p>
+<blockquote>
+<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
+<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
+<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
+<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
+</code></pre>
+<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
+<p>例文　</p>
+<blockquote>
+<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
+</blockquote>
+<p>接続　名＋のことだから</p>
+<p>注意　</p>
+<ol>
+<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
+</ol>
+<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
+<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
+</code></pre>
+<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
+<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
+<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
+<p>注意　</p>
+<ol>
+<li>「名だ」の形には接続しない。</li>
+<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
+<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
+</code></pre>
+<h2 id="〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）"><a href="#〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）" class="headerlink" title="〜ばかりに（because (of a negative thing); simply because; simply on account of）"></a>〜ばかりに（because (of a negative thing); simply because; simply on account of）</h2><p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
+<p>例文 </p>
+<blockquote>
+<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
+<p>注意　</p>
+<ol>
+<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
+<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
+</code></pre>
+<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
+<p>例文</p>
+<blockquote>
+<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
+<p>注意　</p>
+<ol>
+<li>文全体で、一般的に当然と思われることを表す。</li>
+<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
+</ol>
+<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
+<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
+</code></pre>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜できない・困難だ・〜できる</title>
     <url>/new-blog/2023/06/13/course18/</url>
     <content><![CDATA[<h1 id="〜できない・困難だ・〜できる"><a href="#〜できない・困難だ・〜できる" class="headerlink" title="〜できない・困難だ・〜できる"></a>〜できない・困難だ・〜できる</h1><p>[復習]</p>
@@ -841,82 +860,6 @@ const greeting = &quot;Hello &quot;;
 <p>接続　動<del>ます</del>＋得る・得ない</p>
 <p>注意</p>
 <p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だから（理由）-2</title>
-    <url>/new-blog/2023/06/12/course17/</url>
-    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
-
-<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
-<p>例文　</p>
-<blockquote>
-<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
-<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
-<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
-<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
-</code></pre>
-<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
-<p>例文　</p>
-<blockquote>
-<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
-</blockquote>
-<p>接続　名＋のことだから</p>
-<p>注意　</p>
-<ol>
-<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
-</ol>
-<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
-<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
-</code></pre>
-<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
-<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
-<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
-<p>注意　</p>
-<ol>
-<li>「名だ」の形には接続しない。</li>
-<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
-<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
-</code></pre>
-<h2 id="〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）"><a href="#〜ばかりに（because-of-a-negative-thing-simply-because-simply-on-account-of）" class="headerlink" title="〜ばかりに（because (of a negative thing); simply because; simply on account of）"></a>〜ばかりに（because (of a negative thing); simply because; simply on account of）</h2><p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
-<p>例文 </p>
-<blockquote>
-<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
-<p>注意　</p>
-<ol>
-<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
-<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
-</code></pre>
-<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
-<p>例文</p>
-<blockquote>
-<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
-<p>注意　</p>
-<ol>
-<li>文全体で、一般的に当然と思われることを表す。</li>
-<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
-</ol>
-<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
-<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
-</code></pre>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -1119,6 +1062,91 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>〜だろうと思う</title>
+    <url>/new-blog/2023/06/18/course22/</url>
+    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
+<ul>
+<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
+<li>あしたは雨が降る<u>かもしれない</u>。</li>
+<li>林さんは今日ここに来る<u>はずだ</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
+<p>例文</p>
+<blockquote>
+<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
+</blockquote>
+<p>接続　普通形＋とみえる</p>
+<p>注意　</p>
+<ol>
+<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
+<li>推量した人は文中に表れない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
+<p>例文　</p>
+<blockquote>
+<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋かねない</p>
+<p>注意　</p>
+<ol>
+<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
+<li>「〜おそれがある」よりも原因がはっきりしている。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
+<p>例文　</p>
+<blockquote>
+<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
+</blockquote>
+<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
+<p>注意　</p>
+<ol>
+<li>ニュース、解説などで使う。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
+<p>例文</p>
+<blockquote>
+<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
+</blockquote>
+<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
+<p>注意</p>
+<ol>
+<li>丁寧形・過去形では使わない。</li>
+<li>ふつう、一人称が主語になることはない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
+<p>練習</p>
+<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
+<p>例文　</p>
+<blockquote>
+<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
+<p>注意</p>
+<ol>
+<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>強く言う・軽く言う</title>
     <url>/new-blog/2023/06/17/course21/</url>
     <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
@@ -1215,88 +1243,82 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>〜だろうと思う</title>
-    <url>/new-blog/2023/06/18/course22/</url>
-    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
+    <title>提案する・いしを表す</title>
+    <url>/new-blog/2023/06/20/course24/</url>
+    <content><![CDATA[<h1 id="提案する・いしを表す"><a href="#提案する・いしを表す" class="headerlink" title="提案する・いしを表す"></a>提案する・いしを表す</h1><p>[復習]</p>
 <ul>
-<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
-<li>あしたは雨が降る<u>かもしれない</u>。</li>
-<li>林さんは今日ここに来る<u>はずだ</u>。</li>
+<li>あした海へ行ってみ<u>ませんか</u>。</li>
+<li>疲れたときはゆっくり寝<u>たほうがいい</u>ですよ。</li>
 </ul>
 <span id="more"></span>
 
-<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
+<h2 id="〜（よ）うではないか"><a href="#〜（よ）うではないか" class="headerlink" title="〜（よ）うではないか"></a>〜（よ）うではないか</h2><p>意味　一緒に〜しよう・〜しませんか。<span style="color:orange">硬い言い方</span></p>
 <p>例文</p>
 <blockquote>
-<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
+<p>問題の解決を目指し、話し合お<u>うではありませんか</u></p>
 </blockquote>
-<p>接続　普通形＋とみえる</p>
+<p>接続　動う・よう形＋ではないか</p>
 <p>注意　</p>
 <ol>
-<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
-<li>推量した人は文中に表れない。</li>
+<li>日常の会話ではあまり使わない。</li>
 </ol>
-<p>練習</p>
-<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
-<p>例文　</p>
-<blockquote>
-<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋かねない</p>
-<p>注意　</p>
-<ol>
-<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
-<li>「〜おそれがある」よりも原因がはっきりしている。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
-<p>例文　</p>
-<blockquote>
-<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
-</blockquote>
-<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
-<p>注意　</p>
-<ol>
-<li>ニュース、解説などで使う。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
+<h2 id="〜ことだ"><a href="#〜ことだ" class="headerlink" title="〜ことだ"></a>〜ことだ</h2><p>意味　〜する／〜しないことが大切だ・〜した／〜しないほうがいい</p>
 <p>例文</p>
 <blockquote>
-<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
+<p>太りたくなければ、夜遅く食べない<u>ことです</u></p>
 </blockquote>
-<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
+<p>接続　動辞書形／ない形＋ことだ</p>
 <p>注意</p>
 <ol>
-<li>丁寧形・過去形では使わない。</li>
-<li>ふつう、一人称が主語になることはない。</li>
+<li>過去・否定・疑問の形はない。意志動詞につく。</li>
+<li>忠告する言い方なので、目上の人には使わないほうが良い。</li>
 </ol>
-<p>練習</p>
-<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
+<h2 id="〜ものだ／〜ものではない"><a href="#〜ものだ／〜ものではない" class="headerlink" title="〜ものだ／〜ものではない"></a>〜ものだ／〜ものではない</h2><p>意味　〜したほうがいい・〜しなければならない／〜しないほうがいい・〜してはいけない</p>
 <p>例文</p>
 <blockquote>
-<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
+<p>日本では、お見舞いの時は鉢植えの花はあげない<u>ものです</u>よ。<br>気軽に人にお金を貸す<u>ものではない</u>。　</p>
 </blockquote>
-<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
-<p>練習</p>
-<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
-<p>例文　</p>
-<blockquote>
-<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
+<p>接続<br>動辞書形／ない形＋ものだ<br>動辞書形＋ものではない</p>
 <p>注意</p>
 <ol>
-<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
+<li>一般的に常識を表す。</li>
+<li>対象が特定のものや人の場合には使わない。</li>
 </ol>
-<p>練習</p>
+<h2 id="〜ことはない"><a href="#〜ことはない" class="headerlink" title="〜ことはない"></a>〜ことはない</h2><p>意味　〜する必要はない。</p>
+<p>例文</p>
+<blockquote>
+<p>用事は電話で済みますから、なにもわざわざ行く<u>ことはありません</u></p>
+</blockquote>
+<p>接続　動辞書形＋ことはない</p>
+<p>注意</p>
+<ol>
+<li>話者の判断を表す。</li>
+<li>質問の形はない。話者自身のことにはあまり使わない。</li>
+</ol>
+<h2 id="〜まい／〜（よ）うか〜まいか"><a href="#〜まい／〜（よ）うか〜まいか" class="headerlink" title="〜まい／〜（よ）うか〜まいか"></a>〜まい／〜（よ）うか〜まいか</h2><p>意味　〜するつもりはない・〜しないでおこう／〜しようか〜しないでおこうか</p>
+<p>例文</p>
+<blockquote>
+<p>こんなばかな失敗は二度とする<u>まい</u>。気をつけよう。<br>難しそうな仕事ので、引き受け<u>ようか</u>引き受け<u>まいか</u>だいぶ迷ったが、思い切ってやってみることにした。</p>
+</blockquote>
+<p>接続<br>動辞書形＋まい<br>動う・よう形＋か＋動辞書形＋まいか<br><span style="color:red">動II・III　→　動辞書形&#x2F;<del>ます</del>＋まい</span></p>
+<p>注意</p>
+<h2 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h2><p>意味　絶対〜するつもりはない。</p>
+<p>例文</p>
+<blockquote>
+<p>今日こそは遅刻する<u>ものか</u>と毎日思うけれど、やっぱり何分か遅刻してしまう。</p>
+</blockquote>
+<p>接続　動辞書形＋ものか</p>
+<p>注意</p>
+<ol>
+<li>否定の意志を少し感情的に強く言う。「もんか」はさらにくだけた言い方。</li>
+</ol>
 ]]></content>
       <categories>
         <category>N2</category>
       </categories>
       <tags>
         <tag>N2</tag>
-        <tag>express subjectivity</tag>
+        <tag>SubjectiveExplain</tag>
       </tags>
   </entry>
   <entry>
@@ -1392,6 +1414,82 @@ const greeting = &quot;Hello &quot;;
       <tags>
         <tag>N2</tag>
         <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BootTheSystem</title>
+    <url>/new-blog/2023/06/17/BootTheSystem/</url>
+    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
+<span id="more"></span>
+
+<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
+<ol>
+<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
+<li>The boot loader runs and determines what Linux kernel program to load.</li>
+<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
+<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
+</ol>
+<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
+<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
+<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
+<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
+<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
+<ul>
+<li>An internal hard drive</li>
+<li>An external hard drive</li>
+<li>A CD&#x2F;DVD drive</li>
+<li>A USB flash drive</li>
+<li>A network server</li>
+</ul>
+<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
+</blockquote>
+<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
+<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
+<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
+<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
+<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
+<p>The GRUB Legacy configuration file consists of two sections:</p>
+<ul>
+<li>Global definitions</li>
+<li>Operating system boot definitions</li>
+</ul>
+<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
+<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
+<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
+<ul>
+<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
+<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
+</ul>
+<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
+[…]
+set root=(hd1,1)
+linux16 /vmlinuz[…]
+initrd /initramfs[…]
+&#125;
+menuentry &quot;Windows&quot; &#123;
+set root=(hd0,1)
+[…]
+&#125;
+</code></pre>
+<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
+<p>For GRUB2, the commands to remember are as follows:</p>
+<ul>
+<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
+<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
+<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+</ul>
+<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
+<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
       </tags>
   </entry>
 </search>
