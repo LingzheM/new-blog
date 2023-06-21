@@ -68,6 +68,44 @@
       </tags>
   </entry>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>夜のニュース</title>
     <url>/new-blog/2023/06/20/230620/</url>
     <content><![CDATA[<p><a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3LhYgjOiNX0">https://www.youtube.com/watch?v=3LhYgjOiNX0</a></a></p>
@@ -92,12 +130,11 @@
   <entry>
     <title>230621</title>
     <url>/new-blog/2023/06/21/230621/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<audio controls>
+    <content><![CDATA[<audio controls>
   <source src="https://lingzhem.github.io/new-blog/audio/0621.mp3" type="audio/mpeg">
 </audio>
 
+<span id="more"></span>
 
 <p>機密 文書 の 持ち出し など 37 の 罪 で 起訴 さ れ た アメリカ の トランプ 前 大統領 初 公判 の 期日 が 8 月 14 日 に 設定 さ れ まし た<br>ただ トランプ 氏 側 の 抵抗 で ずれ込む 可能 性 が あり ます<br>トランプ 氏 は 大統領 退任 後 数 百 の 機密 文書 を ホワイトハウス から フロリダ 州 マールアラーゴ など の 自宅 に 持ち出し た として スパイ 防止 法 違反 など 37 の 罪 で 起訴 さ れ て い ます<br>連邦 地裁 は 20 日 初 公判 について 8 月 14 日 に 行う 日程 を 提示 し 異議 など が ある 場合 は 来月 24 日 まで に 申し立てる よう を 求め て い ます<br>全て の 罪 について 無罪 を 主張 し て いる トランプ 氏 側 は 裁判 の 取り下げ を 求める など 期日 を 遅らせる 可能 性 が あり 期日 通り に 初 公判 が 開か れる か は 不透明 です</p>
 <p>日産自動車 の 元 会長 カルロスゴーン 被告 が 日産 など を 相手取り およそ 1 , 400 億 円 の 損害 賠償 を 求め 提訴 し まし た<br>ロイター通信 など に より ます と ゴーン 被告 は 日産 や その 関係 者 など から 名誉 毀損 や 精神 的 苦痛 を 受け た として 10 億 ドル あまり 日本円 で およそ 1 , 400 億 円 の 損害 賠償 を 求め 逃亡 先 の レバノン で 訴訟 を 起こし まし た<br>裁判 は 今年 9 月 に 行わ れる 予定 です<br>日産自動車 は 今回 の 件 について 訴状 が 届い て いる か い ない かも 含め て 現状 を コメント は あり ませ ん と し て い ます<br>ご ん 被告 は 会社 法 違反 など の 罪 で 起訴 さ れ 保釈 中 の 2019 年 に 不正 に 出国 し て い ます</p>
@@ -397,80 +434,6 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>〜関係なく・無視して</title>
-    <url>/new-blog/2023/06/17/course11/</url>
-    <content><![CDATA[<h1 id="11課-〜関係なく・無視して"><a href="#11課-〜関係なく・無視して" class="headerlink" title="11課　〜関係なく・無視して"></a>11課　〜関係なく・無視して</h1><p>[復習]</p>
-<ul>
-<li>彼女は僕の予定を<u>考えないで</u>、自分でどんどん旅行計画を立ててしまう。</li>
-<li>とても疲れているとき<u>は別として</u>、私は毎日ジョギングをする。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜を問わず"><a href="#〜を問わず" class="headerlink" title="〜を問わず"></a>〜を問わず</h2><p>意味　〜がどうかは問題ではなく、どれにも同じことが言える</p>
-<p>例文　</p>
-<blockquote>
-<p>明日のパーティーは参加者<u>を問わず</u>、関係ない方も大丈夫です。</p>
-</blockquote>
-<p>接続　名＋を問わず</p>
-<p>注意　</p>
-<ol>
-<li>いろいろな違いや幅のある言葉や対立する言葉につく。</li>
-</ol>
-<h2 id="〜にかかわりなく・〜にかかわらず"><a href="#〜にかかわりなく・〜にかかわらず" class="headerlink" title="〜にかかわりなく・〜にかかわらず"></a>〜にかかわりなく・〜にかかわらず</h2><p>意味　〜には関係なく同じようになる</p>
-<p>例文　</p>
-<blockquote>
-<p>理由が何であるか<u>にかかわりなく</u>、一度納入した入学金はお返しできません</p>
-</blockquote>
-<p>接続　名＋にかかわりなく・にかかわらず</p>
-<p>注意　</p>
-<ol>
-<li>幅のある言葉言葉につく。</li>
-<li>また、対立する言葉にもつく。</li>
-</ol>
-<h2 id="〜もかまわず"><a href="#〜もかまわず" class="headerlink" title="〜もかまわず"></a>〜もかまわず</h2><p>説明　dont mind, dont care about</p>
-<p>意味　普通なら気にする〜のことを気にしないで行動する。(I act without concern for things that would normally be of concern.)</p>
-<p>例文　</p>
-<blockquote>
-<p>心配や他の人の見方もかまわず、自分の努力で結果が出ました。<br>母は人を待たせているの<u>もかまわず</u>、まだ鏡の前に化粧している。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-な／-である）＋の＋もかまわず</p>
-<p>注意　</p>
-<ol>
-<li>後には、普通でない行動、意外感のある行動を表す文を来る。</li>
-<li>話者の希望・意向を表す文は来ない。</li>
-</ol>
-<h3 id="〜はともかく（として）"><a href="#〜はともかく（として）" class="headerlink" title="〜はともかく（として）"></a>〜はともかく（として）</h3><p>説明　leaving A aside, B is …</p>
-<p>意味　ほかにもっと強調したいことがあるので、〜はとりあえず考えないでおく。（With the desire to emphasize something further, I will temporarily set aside thoughts about the aforementioned matter.）</p>
-<p>例文　</p>
-<blockquote>
-<p>本当かどうか<u>はともかくとして</u>、その話は面白い</p>
-</blockquote>
-<p>接続　<br>    名＋はともかく（として）<br>    普通形現在（）＋の＋はともかく（として）</p>
-<p>注意　</p>
-<ol>
-<li>話者が、後のことに比べてそれほど重要ではないと思っていることを表す言葉につく。</li>
-<li>後には、「〜」よりもっと強調したいことを言う。</li>
-</ol>
-<h3 id="〜はさておき"><a href="#〜はさておき" class="headerlink" title="〜はさておき"></a>〜はさておき</h3><p>意味　〜は今、考えの外に置いて。さて：そのままの状態、おき：置きます</p>
-<p>例文　</p>
-<blockquote>
-<p>飲み会をするなら、細かいこと<u>はさておき</u>、まず場所と時間を決めなくては。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋はさておき</p>
-<p>注意</p>
-<ol>
-<li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>強く否定する・強く否定しない</title>
     <url>/new-blog/2023/06/17/course12/</url>
     <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
@@ -681,6 +644,80 @@ const greeting = &quot;Hello &quot;;
 <ol>
 <li>「〜だから当然…だ」という文を否定する言い方。</li>
 <li>後には、部分否定の表現が来ることが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜関係なく・無視して</title>
+    <url>/new-blog/2023/06/17/course11/</url>
+    <content><![CDATA[<h1 id="11課-〜関係なく・無視して"><a href="#11課-〜関係なく・無視して" class="headerlink" title="11課　〜関係なく・無視して"></a>11課　〜関係なく・無視して</h1><p>[復習]</p>
+<ul>
+<li>彼女は僕の予定を<u>考えないで</u>、自分でどんどん旅行計画を立ててしまう。</li>
+<li>とても疲れているとき<u>は別として</u>、私は毎日ジョギングをする。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜を問わず"><a href="#〜を問わず" class="headerlink" title="〜を問わず"></a>〜を問わず</h2><p>意味　〜がどうかは問題ではなく、どれにも同じことが言える</p>
+<p>例文　</p>
+<blockquote>
+<p>明日のパーティーは参加者<u>を問わず</u>、関係ない方も大丈夫です。</p>
+</blockquote>
+<p>接続　名＋を問わず</p>
+<p>注意　</p>
+<ol>
+<li>いろいろな違いや幅のある言葉や対立する言葉につく。</li>
+</ol>
+<h2 id="〜にかかわりなく・〜にかかわらず"><a href="#〜にかかわりなく・〜にかかわらず" class="headerlink" title="〜にかかわりなく・〜にかかわらず"></a>〜にかかわりなく・〜にかかわらず</h2><p>意味　〜には関係なく同じようになる</p>
+<p>例文　</p>
+<blockquote>
+<p>理由が何であるか<u>にかかわりなく</u>、一度納入した入学金はお返しできません</p>
+</blockquote>
+<p>接続　名＋にかかわりなく・にかかわらず</p>
+<p>注意　</p>
+<ol>
+<li>幅のある言葉言葉につく。</li>
+<li>また、対立する言葉にもつく。</li>
+</ol>
+<h2 id="〜もかまわず"><a href="#〜もかまわず" class="headerlink" title="〜もかまわず"></a>〜もかまわず</h2><p>説明　dont mind, dont care about</p>
+<p>意味　普通なら気にする〜のことを気にしないで行動する。(I act without concern for things that would normally be of concern.)</p>
+<p>例文　</p>
+<blockquote>
+<p>心配や他の人の見方もかまわず、自分の努力で結果が出ました。<br>母は人を待たせているの<u>もかまわず</u>、まだ鏡の前に化粧している。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-な／-である）＋の＋もかまわず</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通でない行動、意外感のある行動を表す文を来る。</li>
+<li>話者の希望・意向を表す文は来ない。</li>
+</ol>
+<h3 id="〜はともかく（として）"><a href="#〜はともかく（として）" class="headerlink" title="〜はともかく（として）"></a>〜はともかく（として）</h3><p>説明　leaving A aside, B is …</p>
+<p>意味　ほかにもっと強調したいことがあるので、〜はとりあえず考えないでおく。（With the desire to emphasize something further, I will temporarily set aside thoughts about the aforementioned matter.）</p>
+<p>例文　</p>
+<blockquote>
+<p>本当かどうか<u>はともかくとして</u>、その話は面白い</p>
+</blockquote>
+<p>接続　<br>    名＋はともかく（として）<br>    普通形現在（）＋の＋はともかく（として）</p>
+<p>注意　</p>
+<ol>
+<li>話者が、後のことに比べてそれほど重要ではないと思っていることを表す言葉につく。</li>
+<li>後には、「〜」よりもっと強調したいことを言う。</li>
+</ol>
+<h3 id="〜はさておき"><a href="#〜はさておき" class="headerlink" title="〜はさておき"></a>〜はさておき</h3><p>意味　〜は今、考えの外に置いて。さて：そのままの状態、おき：置きます</p>
+<p>例文　</p>
+<blockquote>
+<p>飲み会をするなら、細かいこと<u>はさておき</u>、まず場所と時間を決めなくては。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋はさておき</p>
+<p>注意</p>
+<ol>
+<li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
 </ol>
 ]]></content>
       <categories>
@@ -930,6 +967,94 @@ const greeting = &quot;Hello &quot;;
 </blockquote>
 <p>接続　動<del>ます</del>＋得る・得ない</p>
 <p>注意</p>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜を見て評価すると・〜の立場で評価すると</title>
+    <url>/new-blog/2023/06/14/course19/</url>
+    <content><![CDATA[<h1 id="〜を見て評価すると・〜の立場で評価すると"><a href="#〜を見て評価すると・〜の立場で評価すると" class="headerlink" title="〜を見て評価すると・〜の立場で評価すると"></a>〜を見て評価すると・〜の立場で評価すると</h1><p>[復習]</p>
+<ul>
+<li>八十歳という年齢<u>を考えると</u>、うちの祖父は若々しい。</li>
+<li>教師の立場<u>から言うと</u>、素直な生徒の方が扱いやすいのだろう。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わりに（は）"><a href="#〜わりに（は）" class="headerlink" title="〜わりに（は）"></a>〜わりに（は）</h2><p>意味　〜という基準から考えられる程度と違っている。</p>
+<p>例文　この料理は安い材料で簡単にできる<u>わりには</u>豪華に見える。</p>
+<p>接続　名-の・動・形普通形（ナ形<del>だ</del>-な／-である）＋わりに（は）</p>
+<p>注意　</p>
+<ol>
+<li>意味や程度に幅がる言葉につく。</li>
+<li>後には、予想される程度とは合わないという評価を言う文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にしては"><a href="#〜にしては" class="headerlink" title="〜にしては"></a>〜にしては</h2><p>意味　〜という事実。標準から考える・予想外だ。</p>
+<p>例文　</p>
+<blockquote>
+<p>今日は2月<u>にしては</u>暖かかった</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にしては</p>
+<p>注意　</p>
+<ol>
+<li>幅がなく、ある特定のことにつくことが多い。</li>
+<li>後には、予想されることと違うという評価を言う文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）"><a href="#〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）" class="headerlink" title="〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）"></a>〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）</h2><p>意味　〜という条件から期待されるとおりだ。</p>
+<p>例文　</p>
+<blockquote>
+<p>彼は10年も日本に住んでいる<u>だけあって</u>、日本のことをよく知っている。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な）＋だけ（のことは）ある</p>
+<p>注意　</p>
+<ol>
+<li>「〜だけあって」の後には、評価が高いことを表す文が来る。</li>
+<li>未来や推量を表す文は来ない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜として"><a href="#〜として" class="headerlink" title="〜として"></a>〜として</h2><p>　<br>意味　〜という立場・資格・役割・名目で、あることをする・ある状態である。</p>
+<p>例文　</p>
+<blockquote>
+<p>京都は日本の歴史的な古い町<u>として</u>知られている。</p>
+</blockquote>
+<p>接続　名＋として</p>
+<p>注意　</p>
+<ol>
+<li>後には、行為・状態を表す動詞、価値付けの言葉（知られている・有名）や判断・評価を表す言葉が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にとって"><a href="#〜にとって" class="headerlink" title="〜にとって"></a>〜にとって</h2><p>意味　（いろいろな考え方がある中で）〜の考えでは、あることが言える。</p>
+<p>例文　</p>
+<blockquote>
+<p>この小石はほかの人<u>にとって</u>普通の石ですが、わたし<u>にとって</u>宝物なのです。</p>
+</blockquote>
+<p>接続　名＋にとって</p>
+<p>注意</p>
+<ol>
+<li>主に人を表す名詞につく。</li>
+<li>後には、その人がどう評価しているを表す文が来る。</li>
+<li>動作を表す文は来ない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"><a href="#〜にしたら・〜にすれば・〜にしてみれば・〜にしても" class="headerlink" title="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"></a>〜にしたら・〜にすれば・〜にしてみれば・〜にしても</h2><p>意味　〜の立場になってみれば・〜の立場から言っても、あることが言える。</p>
+<p>例文</p>
+<blockquote>
+<p>たばこを吸う人<u>にすれば</u>、たばこの害についての話題は避けたいだろうと思う。</p>
+</blockquote>
+<p>接続　名＋にしたら・にすれば・にしてみれば・にしても</p>
+<p>注意</p>
+<ol>
+<li>ふつう、話者以外の人を表す言葉につく。</li>
+<li>後には、その人の立場に立って、その人の気持ちを推量して言う文が来る。</li>
+</ol>
 <p>練習</p>
 ]]></content>
       <categories>
@@ -1464,132 +1589,6 @@ const greeting = &quot;Hello &quot;;
       <tags>
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜を見て評価すると・〜の立場で評価すると</title>
-    <url>/new-blog/2023/06/14/course19/</url>
-    <content><![CDATA[<h1 id="〜を見て評価すると・〜の立場で評価すると"><a href="#〜を見て評価すると・〜の立場で評価すると" class="headerlink" title="〜を見て評価すると・〜の立場で評価すると"></a>〜を見て評価すると・〜の立場で評価すると</h1><p>[復習]</p>
-<ul>
-<li>八十歳という年齢<u>を考えると</u>、うちの祖父は若々しい。</li>
-<li>教師の立場<u>から言うと</u>、素直な生徒の方が扱いやすいのだろう。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜わりに（は）"><a href="#〜わりに（は）" class="headerlink" title="〜わりに（は）"></a>〜わりに（は）</h2><p>意味　〜という基準から考えられる程度と違っている。</p>
-<p>例文　この料理は安い材料で簡単にできる<u>わりには</u>豪華に見える。</p>
-<p>接続　名-の・動・形普通形（ナ形<del>だ</del>-な／-である）＋わりに（は）</p>
-<p>注意　</p>
-<ol>
-<li>意味や程度に幅がる言葉につく。</li>
-<li>後には、予想される程度とは合わないという評価を言う文が来る。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜にしては"><a href="#〜にしては" class="headerlink" title="〜にしては"></a>〜にしては</h2><p>意味　〜という事実。標準から考える・予想外だ。</p>
-<p>例文　</p>
-<blockquote>
-<p>今日は2月<u>にしては</u>暖かかった</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にしては</p>
-<p>注意　</p>
-<ol>
-<li>幅がなく、ある特定のことにつくことが多い。</li>
-<li>後には、予想されることと違うという評価を言う文が来る。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）"><a href="#〜だけ（のことは）ある（is-surely-because-〜-not-surprising-that-〜-It-was-worth-〜）" class="headerlink" title="〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）"></a>〜だけ（のことは）ある（is surely because 〜; not surprising that 〜; It was worth 〜）</h2><p>意味　〜という条件から期待されるとおりだ。</p>
-<p>例文　</p>
-<blockquote>
-<p>彼は10年も日本に住んでいる<u>だけあって</u>、日本のことをよく知っている。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な）＋だけ（のことは）ある</p>
-<p>注意　</p>
-<ol>
-<li>「〜だけあって」の後には、評価が高いことを表す文が来る。</li>
-<li>未来や推量を表す文は来ない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜として"><a href="#〜として" class="headerlink" title="〜として"></a>〜として</h2><p>　<br>意味　〜という立場・資格・役割・名目で、あることをする・ある状態である。</p>
-<p>例文　</p>
-<blockquote>
-<p>京都は日本の歴史的な古い町<u>として</u>知られている。</p>
-</blockquote>
-<p>接続　名＋として</p>
-<p>注意　</p>
-<ol>
-<li>後には、行為・状態を表す動詞、価値付けの言葉（知られている・有名）や判断・評価を表す言葉が来る。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜にとって"><a href="#〜にとって" class="headerlink" title="〜にとって"></a>〜にとって</h2><p>意味　（いろいろな考え方がある中で）〜の考えでは、あることが言える。</p>
-<p>例文　</p>
-<blockquote>
-<p>この小石はほかの人<u>にとって</u>普通の石ですが、わたし<u>にとって</u>宝物なのです。</p>
-</blockquote>
-<p>接続　名＋にとって</p>
-<p>注意</p>
-<ol>
-<li>主に人を表す名詞につく。</li>
-<li>後には、その人がどう評価しているを表す文が来る。</li>
-<li>動作を表す文は来ない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"><a href="#〜にしたら・〜にすれば・〜にしてみれば・〜にしても" class="headerlink" title="〜にしたら・〜にすれば・〜にしてみれば・〜にしても"></a>〜にしたら・〜にすれば・〜にしてみれば・〜にしても</h2><p>意味　〜の立場になってみれば・〜の立場から言っても、あることが言える。</p>
-<p>例文</p>
-<blockquote>
-<p>たばこを吸う人<u>にすれば</u>、たばこの害についての話題は避けたいだろうと思う。</p>
-</blockquote>
-<p>接続　名＋にしたら・にすれば・にしてみれば・にしても</p>
-<p>注意</p>
-<ol>
-<li>ふつう、話者以外の人を表す言葉につく。</li>
-<li>後には、その人の立場に立って、その人の気持ちを推量して言う文が来る。</li>
-</ol>
-<p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
       </tags>
   </entry>
 </search>
