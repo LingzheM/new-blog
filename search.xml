@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>朝のニュース(230619)</title>
     <url>/new-blog/2023/06/19/230619/</url>
     <content><![CDATA[<span id="more"></span>
@@ -68,66 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/2023/06/15/101SystemArchitecture/</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>夜のニュース</title>
-    <url>/new-blog/2023/06/20/230620/</url>
-    <content><![CDATA[<p><a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3LhYgjOiNX0">https://www.youtube.com/watch?v=3LhYgjOiNX0</a></a></p>
-<span id="more"></span>
-
-<p>第 11 管区 海上 保安 本部 に より ます と 今日 午前 11 時 50 分 頃 沖縄 県 糸満 市 の 沖合い およそ 12 キロ の 位置 に ある 旅館 小 付近 で ダイビング 中 に 7 人 が 行方 不明 に なっ た と ダイビング 船 の インストラクター から 通報 が あり まし た 。<br>7 人 の うち 2 人 は インストラクター 5 人 は 客 で 行方 不明 と なっ た 場所 から 数 キロメートル 離れ た 会場 で 発見 さ れ 午後 3 時 過ぎ まで に 全員 無事 救助 さ れ まし た 。<br>7 人 は 潜っ て 潮 に 流さ れ ながら 海中 を 移動 する<br>ドリフトダイビング と 呼ば れる ダイビング を し て い た という こと で 海上保安庁 が 当時 の 状況 を 詳しく 調べ て い ます 。<br>こんばんは 無事 救助 さ れ た という こと です 。<br>けれども 夏 に 向け て 海 の レジャー など 川 の レジャー 増える と 思い ます ので お気 を 付け いただき たい です ね そうですね 。<br>できる こと 気 を つけ て いき たい もの です ね 。</p>
-<p>では まずは こちら の ニュース です</p>
-<p>Apple や Google の よう な 会社 に なっ て みせる と 豪語 し ネズミ 講 で およそ 2 億 8000 万 円 を 集め た として 起訴 さ れ た 男 は 初 公判 で 起訴 内容 を 否認 し まし た 。<br>峯岸 さん ネズミ 講 し て た ん です か<br>去年 11 月 捜査 員 に 連行 さ れる 際 に 頑張っ て くる と 話し た 。<br>健康 食品 販売 会社 社長 峯岸 正治 被告<br>みんな の たま ご クラブ と 称し ネズミ 講 を 運営 し た 罪 に 問わ れ て い ます 。<br>安心 し て 待っ て て ください 大 化け し ます よ 。<br>Google や そういう ね Apple と 同じ よう な 会社 に なっ て みせ ます ので 今 耐える 時 です から<br>逮捕 前 JNN の 取材 に こう 答え て い た 峯岸 被告<br>みんな の 卵 クラブ の からくり は 会員 が 栄養 価 が 高い と 歌う 卵 90 個 13 , 900 円 で 毎月 購入 し 新規 会員 を 紹介 すれ ば 最低 で も 2 万 5000 円 の 配当 を 得 られる という もの です 。<br>典型 的 な ネズミ 講 と 見 られ ます が 峯岸 国 は これ を 高齢 者 の 年金 システム とも 主張 し て い まし た 。<br>ほら これ が 事実 な ん です よ<br>毎月 欲しい おじいちゃん お ばあちゃん たち は じゃあ 誰 が どう する の 政治 家 が 何 か し てる か 父親 が 何 か し てる か 。<br>この よう な 手口 で 去年 5 月 まで に 会員 1 万 人 余り から およそ 2 億 8000 万 円 を 集め た と さ れる 峯岸 被告 。<br>今日 の 初 公判 で 裁判 長 から ネズミ 講 を 運営 しよ う と し た こと は と 問わ れる と<br>あり ませ ん 基礎 内容 を 否認 し まし た<br>また 資金 が 毎月 集める の か と 問わ れる と 毎月 で は ない 買い たい 時 に 買え ば いい 被害 者 が 出 ない 運営 の 仕方 を し て いる ので<br>また 弁護士 は ネズミ 講 など で は なく 卵 の 販売 組織 だ と 主張 し 争う 方針 を 示し まし た 。</p>
-<p>昨日 正午 頃 八雲 町 野田 追い の 国道 5 号線 で 都市 間 高速 バス と 養豚 会社 の 運搬 用 の トラック が 正面 衝突 し バス の 乗客 3 人 と それぞれ の 運転 手 の 合わせ て 5 人 が 死亡 し バス の 乗客 12 人 が 怪我 を し た 事故<br>トラック は 当時 豚 30 頭 を 積み 農場 から 食肉 加工 場 へ 向かう 途中 で 近く を 走行 し て い た 車 の ドライブ レコーダー から トラック が 対向 車線 に はみ出し た の が 事故 の 原因 と み られ て い ます 。<br>この たび 大変 ご 迷惑 を おかけ し まし て 本当に 申し訳 ござい ませ ん 。<br>直近 の 3 ヶ月 の 状況 を 荷重 労働 に あたる よう な 労働 時間 に は なっ て い なかっ た と 。<br>事故 で は バス の 対向 車線 側 が 衝突 で 大きく 壊れ まし た が バス の 運行 会社 に より ます と 亡くなっ た 乗客 3 人 は 運転 席 の すぐ 後ろ の 窓側 に 座っ て い た という こと です 。<br>普通 に 元気 に 出勤 し て くる ん じゃ ない か という 風 に ちょっと まさか し て しまう ぐらい 高級 な 出来事 でし た ね<br>仕事 の 面 で は 本当に きっちり 発言 も し て くれる そういう 頼り に し てる 職員 でし た 。<br>警察 は 午後 から 現場 の 国道 で 事故 の 痕跡 など を 確認 し 引き続き 当時 の 状況 を 調べ て い ます</p>
-<p>重要 法案 を ほぼ 成立 さ せ 今 の 国会 を 乗り切っ た 形 の 岸田 総理 です が ここ に き て 内閣 支持 率 が 下落 する など また 新た な 困難 に 直面 し て い ます 。<br>まさか こんな こと は 起こら ない と 思っ て い た こうした いくつ も の まさか を 実感 せ ざる を 得 ませ ん 。<br>昨日 母校 早稲田大学 で 後輩 ら を 前 に これ まで の 歩み を 振り返っ た 岸田 総理 。<br>今回 も まさかの 事態 な の でしょ う か この 週末 に 行わ れ た 報道 各社 の 世論 調査 で いずれ も 岸田 内閣 の 支持 率 が 下落 し た の です 。<br>一気に 10 ポイント 以上 下がっ た 調査 も あり まし た 。<br>町 で は 他 に あの とっ て 変われ ば いい な という 政権 が 特に ない ので 。<br>外交 ばっかり もう ちょっと 日本 に 目 を 向け て くれ ない か な って いう 。<br>あんまり 素敵 な 噂 も 聞か ない じゃ ない です か ご 家族 の 写真 撮っ ちゃっ たり する よう な やつ と か 。<br>中でも 反発 が 強かっ た の が<br>マイ ナンバー とか あん だけ ね<br>不具合 が 出 てる のに<br>情報 が 漏れ たり とかいう お話 も たま に 聞か れる ので ご 清聴 を 発信 し て もらい たく ない し<br>マイ ナンバー でしょ う ね<br>地元 で も 高齢 者 の 問い合わせ が すごい<br>マイナンバーカード を めぐり 相次ぐ トラブル が 不満 に つながっ て いる よう です<br>来年 秋 に 予定 さ れ て いる 紙 の 保険 証 の 廃止 を 延期 する よう 求める 声 も あり ます が<br>政府 の 方針 通り に 進める こと は 河野 大臣 から 発言 が あっ た 通り で あり ます<br>関係 者 に より ます と 岸田 総理 は この 週末 まで 高揚 感 に 満ち た 様子 だっ た と いい ます<br>解散 カード を 切る 素振り を 見せ た 結果 国会 運営 や 選挙 区 調整 が スムーズ に 進ん だ こと<br>に 自信 を 深め て い た という こと です<br>今回 は 勉強 に なっ た<br>最大 の 収穫 は 解散 権 を 取っ て おく こと が でき た こと だ<br>その後 明らか に なっ た 支持 率 の 下落<br>総理 は 新た な 困難 に 直面 し て い ます</p>
-<p>北朝鮮 が 重要 政策 を 決定 する 朝鮮 労働党 の 中央 委員 会 拡大 総会 で 軍事 偵察 衛生 の 打ち上げ を 早期 に 再び 実施 する 方針 が 示さ れ まし た<br>金 正 恩 総 書記 が 出席 し た 朝鮮 労働党 の 中央 委員 会 拡大 総会<br>議題 に 上がっ た の は 宇宙 開発 で 先月 製 の 軍事 偵察 衛星 の 打ち上げ 失敗 は 最も 重大 な 欠陥 だっ た と し まし た<br>報告 で は 衛星 打ち上げ 準備 を 責任 を 負っ て 推進 し た 幹部 ら の 無責任 者 が 辛辣 に 批判 さ れ た<br>そして 失敗 の 原因 を 徹底的 に 分析 し た 上 で 早期 に 再び 打ち上げる 方針 を 示し まし た<br>一方 で 北朝鮮 メディア は キム 総 書記 が 演説 を 行っ た と は 伝え て おら ず 韓国 統一 省 は 非常 に 異例 だ と 指摘 し て い ます<br>成果 が なく 演説 する こと は 難しかっ た と 推定 し て いる<br>総会 で は 北朝鮮 は 強力 な 核兵器 の 増産 実績 を 継続 し て 生み出す とも 強調<br>核 を 増産 し て いく 姿勢 を 鮮明 に し て い ます</p>
-<p>チャット GPT は 教育 現場 でも 使える の か<br>現場 で の 取材 から AI に 何 が でき て 何 が でき ない の か が 見え て き まし た<br>高校 1 年生 レベル の 問題 を 作っ て ください<br>という 風 に 入力 を する と こんな 形 で です ね<br>もう 今 リアルタイム で 問題 を 作っ て もらっ て いる の が<br>静岡 県 に ある 御殿場 西 高校 生成 AI チャット GPT の 活用 について 教育 ベンチャー 企業 を 招い た 研修 が 行わ れ まし た<br>我々 教員 って じゃあ 何 の ため に いる の か<br>改めて 考え直さ ない と おそらく<br>我々 は 本当に AI に 仕事 取っ て 代わら れ ちゃう ん じゃ ない<br>本当に AI が 先生 の 代わり を 務める こと が できる の でしょ う か<br>研修 を 受け た 先生 が 部活 の 資料 を 作ら せ て みる と<br>自分 まだ 教員 2 年 目 な の も あっ て 事務 作業 を 全然 あの 効率 よく まだ でき ない ので<br>ちゃんと GPT が こう やっ て 丁寧 に 作っ て くれる ので そこ は すごく 捗っ てる な っていう<br>精製 AI は 学習 し た 膨大 な データ から 質問 に対して 最も 正解 に 近い 内容 を 答える もの です<br>これ まで 先生 たち が ゼロ から 始め て い た 仕事 を 7 割 くらい まで 手伝っ て くれる 優秀 な アシスタント に は なり そう だ と 言い ます<br>一方 で 精製 AI が 苦手 な こと も 分かっ て き まし た<br>AI に 作ら せ た 数学 の 問題 回答 まで 考え させ て みる と<br>そんな きれい に なら ない 気 が する ん です けど<br>先生 が 計算 する と やはり 答え は 間違っ て い まし た<br>授業 で 生徒 に も AI を 使っ て み て もらい ます<br>あと チャット GPT に 力 を 借り て 図形 で の 証明 を ちょっと 完成 さ せ て もらお う か な と<br>数学 の 証明 方法 を 見つけ て もらお う と し まし た が<br>聞い た 数式 は これ 証明 が でき て も 正面 に なら なく ない みたい な<br>思っ た 通り の 回答 が 返っ て き ませ ん<br>生成 AI は あくまで データ の 中 から 正解 に 近い 内容 を 寄せ 集め て 文章 を 作っ て いる だけ<br>自分 で 数式 を 解い て いる わけ で は ない ので 100 点 満点 の 正解 を 求め られる 数学 は 今 の ところ 苦手 な よう です<br>授業 の 本質 的 な ところ に 時間 を かけ れ ない って の が 今 まで の 教育 で あっ た と 思う ん です けど<br>そこ を AI に 任せ て 人間 が 考える べき 場所 に フル に 使える よう な 形 で<br>教育 現場 で 使っ て み て 見え て き た AI の 得意 不得意<br>AI が 教育 を 変える の か 模索 は 続い て いく と 言い ます<br>AI が どん だけ 発展 し て も 人 が 一番 中心 に 僕 は ずっと いる と 思う ん です よ<br>自分 の 学校 だ と この 部分 だけ 使え そう だ よ ね って<br>怖がら ず に 使っ て 自分 たち の 自分 たち ルール を 決め て いっ て もらえ たら<br>続い て 新型 コロナ ウイルス について です<br>政府 は 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある として 高齢 者 など に 改めて ワクチン 接種 の 検討 を 呼びかけ まし た<br>全国 の 定点 医療 機関 から 報告 さ れる 1 週間 ごと の 患者 数 で 見る と 緩やか な 増加 傾向 に ある と 認識 し て い ます<br>松野 官房 長官 は 過去 の 状況 を 踏まえる と 今後 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある と 述べ まし た<br>その 上 で 高齢 者 や 基礎 疾患 の ある 人 など は 重症 化 を 防ぐ ため ワクチン の 接種 を 検討 する よう<br>改めて 呼びかけ まし た<br>また 急激 な 感染 拡大 で 医療 の 逼迫 が 見込ま れる 場合 は 国民 へ の 感染 対策 の 呼びかけ の 強化 など を 行う と 述べ まし た</p>
-<p>日本 マクドナルド は 東京 名古屋 大阪 エリア の 都心 部 の 184 店舗 で 一部 商品 を 値上げ する と 発表 し まし た<br>値上げ は 来月 19 日 から で ビッグ マック は 通常 450 円 です が 都心 店 で は 500 円 に 準 都心 店 で は 470 円 に し ます<br>ポテト の M サイズ は 通常 330 円 の ところ 都心 店 で は 370 円 に 準 都心 店 で は 340 円 に 引き上げ ます 一方 ハンバーガー や ポテト の S サイズ など は 価格 を 据え置く と し て い ます</p>
-]]></content>
-      <categories>
-        <category>News</category>
-      </categories>
-      <tags>
-        <tag>News</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>230621</title>
     <url>/new-blog/2023/06/21/230621/</url>
     <content><![CDATA[<audio controls>
@@ -148,6 +126,33 @@
 <p>マイナンバーカード を めぐる 相次ぐ トラブル を 受け 政府 は 省庁 横断 の 対策 本部 を 新設 し 今日 に も 岸田 総理 大臣 が 出席 し て 20 日 以降 を 開く 方向 で 調整 し て い ます<br>対策 本部 は デジタル 庁 と 厚 労 省 総務 省 を 中心 に し た 総 点検 本部 として マイナー カード の トラブル を 受け て データ や システム を 総 点検 を し た 上 で 再発 防止 の 対策 を 検討 し ます<br>今日 に も 岸田 総理 が 出席 し て 初 会合 を 開く 方向 です<br>さらに 岸田 総理 は 今夜 開く 記者 会見 で マイナカード の トラブル へ の 政府 の 対応 について 説明 する 見通し です<br>次々 と マイナンバーカード を めぐる 問題 が ある ので<br>強く 総理 出席 の 閉会 中 審査 を 求め て いき たい と 思っ て い ます<br>一方 国会 は 今日 で 閉会 し ます が 立憲 民主党 は 閉会 後 も マイナー カード に関する 国会 審議 を 要求 し 岸田 総理 を 追求 し たい 考え です</p>
 <p>インドネシア を 訪問 中 の 天皇 皇后 両 陛下 は 昨夜 AKB の 元 メンバー など 現地 で 活躍 する 日本人 と 懇談 さ れ まし た<br>両 陛下 は 昨夜 青年 海外 協力 隊員 など 現地 在住 の 日本人 を 招き AKB 48 の 元 メンバー で ジャカルタ を 中心 に 活動 する JKT 48 に 移籍 後 今 は タレント として 活躍 する 中川 はるか さん など と 交流 さ れ まし た<br>移住 し て 11 年 が 経ち 両国 の 親善 大使 も 務め た 中川 さん に 両 陛下 は 若い のに 本当に 素晴らしい です ね など と 声 を かけ られ まし た<br>両 陛下 は ジャカルタ で の すべて の 日程 を 終え 今日 陛下 は 単身 で 古都 ジョブジャカルタ を 訪問 さ れ ます<br>イギリス の ウィリアム 皇太子 の 妻 キャサリン 妃 は 3 年 ぶり に 再 オープン する ロンドン の ナショナルポートレートギャラリー を 訪れ まし た<br>白い 洋服 を 身 に まとっ た キャサリン 妃 が 到着 し まし た<br>集まっ た 人 に 手 を 振っ て い ます<br>会場 で キャサリン 費 は 自ら 60 年代 に 撮影 し た 写真 の 展覧 会 を 来週 から 開く ビートルズ の 元 メンバーポールマッカートニー さん 夫妻 や 他 の アーティスト と の 会話 を 楽しん で い まし た<br>世界 最大 の 肖像 画 コレクション を 誇る ナショナルポートレートギャラリー は 3 年 にわたる 改修 を 経 て 今週 木曜日 に 再 オープン し ます</p>
 <p>川崎 市 の 時計 店 強盗 事件 で 犯人 グループ が 乗っ て い た 車 が 押収 さ れ まし た<br>この 事件 は 今月 11 日 川崎 市 幸 区 の 時計 店 に 2 人組 の 強盗 が 陥り 大阪 府 に 住む 八木 隆弘 容疑 者 が 取り押さえ られ 逮捕 さ れ た もの です<br>捜査 関係 者 に より ます と 犯人 グループ が 使っ た 黒っぽい 車 が 先週 横浜 市内 で 押収 さ れ て い た こと が 分かり まし た<br>へ の 注意 を 訴え まし た<br>東京 杉並 区 の JR 阿佐ヶ谷 駅 周辺 に 地元 高校 の 野球 部員 が 集まり 闇 バイト に 加担 し ない よう 注意 を 呼びかける チラシ など を 配り まし た<br>警視庁 杉並 警察 署 は 闇 バイト に 巻き込ま れ たら ためらわ ず 通報 を 相談 し て ほしい と 呼びかけ て い ます</p>
+]]></content>
+      <categories>
+        <category>News</category>
+      </categories>
+      <tags>
+        <tag>News</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>230622</title>
+    <url>/new-blog/2023/06/22/230622/</url>
+    <content><![CDATA[<video controls>
+  <source src="https://www.youtube.com/watch?v=n68xVsYXqO8" type="video/mp4">
+</video>
+
+<span id="more"></span>
+
+<p>岸田 総理 は 紙 の 保健所 の 廃止 について 国民 の 不安 を 払拭 する こと が 大前提 と の 考え を 示し まし た<br>現行 の 保健所 の 全面 的 な 廃止 は 国民 の 不安 を 払拭 する ため の 措置 が 完了 する こと これ を 大前提 として 取り組ん で まいり ます<br>マイナンバーカード を めぐる トラブル が 相次ぐ 中 岸田 総理 は 昨日 の 夜 の 記者 会見 で 保険 証 廃止 へ の 国民 の 不安 を 重く 受け止め て いる と し た 上 で データ の 総 点検 や 修正 作業 など に 取り組む 考え を 示し まし た<br>一方 で 来年 秋 に 紙 の 保険 証 を 廃止 する と の これ まで の 方針 に 変更 は ない と し て い ます<br>また デジタル の 力 を 全面 的 に 活用 し 国民 に 個人 レベル で きめ細かく 対応 する こと を 目指す<br>令和 版 デジタル 行財政 改革 に 挑戦 する と 表明 し まし た<br>外交 面 で は 来月 NATO 北大西洋 条約 機構 の 首脳 会議 へ の 出席 と EU 本部 の 訪問 サウジアラビア UAE カタール の 中東 3 カ国 を 歴訪 する こと を 発表 し まし た<br>解散 や 内閣 改造 の 時期 について は 先送り でき ない 困難 な 課題 に 一つ 一つ 答え を 出し て いく 内閣 の 基本 姿勢 に 照らし て 判断 を し て いく と 述べる に とどめ まし た</p>
+<p>インドネシア の こと ジョグジャカルタ を お 一 人 で 訪問 さ れ て いる 天皇陛下 今日 は 世界 遺産 を 視察 さ れる 予定 です<br>国賓 として インドネシア を 訪問 中 の 天皇陛下 は 昨日 午後 ジャワ島 中部 の こと ジョグジャカルタ に 到着 さ れ まし た<br>夜 に は ジョグジャカルタ の 特別 州 知事 で この 地域 の 王 にあたる スルタン が 主催 する 晩餐 会 に 出席 する ため プラトン 宮殿 を 訪問 し スルタン の 破滅 棒 の 10 世 と 握手 を 交わさ れ まし た<br>陛下 は 伝統 舞踊 など を 鑑賞 し た 後 に スルタン 夫妻 と の 晩餐 会 に 臨み これから は 若い 世代 同士 の 交流 が 重要 だ と 話さ れ た という こと です<br>今日 は 世界 遺産 の ボロブドゥール 寺院 を 視察 さ れる 予定 です</p>
+<p>母親 を 殺害 し た 疑い で 57 歳 の 息子 が 逮捕 さ れ まし た<br>恨み が あっ た という 趣旨 の 供述 を し て いる という こと です<br>高知 市 の 金子 啓介 容疑 者 は おととい 自宅 で 母 の 美智子 さん を 殺害 し た 疑い が 持た れ て い ます<br>金子 容疑 者 が 職場 に 殺人 を ほのめかす 電話 を し た こと から 警察 が 自宅 に 向かっ た ところ 胸 に 刃物 が 刺さっ た 状態 で 死亡 し て いる<br>美智子 さん を 発見<br>その 場 に い た 金子 容疑 者 に 事情 を 聞い て い た という こと です<br>金子 容疑 者 は 容疑 を 認め 母 に 恨み が あっ た という 趣旨 の 供述 を し て いる という こと です</p>
+<p>ロシア の 軍事 侵攻 が 続く ウクライナ の 復興 支援 について 話し合う 国際 会議 が イギリス で 開か れ まし た<br>イギリス ロンドン で 始まっ た ウクライナ 復興 会議 で は アメリカ の ブリンケン 国務 長官 が ウクライナ に対する 追加 支援 を 表明 し た<br>ほか イギリス の スナク 首相 が 民間 企業 による 投資 を 促す ため の 新た な 戦争 保険 の 枠組み を 立ち 上げる 考え を 示し て い ます<br>また 会議 に 合わせ て 開か れ た<br>G 7 外相 会合 で は ブリンケン 長官 が 中国 を 訪問 し て 習 近平 国家 主席 と 面会 し た 結果 を 説明 今後 の 中国 へ の 対応 について 意見 交換 し まし た</p>
+<p>アメリカ の 中央 銀行 にあたる FRB 連邦 準備 制度 理事 会 の パウエル 議長 は 今年 中 に 追加 の 利上げ を 行う 可能 性 を 改めて 示唆 し まし た<br>FRB の パウエル 議長 は 21 日 議会 の 公聴 会 で この よう に 指摘 し まし た<br>その 上 で 雇用 は 最大 化 さ れ て いる が 2 % の インフレ 目標 の 達成 は 遠い と し た 上 で 現在 は インフレ の 抑制 に 重点 を 置く べき だ と 強調<br>FRB は 今月 11 会合 ぶり に 利上げ を 見送っ た 一方 年内 に 0 . 5 % 追加 で 利上げ する 可能 性 を 示唆 し て い まし た</p>
+<p>消息 を 断っ た 潜水 艇 について アメリカ 沿岸 警備 隊 は 海中 で 再び 音 を 感知 し た と 明らか に し まし た が<br>潜水 艇 の 音 か どう か 特定 でき て い ない という こと です<br>消息 を 断っ て から 丸 3 日 が 経過 し た 潜水 艇 タイ タン について アメリカ 沿岸 警備 隊 は 前日 に 続き 21 日 も 創作 エリア の 海中 で<br>複数 の 音 を 感知 し た ものの 潜水 艇 の 音 か どう か 特定 でき て おら ず 引き続き 調査 する と し て い ます<br>これ まで に 創作 し た 範囲 は およそ 26 , 000 平方キロメートル で 海中 最も 深い ところ は 4000 m まで 達し て いる という こと です</p>
+<p>国 の 観光 支援 事業 goto トラベル で 給付 金 およそ 7000 万 円 を 騙し 取っ た 疑い で IT 企業 の 社長 ら 3 人 が 逮捕 さ れ まし た<br>詐欺 の 疑い で 逮捕 さ れ た の は 東京 渋谷 区 の サムライ インターナショナル 社長 岡田 類 容疑 者 と 民泊 運営 代行 会社 の 社長 中山 隼人 容疑 者 永末 鈴 容疑 者 の 3 人 です<br>岡田 容疑 者 ら は 2020 年 京都 府 に 実在 する 9 つ の ホテル の 運営 事業 者 に なりすまし 名簿 業者 から 購入 し た 個人 情報 を 悪用 し て およそ 4800 人 の 客 が 宿泊 し た と 装い goto トラベル の 給付 金 およそ 7000 万 円 を 騙し 取っ た 疑い が<br>持た れ て い ます<br>警視庁 は 3 人 が 同様 の 手口 で 総額 およそ 1 億 1000 万 円 を 騙し 取っ た と み て 余罪 を 調べ て い ます</p>
+<p>世界 各国 の 男女 格差 に関する 報告 書 が 発表 さ れ 日本 は 過去 最低 の 125 位 と 評価 さ れ まし た<br>この 報告 書 は 世界 経済 フォーラム が 146 カ国 を 対象 に 政治 や 教育 など 4 つ の 分野 で 男女 の 格差 を 分析 し た もの です<br>21 日 に 発表 さ れ た 2023 年版 で は 日本 は 去年 の 116 位 から 後退 し 過去 最低 の 125 位 と 評価 さ れ まし た<br>特に 政治 分野 の 格差 が 深刻 で 衆議院 議員 に 占める 女性 の 割合 が 10 % に とどまる こと や 女性 閣僚 の 少な さ が 影響 し 世界 最低 レベル の 138 位 と なっ て い ます<br>経済 分野 も 123 位 に とどまり 推定 所得 の 格差 や 企業 における 女性 管理 職 の 割合 の 低 さ が 指摘 さ れ て い ます<br>男女 格差 が 最も 少ない の は 14 年 連続 で アイスランド で 北欧 の 国 が 上位 を 占め て い ます</p>
+<p>レギュラー ガソリン の 全国 平均 価格 が 5 週 連続 で 値上がり し およそ 9 か月 ぶり に 170 円 台 に 上昇 し まし た<br>資源エネルギー庁 に より ます と 今月 19 日 時点 の レギュラー ガソリン の 全国 平均 価格 は 前 の 週 と 比べ て 0 . 8 円 高い 1 リットル 当たり 170 . 1 円 でし た<br>5 週 連続 の 上昇 で 170 円 台 と なる の は 去年 9 月 以来 です<br>原油 価格 の 上昇 に 加え 政府 が 石油 の 元売り 会社 に 支給 し て いる 補助 金 が 今月 から 段階 的 に 縮小 し て いる こと など が 影響 し て い て 今後 値上がり が 続く 見通し です<br>補助 金 は 今月 以降 支給 額 が 25 円 以下 の 場合 は 補助 率 が 2 週間 ごと に 10 % ずつ 段階 的 に 引き下げ られ ます</p>
+<p>ニューヨーク で アメリカ 最大 規模 の 日本 酒 の イベント が 行わ れ まし た<br>500 を 超える 銘柄 が 並ぶ 中 注目 は 今 広がり を 見せる アメリカ の 地酒 クラフト 酒 です<br>日本 酒 の イベント 会場 は 大 賑わい です<br>ニューヨーク で 先週 開催 さ れ た 全米 最大 規模 の 日本 酒 イベント 日本 や アメリカ から 実に 576 も の 銘柄 が ずらりと 並び ます<br>参加 者 は 地元 レストラン が 腕 を ふるっ た 一 皿 と の ペア リング を 楽しみ ながら 様々 な 酒 を 堪能 し まし た<br>中でも<br>ここ も かなり 賑わっ て ます<br>アメリカ 産 の 地酒 の ブース です<br>日本 三枚 を 原料 に 日本 国内 で 醸造 さ れ た 日本 酒 だけ で なく アメリカ さん の 地酒 クラフト 酒 が 今 注目 さ れ て い て ブース に は ハワイ や 南部 テネシー で 作ら れ た 酒 も 登場 し まし た<br>急速 に 広まっ て い ます 多く の 人 から どう やっ て 酒造り を 始めれ ば いい か 聞か れ ます<br>アメリカ で 浸透 し つつ ある 酒 文化<br>北米 酒造 組合 に より ます と 近年 アメリカ で 酒蔵 が 続々 と 誕生 し て い て 10 年 前 と 比べ 3 倍 以上 に 急増 し て いる という の です<br>なぜ 今 クラフト 酒 が 広がっ て いる の か<br>消費 者 は 新しい もの を 知り たい から です<br>クラフト 作 は 面白い 要素 が たくさん あり 多く の 人 が 興味 を 持ち 始め て い ます<br>ニューヨーク の 酒 店 で も<br>すごく おいしい<br>こんな ジューシー な 酒 は 初めて<br>この 店 で は 2 年 前 から 店頭 で テイスティングイベント を 開催<br>また オーナー は 数々 の 日本 酒 を 楽しめる レストラン も 経営 し ながら クラフト 酒 の 販売 サポート も 行っ て い ます<br>様々 な 形 で 酒 を 味わう こと が できる よう に なっ て き て 日本 酒 が 馴染ん で き て いる と 思い ます<br>一方 ハワイ で 唯一 酒 を 製造 し て いる 広瀬 さん は アメリカ で 酒 文化 を 定着 さ せる ため 積極 的 に 他 の 酒蔵 に も 技術 提供 を 行っ て いる と いい ます<br>アメリカ で 作っ てる 酒 が 美味しく なけれ ば 日本 から 酒 を 買う はず ない ん です よ<br>だから まず 私 たち が いい お 酒 を 作っ て 日本 から の お 酒 も もっと どんどん 輸入 する みたい に なっ て ほしい な と 思っ て ます<br>全米 で の 本格 的 な 日本 酒 ブーム 到来 へ 鍵 を 握る クラフト 酒<br>アメリカ ならでは の 多様 な 味わい に 期待 が 高まっ て い ます</p>
 ]]></content>
       <categories>
         <category>News</category>
@@ -434,6 +439,102 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>〜関係なく・無視して</title>
+    <url>/new-blog/2023/06/17/course11/</url>
+    <content><![CDATA[<h1 id="11課-〜関係なく・無視して"><a href="#11課-〜関係なく・無視して" class="headerlink" title="11課　〜関係なく・無視して"></a>11課　〜関係なく・無視して</h1><p>[復習]</p>
+<ul>
+<li>彼女は僕の予定を<u>考えないで</u>、自分でどんどん旅行計画を立ててしまう。</li>
+<li>とても疲れているとき<u>は別として</u>、私は毎日ジョギングをする。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜を問わず"><a href="#〜を問わず" class="headerlink" title="〜を問わず"></a>〜を問わず</h2><p>意味　〜がどうかは問題ではなく、どれにも同じことが言える</p>
+<p>例文　</p>
+<blockquote>
+<p>明日のパーティーは参加者<u>を問わず</u>、関係ない方も大丈夫です。</p>
+</blockquote>
+<p>接続　名＋を問わず</p>
+<p>注意　</p>
+<ol>
+<li>いろいろな違いや幅のある言葉や対立する言葉につく。</li>
+</ol>
+<h2 id="〜にかかわりなく・〜にかかわらず"><a href="#〜にかかわりなく・〜にかかわらず" class="headerlink" title="〜にかかわりなく・〜にかかわらず"></a>〜にかかわりなく・〜にかかわらず</h2><p>意味　〜には関係なく同じようになる</p>
+<p>例文　</p>
+<blockquote>
+<p>理由が何であるか<u>にかかわりなく</u>、一度納入した入学金はお返しできません</p>
+</blockquote>
+<p>接続　名＋にかかわりなく・にかかわらず</p>
+<p>注意　</p>
+<ol>
+<li>幅のある言葉言葉につく。</li>
+<li>また、対立する言葉にもつく。</li>
+</ol>
+<h2 id="〜もかまわず"><a href="#〜もかまわず" class="headerlink" title="〜もかまわず"></a>〜もかまわず</h2><p>説明　dont mind, dont care about</p>
+<p>意味　普通なら気にする〜のことを気にしないで行動する。(I act without concern for things that would normally be of concern.)</p>
+<p>例文　</p>
+<blockquote>
+<p>心配や他の人の見方もかまわず、自分の努力で結果が出ました。<br>母は人を待たせているの<u>もかまわず</u>、まだ鏡の前に化粧している。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-な／-である）＋の＋もかまわず</p>
+<p>注意　</p>
+<ol>
+<li>後には、普通でない行動、意外感のある行動を表す文を来る。</li>
+<li>話者の希望・意向を表す文は来ない。</li>
+</ol>
+<h3 id="〜はともかく（として）"><a href="#〜はともかく（として）" class="headerlink" title="〜はともかく（として）"></a>〜はともかく（として）</h3><p>説明　leaving A aside, B is …</p>
+<p>意味　ほかにもっと強調したいことがあるので、〜はとりあえず考えないでおく。（With the desire to emphasize something further, I will temporarily set aside thoughts about the aforementioned matter.）</p>
+<p>例文　</p>
+<blockquote>
+<p>本当かどうか<u>はともかくとして</u>、その話は面白い</p>
+</blockquote>
+<p>接続　<br>    名＋はともかく（として）<br>    普通形現在（）＋の＋はともかく（として）</p>
+<p>注意　</p>
+<ol>
+<li>話者が、後のことに比べてそれほど重要ではないと思っていることを表す言葉につく。</li>
+<li>後には、「〜」よりもっと強調したいことを言う。</li>
+</ol>
+<h3 id="〜はさておき"><a href="#〜はさておき" class="headerlink" title="〜はさておき"></a>〜はさておき</h3><p>意味　〜は今、考えの外に置いて。さて：そのままの状態、おき：置きます</p>
+<p>例文　</p>
+<blockquote>
+<p>飲み会をするなら、細かいこと<u>はさておき</u>、まず場所と時間を決めなくては。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋はさておき</p>
+<p>注意</p>
+<ol>
+<li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>夜のニュース</title>
+    <url>/new-blog/2023/06/20/230620/</url>
+    <content><![CDATA[<p><a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3LhYgjOiNX0">https://www.youtube.com/watch?v=3LhYgjOiNX0</a></a></p>
+<span id="more"></span>
+
+<p>第 11 管区 海上 保安 本部 に より ます と 今日 午前 11 時 50 分 頃 沖縄 県 糸満 市 の 沖合い およそ 12 キロ の 位置 に ある 旅館 小 付近 で ダイビング 中 に 7 人 が 行方 不明 に なっ た と ダイビング 船 の インストラクター から 通報 が あり まし た 。<br>7 人 の うち 2 人 は インストラクター 5 人 は 客 で 行方 不明 と なっ た 場所 から 数 キロメートル 離れ た 会場 で 発見 さ れ 午後 3 時 過ぎ まで に 全員 無事 救助 さ れ まし た 。<br>7 人 は 潜っ て 潮 に 流さ れ ながら 海中 を 移動 する<br>ドリフトダイビング と 呼ば れる ダイビング を し て い た という こと で 海上保安庁 が 当時 の 状況 を 詳しく 調べ て い ます 。<br>こんばんは 無事 救助 さ れ た という こと です 。<br>けれども 夏 に 向け て 海 の レジャー など 川 の レジャー 増える と 思い ます ので お気 を 付け いただき たい です ね そうですね 。<br>できる こと 気 を つけ て いき たい もの です ね 。</p>
+<p>では まずは こちら の ニュース です</p>
+<p>Apple や Google の よう な 会社 に なっ て みせる と 豪語 し ネズミ 講 で およそ 2 億 8000 万 円 を 集め た として 起訴 さ れ た 男 は 初 公判 で 起訴 内容 を 否認 し まし た 。<br>峯岸 さん ネズミ 講 し て た ん です か<br>去年 11 月 捜査 員 に 連行 さ れる 際 に 頑張っ て くる と 話し た 。<br>健康 食品 販売 会社 社長 峯岸 正治 被告<br>みんな の たま ご クラブ と 称し ネズミ 講 を 運営 し た 罪 に 問わ れ て い ます 。<br>安心 し て 待っ て て ください 大 化け し ます よ 。<br>Google や そういう ね Apple と 同じ よう な 会社 に なっ て みせ ます ので 今 耐える 時 です から<br>逮捕 前 JNN の 取材 に こう 答え て い た 峯岸 被告<br>みんな の 卵 クラブ の からくり は 会員 が 栄養 価 が 高い と 歌う 卵 90 個 13 , 900 円 で 毎月 購入 し 新規 会員 を 紹介 すれ ば 最低 で も 2 万 5000 円 の 配当 を 得 られる という もの です 。<br>典型 的 な ネズミ 講 と 見 られ ます が 峯岸 国 は これ を 高齢 者 の 年金 システム とも 主張 し て い まし た 。<br>ほら これ が 事実 な ん です よ<br>毎月 欲しい おじいちゃん お ばあちゃん たち は じゃあ 誰 が どう する の 政治 家 が 何 か し てる か 父親 が 何 か し てる か 。<br>この よう な 手口 で 去年 5 月 まで に 会員 1 万 人 余り から およそ 2 億 8000 万 円 を 集め た と さ れる 峯岸 被告 。<br>今日 の 初 公判 で 裁判 長 から ネズミ 講 を 運営 しよ う と し た こと は と 問わ れる と<br>あり ませ ん 基礎 内容 を 否認 し まし た<br>また 資金 が 毎月 集める の か と 問わ れる と 毎月 で は ない 買い たい 時 に 買え ば いい 被害 者 が 出 ない 運営 の 仕方 を し て いる ので<br>また 弁護士 は ネズミ 講 など で は なく 卵 の 販売 組織 だ と 主張 し 争う 方針 を 示し まし た 。</p>
+<p>昨日 正午 頃 八雲 町 野田 追い の 国道 5 号線 で 都市 間 高速 バス と 養豚 会社 の 運搬 用 の トラック が 正面 衝突 し バス の 乗客 3 人 と それぞれ の 運転 手 の 合わせ て 5 人 が 死亡 し バス の 乗客 12 人 が 怪我 を し た 事故<br>トラック は 当時 豚 30 頭 を 積み 農場 から 食肉 加工 場 へ 向かう 途中 で 近く を 走行 し て い た 車 の ドライブ レコーダー から トラック が 対向 車線 に はみ出し た の が 事故 の 原因 と み られ て い ます 。<br>この たび 大変 ご 迷惑 を おかけ し まし て 本当に 申し訳 ござい ませ ん 。<br>直近 の 3 ヶ月 の 状況 を 荷重 労働 に あたる よう な 労働 時間 に は なっ て い なかっ た と 。<br>事故 で は バス の 対向 車線 側 が 衝突 で 大きく 壊れ まし た が バス の 運行 会社 に より ます と 亡くなっ た 乗客 3 人 は 運転 席 の すぐ 後ろ の 窓側 に 座っ て い た という こと です 。<br>普通 に 元気 に 出勤 し て くる ん じゃ ない か という 風 に ちょっと まさか し て しまう ぐらい 高級 な 出来事 でし た ね<br>仕事 の 面 で は 本当に きっちり 発言 も し て くれる そういう 頼り に し てる 職員 でし た 。<br>警察 は 午後 から 現場 の 国道 で 事故 の 痕跡 など を 確認 し 引き続き 当時 の 状況 を 調べ て い ます</p>
+<p>重要 法案 を ほぼ 成立 さ せ 今 の 国会 を 乗り切っ た 形 の 岸田 総理 です が ここ に き て 内閣 支持 率 が 下落 する など また 新た な 困難 に 直面 し て い ます 。<br>まさか こんな こと は 起こら ない と 思っ て い た こうした いくつ も の まさか を 実感 せ ざる を 得 ませ ん 。<br>昨日 母校 早稲田大学 で 後輩 ら を 前 に これ まで の 歩み を 振り返っ た 岸田 総理 。<br>今回 も まさかの 事態 な の でしょ う か この 週末 に 行わ れ た 報道 各社 の 世論 調査 で いずれ も 岸田 内閣 の 支持 率 が 下落 し た の です 。<br>一気に 10 ポイント 以上 下がっ た 調査 も あり まし た 。<br>町 で は 他 に あの とっ て 変われ ば いい な という 政権 が 特に ない ので 。<br>外交 ばっかり もう ちょっと 日本 に 目 を 向け て くれ ない か な って いう 。<br>あんまり 素敵 な 噂 も 聞か ない じゃ ない です か ご 家族 の 写真 撮っ ちゃっ たり する よう な やつ と か 。<br>中でも 反発 が 強かっ た の が<br>マイ ナンバー とか あん だけ ね<br>不具合 が 出 てる のに<br>情報 が 漏れ たり とかいう お話 も たま に 聞か れる ので ご 清聴 を 発信 し て もらい たく ない し<br>マイ ナンバー でしょ う ね<br>地元 で も 高齢 者 の 問い合わせ が すごい<br>マイナンバーカード を めぐり 相次ぐ トラブル が 不満 に つながっ て いる よう です<br>来年 秋 に 予定 さ れ て いる 紙 の 保険 証 の 廃止 を 延期 する よう 求める 声 も あり ます が<br>政府 の 方針 通り に 進める こと は 河野 大臣 から 発言 が あっ た 通り で あり ます<br>関係 者 に より ます と 岸田 総理 は この 週末 まで 高揚 感 に 満ち た 様子 だっ た と いい ます<br>解散 カード を 切る 素振り を 見せ た 結果 国会 運営 や 選挙 区 調整 が スムーズ に 進ん だ こと<br>に 自信 を 深め て い た という こと です<br>今回 は 勉強 に なっ た<br>最大 の 収穫 は 解散 権 を 取っ て おく こと が でき た こと だ<br>その後 明らか に なっ た 支持 率 の 下落<br>総理 は 新た な 困難 に 直面 し て い ます</p>
+<p>北朝鮮 が 重要 政策 を 決定 する 朝鮮 労働党 の 中央 委員 会 拡大 総会 で 軍事 偵察 衛生 の 打ち上げ を 早期 に 再び 実施 する 方針 が 示さ れ まし た<br>金 正 恩 総 書記 が 出席 し た 朝鮮 労働党 の 中央 委員 会 拡大 総会<br>議題 に 上がっ た の は 宇宙 開発 で 先月 製 の 軍事 偵察 衛星 の 打ち上げ 失敗 は 最も 重大 な 欠陥 だっ た と し まし た<br>報告 で は 衛星 打ち上げ 準備 を 責任 を 負っ て 推進 し た 幹部 ら の 無責任 者 が 辛辣 に 批判 さ れ た<br>そして 失敗 の 原因 を 徹底的 に 分析 し た 上 で 早期 に 再び 打ち上げる 方針 を 示し まし た<br>一方 で 北朝鮮 メディア は キム 総 書記 が 演説 を 行っ た と は 伝え て おら ず 韓国 統一 省 は 非常 に 異例 だ と 指摘 し て い ます<br>成果 が なく 演説 する こと は 難しかっ た と 推定 し て いる<br>総会 で は 北朝鮮 は 強力 な 核兵器 の 増産 実績 を 継続 し て 生み出す とも 強調<br>核 を 増産 し て いく 姿勢 を 鮮明 に し て い ます</p>
+<p>チャット GPT は 教育 現場 でも 使える の か<br>現場 で の 取材 から AI に 何 が でき て 何 が でき ない の か が 見え て き まし た<br>高校 1 年生 レベル の 問題 を 作っ て ください<br>という 風 に 入力 を する と こんな 形 で です ね<br>もう 今 リアルタイム で 問題 を 作っ て もらっ て いる の が<br>静岡 県 に ある 御殿場 西 高校 生成 AI チャット GPT の 活用 について 教育 ベンチャー 企業 を 招い た 研修 が 行わ れ まし た<br>我々 教員 って じゃあ 何 の ため に いる の か<br>改めて 考え直さ ない と おそらく<br>我々 は 本当に AI に 仕事 取っ て 代わら れ ちゃう ん じゃ ない<br>本当に AI が 先生 の 代わり を 務める こと が できる の でしょ う か<br>研修 を 受け た 先生 が 部活 の 資料 を 作ら せ て みる と<br>自分 まだ 教員 2 年 目 な の も あっ て 事務 作業 を 全然 あの 効率 よく まだ でき ない ので<br>ちゃんと GPT が こう やっ て 丁寧 に 作っ て くれる ので そこ は すごく 捗っ てる な っていう<br>精製 AI は 学習 し た 膨大 な データ から 質問 に対して 最も 正解 に 近い 内容 を 答える もの です<br>これ まで 先生 たち が ゼロ から 始め て い た 仕事 を 7 割 くらい まで 手伝っ て くれる 優秀 な アシスタント に は なり そう だ と 言い ます<br>一方 で 精製 AI が 苦手 な こと も 分かっ て き まし た<br>AI に 作ら せ た 数学 の 問題 回答 まで 考え させ て みる と<br>そんな きれい に なら ない 気 が する ん です けど<br>先生 が 計算 する と やはり 答え は 間違っ て い まし た<br>授業 で 生徒 に も AI を 使っ て み て もらい ます<br>あと チャット GPT に 力 を 借り て 図形 で の 証明 を ちょっと 完成 さ せ て もらお う か な と<br>数学 の 証明 方法 を 見つけ て もらお う と し まし た が<br>聞い た 数式 は これ 証明 が でき て も 正面 に なら なく ない みたい な<br>思っ た 通り の 回答 が 返っ て き ませ ん<br>生成 AI は あくまで データ の 中 から 正解 に 近い 内容 を 寄せ 集め て 文章 を 作っ て いる だけ<br>自分 で 数式 を 解い て いる わけ で は ない ので 100 点 満点 の 正解 を 求め られる 数学 は 今 の ところ 苦手 な よう です<br>授業 の 本質 的 な ところ に 時間 を かけ れ ない って の が 今 まで の 教育 で あっ た と 思う ん です けど<br>そこ を AI に 任せ て 人間 が 考える べき 場所 に フル に 使える よう な 形 で<br>教育 現場 で 使っ て み て 見え て き た AI の 得意 不得意<br>AI が 教育 を 変える の か 模索 は 続い て いく と 言い ます<br>AI が どん だけ 発展 し て も 人 が 一番 中心 に 僕 は ずっと いる と 思う ん です よ<br>自分 の 学校 だ と この 部分 だけ 使え そう だ よ ね って<br>怖がら ず に 使っ て 自分 たち の 自分 たち ルール を 決め て いっ て もらえ たら<br>続い て 新型 コロナ ウイルス について です<br>政府 は 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある として 高齢 者 など に 改めて ワクチン 接種 の 検討 を 呼びかけ まし た<br>全国 の 定点 医療 機関 から 報告 さ れる 1 週間 ごと の 患者 数 で 見る と 緩やか な 増加 傾向 に ある と 認識 し て い ます<br>松野 官房 長官 は 過去 の 状況 を 踏まえる と 今後 夏 の 間 に 一定 の 感染 拡大 が 生じる 可能 性 が ある と 述べ まし た<br>その 上 で 高齢 者 や 基礎 疾患 の ある 人 など は 重症 化 を 防ぐ ため ワクチン の 接種 を 検討 する よう<br>改めて 呼びかけ まし た<br>また 急激 な 感染 拡大 で 医療 の 逼迫 が 見込ま れる 場合 は 国民 へ の 感染 対策 の 呼びかけ の 強化 など を 行う と 述べ まし た</p>
+<p>日本 マクドナルド は 東京 名古屋 大阪 エリア の 都心 部 の 184 店舗 で 一部 商品 を 値上げ する と 発表 し まし た<br>値上げ は 来月 19 日 から で ビッグ マック は 通常 450 円 です が 都心 店 で は 500 円 に 準 都心 店 で は 470 円 に し ます<br>ポテト の M サイズ は 通常 330 円 の ところ 都心 店 で は 370 円 に 準 都心 店 で は 340 円 に 引き上げ ます 一方 ハンバーガー や ポテト の S サイズ など は 価格 を 据え置く と し て い ます</p>
+]]></content>
+      <categories>
+        <category>News</category>
+      </categories>
+      <tags>
+        <tag>News</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>強く否定する・強く否定しない</title>
     <url>/new-blog/2023/06/17/course12/</url>
     <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
@@ -576,6 +677,11 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>course15</title>
+    <url>/new-blog/2023/06/18/course15/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>〜けれど</title>
     <url>/new-blog/2023/06/18/course14/</url>
     <content><![CDATA[<h1 id="〜けれど"><a href="#〜けれど" class="headerlink" title="〜けれど"></a>〜けれど</h1><p>[復習]</p>
@@ -653,85 +759,6 @@ const greeting = &quot;Hello &quot;;
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>〜関係なく・無視して</title>
-    <url>/new-blog/2023/06/17/course11/</url>
-    <content><![CDATA[<h1 id="11課-〜関係なく・無視して"><a href="#11課-〜関係なく・無視して" class="headerlink" title="11課　〜関係なく・無視して"></a>11課　〜関係なく・無視して</h1><p>[復習]</p>
-<ul>
-<li>彼女は僕の予定を<u>考えないで</u>、自分でどんどん旅行計画を立ててしまう。</li>
-<li>とても疲れているとき<u>は別として</u>、私は毎日ジョギングをする。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜を問わず"><a href="#〜を問わず" class="headerlink" title="〜を問わず"></a>〜を問わず</h2><p>意味　〜がどうかは問題ではなく、どれにも同じことが言える</p>
-<p>例文　</p>
-<blockquote>
-<p>明日のパーティーは参加者<u>を問わず</u>、関係ない方も大丈夫です。</p>
-</blockquote>
-<p>接続　名＋を問わず</p>
-<p>注意　</p>
-<ol>
-<li>いろいろな違いや幅のある言葉や対立する言葉につく。</li>
-</ol>
-<h2 id="〜にかかわりなく・〜にかかわらず"><a href="#〜にかかわりなく・〜にかかわらず" class="headerlink" title="〜にかかわりなく・〜にかかわらず"></a>〜にかかわりなく・〜にかかわらず</h2><p>意味　〜には関係なく同じようになる</p>
-<p>例文　</p>
-<blockquote>
-<p>理由が何であるか<u>にかかわりなく</u>、一度納入した入学金はお返しできません</p>
-</blockquote>
-<p>接続　名＋にかかわりなく・にかかわらず</p>
-<p>注意　</p>
-<ol>
-<li>幅のある言葉言葉につく。</li>
-<li>また、対立する言葉にもつく。</li>
-</ol>
-<h2 id="〜もかまわず"><a href="#〜もかまわず" class="headerlink" title="〜もかまわず"></a>〜もかまわず</h2><p>説明　dont mind, dont care about</p>
-<p>意味　普通なら気にする〜のことを気にしないで行動する。(I act without concern for things that would normally be of concern.)</p>
-<p>例文　</p>
-<blockquote>
-<p>心配や他の人の見方もかまわず、自分の努力で結果が出ました。<br>母は人を待たせているの<u>もかまわず</u>、まだ鏡の前に化粧している。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-な／-である）＋の＋もかまわず</p>
-<p>注意　</p>
-<ol>
-<li>後には、普通でない行動、意外感のある行動を表す文を来る。</li>
-<li>話者の希望・意向を表す文は来ない。</li>
-</ol>
-<h3 id="〜はともかく（として）"><a href="#〜はともかく（として）" class="headerlink" title="〜はともかく（として）"></a>〜はともかく（として）</h3><p>説明　leaving A aside, B is …</p>
-<p>意味　ほかにもっと強調したいことがあるので、〜はとりあえず考えないでおく。（With the desire to emphasize something further, I will temporarily set aside thoughts about the aforementioned matter.）</p>
-<p>例文　</p>
-<blockquote>
-<p>本当かどうか<u>はともかくとして</u>、その話は面白い</p>
-</blockquote>
-<p>接続　<br>    名＋はともかく（として）<br>    普通形現在（）＋の＋はともかく（として）</p>
-<p>注意　</p>
-<ol>
-<li>話者が、後のことに比べてそれほど重要ではないと思っていることを表す言葉につく。</li>
-<li>後には、「〜」よりもっと強調したいことを言う。</li>
-</ol>
-<h3 id="〜はさておき"><a href="#〜はさておき" class="headerlink" title="〜はさておき"></a>〜はさておき</h3><p>意味　〜は今、考えの外に置いて。さて：そのままの状態、おき：置きます</p>
-<p>例文　</p>
-<blockquote>
-<p>飲み会をするなら、細かいこと<u>はさておき</u>、まず場所と時間を決めなくては。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋はさておき</p>
-<p>注意</p>
-<ol>
-<li>「〜」より優先順位が高いこと、基本的なことを表す文が来る。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>course15</title>
-    <url>/new-blog/2023/06/18/course15/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>〜だから（理由）−１</title>
