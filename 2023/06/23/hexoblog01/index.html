@@ -19,16 +19,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"lingzhem.github.io","root":"/new-blog/","images":"/new-blog/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/new-blog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/new-blog/js/config.js"></script>
 
-    <meta name="description" content="How to use hexo and github to create a personal blogこの文章では、HexoとGitHub Pagesを使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。 事前の準備構築を始める前に、以下のいくつかのもの">
+    <meta name="description" content="この文章では、HexoとGitHub Pagesを使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexoblog01">
+<meta property="og:title" content="HexoとGitHubを使用して個人のブログを作成する方法">
 <meta property="og:url" content="https://lingzhem.github.io/2023/06/23/hexoblog01/index.html">
 <meta property="og:site_name" content="モウ blog">
-<meta property="og:description" content="How to use hexo and github to create a personal blogこの文章では、HexoとGitHub Pagesを使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。 事前の準備構築を始める前に、以下のいくつかのもの">
+<meta property="og:description" content="この文章では、HexoとGitHub Pagesを使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-23T10:49:33.000Z">
-<meta property="article:modified_time" content="2023-06-23T11:40:17.485Z">
+<meta property="article:modified_time" content="2023-06-25T08:41:50.138Z">
 <meta property="article:author" content="モウ レイテツ">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 
@@ -36,10 +37,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lingzhem.github.io/2023/06/23/hexoblog01/","path":"2023/06/23/hexoblog01/","title":"hexoblog01"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lingzhem.github.io/2023/06/23/hexoblog01/","path":"2023/06/23/hexoblog01/","title":"HexoとGitHubを使用して個人のブログを作成する方法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>hexoblog01 | モウ blog</title>
+<title>HexoとGitHubを使用して個人のブログを作成する方法 | モウ blog</title>
   
 
 
@@ -139,7 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-use-hexo-and-github-to-create-a-personal-blog"><span class="nav-number">1.</span> <span class="nav-text">How to use hexo and github to create a personal blog</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99"><span class="nav-number">1.1.</span> <span class="nav-text">事前の準備</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.1.1.</span> <span class="nav-text">Node.js のインストール</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.1.2.</span> <span class="nav-text">Git のインストール</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88"><span class="nav-number">1.1.3.</span> <span class="nav-text">GitHub アカウント</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90"><span class="nav-number">1.1.4.</span> <span class="nav-text">GitHub リポジトリの作成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo のインストール</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E3%82%92%E7%94%A8%E3%81%84%E3%81%A6%E5%80%8B%E4%BA%BA%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%BE%E3%81%99"><span class="nav-number">1.3.</span> <span class="nav-text">Hexoを用いて個人のブログを構築します</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0-github-pages"><span class="nav-number">1.4.</span> <span class="nav-text">部署到 github pages</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99"><span class="nav-number">1.</span> <span class="nav-text">事前の準備</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.1.</span> <span class="nav-text">Node.js のインストール</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.2.</span> <span class="nav-text">Git のインストール</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88"><span class="nav-number">1.3.</span> <span class="nav-text">GitHub アカウント</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90"><span class="nav-number">1.4.</span> <span class="nav-text">GitHub リポジトリの作成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">2.</span> <span class="nav-text">Hexo のインストール</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E3%82%92%E7%94%A8%E3%81%84%E3%81%A6%E5%80%8B%E4%BA%BA%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%BE%E3%81%99"><span class="nav-number">3.</span> <span class="nav-text">Hexoを用いて個人のブログを構築します</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0-github-pages"><span class="nav-number">4.</span> <span class="nav-text">部署到 github pages</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -152,18 +153,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/new-blog/archives/">
-          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/new-blog/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/new-blog/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -203,12 +204,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="hexoblog01 | モウ blog">
+      <meta itemprop="name" content="HexoとGitHubを使用して個人のブログを作成する方法 | モウ blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexoblog01
+          HexoとGitHubを使用して個人のブログを作成する方法
         </h1>
 
         <div class="post-meta-container">
@@ -218,9 +219,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-06-23 19:49:33 / Modified: 20:40:17" itemprop="dateCreated datePublished" datetime="2023-06-23T19:49:33+09:00">2023-06-23</time>
+      <time title="Created: 2023-06-23 19:49:33" itemprop="dateCreated datePublished" datetime="2023-06-23T19:49:33+09:00">2023-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-06-25 17:41:50" itemprop="dateModified" datetime="2023-06-25T17:41:50+09:00">2023-06-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/new-blog/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
     </span>
 
   
@@ -232,34 +248,37 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="How-to-use-hexo-and-github-to-create-a-personal-blog"><a href="#How-to-use-hexo-and-github-to-create-a-personal-blog" class="headerlink" title="How to use hexo and github to create a personal blog"></a>How to use hexo and github to create a personal blog</h1><p>この文章では、HexoとGitHub Pagesを使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+    <div class="post-body" itemprop="articleBody"><p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+<span id="more"></span>
+
 <h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
 <ul>
-<li>Node.js のローカルインストール</li>
-<li>Git のローカルインストール</li>
-<li>GitHub アカウント</li>
-<li>GitHub リポジトリの作成</li>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
 </ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用してNode.jsをインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
 <pre><code class="bash">brew install node
 </code></pre>
 <p>もしくは、</p>
 <pre><code class="bash">node -v
 npm -v
 </code></pre>
-<p>このコマンドはNode.jsのバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用してGitをインストールすることもできます。以下のコマンドを入力してGitが正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
 <pre><code class="bash">brew install git
 </code></pre>
 <pre><code class="bash">git --version
 </code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。<br>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#121;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。ここをクリックして、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルのSSHキーをGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#117;&#x72;&#46;&#101;&#x6d;&#97;&#105;&#108;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#121;&#x6f;&#117;&#x72;&#46;&#101;&#x6d;&#97;&#105;&#108;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
 <pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
 </code></pre>
@@ -269,7 +288,7 @@ git config --global user.email &quot;your.email@example.com&quot;
 <p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
 <p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
 <p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p>Hexoは、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
 <p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
 <pre><code class="bash">npm install -g hexo-cli
 </code></pre>
@@ -338,6 +357,9 @@ deploy:
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/new-blog/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
         
 
