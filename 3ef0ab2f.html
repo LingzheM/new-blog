@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/new-blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/new-blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/new-blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/new-blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/new-blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lingzhem.github.io","root":"/new-blog/","images":"/new-blog/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/new-blog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/new-blog/js/config.js"></script>
+
+    <meta name="description" content="Chapter 5 Booting, Initializing, and Virtualizing Linux[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system[x] 102.2 Install a boot manager[x] 102.6 Linux as a virtualization gues">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BootTheSystem">
+<meta property="og:url" content="https://lingzhem.github.io/3ef0ab2f.html">
+<meta property="og:site_name" content="モウ blog">
+<meta property="og:description" content="Chapter 5 Booting, Initializing, and Virtualizing Linux[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system[x] 102.2 Install a boot manager[x] 102.6 Linux as a virtualization gues">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-17T10:00:03.000Z">
+<meta property="article:modified_time" content="2023-06-26T08:41:06.512Z">
+<meta property="article:author" content="モウ レイテツ">
+<meta property="article:tag" content="LPIC">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lingzhem.github.io/3ef0ab2f.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://lingzhem.github.io/3ef0ab2f.html","path":"3ef0ab2f.html","title":"BootTheSystem"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>BootTheSystem | モウ blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/new-blog/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/new-blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">モウ blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">keep thinking</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/new-blog/" rel="section">Home</a></li><li class="menu-item menu-item-about"><a href="/new-blog/about/" rel="section">About</a></li><li class="menu-item menu-item-tags"><a href="/new-blog/tags/" rel="section">Tags</a></li><li class="menu-item menu-item-categories"><a href="/new-blog/categories/" rel="section">Categories</a></li><li class="menu-item menu-item-archives"><a href="/new-blog/archives/" rel="section">Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><span class="nav-number">1.</span> <span class="nav-text">Chapter 5 Booting, Initializing, and Virtualizing Linux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Understanding-the-Boot-Process"><span class="nav-number">2.</span> <span class="nav-text">Understanding the Boot Process</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Boot-Process"><span class="nav-number">2.1.</span> <span class="nav-text">The Boot Process</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Extracting-Information-about-the-Boot-Process"><span class="nav-number">2.2.</span> <span class="nav-text">Extracting Information about the Boot Process</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Looking-at-Firmware"><span class="nav-number">3.</span> <span class="nav-text">Looking at Firmware</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-BIOS-Startup"><span class="nav-number">3.1.</span> <span class="nav-text">The BIOS Startup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-UEFI-Startup"><span class="nav-number">3.2.</span> <span class="nav-text">The UEFI Startup</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Looking-at-Boot-Loaders"><span class="nav-number">4.</span> <span class="nav-text">Looking at Boot Loaders</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Boot-Loader-Principles"><span class="nav-number">4.1.</span> <span class="nav-text">Boot Loader Principles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-GRUB-Legacy-as-the-Boot-Loader"><span class="nav-number">4.2.</span> <span class="nav-text">Using GRUB Legacy as the Boot Loader</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuring-GRUB-Legacy"><span class="nav-number">4.2.1.</span> <span class="nav-text">Configuring GRUB Legacy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-GRUB-Legacy"><span class="nav-number">4.2.2.</span> <span class="nav-text">Installing GRUB Legacy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Interacting-with-GRUB-Legacy"><span class="nav-number">4.2.3.</span> <span class="nav-text">Interacting with GRUB Legacy</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-GRUB-2-as-the-Boot-Loader"><span class="nav-number">4.3.</span> <span class="nav-text">Using GRUB 2 as the Boot Loader</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuring-GRUB2"><span class="nav-number">4.3.1.</span> <span class="nav-text">Configuring GRUB2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-GRUB2"><span class="nav-number">4.3.2.</span> <span class="nav-text">Installing GRUB2</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">モウ レイテツ</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/new-blog/archives/">
+          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/new-blog/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/new-blog/tags/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://lingzhem.github.io/3ef0ab2f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/new-blog/images/avatar.gif">
+      <meta itemprop="name" content="モウ レイテツ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="モウ blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="BootTheSystem | モウ blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          BootTheSystem
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-06-17 19:00:03" itemprop="dateCreated datePublished" datetime="2023-06-17T19:00:03+09:00">2023-06-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-06-26 17:41:06" itemprop="dateModified" datetime="2023-06-26T17:41:06+09:00">2023-06-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/new-blog/categories/LPIC/" itemprop="url" rel="index"><span itemprop="name">LPIC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
+<span id="more"></span>
+
+<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
+<ol>
+<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
+<li>The boot loader runs and determines what Linux kernel program to load.</li>
+<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
+<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
+</ol>
+<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
+<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
+<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
+<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
+<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
+<ul>
+<li>An internal hard drive</li>
+<li>An external hard drive</li>
+<li>A CD&#x2F;DVD drive</li>
+<li>A USB flash drive</li>
+<li>A network server</li>
+</ul>
+<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
+</blockquote>
+<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
+<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
+<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
+<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
+<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
+<p>The GRUB Legacy configuration file consists of two sections:</p>
+<ul>
+<li>Global definitions</li>
+<li>Operating system boot definitions</li>
+</ul>
+<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
+<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
+<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
+<ul>
+<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
+<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
+</ul>
+<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
+[…]
+set root=(hd1,1)
+linux16 /vmlinuz[…]
+initrd /initramfs[…]
+&#125;
+menuentry &quot;Windows&quot; &#123;
+set root=(hd0,1)
+[…]
+&#125;
+</code></pre>
+<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
+<p>For GRUB2, the commands to remember are as follows:</p>
+<ul>
+<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
+<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
+<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+</ul>
+<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
+<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/new-blog/tags/LPIC/" rel="tag"># LPIC</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/new-blog/c2c9751e.html" rel="prev" title="強く否定する・強く否定しない">
+                  <i class="fa fa-chevron-left"></i> 強く否定する・強く否定しない
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/new-blog/b439c0f1.html" rel="next" title="〜（話題）は">
+                  〜（話題）は <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">モウ レイテツ</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/new-blog/js/comments.js"></script><script src="/new-blog/js/utils.js"></script><script src="/new-blog/js/motion.js"></script><script src="/new-blog/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/new-blog/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
