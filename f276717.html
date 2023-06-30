@@ -19,13 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"lingzhem.github.io","root":"/new-blog/","images":"/new-blog/images","scheme":"Pisces","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/new-blog/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/new-blog/js/config.js"></script>
 
-    <meta property="og:type" content="article">
+    <meta name="description" content="Compressing File Commands gzip bzip2 xz zip  Archiving File Commands cpio dd tar  tarball  Managing Linkssymbolic link (soft link)hard linkA hard link is a file or directory that has one index (inode)">
+<meta property="og:type" content="article">
 <meta property="og:title" content="chapter04">
 <meta property="og:url" content="https://lingzhem.github.io/f276717.html">
 <meta property="og:site_name" content="モウ blog">
+<meta property="og:description" content="Compressing File Commands gzip bzip2 xz zip  Archiving File Commands cpio dd tar  tarball  Managing Linkssymbolic link (soft link)hard linkA hard link is a file or directory that has one index (inode)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-28T10:39:19.000Z">
-<meta property="article:modified_time" content="2023-06-29T09:37:38.089Z">
+<meta property="article:modified_time" content="2023-06-30T11:31:26.361Z">
 <meta property="article:author" content="モウ レイテツ">
 <meta name="twitter:card" content="summary">
 
@@ -124,7 +126,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -137,6 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Compressing-File-Commands"><span class="nav-number">1.</span> <span class="nav-text">Compressing File Commands</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Archiving-File-Commands"><span class="nav-number">2.</span> <span class="nav-text">Archiving File Commands</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Managing-Links"><span class="nav-number">3.</span> <span class="nav-text">Managing Links</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#symbolic-link-soft-link"><span class="nav-number">3.1.</span> <span class="nav-text">symbolic link (soft link)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hard-link"><span class="nav-number">3.2.</span> <span class="nav-text">hard link</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Constructing-a-Soft-Link"><span class="nav-number">3.2.1.</span> <span class="nav-text">Constructing a Soft Link</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -223,7 +226,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-06-29 18:37:38" itemprop="dateModified" datetime="2023-06-29T18:37:38+09:00">2023-06-29</time>
+      <time title="Modified: 2023-06-30 20:31:26" itemprop="dateModified" datetime="2023-06-30T20:31:26+09:00">2023-06-30</time>
     </span>
 
   
@@ -235,7 +238,22 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><h1 id="Compressing-File-Commands"><a href="#Compressing-File-Commands" class="headerlink" title="Compressing File Commands"></a>Compressing File Commands</h1><ul>
+<li>gzip</li>
+<li>bzip2</li>
+<li>xz</li>
+<li>zip</li>
+</ul>
+<h1 id="Archiving-File-Commands"><a href="#Archiving-File-Commands" class="headerlink" title="Archiving File Commands"></a>Archiving File Commands</h1><ul>
+<li>cpio</li>
+<li>dd</li>
+<li>tar</li>
+</ul>
+<p>tarball </p>
+<h1 id="Managing-Links"><a href="#Managing-Links" class="headerlink" title="Managing Links"></a>Managing Links</h1><h2 id="symbolic-link-soft-link"><a href="#symbolic-link-soft-link" class="headerlink" title="symbolic link (soft link)"></a>symbolic link (soft link)</h2><h2 id="hard-link"><a href="#hard-link" class="headerlink" title="hard link"></a>hard link</h2><p>A hard link is a file or directory that has one index (inode) number but at least two different filenames.</p>
+<p>To create a hard link, use the ln command. For hard links, the original file must exist prior to issuing the ln command.</p>
+<h3 id="Constructing-a-Soft-Link"><a href="#Constructing-a-Soft-Link" class="headerlink" title="Constructing a Soft Link"></a>Constructing a Soft Link</h3><p>a soft link fi le provides a pointer to a fi le that may reside on another fi lesystem.<br>The two fi les do not share inode numbers because they do not point to the same data.</p>
+
     </div>
 
     
