@@ -53,9 +53,9 @@ https://lingzhem.github.io/edfeed82.html
 https://lingzhem.github.io/7292f09b.html
 https://lingzhem.github.io/ff3b9319.html
 https://lingzhem.github.io/d4fa8842.html
-https://lingzhem.github.io/categories/index.html
-https://lingzhem.github.io/tags/index.html
 https://lingzhem.github.io/about/index.html
+https://lingzhem.github.io/tags/index.html
+https://lingzhem.github.io/categories/index.html
 https://lingzhem.github.io/
 https://lingzhem.github.io/tags/LPIC/
 https://lingzhem.github.io/tags/News/
