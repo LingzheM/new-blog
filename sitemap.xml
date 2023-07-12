@@ -497,15 +497,6 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/about/index.html</loc>
     
     <lastmod>2023-06-17</lastmod>
@@ -523,6 +514,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://lingzhem.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://lingzhem.github.io/</loc>
@@ -533,13 +533,6 @@
 
   
   <url>
-    <loc>https://lingzhem.github.io/tags/News/</loc>
-    <lastmod>2023-07-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/tags/LPIC/</loc>
     <lastmod>2023-07-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -547,7 +540,7 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/JavaScript/</loc>
+    <loc>https://lingzhem.github.io/tags/News/</loc>
     <lastmod>2023-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -562,6 +555,13 @@
   
   <url>
     <loc>https://lingzhem.github.io/tags/Tecnology/</loc>
+    <lastmod>2023-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/tags/JavaScript/</loc>
     <lastmod>2023-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -619,14 +619,14 @@
 
   
   <url>
-    <loc>https://lingzhem.github.io/categories/News/</loc>
+    <loc>https://lingzhem.github.io/categories/LPIC/</loc>
     <lastmod>2023-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/LPIC/</loc>
+    <loc>https://lingzhem.github.io/categories/News/</loc>
     <lastmod>2023-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

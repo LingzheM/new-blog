@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/d4fa8842.html</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>夜のニュース</title>
     <url>/new-blog/ff3b9319.html</url>
     <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/3LhYgjOiNX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -94,22 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>230630ニュース</title>
-    <url>/new-blog/1c8ef14c.html</url>
-    <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/alyACfHRetw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<span id="more"></span>
-
-<p><ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> たち が <ruby>暮<rp>(</rp><rt>く</rt><rp>)</rp></ruby>らし て い た の は <ruby>数<rp>(</rp><rt>かぞ</rt><rp>)</rp></ruby>え きれ ない <ruby>数<rp>(</rp><rt>かず</rt><rp>)</rp></ruby> が ひしめき<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>う <ruby>場所<rp>(</rp><rt>ばしょ</rt><rp>)</rp></ruby><br><ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> <ruby>東部<rp>(</rp><rt>とうぶ</rt><rp>)</rp></ruby> <ruby>佐呂間<rp>(</rp><rt>さろま</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby><br>ペット が <ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>く なり すぎ て <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> でき なく なっ た <ruby>多頭<rp>(</rp><rt>たとう</rt><rp>)</rp></ruby> <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>崩壊<rp>(</rp><rt>ほうかい</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>き た <ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> です<br><ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby> たち を <ruby>警戒<rp>(</rp><rt>けいかい</rt><rp>)</rp></ruby> し てる でしょ う か こちら に <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かっ て い ます<br><ruby>愛護<rp>(</rp><rt>あいご</rt><rp>)</rp></ruby> <ruby>団体<rp>(</rp><rt>だんたい</rt><rp>)</rp></ruby> や <ruby>獣<rp>(</rp><rt>しし</rt><rp>)</rp></ruby> <ruby>医師<rp>(</rp><rt>いし</rt><rp>)</rp></ruby> たち の チーム およそ 50 <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> が レスキュー に <ruby>乗<rp>(</rp><rt>の</rt><rp>)</rp></ruby>り<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し まし た<br><ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> の <ruby>経営<rp>(</rp><rt>けいえい</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby> は およそ 20 <ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>ない</rt><rp>)</rp></ruby> で <ruby>捨<rp>(</rp><rt>す</rt><rp>)</rp></ruby>て <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> を <ruby>保護<rp>(</rp><rt>ほご</rt><rp>)</rp></ruby> <ruby>去勢<rp>(</rp><rt>きょせい</rt><rp>)</rp></ruby> <ruby>不妊<rp>(</rp><rt>ふにん</rt><rp>)</rp></ruby> <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> を し なかっ た ため <ruby>数<rp>(</rp><rt>かず</rt><rp>)</rp></ruby> が <ruby>増<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>え て いっ た と <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>い ます<br><ruby>現在<rp>(</rp><rt>げんざい</rt><rp>)</rp></ruby> <ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> に いる の は <ruby>十<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby> <ruby>数頭<rp>(</rp><rt>すうとう</rt><rp>)</rp></ruby> の <ruby>乳牛<rp>(</rp><rt>にゅうぎゅう</rt><rp>)</rp></ruby> と およそ 70 <ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby> の <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby><br><ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> の <ruby>経営<rp>(</rp><rt>けいえい</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby> に <ruby>必要<rp>(</rp><rt>ひつよう</rt><rp>)</rp></ruby> な <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> など を <ruby>受<rp>(</rp><rt>う</rt><rp>)</rp></ruby>け させ られ なかっ た わけ を <ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>く と<br><ruby>東北<rp>(</rp><rt>とうほく</rt><rp>)</rp></ruby> に 1 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> し て シューズ に 1 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> くらい か とても じゃ ない けど<br>まあ <ruby>費用<rp>(</rp><rt>ひよう</rt><rp>)</rp></ruby> と <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> が <ruby>面倒<rp>(</rp><rt>めんどう</rt><rp>)</rp></ruby> <ruby>見切<rp>(</rp><rt>みき</rt><rp>)</rp></ruby>れ なく なる <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> に なんとか <ruby>頼<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>ん だ <ruby>使用<rp>(</rp><rt>しよう</rt><rp>)</rp></ruby> <ruby>崩壊<rp>(</rp><rt>ほうかい</rt><rp>)</rp></ruby> だって <ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby> に も <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>し て くれ た だろ う とか <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>っ て <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>か れ た んで <ruby>俺<rp>(</rp><rt>おれ</rt><rp>)</rp></ruby> の <ruby>話<rp>(</rp><rt>はなし</rt><rp>)</rp></ruby> を <ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>い た こと も ない はず の <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> が そういう こと <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>い て<br><ruby>保護<rp>(</rp><rt>ほご</rt><rp>)</rp></ruby> さ れ た <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> たち に は <ruby>狂犬病<rp>(</rp><rt>きょうけんびょう</rt><rp>)</rp></ruby> ワクチン の <ruby>接種<rp>(</rp><rt>せっしゅ</rt><rp>)</rp></ruby> や <ruby>去勢<rp>(</rp><rt>きょせい</rt><rp>)</rp></ruby> <ruby>不妊<rp>(</rp><rt>ふにん</rt><rp>)</rp></ruby> <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> が <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>わ れ た という こと です</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IS21scRCun4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<p> <ruby>名古屋<rp>(</rp><rt>なごや</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt>し</rt><rp>)</rp></ruby> に ある <ruby>東山<rp>(</rp><rt>ひがしやま</rt><rp>)</rp></ruby> <ruby>動植物<rp>(</rp><rt>どうしょくぶつ</rt><rp>)</rp></ruby> <ruby>園<rp>(</rp><rt>園</rt><rp>)</rp></ruby> <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> が <ruby>水巻<rp>(</rp><rt>みずまき</rt><rp>)</rp></ruby> を し て い ます<br><ruby>作業<rp>(</rp><rt>さぎょう</rt><rp>)</rp></ruby> が <ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わり ホース を <ruby>置<rp>(</rp><rt>お</rt><rp>)</rp></ruby>い て <ruby>元栓<rp>(</rp><rt>もとせん</rt><rp>)</rp></ruby> を <ruby>締<rp>(</rp><rt>し</rt><rp>)</rp></ruby>め に <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かう <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> する と <ruby>象<rp>(</rp><rt>ぞう</rt><rp>)</rp></ruby> が <ruby>鼻先<rp>(</rp><rt>はなさき</rt><rp>)</rp></ruby> を <ruby>器用<rp>(</rp><rt>きよう</rt><rp>)</rp></ruby> に <ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>い ホース を <ruby>片付<rp>(</rp><rt>かたづ</rt><rp>)</rp></ruby>け <ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>め まし た<br>しかも <ruby>絡<rp>(</rp><rt>から</rt><rp>)</rp></ruby>まら ない よう<br><ruby>輪<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>っか に し て くるくる <ruby>巻<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>い て いき ます<br><ruby>最後<rp>(</rp><rt>さいご</rt><rp>)</rp></ruby> は ホース を <ruby>鼻<rp>(</rp><rt>はな</rt><rp>)</rp></ruby> で <ruby>渡<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>し まし た<br><ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby> は マルダー<br>ちょうど 50 <ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> に <ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby> <ruby>園<rp>(</rp><rt>その</rt><rp>)</rp></ruby> し た<br><ruby>推定<rp>(</rp><rt>すいてい</rt><rp>)</rp></ruby> <ruby>年齢<rp>(</rp><rt>ねんれい</rt><rp>)</rp></ruby> 51 <ruby>歳<rp>(</rp><rt>とし</rt><rp>)</rp></ruby> の メス です<br><ruby>撮影<rp>(</rp><rt>さつえい</rt><rp>)</rp></ruby> し た <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> は ワルダー を 4 <ruby>年<rp>(</rp><rt>とし</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> から ほぼ <ruby>毎週<rp>(</rp><rt>まいしゅう</rt><rp>)</rp></ruby> <ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby> て き まし た<br><ruby>狭<rp>(</rp><rt>せま</rt><rp>)</rp></ruby>い <ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby> <ruby>場<rp>(</rp><rt>ば</rt><rp>)</rp></ruby> の <ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby> から <ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby> て て <ruby>最近<rp>(</rp><rt>さいきん</rt><rp>)</rp></ruby> あの <ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby> <ruby>場<rp>(</rp><rt>ば</rt><rp>)</rp></ruby> が <ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>く なっ た ので やっぱり この <ruby>距離<rp>(</rp><rt>きょり</rt><rp>)</rp></ruby> で も お<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>い する ん だ と <ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っ て<br><ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> に よる と トレーニング を し て いく と <ruby>相手<rp>(</rp><rt>あいて</rt><rp>)</rp></ruby> が <ruby>喜<rp>(</rp><rt>よろこ</rt><rp>)</rp></ruby>ぶ と <ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っ た こと を <ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby> から する よう に なっ た と <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>い ます<br>ワルダー は <ruby>他<rp>(</rp><rt>た</rt><rp>)</rp></ruby> に も <ruby>鼻<rp>(</rp><rt>はな</rt><rp>)</rp></ruby> で フラ フープ を <ruby>回<rp>(</rp><rt>まわ</rt><rp>)</rp></ruby>し たり タンバリン を <ruby>鳴<rp>(</rp><rt>な</rt><rp>)</rp></ruby>らし たり さらに ハーモニカ まで <ruby>他<rp>(</rp><rt>た</rt><rp>)</rp></ruby> に も <ruby>散<rp>(</rp><rt>ち</rt><rp>)</rp></ruby>らかっ た <ruby>干<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>し<ruby>草<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby> を <ruby>集<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>め て ゴミ<ruby>箱<rp>(</rp><rt>ばこ</rt><rp>)</rp></ruby> に <ruby>入<rp>(</rp><rt>い</rt><rp>)</rp></ruby>れる　など<br>その <ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby> に できる こと を <ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby> なり に <ruby>考<rp>(</rp><rt>かんが</rt><rp>)</rp></ruby>え て <ruby>行動<rp>(</rp><rt>こうどう</rt><rp>)</rp></ruby> し て いる という こと です</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d2dlMmzXmi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<p><ruby>巨大<rp>(</rp><rt>きょだい</rt><rp>)</rp></ruby> な <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>轟音<rp>(</rp><rt>ごうおん</rt><rp>)</rp></ruby> を <ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>て ものすごい <ruby>勢<rp>(</rp><rt>いきお</rt><rp>)</rp></ruby>い で <ruby>大量<rp>(</rp><rt>たいりょう</rt><rp>)</rp></ruby> に <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し て い ます<br><ruby>蘭越<rp>(</rp><rt>らんこし</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> <ruby>上空<rp>(</rp><rt>じょうくう</rt><rp>)</rp></ruby> です ものすごい <ruby>勢<rp>(</rp><rt>いきお</rt><rp>)</rp></ruby>い の <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>上<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>がっ て い ます<br><ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby> <ruby>辛<rp>(</rp><rt>からし</rt><rp>)</rp></ruby> <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> が <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>影響<rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby> でしょ う か <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby> の <ruby>木々<rp>(</rp><rt>きぎ</rt><rp>)</rp></ruby> が <ruby>白<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby>っぽく なっ て いる の が <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby> でき ます<br><ruby>現場<rp>(</rp><rt>げんば</rt><rp>)</rp></ruby> は <ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> を <ruby>札幌<rp>(</rp><rt>さっぽろ</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt>し</rt><rp>)</rp></ruby> から <ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby> で 2 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> ほど の <ruby>場所<rp>(</rp><rt>ばしょ</rt><rp>)</rp></ruby> に ある <ruby>蘭越<rp>(</rp><rt>らんこし</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> の ニセ コイ <ruby>湯元<rp>(</rp><rt>ゆもと</rt><rp>)</rp></ruby> <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby> の <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby> <ruby>地熱<rp>(</rp><rt>ちねつ</rt><rp>)</rp></ruby> <ruby>発電<rp>(</rp><rt>はつでん</rt><rp>)</rp></ruby> の <ruby>施設<rp>(</rp><rt>しせつ</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> で <ruby>大量<rp>(</rp><rt>たいりょう</rt><rp>)</rp></ruby> の <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> が <ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し まし た<br><ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> を <ruby>目撃<rp>(</rp><rt>もくげき</rt><rp>)</rp></ruby> し た <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> から <ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby> から <ruby>煙<rp>(</rp><rt>けむり</rt><rp>)</rp></ruby> みたい な もの が <ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby> て いる と <ruby>通報<rp>(</rp><rt>つうほう</rt><rp>)</rp></ruby> が あり まし た<br><ruby>蘭橋<rp>(</rp><rt>らんきょう</rt><rp>)</rp></ruby> に より ます と <ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby> <ruby>昼過<rp>(</rp><rt>ひるす</rt><rp>)</rp></ruby>ぎ に <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> を <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby> し <ruby>現場<rp>(</rp><rt>げんば</rt><rp>)</rp></ruby> に <ruby>職員<rp>(</rp><rt>しょくいん</rt><rp>)</rp></ruby> を <ruby>派遣<rp>(</rp><rt>はけん</rt><rp>)</rp></ruby> し まし た<br>びっくり し まし た ね<br>いつ まで こう やっ て なっ てる の か ね<br>この <ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby> に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>く と <ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby> すごい すごく なっ て ます<br>よ <ruby>道路<rp>(</rp><rt>どうろ</rt><rp>)</rp></ruby> も <ruby>真<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>っ<ruby>白<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby> に なっ て ます<br><ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> で は <ruby>以前<rp>(</rp><rt>いぜん</rt><rp>)</rp></ruby> も <ruby>似<rp>(</rp><rt>に</rt><rp>)</rp></ruby> た よう な <ruby>現象<rp>(</rp><rt>げんしょう</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>き て い まし た<br><ruby>去年<rp>(</rp><rt>きょねん</rt><rp>)</rp></ruby> 8 <ruby>月<rp>(</rp><rt>がつ</rt><rp>)</rp></ruby> <ruby>長万部<rp>(</rp><rt>おしゃまんべ</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> に ある <ruby>神社<rp>(</rp><rt>じんじゃ</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> に <ruby>突然<rp>(</rp><rt>とつぜん</rt><rp>)</rp></ruby> <ruby>巨大<rp>(</rp><rt>きょだい</rt><rp>)</rp></ruby> な <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>出現<rp>(</rp><rt>しゅつげん</rt><rp>)</rp></ruby><br><ruby>耳<rp>(</rp><rt>みみ</rt><rp>)</rp></ruby> <ruby>栓<rp>(</rp><rt>せん</rt><rp>)</rp></ruby> が ない と <ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby> られ ない <ruby>状態<rp>(</rp><rt>じょうたい</rt><rp>)</rp></ruby> でし た <ruby>音<rp>(</rp><rt>おと</rt><rp>)</rp></ruby> まず <ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>か に なっ て ほしい なっ て<br><ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> は <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby> <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> で <ruby>去年<rp>(</rp><rt>きょねん</rt><rp>)</rp></ruby> 8 <ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby> から 50 <ruby>日間<rp>(</rp><rt>にちかん</rt><rp>)</rp></ruby> も <ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp></ruby>き まし た<br><ruby>一時<rp>(</rp><rt>いちじ</rt><rp>)</rp></ruby> <ruby>高<rp>(</rp><rt>こう</rt><rp>)</rp></ruby> さ 30 メートル <ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>く まで <ruby>達<rp>(</rp><rt>たっ</rt><rp>)</rp></ruby>し <ruby>周囲<rp>(</rp><rt>しゅうい</rt><rp>)</rp></ruby> に <ruby>騒音<rp>(</rp><rt>そうおん</rt><rp>)</rp></ruby> を もたらし まし た<br><ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> は <ruby>地熱<rp>(</rp><rt>ちねつ</rt><rp>)</rp></ruby> <ruby>発電<rp>(</rp><rt>はつでん</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> で <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た もの で <ruby>施設<rp>(</rp><rt>しせつ</rt><rp>)</rp></ruby> を <ruby>管理<rp>(</rp><rt>かんり</rt><rp>)</rp></ruby> し て いる <ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby> は <ruby>機械<rp>(</rp><rt>きかい</rt><rp>)</rp></ruby> で の <ruby>掘削<rp>(</rp><rt>くっさく</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby> に <ruby>蒸気<rp>(</rp><rt>じょうき</rt><rp>)</rp></ruby> が <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>有毒<rp>(</rp><rt>ゆうどく</rt><rp>)</rp></ruby> な ガス が <ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby> て いる か <ruby>調査<rp>(</rp><rt>ちょうさ</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby> と し て い ます<br>これ まで に <ruby>作業<rp>(</rp><rt>さぎょう</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> が <ruby>怪我<rp>(</rp><rt>けが</rt><rp>)</rp></ruby> を し た と の <ruby>情報<rp>(</rp><rt>じょうほう</rt><rp>)</rp></ruby> は <ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>っ て い ない という こと です</p>
-]]></content>
-  </entry>
-  <entry>
     <title>ニュース</title>
     <url>/new-blog/5e3ab895.html</url>
     <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/LcHMQSn-fo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -169,19 +191,19 @@
       </tags>
   </entry>
   <entry>
-    <title>230706ニュース</title>
-    <url>/new-blog/df026d8d.html</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>230630ニュース</title>
+    <url>/new-blog/1c8ef14c.html</url>
+    <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/alyACfHRetw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rF4MqGS7eAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<span id="more"></span>
 
-<p><ruby>党首<rp>(</rp><rt style="visibility: hidden;">とうしゅ</rt><rp>)</rp></ruby> の <ruby>年収<rp>(</rp><rt style="visibility: hidden;">ねんしゅう</rt><rp>)</rp></ruby> ランキング で <ruby>岸田<rp>(</rp><rt style="visibility: hidden;">きしだ</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> に <ruby>次<rp>(</rp><rt style="visibility: hidden;">つ</rt><rp>)</rp></ruby>ぐ 2 <ruby>位<rp>(</rp><rt style="visibility: hidden;">くらい</rt><rp>)</rp></ruby> は <ruby>意外<rp>(</rp><rt style="visibility: hidden;">いがい</rt><rp>)</rp></ruby> な あの <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> でし た<br><ruby>去年<rp>(</rp><rt style="visibility: hidden;">きょねん</rt><rp>)</rp></ruby> の <ruby>国会<rp>(</rp><rt style="visibility: hidden;">こっかい</rt><rp>)</rp></ruby> <ruby>議員<rp>(</rp><rt style="visibility: hidden;">ぎいん</rt><rp>)</rp></ruby> の <ruby>所得<rp>(</rp><rt style="visibility: hidden;">しょとく</rt><rp>)</rp></ruby> が <ruby>発表<rp>(</rp><rt style="visibility: hidden;">はっぴょう</rt><rp>)</rp></ruby> さ れ <ruby>当主<rp>(</rp><rt style="visibility: hidden;">とうしゅ</rt><rp>)</rp></ruby> で は <ruby>岸田<rp>(</rp><rt style="visibility: hidden;">きしだ</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> が トップ で 3864 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> そして 2 <ruby>位<rp>(</rp><rt style="visibility: hidden;">くらい</rt><rp>)</rp></ruby> に <ruby>食<rp>(</rp><rt style="visibility: hidden;">く</rt><rp>)</rp></ruby>い<ruby>込<rp>(</rp><rt style="visibility: hidden;">こ</rt><rp>)</rp></ruby>ん だ の が 2051 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> の <ruby>共産党<rp>(</rp><rt style="visibility: hidden;">きょうさんとう</rt><rp>)</rp></ruby> を C <ruby>委員<rp>(</rp><rt style="visibility: hidden;">いいん</rt><rp>)</rp></ruby> <ruby>長<rp>(</rp><rt style="visibility: hidden;">ちょう</rt><rp>)</rp></ruby> でし た<br><ruby>一体<rp>(</rp><rt style="visibility: hidden;">いったい</rt><rp>)</rp></ruby> なぜ な の か <ruby>注目<rp>(</rp><rt style="visibility: hidden;">ちゅうもく</rt><rp>)</rp></ruby> の ウラ <ruby>情報<rp>(</rp><rt style="visibility: hidden;">じょうほう</rt><rp>)</rp></ruby> は こちら<br><ruby>著書<rp>(</rp><rt style="visibility: hidden;">ちょしょ</rt><rp>)</rp></ruby> の <ruby>印税<rp>(</rp><rt style="visibility: hidden;">いんぜい</rt><rp>)</rp></ruby> で <ruby>所属<rp>(</rp><rt style="visibility: hidden;">しょぞく</rt><rp>)</rp></ruby> アップ C <ruby>氏<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> は <ruby>当<rp>(</rp><rt style="visibility: hidden;">とう</rt><rp>)</rp></ruby> 100 <ruby>周<rp>(</rp><rt style="visibility: hidden;">しゅう</rt><rp>)</rp></ruby><ruby>年<rp>(</rp><rt style="visibility: hidden;">ねん</rt><rp>)</rp></ruby> の タイミング で <ruby>自<rp>(</rp><rt style="visibility: hidden;">みずか</rt><rp>)</rp></ruby>ら パソコン で <ruby>本<rp>(</rp><rt style="visibility: hidden;">ほん</rt><rp>)</rp></ruby> を <ruby>書<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby>き<ruby>上<rp>(</rp><rt style="visibility: hidden;">あ</rt><rp>)</rp></ruby>げ た ところ これ が 4 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>部<rp>(</rp><rt style="visibility: hidden;">ぶ</rt><rp>)</rp></ruby> も <ruby>売<rp>(</rp><rt style="visibility: hidden;">う</rt><rp>)</rp></ruby>れ て 200 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> ほど の <ruby>印税<rp>(</rp><rt style="visibility: hidden;">いんぜい</rt><rp>)</rp></ruby> を <ruby>稼<rp>(</rp><rt style="visibility: hidden;">かせ</rt><rp>)</rp></ruby>い だ と み られ ます<br>しかし <ruby>党員<rp>(</rp><rt style="visibility: hidden;">とういん</rt><rp>)</rp></ruby> の <ruby>高齢<rp>(</rp><rt style="visibility: hidden;">こうれい</rt><rp>)</rp></ruby> <ruby>化<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby> や 22 <ruby>年<rp>(</rp><rt style="visibility: hidden;">とし</rt><rp>)</rp></ruby> に <ruby>及<rp>(</rp><rt style="visibility: hidden;">およ</rt><rp>)</rp></ruby>ぶ <ruby>新<rp>(</rp><rt style="visibility: hidden;">しん</rt><rp>)</rp></ruby> <ruby>体制<rp>(</rp><rt style="visibility: hidden;">たいせい</rt><rp>)</rp></ruby> の <ruby>批判<rp>(</rp><rt style="visibility: hidden;">ひはん</rt><rp>)</rp></ruby> など <ruby>書<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby>く より <ruby>描<rp>(</rp><rt style="visibility: hidden;">えが</rt><rp>)</rp></ruby>か れる ネタ に あふれる <ruby>皮肉<rp>(</rp><rt style="visibility: hidden;">ひにく</rt><rp>)</rp></ruby> な <ruby>現状<rp>(</rp><rt style="visibility: hidden;">げんじょう</rt><rp>)</rp></ruby> と なっ て い ます</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DB1efindYYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> たち が <ruby>暮<rp>(</rp><rt>く</rt><rp>)</rp></ruby>らし て い た の は <ruby>数<rp>(</rp><rt>かぞ</rt><rp>)</rp></ruby>え きれ ない <ruby>数<rp>(</rp><rt>かず</rt><rp>)</rp></ruby> が ひしめき<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>う <ruby>場所<rp>(</rp><rt>ばしょ</rt><rp>)</rp></ruby><br><ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> <ruby>東部<rp>(</rp><rt>とうぶ</rt><rp>)</rp></ruby> <ruby>佐呂間<rp>(</rp><rt>さろま</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby><br>ペット が <ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>く なり すぎ て <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> でき なく なっ た <ruby>多頭<rp>(</rp><rt>たとう</rt><rp>)</rp></ruby> <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>崩壊<rp>(</rp><rt>ほうかい</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>き た <ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> です<br><ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby> たち を <ruby>警戒<rp>(</rp><rt>けいかい</rt><rp>)</rp></ruby> し てる でしょ う か こちら に <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かっ て い ます<br><ruby>愛護<rp>(</rp><rt>あいご</rt><rp>)</rp></ruby> <ruby>団体<rp>(</rp><rt>だんたい</rt><rp>)</rp></ruby> や <ruby>獣<rp>(</rp><rt>しし</rt><rp>)</rp></ruby> <ruby>医師<rp>(</rp><rt>いし</rt><rp>)</rp></ruby> たち の チーム およそ 50 <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> が レスキュー に <ruby>乗<rp>(</rp><rt>の</rt><rp>)</rp></ruby>り<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し まし た<br><ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> の <ruby>経営<rp>(</rp><rt>けいえい</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby> は およそ 20 <ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>ない</rt><rp>)</rp></ruby> で <ruby>捨<rp>(</rp><rt>す</rt><rp>)</rp></ruby>て <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> を <ruby>保護<rp>(</rp><rt>ほご</rt><rp>)</rp></ruby> <ruby>去勢<rp>(</rp><rt>きょせい</rt><rp>)</rp></ruby> <ruby>不妊<rp>(</rp><rt>ふにん</rt><rp>)</rp></ruby> <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> を し なかっ た ため <ruby>数<rp>(</rp><rt>かず</rt><rp>)</rp></ruby> が <ruby>増<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>え て いっ た と <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>い ます<br><ruby>現在<rp>(</rp><rt>げんざい</rt><rp>)</rp></ruby> <ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> に いる の は <ruby>十<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby> <ruby>数頭<rp>(</rp><rt>すうとう</rt><rp>)</rp></ruby> の <ruby>乳牛<rp>(</rp><rt>にゅうぎゅう</rt><rp>)</rp></ruby> と およそ 70 <ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby> の <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby><br><ruby>牧場<rp>(</rp><rt>ぼくじょう</rt><rp>)</rp></ruby> の <ruby>経営<rp>(</rp><rt>けいえい</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt>しゃ</rt><rp>)</rp></ruby> に <ruby>必要<rp>(</rp><rt>ひつよう</rt><rp>)</rp></ruby> な <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> など を <ruby>受<rp>(</rp><rt>う</rt><rp>)</rp></ruby>け させ られ なかっ た わけ を <ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>く と<br><ruby>東北<rp>(</rp><rt>とうほく</rt><rp>)</rp></ruby> に 1 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> し て シューズ に 1 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> くらい か とても じゃ ない けど<br>まあ <ruby>費用<rp>(</rp><rt>ひよう</rt><rp>)</rp></ruby> と <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> が <ruby>面倒<rp>(</rp><rt>めんどう</rt><rp>)</rp></ruby> <ruby>見切<rp>(</rp><rt>みき</rt><rp>)</rp></ruby>れ なく なる <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> に なんとか <ruby>頼<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>ん だ <ruby>使用<rp>(</rp><rt>しよう</rt><rp>)</rp></ruby> <ruby>崩壊<rp>(</rp><rt>ほうかい</rt><rp>)</rp></ruby> だって <ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby> に も <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>し て くれ た だろ う とか <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>っ て <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>か れ た んで <ruby>俺<rp>(</rp><rt>おれ</rt><rp>)</rp></ruby> の <ruby>話<rp>(</rp><rt>はなし</rt><rp>)</rp></ruby> を <ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>い た こと も ない はず の <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> が そういう こと <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>い て<br><ruby>保護<rp>(</rp><rt>ほご</rt><rp>)</rp></ruby> さ れ た <ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby> たち に は <ruby>狂犬病<rp>(</rp><rt>きょうけんびょう</rt><rp>)</rp></ruby> ワクチン の <ruby>接種<rp>(</rp><rt>せっしゅ</rt><rp>)</rp></ruby> や <ruby>去勢<rp>(</rp><rt>きょせい</rt><rp>)</rp></ruby> <ruby>不妊<rp>(</rp><rt>ふにん</rt><rp>)</rp></ruby> <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby> が <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>わ れ た という こと です</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IS21scRCun4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>おととい <ruby>宮城<rp>(</rp><rt style="visibility: hidden;">みやぎ</rt><rp>)</rp></ruby> <ruby>県<rp>(</rp><rt style="visibility: hidden;">けん</rt><rp>)</rp></ruby> <ruby>栗原<rp>(</rp><rt style="visibility: hidden;">くりはら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>小学校<rp>(</rp><rt style="visibility: hidden;">しょうがっこう</rt><rp>)</rp></ruby> に <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック が <ruby>進入<rp>(</rp><rt style="visibility: hidden;">しんにゅう</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> 4 <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> が はね られ た <ruby>事件<rp>(</rp><rt style="visibility: hidden;">じけん</rt><rp>)</rp></ruby> で <ruby>車<rp>(</rp><rt style="visibility: hidden;">くるま</rt><rp>)</rp></ruby> は ゆっくり と し た <ruby>速度<rp>(</rp><rt style="visibility: hidden;">そくど</rt><rp>)</rp></ruby> で <ruby>直進<rp>(</rp><rt style="visibility: hidden;">ちょくしん</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> を <ruby>背後<rp>(</rp><rt style="visibility: hidden;">はいご</rt><rp>)</rp></ruby> から <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね た こと が <ruby>新<rp>(</rp><rt style="visibility: hidden;">あら</rt><rp>)</rp></ruby>た に <ruby>分<rp>(</rp><rt style="visibility: hidden;">わ</rt><rp>)</rp></ruby>かり まし た<br><ruby>小野寺<rp>(</rp><rt style="visibility: hidden;">おのでら</rt><rp>)</rp></ruby> <ruby>章典<rp>(</rp><rt style="visibility: hidden;">しょうてん</rt><rp>)</rp></ruby> <ruby>容疑<rp>(</rp><rt style="visibility: hidden;">ようぎ</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt style="visibility: hidden;">しゃ</rt><rp>)</rp></ruby> は おととい <ruby>栗原<rp>(</rp><rt style="visibility: hidden;">くりはら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>若柳<rp>(</rp><rt style="visibility: hidden;">わかやなぎ</rt><rp>)</rp></ruby> <ruby>小学校<rp>(</rp><rt style="visibility: hidden;">しょうがっこう</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt style="visibility: hidden;">しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt style="visibility: hidden;">うち</rt><rp>)</rp></ruby> で <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> 4 <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> を <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック で <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね <ruby>殺害<rp>(</rp><rt style="visibility: hidden;">さつがい</rt><rp>)</rp></ruby> しよ う と し た <ruby>疑<rp>(</rp><rt style="visibility: hidden;">うたが</rt><rp>)</rp></ruby>い で <ruby>今日<rp>(</rp><rt style="visibility: hidden;">きょう</rt><rp>)</rp></ruby> <ruby>創建<rp>(</rp><rt style="visibility: hidden;">そうけん</rt><rp>)</rp></ruby> さ れ まし た<br>その<ruby>後<rp>(</rp><rt style="visibility: hidden;">ご</rt><rp>)</rp></ruby> の <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> へ の <ruby>取材<rp>(</rp><rt style="visibility: hidden;">しゅざい</rt><rp>)</rp></ruby> で <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック は <ruby>通用<rp>(</rp><rt style="visibility: hidden;">つうよう</rt><rp>)</rp></ruby> <ruby>口<rp>(</rp><rt style="visibility: hidden;">くち</rt><rp>)</rp></ruby> から ゆっくり と <ruby>進入<rp>(</rp><rt style="visibility: hidden;">しんにゅう</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> を <ruby>背後<rp>(</rp><rt style="visibility: hidden;">はいご</rt><rp>)</rp></ruby> から <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね た こと が <ruby>分<rp>(</rp><rt style="visibility: hidden;">わ</rt><rp>)</rp></ruby>かり まし た<br><ruby>近<rp>(</rp><rt style="visibility: hidden;">ちか</rt><rp>)</rp></ruby>く に い た <ruby>教員<rp>(</rp><rt style="visibility: hidden;">きょういん</rt><rp>)</rp></ruby> は <ruby>車<rp>(</rp><rt style="visibility: hidden;">くるま</rt><rp>)</rp></ruby> の <ruby>音<rp>(</rp><rt style="visibility: hidden;">おと</rt><rp>)</rp></ruby> が <ruby>聞<rp>(</rp><rt style="visibility: hidden;">き</rt><rp>)</rp></ruby>こえ ず <ruby>直前<rp>(</rp><rt style="visibility: hidden;">ちょくぜん</rt><rp>)</rp></ruby> まで <ruby>気<rp>(</rp><rt style="visibility: hidden;">き</rt><rp>)</rp></ruby>がつか なかっ た と <ruby>話<rp>(</rp><rt style="visibility: hidden;">はな</rt><rp>)</rp></ruby>し て いる という こと です<br><ruby>小野寺<rp>(</rp><rt style="visibility: hidden;">おのでら</rt><rp>)</rp></ruby> <ruby>容疑<rp>(</rp><rt style="visibility: hidden;">ようぎ</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt style="visibility: hidden;">しゃ</rt><rp>)</rp></ruby> は <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> の <ruby>調<rp>(</rp><rt style="visibility: hidden;">しら</rt><rp>)</rp></ruby>べ に<ruby>対<rp>(</rp><rt style="visibility: hidden;">たい</rt><rp>)</rp></ruby>して <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> に わざと ぶつけよ う と し た と <ruby>供述<rp>(</rp><rt style="visibility: hidden;">きょうじゅつ</rt><rp>)</rp></ruby> し て い ます<br>しかし <ruby>供述<rp>(</rp><rt style="visibility: hidden;">きょうじゅつ</rt><rp>)</rp></ruby> <ruby>内容<rp>(</rp><rt style="visibility: hidden;">ないよう</rt><rp>)</rp></ruby> に <ruby>曖昧<rp>(</rp><rt style="visibility: hidden;">あいまい</rt><rp>)</rp></ruby> な <ruby>部分<rp>(</rp><rt style="visibility: hidden;">ぶぶん</rt><rp>)</rp></ruby> も あり <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> は <ruby>責任<rp>(</rp><rt style="visibility: hidden;">せきにん</rt><rp>)</rp></ruby> <ruby>能力<rp>(</rp><rt style="visibility: hidden;">のうりょく</rt><rp>)</rp></ruby> について も <ruby>調<rp>(</rp><rt style="visibility: hidden;">しら</rt><rp>)</rp></ruby>べる こと に し て い ます</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-H87RPlMEnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p> <ruby>名古屋<rp>(</rp><rt>なごや</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt>し</rt><rp>)</rp></ruby> に ある <ruby>東山<rp>(</rp><rt>ひがしやま</rt><rp>)</rp></ruby> <ruby>動植物<rp>(</rp><rt>どうしょくぶつ</rt><rp>)</rp></ruby> <ruby>園<rp>(</rp><rt>園</rt><rp>)</rp></ruby> <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> が <ruby>水巻<rp>(</rp><rt>みずまき</rt><rp>)</rp></ruby> を し て い ます<br><ruby>作業<rp>(</rp><rt>さぎょう</rt><rp>)</rp></ruby> が <ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わり ホース を <ruby>置<rp>(</rp><rt>お</rt><rp>)</rp></ruby>い て <ruby>元栓<rp>(</rp><rt>もとせん</rt><rp>)</rp></ruby> を <ruby>締<rp>(</rp><rt>し</rt><rp>)</rp></ruby>め に <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かう <ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> する と <ruby>象<rp>(</rp><rt>ぞう</rt><rp>)</rp></ruby> が <ruby>鼻先<rp>(</rp><rt>はなさき</rt><rp>)</rp></ruby> を <ruby>器用<rp>(</rp><rt>きよう</rt><rp>)</rp></ruby> に <ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>い ホース を <ruby>片付<rp>(</rp><rt>かたづ</rt><rp>)</rp></ruby>け <ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>め まし た<br>しかも <ruby>絡<rp>(</rp><rt>から</rt><rp>)</rp></ruby>まら ない よう<br><ruby>輪<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>っか に し て くるくる <ruby>巻<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>い て いき ます<br><ruby>最後<rp>(</rp><rt>さいご</rt><rp>)</rp></ruby> は ホース を <ruby>鼻<rp>(</rp><rt>はな</rt><rp>)</rp></ruby> で <ruby>渡<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>し まし た<br><ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby> は マルダー<br>ちょうど 50 <ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> に <ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby> <ruby>園<rp>(</rp><rt>その</rt><rp>)</rp></ruby> し た<br><ruby>推定<rp>(</rp><rt>すいてい</rt><rp>)</rp></ruby> <ruby>年齢<rp>(</rp><rt>ねんれい</rt><rp>)</rp></ruby> 51 <ruby>歳<rp>(</rp><rt>とし</rt><rp>)</rp></ruby> の メス です<br><ruby>撮影<rp>(</rp><rt>さつえい</rt><rp>)</rp></ruby> し た <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> は ワルダー を 4 <ruby>年<rp>(</rp><rt>とし</rt><rp>)</rp></ruby> <ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby> から ほぼ <ruby>毎週<rp>(</rp><rt>まいしゅう</rt><rp>)</rp></ruby> <ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby> て き まし た<br><ruby>狭<rp>(</rp><rt>せま</rt><rp>)</rp></ruby>い <ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby> <ruby>場<rp>(</rp><rt>ば</rt><rp>)</rp></ruby> の <ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby> から <ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby> て て <ruby>最近<rp>(</rp><rt>さいきん</rt><rp>)</rp></ruby> あの <ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby> <ruby>場<rp>(</rp><rt>ば</rt><rp>)</rp></ruby> が <ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>く なっ た ので やっぱり この <ruby>距離<rp>(</rp><rt>きょり</rt><rp>)</rp></ruby> で も お<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>い する ん だ と <ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っ て<br><ruby>飼育<rp>(</rp><rt>しいく</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> に よる と トレーニング を し て いく と <ruby>相手<rp>(</rp><rt>あいて</rt><rp>)</rp></ruby> が <ruby>喜<rp>(</rp><rt>よろこ</rt><rp>)</rp></ruby>ぶ と <ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っ た こと を <ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby> から する よう に なっ た と <ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>い ます<br>ワルダー は <ruby>他<rp>(</rp><rt>た</rt><rp>)</rp></ruby> に も <ruby>鼻<rp>(</rp><rt>はな</rt><rp>)</rp></ruby> で フラ フープ を <ruby>回<rp>(</rp><rt>まわ</rt><rp>)</rp></ruby>し たり タンバリン を <ruby>鳴<rp>(</rp><rt>な</rt><rp>)</rp></ruby>らし たり さらに ハーモニカ まで <ruby>他<rp>(</rp><rt>た</rt><rp>)</rp></ruby> に も <ruby>散<rp>(</rp><rt>ち</rt><rp>)</rp></ruby>らかっ た <ruby>干<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>し<ruby>草<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby> を <ruby>集<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>め て ゴミ<ruby>箱<rp>(</rp><rt>ばこ</rt><rp>)</rp></ruby> に <ruby>入<rp>(</rp><rt>い</rt><rp>)</rp></ruby>れる　など<br>その <ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby> に できる こと を <ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby> なり に <ruby>考<rp>(</rp><rt>かんが</rt><rp>)</rp></ruby>え て <ruby>行動<rp>(</rp><rt>こうどう</rt><rp>)</rp></ruby> し て いる という こと です</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d2dlMmzXmi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p><ruby>奈良<rp>(</rp><rt style="visibility: hidden;">なら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>近鉄<rp>(</rp><rt style="visibility: hidden;">きんてつ</rt><rp>)</rp></ruby> <ruby>大和<rp>(</rp><rt style="visibility: hidden;">やまと</rt><rp>)</rp></ruby> <ruby>西大寺<rp>(</rp><rt style="visibility: hidden;">さいだいじ</rt><rp>)</rp></ruby> <ruby>駅<rp>(</rp><rt style="visibility: hidden;">えき</rt><rp>)</rp></ruby> <ruby>近<rp>(</rp><rt style="visibility: hidden;">ちか</rt><rp>)</rp></ruby>く です<br><ruby>去年<rp>(</rp><rt style="visibility: hidden;">きょねん</rt><rp>)</rp></ruby> 7 <ruby>月<rp>(</rp><rt style="visibility: hidden;">つき</rt><rp>)</rp></ruby> 8 <ruby>日<rp>(</rp><rt style="visibility: hidden;">にち</rt><rp>)</rp></ruby> <ruby>安倍<rp>(</rp><rt style="visibility: hidden;">あべ</rt><rp>)</rp></ruby> <ruby>元<rp>(</rp><rt style="visibility: hidden;">もと</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> は この <ruby>場所<rp>(</rp><rt style="visibility: hidden;">ばしょ</rt><rp>)</rp></ruby> で <ruby>演説<rp>(</rp><rt style="visibility: hidden;">えんぜつ</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt style="visibility: hidden;">なか</rt><rp>)</rp></ruby> に <ruby>銃撃<rp>(</rp><rt style="visibility: hidden;">じゅうげき</rt><rp>)</rp></ruby> さ れ て <ruby>死亡<rp>(</rp><rt style="visibility: hidden;">しぼう</rt><rp>)</rp></ruby> し まし た<br><ruby>現場<rp>(</rp><rt style="visibility: hidden;">げんば</rt><rp>)</rp></ruby> で は <ruby>自民党<rp>(</rp><rt style="visibility: hidden;">じみんとう</rt><rp>)</rp></ruby> の <ruby>有志<rp>(</rp><rt style="visibility: hidden;">ゆうし</rt><rp>)</rp></ruby> ら で <ruby>作<rp>(</rp><rt style="visibility: hidden;">つく</rt><rp>)</rp></ruby>る <ruby>団体<rp>(</rp><rt style="visibility: hidden;">だんたい</rt><rp>)</rp></ruby> が <ruby>献花<rp>(</rp><rt style="visibility: hidden;">けんか</rt><rp>)</rp></ruby> <ruby>台<rp>(</rp><rt style="visibility: hidden;">うてな</rt><rp>)</rp></ruby> を <ruby>設置<rp>(</rp><rt style="visibility: hidden;">せっち</rt><rp>)</rp></ruby> し て い て <ruby>朝<rp>(</rp><rt style="visibility: hidden;">あさ</rt><rp>)</rp></ruby> から <ruby>花<rp>(</rp><rt style="visibility: hidden;">はな</rt><rp>)</rp></ruby> を <ruby>備<rp>(</rp><rt style="visibility: hidden;">そな</rt><rp>)</rp></ruby>える <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> の <ruby>姿<rp>(</rp><rt style="visibility: hidden;">すがた</rt><rp>)</rp></ruby> が <ruby>多<rp>(</rp><rt style="visibility: hidden;">おお</rt><rp>)</rp></ruby>く <ruby>見<rp>(</rp><rt style="visibility: hidden;">み</rt><rp>)</rp></ruby> られ まし た<br>また <ruby>事件<rp>(</rp><rt style="visibility: hidden;">じけん</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>き た <ruby>午前<rp>(</rp><rt style="visibility: hidden;">ごぜん</rt><rp>)</rp></ruby> 11 <ruby>時半<rp>(</rp><rt style="visibility: hidden;">じはん</rt><rp>)</rp></ruby> <ruby>頃<rp>(</rp><rt style="visibility: hidden;">ころ</rt><rp>)</rp></ruby> に は <ruby>黙祷<rp>(</rp><rt style="visibility: hidden;">もくとう</rt><rp>)</rp></ruby> が <ruby>捧<rp>(</rp><rt style="visibility: hidden;">ささ</rt><rp>)</rp></ruby>げ られ まし た<br><ruby>安<rp>(</rp><rt style="visibility: hidden;">やす</rt><rp>)</rp></ruby>らか に お<ruby>守<rp>(</rp><rt style="visibility: hidden;">まも</rt><rp>)</rp></ruby>り ください と <ruby>日本<rp>(</rp><rt style="visibility: hidden;">にっぽん</rt><rp>)</rp></ruby> の ため に ありがとう ござい まし た と<br><ruby>日本<rp>(</rp><rt style="visibility: hidden;">にっぽん</rt><rp>)</rp></ruby> で こんな こと が <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>こる なんて <ruby>信<rp>(</rp><rt style="visibility: hidden;">しん</rt><rp>)</rp></ruby>じ れ ない と しか <ruby>二度<rp>(</rp><rt style="visibility: hidden;">にど</rt><rp>)</rp></ruby>と この よう な こと は <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>こっ て ほしく ない な と<br><ruby>殺人<rp>(</rp><rt style="visibility: hidden;">さつじん</rt><rp>)</rp></ruby> など の <ruby>罪<rp>(</rp><rt style="visibility: hidden;">つみ</rt><rp>)</rp></ruby> で <ruby>起訴<rp>(</rp><rt style="visibility: hidden;">きそ</rt><rp>)</rp></ruby> さ れ た <ruby>山神<rp>(</rp><rt style="visibility: hidden;">さんじん</rt><rp>)</rp></ruby> <ruby>鉄矢<rp>(</rp><rt style="visibility: hidden;">てつや</rt><rp>)</rp></ruby> <ruby>被告<rp>(</rp><rt style="visibility: hidden;">ひこく</rt><rp>)</rp></ruby> の <ruby>弁護<rp>(</rp><rt style="visibility: hidden;">べんご</rt><rp>)</rp></ruby> <ruby>団<rp>(</rp><rt style="visibility: hidden;">だん</rt><rp>)</rp></ruby> は <ruby>昨日<rp>(</rp><rt style="visibility: hidden;">きのう</rt><rp>)</rp></ruby> <ruby>後半<rp>(</rp><rt style="visibility: hidden;">こうはん</rt><rp>)</rp></ruby> を <ruby>迎<rp>(</rp><rt style="visibility: hidden;">むか</rt><rp>)</rp></ruby>える まで に<br><ruby>未<rp>(</rp><rt style="visibility: hidden;">いま</rt><rp>)</rp></ruby>だ <ruby>相応<rp>(</rp><rt style="visibility: hidden;">そうおう</rt><rp>)</rp></ruby> の <ruby>時間<rp>(</rp><rt style="visibility: hidden;">じかん</rt><rp>)</rp></ruby> を <ruby>要<rp>(</rp><rt style="visibility: hidden;">よう</rt><rp>)</rp></ruby>する と コメント し て い て <ruby>初<rp>(</rp><rt style="visibility: hidden;">はつ</rt><rp>)</rp></ruby> <ruby>公判<rp>(</rp><rt style="visibility: hidden;">こうはん</rt><rp>)</rp></ruby> は <ruby>来年<rp>(</rp><rt style="visibility: hidden;">らいねん</rt><rp>)</rp></ruby> <ruby>以降<rp>(</rp><rt style="visibility: hidden;">いこう</rt><rp>)</rp></ruby> に なる <ruby>見通<rp>(</rp><rt style="visibility: hidden;">みとお</rt><rp>)</rp></ruby>し です<br><ruby>以上<rp>(</rp><rt style="visibility: hidden;">いじょう</rt><rp>)</rp></ruby> <ruby>奈良<rp>(</rp><rt style="visibility: hidden;">なら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>銃撃<rp>(</rp><rt style="visibility: hidden;">じゅうげき</rt><rp>)</rp></ruby> <ruby>現場<rp>(</rp><rt style="visibility: hidden;">げんば</rt><rp>)</rp></ruby> から お<ruby>伝<rp>(</rp><rt style="visibility: hidden;">つた</rt><rp>)</rp></ruby>え し まし た</p>
+<p><ruby>巨大<rp>(</rp><rt>きょだい</rt><rp>)</rp></ruby> な <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>轟音<rp>(</rp><rt>ごうおん</rt><rp>)</rp></ruby> を <ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>て ものすごい <ruby>勢<rp>(</rp><rt>いきお</rt><rp>)</rp></ruby>い で <ruby>大量<rp>(</rp><rt>たいりょう</rt><rp>)</rp></ruby> に <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し て い ます<br><ruby>蘭越<rp>(</rp><rt>らんこし</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> <ruby>上空<rp>(</rp><rt>じょうくう</rt><rp>)</rp></ruby> です ものすごい <ruby>勢<rp>(</rp><rt>いきお</rt><rp>)</rp></ruby>い の <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>上<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>がっ て い ます<br><ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby> <ruby>辛<rp>(</rp><rt>からし</rt><rp>)</rp></ruby> <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> が <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>影響<rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby> でしょ う か <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby> の <ruby>木々<rp>(</rp><rt>きぎ</rt><rp>)</rp></ruby> が <ruby>白<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby>っぽく なっ て いる の が <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby> でき ます<br><ruby>現場<rp>(</rp><rt>げんば</rt><rp>)</rp></ruby> は <ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> を <ruby>札幌<rp>(</rp><rt>さっぽろ</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt>し</rt><rp>)</rp></ruby> から <ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby> で 2 <ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby> ほど の <ruby>場所<rp>(</rp><rt>ばしょ</rt><rp>)</rp></ruby> に ある <ruby>蘭越<rp>(</rp><rt>らんこし</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> の ニセ コイ <ruby>湯元<rp>(</rp><rt>ゆもと</rt><rp>)</rp></ruby> <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby> の <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby> <ruby>地熱<rp>(</rp><rt>ちねつ</rt><rp>)</rp></ruby> <ruby>発電<rp>(</rp><rt>はつでん</rt><rp>)</rp></ruby> の <ruby>施設<rp>(</rp><rt>しせつ</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> で <ruby>大量<rp>(</rp><rt>たいりょう</rt><rp>)</rp></ruby> の <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> が <ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し まし た<br><ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> を <ruby>目撃<rp>(</rp><rt>もくげき</rt><rp>)</rp></ruby> し た <ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby> から <ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby> から <ruby>煙<rp>(</rp><rt>けむり</rt><rp>)</rp></ruby> みたい な もの が <ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby> て いる と <ruby>通報<rp>(</rp><rt>つうほう</rt><rp>)</rp></ruby> が あり まし た<br><ruby>蘭橋<rp>(</rp><rt>らんきょう</rt><rp>)</rp></ruby> に より ます と <ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby> <ruby>昼過<rp>(</rp><rt>ひるす</rt><rp>)</rp></ruby>ぎ に <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> を <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby> し <ruby>現場<rp>(</rp><rt>げんば</rt><rp>)</rp></ruby> に <ruby>職員<rp>(</rp><rt>しょくいん</rt><rp>)</rp></ruby> を <ruby>派遣<rp>(</rp><rt>はけん</rt><rp>)</rp></ruby> し まし た<br>びっくり し まし た ね<br>いつ まで こう やっ て なっ てる の か ね<br>この <ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby> に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>く と <ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby> すごい すごく なっ て ます<br>よ <ruby>道路<rp>(</rp><rt>どうろ</rt><rp>)</rp></ruby> も <ruby>真<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>っ<ruby>白<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby> に なっ て ます<br><ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby> で は <ruby>以前<rp>(</rp><rt>いぜん</rt><rp>)</rp></ruby> も <ruby>似<rp>(</rp><rt>に</rt><rp>)</rp></ruby> た よう な <ruby>現象<rp>(</rp><rt>げんしょう</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>き て い まし た<br><ruby>去年<rp>(</rp><rt>きょねん</rt><rp>)</rp></ruby> 8 <ruby>月<rp>(</rp><rt>がつ</rt><rp>)</rp></ruby> <ruby>長万部<rp>(</rp><rt>おしゃまんべ</rt><rp>)</rp></ruby> <ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby> に ある <ruby>神社<rp>(</rp><rt>じんじゃ</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> に <ruby>突然<rp>(</rp><rt>とつぜん</rt><rp>)</rp></ruby> <ruby>巨大<rp>(</rp><rt>きょだい</rt><rp>)</rp></ruby> な <ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> が <ruby>出現<rp>(</rp><rt>しゅつげん</rt><rp>)</rp></ruby><br><ruby>耳<rp>(</rp><rt>みみ</rt><rp>)</rp></ruby> <ruby>栓<rp>(</rp><rt>せん</rt><rp>)</rp></ruby> が ない と <ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby> られ ない <ruby>状態<rp>(</rp><rt>じょうたい</rt><rp>)</rp></ruby> でし た <ruby>音<rp>(</rp><rt>おと</rt><rp>)</rp></ruby> まず <ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>か に なっ て ほしい なっ て<br><ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> は <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby> <ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby> で <ruby>去年<rp>(</rp><rt>きょねん</rt><rp>)</rp></ruby> 8 <ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby> から 50 <ruby>日間<rp>(</rp><rt>にちかん</rt><rp>)</rp></ruby> も <ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp></ruby>き まし た<br><ruby>一時<rp>(</rp><rt>いちじ</rt><rp>)</rp></ruby> <ruby>高<rp>(</rp><rt>こう</rt><rp>)</rp></ruby> さ 30 メートル <ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>く まで <ruby>達<rp>(</rp><rt>たっ</rt><rp>)</rp></ruby>し <ruby>周囲<rp>(</rp><rt>しゅうい</rt><rp>)</rp></ruby> に <ruby>騒音<rp>(</rp><rt>そうおん</rt><rp>)</rp></ruby> を もたらし まし た<br><ruby>水柱<rp>(</rp><rt>みずばしら</rt><rp>)</rp></ruby> は <ruby>地熱<rp>(</rp><rt>ちねつ</rt><rp>)</rp></ruby> <ruby>発電<rp>(</rp><rt>はつでん</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt>しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt>うち</rt><rp>)</rp></ruby> で <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た もの で <ruby>施設<rp>(</rp><rt>しせつ</rt><rp>)</rp></ruby> を <ruby>管理<rp>(</rp><rt>かんり</rt><rp>)</rp></ruby> し て いる <ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby> は <ruby>機械<rp>(</rp><rt>きかい</rt><rp>)</rp></ruby> で の <ruby>掘削<rp>(</rp><rt>くっさく</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby> に <ruby>蒸気<rp>(</rp><rt>じょうき</rt><rp>)</rp></ruby> が <ruby>噴<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>し た <ruby>有毒<rp>(</rp><rt>ゆうどく</rt><rp>)</rp></ruby> な ガス が <ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby> て いる か <ruby>調査<rp>(</rp><rt>ちょうさ</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby> と し て い ます<br>これ まで に <ruby>作業<rp>(</rp><rt>さぎょう</rt><rp>)</rp></ruby> <ruby>員<rp>(</rp><rt>いん</rt><rp>)</rp></ruby> が <ruby>怪我<rp>(</rp><rt>けが</rt><rp>)</rp></ruby> を し た と の <ruby>情報<rp>(</rp><rt>じょうほう</rt><rp>)</rp></ruby> は <ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>っ て い ない という こと です</p>
 ]]></content>
   </entry>
   <entry>
@@ -311,82 +333,6 @@ function toggleVisibility(divId) {
       </tags>
   </entry>
   <entry>
-    <title>BootTheSystem</title>
-    <url>/new-blog/3ef0ab2f.html</url>
-    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
-<span id="more"></span>
-
-<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
-<ol>
-<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
-<li>The boot loader runs and determines what Linux kernel program to load.</li>
-<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
-<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
-</ol>
-<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
-<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
-<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
-<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
-<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
-<ul>
-<li>An internal hard drive</li>
-<li>An external hard drive</li>
-<li>A CD&#x2F;DVD drive</li>
-<li>A USB flash drive</li>
-<li>A network server</li>
-</ul>
-<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
-<blockquote>
-<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
-</blockquote>
-<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
-<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
-<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
-<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
-<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
-<p>The GRUB Legacy configuration file consists of two sections:</p>
-<ul>
-<li>Global definitions</li>
-<li>Operating system boot definitions</li>
-</ul>
-<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
-<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
-<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
-<ul>
-<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
-<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
-</ul>
-<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
-[…]
-set root=(hd1,1)
-linux16 /vmlinuz[…]
-initrd /initramfs[…]
-&#125;
-menuentry &quot;Windows&quot; &#123;
-set root=(hd0,1)
-[…]
-&#125;
-</code></pre>
-<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
-<p>For GRUB2, the commands to remember are as follows:</p>
-<ul>
-<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
-<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
-<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-</ul>
-<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
-<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>230704ニュース</title>
     <url>/new-blog/310c0ca1.html</url>
     <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/bM7tWUL5qvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -503,6 +449,98 @@ set root=(hd0,1)
       </categories>
       <tags>
         <tag>News</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>230706ニュース</title>
+    <url>/new-blog/df026d8d.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rF4MqGS7eAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><ruby>党首<rp>(</rp><rt style="visibility: hidden;">とうしゅ</rt><rp>)</rp></ruby> の <ruby>年収<rp>(</rp><rt style="visibility: hidden;">ねんしゅう</rt><rp>)</rp></ruby> ランキング で <ruby>岸田<rp>(</rp><rt style="visibility: hidden;">きしだ</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> に <ruby>次<rp>(</rp><rt style="visibility: hidden;">つ</rt><rp>)</rp></ruby>ぐ 2 <ruby>位<rp>(</rp><rt style="visibility: hidden;">くらい</rt><rp>)</rp></ruby> は <ruby>意外<rp>(</rp><rt style="visibility: hidden;">いがい</rt><rp>)</rp></ruby> な あの <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> でし た<br><ruby>去年<rp>(</rp><rt style="visibility: hidden;">きょねん</rt><rp>)</rp></ruby> の <ruby>国会<rp>(</rp><rt style="visibility: hidden;">こっかい</rt><rp>)</rp></ruby> <ruby>議員<rp>(</rp><rt style="visibility: hidden;">ぎいん</rt><rp>)</rp></ruby> の <ruby>所得<rp>(</rp><rt style="visibility: hidden;">しょとく</rt><rp>)</rp></ruby> が <ruby>発表<rp>(</rp><rt style="visibility: hidden;">はっぴょう</rt><rp>)</rp></ruby> さ れ <ruby>当主<rp>(</rp><rt style="visibility: hidden;">とうしゅ</rt><rp>)</rp></ruby> で は <ruby>岸田<rp>(</rp><rt style="visibility: hidden;">きしだ</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> が トップ で 3864 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> そして 2 <ruby>位<rp>(</rp><rt style="visibility: hidden;">くらい</rt><rp>)</rp></ruby> に <ruby>食<rp>(</rp><rt style="visibility: hidden;">く</rt><rp>)</rp></ruby>い<ruby>込<rp>(</rp><rt style="visibility: hidden;">こ</rt><rp>)</rp></ruby>ん だ の が 2051 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> の <ruby>共産党<rp>(</rp><rt style="visibility: hidden;">きょうさんとう</rt><rp>)</rp></ruby> を C <ruby>委員<rp>(</rp><rt style="visibility: hidden;">いいん</rt><rp>)</rp></ruby> <ruby>長<rp>(</rp><rt style="visibility: hidden;">ちょう</rt><rp>)</rp></ruby> でし た<br><ruby>一体<rp>(</rp><rt style="visibility: hidden;">いったい</rt><rp>)</rp></ruby> なぜ な の か <ruby>注目<rp>(</rp><rt style="visibility: hidden;">ちゅうもく</rt><rp>)</rp></ruby> の ウラ <ruby>情報<rp>(</rp><rt style="visibility: hidden;">じょうほう</rt><rp>)</rp></ruby> は こちら<br><ruby>著書<rp>(</rp><rt style="visibility: hidden;">ちょしょ</rt><rp>)</rp></ruby> の <ruby>印税<rp>(</rp><rt style="visibility: hidden;">いんぜい</rt><rp>)</rp></ruby> で <ruby>所属<rp>(</rp><rt style="visibility: hidden;">しょぞく</rt><rp>)</rp></ruby> アップ C <ruby>氏<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> は <ruby>当<rp>(</rp><rt style="visibility: hidden;">とう</rt><rp>)</rp></ruby> 100 <ruby>周<rp>(</rp><rt style="visibility: hidden;">しゅう</rt><rp>)</rp></ruby><ruby>年<rp>(</rp><rt style="visibility: hidden;">ねん</rt><rp>)</rp></ruby> の タイミング で <ruby>自<rp>(</rp><rt style="visibility: hidden;">みずか</rt><rp>)</rp></ruby>ら パソコン で <ruby>本<rp>(</rp><rt style="visibility: hidden;">ほん</rt><rp>)</rp></ruby> を <ruby>書<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby>き<ruby>上<rp>(</rp><rt style="visibility: hidden;">あ</rt><rp>)</rp></ruby>げ た ところ これ が 4 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>部<rp>(</rp><rt style="visibility: hidden;">ぶ</rt><rp>)</rp></ruby> も <ruby>売<rp>(</rp><rt style="visibility: hidden;">う</rt><rp>)</rp></ruby>れ て 200 <ruby>万<rp>(</rp><rt style="visibility: hidden;">ばん</rt><rp>)</rp></ruby> <ruby>円<rp>(</rp><rt style="visibility: hidden;">えん</rt><rp>)</rp></ruby> ほど の <ruby>印税<rp>(</rp><rt style="visibility: hidden;">いんぜい</rt><rp>)</rp></ruby> を <ruby>稼<rp>(</rp><rt style="visibility: hidden;">かせ</rt><rp>)</rp></ruby>い だ と み られ ます<br>しかし <ruby>党員<rp>(</rp><rt style="visibility: hidden;">とういん</rt><rp>)</rp></ruby> の <ruby>高齢<rp>(</rp><rt style="visibility: hidden;">こうれい</rt><rp>)</rp></ruby> <ruby>化<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby> や 22 <ruby>年<rp>(</rp><rt style="visibility: hidden;">とし</rt><rp>)</rp></ruby> に <ruby>及<rp>(</rp><rt style="visibility: hidden;">およ</rt><rp>)</rp></ruby>ぶ <ruby>新<rp>(</rp><rt style="visibility: hidden;">しん</rt><rp>)</rp></ruby> <ruby>体制<rp>(</rp><rt style="visibility: hidden;">たいせい</rt><rp>)</rp></ruby> の <ruby>批判<rp>(</rp><rt style="visibility: hidden;">ひはん</rt><rp>)</rp></ruby> など <ruby>書<rp>(</rp><rt style="visibility: hidden;">か</rt><rp>)</rp></ruby>く より <ruby>描<rp>(</rp><rt style="visibility: hidden;">えが</rt><rp>)</rp></ruby>か れる ネタ に あふれる <ruby>皮肉<rp>(</rp><rt style="visibility: hidden;">ひにく</rt><rp>)</rp></ruby> な <ruby>現状<rp>(</rp><rt style="visibility: hidden;">げんじょう</rt><rp>)</rp></ruby> と なっ て い ます</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DB1efindYYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p>おととい <ruby>宮城<rp>(</rp><rt style="visibility: hidden;">みやぎ</rt><rp>)</rp></ruby> <ruby>県<rp>(</rp><rt style="visibility: hidden;">けん</rt><rp>)</rp></ruby> <ruby>栗原<rp>(</rp><rt style="visibility: hidden;">くりはら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>小学校<rp>(</rp><rt style="visibility: hidden;">しょうがっこう</rt><rp>)</rp></ruby> に <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック が <ruby>進入<rp>(</rp><rt style="visibility: hidden;">しんにゅう</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> 4 <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> が はね られ た <ruby>事件<rp>(</rp><rt style="visibility: hidden;">じけん</rt><rp>)</rp></ruby> で <ruby>車<rp>(</rp><rt style="visibility: hidden;">くるま</rt><rp>)</rp></ruby> は ゆっくり と し た <ruby>速度<rp>(</rp><rt style="visibility: hidden;">そくど</rt><rp>)</rp></ruby> で <ruby>直進<rp>(</rp><rt style="visibility: hidden;">ちょくしん</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> を <ruby>背後<rp>(</rp><rt style="visibility: hidden;">はいご</rt><rp>)</rp></ruby> から <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね た こと が <ruby>新<rp>(</rp><rt style="visibility: hidden;">あら</rt><rp>)</rp></ruby>た に <ruby>分<rp>(</rp><rt style="visibility: hidden;">わ</rt><rp>)</rp></ruby>かり まし た<br><ruby>小野寺<rp>(</rp><rt style="visibility: hidden;">おのでら</rt><rp>)</rp></ruby> <ruby>章典<rp>(</rp><rt style="visibility: hidden;">しょうてん</rt><rp>)</rp></ruby> <ruby>容疑<rp>(</rp><rt style="visibility: hidden;">ようぎ</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt style="visibility: hidden;">しゃ</rt><rp>)</rp></ruby> は おととい <ruby>栗原<rp>(</rp><rt style="visibility: hidden;">くりはら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>若柳<rp>(</rp><rt style="visibility: hidden;">わかやなぎ</rt><rp>)</rp></ruby> <ruby>小学校<rp>(</rp><rt style="visibility: hidden;">しょうがっこう</rt><rp>)</rp></ruby> の <ruby>敷地<rp>(</rp><rt style="visibility: hidden;">しきち</rt><rp>)</rp></ruby> <ruby>内<rp>(</rp><rt style="visibility: hidden;">うち</rt><rp>)</rp></ruby> で <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> 4 <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> を <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック で <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね <ruby>殺害<rp>(</rp><rt style="visibility: hidden;">さつがい</rt><rp>)</rp></ruby> しよ う と し た <ruby>疑<rp>(</rp><rt style="visibility: hidden;">うたが</rt><rp>)</rp></ruby>い で <ruby>今日<rp>(</rp><rt style="visibility: hidden;">きょう</rt><rp>)</rp></ruby> <ruby>創建<rp>(</rp><rt style="visibility: hidden;">そうけん</rt><rp>)</rp></ruby> さ れ まし た<br>その<ruby>後<rp>(</rp><rt style="visibility: hidden;">ご</rt><rp>)</rp></ruby> の <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> へ の <ruby>取材<rp>(</rp><rt style="visibility: hidden;">しゅざい</rt><rp>)</rp></ruby> で <ruby>軽<rp>(</rp><rt style="visibility: hidden;">けい</rt><rp>)</rp></ruby> トラック は <ruby>通用<rp>(</rp><rt style="visibility: hidden;">つうよう</rt><rp>)</rp></ruby> <ruby>口<rp>(</rp><rt style="visibility: hidden;">くち</rt><rp>)</rp></ruby> から ゆっくり と <ruby>進入<rp>(</rp><rt style="visibility: hidden;">しんにゅう</rt><rp>)</rp></ruby> し <ruby>児童<rp>(</rp><rt style="visibility: hidden;">じどう</rt><rp>)</rp></ruby> を <ruby>背後<rp>(</rp><rt style="visibility: hidden;">はいご</rt><rp>)</rp></ruby> から <ruby>跳<rp>(</rp><rt style="visibility: hidden;">は</rt><rp>)</rp></ruby>ね た こと が <ruby>分<rp>(</rp><rt style="visibility: hidden;">わ</rt><rp>)</rp></ruby>かり まし た<br><ruby>近<rp>(</rp><rt style="visibility: hidden;">ちか</rt><rp>)</rp></ruby>く に い た <ruby>教員<rp>(</rp><rt style="visibility: hidden;">きょういん</rt><rp>)</rp></ruby> は <ruby>車<rp>(</rp><rt style="visibility: hidden;">くるま</rt><rp>)</rp></ruby> の <ruby>音<rp>(</rp><rt style="visibility: hidden;">おと</rt><rp>)</rp></ruby> が <ruby>聞<rp>(</rp><rt style="visibility: hidden;">き</rt><rp>)</rp></ruby>こえ ず <ruby>直前<rp>(</rp><rt style="visibility: hidden;">ちょくぜん</rt><rp>)</rp></ruby> まで <ruby>気<rp>(</rp><rt style="visibility: hidden;">き</rt><rp>)</rp></ruby>がつか なかっ た と <ruby>話<rp>(</rp><rt style="visibility: hidden;">はな</rt><rp>)</rp></ruby>し て いる という こと です<br><ruby>小野寺<rp>(</rp><rt style="visibility: hidden;">おのでら</rt><rp>)</rp></ruby> <ruby>容疑<rp>(</rp><rt style="visibility: hidden;">ようぎ</rt><rp>)</rp></ruby> <ruby>者<rp>(</rp><rt style="visibility: hidden;">しゃ</rt><rp>)</rp></ruby> は <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> の <ruby>調<rp>(</rp><rt style="visibility: hidden;">しら</rt><rp>)</rp></ruby>べ に<ruby>対<rp>(</rp><rt style="visibility: hidden;">たい</rt><rp>)</rp></ruby>して <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> に わざと ぶつけよ う と し た と <ruby>供述<rp>(</rp><rt style="visibility: hidden;">きょうじゅつ</rt><rp>)</rp></ruby> し て い ます<br>しかし <ruby>供述<rp>(</rp><rt style="visibility: hidden;">きょうじゅつ</rt><rp>)</rp></ruby> <ruby>内容<rp>(</rp><rt style="visibility: hidden;">ないよう</rt><rp>)</rp></ruby> に <ruby>曖昧<rp>(</rp><rt style="visibility: hidden;">あいまい</rt><rp>)</rp></ruby> な <ruby>部分<rp>(</rp><rt style="visibility: hidden;">ぶぶん</rt><rp>)</rp></ruby> も あり <ruby>警察<rp>(</rp><rt style="visibility: hidden;">けいさつ</rt><rp>)</rp></ruby> は <ruby>責任<rp>(</rp><rt style="visibility: hidden;">せきにん</rt><rp>)</rp></ruby> <ruby>能力<rp>(</rp><rt style="visibility: hidden;">のうりょく</rt><rp>)</rp></ruby> について も <ruby>調<rp>(</rp><rt style="visibility: hidden;">しら</rt><rp>)</rp></ruby>べる こと に し て い ます</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-H87RPlMEnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><ruby>奈良<rp>(</rp><rt style="visibility: hidden;">なら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>近鉄<rp>(</rp><rt style="visibility: hidden;">きんてつ</rt><rp>)</rp></ruby> <ruby>大和<rp>(</rp><rt style="visibility: hidden;">やまと</rt><rp>)</rp></ruby> <ruby>西大寺<rp>(</rp><rt style="visibility: hidden;">さいだいじ</rt><rp>)</rp></ruby> <ruby>駅<rp>(</rp><rt style="visibility: hidden;">えき</rt><rp>)</rp></ruby> <ruby>近<rp>(</rp><rt style="visibility: hidden;">ちか</rt><rp>)</rp></ruby>く です<br><ruby>去年<rp>(</rp><rt style="visibility: hidden;">きょねん</rt><rp>)</rp></ruby> 7 <ruby>月<rp>(</rp><rt style="visibility: hidden;">つき</rt><rp>)</rp></ruby> 8 <ruby>日<rp>(</rp><rt style="visibility: hidden;">にち</rt><rp>)</rp></ruby> <ruby>安倍<rp>(</rp><rt style="visibility: hidden;">あべ</rt><rp>)</rp></ruby> <ruby>元<rp>(</rp><rt style="visibility: hidden;">もと</rt><rp>)</rp></ruby> <ruby>総理<rp>(</rp><rt style="visibility: hidden;">そうり</rt><rp>)</rp></ruby> は この <ruby>場所<rp>(</rp><rt style="visibility: hidden;">ばしょ</rt><rp>)</rp></ruby> で <ruby>演説<rp>(</rp><rt style="visibility: hidden;">えんぜつ</rt><rp>)</rp></ruby> <ruby>中<rp>(</rp><rt style="visibility: hidden;">なか</rt><rp>)</rp></ruby> に <ruby>銃撃<rp>(</rp><rt style="visibility: hidden;">じゅうげき</rt><rp>)</rp></ruby> さ れ て <ruby>死亡<rp>(</rp><rt style="visibility: hidden;">しぼう</rt><rp>)</rp></ruby> し まし た<br><ruby>現場<rp>(</rp><rt style="visibility: hidden;">げんば</rt><rp>)</rp></ruby> で は <ruby>自民党<rp>(</rp><rt style="visibility: hidden;">じみんとう</rt><rp>)</rp></ruby> の <ruby>有志<rp>(</rp><rt style="visibility: hidden;">ゆうし</rt><rp>)</rp></ruby> ら で <ruby>作<rp>(</rp><rt style="visibility: hidden;">つく</rt><rp>)</rp></ruby>る <ruby>団体<rp>(</rp><rt style="visibility: hidden;">だんたい</rt><rp>)</rp></ruby> が <ruby>献花<rp>(</rp><rt style="visibility: hidden;">けんか</rt><rp>)</rp></ruby> <ruby>台<rp>(</rp><rt style="visibility: hidden;">うてな</rt><rp>)</rp></ruby> を <ruby>設置<rp>(</rp><rt style="visibility: hidden;">せっち</rt><rp>)</rp></ruby> し て い て <ruby>朝<rp>(</rp><rt style="visibility: hidden;">あさ</rt><rp>)</rp></ruby> から <ruby>花<rp>(</rp><rt style="visibility: hidden;">はな</rt><rp>)</rp></ruby> を <ruby>備<rp>(</rp><rt style="visibility: hidden;">そな</rt><rp>)</rp></ruby>える <ruby>人<rp>(</rp><rt style="visibility: hidden;">ひと</rt><rp>)</rp></ruby> の <ruby>姿<rp>(</rp><rt style="visibility: hidden;">すがた</rt><rp>)</rp></ruby> が <ruby>多<rp>(</rp><rt style="visibility: hidden;">おお</rt><rp>)</rp></ruby>く <ruby>見<rp>(</rp><rt style="visibility: hidden;">み</rt><rp>)</rp></ruby> られ まし た<br>また <ruby>事件<rp>(</rp><rt style="visibility: hidden;">じけん</rt><rp>)</rp></ruby> が <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>き た <ruby>午前<rp>(</rp><rt style="visibility: hidden;">ごぜん</rt><rp>)</rp></ruby> 11 <ruby>時半<rp>(</rp><rt style="visibility: hidden;">じはん</rt><rp>)</rp></ruby> <ruby>頃<rp>(</rp><rt style="visibility: hidden;">ころ</rt><rp>)</rp></ruby> に は <ruby>黙祷<rp>(</rp><rt style="visibility: hidden;">もくとう</rt><rp>)</rp></ruby> が <ruby>捧<rp>(</rp><rt style="visibility: hidden;">ささ</rt><rp>)</rp></ruby>げ られ まし た<br><ruby>安<rp>(</rp><rt style="visibility: hidden;">やす</rt><rp>)</rp></ruby>らか に お<ruby>守<rp>(</rp><rt style="visibility: hidden;">まも</rt><rp>)</rp></ruby>り ください と <ruby>日本<rp>(</rp><rt style="visibility: hidden;">にっぽん</rt><rp>)</rp></ruby> の ため に ありがとう ござい まし た と<br><ruby>日本<rp>(</rp><rt style="visibility: hidden;">にっぽん</rt><rp>)</rp></ruby> で こんな こと が <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>こる なんて <ruby>信<rp>(</rp><rt style="visibility: hidden;">しん</rt><rp>)</rp></ruby>じ れ ない と しか <ruby>二度<rp>(</rp><rt style="visibility: hidden;">にど</rt><rp>)</rp></ruby>と この よう な こと は <ruby>起<rp>(</rp><rt style="visibility: hidden;">お</rt><rp>)</rp></ruby>こっ て ほしく ない な と<br><ruby>殺人<rp>(</rp><rt style="visibility: hidden;">さつじん</rt><rp>)</rp></ruby> など の <ruby>罪<rp>(</rp><rt style="visibility: hidden;">つみ</rt><rp>)</rp></ruby> で <ruby>起訴<rp>(</rp><rt style="visibility: hidden;">きそ</rt><rp>)</rp></ruby> さ れ た <ruby>山神<rp>(</rp><rt style="visibility: hidden;">さんじん</rt><rp>)</rp></ruby> <ruby>鉄矢<rp>(</rp><rt style="visibility: hidden;">てつや</rt><rp>)</rp></ruby> <ruby>被告<rp>(</rp><rt style="visibility: hidden;">ひこく</rt><rp>)</rp></ruby> の <ruby>弁護<rp>(</rp><rt style="visibility: hidden;">べんご</rt><rp>)</rp></ruby> <ruby>団<rp>(</rp><rt style="visibility: hidden;">だん</rt><rp>)</rp></ruby> は <ruby>昨日<rp>(</rp><rt style="visibility: hidden;">きのう</rt><rp>)</rp></ruby> <ruby>後半<rp>(</rp><rt style="visibility: hidden;">こうはん</rt><rp>)</rp></ruby> を <ruby>迎<rp>(</rp><rt style="visibility: hidden;">むか</rt><rp>)</rp></ruby>える まで に<br><ruby>未<rp>(</rp><rt style="visibility: hidden;">いま</rt><rp>)</rp></ruby>だ <ruby>相応<rp>(</rp><rt style="visibility: hidden;">そうおう</rt><rp>)</rp></ruby> の <ruby>時間<rp>(</rp><rt style="visibility: hidden;">じかん</rt><rp>)</rp></ruby> を <ruby>要<rp>(</rp><rt style="visibility: hidden;">よう</rt><rp>)</rp></ruby>する と コメント し て い て <ruby>初<rp>(</rp><rt style="visibility: hidden;">はつ</rt><rp>)</rp></ruby> <ruby>公判<rp>(</rp><rt style="visibility: hidden;">こうはん</rt><rp>)</rp></ruby> は <ruby>来年<rp>(</rp><rt style="visibility: hidden;">らいねん</rt><rp>)</rp></ruby> <ruby>以降<rp>(</rp><rt style="visibility: hidden;">いこう</rt><rp>)</rp></ruby> に なる <ruby>見通<rp>(</rp><rt style="visibility: hidden;">みとお</rt><rp>)</rp></ruby>し です<br><ruby>以上<rp>(</rp><rt style="visibility: hidden;">いじょう</rt><rp>)</rp></ruby> <ruby>奈良<rp>(</rp><rt style="visibility: hidden;">なら</rt><rp>)</rp></ruby> <ruby>市<rp>(</rp><rt style="visibility: hidden;">し</rt><rp>)</rp></ruby> の <ruby>銃撃<rp>(</rp><rt style="visibility: hidden;">じゅうげき</rt><rp>)</rp></ruby> <ruby>現場<rp>(</rp><rt style="visibility: hidden;">げんば</rt><rp>)</rp></ruby> から お<ruby>伝<rp>(</rp><rt style="visibility: hidden;">つた</rt><rp>)</rp></ruby>え し まし た</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>BootTheSystem</title>
+    <url>/new-blog/3ef0ab2f.html</url>
+    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
+<span id="more"></span>
+
+<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
+<ol>
+<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
+<li>The boot loader runs and determines what Linux kernel program to load.</li>
+<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
+<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
+</ol>
+<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
+<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
+<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
+<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
+<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
+<ul>
+<li>An internal hard drive</li>
+<li>An external hard drive</li>
+<li>A CD&#x2F;DVD drive</li>
+<li>A USB flash drive</li>
+<li>A network server</li>
+</ul>
+<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
+</blockquote>
+<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
+<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
+<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
+<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
+<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
+<p>The GRUB Legacy configuration file consists of two sections:</p>
+<ul>
+<li>Global definitions</li>
+<li>Operating system boot definitions</li>
+</ul>
+<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
+<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
+<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
+<ul>
+<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
+<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
+</ul>
+<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
+[…]
+set root=(hd1,1)
+linux16 /vmlinuz[…]
+initrd /initramfs[…]
+&#125;
+menuentry &quot;Windows&quot; &#123;
+set root=(hd0,1)
+[…]
+&#125;
+</code></pre>
+<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
+<p>For GRUB2, the commands to remember are as follows:</p>
+<ul>
+<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
+<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
+<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+</ul>
+<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
+<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
       </tags>
   </entry>
   <entry>
@@ -687,26 +725,6 @@ rmmod btusb
       </tags>
   </entry>
   <entry>
-    <title>JavaScriptPageOne</title>
-    <url>/new-blog/c6a6ca50.html</url>
-    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
-<pre><code>let caught = 5 * 5;
-</code></pre>
-<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
-<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
-<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
-<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
-<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
-<pre><code>var name = &quot;Ayda&quot;;
-const greeting = &quot;Hello &quot;;
-</code></pre>
-<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
-<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bit0101</title>
     <url>/new-blog/f9f6dbe0.html</url>
     <content><![CDATA[<h1 id="基本情報技術者試験-テクノロジ系"><a href="#基本情報技術者試験-テクノロジ系" class="headerlink" title="基本情報技術者試験-テクノロジ系"></a>基本情報技術者試験-テクノロジ系</h1><h2 id="基礎理論"><a href="#基礎理論" class="headerlink" title="基礎理論"></a>基礎理論</h2><div>
@@ -732,6 +750,26 @@ const greeting = &quot;Hello &quot;;
       <tags>
         <tag>Basic Information Technician</tag>
         <tag>Tecnology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/c6a6ca50.html</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
+</code></pre>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -2688,12 +2726,6 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="/new-blog/b439c0f1.html#〜といったら">〜といったら</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>文法形式の整理</title>
     <url>/new-blog/36c105c5.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -3608,6 +3640,12 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="/new-blog/b439c0f1.html#〜といったら">〜といったら</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>文の組み立て−3　「〜ない」がつく文法形式</title>
     <url>/new-blog/e6787bff.html</url>
     <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
@@ -3797,123 +3835,6 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>時制</title>
-    <url>/new-blog/956f59e9.html</url>
-    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
-<span id="more"></span>
-
-<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-        <th>動詞の種類</th>
-    </tr>
-    <tr>
-        <td>未来</td>
-        <td>私は来年、高校を<b>卒業する</b></td>
-        <td>動きを表す動詞</td>
-    </tr>
-    <tr>
-        <td rowspan="3">現在</td>
-        <td>彼女はトラックの運転が<b>できる</b></td>
-        <td>状態を表す動詞</td>
-    </tr>   
-    <tr>
-        <td>あなかが<b>痛む</b></td>
-        <td>感覚を表す動詞</td>
-    </tr>
-    <tr>
-        <td>選手としてしっかり戦うことを<b>誓います</b></td>
-        <td>行動の宣言を表す動詞</td>
-    </tr>    
-    <tr>
-        <td>時間に無関係</td>
-        <td>太陽は東からのぼって西に沈む</td>
-        <td></td>
-    </tr>    
-</table>
-
-
-<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>過去</td>
-        <td>先週、アメリカから友達が<b>来た</b></td>
-    </tr>
-    <tr>
-        <td>現在につながる過去</td>
-        <td>私はさっきからずっとここに<b>いた</b></td>
-    </tr>    
-    <tr>
-        <td>完了の結果</td>
-        <td>私は最近<b>太った</b></td>
-    </tr>    
-    <tr>
-        <td>未来完了</td>
-        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
-    </tr>
-    <tr>
-        <td>形状・状態</td>
-        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
-    </tr>
-    <tr>
-        <td>生理状態</td>
-        <td>あ、おなかが<b>すいた</b></td>
-    </tr>
-</table>
-
-<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>動作・事態の継続</td>
-        <td>日本では子供の数が<b>減っている</b></td>
-    </tr>
-    <tr>
-        <td>結果の存続</td>
-        <td>電気が<b>消えている</b></td>
-    </tr>
-    <tr>
-        <td>形状・様子</td>
-        <td>この棒先に<b>曲がっている</b></td>
-    </tr>
-    <tr>
-        <td>完了</td>
-        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
-    </tr>
-    <tr>
-        <td>経験・記録</td>
-        <td>彼は10年前に同じ病気で<b>入院している</b></td>
-    </tr>
-</table>
-
-<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
-    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
-    <span class="rectangle">ハワイへ行った</span> → 訪ねる
-</p>
-
-<p>
-    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
-</p>
-
-<p>
-    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
-</p>
-
-<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>始めと終わりが正しく対応した文</title>
     <url>/new-blog/c660853.html</url>
     <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><h2 id="A-主語と述語の対応"><a href="#A-主語と述語の対応" class="headerlink" title="A 主語と述語の対応"></a>A 主語と述語の対応</h2><p>主語と述語の関係は次の四つの形があります。</p>
@@ -4072,6 +3993,123 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>時制</title>
+    <url>/new-blog/956f59e9.html</url>
+    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
+<span id="more"></span>
+
+<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+        <th>動詞の種類</th>
+    </tr>
+    <tr>
+        <td>未来</td>
+        <td>私は来年、高校を<b>卒業する</b></td>
+        <td>動きを表す動詞</td>
+    </tr>
+    <tr>
+        <td rowspan="3">現在</td>
+        <td>彼女はトラックの運転が<b>できる</b></td>
+        <td>状態を表す動詞</td>
+    </tr>   
+    <tr>
+        <td>あなかが<b>痛む</b></td>
+        <td>感覚を表す動詞</td>
+    </tr>
+    <tr>
+        <td>選手としてしっかり戦うことを<b>誓います</b></td>
+        <td>行動の宣言を表す動詞</td>
+    </tr>    
+    <tr>
+        <td>時間に無関係</td>
+        <td>太陽は東からのぼって西に沈む</td>
+        <td></td>
+    </tr>    
+</table>
+
+
+<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>過去</td>
+        <td>先週、アメリカから友達が<b>来た</b></td>
+    </tr>
+    <tr>
+        <td>現在につながる過去</td>
+        <td>私はさっきからずっとここに<b>いた</b></td>
+    </tr>    
+    <tr>
+        <td>完了の結果</td>
+        <td>私は最近<b>太った</b></td>
+    </tr>    
+    <tr>
+        <td>未来完了</td>
+        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
+    </tr>
+    <tr>
+        <td>形状・状態</td>
+        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
+    </tr>
+    <tr>
+        <td>生理状態</td>
+        <td>あ、おなかが<b>すいた</b></td>
+    </tr>
+</table>
+
+<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>動作・事態の継続</td>
+        <td>日本では子供の数が<b>減っている</b></td>
+    </tr>
+    <tr>
+        <td>結果の存続</td>
+        <td>電気が<b>消えている</b></td>
+    </tr>
+    <tr>
+        <td>形状・様子</td>
+        <td>この棒先に<b>曲がっている</b></td>
+    </tr>
+    <tr>
+        <td>完了</td>
+        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
+    </tr>
+    <tr>
+        <td>経験・記録</td>
+        <td>彼は10年前に同じ病気で<b>入院している</b></td>
+    </tr>
+</table>
+
+<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
+    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
+    <span class="rectangle">ハワイへ行った</span> → 訪ねる
+</p>
+
+<p>
+    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
+</p>
+
+<p>
+    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
+</p>
+
+<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>条件を表す文</title>
     <url>/new-blog/ff8369b4.html</url>
     <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
@@ -4122,7 +4160,7 @@ npm -v
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#x2e;&#x65;&#109;&#x61;&#105;&#108;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#109;">&#121;&#x6f;&#x75;&#x72;&#x2e;&#x65;&#109;&#x61;&#105;&#108;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<p>“Your Name”と”<a href="mailto:&#121;&#111;&#117;&#114;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#114;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
 <h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
 <p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
@@ -4453,44 +4491,6 @@ permalink: posts/:abbrlink.html
       </categories>
       <tags>
         <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/d4fa8842.html</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
       </tags>
   </entry>
 </search>
