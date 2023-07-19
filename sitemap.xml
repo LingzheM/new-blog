@@ -560,7 +560,7 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/about/index.html</loc>
+    <loc>https://lingzhem.github.io/categories/index.html</loc>
     
     <lastmod>2023-06-17</lastmod>
     
@@ -569,7 +569,7 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/index.html</loc>
+    <loc>https://lingzhem.github.io/about/index.html</loc>
     
     <lastmod>2023-06-17</lastmod>
     
@@ -610,20 +610,6 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/Basic-Information-Technician/</loc>
-    <lastmod>2023-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lingzhem.github.io/tags/Tecnology/</loc>
-    <lastmod>2023-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/tags/N3/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -631,14 +617,14 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/Hexo/</loc>
+    <loc>https://lingzhem.github.io/tags/Network/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/Network/</loc>
+    <loc>https://lingzhem.github.io/tags/Hexo/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -686,17 +672,24 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://lingzhem.github.io/categories/LPIC/</loc>
+    <loc>https://lingzhem.github.io/tags/Basic-Information-Technician/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/Basic-Information-Technician/</loc>
+    <loc>https://lingzhem.github.io/tags/Tecnology/</loc>
+    <lastmod>2023-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://lingzhem.github.io/categories/LPIC/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -710,14 +703,14 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/Hexo/</loc>
+    <loc>https://lingzhem.github.io/categories/Network/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/Network/</loc>
+    <loc>https://lingzhem.github.io/categories/Hexo/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -732,6 +725,13 @@
   
   <url>
     <loc>https://lingzhem.github.io/categories/News/</loc>
+    <lastmod>2023-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/categories/Basic-Information-Technician/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
