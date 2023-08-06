@@ -115,26 +115,6 @@ set root=(hd0,1)
       </tags>
   </entry>
   <entry>
-    <title>JavaScriptPageOne</title>
-    <url>/new-blog/c6a6ca50.html</url>
-    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
-<pre><code>let caught = 5 * 5;
-</code></pre>
-<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
-<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
-<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
-<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
-<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
-<pre><code>var name = &quot;Ayda&quot;;
-const greeting = &quot;Hello &quot;;
-</code></pre>
-<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
-<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chapter 3 Configuring Hardware</title>
     <url>/new-blog/50739f32.html</url>
     <content><![CDATA[<h1 id="Chapter-3-Configuring-Hardware"><a href="#Chapter-3-Configuring-Hardware" class="headerlink" title="Chapter 3 Configuring Hardware"></a>Chapter 3 Configuring Hardware</h1><p>[] </p>
@@ -313,6 +293,26 @@ rmmod btusb
       </categories>
       <tags>
         <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/c6a6ca50.html</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
+</code></pre>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -658,94 +658,115 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜している（進行中）</title>
-    <url>/new-blog/2e6bc246.html</url>
-    <content><![CDATA[<h1 id="〜している（進行中）"><a href="#〜している（進行中）" class="headerlink" title="〜している（進行中）"></a>〜している（進行中）</h1><p>[復習]</p>
-<ul>
-<li>今、新幹線の時間を調べ<u>ているところ</u>だから、もうちょっと待って。</li>
-<li>留守の<u>間に</u>だれか来たようだ、玄関に花が置いてある。</li>
-</ul>
+    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
+    <url>/new-blog/66c5e938.html</url>
+    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
 <span id="more"></span>
 
-<h2 id="〜最中だ"><a href="#〜最中だ" class="headerlink" title="〜最中だ"></a>〜最中だ</h2><p>意味　ちょうど〜しているところだ</p>
-<p>例文</p>
+<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
+<ul>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
+</ul>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<pre><code class="bash">brew install node
+</code></pre>
+<p>もしくは、</p>
+<pre><code class="bash">node -v
+npm -v
+</code></pre>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<pre><code class="bash">brew install git
+</code></pre>
+<pre><code class="bash">git --version
+</code></pre>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@example.com&quot;
+</code></pre>
+<p>“Your Name”と”<a href="mailto:&#121;&#111;&#117;&#114;&#46;&#x65;&#109;&#97;&#x69;&#108;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#114;&#46;&#x65;&#109;&#97;&#x69;&#108;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
+</code></pre>
+<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
+<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
+<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
+<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
+<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
+<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
+<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+<p>以下のコマンドを使用して検証できます：</p>
+<pre><code class="bash">hexo -v
+</code></pre>
+<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
+<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
+<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
+</code></pre>
+<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
+<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
+<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
+</code></pre>
+<p>次に、作成されたディレクトリに移動します：</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+</code></pre>
+<p>移動したら、依存パッケージをインストールします：</p>
+<pre><code>npm install
+</code></pre>
+<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
+<pre><code>hexo generate
+</code></pre>
+<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
+<pre><code>hexo server
+</code></pre>
+<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
+<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
+<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
 <blockquote>
-<p>田中さんは今考えごとをしている<u>最中</u>だから、邪魔しないほうがいい。<br>スピーチの<u>最中に</u>、突然電気が消えた。</p>
+<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
 </blockquote>
-<p>接続 名ーの・動ている形＋最中だ</p>
-<p>注意　</p>
-<ol>
-<li>比較的短い時間で行う動作を表す言葉（試験・書いているなど）につく。</li>
-<li>「〜最中に」の後には、「それを邪魔するような予定外のことが起こった」という意味の文が来ることが多い</li>
-</ol>
-<h2 id="〜うちに"><a href="#〜うちに" class="headerlink" title="〜うちに"></a>〜うちに</h2><p>意味A　時間の制限があって、〜でなくなった後では実現が難しいから、その前にしてしまう</p>
-<p>例文</p>
-<blockquote>
-<p>家事は、子供が眠っている<u>うちに</u>、全部やってしまった。</p>
-</blockquote>
-<p>接続　名ーの・動辞書形／ている／ない形・イ形い・ナ形な＋うちに</p>
-<p>注意A　</p>
-<ol>
-<li>時間の幅のある言葉につく。後には、意志的な動作を表す動詞の文が来る</li>
-</ol>
-<p>意味B　している間に変化が現れる</p>
-<p>例文</p>
-<blockquote>
-<p>インターネットで調べている<u>うちに</u>、いろいろなことがわかってきた。</p>
-</blockquote>
-<p>接続　動辞書形／ている形／ない形＋うちに</p>
-<p>注意B　</p>
-<ol>
-<li>時間の幅のある言葉につく。後には、意志的入らない文・変化を表す文が来る</li>
-</ol>
-<h2 id="〜ばかりだ・一方だ"><a href="#〜ばかりだ・一方だ" class="headerlink" title="〜ばかりだ・一方だ"></a>〜ばかりだ・一方だ</h2><p>意味　という一方方向に変化が進んでいく</p>
-<p>例文</p>
-<blockquote>
-<p>このごろは仕事が多くて残業が増える<u>ばかりだ</u></p>
-</blockquote>
-<p>接続　動辞書形＋ばかりだ・一方だ</p>
-<p>注意　</p>
-<ol>
-<li>変化を表す動詞（増える・悪くなる）につく。</li>
-<li>「〜ばかりだ」は特に良くない方向に進んでいるという場合が多い</li>
-</ol>
-<h2 id="〜（よ）うとしている"><a href="#〜（よ）うとしている" class="headerlink" title="〜（よ）うとしている"></a>〜（よ）うとしている</h2><p>意味　という変化が起こる少し前だ・もうすぐ〜する。 <span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>駅前に30階建ての高級マンションが完成し<u>ようとしている</u></p>
-</blockquote>
-<p>接続　動う・よう形＋としている</p>
-<p>注意　</p>
-<ol>
-<li>瞬間的なことを表す動詞（始める・幕が開く）につく</li>
-</ol>
-<h2 id="〜つつある"><a href="#〜つつある" class="headerlink" title="〜つつある"></a>〜つつある</h2><p>意味　〜という変化が進行中だ。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>次第に暖かくなり<u>つつあります</u>。春はもうすぐです。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋つつある</p>
-<p>注意　</p>
-<ol>
-<li>変化を表す動詞につく</li>
-</ol>
-<h2 id="〜つつ"><a href="#〜つつ" class="headerlink" title="〜つつ"></a>〜つつ</h2><p>意味　〜ながら、あることをする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>この空き地をどうするかについては、住民と話し合い<u>つつ</u>、計画を立てていきたい。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋つつある</p>
-<p>注意　</p>
-<ol>
-<li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
-</ol>
+<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+git init 
+git add . 
+git commit -am&quot;init blog&quot; 
+</code></pre>
+<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
+<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
+git branch -M main
+git push -u origin main
+</code></pre>
+<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
+<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
+<pre><code class="bash">git checkout -b pages
+git push -u origin pages
+</code></pre>
+<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
+<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
+<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
+<pre><code class="bash">url: https://ユーザー名.github.io/ 
+root: /breeze-blog/ 
+
+deploy: 
+  type: &#39;git&#39; 
+  repo: git@github.com:ユーザー名./ディレクトリ名
+  branch: pages
+</code></pre>
 ]]></content>
       <categories>
-        <category>N2</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1239,53 +1260,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜や〜など</title>
-    <url>/new-blog/58850c43.html</url>
-    <content><![CDATA[<h1 id="〜や〜など"><a href="#〜や〜など" class="headerlink" title="〜や〜など"></a>〜や〜など</h1><p>[復習]</p>
-<ul>
-<li>出張用のかばんの中にはパソコン<u>や</u>本<u>など</u>が入れっています。</li>
-<li>この町には図書館<u>とか</u>美術館<u>とか</u>公共の建物が多い。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜やら〜やら"><a href="#〜やら〜やら" class="headerlink" title="〜やら〜やら"></a>〜やら〜やら</h2><p>意味　〜や、ほかの〜などの例があるように、いろいろだ</p>
-<p>例文</p>
-<blockquote>
-<p>勝ったチームの選手たちは、泣き出す<u>やら</u>飛び上がる<u>やら</u>さまざまに喜びを表した</p>
-</blockquote>
-<p>接続　名・動辞書形・イ形い＋やら</p>
-<p>注意</p>
-<h2 id="〜というか〜というか"><a href="#〜というか〜というか" class="headerlink" title="〜というか〜というか"></a>〜というか〜というか</h2><p>意味　〜という言い方もできるし、ほかの〜という言い方もできる。</p>
-<p>例文</p>
-<blockquote>
-<p>あの子は元気がいい<u>というか</u>落ち着きがない<u>というか</u>、静かにじっとしていない子です。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というか</p>
-<p>注意</p>
-<h2 id="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"><a href="#〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ" class="headerlink" title="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"></a>〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ</h2><p>意味　〜を例にとっても、ほかの〜を例にとっても同じことが言える。</p>
-<p>例文</p>
-<blockquote>
-<p>勉強する<u>にしても</u>仕事をする<u>にしても</u>、計画を立て立ててからやったほうがいい。</p>
-</blockquote>
-<p>接続　名・動辞書／ない形＋にしても・にしろ・にせよ</p>
-<p>注意</p>
-<h2 id="〜といった"><a href="#〜といった" class="headerlink" title="〜といった"></a>〜といった</h2><p>意味　いくつかの例の後につけて、例をまとめる</p>
-<p>例文</p>
-<blockquote>
-<p>京都とか鎌倉<u>といった</u>古い街には寺が多い。</p>
-</blockquote>
-<p>接続　名＋といった</p>
-<p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜に関連して・〜に対応して</title>
     <url>/new-blog/2990d3a2.html</url>
     <content><![CDATA[<h1 id="〜に関連して・〜に対応して"><a href="#〜に関連して・〜に対応して" class="headerlink" title="〜に関連して・〜に対応して"></a>〜に関連して・〜に対応して</h1><p>[復習]</p>
@@ -1327,6 +1301,53 @@ permalink: posts/:abbrlink.html
 <p>この歌を聞く<u>につけて</u>、心に希望がわいてくる。</p>
 </blockquote>
 <p>接続　動辞書形＋につけて</p>
+<p>注意</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜や〜など</title>
+    <url>/new-blog/58850c43.html</url>
+    <content><![CDATA[<h1 id="〜や〜など"><a href="#〜や〜など" class="headerlink" title="〜や〜など"></a>〜や〜など</h1><p>[復習]</p>
+<ul>
+<li>出張用のかばんの中にはパソコン<u>や</u>本<u>など</u>が入れっています。</li>
+<li>この町には図書館<u>とか</u>美術館<u>とか</u>公共の建物が多い。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜やら〜やら"><a href="#〜やら〜やら" class="headerlink" title="〜やら〜やら"></a>〜やら〜やら</h2><p>意味　〜や、ほかの〜などの例があるように、いろいろだ</p>
+<p>例文</p>
+<blockquote>
+<p>勝ったチームの選手たちは、泣き出す<u>やら</u>飛び上がる<u>やら</u>さまざまに喜びを表した</p>
+</blockquote>
+<p>接続　名・動辞書形・イ形い＋やら</p>
+<p>注意</p>
+<h2 id="〜というか〜というか"><a href="#〜というか〜というか" class="headerlink" title="〜というか〜というか"></a>〜というか〜というか</h2><p>意味　〜という言い方もできるし、ほかの〜という言い方もできる。</p>
+<p>例文</p>
+<blockquote>
+<p>あの子は元気がいい<u>というか</u>落ち着きがない<u>というか</u>、静かにじっとしていない子です。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というか</p>
+<p>注意</p>
+<h2 id="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"><a href="#〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ" class="headerlink" title="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"></a>〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ</h2><p>意味　〜を例にとっても、ほかの〜を例にとっても同じことが言える。</p>
+<p>例文</p>
+<blockquote>
+<p>勉強する<u>にしても</u>仕事をする<u>にしても</u>、計画を立て立ててからやったほうがいい。</p>
+</blockquote>
+<p>接続　名・動辞書／ない形＋にしても・にしろ・にせよ</p>
+<p>注意</p>
+<h2 id="〜といった"><a href="#〜といった" class="headerlink" title="〜といった"></a>〜といった</h2><p>意味　いくつかの例の後につけて、例をまとめる</p>
+<p>例文</p>
+<blockquote>
+<p>京都とか鎌倉<u>といった</u>古い街には寺が多い。</p>
+</blockquote>
+<p>接続　名＋といった</p>
 <p>注意</p>
 ]]></content>
       <categories>
@@ -1720,6 +1741,83 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>〜だから（理由）-2</title>
+    <url>/new-blog/ba5c1c5.html</url>
+    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
+
+<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
+<p>例文　</p>
+<blockquote>
+<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
+<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
+<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
+<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
+</code></pre>
+<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
+<p>例文　</p>
+<blockquote>
+<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
+</blockquote>
+<p>接続　名＋のことだから</p>
+<p>注意　</p>
+<ol>
+<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
+</ol>
+<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
+<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
+</code></pre>
+<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
+<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
+<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
+<p>注意　</p>
+<ol>
+<li>「名だ」の形には接続しない。</li>
+<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
+<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
+</code></pre>
+<h2 id="〜ばかりに"><a href="#〜ばかりに" class="headerlink" title="〜ばかりに"></a>〜ばかりに</h2><p>説明（because (of a negative thing); simply because; simply on account of）</p>
+<p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
+<p>例文 </p>
+<blockquote>
+<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
+<p>注意　</p>
+<ol>
+<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
+<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
+</code></pre>
+<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
+<p>例文</p>
+<blockquote>
+<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
+<p>注意　</p>
+<ol>
+<li>文全体で、一般的に当然と思われることを表す。</li>
+<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
+</ol>
+<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
+<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
+</code></pre>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜できない・困難だ・〜できる</title>
     <url>/new-blog/e1ec0a2a.html</url>
     <content><![CDATA[<h1 id="〜できない・困難だ・〜できる"><a href="#〜できない・困難だ・〜できる" class="headerlink" title="〜できない・困難だ・〜できる"></a>〜できない・困難だ・〜できる</h1><p>[復習]</p>
@@ -1800,83 +1898,6 @@ permalink: posts/:abbrlink.html
 <p>接続　動<del>ます</del>＋得る・得ない</p>
 <p>注意</p>
 <p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だから（理由）-2</title>
-    <url>/new-blog/ba5c1c5.html</url>
-    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
-
-<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
-<p>例文　</p>
-<blockquote>
-<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
-<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
-<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
-<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
-</code></pre>
-<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
-<p>例文　</p>
-<blockquote>
-<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
-</blockquote>
-<p>接続　名＋のことだから</p>
-<p>注意　</p>
-<ol>
-<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
-</ol>
-<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
-<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
-</code></pre>
-<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
-<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
-<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
-<p>注意　</p>
-<ol>
-<li>「名だ」の形には接続しない。</li>
-<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
-<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
-</code></pre>
-<h2 id="〜ばかりに"><a href="#〜ばかりに" class="headerlink" title="〜ばかりに"></a>〜ばかりに</h2><p>説明（because (of a negative thing); simply because; simply on account of）</p>
-<p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
-<p>例文 </p>
-<blockquote>
-<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
-<p>注意　</p>
-<ol>
-<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
-<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
-</code></pre>
-<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
-<p>例文</p>
-<blockquote>
-<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
-<p>注意　</p>
-<ol>
-<li>文全体で、一般的に当然と思われることを表す。</li>
-<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
-</ol>
-<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
-<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
-</code></pre>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -2264,85 +2285,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>提案する・いしを表す</title>
-    <url>/new-blog/392ec375.html</url>
-    <content><![CDATA[<h1 id="提案する・いしを表す"><a href="#提案する・いしを表す" class="headerlink" title="提案する・いしを表す"></a>提案する・いしを表す</h1><p>[復習]</p>
-<ul>
-<li>あした海へ行ってみ<u>ませんか</u>。</li>
-<li>疲れたときはゆっくり寝<u>たほうがいい</u>ですよ。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜（よ）うではないか"><a href="#〜（よ）うではないか" class="headerlink" title="〜（よ）うではないか"></a>〜（よ）うではないか</h2><p>意味　一緒に〜しよう・〜しませんか。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>問題の解決を目指し、話し合お<u>うではありませんか</u></p>
-</blockquote>
-<p>接続　動う・よう形＋ではないか</p>
-<p>注意　</p>
-<ol>
-<li>日常の会話ではあまり使わない。</li>
-</ol>
-<h2 id="〜ことだ"><a href="#〜ことだ" class="headerlink" title="〜ことだ"></a>〜ことだ</h2><p>意味　〜する／〜しないことが大切だ・〜した／〜しないほうがいい</p>
-<p>例文</p>
-<blockquote>
-<p>太りたくなければ、夜遅く食べない<u>ことです</u></p>
-</blockquote>
-<p>接続　動辞書形／ない形＋ことだ</p>
-<p>注意</p>
-<ol>
-<li>過去・否定・疑問の形はない。意志動詞につく。</li>
-<li>忠告する言い方なので、目上の人には使わないほうが良い。</li>
-</ol>
-<h2 id="〜ものだ／〜ものではない"><a href="#〜ものだ／〜ものではない" class="headerlink" title="〜ものだ／〜ものではない"></a>〜ものだ／〜ものではない</h2><p>意味　〜したほうがいい・〜しなければならない／〜しないほうがいい・〜してはいけない</p>
-<p>例文</p>
-<blockquote>
-<p>日本では、お見舞いの時は鉢植えの花はあげない<u>ものです</u>よ。<br>気軽に人にお金を貸す<u>ものではない</u>。　</p>
-</blockquote>
-<p>接続<br>動辞書形／ない形＋ものだ<br>動辞書形＋ものではない</p>
-<p>注意</p>
-<ol>
-<li>一般的に常識を表す。</li>
-<li>対象が特定のものや人の場合には使わない。</li>
-</ol>
-<h2 id="〜ことはない"><a href="#〜ことはない" class="headerlink" title="〜ことはない"></a>〜ことはない</h2><p>意味　〜する必要はない。</p>
-<p>例文</p>
-<blockquote>
-<p>用事は電話で済みますから、なにもわざわざ行く<u>ことはありません</u></p>
-</blockquote>
-<p>接続　動辞書形＋ことはない</p>
-<p>注意</p>
-<ol>
-<li>話者の判断を表す。</li>
-<li>質問の形はない。話者自身のことにはあまり使わない。</li>
-</ol>
-<h2 id="〜まい／〜（よ）うか〜まいか"><a href="#〜まい／〜（よ）うか〜まいか" class="headerlink" title="〜まい／〜（よ）うか〜まいか"></a>〜まい／〜（よ）うか〜まいか</h2><p>意味　〜するつもりはない・〜しないでおこう／〜しようか〜しないでおこうか</p>
-<p>例文</p>
-<blockquote>
-<p>こんなばかな失敗は二度とする<u>まい</u>。気をつけよう。<br>難しそうな仕事ので、引き受け<u>ようか</u>引き受け<u>まいか</u>だいぶ迷ったが、思い切ってやってみることにした。</p>
-</blockquote>
-<p>接続<br>動辞書形＋まい<br>動う・よう形＋か＋動辞書形＋まいか<br><span style="color:red">動II・III　→　動辞書形&#x2F;<del>ます</del>＋まい</span></p>
-<p>注意</p>
-<h2 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h2><p>意味　絶対〜するつもりはない。</p>
-<p>例文</p>
-<blockquote>
-<p>今日こそは遅刻する<u>ものか</u>と毎日思うけれど、やっぱり何分か遅刻してしまう。</p>
-</blockquote>
-<p>接続　動辞書形＋ものか</p>
-<p>注意</p>
-<ol>
-<li>否定の意志を少し感情的に強く言う。「もんか」はさらにくだけた言い方。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>感想を言う・主張する</title>
     <url>/new-blog/52a5daa4.html</url>
     <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
@@ -2438,6 +2380,85 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>提案する・いしを表す</title>
+    <url>/new-blog/392ec375.html</url>
+    <content><![CDATA[<h1 id="提案する・いしを表す"><a href="#提案する・いしを表す" class="headerlink" title="提案する・いしを表す"></a>提案する・いしを表す</h1><p>[復習]</p>
+<ul>
+<li>あした海へ行ってみ<u>ませんか</u>。</li>
+<li>疲れたときはゆっくり寝<u>たほうがいい</u>ですよ。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜（よ）うではないか"><a href="#〜（よ）うではないか" class="headerlink" title="〜（よ）うではないか"></a>〜（よ）うではないか</h2><p>意味　一緒に〜しよう・〜しませんか。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>問題の解決を目指し、話し合お<u>うではありませんか</u></p>
+</blockquote>
+<p>接続　動う・よう形＋ではないか</p>
+<p>注意　</p>
+<ol>
+<li>日常の会話ではあまり使わない。</li>
+</ol>
+<h2 id="〜ことだ"><a href="#〜ことだ" class="headerlink" title="〜ことだ"></a>〜ことだ</h2><p>意味　〜する／〜しないことが大切だ・〜した／〜しないほうがいい</p>
+<p>例文</p>
+<blockquote>
+<p>太りたくなければ、夜遅く食べない<u>ことです</u></p>
+</blockquote>
+<p>接続　動辞書形／ない形＋ことだ</p>
+<p>注意</p>
+<ol>
+<li>過去・否定・疑問の形はない。意志動詞につく。</li>
+<li>忠告する言い方なので、目上の人には使わないほうが良い。</li>
+</ol>
+<h2 id="〜ものだ／〜ものではない"><a href="#〜ものだ／〜ものではない" class="headerlink" title="〜ものだ／〜ものではない"></a>〜ものだ／〜ものではない</h2><p>意味　〜したほうがいい・〜しなければならない／〜しないほうがいい・〜してはいけない</p>
+<p>例文</p>
+<blockquote>
+<p>日本では、お見舞いの時は鉢植えの花はあげない<u>ものです</u>よ。<br>気軽に人にお金を貸す<u>ものではない</u>。　</p>
+</blockquote>
+<p>接続<br>動辞書形／ない形＋ものだ<br>動辞書形＋ものではない</p>
+<p>注意</p>
+<ol>
+<li>一般的に常識を表す。</li>
+<li>対象が特定のものや人の場合には使わない。</li>
+</ol>
+<h2 id="〜ことはない"><a href="#〜ことはない" class="headerlink" title="〜ことはない"></a>〜ことはない</h2><p>意味　〜する必要はない。</p>
+<p>例文</p>
+<blockquote>
+<p>用事は電話で済みますから、なにもわざわざ行く<u>ことはありません</u></p>
+</blockquote>
+<p>接続　動辞書形＋ことはない</p>
+<p>注意</p>
+<ol>
+<li>話者の判断を表す。</li>
+<li>質問の形はない。話者自身のことにはあまり使わない。</li>
+</ol>
+<h2 id="〜まい／〜（よ）うか〜まいか"><a href="#〜まい／〜（よ）うか〜まいか" class="headerlink" title="〜まい／〜（よ）うか〜まいか"></a>〜まい／〜（よ）うか〜まいか</h2><p>意味　〜するつもりはない・〜しないでおこう／〜しようか〜しないでおこうか</p>
+<p>例文</p>
+<blockquote>
+<p>こんなばかな失敗は二度とする<u>まい</u>。気をつけよう。<br>難しそうな仕事ので、引き受け<u>ようか</u>引き受け<u>まいか</u>だいぶ迷ったが、思い切ってやってみることにした。</p>
+</blockquote>
+<p>接続<br>動辞書形＋まい<br>動う・よう形＋か＋動辞書形＋まいか<br><span style="color:red">動II・III　→　動辞書形&#x2F;<del>ます</del>＋まい</span></p>
+<p>注意</p>
+<h2 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h2><p>意味　絶対〜するつもりはない。</p>
+<p>例文</p>
+<blockquote>
+<p>今日こそは遅刻する<u>ものか</u>と毎日思うけれど、やっぱり何分か遅刻してしまう。</p>
+</blockquote>
+<p>接続　動辞書形＋ものか</p>
+<p>注意</p>
+<ol>
+<li>否定の意志を少し感情的に強く言う。「もんか」はさらにくだけた言い方。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>強くそう感じる・思いが強いられる</title>
     <url>/new-blog/d03492c8.html</url>
     <content><![CDATA[<h1 id="強くそう感じる・思いが強いられる"><a href="#強くそう感じる・思いが強いられる" class="headerlink" title="強くそう感じる・思いが強いられる"></a>強くそう感じる・思いが強いられる</h1><p>[復習]</p>
@@ -2503,12 +2524,6 @@ permalink: posts/:abbrlink.html
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
-]]></content>
   </entry>
   <entry>
     <title>願う・感動する</title>
@@ -2594,492 +2609,6 @@ permalink: posts/:abbrlink.html
       <tags>
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文の組み立て−3　「〜ない」がつく文法形式</title>
-    <url>/new-blog/e6787bff.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
-
-<table>
-    <tr>
-        <th colspan="2">ないにつながる形</th>
-        <th></th>
-        <th>課</th>
-    </tr>
-    <tr>
-        <td>〜わけが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけがない">〜わけがない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜どころでは</td>
-        <td>ない</td>
-        <td>「逆の意味を強調するために使われます。具体的には、予想や期待とは逆の状況や結果を示す際に使用されます。」</td>
-        <td>
-            <a href="#〜どころではない・〜どころか">〜どころではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜わけでは</td>
-        <td>ない</td>
-        <td>「否定的な意味を表すために使われます。具体的には、先行する文や文脈に対しての否定や修正を示す役割を果たします。」</td>
-        <td>
-            <a href="#〜わけではない・〜というわけではない">〜わけではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜というわけでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけではない・〜というわけではない">〜というわけではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜というものでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜というものではない・〜というものでもない">〜というものではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜ようが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ようがない">〜ようがない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜どころでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜どころではない">〜どころではない</a>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            〜しか<br>
-            〜よりほか
-        </td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜しかない・〜よりほかない">〜しかない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜ものでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ものだ／〜ものではない">〜ものではない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜ことは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ことはない">〜ことはない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜てしかたが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜てしかたがない・〜てしょうがない・〜てたまらない">〜てしかたがない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜わけには</td>
-        <td>いかない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけにはいかない・〜わけにもいかない">〜わけにはいかない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜に</td>
-        <td>
-            違いない<br>
-            相違ない
-        </td>
-        <td></td>
-        <td>
-            <a href="#〜に違いない・〜に相違ない">〜に違いない・〜に相違ない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>すぎない</td>
-        <td></td>
-        <td>
-            <a href="#〜にすぎない">〜にすぎない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>ほかならない</td>
-        <td></td>
-        <td>
-            <a href="#〜にほかならない">〜にほかならない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>越したことはない</td>
-        <td></td>
-        <td>
-            <a href="#〜に越したことはない">〜に越したことはない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜て</td>
-        <td>たまらない</td>
-        <td></td>
-        <td>
-            <a href="#〜てたまらな">〜てたまらない</a>
-        </td>
-    </tr>  
-    <tr>
-        <td>
-            〜ないでは<br>
-            〜ずには
-        </td>
-        <td>いられない</td>
-        <td></td>
-        <td>
-            <a href="#〜ないではいられない・〜ずにはいられない">〜ないではいられない・〜ずにはいられない</a>
-        </td>
-    </tr>  
-    <tr>
-        <td>〜ないわけに（は）</td>
-        <td>いかない</td>
-        <td></td>
-        <td>
-            <a href="#〜ないわけに（は）いかない">〜ないわけに（は）いかない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜ざるを</td>
-        <td>得ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ざるを得ない">〜ざるを得ない</a>
-        </td>
-    </tr>
-</table>]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>GrammaticalForm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>時制</title>
-    <url>/new-blog/956f59e9.html</url>
-    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
-<span id="more"></span>
-
-<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-        <th>動詞の種類</th>
-    </tr>
-    <tr>
-        <td>未来</td>
-        <td>私は来年、高校を<b>卒業する</b></td>
-        <td>動きを表す動詞</td>
-    </tr>
-    <tr>
-        <td rowspan="3">現在</td>
-        <td>彼女はトラックの運転が<b>できる</b></td>
-        <td>状態を表す動詞</td>
-    </tr>   
-    <tr>
-        <td>あなかが<b>痛む</b></td>
-        <td>感覚を表す動詞</td>
-    </tr>
-    <tr>
-        <td>選手としてしっかり戦うことを<b>誓います</b></td>
-        <td>行動の宣言を表す動詞</td>
-    </tr>    
-    <tr>
-        <td>時間に無関係</td>
-        <td>太陽は東からのぼって西に沈む</td>
-        <td></td>
-    </tr>    
-</table>
-
-
-<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>過去</td>
-        <td>先週、アメリカから友達が<b>来た</b></td>
-    </tr>
-    <tr>
-        <td>現在につながる過去</td>
-        <td>私はさっきからずっとここに<b>いた</b></td>
-    </tr>    
-    <tr>
-        <td>完了の結果</td>
-        <td>私は最近<b>太った</b></td>
-    </tr>    
-    <tr>
-        <td>未来完了</td>
-        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
-    </tr>
-    <tr>
-        <td>形状・状態</td>
-        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
-    </tr>
-    <tr>
-        <td>生理状態</td>
-        <td>あ、おなかが<b>すいた</b></td>
-    </tr>
-</table>
-
-<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>動作・事態の継続</td>
-        <td>日本では子供の数が<b>減っている</b></td>
-    </tr>
-    <tr>
-        <td>結果の存続</td>
-        <td>電気が<b>消えている</b></td>
-    </tr>
-    <tr>
-        <td>形状・様子</td>
-        <td>この棒先に<b>曲がっている</b></td>
-    </tr>
-    <tr>
-        <td>完了</td>
-        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
-    </tr>
-    <tr>
-        <td>経験・記録</td>
-        <td>彼は10年前に同じ病気で<b>入院している</b></td>
-    </tr>
-</table>
-
-<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
-    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
-    <span class="rectangle">ハワイへ行った</span> → 訪ねる
-</p>
-
-<p>
-    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
-</p>
-
-<p>
-    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
-</p>
-
-<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>始めと終わりが正しく対応した文</title>
-    <url>/new-blog/c660853.html</url>
-    <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
-
-<h2 id="A-主語と述語の対応"><a href="#A-主語と述語の対応" class="headerlink" title="A 主語と述語の対応"></a>A 主語と述語の対応</h2><p>主語と述語の関係は次の四つの形があります。</p>
-<table>
-    <tr>
-        <th>主語</th>
-        <th>述語</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>何　だ<br>名詞</td>
-        <td>事故の原因はスピードの<u>出しすぎである</u></td>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>どうだ。<br>イ・ナ形容詞</td>
-        <td>健康な生活をおくるには、良い生活習慣が<u>大切だ</u></td>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>どうする<br>動詞</td>
-        <td>今年は、この地方は４回も台風の被害を<u>受けた</u></td>
-    </tr>    
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>ある・いる</td>
-        <td>駅前には自転車置き場が数か所<u>ある</u></td>
-    </tr>
-</table>
-
-<h2 id="B-文末の制限−1-決まった文末をとる表現"><a href="#B-文末の制限−1-決まった文末をとる表現" class="headerlink" title="B 文末の制限−1 決まった文末をとる表現"></a>B 文末の制限−1 決まった文末をとる表現</h2><h3 id="1-なぜなら・というのは・なぜというと＋〜から（ため）である"><a href="#1-なぜなら・というのは・なぜというと＋〜から（ため）である" class="headerlink" title="1. なぜなら・というのは・なぜというと＋〜から（ため）である"></a>1. なぜなら・というのは・なぜというと＋〜から（ため）である</h3><blockquote>
-<p>私は結局国へは帰らないで、日本に残ることにした。<u>というのは</u>、日本の精神風土が私に合っていると思われた<u>からである</u></p>
-</blockquote>
-<h3 id="2-〜かというと＋「〜」を否定する文"><a href="#2-〜かというと＋「〜」を否定する文" class="headerlink" title="2. 〜かというと＋「〜」を否定する文"></a>2. 〜かというと＋「〜」を否定する文</h3><blockquote>
-<p>この作家の作品が全て歴史的なものばかり<u>かというと</u>、<u>そんなことはない</u>。中には軽いタッチの旅行案内もある。</p>
-</blockquote>
-<h3 id="3-〜の（＝理由・原因）は＋…から（ため）である・…である"><a href="#3-〜の（＝理由・原因）は＋…から（ため）である・…である" class="headerlink" title="3. 〜の（＝理由・原因）は＋…から（ため）である・…である"></a>3. 〜の（＝理由・原因）は＋…から（ため）である・…である</h3><blockquote>
-<p>今年の米の収穫量がいつもの年より少なかった<u>のは</u>、夏、天候が安定しなかった<u>ためである</u></p>
-</blockquote>
-<h3 id="4-〜には＋…がいる・…がある・…が多い・…が見られる"><a href="#4-〜には＋…がいる・…がある・…が多い・…が見られる" class="headerlink" title="4. 〜には＋…がいる・…がある・…が多い・…が見られる"></a>4. 〜には＋…がいる・…がある・…が多い・…が見られる</h3><blockquote>
-<p>このアンケート調査<u>には</u>、いくつか不十分な点<u>がある</u></p>
-</blockquote>
-<h3 id="5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"><a href="#5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない" class="headerlink" title="5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"></a>5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない</h3><blockquote>
-<p>我々は大きな仕事を頼まれた。期待に応える<u>には</u>しっかり協力し合うこと<u>が必要だ</u></p>
-</blockquote>
-<h2 id="C-文末の制限−2-決まった文末をとる副詞"><a href="#C-文末の制限−2-決まった文末をとる副詞" class="headerlink" title="C. 文末の制限−2 決まった文末をとる副詞"></a>C. 文末の制限−2 決まった文末をとる副詞</h2><table>
-    <tr>
-        <th>副詞</th>
-        <th>文末</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>全く</td>
-        <td rowspan="9">否定</td>
-        <td>
-            私は進学することは<b>全く</b>考えて<u>いない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>そうなに</td>
-        <td>
-            この問題は<b>そうなに</b>難しく<u>ないです</u>
-        </td>
-    </tr>  
-    <tr>
-        <td>そう</td>
-        <td>
-            病気のことは<b>そう</b>心配する必要は<u>ない</u>
-        </td>
-    </tr>  
-    <tr>
-        <td>たいして</td>
-        <td>
-            車の修理には<b>たいして</b>費用はかから<u>なかった</u>
-        </td>
-    </tr>   
-    <tr>
-        <td>めったに</td>
-        <td>
-            こんな素晴らしい景色<b>めったに</b>見られ<u>ない</u>
-        </td>
-    </tr>    
-    <tr>
-        <td>少しも</td>
-        <td>
-            健康については私は<b>少しも</b>心配してい<u>ない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>決して</td>
-        <td>
-            私は料理に化学調味料は<b>決して</b>使い<u>ません</u>
-        </td>
-    </tr>   
-    <tr>
-        <td>なにも</td>
-        <td>
-            <b>なにも</b>そんな怒ることは<u>ない</u>でしょう
-        </td>
-    </tr>    
-    <tr>
-        <td>必ずしも</td>
-        <td>
-            値段が高いものが<b>必ずしも</b>いいとは限ら<u>ない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>どうも・どうやら</td>
-        <td rowspan="5">推量・否定推量</td>
-        <td>あの二人は<b>どうやら</b>恋人同士の<u>ようだ</u></td>
-    </tr>
-    <tr>
-        <td>もしかしたら・もしかすると</td>
-        <td><b>もしかしたら</b>、林さんは今日来ない<u>かもしれない</u></td>
-    </tr>
-    <tr>
-        <td>恐らく</td>
-        <td><b>恐らく</b>週末は忙しくなる<u>だろう</u></td>
-    </tr>
-    <tr>
-        <td>まさか</td>
-        <td><b>まさか</b>林さんは不合格にはなら<u>ないだろう</u></td>
-    </tr>
-    <tr>
-        <td>きっと</td>
-        <td>彼は今ごろ<b>きっと</b>困っている<u>に違いない</u></td>
-    </tr>
-    <tr>
-        <td>まるで</td>
-        <td rowspan="2">様態</td>
-        <td>地面に桜が散って、<b>まるで</b>雪が降った<u>かのようだ</u></td>
-    </tr>
-    <tr>
-        <td>今にも</td>
-        <td>あの子<b>今にも</b>泣き出し<u>そうな</u>顔をしている</td>
-    </tr>
-    <tr>
-        <td>一段と・ますます</td>
-        <td rowspan="2">変化（くなる・増える・やせる）</td>
-        <td>最近、太郎は<b>一段と</b>大人っぽく<u>なった</u></td>
-    </tr>    
-    <tr>
-        <td>次第に・徐々に</td>
-        <td>今後、経済は<b>次第に</b><u>回復して</u>いくだろう</td>
-    </tr>
-    <tr>
-        <td>いったい</td>
-        <td rowspan="2">質問</td>
-        <td><b>いったい</b>君は何を考えているの<u>か</u></td>
-    </tr>    
-    <tr>
-        <td>果たして</td>
-        <td><b>果たして</b>私の予想は当たるだろう<u>か</u></td>
-    </tr>    
-    <tr>
-        <td　rowspan="3">すでに</td>
-        <td>完了（ている）</td>
-        <td><b>すでに</b>会場の準備は整って<u>いる</u></td>
-    </tr>
-    <tr>
-        <td>完了（てある）</td>
-        <td>ホテルは<b>すでに</b>予約し<u>てある</u></td>
-    </tr>
-    <tr>
-        <td>完了（た）</td>
-        <td>この問題は<b>すでに</b>解決<u>した</u></td>
-    </tr>
-</table>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
       </tags>
   </entry>
   <entry>
@@ -3997,6 +3526,498 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>文の組み立て−3　「〜ない」がつく文法形式</title>
+    <url>/new-blog/e6787bff.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
+
+<table>
+    <tr>
+        <th colspan="2">ないにつながる形</th>
+        <th></th>
+        <th>課</th>
+    </tr>
+    <tr>
+        <td>〜わけが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけがない">〜わけがない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜どころでは</td>
+        <td>ない</td>
+        <td>「逆の意味を強調するために使われます。具体的には、予想や期待とは逆の状況や結果を示す際に使用されます。」</td>
+        <td>
+            <a href="#〜どころではない・〜どころか">〜どころではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜わけでは</td>
+        <td>ない</td>
+        <td>「否定的な意味を表すために使われます。具体的には、先行する文や文脈に対しての否定や修正を示す役割を果たします。」</td>
+        <td>
+            <a href="#〜わけではない・〜というわけではない">〜わけではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜というわけでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけではない・〜というわけではない">〜というわけではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜というものでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜というものではない・〜というものでもない">〜というものではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜ようが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ようがない">〜ようがない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜どころでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜どころではない">〜どころではない</a>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            〜しか<br>
+            〜よりほか
+        </td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜しかない・〜よりほかない">〜しかない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜ものでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ものだ／〜ものではない">〜ものではない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜ことは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ことはない">〜ことはない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜てしかたが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜てしかたがない・〜てしょうがない・〜てたまらない">〜てしかたがない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜わけには</td>
+        <td>いかない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけにはいかない・〜わけにもいかない">〜わけにはいかない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜に</td>
+        <td>
+            違いない<br>
+            相違ない
+        </td>
+        <td></td>
+        <td>
+            <a href="#〜に違いない・〜に相違ない">〜に違いない・〜に相違ない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>すぎない</td>
+        <td></td>
+        <td>
+            <a href="#〜にすぎない">〜にすぎない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>ほかならない</td>
+        <td></td>
+        <td>
+            <a href="#〜にほかならない">〜にほかならない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>越したことはない</td>
+        <td></td>
+        <td>
+            <a href="#〜に越したことはない">〜に越したことはない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜て</td>
+        <td>たまらない</td>
+        <td></td>
+        <td>
+            <a href="#〜てたまらな">〜てたまらない</a>
+        </td>
+    </tr>  
+    <tr>
+        <td>
+            〜ないでは<br>
+            〜ずには
+        </td>
+        <td>いられない</td>
+        <td></td>
+        <td>
+            <a href="#〜ないではいられない・〜ずにはいられない">〜ないではいられない・〜ずにはいられない</a>
+        </td>
+    </tr>  
+    <tr>
+        <td>〜ないわけに（は）</td>
+        <td>いかない</td>
+        <td></td>
+        <td>
+            <a href="#〜ないわけに（は）いかない">〜ないわけに（は）いかない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜ざるを</td>
+        <td>得ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ざるを得ない">〜ざるを得ない</a>
+        </td>
+    </tr>
+</table>]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>始めと終わりが正しく対応した文</title>
+    <url>/new-blog/c660853.html</url>
+    <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
+
+<h2 id="A-主語と述語の対応"><a href="#A-主語と述語の対応" class="headerlink" title="A 主語と述語の対応"></a>A 主語と述語の対応</h2><p>主語と述語の関係は次の四つの形があります。</p>
+<table>
+    <tr>
+        <th>主語</th>
+        <th>述語</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>何　だ<br>名詞</td>
+        <td>事故の原因はスピードの<u>出しすぎである</u></td>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>どうだ。<br>イ・ナ形容詞</td>
+        <td>健康な生活をおくるには、良い生活習慣が<u>大切だ</u></td>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>どうする<br>動詞</td>
+        <td>今年は、この地方は４回も台風の被害を<u>受けた</u></td>
+    </tr>    
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>ある・いる</td>
+        <td>駅前には自転車置き場が数か所<u>ある</u></td>
+    </tr>
+</table>
+
+<h2 id="B-文末の制限−1-決まった文末をとる表現"><a href="#B-文末の制限−1-決まった文末をとる表現" class="headerlink" title="B 文末の制限−1 決まった文末をとる表現"></a>B 文末の制限−1 決まった文末をとる表現</h2><h3 id="1-なぜなら・というのは・なぜというと＋〜から（ため）である"><a href="#1-なぜなら・というのは・なぜというと＋〜から（ため）である" class="headerlink" title="1. なぜなら・というのは・なぜというと＋〜から（ため）である"></a>1. なぜなら・というのは・なぜというと＋〜から（ため）である</h3><blockquote>
+<p>私は結局国へは帰らないで、日本に残ることにした。<u>というのは</u>、日本の精神風土が私に合っていると思われた<u>からである</u></p>
+</blockquote>
+<h3 id="2-〜かというと＋「〜」を否定する文"><a href="#2-〜かというと＋「〜」を否定する文" class="headerlink" title="2. 〜かというと＋「〜」を否定する文"></a>2. 〜かというと＋「〜」を否定する文</h3><blockquote>
+<p>この作家の作品が全て歴史的なものばかり<u>かというと</u>、<u>そんなことはない</u>。中には軽いタッチの旅行案内もある。</p>
+</blockquote>
+<h3 id="3-〜の（＝理由・原因）は＋…から（ため）である・…である"><a href="#3-〜の（＝理由・原因）は＋…から（ため）である・…である" class="headerlink" title="3. 〜の（＝理由・原因）は＋…から（ため）である・…である"></a>3. 〜の（＝理由・原因）は＋…から（ため）である・…である</h3><blockquote>
+<p>今年の米の収穫量がいつもの年より少なかった<u>のは</u>、夏、天候が安定しなかった<u>ためである</u></p>
+</blockquote>
+<h3 id="4-〜には＋…がいる・…がある・…が多い・…が見られる"><a href="#4-〜には＋…がいる・…がある・…が多い・…が見られる" class="headerlink" title="4. 〜には＋…がいる・…がある・…が多い・…が見られる"></a>4. 〜には＋…がいる・…がある・…が多い・…が見られる</h3><blockquote>
+<p>このアンケート調査<u>には</u>、いくつか不十分な点<u>がある</u></p>
+</blockquote>
+<h3 id="5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"><a href="#5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない" class="headerlink" title="5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"></a>5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない</h3><blockquote>
+<p>我々は大きな仕事を頼まれた。期待に応える<u>には</u>しっかり協力し合うこと<u>が必要だ</u></p>
+</blockquote>
+<h2 id="C-文末の制限−2-決まった文末をとる副詞"><a href="#C-文末の制限−2-決まった文末をとる副詞" class="headerlink" title="C. 文末の制限−2 決まった文末をとる副詞"></a>C. 文末の制限−2 決まった文末をとる副詞</h2><table>
+    <tr>
+        <th>副詞</th>
+        <th>文末</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>全く</td>
+        <td rowspan="9">否定</td>
+        <td>
+            私は進学することは<b>全く</b>考えて<u>いない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>そうなに</td>
+        <td>
+            この問題は<b>そうなに</b>難しく<u>ないです</u>
+        </td>
+    </tr>  
+    <tr>
+        <td>そう</td>
+        <td>
+            病気のことは<b>そう</b>心配する必要は<u>ない</u>
+        </td>
+    </tr>  
+    <tr>
+        <td>たいして</td>
+        <td>
+            車の修理には<b>たいして</b>費用はかから<u>なかった</u>
+        </td>
+    </tr>   
+    <tr>
+        <td>めったに</td>
+        <td>
+            こんな素晴らしい景色<b>めったに</b>見られ<u>ない</u>
+        </td>
+    </tr>    
+    <tr>
+        <td>少しも</td>
+        <td>
+            健康については私は<b>少しも</b>心配してい<u>ない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>決して</td>
+        <td>
+            私は料理に化学調味料は<b>決して</b>使い<u>ません</u>
+        </td>
+    </tr>   
+    <tr>
+        <td>なにも</td>
+        <td>
+            <b>なにも</b>そんな怒ることは<u>ない</u>でしょう
+        </td>
+    </tr>    
+    <tr>
+        <td>必ずしも</td>
+        <td>
+            値段が高いものが<b>必ずしも</b>いいとは限ら<u>ない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>どうも・どうやら</td>
+        <td rowspan="5">推量・否定推量</td>
+        <td>あの二人は<b>どうやら</b>恋人同士の<u>ようだ</u></td>
+    </tr>
+    <tr>
+        <td>もしかしたら・もしかすると</td>
+        <td><b>もしかしたら</b>、林さんは今日来ない<u>かもしれない</u></td>
+    </tr>
+    <tr>
+        <td>恐らく</td>
+        <td><b>恐らく</b>週末は忙しくなる<u>だろう</u></td>
+    </tr>
+    <tr>
+        <td>まさか</td>
+        <td><b>まさか</b>林さんは不合格にはなら<u>ないだろう</u></td>
+    </tr>
+    <tr>
+        <td>きっと</td>
+        <td>彼は今ごろ<b>きっと</b>困っている<u>に違いない</u></td>
+    </tr>
+    <tr>
+        <td>まるで</td>
+        <td rowspan="2">様態</td>
+        <td>地面に桜が散って、<b>まるで</b>雪が降った<u>かのようだ</u></td>
+    </tr>
+    <tr>
+        <td>今にも</td>
+        <td>あの子<b>今にも</b>泣き出し<u>そうな</u>顔をしている</td>
+    </tr>
+    <tr>
+        <td>一段と・ますます</td>
+        <td rowspan="2">変化（くなる・増える・やせる）</td>
+        <td>最近、太郎は<b>一段と</b>大人っぽく<u>なった</u></td>
+    </tr>    
+    <tr>
+        <td>次第に・徐々に</td>
+        <td>今後、経済は<b>次第に</b><u>回復して</u>いくだろう</td>
+    </tr>
+    <tr>
+        <td>いったい</td>
+        <td rowspan="2">質問</td>
+        <td><b>いったい</b>君は何を考えているの<u>か</u></td>
+    </tr>    
+    <tr>
+        <td>果たして</td>
+        <td><b>果たして</b>私の予想は当たるだろう<u>か</u></td>
+    </tr>    
+    <tr>
+        <td　rowspan="3">すでに</td>
+        <td>完了（ている）</td>
+        <td><b>すでに</b>会場の準備は整って<u>いる</u></td>
+    </tr>
+    <tr>
+        <td>完了（てある）</td>
+        <td>ホテルは<b>すでに</b>予約し<u>てある</u></td>
+    </tr>
+    <tr>
+        <td>完了（た）</td>
+        <td>この問題は<b>すでに</b>解決<u>した</u></td>
+    </tr>
+</table>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>時制</title>
+    <url>/new-blog/956f59e9.html</url>
+    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
+<span id="more"></span>
+
+<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+        <th>動詞の種類</th>
+    </tr>
+    <tr>
+        <td>未来</td>
+        <td>私は来年、高校を<b>卒業する</b></td>
+        <td>動きを表す動詞</td>
+    </tr>
+    <tr>
+        <td rowspan="3">現在</td>
+        <td>彼女はトラックの運転が<b>できる</b></td>
+        <td>状態を表す動詞</td>
+    </tr>   
+    <tr>
+        <td>あなかが<b>痛む</b></td>
+        <td>感覚を表す動詞</td>
+    </tr>
+    <tr>
+        <td>選手としてしっかり戦うことを<b>誓います</b></td>
+        <td>行動の宣言を表す動詞</td>
+    </tr>    
+    <tr>
+        <td>時間に無関係</td>
+        <td>太陽は東からのぼって西に沈む</td>
+        <td></td>
+    </tr>    
+</table>
+
+
+<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>過去</td>
+        <td>先週、アメリカから友達が<b>来た</b></td>
+    </tr>
+    <tr>
+        <td>現在につながる過去</td>
+        <td>私はさっきからずっとここに<b>いた</b></td>
+    </tr>    
+    <tr>
+        <td>完了の結果</td>
+        <td>私は最近<b>太った</b></td>
+    </tr>    
+    <tr>
+        <td>未来完了</td>
+        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
+    </tr>
+    <tr>
+        <td>形状・状態</td>
+        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
+    </tr>
+    <tr>
+        <td>生理状態</td>
+        <td>あ、おなかが<b>すいた</b></td>
+    </tr>
+</table>
+
+<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>動作・事態の継続</td>
+        <td>日本では子供の数が<b>減っている</b></td>
+    </tr>
+    <tr>
+        <td>結果の存続</td>
+        <td>電気が<b>消えている</b></td>
+    </tr>
+    <tr>
+        <td>形状・様子</td>
+        <td>この棒先に<b>曲がっている</b></td>
+    </tr>
+    <tr>
+        <td>完了</td>
+        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
+    </tr>
+    <tr>
+        <td>経験・記録</td>
+        <td>彼は10年前に同じ病気で<b>入院している</b></td>
+    </tr>
+</table>
+
+<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
+    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
+    <span class="rectangle">ハワイへ行った</span> → 訪ねる
+</p>
+
+<p>
+    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
+</p>
+
+<p>
+    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
+</p>
+
+<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>条件を表す文</title>
     <url>/new-blog/ff8369b4.html</url>
     <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
@@ -4014,6 +4035,97 @@ permalink: posts/:abbrlink.html
       <tags>
         <tag>N2</tag>
         <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜している（進行中）</title>
+    <url>/new-blog/2e6bc246.html</url>
+    <content><![CDATA[<h1 id="〜している（進行中）"><a href="#〜している（進行中）" class="headerlink" title="〜している（進行中）"></a>〜している（進行中）</h1><p>[復習]</p>
+<ul>
+<li>今、新幹線の時間を調べ<u>ているところ</u>だから、もうちょっと待って。</li>
+<li>留守の<u>間に</u>だれか来たようだ、玄関に花が置いてある。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜最中だ"><a href="#〜最中だ" class="headerlink" title="〜最中だ"></a>〜最中だ</h2><p>意味　ちょうど〜しているところだ</p>
+<p>例文</p>
+<blockquote>
+<p>田中さんは今考えごとをしている<u>最中</u>だから、邪魔しないほうがいい。<br>スピーチの<u>最中に</u>、突然電気が消えた。</p>
+</blockquote>
+<p>接続 名ーの・動ている形＋最中だ</p>
+<p>注意　</p>
+<ol>
+<li>比較的短い時間で行う動作を表す言葉（試験・書いているなど）につく。</li>
+<li>「〜最中に」の後には、「それを邪魔するような予定外のことが起こった」という意味の文が来ることが多い</li>
+</ol>
+<h2 id="〜うちに"><a href="#〜うちに" class="headerlink" title="〜うちに"></a>〜うちに</h2><p>意味A　時間の制限があって、〜でなくなった後では実現が難しいから、その前にしてしまう</p>
+<p>例文</p>
+<blockquote>
+<p>家事は、子供が眠っている<u>うちに</u>、全部やってしまった。</p>
+</blockquote>
+<p>接続　名ーの・動辞書形／ている／ない形・イ形い・ナ形な＋うちに</p>
+<p>注意A　</p>
+<ol>
+<li>時間の幅のある言葉につく。後には、意志的な動作を表す動詞の文が来る</li>
+</ol>
+<p>意味B　している間に変化が現れる</p>
+<p>例文</p>
+<blockquote>
+<p>インターネットで調べている<u>うちに</u>、いろいろなことがわかってきた。</p>
+</blockquote>
+<p>接続　動辞書形／ている形／ない形＋うちに</p>
+<p>注意B　</p>
+<ol>
+<li>時間の幅のある言葉につく。後には、意志的入らない文・変化を表す文が来る</li>
+</ol>
+<h2 id="〜ばかりだ・一方だ"><a href="#〜ばかりだ・一方だ" class="headerlink" title="〜ばかりだ・一方だ"></a>〜ばかりだ・一方だ</h2><p>意味　という一方方向に変化が進んでいく</p>
+<p>例文</p>
+<blockquote>
+<p>このごろは仕事が多くて残業が増える<u>ばかりだ</u></p>
+</blockquote>
+<p>接続　動辞書形＋ばかりだ・一方だ</p>
+<p>注意　</p>
+<ol>
+<li>変化を表す動詞（増える・悪くなる）につく。</li>
+<li>「〜ばかりだ」は特に良くない方向に進んでいるという場合が多い</li>
+</ol>
+<h2 id="〜（よ）うとしている"><a href="#〜（よ）うとしている" class="headerlink" title="〜（よ）うとしている"></a>〜（よ）うとしている</h2><p>意味　という変化が起こる少し前だ・もうすぐ〜する。 <span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>駅前に30階建ての高級マンションが完成し<u>ようとしている</u></p>
+</blockquote>
+<p>接続　動う・よう形＋としている</p>
+<p>注意　</p>
+<ol>
+<li>瞬間的なことを表す動詞（始める・幕が開く）につく</li>
+</ol>
+<h2 id="〜つつある"><a href="#〜つつある" class="headerlink" title="〜つつある"></a>〜つつある</h2><p>意味　〜という変化が進行中だ。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>次第に暖かくなり<u>つつあります</u>。春はもうすぐです。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋つつある</p>
+<p>注意　</p>
+<ol>
+<li>変化を表す動詞につく</li>
+</ol>
+<h2 id="〜つつ"><a href="#〜つつ" class="headerlink" title="〜つつ"></a>〜つつ</h2><p>意味　〜ながら、あることをする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>この空き地をどうするかについては、住民と話し合い<u>つつ</u>、計画を立てていきたい。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋つつある</p>
+<p>注意　</p>
+<ol>
+<li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -4052,169 +4164,6 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>説明　表示“在～即将发生的时候·～正在进行中·～刚刚发生或完成”。用于句中时，根据句末所使用的动词，后面可能使用不同的助词</p>
 <p>接続　动词辞書／ている／た＋ところだ・ところ（）</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
-    <url>/new-blog/66c5e938.html</url>
-    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
-<span id="more"></span>
-
-<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
-<ul>
-<li><code>Node.js</code> のローカルインストール</li>
-<li><code>Git</code> のローカルインストール</li>
-<li><code>GitHub</code> アカウント</li>
-<li><code>GitHub</code> リポジトリの作成</li>
-</ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
-<pre><code class="bash">brew install node
-</code></pre>
-<p>もしくは、</p>
-<pre><code class="bash">node -v
-npm -v
-</code></pre>
-<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
-<pre><code class="bash">brew install git
-</code></pre>
-<pre><code class="bash">git --version
-</code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
-<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;your.email@example.com&quot;
-</code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#111;&#x75;&#114;&#46;&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#121;&#111;&#x75;&#114;&#46;&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
-<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
-</code></pre>
-<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
-<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
-<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
-<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
-<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
-<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
-<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>以下のコマンドを使用して検証できます：</p>
-<pre><code class="bash">hexo -v
-</code></pre>
-<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
-<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
-<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
-</code></pre>
-<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
-<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
-<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
-</code></pre>
-<p>次に、作成されたディレクトリに移動します：</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-</code></pre>
-<p>移動したら、依存パッケージをインストールします：</p>
-<pre><code>npm install
-</code></pre>
-<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
-<pre><code>hexo generate
-</code></pre>
-<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
-<pre><code>hexo server
-</code></pre>
-<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
-<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
-<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
-<blockquote>
-<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
-</blockquote>
-<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-git init 
-git add . 
-git commit -am&quot;init blog&quot; 
-</code></pre>
-<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
-<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
-git branch -M main
-git push -u origin main
-</code></pre>
-<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
-<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
-<pre><code class="bash">git checkout -b pages
-git push -u origin pages
-</code></pre>
-<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
-<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
-<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
-<pre><code class="bash">url: https://ユーザー名.github.io/ 
-root: /breeze-blog/ 
-
-deploy: 
-  type: &#39;git&#39; 
-  repo: git@github.com:ユーザー名./ディレクトリ名
-  branch: pages
-</code></pre>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜と関係して</title>
-    <url>/new-blog/9d184406.html</url>
-    <content><![CDATA[<h1 id="〜と関係して"><a href="#〜と関係して" class="headerlink" title="〜と関係して"></a>〜と関係して</h1><span id="more"></span>
-
-<h2 id="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"><a href="#〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…" class="headerlink" title="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"></a>〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…</h2><p>例句</p>
-<blockquote>
-<p>これから私が言う<u>とおり</u>にパソコンを操作してください<br>説明書<u>どおり</u>に組み立ててみたのですが、動かないんです</p>
-</blockquote>
-<p>说明　“如～那样”、“完全按照～做…”</p>
-<p>接续</p>
-<blockquote>
-<p>名詞の・动词辞书形／「た」／てある／ている＋とおりだ・とおり（に）<br>名詞＋どおりだ・どおり（に）</p>
-</blockquote>
-<p>注意　「〜とおりの」后续名詞作定语使用。注意前面直接接名詞时只能用「〜どおり（に）」</p>
-<h2 id="〜によって…・〜によっては…"><a href="#〜によって…・〜によっては…" class="headerlink" title="〜によって…・〜によっては…"></a>〜によって…・〜によっては…</h2><p>例文</p>
-<blockquote>
-<p>国<u>によって</u>習慣が違う。<br>感じ方は人<u>によって</u>さまざまだ。</p>
-</blockquote>
-<p>说明 「〜が違えば…」。…は一定でないことを表す文。</p>
-<p>接续 名詞＋によって・によっては</p>
-<h2 id="〜たびに…"><a href="#〜たびに…" class="headerlink" title="〜たびに…"></a>〜たびに…</h2><p>例句</p>
-<blockquote>
-<p>私は山田さんに会う<u>たび</u>に素敵な人だといつも思う<br>この写真を見るたび、故郷のことを思います</p>
-</blockquote>
-<p>说明　“每当。。。就。。。”</p>
-<p>接续　名詞の・动词辞书形+たびに</p>
-<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…</h2><p>例句：</p>
-<blockquote>
-<p>この問題について考えれ<u>ば</u>考える<u>ほど</u>、頭の中が混乱してきた<br>この本は読めば読むほど面白くなる</p>
-</blockquote>
-<p>说明　“越。。。越。。。”</p>
-<p>接续</p>
-<blockquote>
-<p>动词「ば」＋同一动词的辞书形＋ほど<br>い形容词词干＋ければ＋同一い形容词辞书形＋ほど<br>な形容词词干＋なら＋同一な形容词词干＋な＋ほど<br>イ形容詞い・ナ形容詞な＋名詞＋ほど</p>
-</blockquote>
-<p>注意　表示随着前项的变化，后项也相应地发生变化。注意这时候不能替换成「〜くらい」</p>
-<h2 id="〜ついでに…"><a href="#〜ついでに…" class="headerlink" title="〜ついでに…"></a>〜ついでに…</h2><p>例句</p>
-<blockquote>
-<p>散歩の<u>ついでに</u>このはがきをポストに出してきて<br>玄関の掃除をする<u>ついでに</u>靴の整理をしよう</p>
-</blockquote>
-<p>说明　“趁着～，顺道做…”，用于表示同时做两个不同的行为。〜是主要行为，…是附带行为</p>
-<p>接续　名詞 <del>する</del>の・動辞書&#x2F;た＋ついでに</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -4304,41 +4253,41 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>絶対〜ない・必ず〜とは言えない</title>
-    <url>/new-blog/a2bd39e3.html</url>
-    <content><![CDATA[<h1 id="絶対〜ない・必ず〜とは言えない"><a href="#絶対〜ない・必ず〜とは言えない" class="headerlink" title="絶対〜ない・必ず〜とは言えない"></a>絶対〜ない・必ず〜とは言えない</h1><span id="more"></span>
+    <title>〜だから</title>
+    <url>/new-blog/2352cf0b.html</url>
+    <content><![CDATA[<h1 id="〜だから"><a href="#〜だから" class="headerlink" title="〜だから"></a>〜だから</h1><span id="more"></span>
 
-<h2 id="〜はずがない・〜わけがない"><a href="#〜はずがない・〜わけがない" class="headerlink" title="〜はずがない・〜わけがない"></a>〜はずがない・〜わけがない</h2><p>例文</p>
+<h2 id="〜ためだ・〜ため（に）…"><a href="#〜ためだ・〜ため（に）…" class="headerlink" title="〜ためだ・〜ため（に）…"></a>〜ためだ・〜ため（に）…</h2><p>例文 </p>
 <blockquote>
-<p>ちゃんと約束したんだから、彼は来ない<u>はずがない</u>。どうしてのかなあ。<br>あの店が今日休みの<u>はずがありません</u>、電話で確認したんですから</p>
+<p>携帯電話を忘れ<u>ために</u>、連絡できませんでした<br>雪がたくさん降ったため、試合が中止された</p>
 </blockquote>
-<p>说明　「絶対〜ない」。話者が強い確認を持って否定する言い方</p>
-<p>接续　普通形（ナ形<del>だ</del>な／である・名词の／である）＋はずがない・わけがない</p>
-<p>注意　表示说话人根据某种情理或经验，推断完全没有出现某种情况的可能性。</p>
-<h2 id="〜とは限らない"><a href="#〜とは限らない" class="headerlink" title="〜とは限らない"></a>〜とは限らない</h2><p>例句　</p>
+<p>说明 「〜が原因だ。〜が原因で…という結果になる。」…には普通希望・意向・相手への働きかけなどの文は来ない。</p>
+<p>接続　名词の・普通形（ナ形<del>だ</del>ーな／ーである）＋ためだ・ため（に）</p>
+<h2 id="〜によって…・〜による"><a href="#〜によって…・〜による" class="headerlink" title="〜によって…・〜による"></a>〜によって…・〜による</h2><p>例文A</p>
 <blockquote>
-<p>値段が高いものが必ず質がいい<u>とは限らない</u><br>旅行中に怪我をしない<u>とは限りません</u>。保険に入っておいたほうがいいですよ。<br>新聞に書いてあることがいつも本当のこと<u>とは限らない</u></p>
+<p>うちの工場では、材料不足<u>によって</u>たたみの生産はもうできなくなった。</p>
 </blockquote>
-<p>说明　「必ず〜とは断定できない・〜できない場合もある。」表示“不一定就是～”或“也有可能不是～”，常和「みんな・いつも・だれでも・かならず」搭配使用</p>
-<p>接续　普通型（ナ形ーだ・名ーだ）＋とは限らない</p>
-<p>注意</p>
-<ol>
-<li>有时和「〜からといって」搭配使用，表示”虽说…也未必…“</li>
-</ol>
-<h2 id="〜わけではない-〜というわけではない-のではない"><a href="#〜わけではない-〜というわけではない-のではない" class="headerlink" title="〜わけではない　〜というわけではない　のではない"></a>〜わけではない　〜というわけではない　のではない</h2><p><a href="#〜わけではない・〜というわけではない">〜わけではない・〜というわけではない</a></p>
-<h2 id="〜ないことはない"><a href="#〜ないことはない" class="headerlink" title="〜ないことはない"></a>〜ないことはない</h2><p>例句</p>
+<p>说明A　「〜が原因で…という結果が起こる。」</p>
+<p>接続A　<br>名＋によって　<br>名＋による＋名</p>
+<p>例文B　</p>
 <blockquote>
-<p>ここから駅まで歩け<u>ないことはありません</u>が、かなり時間がかかります。<br>この店のカレーも美味しく<u>ないことはない</u>が、私はもっと辛いのが好きだ。</p>
+<p>外国語を学ぶこと<u>によって</u>その国の人たちの考え方も知ることができる。</p>
 </blockquote>
-<p>说明　表示“也不是说绝对不～“，以双重否定的形式表示委婉的肯定意义</p>
-<p>接续　动词ない・イ形<del>い</del>ーくない・ナ形<del>な</del>ーでない・名ではい＋ことはない</p>
-<p>注意　表示并不是完全没有某种可能性，双重否定表示肯定，但不是正面的肯定，而是消极的肯定，表示有某种可能性。</p>
-<h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><p>例句</p>
+<p>説明B　「〜という手段で…する」</p>
+<p>接続　<br>名＋によって　<br>名＋による＋名</p>
+<h2 id="〜から…・〜ことから…"><a href="#〜から…・〜ことから…" class="headerlink" title="〜から…・〜ことから…"></a>〜から…・〜ことから…</h2><p>例文</p>
 <blockquote>
-<p>彼からの手紙は読んだ<u>ことは</u>読んだんです<u>が</u>、意味がよくわかりませんでした<br>私は泳げる<u>ことは</u>泳げます<u>が</u>、長い距離はだめなんです</p>
+<p>顔がよく似ている<u>ことから</u>、二人は親子だとすぐにわかった。</p>
 </blockquote>
-<p>说明　「確かに〜だが、その事実はあまり重要ではなくて、…」表明”虽说～是事实，但更重要的是……“</p>
-<p>接续　【动·形】普通形（ナ<del>だ</del>ーな）＋ことは＋【動・形】普通形&#x2F;丁宁形＋が</p>
+<p>説明　「〜という事実が原因で…という結果に発展する・…と判断する。」…には希望・意向・相手への働きかけなどの文は来ない。</p>
+<p>接続　<br>名＋から　<br>普通形（ナ形<del>だ</del>ーな／ーである）＋ことから</p>
+<h2 id="〜おかげだ・〜おかげで…-／-〜せいだ・〜せいで…"><a href="#〜おかげだ・〜おかげで…-／-〜せいだ・〜せいで…" class="headerlink" title="〜おかげだ・〜おかげで…　／　〜せいだ・〜せいで…"></a>〜おかげだ・〜おかげで…　／　〜せいだ・〜せいで…</h2><p><a href="#〜おかげだ／〜せいだ">〜おかげだ・せいだ</a></p>
+<h2 id="〜のだから…"><a href="#〜のだから…" class="headerlink" title="〜のだから…"></a>〜のだから…</h2><p>例句</p>
+<blockquote>
+<p>世界は広い<u>のだから</u>、いろいろな習慣があるのは当然だ<br>あなたはけがをしている<u>んだから</u>、無理してはいけませんよ</p>
+</blockquote>
+<p>说明 「〜が事実だから、当然…。」<br>表示”因为存在～的事实，所以当然…“。～为听话人应当知道的事实的小句，…表示说话人的判断、愿望、意愿的表达方式。</p>
+<p>接続　普通形（ナ形<del>だ</del>ーな）＋のだから</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -4437,41 +4386,87 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜だから</title>
-    <url>/new-blog/2352cf0b.html</url>
-    <content><![CDATA[<h1 id="〜だから"><a href="#〜だから" class="headerlink" title="〜だから"></a>〜だから</h1><span id="more"></span>
+    <title>絶対〜ない・必ず〜とは言えない</title>
+    <url>/new-blog/a2bd39e3.html</url>
+    <content><![CDATA[<h1 id="絶対〜ない・必ず〜とは言えない"><a href="#絶対〜ない・必ず〜とは言えない" class="headerlink" title="絶対〜ない・必ず〜とは言えない"></a>絶対〜ない・必ず〜とは言えない</h1><span id="more"></span>
 
-<h2 id="〜ためだ・〜ため（に）…"><a href="#〜ためだ・〜ため（に）…" class="headerlink" title="〜ためだ・〜ため（に）…"></a>〜ためだ・〜ため（に）…</h2><p>例文 </p>
+<h2 id="〜はずがない・〜わけがない"><a href="#〜はずがない・〜わけがない" class="headerlink" title="〜はずがない・〜わけがない"></a>〜はずがない・〜わけがない</h2><p>例文</p>
 <blockquote>
-<p>携帯電話を忘れ<u>ために</u>、連絡できませんでした<br>雪がたくさん降ったため、試合が中止された</p>
+<p>ちゃんと約束したんだから、彼は来ない<u>はずがない</u>。どうしてのかなあ。<br>あの店が今日休みの<u>はずがありません</u>、電話で確認したんですから</p>
 </blockquote>
-<p>说明 「〜が原因だ。〜が原因で…という結果になる。」…には普通希望・意向・相手への働きかけなどの文は来ない。</p>
-<p>接続　名词の・普通形（ナ形<del>だ</del>ーな／ーである）＋ためだ・ため（に）</p>
-<h2 id="〜によって…・〜による"><a href="#〜によって…・〜による" class="headerlink" title="〜によって…・〜による"></a>〜によって…・〜による</h2><p>例文A</p>
+<p>说明　「絶対〜ない」。話者が強い確認を持って否定する言い方</p>
+<p>接续　普通形（ナ形<del>だ</del>な／である・名词の／である）＋はずがない・わけがない</p>
+<p>注意　表示说话人根据某种情理或经验，推断完全没有出现某种情况的可能性。</p>
+<h2 id="〜とは限らない"><a href="#〜とは限らない" class="headerlink" title="〜とは限らない"></a>〜とは限らない</h2><p>例句　</p>
 <blockquote>
-<p>うちの工場では、材料不足<u>によって</u>たたみの生産はもうできなくなった。</p>
+<p>値段が高いものが必ず質がいい<u>とは限らない</u><br>旅行中に怪我をしない<u>とは限りません</u>。保険に入っておいたほうがいいですよ。<br>新聞に書いてあることがいつも本当のこと<u>とは限らない</u></p>
 </blockquote>
-<p>说明A　「〜が原因で…という結果が起こる。」</p>
-<p>接続A　<br>名＋によって　<br>名＋による＋名</p>
-<p>例文B　</p>
+<p>说明　「必ず〜とは断定できない・〜できない場合もある。」表示“不一定就是～”或“也有可能不是～”，常和「みんな・いつも・だれでも・かならず」搭配使用</p>
+<p>接续　普通型（ナ形ーだ・名ーだ）＋とは限らない</p>
+<p>注意</p>
+<ol>
+<li>有时和「〜からといって」搭配使用，表示”虽说…也未必…“</li>
+</ol>
+<h2 id="〜わけではない-〜というわけではない-のではない"><a href="#〜わけではない-〜というわけではない-のではない" class="headerlink" title="〜わけではない　〜というわけではない　のではない"></a>〜わけではない　〜というわけではない　のではない</h2><p><a href="#〜わけではない・〜というわけではない">〜わけではない・〜というわけではない</a></p>
+<h2 id="〜ないことはない"><a href="#〜ないことはない" class="headerlink" title="〜ないことはない"></a>〜ないことはない</h2><p>例句</p>
 <blockquote>
-<p>外国語を学ぶこと<u>によって</u>その国の人たちの考え方も知ることができる。</p>
+<p>ここから駅まで歩け<u>ないことはありません</u>が、かなり時間がかかります。<br>この店のカレーも美味しく<u>ないことはない</u>が、私はもっと辛いのが好きだ。</p>
 </blockquote>
-<p>説明B　「〜という手段で…する」</p>
-<p>接続　<br>名＋によって　<br>名＋による＋名</p>
-<h2 id="〜から…・〜ことから…"><a href="#〜から…・〜ことから…" class="headerlink" title="〜から…・〜ことから…"></a>〜から…・〜ことから…</h2><p>例文</p>
+<p>说明　表示“也不是说绝对不～“，以双重否定的形式表示委婉的肯定意义</p>
+<p>接续　动词ない・イ形<del>い</del>ーくない・ナ形<del>な</del>ーでない・名ではい＋ことはない</p>
+<p>注意　表示并不是完全没有某种可能性，双重否定表示肯定，但不是正面的肯定，而是消极的肯定，表示有某种可能性。</p>
+<h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><p>例句</p>
 <blockquote>
-<p>顔がよく似ている<u>ことから</u>、二人は親子だとすぐにわかった。</p>
+<p>彼からの手紙は読んだ<u>ことは</u>読んだんです<u>が</u>、意味がよくわかりませんでした<br>私は泳げる<u>ことは</u>泳げます<u>が</u>、長い距離はだめなんです</p>
 </blockquote>
-<p>説明　「〜という事実が原因で…という結果に発展する・…と判断する。」…には希望・意向・相手への働きかけなどの文は来ない。</p>
-<p>接続　<br>名＋から　<br>普通形（ナ形<del>だ</del>ーな／ーである）＋ことから</p>
-<h2 id="〜おかげだ・〜おかげで…-／-〜せいだ・〜せいで…"><a href="#〜おかげだ・〜おかげで…-／-〜せいだ・〜せいで…" class="headerlink" title="〜おかげだ・〜おかげで…　／　〜せいだ・〜せいで…"></a>〜おかげだ・〜おかげで…　／　〜せいだ・〜せいで…</h2><p><a href="#〜おかげだ／〜せいだ">〜おかげだ・せいだ</a></p>
-<h2 id="〜のだから…"><a href="#〜のだから…" class="headerlink" title="〜のだから…"></a>〜のだから…</h2><p>例句</p>
+<p>说明　「確かに〜だが、その事実はあまり重要ではなくて、…」表明”虽说～是事实，但更重要的是……“</p>
+<p>接续　【动·形】普通形（ナ<del>だ</del>ーな）＋ことは＋【動・形】普通形&#x2F;丁宁形＋が</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜と望む</title>
+    <url>/new-blog/f1c5acd7.html</url>
+    <content><![CDATA[<h1 id="〜と望む"><a href="#〜と望む" class="headerlink" title="〜と望む"></a>〜と望む</h1><span id="more"></span>
+
+<h2 id="〜てもらいたい・〜ていただきたい・〜てほしい"><a href="#〜てもらいたい・〜ていただきたい・〜てほしい" class="headerlink" title="〜てもらいたい・〜ていただきたい・〜てほしい"></a>〜てもらいたい・〜ていただきたい・〜てほしい</h2><p>例文</p>
 <blockquote>
-<p>世界は広い<u>のだから</u>、いろいろな習慣があるのは当然だ<br>あなたはけがをしている<u>んだから</u>、無理してはいけませんよ</p>
+<p>誰かに自分の悩みを聞い<u>てもらいたい</u>と思うことがあります。<br>この書類、ちょっと見<u>ていただきたい</u>んですか<br>この仕事は誰にも手伝っ<u>てもらいたくない</u>。自分一人でやりたい。</p>
 </blockquote>
-<p>说明 「〜が事実だから、当然…。」<br>表示”因为存在～的事实，所以当然…“。～为听话人应当知道的事实的小句，…表示说话人的判断、愿望、意愿的表达方式。</p>
-<p>接続　普通形（ナ形<del>だ</del>ーな）＋のだから</p>
+<p>説明　「ほかの人が〜する／〜しないことを望む。」</p>
+<p>接続　動て形／（ない形＋で）＋もらいたい・いただきたい・ほしい</p>
+<h2 id="〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい"><a href="#〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい" class="headerlink" title="〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい"></a>〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい</h2><p>例文</p>
+<blockquote>
+<p>昼休みが短いよね。昼ご飯をもっとゆっくり食べ<u>させてもらいたい</u>ね。<br>それはさっきも説明したことだよ。何度も同じことを言わ<u>せないでもらいたい</u>よ。</p>
+</blockquote>
+<p>説明　「自分が〜する／〜しないことを望む。」ほかの人が自分のために、ある状況を作ったり許可したりすることを望む言い方。</p>
+<p>接続</p>
+<blockquote>
+<p>動詞I　動<del>ない</del>＋せて／せないで<br>動詞II　動<del>ない</del>＋させて／させないで<br>動詞III　する　→　させて／させないで</p>
+</blockquote>
+<h2 id="〜といい・〜ばいい・〜たらいい"><a href="#〜といい・〜ばいい・〜たらいい" class="headerlink" title="〜といい・〜ばいい・〜たらいい"></a>〜といい・〜ばいい・〜たらいい</h2><h3 id="A"><a href="#A" class="headerlink" title="A"></a>A</h3><p>例文　</p>
+<blockquote>
+<p>最近ずっと体の調子が悪い。悪い病気でなけれ<u>ばいい</u>が…<br>明日は入学試験だ。頑張ろう。合格でき<u>たらいい</u>なあ。</p>
+</blockquote>
+<p>説明　「〜ことを望んでいる。」〜には話者自身の意志的行為を表す言葉は来ない。</p>
+<p>接続</p>
+<blockquote>
+<p>普通形（現在形だけ）＋と<br>動ば形・イ形容<del>い</del>＋ければ<br>動ば形・イ形容<del>い</del>く・ナ形<del>な</del>で・名で＋なければ<br>普通形（過去形だけ）＋ら</p>
+</blockquote>
+<h3 id="B"><a href="#B" class="headerlink" title="B"></a>B</h3><p>例文　</p>
+<blockquote>
+<p>疲れているようですね。明日はゆっくり休む<u>といい</u>ですよ。<br>その仕事、気が進まないのなら引き受けなけれ<u>ばいい</u>じゃないですか。</p>
+</blockquote>
+<p>説明　「相手に〜の行為をする／しないことを勧める。」</p>
+<p>接続</p>
+<blockquote>
+<p> 動辞書形＋と<br>動ば形／<del>ない</del>なければ<br>動たら</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -5422,43 +5417,89 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜と望む</title>
-    <url>/new-blog/f1c5acd7.html</url>
-    <content><![CDATA[<h1 id="〜と望む"><a href="#〜と望む" class="headerlink" title="〜と望む"></a>〜と望む</h1><span id="more"></span>
+    <title>文の初めと終わりの対応</title>
+    <url>/new-blog/64912410.html</url>
+    <content><![CDATA[<h1 id="文の初めと終わりの対応"><a href="#文の初めと終わりの対応" class="headerlink" title="文の初めと終わりの対応"></a>文の初めと終わりの対応</h1><span id="more"></span>
 
-<h2 id="〜てもらいたい・〜ていただきたい・〜てほしい"><a href="#〜てもらいたい・〜ていただきたい・〜てほしい" class="headerlink" title="〜てもらいたい・〜ていただきたい・〜てほしい"></a>〜てもらいたい・〜ていただきたい・〜てほしい</h2><p>例文</p>
+<h2 id="ポイント1-始めと終わりの対応にはいくつかの形があります"><a href="#ポイント1-始めと終わりの対応にはいくつかの形があります" class="headerlink" title="ポイント1　始めと終わりの対応にはいくつかの形があります"></a>ポイント1　始めと終わりの対応にはいくつかの形があります</h2><p>例1　〜には　＋…がいる・…がある・…が多い</p>
 <blockquote>
-<p>誰かに自分の悩みを聞い<u>てもらいたい</u>と思うことがあります。<br>この書類、ちょっと見<u>ていただきたい</u>んですか<br>この仕事は誰にも手伝っ<u>てもらいたくない</u>。自分一人でやりたい。</p>
+<p>例</p>
 </blockquote>
-<p>説明　「ほかの人が〜する／〜しないことを望む。」</p>
-<p>接続　動て形／（ない形＋で）＋もらいたい・いただきたい・ほしい</p>
-<h2 id="〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい"><a href="#〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい" class="headerlink" title="〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい"></a>〜（さ）せてもらいたい・〜（さ）せていただきたい・〜（さ）せてほしい</h2><p>例文</p>
+<ul>
+<li>世界<u>には</u>いろいろな文化を持った国<u>がある</u></li>
+</ul>
+<p>例2 〜には・〜のに（は）　＋…が必要だ・…が便利だ・…なければならない・…がかかる</p>
 <blockquote>
-<p>昼休みが短いよね。昼ご飯をもっとゆっくり食べ<u>させてもらいたい</u>ね。<br>それはさっきも説明したことだよ。何度も同じことを言わ<u>せないでもらいたい</u>よ。</p>
+<p>例</p>
 </blockquote>
-<p>説明　「自分が〜する／〜しないことを望む。」ほかの人が自分のために、ある状況を作ったり許可したりすることを望む言い方。</p>
-<p>接続</p>
+<ul>
+<li>この仕事をする<u>には</u>車の運転ができ<u>なければならない</u></li>
+</ul>
+<p>例3　〜のは　＋…だ・…からだ・…ためだ</p>
 <blockquote>
-<p>動詞I　動<del>ない</del>＋せて／せないで<br>動詞II　動<del>ない</del>＋させて／させないで<br>動詞III　する　→　させて／させないで</p>
+<p>例</p>
 </blockquote>
-<h2 id="〜といい・〜ばいい・〜たらいい"><a href="#〜といい・〜ばいい・〜たらいい" class="headerlink" title="〜といい・〜ばいい・〜たらいい"></a>〜といい・〜ばいい・〜たらいい</h2><h3 id="A"><a href="#A" class="headerlink" title="A"></a>A</h3><p>例文　</p>
+<ul>
+<li>わたしが祖母について思い出せる<u>のは</u>、優しい笑顔だけ<u>だ</u></li>
+</ul>
+<p>例4 どうして／なぜ〜かというか　＋…からだ</p>
 <blockquote>
-<p>最近ずっと体の調子が悪い。悪い病気でなけれ<u>ばいい</u>が…<br>明日は入学試験だ。頑張ろう。合格でき<u>たらいい</u>なあ。</p>
+<p>例</p>
 </blockquote>
-<p>説明　「〜ことを望んでいる。」〜には話者自身の意志的行為を表す言葉は来ない。</p>
-<p>接続</p>
+<ul>
+<li>どうしてこの植物にあまり水をやらないかと言うと、その方がきれいな花が咲くからです。</li>
+</ul>
+<h2 id="ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"><a href="#ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう" class="headerlink" title="ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"></a>ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう</h2>]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜と関係して</title>
+    <url>/new-blog/9d184406.html</url>
+    <content><![CDATA[<h1 id="〜と関係して"><a href="#〜と関係して" class="headerlink" title="〜と関係して"></a>〜と関係して</h1><span id="more"></span>
+
+<h2 id="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"><a href="#〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…" class="headerlink" title="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"></a>〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…</h2><p>例句</p>
 <blockquote>
-<p>普通形（現在形だけ）＋と<br>動ば形・イ形容<del>い</del>＋ければ<br>動ば形・イ形容<del>い</del>く・ナ形<del>な</del>で・名で＋なければ<br>普通形（過去形だけ）＋ら</p>
+<p>これから私が言う<u>とおり</u>にパソコンを操作してください<br>説明書<u>どおり</u>に組み立ててみたのですが、動かないんです</p>
 </blockquote>
-<h3 id="B"><a href="#B" class="headerlink" title="B"></a>B</h3><p>例文　</p>
+<p>说明　“如～那样”、“完全按照～做…”</p>
+<p>接续</p>
 <blockquote>
-<p>疲れているようですね。明日はゆっくり休む<u>といい</u>ですよ。<br>その仕事、気が進まないのなら引き受けなけれ<u>ばいい</u>じゃないですか。</p>
+<p>名詞の・动词辞书形／「た」／てある／ている＋とおりだ・とおり（に）<br>名詞＋どおりだ・どおり（に）</p>
 </blockquote>
-<p>説明　「相手に〜の行為をする／しないことを勧める。」</p>
-<p>接続</p>
+<p>注意　「〜とおりの」后续名詞作定语使用。注意前面直接接名詞时只能用「〜どおり（に）」</p>
+<h2 id="〜によって…・〜によっては…"><a href="#〜によって…・〜によっては…" class="headerlink" title="〜によって…・〜によっては…"></a>〜によって…・〜によっては…</h2><p>例文</p>
 <blockquote>
-<p> 動辞書形＋と<br>動ば形／<del>ない</del>なければ<br>動たら</p>
+<p>国<u>によって</u>習慣が違う。<br>感じ方は人<u>によって</u>さまざまだ。</p>
 </blockquote>
+<p>说明 「〜が違えば…」。…は一定でないことを表す文。</p>
+<p>接续 名詞＋によって・によっては</p>
+<h2 id="〜たびに…"><a href="#〜たびに…" class="headerlink" title="〜たびに…"></a>〜たびに…</h2><p>例句</p>
+<blockquote>
+<p>私は山田さんに会う<u>たび</u>に素敵な人だといつも思う<br>この写真を見るたび、故郷のことを思います</p>
+</blockquote>
+<p>说明　“每当。。。就。。。”</p>
+<p>接续　名詞の・动词辞书形+たびに</p>
+<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…</h2><p>例句：</p>
+<blockquote>
+<p>この問題について考えれ<u>ば</u>考える<u>ほど</u>、頭の中が混乱してきた<br>この本は読めば読むほど面白くなる</p>
+</blockquote>
+<p>说明　“越。。。越。。。”</p>
+<p>接续</p>
+<blockquote>
+<p>动词「ば」＋同一动词的辞书形＋ほど<br>い形容词词干＋ければ＋同一い形容词辞书形＋ほど<br>な形容词词干＋なら＋同一な形容词词干＋な＋ほど<br>イ形容詞い・ナ形容詞な＋名詞＋ほど</p>
+</blockquote>
+<p>注意　表示随着前项的变化，后项也相应地发生变化。注意这时候不能替换成「〜くらい」</p>
+<h2 id="〜ついでに…"><a href="#〜ついでに…" class="headerlink" title="〜ついでに…"></a>〜ついでに…</h2><p>例句</p>
+<blockquote>
+<p>散歩の<u>ついでに</u>このはがきをポストに出してきて<br>玄関の掃除をする<u>ついでに</u>靴の整理をしよう</p>
+</blockquote>
+<p>说明　“趁着～，顺道做…”，用于表示同时做两个不同的行为。〜是主要行为，…是附带行为</p>
+<p>接续　名詞 <del>する</del>の・動辞書&#x2F;た＋ついでに</p>
 ]]></content>
       <categories>
         <category>N3</category>
