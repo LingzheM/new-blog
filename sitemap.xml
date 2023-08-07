@@ -618,13 +618,6 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/N3/</loc>
-    <lastmod>2023-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/tags/N2/</loc>
     <lastmod>2023-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -654,6 +647,13 @@
   
   <url>
     <loc>https://lingzhem.github.io/tags/GrammaticalForm/</loc>
+    <lastmod>2023-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/tags/N3/</loc>
     <lastmod>2023-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -697,14 +697,14 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/N3/</loc>
+    <loc>https://lingzhem.github.io/categories/N2/</loc>
     <lastmod>2023-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/categories/N2/</loc>
+    <loc>https://lingzhem.github.io/categories/N3/</loc>
     <lastmod>2023-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
