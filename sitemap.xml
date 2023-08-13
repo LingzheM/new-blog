@@ -4,7 +4,7 @@
   <url>
     <loc>https://lingzhem.github.io/57df7023.html</loc>
     
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -542,6 +542,15 @@
   </url>
   
   <url>
+    <loc>https://lingzhem.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lingzhem.github.io/about/index.html</loc>
     
     <lastmod>2023-06-17</lastmod>
@@ -559,19 +568,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://lingzhem.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://lingzhem.github.io/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -579,98 +579,98 @@
   
   <url>
     <loc>https://lingzhem.github.io/tags/LPIC/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/JavaScript/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/Basic-Information-Technician/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/Tecnology/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/ES6/</loc>
-    <lastmod>2023-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lingzhem.github.io/tags/N2/</loc>
-    <lastmod>2023-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lingzhem.github.io/tags/KanJi/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/Network/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/tags/N2/</loc>
+    <lastmod>2023-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/tags/KanJi/</loc>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/Hexo/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/ExplainThings/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/SubjectiveExplain/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/express-subjectivity/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/GrammaticalForm/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/tags/N3/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -679,49 +679,49 @@
   
   <url>
     <loc>https://lingzhem.github.io/categories/LPIC/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/categories/Basic-Information-Technician/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/categories/JavaScript/</loc>
-    <lastmod>2023-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lingzhem.github.io/categories/N2/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/categories/Network/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/categories/N2/</loc>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/categories/Hexo/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lingzhem.github.io/categories/N3/</loc>
-    <lastmod>2023-08-12</lastmod>
+    <lastmod>2023-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
