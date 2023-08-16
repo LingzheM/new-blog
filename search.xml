@@ -526,46 +526,239 @@ funcs[0](); // 0
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Explain localhost and 127.0.0.1</title>
-    <url>/new-blog/915cd40c.html</url>
-    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
+    <title>つかう①</title>
+    <url>/new-blog/84b7d475.html</url>
+    <content><![CDATA[<h1 id="第二週-つかう①"><a href="#第二週-つかう①" class="headerlink" title="第二週　つかう①"></a>第二週　つかう①</h1><span id="more"></span>
 
-<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
-<blockquote>
-<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
-</blockquote>
-<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
-<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
-<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
-<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
-<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
-</code></pre>
-<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
-<ol>
-<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
-</li>
-<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
-</li>
-</ol>
-<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
-<pre><code>127.0.0.1   localhost
-</code></pre>
-<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
-<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
-<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
-<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
-<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
-<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
-<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
-<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
-<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
-]]></content>
-      <categories>
-        <category>Network</category>
-      </categories>
-      <tags>
-        <tag>Network</tag>
-      </tags>
+<h2 id="1日目-自動券売機"><a href="#1日目-自動券売機" class="headerlink" title="1日目　自動券売機"></a>1日目　自動券売機</h2><p>普通乗車券、回数券だけでなく、新幹線の自由券も自動券売機で買うことができます。お金を入れて、行き先、往復か片道か、枚数などのボタンを押します。</p>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>普</td>
+        <td>
+            フ
+        </td>
+        <td>
+            <ruby>普通<rp>(</rp><rt>ふつう</rt><rp>)</rp></ruby><br>
+            <ruby>普段<rp>(</rp><rt>ふだん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            ordinary<br>
+            usually
+        </td>
+    </tr>
+    <tr>
+        <td>券</td>
+        <td>
+            ケン
+        </td>
+        <td>
+            <ruby>回数券<rp>(</rp><rt>かいすうけん</rt><rp>)</rp></ruby><br>
+            <ruby>乗車券<rp>(</rp><rt>じょうしゃけん</rt><rp>)</rp></ruby><br>
+        </td>
+        <td>
+            a (book of) commuter ticket(s)<br>
+            a ticket
+        </td>
+    </tr>
+    <tr>
+        <td>数</td>
+        <td>
+            スウ<br>
+            かず<br>
+            かぞーえる
+        </td>
+        <td>
+            <ruby>数字<rp>(</rp><rt>すうじ</rt><rp>)</rp></ruby><br>
+            <ruby>数を数える<rp>(</rp><rt>かず　かぞ</rt><rp>)</rp></ruby><br>
+        </td>
+        <td>
+            number<br>
+            count numbers
+        </td>
+    </tr>
+    <tr>
+        <td>機</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>危機<rp>(</rp><rt>きき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a crisis
+        </td>
+    </tr>
+    <tr>
+        <td>復</td>
+        <td>
+            フク
+        </td>
+        <td>
+            <ruby>復習<rp>(</rp><rt>ふくしゅう</rt><rp>)</rp></ruby><br>
+            <ruby>往復<rp>(</rp><rt>おうふく</rt><rp>)</rp></ruby><br>
+            <ruby>回復<rp>(</rp><rt>かいふく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a review<br>
+            a round trip<br>
+            recovery
+        </td>
+    </tr>
+    <tr>
+        <td>片</td>
+        <td>
+            ヘン<br>
+            かた
+        </td>
+        <td>
+            <ruby>片道切符<rp>(</rp><rt>かたみちきっぷ</rt><rp>)</rp></ruby><br>
+            <ruby>片付<rp>(</rp><rt>かたづ</rt><rp>)</rp></ruby>ける
+        </td>
+        <td>
+            an one way ticket<br>
+            tidy up
+        </td>
+    </tr>
+    <tr>
+        <td>枚</td>
+        <td>
+            マイ
+        </td>
+        <td>
+            〜<ruby>枚<rp>(</rp><rt>まい</rt><rp>)</rp></ruby><br>
+            <ruby>枚数<rp>(</rp><rt>枚数</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            counter for flat objects<br>
+            number of
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>期</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>期間<rp>(</rp><rt>きかん</rt><rp>)</rp></ruby><br>
+            <ruby>定期<rp>(</rp><rt>ていき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a period of time<br>
+            a fixed period of time
+        </td>
+    </tr>
+    <tr>
+        <td>販</td>
+        <td>
+            ハン
+        </td>
+        <td>
+            <ruby>販売<rp>(</rp><rt>はんばい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            sell
+        </td>
+    </tr>
+    <tr>
+        <td>指</td>
+        <td>
+            シ<br>
+            ゆび<br>
+            さーす
+        </td>
+        <td>
+            <ruby>指定<rp>(</rp><rt>してい</rt><rp>)</rp></ruby><br>
+            <ruby>指<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            reserved<br>
+            point
+        </td>
+    </tr>
+    <tr>
+        <td>調</td>
+        <td>
+            チョウ<br>
+            しらーべる
+        </td>
+        <td>
+            <ruby>調整<rp>(</rp><rt>ちょうせい</rt><rp>)</rp></ruby><br>
+            <ruby>調子<rp>(</rp><rt>ちょうし</rt><rp>)</rp></ruby><br>
+            <ruby>調<rp>(</rp><rt>しら</rt><rp>)</rp></ruby>べる
+        </td>
+        <td>
+            an adjustment<br>
+            condition<br>
+            look up something
+        </td>
+    </tr>
+    <tr>
+        <td>整</td>
+        <td>
+            セイ<br>
+            ととのーう
+        </td>
+        <td>
+            <ruby>整備<rp>(</rp><rt>せいび</rt><rp>)</rp></ruby><br>
+            <ruby>整<rp>(</rp><rt>ととの</rt><rp>)</rp></ruby>う
+        </td>
+        <td>
+            maintenance<br>
+            be tidy
+        </td>
+    </tr>
+    <tr>
+        <td>表</td>
+        <td>
+            ヒョウ<br>
+            おもて<br>
+            あらわーす<br>
+            あらわーれる
+        </td>
+        <td>
+            <ruby>表<rp>(</rp><rt>ひょう</rt><rp>)</rp></ruby><br>
+            <ruby>表<rp>(</rp><rt>おもて</rt><rp>)</rp></ruby><br>
+            <ruby>表<rp>(</rp><rt>あらわ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            table<br>
+            surface, face<br>
+            show, express
+        </td>
+    </tr>
+        <tr>
+        <td>示</td>
+        <td>
+            ジ<br>
+            しめーす
+        </td>
+        <td>
+            <ruby>表示<rp>(</rp><rt>ひょうじ</rt><rp>)</rp></ruby><br>
+            <ruby>指示<rp>(</rp><rt>しじ</rt><rp>)</rp></ruby><br>
+            <ruby>示<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            indication, expression<br>
+            an instruction<br>
+            show, point out
+        </td>
+    </tr>
+</table>]]></content>
   </entry>
   <entry>
     <title>第一週 みる①</title>
@@ -1680,6 +1873,235 @@ funcs[0](); // 0
             an old person
         </td>
     </tr>
+</table>
+
+<hr>
+<h2 id="6日目-郵便局・病院で見る表示"><a href="#6日目-郵便局・病院で見る表示" class="headerlink" title="6日目　郵便局・病院で見る表示"></a>6日目　郵便局・病院で見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>郵</td>
+        <td>
+            ユウ
+        </td>
+        <td>
+            郵便<br>
+            郵送
+        </td>
+        <td>
+            mail<br>
+            send py post
+        </td>
+    </tr>
+    <tr>
+        <td>局</td>
+        <td>
+            キョク
+        </td>
+        <td>
+            郵便局<br>
+            薬局
+        </td>
+        <td>
+            a post office<br>
+            a drug store
+        </td>
+    </tr>
+    <tr>
+        <td>貯</td>
+        <td>
+            チョ
+        </td>
+        <td>
+            貯金
+        </td>
+        <td>
+            savings
+        </td>
+    </tr>
+    <tr>
+        <td>包</td>
+        <td>
+            ホウ<br>
+            つつーむ<br>
+            つつーみ
+        </td>
+        <td>
+            包帯<br>
+            包む<br>
+            小包
+        </td>
+        <td>
+            a bandage<br>
+            wrap<br>
+            a parcel
+        </td>
+    </tr>
+    <tr>
+        <td>達</td>
+        <td>
+            タツ<br>
+        </td>
+        <td>
+            発達<br>
+            速達
+        </td>
+        <td>
+            development<br>
+            a special dilivery
+        </td>
+    </tr>
+    <tr>
+        <td>際</td>
+        <td>
+            サイ
+        </td>
+        <td>
+            国際<br>
+            〜の際<br>
+            実際に
+        </td>
+        <td>
+            international<br>
+            at the time of...<br>
+            actually
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>初</td>
+        <td>
+            ショ<br>
+            はじーめ<br>
+            はじーめて<br>
+            はつ
+        </td>
+        <td>
+            初診<br>
+            初めて<br>
+            初恋
+        </td>
+        <td>
+            the first medical consultation<br>
+            the first time<br>
+            one's first love
+        </td>
+    </tr>
+    <tr>
+        <td>再</td>
+        <td>
+            サイ<br>
+            サ<br>
+            ふたたーび
+        </td>
+        <td>
+            再診<br>
+            再来年<br>
+            再び
+        </td>
+        <td>
+            a follow-up medical consultation<br>
+            the year after next<br>
+            again
+        </td>
+    </tr>
+    <tr>
+        <td>療</td>
+        <td>
+            リョウ
+        </td>
+        <td>
+            診療
+        </td>
+        <td>
+            medical examination and treatment
+        </td>
+    </tr>
+    <tr>
+        <td>科</td>
+        <td>
+            カ
+        </td>
+        <td>
+            科学<br>
+            外科<br>
+            内科
+        </td>
+        <td>
+            science<br>
+            a surgey department<br>
+            internal medicine department
+        </td>
+    </tr>
+    <tr>
+        <td>婦</td>
+        <td>
+            フ
+        </td>
+        <td>
+            産婦人科<br>
+            主婦<br>
+            婦人
+        </td>
+        <td>
+            obstetrics and gynecology department<br>
+            a housewife
+        </td>
+    </tr>
+    <tr>
+        <td>皮</td>
+        <td>
+            ヒ<br>
+            かわ
+        </td>
+        <td>
+            皮肉<br>
+            皮
+        </td>
+        <td>
+            irony / sarcasm<br>
+            skin
+        </td>
+    </tr>
+    <tr>
+        <td>膚</td>
+        <td>
+            フ
+        </td>
+        <td>
+            皮膚
+        </td>
+        <td>
+            skin
+        </td>
+    </tr>
+    <tr>
+        <td>救</td>
+        <td>
+            キュウ<br>
+            すくーう
+        </td>
+        <td>
+            救急<br>
+            救う
+        </td>
+        <td>
+            first aid<br>
+            save
+        </td>
+    </tr>
 </table>]]></content>
       <categories>
         <category>N2</category>
@@ -1687,6 +2109,48 @@ funcs[0](); // 0
       <tags>
         <tag>N2</tag>
         <tag>KanJi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Explain localhost and 127.0.0.1</title>
+    <url>/new-blog/915cd40c.html</url>
+    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
+
+<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
+<blockquote>
+<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
+</blockquote>
+<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
+<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
+<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
+<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
+<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
+</code></pre>
+<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
+<ol>
+<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
+</li>
+<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
+</li>
+</ol>
+<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
+<pre><code>127.0.0.1   localhost
+</code></pre>
+<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
+<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
+<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
+<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
+<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
+<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
+<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
+<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
+<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
+]]></content>
+      <categories>
+        <category>Network</category>
+      </categories>
+      <tags>
+        <tag>Network</tag>
       </tags>
   </entry>
   <entry>
@@ -1810,7 +2274,7 @@ npm -v
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#111;&#x75;&#114;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#121;&#111;&#x75;&#114;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<p>“Your Name”と”<a href="mailto:&#x79;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#109;">&#x79;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
 <h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
 <p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
@@ -2045,74 +2509,6 @@ deploy:
 <ol>
 <li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
 </ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
-<ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
-<p>例文</p>
-<blockquote>
-<p>チャンスがあっ<u>てはじめて</u>、才能が生きてくるのではないだろうか。</p>
-</blockquote>
-<p>接続　動て形＋はじめて</p>
-<p>注意　</p>
-<ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
-</ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
-<p>例文</p>
-<blockquote>
-<p>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
-</blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
-<ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
-</ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
-<ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
-</ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
-<blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
-</blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -2405,58 +2801,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜に関連して・〜に対応して</title>
-    <url>/new-blog/2990d3a2.html</url>
-    <content><![CDATA[<h1 id="〜に関連して・〜に対応して"><a href="#〜に関連して・〜に対応して" class="headerlink" title="〜に関連して・〜に対応して"></a>〜に関連して・〜に対応して</h1><p>[復習]</p>
-<ul>
-<li>国<u>によって</u>習慣が違う</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜につれて・〜にしたがって"><a href="#〜につれて・〜にしたがって" class="headerlink" title="〜につれて・〜にしたがって"></a>〜につれて・〜にしたがって</h2><p>意味　一方が変化するのと一緒に、もう一方も変化する</p>
-<p>例文　</p>
-<blockquote>
-<p>日本に来て日がたつ<u>につれ</u>、会話が上達してきた。</p>
-</blockquote>
-<p>接続　名<del>する</del>・動辞書形＋につれて・にしたがって</p>
-<p>注意　</p>
-<h2 id="〜に伴って・〜とともに"><a href="#〜に伴って・〜とともに" class="headerlink" title="〜に伴って・〜とともに"></a>〜に伴って・〜とともに</h2><p>意味　一方が変化するのと一緒に、もう一方も変化する・変化させる。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-</blockquote>
-<p>接続　<br>名<del>する</del>・動辞書形＋に伴って・とともに<br>名<del>する</del>＋に伴う＋名</p>
-<p>注意</p>
-<h2 id="〜次第だ"><a href="#〜次第だ" class="headerlink" title="〜次第だ"></a>〜次第だ</h2><p>意味　〜が変われば結果も変わる・〜によって決まる</p>
-<p>例文</p>
-<blockquote>
-<p>人生が楽しいかどうかは考え方<u>次第だ</u><br>レストランは、雰囲気<u>次第で</u>お客様増えたり減ったりするのです。</p>
-</blockquote>
-<p>接続　名＋次第だ</p>
-<p>注意</p>
-<h2 id="〜に応じて"><a href="#〜に応じて" class="headerlink" title="〜に応じて"></a>〜に応じて</h2><p>意味　〜に合わせて変える・変わる</p>
-<p>例文</p>
-<blockquote>
-<p>収入<u>に応じて</u>収める税金の額が変わる。</p>
-</blockquote>
-<p>接続<br>名＋に応じて<br>名＋に応じた＋名</p>
-<p>注意</p>
-<h2 id="〜につけて"><a href="#〜につけて" class="headerlink" title="〜につけて"></a>〜につけて</h2><p>意味　〜すると、いつも必ずそういう気持ちになる</p>
-<p>例文</p>
-<blockquote>
-<p>この歌を聞く<u>につけて</u>、心に希望がわいてくる。</p>
-</blockquote>
-<p>接続　動辞書形＋につけて</p>
-<p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜を基準にして</title>
     <url>/new-blog/dd7b2b1.html</url>
     <content><![CDATA[<h1 id="〜を基準にして"><a href="#〜を基準にして" class="headerlink" title="〜を基準にして"></a>〜を基準にして</h1><p>[復習]</p>
@@ -2515,6 +2859,126 @@ deploy:
 <ol>
 <li>主に人を表す名詞につく。後には、「作る・設計する・デザインする」などの動詞の文が来る</li>
 </ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜に関連して・〜に対応して</title>
+    <url>/new-blog/2990d3a2.html</url>
+    <content><![CDATA[<h1 id="〜に関連して・〜に対応して"><a href="#〜に関連して・〜に対応して" class="headerlink" title="〜に関連して・〜に対応して"></a>〜に関連して・〜に対応して</h1><p>[復習]</p>
+<ul>
+<li>国<u>によって</u>習慣が違う</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜につれて・〜にしたがって"><a href="#〜につれて・〜にしたがって" class="headerlink" title="〜につれて・〜にしたがって"></a>〜につれて・〜にしたがって</h2><p>意味　一方が変化するのと一緒に、もう一方も変化する</p>
+<p>例文　</p>
+<blockquote>
+<p>日本に来て日がたつ<u>につれ</u>、会話が上達してきた。</p>
+</blockquote>
+<p>接続　名<del>する</del>・動辞書形＋につれて・にしたがって</p>
+<p>注意　</p>
+<h2 id="〜に伴って・〜とともに"><a href="#〜に伴って・〜とともに" class="headerlink" title="〜に伴って・〜とともに"></a>〜に伴って・〜とともに</h2><p>意味　一方が変化するのと一緒に、もう一方も変化する・変化させる。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+</blockquote>
+<p>接続　<br>名<del>する</del>・動辞書形＋に伴って・とともに<br>名<del>する</del>＋に伴う＋名</p>
+<p>注意</p>
+<h2 id="〜次第だ"><a href="#〜次第だ" class="headerlink" title="〜次第だ"></a>〜次第だ</h2><p>意味　〜が変われば結果も変わる・〜によって決まる</p>
+<p>例文</p>
+<blockquote>
+<p>人生が楽しいかどうかは考え方<u>次第だ</u><br>レストランは、雰囲気<u>次第で</u>お客様増えたり減ったりするのです。</p>
+</blockquote>
+<p>接続　名＋次第だ</p>
+<p>注意</p>
+<h2 id="〜に応じて"><a href="#〜に応じて" class="headerlink" title="〜に応じて"></a>〜に応じて</h2><p>意味　〜に合わせて変える・変わる</p>
+<p>例文</p>
+<blockquote>
+<p>収入<u>に応じて</u>収める税金の額が変わる。</p>
+</blockquote>
+<p>接続<br>名＋に応じて<br>名＋に応じた＋名</p>
+<p>注意</p>
+<h2 id="〜につけて"><a href="#〜につけて" class="headerlink" title="〜につけて"></a>〜につけて</h2><p>意味　〜すると、いつも必ずそういう気持ちになる</p>
+<p>例文</p>
+<blockquote>
+<p>この歌を聞く<u>につけて</u>、心に希望がわいてくる。</p>
+</blockquote>
+<p>接続　動辞書形＋につけて</p>
+<p>注意</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>チャンスがあっ<u>てはじめて</u>、才能が生きてくるのではないだろうか。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -2646,6 +3110,75 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>強く否定する・強く否定しない</title>
+    <url>/new-blog/c2c9751e.html</url>
+    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
+<ul>
+<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
+<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
+<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
+<p>例文</p>
+<blockquote>
+<p>日本旅行中に富士山を登るわけがないよ。登山は私の得意なことではないし、時間的にも難しいかもしれないから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
+<p>注意　</p>
+<ol>
+<li>話者が絶対そうではないと確信しているときの言い方。</li>
+</ol>
+<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
+<p>例文</p>
+<blockquote>
+<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
+<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。</p>
+<h3 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h3><p>意味　絶対〜ない(話し言葉)</p>
+<p>例文</p>
+<blockquote>
+<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
+<p>注意　</p>
+<ol>
+<li>少し感情的に強く否定する文。</li>
+</ol>
+<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
+<p>例文</p>
+<blockquote>
+<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
+<p>注意　</p>
+<ol>
+<li>部分的否定する場合は、</li>
+</ol>
+<h2 id="〜というものではない・〜というものでもない"><a href="#〜というものではない・〜というものでもない" class="headerlink" title="〜というものではない・〜というものでもない"></a>〜というものではない・〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
+<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
+<p>例文</p>
+<blockquote>
+<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。</p>
+</blockquote>
+<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
+<p>注意　</p>
+<ol>
+<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
+<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜（話題）は</title>
     <url>/new-blog/b439c0f1.html</url>
     <content><![CDATA[<h1 id="〜（話題）は"><a href="#〜（話題）は" class="headerlink" title="〜（話題）は"></a>〜（話題）は</h1><p>[復習]</p>
@@ -2708,75 +3241,6 @@ deploy:
 <p>注意　</p>
 <ol>
 <li>後には、普通ではない程度だという意味の文、驚きを表す文が来る。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>強く否定する・強く否定しない</title>
-    <url>/new-blog/c2c9751e.html</url>
-    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
-<ul>
-<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
-<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
-<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
-<p>例文</p>
-<blockquote>
-<p>日本旅行中に富士山を登るわけがないよ。登山は私の得意なことではないし、時間的にも難しいかもしれないから。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
-<p>注意　</p>
-<ol>
-<li>話者が絶対そうではないと確信しているときの言い方。</li>
-</ol>
-<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
-<p>例文</p>
-<blockquote>
-<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
-<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。</p>
-<h3 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h3><p>意味　絶対〜ない(話し言葉)</p>
-<p>例文</p>
-<blockquote>
-<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
-<p>注意　</p>
-<ol>
-<li>少し感情的に強く否定する文。</li>
-</ol>
-<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
-<p>例文</p>
-<blockquote>
-<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
-<p>注意　</p>
-<ol>
-<li>部分的否定する場合は、</li>
-</ol>
-<h2 id="〜というものではない・〜というものでもない"><a href="#〜というものではない・〜というものでもない" class="headerlink" title="〜というものではない・〜というものでもない"></a>〜というものではない・〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
-<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
-<p>例文</p>
-<blockquote>
-<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。</p>
-</blockquote>
-<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
-<p>注意　</p>
-<ol>
-<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
-<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
 </ol>
 ]]></content>
       <categories>
@@ -3209,102 +3673,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>強く言う・軽く言う</title>
-    <url>/new-blog/9838a92e.html</url>
-    <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
-<ul>
-<li>今年<u>こそ</u>日記を書き続けよう。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜ぐらい・〜くらい"><a href="#〜ぐらい・〜くらい" class="headerlink" title="〜ぐらい・〜くらい"></a>〜ぐらい・〜くらい</h2><p>意味　〜は程度が軽い・最低限の程度だ。</p>
-<p>例文</p>
-<blockquote>
-<p>うちに帰ってきたら、自分の靴<u>ぐらい</u>ちゃんと並べなさい。</p>
-</blockquote>
-<p>接続　名・動・形普通形（ナ形<del>だ</del>-な）＋ぐらい・くらい</p>
-<p>注意</p>
-<ol>
-<li>話者が程度が軽いと考えている言葉につく。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜など・〜なんか・〜なんて"><a href="#〜など・〜なんか・〜なんて" class="headerlink" title="〜など・〜なんか・〜なんて"></a>〜など・〜なんか・〜なんて</h2><p>意味　〜は価値が低い・大切でははい。</p>
-<p>例文</p>
-<blockquote>
-<p>あの人の言ったこと<u>など</u>気にすることはありません。<br>新聞記者に<u>なんか</u>ならなければよかった。仕事がきつすぎる。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋など・なんか・なんて</p>
-<p>注意</p>
-<ol>
-<li>話者が価値が低いと考えている言葉につく。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜まで・〜までして・〜てまで"><a href="#〜まで・〜までして・〜てまで" class="headerlink" title="〜まで・〜までして・〜てまで"></a>〜まで・〜までして・〜てまで</h2><p>意味　〜という極端な程度のもの・ことも、ある状態・あることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>一番に賛成してくれると思っていた母<u>まで</u>私の結婚に反対した。<br>遊園地では、みんな長い時間並ん<u>でまで</u>ジェットコースターに乗りたがる。</p>
-</blockquote>
-<p>接続<br>    名（＋助詞）＋まで・までして<br>    動て形＋まで</p>
-<p>注意</p>
-<ol>
-<li>極端で意外性のある例を示す言葉につく。</li>
-<li>「〜までして・〜てまで」は話者が驚いたり呆れたりするような手段・事態を示し</li>
-</ol>
-<p>練習</p>
-<h2 id="〜として〜ない"><a href="#〜として〜ない" class="headerlink" title="〜として〜ない"></a>〜として〜ない</h2><p>意味　あることを「最低限度の〜も全くない」と否定する。</p>
-<p>例文</p>
-<blockquote>
-<p>人生に無駄なものは何一つ<u>としてない</u>。失敗も必ず何かの役に立つはずだ。<br>彼の提案にだれ一人<u>として</u>反対でき<u>なかった</u>。</p>
-</blockquote>
-<p>接続 （何・だれ＋）一＋助数詞＋として〜ない</p>
-<p>注意</p>
-<ol>
-<li>最低の単位「一＋助数詞」につく。後には、否定文が来る。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜さえ"><a href="#〜さえ" class="headerlink" title="〜さえ"></a>〜さえ</h2><p>意味　〜のような極端例もそうだから、ほかのことはもちろんだ。</p>
-<p>例文</p>
-<blockquote>
-<p>日本に来たばかりのときは、ひらがな<u>さえ</u>読めなかった。<br>この料理は簡単だ。料理の苦手なわたしで<u>さえ</u>失敗しなかった。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋さえ</p>
-<p>注意</p>
-<ol>
-<li>後には、話者の意向を表す文や働きかけの文は来ない。</li>
-</ol>
-<p>練習</p>
-<p>意味　〜という一つの条件が満たされれば、ほかのことは問題にならない。</p>
-<p>例文</p>
-<blockquote>
-<p>雨<u>さえ</u>降らなければ、ハイキングに出かけられますね。</p>
-</blockquote>
-<p>接続　名（＋助詞）＋さえ</p>
-<p>注意</p>
-<ol>
-<li>「〜さえ〜ば・〜さえ〜なら・〜さえ〜たら」という形で必要最低限の条件を示す。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜てでも"><a href="#〜てでも" class="headerlink" title="〜てでも"></a>〜てでも</h2><p>意味　普通はしないような〜という手段を使う覚悟で、あることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>熱があるが、大切な約束があるので、どんなことをし<u>てでも</u>行かなければならない。</p>
-</blockquote>
-<p>接続　動て形＋でも</p>
-<p>注意</p>
-<ol>
-<li>極端な手段を表す動詞につく。後には、話者の希望・意向をを表す文が来る。</li>
-</ol>
-<p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>結果はどうなったか</title>
     <url>/new-blog/c1089c68.html</url>
     <content><![CDATA[<h1 id="20課-結果はどうなったか"><a href="#20課-結果はどうなったか" class="headerlink" title="20課　結果はどうなったか"></a>20課　結果はどうなったか</h1><p>[復習]</p>
@@ -3403,6 +3771,102 @@ deploy:
 <blockquote>
 <p>Situation: You worked hard on a project, but in the end, it didn’t meet your expectations and you feel unsatisfied. Express your sense of dissatisfaction using the grammar point “〜ずじまいだ.”<br>一生懸命プロジェクトに取り組んだけれど、結局思ったようにならず、満足できずじまいです。</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>強く言う・軽く言う</title>
+    <url>/new-blog/9838a92e.html</url>
+    <content><![CDATA[<h1 id="第21課-強く言う・軽く言う"><a href="#第21課-強く言う・軽く言う" class="headerlink" title="第21課　強く言う・軽く言う"></a>第21課　強く言う・軽く言う</h1><p>[復習]</p>
+<ul>
+<li>今年<u>こそ</u>日記を書き続けよう。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜ぐらい・〜くらい"><a href="#〜ぐらい・〜くらい" class="headerlink" title="〜ぐらい・〜くらい"></a>〜ぐらい・〜くらい</h2><p>意味　〜は程度が軽い・最低限の程度だ。</p>
+<p>例文</p>
+<blockquote>
+<p>うちに帰ってきたら、自分の靴<u>ぐらい</u>ちゃんと並べなさい。</p>
+</blockquote>
+<p>接続　名・動・形普通形（ナ形<del>だ</del>-な）＋ぐらい・くらい</p>
+<p>注意</p>
+<ol>
+<li>話者が程度が軽いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜など・〜なんか・〜なんて"><a href="#〜など・〜なんか・〜なんて" class="headerlink" title="〜など・〜なんか・〜なんて"></a>〜など・〜なんか・〜なんて</h2><p>意味　〜は価値が低い・大切でははい。</p>
+<p>例文</p>
+<blockquote>
+<p>あの人の言ったこと<u>など</u>気にすることはありません。<br>新聞記者に<u>なんか</u>ならなければよかった。仕事がきつすぎる。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋など・なんか・なんて</p>
+<p>注意</p>
+<ol>
+<li>話者が価値が低いと考えている言葉につく。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まで・〜までして・〜てまで"><a href="#〜まで・〜までして・〜てまで" class="headerlink" title="〜まで・〜までして・〜てまで"></a>〜まで・〜までして・〜てまで</h2><p>意味　〜という極端な程度のもの・ことも、ある状態・あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>一番に賛成してくれると思っていた母<u>まで</u>私の結婚に反対した。<br>遊園地では、みんな長い時間並ん<u>でまで</u>ジェットコースターに乗りたがる。</p>
+</blockquote>
+<p>接続<br>    名（＋助詞）＋まで・までして<br>    動て形＋まで</p>
+<p>注意</p>
+<ol>
+<li>極端で意外性のある例を示す言葉につく。</li>
+<li>「〜までして・〜てまで」は話者が驚いたり呆れたりするような手段・事態を示し</li>
+</ol>
+<p>練習</p>
+<h2 id="〜として〜ない"><a href="#〜として〜ない" class="headerlink" title="〜として〜ない"></a>〜として〜ない</h2><p>意味　あることを「最低限度の〜も全くない」と否定する。</p>
+<p>例文</p>
+<blockquote>
+<p>人生に無駄なものは何一つ<u>としてない</u>。失敗も必ず何かの役に立つはずだ。<br>彼の提案にだれ一人<u>として</u>反対でき<u>なかった</u>。</p>
+</blockquote>
+<p>接続 （何・だれ＋）一＋助数詞＋として〜ない</p>
+<p>注意</p>
+<ol>
+<li>最低の単位「一＋助数詞」につく。後には、否定文が来る。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜さえ"><a href="#〜さえ" class="headerlink" title="〜さえ"></a>〜さえ</h2><p>意味　〜のような極端例もそうだから、ほかのことはもちろんだ。</p>
+<p>例文</p>
+<blockquote>
+<p>日本に来たばかりのときは、ひらがな<u>さえ</u>読めなかった。<br>この料理は簡単だ。料理の苦手なわたしで<u>さえ</u>失敗しなかった。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>後には、話者の意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<p>練習</p>
+<p>意味　〜という一つの条件が満たされれば、ほかのことは問題にならない。</p>
+<p>例文</p>
+<blockquote>
+<p>雨<u>さえ</u>降らなければ、ハイキングに出かけられますね。</p>
+</blockquote>
+<p>接続　名（＋助詞）＋さえ</p>
+<p>注意</p>
+<ol>
+<li>「〜さえ〜ば・〜さえ〜なら・〜さえ〜たら」という形で必要最低限の条件を示す。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜てでも"><a href="#〜てでも" class="headerlink" title="〜てでも"></a>〜てでも</h2><p>意味　普通はしないような〜という手段を使う覚悟で、あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>熱があるが、大切な約束があるので、どんなことをし<u>てでも</u>行かなければならない。</p>
+</blockquote>
+<p>接続　動て形＋でも</p>
+<p>注意</p>
+<ol>
+<li>極端な手段を表す動詞につく。後には、話者の希望・意向をを表す文が来る。</li>
+</ol>
+<p>練習</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -3593,73 +4057,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>強くそう感じる・思いが強いられる</title>
-    <url>/new-blog/d03492c8.html</url>
-    <content><![CDATA[<h1 id="強くそう感じる・思いが強いられる"><a href="#強くそう感じる・思いが強いられる" class="headerlink" title="強くそう感じる・思いが強いられる"></a>強くそう感じる・思いが強いられる</h1><p>[復習]</p>
-<ul>
-<li>歯が<u>とても</u>痛い。</li>
-<li>仕事があるので、日曜日にも会社行か<u>なければならない</u></li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てしかたがない・〜てしょうがない・〜てたまらない"><a href="#〜てしかたがない・〜てしょうがない・〜てたまらない" class="headerlink" title="〜てしかたがない・〜てしょうがない・〜てたまらない"></a>〜てしかたがない・〜てしょうがない・〜てたまらない</h2><p>意味　非常に〜だと感じる。</p>
-<p>例文</p>
-<blockquote>
-<p>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u><br>朝から何も食べていないので、おなかがすい<u>てたまらない</u></p>
-</blockquote>
-<p>接続　動て形・イ形＜て・ナ形で＋しかたがない・しょうがない・たまらない</p>
-<p>注意</p>
-<ol>
-<li>話者の感情・欲求などを表すにつく。</li>
-<li>特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
-</ol>
-<h2 id="〜てならない"><a href="#〜てならない" class="headerlink" title="〜てならない"></a>〜てならない</h2><p>意味　気持ちが非常に〜だ。</p>
-<p>例文</p>
-<blockquote>
-<p>さっきから何か大切なことを忘れているような気がして<u>ならない</u></p>
-</blockquote>
-<p>接続　動て形・イ形くて・ナ形で＋ならない</p>
-<p>注意</p>
-<ol>
-<li>マイナスの感情を表すことが多い。</li>
-</ol>
-<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>説明　feel compelled to; can’t help but feel; can’t help but do​</p>
-<p>意味　どうしても〜してしまって抑えられない。</p>
-<p>例文</p>
-<blockquote>
-<p>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></p>
-</blockquote>
-<p>接続<br>動ない形＋ではいられない<br>動<del>ない</del>＋ずにはいられない<br><span style="color:red">する　→ せずに</span></p>
-<p>注意</p>
-<ol>
-<li>自然に出てくる個人的な感情や行動を表す。</li>
-</ol>
-<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>説明　cannot avoid (doing); cannot help (doing); have no other choice but to; must (do)​</p>
-<p>意味　事情があって〜しなければならない</p>
-<p>例文</p>
-<blockquote>
-<p>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></p>
-</blockquote>
-<p>接続　動ない形＋わけに（は）いかない</p>
-<p>注意</p>
-<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>説明　have to; have no choice but to; cannot help (doing); be compelled to; be obliged to; be forced to​</p>
-<p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
-<p>例文</p>
-<blockquote>
-<p>週末も仕事で出かけ<u>ざるを得ない</u><br>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</p>
-</blockquote>
-<p>接続<br>動<del>ない</del>＋ざるを得ない<br><span style="color:red">する　→ せざる</span></p>
-<p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>提案する・いしを表す</title>
     <url>/new-blog/392ec375.html</url>
     <content><![CDATA[<h1 id="提案する・いしを表す"><a href="#提案する・いしを表す" class="headerlink" title="提案する・いしを表す"></a>提案する・いしを表す</h1><p>[復習]</p>
@@ -3729,6 +4126,73 @@ deploy:
 <ol>
 <li>否定の意志を少し感情的に強く言う。「もんか」はさらにくだけた言い方。</li>
 </ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>強くそう感じる・思いが強いられる</title>
+    <url>/new-blog/d03492c8.html</url>
+    <content><![CDATA[<h1 id="強くそう感じる・思いが強いられる"><a href="#強くそう感じる・思いが強いられる" class="headerlink" title="強くそう感じる・思いが強いられる"></a>強くそう感じる・思いが強いられる</h1><p>[復習]</p>
+<ul>
+<li>歯が<u>とても</u>痛い。</li>
+<li>仕事があるので、日曜日にも会社行か<u>なければならない</u></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てしかたがない・〜てしょうがない・〜てたまらない"><a href="#〜てしかたがない・〜てしょうがない・〜てたまらない" class="headerlink" title="〜てしかたがない・〜てしょうがない・〜てたまらない"></a>〜てしかたがない・〜てしょうがない・〜てたまらない</h2><p>意味　非常に〜だと感じる。</p>
+<p>例文</p>
+<blockquote>
+<p>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u><br>朝から何も食べていないので、おなかがすい<u>てたまらない</u></p>
+</blockquote>
+<p>接続　動て形・イ形＜て・ナ形で＋しかたがない・しょうがない・たまらない</p>
+<p>注意</p>
+<ol>
+<li>話者の感情・欲求などを表すにつく。</li>
+<li>特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
+</ol>
+<h2 id="〜てならない"><a href="#〜てならない" class="headerlink" title="〜てならない"></a>〜てならない</h2><p>意味　気持ちが非常に〜だ。</p>
+<p>例文</p>
+<blockquote>
+<p>さっきから何か大切なことを忘れているような気がして<u>ならない</u></p>
+</blockquote>
+<p>接続　動て形・イ形くて・ナ形で＋ならない</p>
+<p>注意</p>
+<ol>
+<li>マイナスの感情を表すことが多い。</li>
+</ol>
+<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>説明　feel compelled to; can’t help but feel; can’t help but do​</p>
+<p>意味　どうしても〜してしまって抑えられない。</p>
+<p>例文</p>
+<blockquote>
+<p>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></p>
+</blockquote>
+<p>接続<br>動ない形＋ではいられない<br>動<del>ない</del>＋ずにはいられない<br><span style="color:red">する　→ せずに</span></p>
+<p>注意</p>
+<ol>
+<li>自然に出てくる個人的な感情や行動を表す。</li>
+</ol>
+<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>説明　cannot avoid (doing); cannot help (doing); have no other choice but to; must (do)​</p>
+<p>意味　事情があって〜しなければならない</p>
+<p>例文</p>
+<blockquote>
+<p>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></p>
+</blockquote>
+<p>接続　動ない形＋わけに（は）いかない</p>
+<p>注意</p>
+<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>説明　have to; have no choice but to; cannot help (doing); be compelled to; be obliged to; be forced to​</p>
+<p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
+<p>例文</p>
+<blockquote>
+<p>週末も仕事で出かけ<u>ざるを得ない</u><br>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</p>
+</blockquote>
+<p>接続<br>動<del>ない</del>＋ざるを得ない<br><span style="color:red">する　→ せざる</span></p>
+<p>注意</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -3823,12 +4287,6 @@ deploy:
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
-]]></content>
   </entry>
   <entry>
     <title>文法形式の整理</title>
@@ -4745,6 +5203,12 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>文の組み立て−3　「〜ない」がつく文法形式</title>
     <url>/new-blog/e6787bff.html</url>
     <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
@@ -5419,56 +5883,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>もし</title>
-    <url>/new-blog/e715b1f8.html</url>
-    <content><![CDATA[<h1 id="もし"><a href="#もし" class="headerlink" title="もし"></a>もし</h1><span id="more"></span>
-
-<h2 id="〜（の）なら"><a href="#〜（の）なら" class="headerlink" title="〜（の）なら"></a>〜（の）なら</h2><p>例文</p>
-<blockquote>
-<p>その本、読んでしまった<u>のなら</u>私に貸してくれませんか</p>
-</blockquote>
-<p>说明　「〜という情報を受けて、…。」〜はほかの人の話や様子などからわかったこと、…は話者の判断・意志・相手への働きかけの文</p>
-<p>接续　普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋（の）なら</p>
-<h2 id="〜ては・〜（の）では"><a href="#〜ては・〜（の）では" class="headerlink" title="〜ては・〜（の）では"></a>〜ては・〜（の）では</h2><p>例文</p>
-<blockquote>
-<p>山中さんは手術したばかりだから、お見舞い行っ<u>ては</u>かえって迷惑だろう。<br>今から家を建て始める<u>のでは</u>年内にはできあがらない。</p>
-</blockquote>
-<p>说明　「〜という事実（または仮定の状況）だと、…という良くない結果になる」。</p>
-<p>接続　<br>    動て形・イ形<del>い</del>くて・ナ形<del>な</del>で・名で＋は<br>    普通形（ナ形<del>だ</del>ーな）＋のでは</p>
-<h2 id="〜さえ〜ば・〜さえ〜なら"><a href="#〜さえ〜ば・〜さえ〜なら" class="headerlink" title="〜さえ〜ば・〜さえ〜なら"></a>〜さえ〜ば・〜さえ〜なら</h2><p>例句</p>
-<blockquote>
-<p>太郎は漫画<u>さえ</u>読んでいれ<u>ば</u>退屈しないようだ。<br>体<u>さえ</u>丈夫<u>なら</u>どんなことにも挑戦できる。</p>
-</blockquote>
-<p>说明　「〜が実現すれば、それだけで…が実現する。」「〜さえ〜ば」は…が成り立つための必要最低限の条件を示す。</p>
-<p>接续<br>    名さえ＋動ば形・イ形ければ<br>    名さえ＋ナ形なら・名なら<br>    動<del>ます</del>＋さえ＋すれば</p>
-<h2 id="たとえ〜ても・たとえ〜でも"><a href="#たとえ〜ても・たとえ〜でも" class="headerlink" title="たとえ〜ても・たとえ〜でも"></a>たとえ〜ても・たとえ〜でも</h2><p>例句</p>
-<blockquote>
-<p><u>たとえ</u>みんなに反対され<u>ても</u>、私は絶対にこの計画を実行したい。<br><u>たとえ</u>高<u>くても</u>、必要なものは買わなければならない</p>
-</blockquote>
-<p>接续　</p>
-<blockquote>
-<p>たとえ＋动词「て」＋も<br>たとえ＋イ形<del>い</del>＋くて＋も<br>たとえ＋ナ形<del>な</del>＋で＋も<br>たとえ＋名词＋で＋も</p>
-</blockquote>
-<p>说明 「〜が事実だと仮定した場合でも、それに関係なく…」。<br>“即使。。。也。。。”。表示就算前项成立，后项也不会受此影响。</p>
-<h2 id="〜ば・〜たら・〜なら"><a href="#〜ば・〜たら・〜なら" class="headerlink" title="〜ば・〜たら・〜なら"></a>〜ば・〜たら・〜なら</h2><p>例文</p>
-<blockquote>
-<p>お金とひまがあれ<u>ば</u>わたしも海外旅行するだけど</p>
-</blockquote>
-<p>说明　「もし〜の場合、…という結果になるはずだが、実際にはそうではない。」</p>
-<p>接続</p>
-<blockquote>
-<p>動ば形・イ形<del>い</del>ければ・ナ形なら・名なら<br>動<del>ない</del>なければ・イ形<del>い</del>くなければ・ナ形<del>な</del>でなければ・名でなければ<br>普通形（過去形だけ）＋ら</p>
-</blockquote>
-<p>注意　表示虚拟语气。经常和助词「もし」搭配使用。</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜と関係して</title>
     <url>/new-blog/9d184406.html</url>
     <content><![CDATA[<h1 id="〜と関係して"><a href="#〜と関係して" class="headerlink" title="〜と関係して"></a>〜と関係して</h1><span id="more"></span>
@@ -5511,6 +5925,56 @@ deploy:
 </blockquote>
 <p>说明　“趁着～，顺道做…”，用于表示同时做两个不同的行为。〜是主要行为，…是附带行为</p>
 <p>接续　名詞 <del>する</del>の・動辞書&#x2F;た＋ついでに</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>もし</title>
+    <url>/new-blog/e715b1f8.html</url>
+    <content><![CDATA[<h1 id="もし"><a href="#もし" class="headerlink" title="もし"></a>もし</h1><span id="more"></span>
+
+<h2 id="〜（の）なら"><a href="#〜（の）なら" class="headerlink" title="〜（の）なら"></a>〜（の）なら</h2><p>例文</p>
+<blockquote>
+<p>その本、読んでしまった<u>のなら</u>私に貸してくれませんか</p>
+</blockquote>
+<p>说明　「〜という情報を受けて、…。」〜はほかの人の話や様子などからわかったこと、…は話者の判断・意志・相手への働きかけの文</p>
+<p>接续　普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋（の）なら</p>
+<h2 id="〜ては・〜（の）では"><a href="#〜ては・〜（の）では" class="headerlink" title="〜ては・〜（の）では"></a>〜ては・〜（の）では</h2><p>例文</p>
+<blockquote>
+<p>山中さんは手術したばかりだから、お見舞い行っ<u>ては</u>かえって迷惑だろう。<br>今から家を建て始める<u>のでは</u>年内にはできあがらない。</p>
+</blockquote>
+<p>说明　「〜という事実（または仮定の状況）だと、…という良くない結果になる」。</p>
+<p>接続　<br>    動て形・イ形<del>い</del>くて・ナ形<del>な</del>で・名で＋は<br>    普通形（ナ形<del>だ</del>ーな）＋のでは</p>
+<h2 id="〜さえ〜ば・〜さえ〜なら"><a href="#〜さえ〜ば・〜さえ〜なら" class="headerlink" title="〜さえ〜ば・〜さえ〜なら"></a>〜さえ〜ば・〜さえ〜なら</h2><p>例句</p>
+<blockquote>
+<p>太郎は漫画<u>さえ</u>読んでいれ<u>ば</u>退屈しないようだ。<br>体<u>さえ</u>丈夫<u>なら</u>どんなことにも挑戦できる。</p>
+</blockquote>
+<p>说明　「〜が実現すれば、それだけで…が実現する。」「〜さえ〜ば」は…が成り立つための必要最低限の条件を示す。</p>
+<p>接续<br>    名さえ＋動ば形・イ形ければ<br>    名さえ＋ナ形なら・名なら<br>    動<del>ます</del>＋さえ＋すれば</p>
+<h2 id="たとえ〜ても・たとえ〜でも"><a href="#たとえ〜ても・たとえ〜でも" class="headerlink" title="たとえ〜ても・たとえ〜でも"></a>たとえ〜ても・たとえ〜でも</h2><p>例句</p>
+<blockquote>
+<p><u>たとえ</u>みんなに反対され<u>ても</u>、私は絶対にこの計画を実行したい。<br><u>たとえ</u>高<u>くても</u>、必要なものは買わなければならない</p>
+</blockquote>
+<p>接续　</p>
+<blockquote>
+<p>たとえ＋动词「て」＋も<br>たとえ＋イ形<del>い</del>＋くて＋も<br>たとえ＋ナ形<del>な</del>＋で＋も<br>たとえ＋名词＋で＋も</p>
+</blockquote>
+<p>说明 「〜が事実だと仮定した場合でも、それに関係なく…」。<br>“即使。。。也。。。”。表示就算前项成立，后项也不会受此影响。</p>
+<h2 id="〜ば・〜たら・〜なら"><a href="#〜ば・〜たら・〜なら" class="headerlink" title="〜ば・〜たら・〜なら"></a>〜ば・〜たら・〜なら</h2><p>例文</p>
+<blockquote>
+<p>お金とひまがあれ<u>ば</u>わたしも海外旅行するだけど</p>
+</blockquote>
+<p>说明　「もし〜の場合、…という結果になるはずだが、実際にはそうではない。」</p>
+<p>接続</p>
+<blockquote>
+<p>動ば形・イ形<del>い</del>ければ・ナ形なら・名なら<br>動<del>ない</del>なければ・イ形<del>い</del>くなければ・ナ形<del>な</del>でなければ・名でなければ<br>普通形（過去形だけ）＋ら</p>
+</blockquote>
+<p>注意　表示虚拟语气。经常和助词「もし」搭配使用。</p>
 ]]></content>
       <categories>
         <category>N3</category>
