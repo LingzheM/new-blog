@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/d4fa8842.html</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>BootTheSystem</title>
     <url>/new-blog/3ef0ab2f.html</url>
     <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
@@ -2828,6 +2866,261 @@ funcs[0](); // 0
             a promise
         </td>
     </tr>
+</table>
+
+<h2 id="4日目-1"><a href="#4日目-1" class="headerlink" title="4日目"></a>4日目</h2><blockquote>
+<p>私は家に帰るとすぐ留守番電話の伝言を聞き、再生済みの用件を消する。携帯電話は電車の中や仕事中など、普段はマナーモードに設定している。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>帯</td>
+        <td>
+            タイ<br>
+            おび
+        </td>
+        <td>
+            地帯<br>
+            帯
+        </td>
+        <td>
+            a region / area<br>
+            a belt / sash
+        </td>
+    </tr>
+    <tr>
+        <td>保</td>
+        <td>
+            ホ<br>
+            たもーつ
+        </td>
+        <td>
+            保温<br>
+            保湿<br>
+            保つ
+        </td>
+        <td>
+            retention of warmth<br>
+            retention of dempness<br>
+            keep / maintain
+        </td>
+    </tr>
+    <tr>
+        <td>留</td>
+        <td>
+            リュウ<br>
+            ル<br>
+            とーめる
+        </td>
+        <td>
+            保留<br>
+            停留所<br>
+            書留
+        </td>
+        <td>
+            a reservation<br>
+            a bus stop<br>
+            registration
+        </td>
+    </tr>
+    <tr>
+        <td>守</td>
+        <td>
+            シュ<br>
+            ス<br>
+            まもーる
+        </td>
+        <td>
+            <ruby>保守的<rp>(</rp><rt>ほしゅてき</rt><rp>)</rp></ruby><br>
+            <ruby>留守<rp>(</rp><rt>るす</rt><rp>)</rp></ruby><br>
+            <ruby>守<rp>(</rp><rt>まも</rt><rp>)</rp></ruby>る
+        </td>
+        <td>
+            conservative<br>
+            absence<br>
+            protect
+        </td>
+    </tr>
+   <tr>
+        <td>伝</td>
+        <td>
+            デン<br>
+            つたーわる<br>
+            つたーえる
+        </td>
+        <td>
+            <ruby>伝言<rp>(</rp><rt>でんごん</rt><rp>)</rp></ruby><br>
+            <ruby>伝<rp>(</rp><rt>つた</rt><rp>)</rp></ruby>える<br>
+            <ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>う
+        </td>
+        <td>
+            a message<br>
+            convery / communicate<br>
+            help
+        </td>
+    </tr>
+    <tr>
+        <td>済</td>
+        <td>
+            サイ<br>
+            すーむ<br>
+            すーます
+        </td>
+        <td>
+            <ruby>済<rp>(</rp><rt>す</rt><rp>)</rp></ruby>む<br>
+            〜<ruby>済<rp>(</rp><rt>ず</rt><rp>)</rp></ruby>み<br>
+            <ruby>返済<rp>(</rp><rt>へんさい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            finish<br>
+            completed<br>
+            repayment
+        </td>
+    </tr>
+    <tr>
+        <td>件</td>
+        <td>
+            ケン
+        </td>
+        <td>
+            <ruby>用件<rp>(</rp><rt>ようけん</rt><rp>)</rp></ruby><br>
+            <ruby>件名<rp>(</rp><rt>けんめい</rt><rp>)</rp></ruby><br>
+            <ruby>事件<rp>(</rp><rt>じけん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a business / matter<br>
+            subject<br>
+            an incident
+        </td>
+    </tr>
+</table>
+
+<blockquote>
+<p>「着信履歴」やメールの「受信箱」を確認して、用件があれば返信する。新しくアドレスを作成する場合は、「新規」で入力する。文字は自分で変化したり並んでいる言葉の中から「選択」したりして、「決定」あるいは「確定」する。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>信</td>
+        <td>
+            シン
+        </td>
+        <td>
+            <ruby>通信<rp>(</rp><rt>つうしん</rt><rp>)</rp></ruby><br>
+            <ruby>自信<rp>(</rp><rt>じしん</rt><rp>)</rp></ruby><br>
+            <ruby>信<rp>(</rp><rt>信</rt><rp>)</rp></ruby>じる
+        </td>
+        <td>
+            correspondence<br>
+            confidence<br>
+            believe
+        </td>
+    </tr>
+    <tr>
+        <td>暦</td>
+        <td>
+            レキ
+        </td>
+        <td>
+            <ruby>着信履歴<rp>(</rp><rt>ちゃくしんりれき</rt><rp>)</rp></ruby><br>
+            <ruby>履歴書<rp>(</rp><rt>履歴書</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            record of calls received<br>
+            a resume
+        </td>
+    </tr>
+    <tr>
+        <td>箱</td>
+        <td>
+            はこ
+        </td>
+        <td>
+            <ruby>受信箱<rp>(</rp><rt>じゅしんばこ</rt><rp>)</rp></ruby><br>
+            <ruby>送信箱<rp>(</rp><rt>そうしんばこ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            inbox<br>
+            outbox
+        </td>
+    </tr>
+    <tr>
+        <td>規</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>新規<rp>(</rp><rt>しんき</rt><rp>)</rp></ruby><br>
+            <ruby>規定<rp>(</rp><rt>きてい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            new / fresh<br>
+            regulation
+        </td>
+    </tr>
+   <tr>
+        <td>変</td>
+        <td>
+            ヘン<br>
+            かーわる<br>
+            かーえる
+        </td>
+        <td>
+            <ruby>変換<rp>(</rp><rt>へんかん</rt><rp>)</rp></ruby><br>
+            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わる<br>
+            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>える
+        </td>
+        <td>
+            conversion<br>
+            change<br>
+            change(something)
+        </td>
+    </tr>
+    <tr>
+        <td>選</td>
+        <td>
+            セン<br>
+            えらーぶ
+        </td>
+        <td>
+            <ruby>選択<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>む<br>
+            <ruby>選考<rp>(</rp><rt>せんこう</rt><rp>)</rp></ruby><br>
+            <ruby>選<rp>(</rp><rt>えら</rt><rp>)</rp></ruby>ぶ
+        </td>
+        <td>
+            a choice<br>
+            a player, an athlete<br>
+            choose
+        </td>
+    </tr>
+    <tr>
+        <td>決</td>
+        <td>
+            ケツ<br>
+            きーめる<br>
+            きーまる
+        </td>
+        <td>
+            <ruby>決定<rp>(</rp><rt>けってい</rt><rp>)</rp></ruby><br>
+            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>める<br>
+            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>まる
+        </td>
+        <td>
+            a decision<br>
+            decide (something)<br>
+            be decided
+        </td>
+    </tr>
 </table>]]></content>
       <categories>
         <category>N2</category>
@@ -2880,134 +3173,6 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/d4fa8842.html</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
-    <url>/new-blog/hexoThemeAndPlugin.html</url>
-    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
-<span id="more"></span>
-
-<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
-<ol>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
-</li>
-<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
-</li>
-<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
-</li>
-<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
-</li>
-</ol>
-<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
-<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
-</li>
-</ol>
-<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
-</code></pre>
-<ol start="3">
-<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
-</ol>
-<pre><code>mkdir themes/next
-</code></pre>
-<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
-<ol start="4">
-<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
-</ol>
-<pre><code>cp -r hexo-theme-next/* /themes/next
-</code></pre>
-<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
-<pre><code>theme: next
-</code></pre>
-<p>と設定することで、新しいテーマを使用できます。</p>
-<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-generator-searchdb --save
-</code></pre>
-<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
-<pre><code>search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
-<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
-<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
-<p><code>/2023/06/22/230622</code></p>
-<p>以下のような形式に変更したいです：</p>
-<p><code>/migrateopsmanager</code></p>
-<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
-<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-abbrlink --save
-</code></pre>
-<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
-<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
-<pre><code>permalink: posts/:abbrlink/ 
-# or
-permalink: posts/:abbrlink.html
-</code></pre>
-<blockquote>
-<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
     <url>/new-blog/66c5e938.html</url>
     <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
@@ -3038,7 +3203,7 @@ npm -v
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#111;&#x75;&#x72;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;">&#121;&#111;&#x75;&#x72;&#46;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<p>“Your Name”と”<a href="mailto:&#121;&#111;&#x75;&#x72;&#x2e;&#x65;&#109;&#x61;&#x69;&#108;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x72;&#x2e;&#x65;&#109;&#x61;&#x69;&#108;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
 <h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
 <p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
@@ -3283,71 +3448,93 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
-<ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
-</ul>
+    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
+    <url>/new-blog/hexoThemeAndPlugin.html</url>
+    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
 <span id="more"></span>
 
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
-<p>例文</p>
-<blockquote>
-<p>チャンスがあっ<u>てはじめて</u>、才能が生きてくるのではないだろうか。</p>
-</blockquote>
-<p>接続　動て形＋はじめて</p>
-<p>注意　</p>
+<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
 <ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
+</li>
+<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
+</li>
+<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
+</li>
+<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
+</li>
 </ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
-<p>例文</p>
-<blockquote>
-<p>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
-</blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
+<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
+<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
+</li>
+</ol>
+<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
+</code></pre>
+<ol start="3">
+<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
+</ol>
+<pre><code>mkdir themes/next
+</code></pre>
+<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
+<ol start="4">
+<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
+</ol>
+<pre><code>cp -r hexo-theme-next/* /themes/next
+</code></pre>
+<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
+<pre><code>theme: next
+</code></pre>
+<p>と設定することで、新しいテーマを使用できます。</p>
+<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
 <ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
+</li>
 </ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
+<pre><code>npm install hexo-generator-searchdb --save
+</code></pre>
+<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
+<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
+<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
+<p><code>/2023/06/22/230622</code></p>
+<p>以下のような形式に変更したいです：</p>
+<p><code>/migrateopsmanager</code></p>
+<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
+<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
 <ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
+</li>
 </ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
+<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
+<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
+<pre><code>permalink: posts/:abbrlink/ 
+# or
+permalink: posts/:abbrlink.html
+</code></pre>
 <blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
 </blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
-        <category>N2</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -3743,6 +3930,74 @@ deploy:
 </blockquote>
 <p>接続　動辞書形＋につけて</p>
 <p>注意</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>チャンスがあっ<u>てはじめて</u>、才能が生きてくるのではないだろうか。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -4172,83 +4427,6 @@ deploy:
 <li>現時点での状況を表す言葉につく。</li>
 <li>張り紙や公式文書などに使う。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だから（理由）-2</title>
-    <url>/new-blog/ba5c1c5.html</url>
-    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
-
-<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
-<p>例文　</p>
-<blockquote>
-<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
-<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
-<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
-<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
-</code></pre>
-<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
-<p>例文　</p>
-<blockquote>
-<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
-</blockquote>
-<p>接続　名＋のことだから</p>
-<p>注意　</p>
-<ol>
-<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
-</ol>
-<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
-<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
-</code></pre>
-<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
-<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
-<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
-<p>注意　</p>
-<ol>
-<li>「名だ」の形には接続しない。</li>
-<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
-<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
-</code></pre>
-<h2 id="〜ばかりに"><a href="#〜ばかりに" class="headerlink" title="〜ばかりに"></a>〜ばかりに</h2><p>説明（because (of a negative thing); simply because; simply on account of）</p>
-<p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
-<p>例文 </p>
-<blockquote>
-<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
-<p>注意　</p>
-<ol>
-<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
-<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
-</code></pre>
-<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
-<p>例文</p>
-<blockquote>
-<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
-<p>注意　</p>
-<ol>
-<li>文全体で、一般的に当然と思われることを表す。</li>
-<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
-</ol>
-<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
-<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
-</code></pre>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -4723,6 +4901,83 @@ deploy:
       <tags>
         <tag>N2</tag>
         <tag>express subjectivity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜だから（理由）-2</title>
+    <url>/new-blog/ba5c1c5.html</url>
+    <content><![CDATA[<h1 id="〜だから（理由）-2"><a href="#〜だから（理由）-2" class="headerlink" title="〜だから（理由）-2"></a>〜だから（理由）-2</h1><span id="more"></span>
+
+<h2 id="〜ことだし"><a href="#〜ことだし" class="headerlink" title="〜ことだし"></a>〜ことだし</h2><p>意味　ほかにも理由はあるが、とにかく〜だからあることをする。</p>
+<p>例文　</p>
+<blockquote>
+<p>雨もやんだ<u>ことだし</u>、ちょっとジョギングしてこようかな。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ことだし</p>
+<p>注意　後には、話者の判断・希望・意向を表す文や働きかけの文などが来る。</p>
+<p>練習<br>    Situation: You and your friend are planning a trip. You want to suggest visiting a famous historical site since you’ll be in that area. Use “〜ことだし” in your sentence to express the reason for your suggestion.</p>
+<pre><code>この地域にいることだし、有名な歴史的な観光スポットに行きましょう。
+</code></pre>
+<h2 id="〜のことだから"><a href="#〜のことだから" class="headerlink" title="〜のことだから"></a>〜のことだから</h2><p>意味　〜の性格や普段の態度から考えると、あることが推量される。</p>
+<p>例文　</p>
+<blockquote>
+<p>太郎の帰りが遅いね。でも、あの子<u>のことだ</u>。どこかの本屋で立ち読みでもして時間が経つの忘れているんだろう。</p>
+</blockquote>
+<p>接続　名＋のことだから</p>
+<p>注意　</p>
+<ol>
+<li>主に人を表す言葉につく。後には、話者の判断・推量などを表す文が来る。</li>
+</ol>
+<p>練習<br>    Situation: Your friend is known for being very punctual and organized. You’re discussing an upcoming event and want to express your confidence in your friend’s ability to handle the logistics. Use “〜のことだから” in your sentence to convey your trust in your friend.</p>
+<pre><code>君のことだから、イベントの計画をきちんと進めてくれると信じています。
+</code></pre>
+<h2 id="〜だけに"><a href="#〜だけに" class="headerlink" title="〜だけに"></a>〜だけに</h2><p>意味　〜だから、ある状態なのは当然だ・普通の場合よりもっとある状態になる。</p>
+<p>例文　母は花が好きなだけに、花をもらうと大喜びする。</p>
+<p>接続　名・普通形（ナ形<del>だ</del> -な／-である・名-である）＋だけに</p>
+<p>注意　</p>
+<ol>
+<li>「名だ」の形には接続しない。</li>
+<li>後には、「〜」という理由にふさわしい程度や状態を表す文が来る。働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You have a friend who is an experienced chef. You’re about to taste their signature dish for the first time. Use “〜だけに” in your sentence to express your high expectations due to your friend’s expertise.</p>
+<pre><code>彼の料理は経験豊富なだけに、大いに期待しています。
+</code></pre>
+<h2 id="〜ばかりに"><a href="#〜ばかりに" class="headerlink" title="〜ばかりに"></a>〜ばかりに</h2><p>説明（because (of a negative thing); simply because; simply on account of）</p>
+<p>意味　〜が原因で、予期しない悪い結果になった・どうしても〜ということを実現したいので、普通ではないことをした。</p>
+<p>例文 </p>
+<blockquote>
+<p>渡し船があることを知らなかった<u>ばかりに</u>歩いて湖を半周してしまった。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del> -な／-である・名<del>だ</del> -な／-である）＋ばかりに</p>
+<p>注意　</p>
+<ol>
+<li>はそれだけのことが原因で、予期しないマイナスの結果になったということを表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<p>練習<br>    Situation: You were in a rush and accidentally spilled coffee on your colleague’s important documents. Apologize to your colleague and explain that it happened because you were in a hurry. Use “〜ばかりに” in your sentence to convey the unintended consequence of your actions.</p>
+<pre><code>急いでいたばかりに、うっかり同僚の大切な書類にコーヒーをこぼしてしまいました。本当に申し訳ありません。
+</code></pre>
+<h2 id="〜からには・〜以上（は）・〜上は"><a href="#〜からには・〜以上（は）・〜上は" class="headerlink" title="〜からには・〜以上（は）・〜上は"></a>〜からには・〜以上（は）・〜上は</h2><p>意味　〜のだから、あることをするのは当然だ・あることをしてほしい・あることをするつもりだ。</p>
+<p>例文</p>
+<blockquote>
+<p>高いお金を払って外国旅行する<u>からには</u>、大い楽しまなければ損だ。<br>自分一人でやると言った<u>以上</u>、みんなに助けてもらうことはできない。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋からには・以上（は）<br>    動辞書形／た形＋上は</p>
+<p>注意　</p>
+<ol>
+<li>文全体で、一般的に当然と思われることを表す。</li>
+<li>後には、話者の判断・希望・意向を表す文や働きかけの文が来る。</li>
+</ol>
+<p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
+<pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
+</code></pre>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
       </tags>
   </entry>
   <entry>
@@ -6574,43 +6829,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>比べれば…・〜がいちばん</title>
-    <url>/new-blog/a457ced0.html</url>
-    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
-
-<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
-<blockquote>
-<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
-</blockquote>
-<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
-<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
-<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
-<blockquote>
-<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
-</blockquote>
-<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续　名+くらい…はない・ぐらい…はない</p>
-<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
-<blockquote>
-<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
-</blockquote>
-<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
-<p>接续 動詞辞书形+くらいなら…</p>
-<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
-<blockquote>
-<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
-</blockquote>
-<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜とは違って</title>
     <url>/new-blog/b9249d31.html</url>
     <content><![CDATA[<h1 id="〜とは違って"><a href="#〜とは違って" class="headerlink" title="〜とは違って"></a>〜とは違って</h1><span id="more"></span>
@@ -6689,6 +6907,43 @@ deploy:
 </blockquote>
 <p>说明 「〜が事実だから、当然…。」<br>表示”因为存在～的事实，所以当然…“。～为听话人应当知道的事实的小句，…表示说话人的判断、愿望、意愿的表达方式。</p>
 <p>接続　普通形（ナ形<del>だ</del>ーな）＋のだから</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>比べれば…・〜がいちばん</title>
+    <url>/new-blog/a457ced0.html</url>
+    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
+
+<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
+<blockquote>
+<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
+</blockquote>
+<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
+<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
+<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
+<blockquote>
+<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
+</blockquote>
+<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续　名+くらい…はない・ぐらい…はない</p>
+<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
+<blockquote>
+<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
+</blockquote>
+<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
+<p>接续 動詞辞书形+くらいなら…</p>
+<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
+<blockquote>
+<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
+</blockquote>
+<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
 ]]></content>
       <categories>
         <category>N3</category>
