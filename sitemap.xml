@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lingzhem.github.io/e1ec0a2a.html</loc>
+    
+    <lastmod>2023-09-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lingzhem.github.io/51ced3cf.html</loc>
     
     <lastmod>2023-09-13</lastmod>
@@ -452,15 +461,6 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/e1ec0a2a.html</loc>
-    
-    <lastmod>2023-06-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/hexoThemeAndPlugin.html</loc>
     
     <lastmod>2023-06-27</lastmod>
@@ -612,13 +612,6 @@
   </url>
   
   <url>
-    <loc>https://lingzhem.github.io/tags/JavaScript/</loc>
-    <lastmod>2023-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lingzhem.github.io/tags/Basic-Information-Technician/</loc>
     <lastmod>2023-09-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -627,6 +620,13 @@
   
   <url>
     <loc>https://lingzhem.github.io/tags/Tecnology/</loc>
+    <lastmod>2023-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingzhem.github.io/tags/JavaScript/</loc>
     <lastmod>2023-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
