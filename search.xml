@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Exam Objectives</title>
+    <url>/new-blog/d4fa8842.html</url>
+    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
+<li>101.1 Determine and Configure hardware settings(weight 2).</li>
+<li>101.2 Boot the System (weight 3).</li>
+<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
+<li>Enable and disable integrated peripherals.</li>
+<li>Differentiate between the various types of mass storage devices.</li>
+<li>Determine hardware resources for devices.</li>
+<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
+<li>Tools and utilities to manipulate USB devices.</li>
+<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
+<li>The following is a partial list of the used files, terms, and utilities: <ul>
+<li>&#x2F;sys&#x2F; </li>
+<li>&#x2F;proc&#x2F; </li>
+<li>&#x2F;dev&#x2F;</li>
+<li>modprobe </li>
+<li>lsmod</li>
+<li>lspci</li>
+<li>lsusb.</li>
+</ul>
+</li>
+</ul>
+<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
+<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
+]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>BootTheSystem</title>
     <url>/new-blog/3ef0ab2f.html</url>
     <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
@@ -69,44 +107,6 @@ set root=(hd0,1)
 </ul>
 <p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
 <h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Exam Objectives</title>
-    <url>/new-blog/d4fa8842.html</url>
-    <content><![CDATA[<h1 id="101-System-Architecture"><a href="#101-System-Architecture" class="headerlink" title="101 System Architecture"></a>101 System Architecture</h1><ul>
-<li>101.1 Determine and Configure hardware settings(weight 2).</li>
-<li>101.2 Boot the System (weight 3).</li>
-<li>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot(weight 3).</li>
-</ul>
-<span id="more"></span>
-
-<h1 id="Topic-101-System-Architecture"><a href="#Topic-101-System-Architecture" class="headerlink" title="Topic 101: System Architecture"></a>Topic 101: System Architecture</h1><h2 id="101-1-Determine-and-Configure-hardware-settings-Chapter-3"><a href="#101-1-Determine-and-Configure-hardware-settings-Chapter-3" class="headerlink" title="101.1 Determine and Configure hardware settings (Chapter 3)"></a>101.1 Determine and Configure hardware settings (Chapter 3)</h2><ul>
-<li>Enable and disable integrated peripherals.</li>
-<li>Differentiate between the various types of mass storage devices.</li>
-<li>Determine hardware resources for devices.</li>
-<li>Tools and utilities to list various hardware information (e.g., lsusb, lspci, etc.).</li>
-<li>Tools and utilities to manipulate USB devices.</li>
-<li>Conceptual understanding of sysfs, udev, hald, dbus.</li>
-<li>The following is a partial list of the used files, terms, and utilities: <ul>
-<li>&#x2F;sys&#x2F; </li>
-<li>&#x2F;proc&#x2F; </li>
-<li>&#x2F;dev&#x2F;</li>
-<li>modprobe </li>
-<li>lsmod</li>
-<li>lspci</li>
-<li>lsusb.</li>
-</ul>
-</li>
-</ul>
-<h2 id="101-2-Boot-the-System-Chapter-5"><a href="#101-2-Boot-the-System-Chapter-5" class="headerlink" title="101.2 Boot the System (Chapter 5)"></a>101.2 Boot the System (Chapter 5)</h2><p>■■ Provide common commands to the boot loader and options to the kernel at boot time.<br>■■ Demonstrate knowledge of the boot sequence from BIOS&#x2F;UEFI to boot completion.<br>■■ Understanding of SysVinit and system.<br>■■ Awareness of Upstart.<br>■■ Check boot events in the log file.<br>■■ The following is a partial list of the used files, terms and utilities: dmesg, journalctl,<br>BIOS, UEFI, bootloader, kernel, init, initramfs, SysVinit, systemd.</p>
-<h2 id="101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot"><a href="#101-3-Change-runlevels-x2F-boot-targets-and-shutdown-or-reboot" class="headerlink" title="101.3 Change runlevels&#x2F;boot targets and shutdown or reboot"></a>101.3 Change runlevels&#x2F;boot targets and shutdown or reboot</h2><p>system (Chapter 5)<br>■■ Set the default run level or boot target.<br>■■ Change between run levels&#x2F;boot targets including single user mode.<br>■■ Shutdown and reboot from the command line.<br>■■ Alert users before switching run levels&#x2F;boot targets or other major system events.<br>■■ Properly terminate processes.<br>■■ Awareness of acpid.<br>■■ The following is a partial list of the used files, terms and utilities: &#x2F;etc&#x2F;inittab,<br>shutdown, init, &#x2F;etc&#x2F;init.d, telinit, systemd, systemctl, &#x2F;etc&#x2F;systemd&#x2F;,<br>&#x2F;usr&#x2F;lib&#x2F;system&#x2F;, wall.</p>
-]]></content>
       <categories>
         <category>LPIC</category>
       </categories>
@@ -1865,1494 +1865,6 @@ funcs[0](); // 0
         <td>
             first aid<br>
             save
-        </td>
-    </tr>
-</table>]]></content>
-      <categories>
-        <category>KanJi</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>KanJi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二週 つかう①</title>
-    <url>/new-blog/84b7d475.html</url>
-    <content><![CDATA[<h1 id="第二週-つかう①"><a href="#第二週-つかう①" class="headerlink" title="第二週　つかう①"></a>第二週　つかう①</h1><span id="more"></span>
-
-<h2 id="1日目-自動券売機"><a href="#1日目-自動券売機" class="headerlink" title="1日目　自動券売機"></a>1日目　自動券売機</h2><blockquote>
-<p>普通乗車券、回数券だけでなく、新幹線の自由券も自動券売機で買うことができます。お金を入れて、行き先、往復か片道か、枚数などのボタンを押します。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>普</td>
-        <td>
-            フ
-        </td>
-        <td>
-            <ruby>普通<rp>(</rp><rt>ふつう</rt><rp>)</rp></ruby><br>
-            <ruby>普段<rp>(</rp><rt>ふだん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            ordinary<br>
-            usually
-        </td>
-    </tr>
-    <tr>
-        <td>券</td>
-        <td>
-            ケン
-        </td>
-        <td>
-            <ruby>回数券<rp>(</rp><rt>かいすうけん</rt><rp>)</rp></ruby><br>
-            <ruby>乗車券<rp>(</rp><rt>じょうしゃけん</rt><rp>)</rp></ruby><br>
-        </td>
-        <td>
-            a (book of) commuter ticket(s)<br>
-            a ticket
-        </td>
-    </tr>
-    <tr>
-        <td>数</td>
-        <td>
-            スウ<br>
-            かず<br>
-            かぞーえる
-        </td>
-        <td>
-            <ruby>数字<rp>(</rp><rt>すうじ</rt><rp>)</rp></ruby><br>
-            数を<ruby>数<rp>(</rp><rt>かぞ</rt><rp>)</rp>える</ruby>
-        </td>
-        <td>
-            number<br>
-            count numbers
-        </td>
-    </tr>
-    <tr>
-        <td>機</td>
-        <td>
-            キ
-        </td>
-        <td>
-            <ruby>危機<rp>(</rp><rt>きき</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a crisis
-        </td>
-    </tr>
-    <tr>
-        <td>復</td>
-        <td>
-            フク
-        </td>
-        <td>
-            <ruby>復習<rp>(</rp><rt>ふくしゅう</rt><rp>)</rp></ruby><br>
-            <ruby>往復<rp>(</rp><rt>おうふく</rt><rp>)</rp></ruby><br>
-            <ruby>回復<rp>(</rp><rt>かいふく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a review<br>
-            a round trip<br>
-            recovery
-        </td>
-    </tr>
-    <tr>
-        <td>片</td>
-        <td>
-            ヘン<br>
-            かた
-        </td>
-        <td>
-            <ruby>破片<rp>(</rp><rt>はへん</rt><rp>)</rp></ruby><br>
-            <ruby>片付<rp>(</rp><rt>かたづ</rt><rp>)</rp></ruby>ける
-        </td>
-        <td>
-            an one way ticket<br>
-            tidy up
-        </td>
-    </tr>
-    <tr>
-        <td>枚</td>
-        <td>
-            マイ
-        </td>
-        <td>
-            〜<ruby>枚<rp>(</rp><rt>まい</rt><rp>)</rp></ruby><br>
-            <ruby>枚数<rp>(</rp><rt>まいすう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            counter for flat objects<br>
-            number of
-        </td>
-    </tr>
-</table>
-
-<blockquote>
-<p>定期券も自動券売機で販売していますが、指定席券は窓口で買います。回数券や定期券など発券に時間がかかるときは「発券中」という表示が出ます。「調整中」の表示があったら、しばらく使用中止です。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>期</td>
-        <td>
-            キ
-        </td>
-        <td>
-            <ruby>期間<rp>(</rp><rt>きかん</rt><rp>)</rp></ruby><br>
-            <ruby>定期<rp>(</rp><rt>ていき</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a period of time<br>
-            a fixed period of time
-        </td>
-    </tr>
-    <tr>
-        <td>販</td>
-        <td>
-            ハン
-        </td>
-        <td>
-            <ruby>販売<rp>(</rp><rt>はんばい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            sell
-        </td>
-    </tr>
-    <tr>
-        <td>指</td>
-        <td>
-            シ<br>
-            ゆび<br>
-            さーす
-        </td>
-        <td>
-            <ruby>指定<rp>(</rp><rt>してい</rt><rp>)</rp></ruby><br>
-            <ruby>指<rp>(</rp><rt>ゆび</rt><rp>)</rp></ruby><br>
-            <ruby>指<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>す
-        </td>
-        <td>
-            reserved<br>
-            a finger<br>
-            point
-        </td>
-    </tr>
-    <tr>
-        <td>調</td>
-        <td>
-            チョウ<br>
-            しらーべる
-        </td>
-        <td>
-            <ruby>調整<rp>(</rp><rt>ちょうせい</rt><rp>)</rp></ruby><br>
-            <ruby>調子<rp>(</rp><rt>ちょうし</rt><rp>)</rp></ruby><br>
-            <ruby>調<rp>(</rp><rt>しら</rt><rp>)</rp></ruby>べる
-        </td>
-        <td>
-            an adjustment<br>
-            condition<br>
-            look up something
-        </td>
-    </tr>
-    <tr>
-        <td>整</td>
-        <td>
-            セイ<br>
-            ととのーう
-        </td>
-        <td>
-            <ruby>整備<rp>(</rp><rt>せいび</rt><rp>)</rp></ruby><br>
-            <ruby>整<rp>(</rp><rt>ととの</rt><rp>)</rp></ruby>う
-        </td>
-        <td>
-            maintenance<br>
-            be tidy
-        </td>
-    </tr>
-    <tr>
-        <td>表</td>
-        <td>
-            ヒョウ<br>
-            おもて<br>
-            あらわーす<br>
-            あらわーれる
-        </td>
-        <td>
-            <ruby>表<rp>(</rp><rt>ひょう</rt><rp>)</rp></ruby><br>
-            <ruby>表<rp>(</rp><rt>おもて</rt><rp>)</rp></ruby><br>
-            <ruby>表<rp>(</rp><rt>あらわ</rt><rp>)</rp></ruby>す
-        </td>
-        <td>
-            table<br>
-            surface, face<br>
-            show, express
-        </td>
-    </tr>
-        <tr>
-        <td>示</td>
-        <td>
-            ジ<br>
-            しめーす
-        </td>
-        <td>
-            <ruby>表示<rp>(</rp><rt>ひょうじ</rt><rp>)</rp></ruby><br>
-            <ruby>指示<rp>(</rp><rt>しじ</rt><rp>)</rp></ruby><br>
-            <ruby>掲示<rp>(</rp><rt>けいじ</rt><rp>)</rp></ruby><br>
-            <ruby>示<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>す
-        </td>
-        <td>
-            indication, expression<br>
-            an instruction<br>
-            a notice<br>
-            show, point out
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="2日目-現金自動支払機"><a href="#2日目-現金自動支払機" class="headerlink" title="2日目　現金自動支払機"></a>2日目　現金自動支払機</h2><blockquote>
-<p>銀行や郵便局で窓口を使わずに、現金自動支払機でお金を引き出したり、預けたりすることができます。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>現</td>
-        <td>
-            ゲン<br>
-            あらわーれる<br>
-            あらわーす
-        </td>
-        <td>
-            <ruby>現金<rp>(</rp><rt>げんきん</rt><rp>)</rp></ruby><br>
-            <ruby>表現<rp>(</rp><rt>ひょうげん</rt><rp>)</rp></ruby><br>
-            <ruby>現<rp>(</rp><rt>あらわ</rt><rp>)</rp></ruby>れる
-        </td>
-        <td>
-            cash<br>
-            an expression<br>
-            appear
-        </td>
-    </tr>
-    <tr>
-        <td>支</td>
-        <td>
-            シ<br>
-            ささーえる
-        </td>
-        <td>
-            <ruby>支店<rp>(</rp><rt>してん</rt><rp>)</rp></ruby><br>
-            <ruby>支持<rp>(</rp><rt>しじ</rt><rp>)</rp></ruby><br>
-            <ruby>支<rp>(</rp><rt>ささ</rt><rp>)</rp></ruby>える
-        </td>
-        <td>
-            a branch shop<br>
-            support<br>
-            support
-        </td>
-    </tr>
-    <tr>
-        <td>払</td>
-        <td>
-            はらーう
-        </td>
-        <td>
-            <ruby>払<rp>(</rp><rt>はら</rt><rp>)</rp></ruby>う
-        </td>
-        <td>
-            pay
-        </td>
-    </tr>
-    <tr>
-        <td>預</td>
-        <td>
-            ヨ<br>
-            あずーける<br>
-            あずーかる
-        </td>
-        <td>
-            <ruby>預金<rp>(</rp><rt>よきん</rt><rp>)</rp></ruby><br>
-            <ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp></ruby>ける<br>
-            <ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp>かる</ruby>
-        </td>
-        <td>
-            a deposit<br>
-            entrust<br>
-            look up something
-        </td>
-    </tr>
-    <tr>
-        <td>戻</td>
-        <td>
-            もどーす<br>
-            もどーる
-        </td>
-        <td>
-            <ruby>戻<rp>(</rp><rt>もど</rt><rp>)</rp></ruby>る<br>
-            <ruby>払い戻し<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            return<br>
-            a refund
-        </td>
-    </tr>
-    <tr>
-        <td>残</td>
-        <td>
-            ザン<br>
-            のこる<br>
-            のこーす
-        </td>
-        <td>
-            <ruby>残高照会<rp>(</rp><rt>ざんだかしょうかい</rt><rp>)</rp></ruby><br>
-            <ruby>残<rp>(</rp><rt>のこ</rt><rp>)</rp></ruby>る<br>
-            <ruby>残<rp>(</rp><rt>のこ</rt><rp>)</rp></ruby>す
-        </td>
-        <td>
-            an account balance inquiry<br>
-            remain<br>
-            leave, leave behind
-        </td>
-    </tr>
-    <tr>
-        <td>照</td>
-        <td>
-            ショウ<br>
-            てーる<br>
-            てーらす
-        </td>
-        <td>
-            <ruby>照明<rp>(</rp><rt>しょうめい</rt><rp>)</rp></ruby><br>
-            <ruby>対照的<rp>(</rp><rt>たいしょうてき</rt><rp>)</rp></ruby><br>
-            <ruby>照<rp>(</rp><rt>て</rt><rp>)</rp></ruby>らす
-        </td>
-        <td>
-            illumination, light<br>
-            in contrast to<br>
-            light up
-        </td>
-    </tr>
-</table>
-
-<blockquote>
-<p>「硬貨はこちらにお入れください」「よろしければ確認ボタンを押してください」などという指示にしたがってお金を預けたり、引き出したりますが、間違えてしまった場合は、「取り消し」ボタンを押します。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>硬</td>
-        <td>
-            コウ<br>
-            かたーい
-        </td>
-        <td>
-            <ruby>硬貨<rp>(</rp><rt>こうか</rt><rp>)</rp></ruby><br>
-            <ruby>硬<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>い
-        </td>
-        <td>
-            a coin<br>
-            hard
-        </td>
-    </tr>
-    <tr>
-        <td>貨</td>
-        <td>
-            カ
-        </td>
-        <td>
-            <ruby>貨物<rp>(</rp><rt>かもつ</rt><rp>)</rp></ruby><br>
-            <ruby>通貨<rp>(</rp><rt>つうか</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            freight<br>
-            currency
-        </td>
-    </tr>
-    <tr>
-        <td>確</td>
-        <td>
-            カク<br>
-            たしーか<br>
-            たしーかめる
-        </td>
-        <td>
-            <ruby>確定<rp>(</rp><rt>かくてい</rt><rp>)</rp></ruby><br>
-            <ruby>明確<rp>(</rp><rt>めいかく</rt><rp>)</rp></ruby>（な）<br>
-            <ruby>確<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>か（な）<br>
-            <ruby>確<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめる
-        </td>
-        <td>
-            determination<br>
-            clear<br>
-            certain<br>
-            confirm / verify
-        </td>
-    </tr>
-    <tr>
-        <td>認</td>
-        <td>
-            ニン<br>
-            みとーめる
-        </td>
-        <td>
-            <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby><br>
-            <ruby>認<rp>(</rp><rt>みと</rt><rp>)</rp></ruby>める
-        </td>
-        <td>
-            an confirmation<br>
-            admit / approve
-        </td>
-    </tr>
-    <tr>
-        <td>違</td>
-        <td>
-            イ<br>
-            ちがーう<br>
-            ちがーえる 
-        </td>
-        <td>
-            <ruby>違法<rp>(</rp><rt>いほう</rt><rp>)</rp></ruby><br>
-            <ruby>違<rp>(</rp><rt>ちが</rt><rp>)</rp></ruby>い<br>
-            <ruby>間違<rp>(</rp><rt>まちが</rt><rp>)</rp></ruby>える
-        </td>
-        <td>
-            illegal<br>
-            a difference<br>
-            make a mistake
-        </td>
-    </tr>
-    <tr>
-        <td>取</td>
-        <td>
-            シュ<br>
-            とる
-        </td>
-        <td>
-            <ruby>取材<rp>(</rp><rt>しゅざい</rt><rp>)</rp></ruby><br>
-            <ruby>取<rp>(</rp><rt>と</rt><rp>)</rp>る</ruby><br>
-            <ruby>取り消し<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
-            <ruby>書き取り<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
-            <ruby>聞き取り<rp>(</rp><rt>ち</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            collect data<br>
-            take<br>
-            a cancellation<br>
-            a dication<br>
-            listening ability
-        </td>
-    </tr>
-        <tr>
-        <td>消</td>
-        <td>
-            ショウ<br>
-            きーえる<br>
-            けーす
-        </td>
-        <td>
-            <ruby>消去<rp>(</rp><rt>しょうきょ</rt><rp>)</rp></ruby><br>
-            <ruby>消<rp>(</rp><rt>き</rt><rp>)</rp></ruby>える<br>
-            <ruby>消<rp>(</rp><rt>け</rt><rp>)</rp>す</ruby>
-        </td>
-        <td>
-            eliminate<br>
-            be extinguished, disppear<br>
-            extinguish
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="3日目-自動販売機・自動券売機"><a href="#3日目-自動販売機・自動券売機" class="headerlink" title="3日目　自動販売機・自動券売機"></a>3日目　自動販売機・自動券売機</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>温</td>
-        <td>
-            オン<br>
-            あたたかい<br>
-            あたたーまる<br>
-            あたたーめる
-        </td>
-        <td>
-            <ruby>温度<rp>(</rp><rt>おんど</rt><rp>)</rp></ruby><br>
-            <ruby>暖<rp>(</rp><rt>あたた</rt><rp>)</rp></ruby>かい
-        </td>
-        <td>
-            temperature<br>
-            warm
-        </td>
-    </tr>
-    <tr>
-        <td>冷</td>
-        <td>
-            レイ<br>
-            つめーたい<br>
-            ひーえる<br>
-            ひーやす<br>
-            さーめる<br>
-            さーます
-        </td>
-        <td>
-            <ruby>冷静<rp>(</rp><rt>れいせい</rt><rp>)</rp></ruby><br>
-            <ruby>冷<rp>(</rp><rt>つめ</rt><rp>)</rp></ruby>たい<br>
-            <ruby>冷<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>える<br>
-            <ruby>冷<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>やす<br>
-            <ruby>冷<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>める
-        </td>
-        <td>
-            calmness<br>
-            cold<br>
-            become cold<br>
-            cool<br>
-            cool down
-        </td>
-    </tr>
-    <tr>
-        <td>緑</td>
-        <td>
-            リョク<br>
-            みどり
-        </td>
-        <td>
-            <ruby>緑茶<rp>(</rp><rt>りょくちゃ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            green tea
-        </td>
-    </tr>
-    <tr>
-        <td>紅</td>
-        <td>
-            コウ<br>
-            べに
-        </td>
-        <td>
-            <ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby><br>
-            <ruby>口紅<rp>(</rp><rt>くちべに</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            tea<br>
-            lipstick
-        </td>
-    </tr>
-    <tr>
-        <td>玉</td>
-        <td>
-            たま
-        </td>
-        <td>
-            <ruby>水玉<rp>(</rp><rt>みずたま</rt><rp>)</rp></ruby><br>
-            <ruby>十円玉<rp>(</rp><rt>じゅうえんだま</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a drop of water<br>
-            a 10 yen coin
-        </td>
-    </tr>
-    <tr>
-        <td>返</td>
-        <td>
-            ヘン<br>
-            かえーす<br>
-            かえーる
-        </td>
-        <td>
-            <ruby>返事<rp>(</rp><rt>へんじ</rt><rp>)</rp></ruby><br>
-            <ruby>返却<rp>(</rp><rt>へんきゃく</rt><rp>)</rp></ruby><br>
-            <ruby>返金<rp>(</rp><rt>へんきん</rt><rp>)</rp></ruby>
-            <ruby>返<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>す
-        </td>
-        <td>
-            reply<br>
-            return (something)<br>
-            a refund<br>
-            return (something)
-        </td>
-</table>
-
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>団</td>
-        <td>
-            ダン<br>
-            トン
-        </td>
-        <td>
-            <ruby>団体<rp>(</rp><rt>だんたい</rt><rp>)</rp></ruby><br>
-            <ruby>集団<rp>(</rp><rt>しゅうだん</rt><rp>)</rp></ruby><br>
-            <ruby>布団<rp>(</rp><rt>ふとん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a group, organization<br>
-            a group<br>
-            futon
-        </td>
-    </tr>
-    <tr>
-        <td>般</td>
-        <td>
-            ハン
-        </td>
-        <td>
-            <ruby>一般<rp>(</rp><rt>いっぱん</rt><rp>)</rp></ruby><br>
-            <ruby>全般<rp>(</rp><rt>ぜんぱん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            (in) general<br>
-            overall
-        </td>
-    </tr>
-    <tr>
-        <td>幼</td>
-        <td>
-            ヨウ<br>
-            おさなーい
-        </td>
-        <td>
-            <ruby>幼児<rp>(</rp><rt>ようじ</rt><rp>)</rp></ruby><br>
-            <ruby>幼<rp>(</rp><rt>おさな</rt><rp>)</rp></ruby>い
-        </td>
-        <td>
-            baby<br>
-            very young
-        </td>
-    </tr>
-    <tr>
-        <td>児</td>
-        <td>
-            ニ<br>
-            ジ
-        </td>
-        <td>
-            <ruby>小児科<rp>(</rp><rt>しょうにか</rt><rp>)</rp></ruby><br>
-            <ruby>児童<rp>(</rp><rt>じどう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            pediatrics department
-        </td>
-    </tr>
-    <tr>
-        <td>歳</td>
-        <td>
-            サイ
-        </td>
-        <td>
-            〜<ruby>歳<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            ... years old
-        </td>
-    </tr>
-    <tr>
-        <td>未</td>
-        <td>
-            ミ
-        </td>
-        <td>
-            <ruby>未定<rp>(</rp><rt>みてい</rt><rp>)</rp></ruby><br>
-            <ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby><br>
-            <ruby>未<rp>(</rp><rt>み</rt><rp>)</rp></ruby>〜
-        </td>
-        <td>
-            undecided<br>
-            future<br>
-            not yet
-        </td>
-    </tr>
-        <tr>
-        <td>満</td>
-        <td>
-            マン<br>
-            みーちる<br>
-            みーたす
-        </td>
-        <td>
-            <ruby>未満<rp>(</rp><rt>みまん</rt><rp>)</rp></ruby><br>
-            <ruby>満足<rp>(</rp><rt>まんぞく</rt><rp>)</rp></ruby><br>
-            <ruby>満<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ちる
-        </td>
-        <td>
-            less than<br>
-            satisfaction<br>
-            filled with
-        </td>
-    </tr>
-    <tr>
-        <td>老</td>
-        <td>
-            ロウ<br>
-            おーいる
-        </td>
-        <td>
-            <ruby>老人<rp>(</rp><rt>ろうじん</rt><rp>)</rp></ruby><br>
-            <ruby>年老<rp>(</rp><rt>としお</rt><rp>)</rp></ruby>いた
-        </td>
-        <td>
-            an old person<br>
-            old (person)
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="4日目-家電のリモコン"><a href="#4日目-家電のリモコン" class="headerlink" title="4日目　家電のリモコン"></a>4日目　家電のリモコン</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>設</td>
-        <td>
-            セツ
-        </td>
-        <td>
-            <ruby>設定<rp>(</rp><rt>せってい</rt><rp>)</rp></ruby><br>
-            <ruby>設計<rp>(</rp><rt>せっけい</rt><rp>)</rp></ruby><br>
-            <ruby>設備<rp>(</rp><rt>せつび</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            setting<br>
-            design<br>
-            equipment
-        </td>
-    </tr>
-    <tr>
-        <td>換</td>
-        <td>
-            カン<br>
-            かーえる<br>
-            かーわる
-        </td>
-        <td>
-            <ruby>換気<rp>(</rp><rt>かんき</rt><rp>)</rp></ruby><br>
-            <ruby>運転切換<rp>(</rp><rt>うんてんきりかえ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            ventilation<br>
-            change of mode of operation
-        </td>
-    </tr>
-    <tr>
-        <td>向</td>
-        <td>
-            コウ<br>
-            むーく<br>
-            むーける<br>
-            むーかう<br>
-            むーこう
-        </td>
-        <td>
-            <ruby>風向<rp>(</rp><rt>ふうこう</rt><rp>)</rp></ruby><br>
-            <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>こう<br>
-            <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かい
-        </td>
-        <td>
-            angle of louvre<br>
-            over there<br>
-            opposite / across
-        </td>
-    </tr>
-    <tr>
-        <td>停</td>
-        <td>
-            テイ
-        </td>
-        <td>
-            <ruby>停止<rp>(</rp><rt>ていし</rt><rp>)</rp></ruby><br>
-            <ruby>停電<rp>(</rp><rt>ていでん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            stop<br>
-            electricity black out
-        </td>
-    </tr>
-    <tr>
-        <td>暖</td>
-        <td>
-            ダン<br>
-            あたたーかい<br>
-            あたたーまる<br>
-            あたたーめる
-        </td>
-        <td>
-            <ruby>暖房<rp>(</rp><rt>だんぼう</rt><rp>)</rp></ruby><br>
-            <ruby>温暖<rp>(</rp><rt>おんだん</rt><rp>)</rp>（な）</ruby><br>
-            <ruby>暖<rp>(</rp><rt>あたた</rt><rp>)</rp></ruby>かい
-        </td>
-        <td>
-            warm<br>
-            warm<br>
-            a heater
-        </td>
-    </tr>
-    <tr>
-        <td>除</td>
-        <td>
-            ジョ<br>
-            ジ<br>
-            のぞーく
-        </td>
-        <td>
-            <ruby>除湿<rp>(</rp><rt>じょしつ</rt><rp>)</rp></ruby><br>
-            <ruby>掃除<rp>(</rp><rt>そうじ</rt><rp>)</rp></ruby><br>
-            <ruby>除<rp>(</rp><rt>のぞ</rt><rp>)</rp></ruby>く
-        </td>
-        <td>
-            dehumidification<br>
-            cleaning<br>
-            remove / exclude
-        </td>
-    </tr>
-    <tr>
-        <td>湿</td>
-        <td>
-            シツ<br>
-            しめーる
-        </td>
-        <td>
-            <ruby>湿度<rp>(</rp><rt>しつど</rt><rp>)</rp></ruby><br>
-            <ruby>湿気<rp>(</rp><rt>しっけ</rt><rp>)</rp></ruby><br>
-            <ruby>湿<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>る
-        </td>
-        <td>
-            humidity<br>
-            humidity / moisture<br>
-            become damp
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>標</td>
-        <td>
-            ヒョウ
-        </td>
-        <td>
-            <ruby>標準<rp>(</rp><rt>ひょうじゅん</rt><rp>)</rp></ruby><br>
-            <ruby>目標<rp>(</rp><rt>もくひょう</rt><rp>)</rp></ruby><br>
-            <ruby>標本<rp>(</rp><rt>ひょうほん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            standard<br>
-            an aim / objective<br>
-            a specimen / sample
-        </td>
-    </tr>
-    <tr>
-        <td>倍</td>
-        <td>
-            バイ
-        </td>
-        <td>
-            <ruby>倍<rp>(</rp><rt>バイ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            times (size, quantity)
-        </td>
-    </tr>
-    <tr>
-        <td>巻</td>
-        <td>
-            カン<br>
-            まーく
-        </td>
-        <td>
-            〜<ruby>巻<rp>(</rp><rt>かん</rt><rp>)</rp></ruby><br>
-            <ruby>巻<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>く<br>
-            <ruby>巻き戻り<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            volume...(used for books with several volumes)<br>
-            wind, roll up<br>
-            rewinding
-        </td>
-    </tr>
-    <tr>
-        <td>録</td>
-        <td>
-            ロク
-        </td>
-        <td>
-            <ruby>録画<rp>(</rp><rt>ろくが</rt><rp>)</rp></ruby><br>
-            <ruby>録音<rp>(</rp><rt>ろくおん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            record(video)<br>
-            record(sound)
-        </td>
-    </tr>
-    <tr>
-        <td>量</td>
-        <td>
-            リョウ<br>
-            はかーる
-        </td>
-        <td>
-            <ruby>音量<rp>(</rp><rt>おんりょう</rt><rp>)</rp></ruby><br>
-            <ruby>風量<rp>(</rp><rt>ふうりょう</rt><rp>)</rp></ruby><br>
-            <ruby>分量<rp>(</rp><rt>ぶんりょう</rt><rp>)</rp></ruby><br>
-            <ruby>数量<rp>(</rp><rt>すうりょう</rt><rp>)</rp></ruby><br>
-            <ruby>量<rp>(</rp><rt>はか</rt><rp>)</rp></ruby>る
-        </td>
-        <td>
-            volume<br>
-            air strength<br>
-            quantity<br>
-            amount<br>
-            measure
-        </td>
-    </tr>
-    <tr>
-        <td>予</td>
-        <td>
-            ヨ
-        </td>
-        <td>
-            <ruby>予定<rp>(</rp><rt>よてい</rt><rp>)</rp></ruby><br>
-            <ruby>予習<rp>(</rp><rt>よしゅう</rt><rp>)</rp></ruby><br>
-            <ruby>予備<rp>(</rp><rt>よび</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a plan / schedule<br>
-            a review(pre-study)<br>
-            reserve
-        </td>
-    </tr>
-    <tr>
-        <td>約</td>
-        <td>
-            ヤク
-        </td>
-        <td>
-            <ruby>予約<rp>(</rp><rt>よやく</rt><rp>)</rp></ruby><br>
-            <ruby>約<rp>(</rp><rt>やく</rt><rp>)</rp></ruby><br>
-            <ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby>ちる
-        </td>
-        <td>
-            an appointment / reservation<br>
-            approximately<br>
-            a promise
-        </td>
-    </tr>
-</table>
-
-<h2 id="5日目"><a href="#5日目" class="headerlink" title="5日目"></a>5日目</h2><blockquote>
-<p>私は家に帰るとすぐ留守番電話の伝言を聞き、再生済みの用件を消する。携帯電話は電車の中や仕事中など、普段はマナーモードに設定している。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>帯</td>
-        <td>
-            タイ<br>
-            おび
-        </td>
-        <td>
-            地帯<br>
-            帯
-        </td>
-        <td>
-            a region / area<br>
-            a belt / sash
-        </td>
-    </tr>
-    <tr>
-        <td>保</td>
-        <td>
-            ホ<br>
-            たもーつ
-        </td>
-        <td>
-            保温<br>
-            保湿<br>
-            保つ
-        </td>
-        <td>
-            retention of warmth<br>
-            retention of dempness<br>
-            keep / maintain
-        </td>
-    </tr>
-    <tr>
-        <td>留</td>
-        <td>
-            リュウ<br>
-            ル<br>
-            とーめる
-        </td>
-        <td>
-            保留<br>
-            停留所<br>
-            書留
-        </td>
-        <td>
-            a reservation<br>
-            a bus stop<br>
-            registration
-        </td>
-    </tr>
-    <tr>
-        <td>守</td>
-        <td>
-            シュ<br>
-            ス<br>
-            まもーる
-        </td>
-        <td>
-            <ruby>保守的<rp>(</rp><rt>ほしゅてき</rt><rp>)</rp></ruby><br>
-            <ruby>留守<rp>(</rp><rt>るす</rt><rp>)</rp></ruby><br>
-            <ruby>守<rp>(</rp><rt>まも</rt><rp>)</rp></ruby>る
-        </td>
-        <td>
-            conservative<br>
-            absence<br>
-            protect
-        </td>
-    </tr>
-   <tr>
-        <td>伝</td>
-        <td>
-            デン<br>
-            つたーわる<br>
-            つたーえる
-        </td>
-        <td>
-            <ruby>伝言<rp>(</rp><rt>でんごん</rt><rp>)</rp></ruby><br>
-            <ruby>伝<rp>(</rp><rt>つた</rt><rp>)</rp></ruby>える<br>
-            <ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>う
-        </td>
-        <td>
-            a message<br>
-            convery / communicate<br>
-            help
-        </td>
-    </tr>
-    <tr>
-        <td>済</td>
-        <td>
-            サイ<br>
-            すーむ<br>
-            すーます
-        </td>
-        <td>
-            <ruby>済<rp>(</rp><rt>す</rt><rp>)</rp></ruby>む<br>
-            〜<ruby>済<rp>(</rp><rt>ず</rt><rp>)</rp></ruby>み<br>
-            <ruby>返済<rp>(</rp><rt>へんさい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            finish<br>
-            completed<br>
-            repayment
-        </td>
-    </tr>
-    <tr>
-        <td>件</td>
-        <td>
-            ケン
-        </td>
-        <td>
-            <ruby>用件<rp>(</rp><rt>ようけん</rt><rp>)</rp></ruby><br>
-            <ruby>件名<rp>(</rp><rt>けんめい</rt><rp>)</rp></ruby><br>
-            <ruby>事件<rp>(</rp><rt>じけん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a business / matter<br>
-            subject<br>
-            an incident
-        </td>
-    </tr>
-</table>
-
-<blockquote>
-<p>「着信履歴」やメールの「受信箱」を確認して、用件があれば返信する。新しくアドレスを作成する場合は、「新規」で入力する。文字は自分で変化したり並んでいる言葉の中から「選択」したりして、「決定」あるいは「確定」する。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>信</td>
-        <td>
-            シン
-        </td>
-        <td>
-            <ruby>通信<rp>(</rp><rt>つうしん</rt><rp>)</rp></ruby><br>
-            <ruby>自信<rp>(</rp><rt>じしん</rt><rp>)</rp></ruby><br>
-            <ruby>信<rp>(</rp><rt>信</rt><rp>)</rp></ruby>じる
-        </td>
-        <td>
-            correspondence<br>
-            confidence<br>
-            believe
-        </td>
-    </tr>
-    <tr>
-        <td>暦</td>
-        <td>
-            レキ
-        </td>
-        <td>
-            <ruby>着信履歴<rp>(</rp><rt>ちゃくしんりれき</rt><rp>)</rp></ruby><br>
-            <ruby>履歴書<rp>(</rp><rt>りれきしょ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            record of calls received<br>
-            a resume
-        </td>
-    </tr>
-    <tr>
-        <td>箱</td>
-        <td>
-            はこ
-        </td>
-        <td>
-            <ruby>受信箱<rp>(</rp><rt>じゅしんばこ</rt><rp>)</rp></ruby><br>
-            <ruby>送信箱<rp>(</rp><rt>そうしんばこ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            inbox<br>
-            outbox
-        </td>
-    </tr>
-    <tr>
-        <td>規</td>
-        <td>
-            キ
-        </td>
-        <td>
-            <ruby>新規<rp>(</rp><rt>しんき</rt><rp>)</rp></ruby><br>
-            <ruby>規定<rp>(</rp><rt>きてい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            new / fresh<br>
-            regulation
-        </td>
-    </tr>
-   <tr>
-        <td>変</td>
-        <td>
-            ヘン<br>
-            かーわる<br>
-            かーえる
-        </td>
-        <td>
-            <ruby>変換<rp>(</rp><rt>へんかん</rt><rp>)</rp></ruby><br>
-            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わる<br>
-            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>える
-        </td>
-        <td>
-            conversion<br>
-            change<br>
-            change(something)
-        </td>
-    </tr>
-    <tr>
-        <td>選</td>
-        <td>
-            セン<br>
-            えらーぶ
-        </td>
-        <td>
-            <ruby>選択<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>む<br>
-            <ruby>選考<rp>(</rp><rt>せんこう</rt><rp>)</rp></ruby><br>
-            <ruby>選<rp>(</rp><rt>えら</rt><rp>)</rp></ruby>ぶ
-        </td>
-        <td>
-            a choice<br>
-            a player, an athlete<br>
-            choose
-        </td>
-    </tr>
-    <tr>
-        <td>決</td>
-        <td>
-            ケツ<br>
-            きーめる<br>
-            きーまる
-        </td>
-        <td>
-            <ruby>決定<rp>(</rp><rt>けってい</rt><rp>)</rp></ruby><br>
-            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>める<br>
-            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>まる
-        </td>
-        <td>
-            a decision<br>
-            decide (something)<br>
-            be decided
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="6日目-携帯電話・パソコン"><a href="#6日目-携帯電話・パソコン" class="headerlink" title="6日目　携帯電話・パソコン"></a>6日目　携帯電話・パソコン</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>登</td>
-        <td>
-            トウ<br>
-            ト<br>
-            のぼーる
-        </td>
-        <td>
-            <ruby>登録<rp>(</rp><rt>とうろく</rt><rp>)</rp></ruby><br>
-            <ruby>登場<rp>(</rp><rt>とうじょう</rt><rp>)</rp></ruby><br>
-            <ruby>登山<rp>(</rp><rt>とざん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            registration<br>
-            appearance<br>
-            moutain climbing
-        </td>
-    </tr>
-    <tr>
-        <td>編</td>
-        <td>
-            ヘン<br>
-            あーむ
-        </td>
-        <td>
-            <ruby>編集<rp>(</rp><rt>へんしゅう</rt><rp>)</rp></ruby><br>
-            <ruby>長編<rp>(</rp><rt>ちょうへん</rt><rp>)</rp></ruby><br>
-            <ruby>短編<rp>(</rp><rt>たんべん</rt><rp>)</rp></ruby><br>
-            <ruby>編<rp>(</rp><rt>あ</rt><rp>)</rp>み物</ruby>
-        </td>
-        <td>
-            editing<br>
-            long work<br>
-            short work<br>
-            knitting
-        </td>
-    </tr>
-    <tr>
-        <td>能</td>
-        <td>
-            ノウ
-        </td>
-        <td>
-            <ruby>機能<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            function
-        </td>
-    </tr>
-    <tr>
-        <td>修</td>
-        <td>
-            シュウ
-        </td>
-        <td>
-            <ruby>修正<rp>(</rp><rt>しゅうせい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            amendment
-        </td>
-    </tr>
-   <tr>
-        <td>完</td>
-        <td>
-            カン
-        </td>
-        <td>
-            <ruby>完了<rp>(</rp><rt>かんりょう</rt><rp>)</rp></ruby><br>
-            <ruby>完成<rp>(</rp><rt>かんせい</rt><rp>)</rp></ruby><br>
-            <ruby>完備<rp>(</rp><rt>かんび</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            completion<br>
-            completion<br>
-            be fully equipped
-        </td>
-    </tr>
-    <tr>
-        <td>了</td>
-        <td>
-            リョウ
-        </td>
-        <td>
-            <ruby>終了<rp>(</rp><rt>しゅうりょう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            end, expiration
-        </td>
-    </tr>
-    <tr>
-        <td>像</td>
-        <td>
-            ゾウ
-        </td>
-        <td>
-            <ruby>画像<rp>(</rp><rt>がぞう</rt><rp>)</rp></ruby><br>
-            <ruby>現像<rp>(</rp><rt>げんぞう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a picture<br>
-            developing (a photograph)
-        </td>
-    </tr>
-</table>
-
-<blockquote>
-<p>ワープロソフトで書類を作成するときは「書式」でフォントやサイズを設定する。文字は中央にそろえたり、右寄せ、左寄せもできる。作成したら「名前を付けて保存」する。その後は「上書き保存」できる。印刷は「用紙設定」をして「印刷プレビュー」で確認するとよい。文字が小さくて見づらいときは、「拡大」表示する。</p>
-</blockquote>
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>類</td>
-        <td>
-            ルイ
-        </td>
-        <td>
-            <ruby>書類<rp>(</rp><rt>しょるい</rt><rp>)</rp></ruby><br>
-            <ruby>分類<rp>(</rp><rt>ぶんるい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a document<br>
-            classification
-        </td>
-    </tr>
-    <tr>
-        <td>式</td>
-        <td>
-            シキ
-        </td>
-        <td>
-            <ruby>書式<rp>(</rp><rt>しょしき</rt><rp>)</rp></ruby>
-            <ruby>正式<rp>(</rp><rt>せいしき</rt><rp>)</rp>（な）</ruby>
-        </td>
-        <td>
-            format<br>
-            formal / official
-        </td>
-    </tr>
-    <tr>
-        <td>央</td>
-        <td>
-            オウ
-        </td>
-        <td>
-            <ruby>中央<rp>(</rp><rt>ちゅうおう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            center
-        </td>
-    </tr>
-    <tr>
-        <td>存</td>
-        <td>
-            ゾン<br>
-            ソン
-        </td>
-        <td>
-            <ruby>保存<rp>(</rp><rt>ほぞん</rt><rp>)</rp></ruby>
-            <ruby>生存<rp>(</rp><rt>せいぞん</rt><rp>)</rp></ruby>
-            ご<ruby>存知<rp>(</rp><rt>ぞんじ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            save<br>
-            survival<br>
-            know(humble form)
-        </td>
-    </tr>
-   <tr>
-        <td>印</td>
-        <td>
-            イン<br>
-            しるし
-        </td>
-        <td>
-            認め<ruby>印<rp>(</rp><rt>いん</rt><rp>)</rp></ruby>
-            <ruby>印<rp>(</rp><rt>しるし</rt><rp>)</rp></ruby><br>
-            <ruby>目印<rp>(</rp><rt>めじるし</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a seal (stamp)<br>
-            a mark / token<br>
-            a sign / landmark
-        </td>
-    </tr>
-    <tr>
-        <td>刷</td>
-        <td>
-            サツ
-        </td>
-        <td>
-            <ruby>印刷<rp>(</rp><rt>いんさつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            printing
-        </td>
-    </tr>
-    <tr>
-        <td>拡</td>
-        <td>
-            カク
-        </td>
-        <td>
-            <ruby>拡大<rp>(</rp><rt>かくだい</rt><rp>)</rp></ruby><br>
-            <ruby>縮小<rp>(</rp><rt>しゅくしょう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            enlargement<br>
-            reduction
         </td>
     </tr>
 </table>]]></content>
@@ -6826,6 +5338,1494 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>第二週 つかう①</title>
+    <url>/new-blog/84b7d475.html</url>
+    <content><![CDATA[<h1 id="第二週-つかう①"><a href="#第二週-つかう①" class="headerlink" title="第二週　つかう①"></a>第二週　つかう①</h1><span id="more"></span>
+
+<h2 id="1日目-自動券売機"><a href="#1日目-自動券売機" class="headerlink" title="1日目　自動券売機"></a>1日目　自動券売機</h2><blockquote>
+<p>普通乗車券、回数券だけでなく、新幹線の自由券も自動券売機で買うことができます。お金を入れて、行き先、往復か片道か、枚数などのボタンを押します。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>普</td>
+        <td>
+            フ
+        </td>
+        <td>
+            <ruby>普通<rp>(</rp><rt>ふつう</rt><rp>)</rp></ruby><br>
+            <ruby>普段<rp>(</rp><rt>ふだん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            ordinary<br>
+            usually
+        </td>
+    </tr>
+    <tr>
+        <td>券</td>
+        <td>
+            ケン
+        </td>
+        <td>
+            <ruby>回数券<rp>(</rp><rt>かいすうけん</rt><rp>)</rp></ruby><br>
+            <ruby>乗車券<rp>(</rp><rt>じょうしゃけん</rt><rp>)</rp></ruby><br>
+        </td>
+        <td>
+            a (book of) commuter ticket(s)<br>
+            a ticket
+        </td>
+    </tr>
+    <tr>
+        <td>数</td>
+        <td>
+            スウ<br>
+            かず<br>
+            かぞーえる
+        </td>
+        <td>
+            <ruby>数字<rp>(</rp><rt>すうじ</rt><rp>)</rp></ruby><br>
+            数を<ruby>数<rp>(</rp><rt>かぞ</rt><rp>)</rp>える</ruby>
+        </td>
+        <td>
+            number<br>
+            count numbers
+        </td>
+    </tr>
+    <tr>
+        <td>機</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>危機<rp>(</rp><rt>きき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a crisis
+        </td>
+    </tr>
+    <tr>
+        <td>復</td>
+        <td>
+            フク
+        </td>
+        <td>
+            <ruby>復習<rp>(</rp><rt>ふくしゅう</rt><rp>)</rp></ruby><br>
+            <ruby>往復<rp>(</rp><rt>おうふく</rt><rp>)</rp></ruby><br>
+            <ruby>回復<rp>(</rp><rt>かいふく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a review<br>
+            a round trip<br>
+            recovery
+        </td>
+    </tr>
+    <tr>
+        <td>片</td>
+        <td>
+            ヘン<br>
+            かた
+        </td>
+        <td>
+            <ruby>破片<rp>(</rp><rt>はへん</rt><rp>)</rp></ruby><br>
+            <ruby>片付<rp>(</rp><rt>かたづ</rt><rp>)</rp></ruby>ける
+        </td>
+        <td>
+            an one way ticket<br>
+            tidy up
+        </td>
+    </tr>
+    <tr>
+        <td>枚</td>
+        <td>
+            マイ
+        </td>
+        <td>
+            〜<ruby>枚<rp>(</rp><rt>まい</rt><rp>)</rp></ruby><br>
+            <ruby>枚数<rp>(</rp><rt>まいすう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            counter for flat objects<br>
+            number of
+        </td>
+    </tr>
+</table>
+
+<blockquote>
+<p>定期券も自動券売機で販売していますが、指定席券は窓口で買います。回数券や定期券など発券に時間がかかるときは「発券中」という表示が出ます。「調整中」の表示があったら、しばらく使用中止です。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>期</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>期間<rp>(</rp><rt>きかん</rt><rp>)</rp></ruby><br>
+            <ruby>定期<rp>(</rp><rt>ていき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a period of time<br>
+            a fixed period of time
+        </td>
+    </tr>
+    <tr>
+        <td>販</td>
+        <td>
+            ハン
+        </td>
+        <td>
+            <ruby>販売<rp>(</rp><rt>はんばい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            sell
+        </td>
+    </tr>
+    <tr>
+        <td>指</td>
+        <td>
+            シ<br>
+            ゆび<br>
+            さーす
+        </td>
+        <td>
+            <ruby>指定<rp>(</rp><rt>してい</rt><rp>)</rp></ruby><br>
+            <ruby>指<rp>(</rp><rt>ゆび</rt><rp>)</rp></ruby><br>
+            <ruby>指<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            reserved<br>
+            a finger<br>
+            point
+        </td>
+    </tr>
+    <tr>
+        <td>調</td>
+        <td>
+            チョウ<br>
+            しらーべる
+        </td>
+        <td>
+            <ruby>調整<rp>(</rp><rt>ちょうせい</rt><rp>)</rp></ruby><br>
+            <ruby>調子<rp>(</rp><rt>ちょうし</rt><rp>)</rp></ruby><br>
+            <ruby>調<rp>(</rp><rt>しら</rt><rp>)</rp></ruby>べる
+        </td>
+        <td>
+            an adjustment<br>
+            condition<br>
+            look up something
+        </td>
+    </tr>
+    <tr>
+        <td>整</td>
+        <td>
+            セイ<br>
+            ととのーう
+        </td>
+        <td>
+            <ruby>整備<rp>(</rp><rt>せいび</rt><rp>)</rp></ruby><br>
+            <ruby>整<rp>(</rp><rt>ととの</rt><rp>)</rp></ruby>う
+        </td>
+        <td>
+            maintenance<br>
+            be tidy
+        </td>
+    </tr>
+    <tr>
+        <td>表</td>
+        <td>
+            ヒョウ<br>
+            おもて<br>
+            あらわーす<br>
+            あらわーれる
+        </td>
+        <td>
+            <ruby>表<rp>(</rp><rt>ひょう</rt><rp>)</rp></ruby><br>
+            <ruby>表<rp>(</rp><rt>おもて</rt><rp>)</rp></ruby><br>
+            <ruby>表<rp>(</rp><rt>あらわ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            table<br>
+            surface, face<br>
+            show, express
+        </td>
+    </tr>
+        <tr>
+        <td>示</td>
+        <td>
+            ジ<br>
+            しめーす
+        </td>
+        <td>
+            <ruby>表示<rp>(</rp><rt>ひょうじ</rt><rp>)</rp></ruby><br>
+            <ruby>指示<rp>(</rp><rt>しじ</rt><rp>)</rp></ruby><br>
+            <ruby>掲示<rp>(</rp><rt>けいじ</rt><rp>)</rp></ruby><br>
+            <ruby>示<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            indication, expression<br>
+            an instruction<br>
+            a notice<br>
+            show, point out
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="2日目-現金自動支払機"><a href="#2日目-現金自動支払機" class="headerlink" title="2日目　現金自動支払機"></a>2日目　現金自動支払機</h2><blockquote>
+<p>銀行や郵便局で窓口を使わずに、現金自動支払機でお金を引き出したり、預けたりすることができます。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>現</td>
+        <td>
+            ゲン<br>
+            あらわーれる<br>
+            あらわーす
+        </td>
+        <td>
+            <ruby>現金<rp>(</rp><rt>げんきん</rt><rp>)</rp></ruby><br>
+            <ruby>表現<rp>(</rp><rt>ひょうげん</rt><rp>)</rp></ruby><br>
+            <ruby>現<rp>(</rp><rt>あらわ</rt><rp>)</rp></ruby>れる
+        </td>
+        <td>
+            cash<br>
+            an expression<br>
+            appear
+        </td>
+    </tr>
+    <tr>
+        <td>支</td>
+        <td>
+            シ<br>
+            ささーえる
+        </td>
+        <td>
+            <ruby>支店<rp>(</rp><rt>してん</rt><rp>)</rp></ruby><br>
+            <ruby>支持<rp>(</rp><rt>しじ</rt><rp>)</rp></ruby><br>
+            <ruby>支<rp>(</rp><rt>ささ</rt><rp>)</rp></ruby>える
+        </td>
+        <td>
+            a branch shop<br>
+            support<br>
+            support
+        </td>
+    </tr>
+    <tr>
+        <td>払</td>
+        <td>
+            はらーう
+        </td>
+        <td>
+            <ruby>払<rp>(</rp><rt>はら</rt><rp>)</rp></ruby>う
+        </td>
+        <td>
+            pay
+        </td>
+    </tr>
+    <tr>
+        <td>預</td>
+        <td>
+            ヨ<br>
+            あずーける<br>
+            あずーかる
+        </td>
+        <td>
+            <ruby>預金<rp>(</rp><rt>よきん</rt><rp>)</rp></ruby><br>
+            <ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp></ruby>ける<br>
+            <ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp>かる</ruby>
+        </td>
+        <td>
+            a deposit<br>
+            entrust<br>
+            look up something
+        </td>
+    </tr>
+    <tr>
+        <td>戻</td>
+        <td>
+            もどーす<br>
+            もどーる
+        </td>
+        <td>
+            <ruby>戻<rp>(</rp><rt>もど</rt><rp>)</rp></ruby>る<br>
+            <ruby>払い戻し<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            return<br>
+            a refund
+        </td>
+    </tr>
+    <tr>
+        <td>残</td>
+        <td>
+            ザン<br>
+            のこる<br>
+            のこーす
+        </td>
+        <td>
+            <ruby>残高照会<rp>(</rp><rt>ざんだかしょうかい</rt><rp>)</rp></ruby><br>
+            <ruby>残<rp>(</rp><rt>のこ</rt><rp>)</rp></ruby>る<br>
+            <ruby>残<rp>(</rp><rt>のこ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            an account balance inquiry<br>
+            remain<br>
+            leave, leave behind
+        </td>
+    </tr>
+    <tr>
+        <td>照</td>
+        <td>
+            ショウ<br>
+            てーる<br>
+            てーらす
+        </td>
+        <td>
+            <ruby>照明<rp>(</rp><rt>しょうめい</rt><rp>)</rp></ruby><br>
+            <ruby>対照的<rp>(</rp><rt>たいしょうてき</rt><rp>)</rp></ruby><br>
+            <ruby>照<rp>(</rp><rt>て</rt><rp>)</rp></ruby>らす
+        </td>
+        <td>
+            illumination, light<br>
+            in contrast to<br>
+            light up
+        </td>
+    </tr>
+</table>
+
+<blockquote>
+<p>「硬貨はこちらにお入れください」「よろしければ確認ボタンを押してください」などという指示にしたがってお金を預けたり、引き出したりますが、間違えてしまった場合は、「取り消し」ボタンを押します。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>硬</td>
+        <td>
+            コウ<br>
+            かたーい
+        </td>
+        <td>
+            <ruby>硬貨<rp>(</rp><rt>こうか</rt><rp>)</rp></ruby><br>
+            <ruby>硬<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>い
+        </td>
+        <td>
+            a coin<br>
+            hard
+        </td>
+    </tr>
+    <tr>
+        <td>貨</td>
+        <td>
+            カ
+        </td>
+        <td>
+            <ruby>貨物<rp>(</rp><rt>かもつ</rt><rp>)</rp></ruby><br>
+            <ruby>通貨<rp>(</rp><rt>つうか</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            freight<br>
+            currency
+        </td>
+    </tr>
+    <tr>
+        <td>確</td>
+        <td>
+            カク<br>
+            たしーか<br>
+            たしーかめる
+        </td>
+        <td>
+            <ruby>確定<rp>(</rp><rt>かくてい</rt><rp>)</rp></ruby><br>
+            <ruby>明確<rp>(</rp><rt>めいかく</rt><rp>)</rp></ruby>（な）<br>
+            <ruby>確<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>か（な）<br>
+            <ruby>確<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめる
+        </td>
+        <td>
+            determination<br>
+            clear<br>
+            certain<br>
+            confirm / verify
+        </td>
+    </tr>
+    <tr>
+        <td>認</td>
+        <td>
+            ニン<br>
+            みとーめる
+        </td>
+        <td>
+            <ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby><br>
+            <ruby>認<rp>(</rp><rt>みと</rt><rp>)</rp></ruby>める
+        </td>
+        <td>
+            an confirmation<br>
+            admit / approve
+        </td>
+    </tr>
+    <tr>
+        <td>違</td>
+        <td>
+            イ<br>
+            ちがーう<br>
+            ちがーえる 
+        </td>
+        <td>
+            <ruby>違法<rp>(</rp><rt>いほう</rt><rp>)</rp></ruby><br>
+            <ruby>違<rp>(</rp><rt>ちが</rt><rp>)</rp></ruby>い<br>
+            <ruby>間違<rp>(</rp><rt>まちが</rt><rp>)</rp></ruby>える
+        </td>
+        <td>
+            illegal<br>
+            a difference<br>
+            make a mistake
+        </td>
+    </tr>
+    <tr>
+        <td>取</td>
+        <td>
+            シュ<br>
+            とる
+        </td>
+        <td>
+            <ruby>取材<rp>(</rp><rt>しゅざい</rt><rp>)</rp></ruby><br>
+            <ruby>取<rp>(</rp><rt>と</rt><rp>)</rp>る</ruby><br>
+            <ruby>取り消し<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
+            <ruby>書き取り<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
+            <ruby>聞き取り<rp>(</rp><rt>ち</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            collect data<br>
+            take<br>
+            a cancellation<br>
+            a dication<br>
+            listening ability
+        </td>
+    </tr>
+        <tr>
+        <td>消</td>
+        <td>
+            ショウ<br>
+            きーえる<br>
+            けーす
+        </td>
+        <td>
+            <ruby>消去<rp>(</rp><rt>しょうきょ</rt><rp>)</rp></ruby><br>
+            <ruby>消<rp>(</rp><rt>き</rt><rp>)</rp></ruby>える<br>
+            <ruby>消<rp>(</rp><rt>け</rt><rp>)</rp>す</ruby>
+        </td>
+        <td>
+            eliminate<br>
+            be extinguished, disppear<br>
+            extinguish
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="3日目-自動販売機・自動券売機"><a href="#3日目-自動販売機・自動券売機" class="headerlink" title="3日目　自動販売機・自動券売機"></a>3日目　自動販売機・自動券売機</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>温</td>
+        <td>
+            オン<br>
+            あたたかい<br>
+            あたたーまる<br>
+            あたたーめる
+        </td>
+        <td>
+            <ruby>温度<rp>(</rp><rt>おんど</rt><rp>)</rp></ruby><br>
+            <ruby>暖<rp>(</rp><rt>あたた</rt><rp>)</rp></ruby>かい
+        </td>
+        <td>
+            temperature<br>
+            warm
+        </td>
+    </tr>
+    <tr>
+        <td>冷</td>
+        <td>
+            レイ<br>
+            つめーたい<br>
+            ひーえる<br>
+            ひーやす<br>
+            さーめる<br>
+            さーます
+        </td>
+        <td>
+            <ruby>冷静<rp>(</rp><rt>れいせい</rt><rp>)</rp></ruby><br>
+            <ruby>冷<rp>(</rp><rt>つめ</rt><rp>)</rp></ruby>たい<br>
+            <ruby>冷<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>える<br>
+            <ruby>冷<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>やす<br>
+            <ruby>冷<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>める
+        </td>
+        <td>
+            calmness<br>
+            cold<br>
+            become cold<br>
+            cool<br>
+            cool down
+        </td>
+    </tr>
+    <tr>
+        <td>緑</td>
+        <td>
+            リョク<br>
+            みどり
+        </td>
+        <td>
+            <ruby>緑茶<rp>(</rp><rt>りょくちゃ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            green tea
+        </td>
+    </tr>
+    <tr>
+        <td>紅</td>
+        <td>
+            コウ<br>
+            べに
+        </td>
+        <td>
+            <ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby><br>
+            <ruby>口紅<rp>(</rp><rt>くちべに</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            tea<br>
+            lipstick
+        </td>
+    </tr>
+    <tr>
+        <td>玉</td>
+        <td>
+            たま
+        </td>
+        <td>
+            <ruby>水玉<rp>(</rp><rt>みずたま</rt><rp>)</rp></ruby><br>
+            <ruby>十円玉<rp>(</rp><rt>じゅうえんだま</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a drop of water<br>
+            a 10 yen coin
+        </td>
+    </tr>
+    <tr>
+        <td>返</td>
+        <td>
+            ヘン<br>
+            かえーす<br>
+            かえーる
+        </td>
+        <td>
+            <ruby>返事<rp>(</rp><rt>へんじ</rt><rp>)</rp></ruby><br>
+            <ruby>返却<rp>(</rp><rt>へんきゃく</rt><rp>)</rp></ruby><br>
+            <ruby>返金<rp>(</rp><rt>へんきん</rt><rp>)</rp></ruby>
+            <ruby>返<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>す
+        </td>
+        <td>
+            reply<br>
+            return (something)<br>
+            a refund<br>
+            return (something)
+        </td>
+</table>
+
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>団</td>
+        <td>
+            ダン<br>
+            トン
+        </td>
+        <td>
+            <ruby>団体<rp>(</rp><rt>だんたい</rt><rp>)</rp></ruby><br>
+            <ruby>集団<rp>(</rp><rt>しゅうだん</rt><rp>)</rp></ruby><br>
+            <ruby>布団<rp>(</rp><rt>ふとん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a group, organization<br>
+            a group<br>
+            futon
+        </td>
+    </tr>
+    <tr>
+        <td>般</td>
+        <td>
+            ハン
+        </td>
+        <td>
+            <ruby>一般<rp>(</rp><rt>いっぱん</rt><rp>)</rp></ruby><br>
+            <ruby>全般<rp>(</rp><rt>ぜんぱん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            (in) general<br>
+            overall
+        </td>
+    </tr>
+    <tr>
+        <td>幼</td>
+        <td>
+            ヨウ<br>
+            おさなーい
+        </td>
+        <td>
+            <ruby>幼児<rp>(</rp><rt>ようじ</rt><rp>)</rp></ruby><br>
+            <ruby>幼<rp>(</rp><rt>おさな</rt><rp>)</rp></ruby>い
+        </td>
+        <td>
+            baby<br>
+            very young
+        </td>
+    </tr>
+    <tr>
+        <td>児</td>
+        <td>
+            ニ<br>
+            ジ
+        </td>
+        <td>
+            <ruby>小児科<rp>(</rp><rt>しょうにか</rt><rp>)</rp></ruby><br>
+            <ruby>児童<rp>(</rp><rt>じどう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            pediatrics department
+        </td>
+    </tr>
+    <tr>
+        <td>歳</td>
+        <td>
+            サイ
+        </td>
+        <td>
+            〜<ruby>歳<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            ... years old
+        </td>
+    </tr>
+    <tr>
+        <td>未</td>
+        <td>
+            ミ
+        </td>
+        <td>
+            <ruby>未定<rp>(</rp><rt>みてい</rt><rp>)</rp></ruby><br>
+            <ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby><br>
+            <ruby>未<rp>(</rp><rt>み</rt><rp>)</rp></ruby>〜
+        </td>
+        <td>
+            undecided<br>
+            future<br>
+            not yet
+        </td>
+    </tr>
+        <tr>
+        <td>満</td>
+        <td>
+            マン<br>
+            みーちる<br>
+            みーたす
+        </td>
+        <td>
+            <ruby>未満<rp>(</rp><rt>みまん</rt><rp>)</rp></ruby><br>
+            <ruby>満足<rp>(</rp><rt>まんぞく</rt><rp>)</rp></ruby><br>
+            <ruby>満<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ちる
+        </td>
+        <td>
+            less than<br>
+            satisfaction<br>
+            filled with
+        </td>
+    </tr>
+    <tr>
+        <td>老</td>
+        <td>
+            ロウ<br>
+            おーいる
+        </td>
+        <td>
+            <ruby>老人<rp>(</rp><rt>ろうじん</rt><rp>)</rp></ruby><br>
+            <ruby>年老<rp>(</rp><rt>としお</rt><rp>)</rp></ruby>いた
+        </td>
+        <td>
+            an old person<br>
+            old (person)
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="4日目-家電のリモコン"><a href="#4日目-家電のリモコン" class="headerlink" title="4日目　家電のリモコン"></a>4日目　家電のリモコン</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>設</td>
+        <td>
+            セツ
+        </td>
+        <td>
+            <ruby>設定<rp>(</rp><rt>せってい</rt><rp>)</rp></ruby><br>
+            <ruby>設計<rp>(</rp><rt>せっけい</rt><rp>)</rp></ruby><br>
+            <ruby>設備<rp>(</rp><rt>せつび</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            setting<br>
+            design<br>
+            equipment
+        </td>
+    </tr>
+    <tr>
+        <td>換</td>
+        <td>
+            カン<br>
+            かーえる<br>
+            かーわる
+        </td>
+        <td>
+            <ruby>換気<rp>(</rp><rt>かんき</rt><rp>)</rp></ruby><br>
+            <ruby>運転切換<rp>(</rp><rt>うんてんきりかえ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            ventilation<br>
+            change of mode of operation
+        </td>
+    </tr>
+    <tr>
+        <td>向</td>
+        <td>
+            コウ<br>
+            むーく<br>
+            むーける<br>
+            むーかう<br>
+            むーこう
+        </td>
+        <td>
+            <ruby>風向<rp>(</rp><rt>ふうこう</rt><rp>)</rp></ruby><br>
+            <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>こう<br>
+            <ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>かい
+        </td>
+        <td>
+            angle of louvre<br>
+            over there<br>
+            opposite / across
+        </td>
+    </tr>
+    <tr>
+        <td>停</td>
+        <td>
+            テイ
+        </td>
+        <td>
+            <ruby>停止<rp>(</rp><rt>ていし</rt><rp>)</rp></ruby><br>
+            <ruby>停電<rp>(</rp><rt>ていでん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            stop<br>
+            electricity black out
+        </td>
+    </tr>
+    <tr>
+        <td>暖</td>
+        <td>
+            ダン<br>
+            あたたーかい<br>
+            あたたーまる<br>
+            あたたーめる
+        </td>
+        <td>
+            <ruby>暖房<rp>(</rp><rt>だんぼう</rt><rp>)</rp></ruby><br>
+            <ruby>温暖<rp>(</rp><rt>おんだん</rt><rp>)</rp>（な）</ruby><br>
+            <ruby>暖<rp>(</rp><rt>あたた</rt><rp>)</rp></ruby>かい
+        </td>
+        <td>
+            warm<br>
+            warm<br>
+            a heater
+        </td>
+    </tr>
+    <tr>
+        <td>除</td>
+        <td>
+            ジョ<br>
+            ジ<br>
+            のぞーく
+        </td>
+        <td>
+            <ruby>除湿<rp>(</rp><rt>じょしつ</rt><rp>)</rp></ruby><br>
+            <ruby>掃除<rp>(</rp><rt>そうじ</rt><rp>)</rp></ruby><br>
+            <ruby>除<rp>(</rp><rt>のぞ</rt><rp>)</rp></ruby>く
+        </td>
+        <td>
+            dehumidification<br>
+            cleaning<br>
+            remove / exclude
+        </td>
+    </tr>
+    <tr>
+        <td>湿</td>
+        <td>
+            シツ<br>
+            しめーる
+        </td>
+        <td>
+            <ruby>湿度<rp>(</rp><rt>しつど</rt><rp>)</rp></ruby><br>
+            <ruby>湿気<rp>(</rp><rt>しっけ</rt><rp>)</rp></ruby><br>
+            <ruby>湿<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>る
+        </td>
+        <td>
+            humidity<br>
+            humidity / moisture<br>
+            become damp
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>標</td>
+        <td>
+            ヒョウ
+        </td>
+        <td>
+            <ruby>標準<rp>(</rp><rt>ひょうじゅん</rt><rp>)</rp></ruby><br>
+            <ruby>目標<rp>(</rp><rt>もくひょう</rt><rp>)</rp></ruby><br>
+            <ruby>標本<rp>(</rp><rt>ひょうほん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            standard<br>
+            an aim / objective<br>
+            a specimen / sample
+        </td>
+    </tr>
+    <tr>
+        <td>倍</td>
+        <td>
+            バイ
+        </td>
+        <td>
+            <ruby>倍<rp>(</rp><rt>バイ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            times (size, quantity)
+        </td>
+    </tr>
+    <tr>
+        <td>巻</td>
+        <td>
+            カン<br>
+            まーく
+        </td>
+        <td>
+            〜<ruby>巻<rp>(</rp><rt>かん</rt><rp>)</rp></ruby><br>
+            <ruby>巻<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>く<br>
+            <ruby>巻き戻り<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            volume...(used for books with several volumes)<br>
+            wind, roll up<br>
+            rewinding
+        </td>
+    </tr>
+    <tr>
+        <td>録</td>
+        <td>
+            ロク
+        </td>
+        <td>
+            <ruby>録画<rp>(</rp><rt>ろくが</rt><rp>)</rp></ruby><br>
+            <ruby>録音<rp>(</rp><rt>ろくおん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            record(video)<br>
+            record(sound)
+        </td>
+    </tr>
+    <tr>
+        <td>量</td>
+        <td>
+            リョウ<br>
+            はかーる
+        </td>
+        <td>
+            <ruby>音量<rp>(</rp><rt>おんりょう</rt><rp>)</rp></ruby><br>
+            <ruby>風量<rp>(</rp><rt>ふうりょう</rt><rp>)</rp></ruby><br>
+            <ruby>分量<rp>(</rp><rt>ぶんりょう</rt><rp>)</rp></ruby><br>
+            <ruby>数量<rp>(</rp><rt>すうりょう</rt><rp>)</rp></ruby><br>
+            <ruby>量<rp>(</rp><rt>はか</rt><rp>)</rp></ruby>る
+        </td>
+        <td>
+            volume<br>
+            air strength<br>
+            quantity<br>
+            amount<br>
+            measure
+        </td>
+    </tr>
+    <tr>
+        <td>予</td>
+        <td>
+            ヨ
+        </td>
+        <td>
+            <ruby>予定<rp>(</rp><rt>よてい</rt><rp>)</rp></ruby><br>
+            <ruby>予習<rp>(</rp><rt>よしゅう</rt><rp>)</rp></ruby><br>
+            <ruby>予備<rp>(</rp><rt>よび</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a plan / schedule<br>
+            a review(pre-study)<br>
+            reserve
+        </td>
+    </tr>
+    <tr>
+        <td>約</td>
+        <td>
+            ヤク
+        </td>
+        <td>
+            <ruby>予約<rp>(</rp><rt>よやく</rt><rp>)</rp></ruby><br>
+            <ruby>約<rp>(</rp><rt>やく</rt><rp>)</rp></ruby><br>
+            <ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby>ちる
+        </td>
+        <td>
+            an appointment / reservation<br>
+            approximately<br>
+            a promise
+        </td>
+    </tr>
+</table>
+
+<h2 id="5日目"><a href="#5日目" class="headerlink" title="5日目"></a>5日目</h2><blockquote>
+<p>私は家に帰るとすぐ留守番電話の伝言を聞き、再生済みの用件を消する。携帯電話は電車の中や仕事中など、普段はマナーモードに設定している。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>帯</td>
+        <td>
+            タイ<br>
+            おび
+        </td>
+        <td>
+            地帯<br>
+            帯
+        </td>
+        <td>
+            a region / area<br>
+            a belt / sash
+        </td>
+    </tr>
+    <tr>
+        <td>保</td>
+        <td>
+            ホ<br>
+            たもーつ
+        </td>
+        <td>
+            保温<br>
+            保湿<br>
+            保つ
+        </td>
+        <td>
+            retention of warmth<br>
+            retention of dempness<br>
+            keep / maintain
+        </td>
+    </tr>
+    <tr>
+        <td>留</td>
+        <td>
+            リュウ<br>
+            ル<br>
+            とーめる
+        </td>
+        <td>
+            保留<br>
+            停留所<br>
+            書留
+        </td>
+        <td>
+            a reservation<br>
+            a bus stop<br>
+            registration
+        </td>
+    </tr>
+    <tr>
+        <td>守</td>
+        <td>
+            シュ<br>
+            ス<br>
+            まもーる
+        </td>
+        <td>
+            <ruby>保守的<rp>(</rp><rt>ほしゅてき</rt><rp>)</rp></ruby><br>
+            <ruby>留守<rp>(</rp><rt>るす</rt><rp>)</rp></ruby><br>
+            <ruby>守<rp>(</rp><rt>まも</rt><rp>)</rp></ruby>る
+        </td>
+        <td>
+            conservative<br>
+            absence<br>
+            protect
+        </td>
+    </tr>
+   <tr>
+        <td>伝</td>
+        <td>
+            デン<br>
+            つたーわる<br>
+            つたーえる
+        </td>
+        <td>
+            <ruby>伝言<rp>(</rp><rt>でんごん</rt><rp>)</rp></ruby><br>
+            <ruby>伝<rp>(</rp><rt>つた</rt><rp>)</rp></ruby>える<br>
+            <ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>う
+        </td>
+        <td>
+            a message<br>
+            convery / communicate<br>
+            help
+        </td>
+    </tr>
+    <tr>
+        <td>済</td>
+        <td>
+            サイ<br>
+            すーむ<br>
+            すーます
+        </td>
+        <td>
+            <ruby>済<rp>(</rp><rt>す</rt><rp>)</rp></ruby>む<br>
+            〜<ruby>済<rp>(</rp><rt>ず</rt><rp>)</rp></ruby>み<br>
+            <ruby>返済<rp>(</rp><rt>へんさい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            finish<br>
+            completed<br>
+            repayment
+        </td>
+    </tr>
+    <tr>
+        <td>件</td>
+        <td>
+            ケン
+        </td>
+        <td>
+            <ruby>用件<rp>(</rp><rt>ようけん</rt><rp>)</rp></ruby><br>
+            <ruby>件名<rp>(</rp><rt>けんめい</rt><rp>)</rp></ruby><br>
+            <ruby>事件<rp>(</rp><rt>じけん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a business / matter<br>
+            subject<br>
+            an incident
+        </td>
+    </tr>
+</table>
+
+<blockquote>
+<p>「着信履歴」やメールの「受信箱」を確認して、用件があれば返信する。新しくアドレスを作成する場合は、「新規」で入力する。文字は自分で変化したり並んでいる言葉の中から「選択」したりして、「決定」あるいは「確定」する。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>信</td>
+        <td>
+            シン
+        </td>
+        <td>
+            <ruby>通信<rp>(</rp><rt>つうしん</rt><rp>)</rp></ruby><br>
+            <ruby>自信<rp>(</rp><rt>じしん</rt><rp>)</rp></ruby><br>
+            <ruby>信<rp>(</rp><rt>信</rt><rp>)</rp></ruby>じる
+        </td>
+        <td>
+            correspondence<br>
+            confidence<br>
+            believe
+        </td>
+    </tr>
+    <tr>
+        <td>暦</td>
+        <td>
+            レキ
+        </td>
+        <td>
+            <ruby>着信履歴<rp>(</rp><rt>ちゃくしんりれき</rt><rp>)</rp></ruby><br>
+            <ruby>履歴書<rp>(</rp><rt>りれきしょ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            record of calls received<br>
+            a resume
+        </td>
+    </tr>
+    <tr>
+        <td>箱</td>
+        <td>
+            はこ
+        </td>
+        <td>
+            <ruby>受信箱<rp>(</rp><rt>じゅしんばこ</rt><rp>)</rp></ruby><br>
+            <ruby>送信箱<rp>(</rp><rt>そうしんばこ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            inbox<br>
+            outbox
+        </td>
+    </tr>
+    <tr>
+        <td>規</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>新規<rp>(</rp><rt>しんき</rt><rp>)</rp></ruby><br>
+            <ruby>規定<rp>(</rp><rt>きてい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            new / fresh<br>
+            regulation
+        </td>
+    </tr>
+   <tr>
+        <td>変</td>
+        <td>
+            ヘン<br>
+            かーわる<br>
+            かーえる
+        </td>
+        <td>
+            <ruby>変換<rp>(</rp><rt>へんかん</rt><rp>)</rp></ruby><br>
+            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わる<br>
+            <ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>える
+        </td>
+        <td>
+            conversion<br>
+            change<br>
+            change(something)
+        </td>
+    </tr>
+    <tr>
+        <td>選</td>
+        <td>
+            セン<br>
+            えらーぶ
+        </td>
+        <td>
+            <ruby>選択<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>む<br>
+            <ruby>選考<rp>(</rp><rt>せんこう</rt><rp>)</rp></ruby><br>
+            <ruby>選<rp>(</rp><rt>えら</rt><rp>)</rp></ruby>ぶ
+        </td>
+        <td>
+            a choice<br>
+            a player, an athlete<br>
+            choose
+        </td>
+    </tr>
+    <tr>
+        <td>決</td>
+        <td>
+            ケツ<br>
+            きーめる<br>
+            きーまる
+        </td>
+        <td>
+            <ruby>決定<rp>(</rp><rt>けってい</rt><rp>)</rp></ruby><br>
+            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>める<br>
+            <ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>まる
+        </td>
+        <td>
+            a decision<br>
+            decide (something)<br>
+            be decided
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="6日目-携帯電話・パソコン"><a href="#6日目-携帯電話・パソコン" class="headerlink" title="6日目　携帯電話・パソコン"></a>6日目　携帯電話・パソコン</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>登</td>
+        <td>
+            トウ<br>
+            ト<br>
+            のぼーる
+        </td>
+        <td>
+            <ruby>登録<rp>(</rp><rt>とうろく</rt><rp>)</rp></ruby><br>
+            <ruby>登場<rp>(</rp><rt>とうじょう</rt><rp>)</rp></ruby><br>
+            <ruby>登山<rp>(</rp><rt>とざん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            registration<br>
+            appearance<br>
+            moutain climbing
+        </td>
+    </tr>
+    <tr>
+        <td>編</td>
+        <td>
+            ヘン<br>
+            あーむ
+        </td>
+        <td>
+            <ruby>編集<rp>(</rp><rt>へんしゅう</rt><rp>)</rp></ruby><br>
+            <ruby>長編<rp>(</rp><rt>ちょうへん</rt><rp>)</rp></ruby><br>
+            <ruby>短編<rp>(</rp><rt>たんべん</rt><rp>)</rp></ruby><br>
+            <ruby>編<rp>(</rp><rt>あ</rt><rp>)</rp>み物</ruby>
+        </td>
+        <td>
+            editing<br>
+            long work<br>
+            short work<br>
+            knitting
+        </td>
+    </tr>
+    <tr>
+        <td>能</td>
+        <td>
+            ノウ
+        </td>
+        <td>
+            <ruby>機能<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            function
+        </td>
+    </tr>
+    <tr>
+        <td>修</td>
+        <td>
+            シュウ
+        </td>
+        <td>
+            <ruby>修正<rp>(</rp><rt>しゅうせい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            amendment
+        </td>
+    </tr>
+   <tr>
+        <td>完</td>
+        <td>
+            カン
+        </td>
+        <td>
+            <ruby>完了<rp>(</rp><rt>かんりょう</rt><rp>)</rp></ruby><br>
+            <ruby>完成<rp>(</rp><rt>かんせい</rt><rp>)</rp></ruby><br>
+            <ruby>完備<rp>(</rp><rt>かんび</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            completion<br>
+            completion<br>
+            be fully equipped
+        </td>
+    </tr>
+    <tr>
+        <td>了</td>
+        <td>
+            リョウ
+        </td>
+        <td>
+            <ruby>終了<rp>(</rp><rt>しゅうりょう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            end, expiration
+        </td>
+    </tr>
+    <tr>
+        <td>像</td>
+        <td>
+            ゾウ
+        </td>
+        <td>
+            <ruby>画像<rp>(</rp><rt>がぞう</rt><rp>)</rp></ruby><br>
+            <ruby>現像<rp>(</rp><rt>げんぞう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a picture<br>
+            developing (a photograph)
+        </td>
+    </tr>
+</table>
+
+<blockquote>
+<p>ワープロソフトで書類を作成するときは「書式」でフォントやサイズを設定する。文字は中央にそろえたり、右寄せ、左寄せもできる。作成したら「名前を付けて保存」する。その後は「上書き保存」できる。印刷は「用紙設定」をして「印刷プレビュー」で確認するとよい。文字が小さくて見づらいときは、「拡大」表示する。</p>
+</blockquote>
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>類</td>
+        <td>
+            ルイ
+        </td>
+        <td>
+            <ruby>書類<rp>(</rp><rt>しょるい</rt><rp>)</rp></ruby><br>
+            <ruby>分類<rp>(</rp><rt>ぶんるい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a document<br>
+            classification
+        </td>
+    </tr>
+    <tr>
+        <td>式</td>
+        <td>
+            シキ
+        </td>
+        <td>
+            <ruby>書式<rp>(</rp><rt>しょしき</rt><rp>)</rp></ruby>
+            <ruby>正式<rp>(</rp><rt>せいしき</rt><rp>)</rp>（な）</ruby>
+        </td>
+        <td>
+            format<br>
+            formal / official
+        </td>
+    </tr>
+    <tr>
+        <td>央</td>
+        <td>
+            オウ
+        </td>
+        <td>
+            <ruby>中央<rp>(</rp><rt>ちゅうおう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            center
+        </td>
+    </tr>
+    <tr>
+        <td>存</td>
+        <td>
+            ゾン<br>
+            ソン
+        </td>
+        <td>
+            <ruby>保存<rp>(</rp><rt>ほぞん</rt><rp>)</rp></ruby>
+            <ruby>生存<rp>(</rp><rt>せいぞん</rt><rp>)</rp></ruby>
+            ご<ruby>存知<rp>(</rp><rt>ぞんじ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            save<br>
+            survival<br>
+            know(humble form)
+        </td>
+    </tr>
+   <tr>
+        <td>印</td>
+        <td>
+            イン<br>
+            しるし
+        </td>
+        <td>
+            認め<ruby>印<rp>(</rp><rt>いん</rt><rp>)</rp></ruby>
+            <ruby>印<rp>(</rp><rt>しるし</rt><rp>)</rp></ruby><br>
+            <ruby>目印<rp>(</rp><rt>めじるし</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a seal (stamp)<br>
+            a mark / token<br>
+            a sign / landmark
+        </td>
+    </tr>
+    <tr>
+        <td>刷</td>
+        <td>
+            サツ
+        </td>
+        <td>
+            <ruby>印刷<rp>(</rp><rt>いんさつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            printing
+        </td>
+    </tr>
+    <tr>
+        <td>拡</td>
+        <td>
+            カク
+        </td>
+        <td>
+            <ruby>拡大<rp>(</rp><rt>かくだい</rt><rp>)</rp></ruby><br>
+            <ruby>縮小<rp>(</rp><rt>しゅくしょう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            enlargement<br>
+            reduction
+        </td>
+    </tr>
+</table>]]></content>
+      <categories>
+        <category>KanJi</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>KanJi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Explain localhost and 127.0.0.1</title>
     <url>/new-blog/915cd40c.html</url>
     <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
@@ -6865,6 +6865,118 @@ funcs[0](); // 0
       </categories>
       <tags>
         <tag>Network</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
+    <url>/new-blog/66c5e938.html</url>
+    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+<span id="more"></span>
+
+<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
+<ul>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
+</ul>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<pre><code class="bash">brew install node
+</code></pre>
+<p>もしくは、</p>
+<pre><code class="bash">node -v
+npm -v
+</code></pre>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<pre><code class="bash">brew install git
+</code></pre>
+<pre><code class="bash">git --version
+</code></pre>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@example.com&quot;
+</code></pre>
+<p>“Your Name”と”<a href="mailto:&#x79;&#111;&#117;&#x72;&#x2e;&#101;&#x6d;&#97;&#x69;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;">&#x79;&#111;&#117;&#x72;&#x2e;&#101;&#x6d;&#97;&#x69;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
+</code></pre>
+<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
+<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
+<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
+<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
+<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
+<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
+<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+<p>以下のコマンドを使用して検証できます：</p>
+<pre><code class="bash">hexo -v
+</code></pre>
+<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
+<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
+<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
+</code></pre>
+<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
+<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
+<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
+</code></pre>
+<p>次に、作成されたディレクトリに移動します：</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+</code></pre>
+<p>移動したら、依存パッケージをインストールします：</p>
+<pre><code>npm install
+</code></pre>
+<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
+<pre><code>hexo generate
+</code></pre>
+<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
+<pre><code>hexo server
+</code></pre>
+<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
+<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
+<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
+<blockquote>
+<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
+</blockquote>
+<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+git init 
+git add . 
+git commit -am&quot;init blog&quot; 
+</code></pre>
+<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
+<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
+git branch -M main
+git push -u origin main
+</code></pre>
+<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
+<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
+<pre><code class="bash">git checkout -b pages
+git push -u origin pages
+</code></pre>
+<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
+<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
+<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
+<pre><code class="bash">url: https://ユーザー名.github.io/ 
+root: /breeze-blog/ 
+
+deploy: 
+  type: &#39;git&#39; 
+  repo: git@github.com:ユーザー名./ディレクトリ名
+  branch: pages
+</code></pre>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -6949,118 +7061,6 @@ permalink: posts/:abbrlink.html
 <blockquote>
 <p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
 </blockquote>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
-    <url>/new-blog/66c5e938.html</url>
-    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
-<span id="more"></span>
-
-<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
-<ul>
-<li><code>Node.js</code> のローカルインストール</li>
-<li><code>Git</code> のローカルインストール</li>
-<li><code>GitHub</code> アカウント</li>
-<li><code>GitHub</code> リポジトリの作成</li>
-</ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
-<pre><code class="bash">brew install node
-</code></pre>
-<p>もしくは、</p>
-<pre><code class="bash">node -v
-npm -v
-</code></pre>
-<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
-<pre><code class="bash">brew install git
-</code></pre>
-<pre><code class="bash">git --version
-</code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
-<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;your.email@example.com&quot;
-</code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#97;&#105;&#x6c;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#121;&#x6f;&#117;&#x72;&#46;&#x65;&#109;&#97;&#105;&#x6c;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
-<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
-</code></pre>
-<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
-<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
-<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
-<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
-<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
-<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
-<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>以下のコマンドを使用して検証できます：</p>
-<pre><code class="bash">hexo -v
-</code></pre>
-<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
-<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
-<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
-</code></pre>
-<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
-<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
-<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
-</code></pre>
-<p>次に、作成されたディレクトリに移動します：</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-</code></pre>
-<p>移動したら、依存パッケージをインストールします：</p>
-<pre><code>npm install
-</code></pre>
-<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
-<pre><code>hexo generate
-</code></pre>
-<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
-<pre><code>hexo server
-</code></pre>
-<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
-<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
-<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
-<blockquote>
-<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
-</blockquote>
-<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-git init 
-git add . 
-git commit -am&quot;init blog&quot; 
-</code></pre>
-<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
-<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
-git branch -M main
-git push -u origin main
-</code></pre>
-<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
-<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
-<pre><code class="bash">git checkout -b pages
-git push -u origin pages
-</code></pre>
-<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
-<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
-<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
-<pre><code class="bash">url: https://ユーザー名.github.io/ 
-root: /breeze-blog/ 
-
-deploy: 
-  type: &#39;git&#39; 
-  repo: git@github.com:ユーザー名./ディレクトリ名
-  branch: pages
-</code></pre>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -7227,6 +7227,74 @@ deploy:
 <ol>
 <li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
 </ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -7518,74 +7586,6 @@ deploy:
 </blockquote>
 <p>接続<br>名＋にこたえて<br>名＋にこたえる＋名</p>
 <p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
-<ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
-<p>例文</p>
-<blockquote>
-<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
-</blockquote>
-<p>接続　動て形＋はじめて</p>
-<p>注意　</p>
-<ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
-</ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
-<p>例文</p>
-<blockquote>
-<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
-</blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
-<ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
-</ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
-<ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
-</ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
-<blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
-</blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -8768,41 +8768,42 @@ deploy:
 
 <h2 id="〜ものだ"><a href="#〜ものだ" class="headerlink" title="〜ものだ"></a>〜ものだ</h2><p>意味　一般的に見て、本来〜だ・〜というのは真理だ。</p>
 <p>例文　</p>
-<blockquote>
-<p>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</p>
-</blockquote>
+<ul>
+<li>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</li>
+</ul>
 <p>接続　動辞書形／ない形・イ形い・ナ形な＋ものだ</p>
 <p>注意　</p>
 <ol>
-<li>過去形では使わない。</li>
+<li>過去形では使わない。主語は個別のものではなく総称的なもの（人間・親・世の中）</li>
 </ol>
 <h2 id="〜というものだ"><a href="#〜というものだ" class="headerlink" title="〜というものだ"></a>〜というものだ</h2><p>意味　常識的に見て、まさに〜だ。</p>
 <p>例文</p>
-<blockquote>
-<p>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。<br>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</p>
-</blockquote>
+<ul>
+<li>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。</li>
+<li>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</li>
+</ul>
 <p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というものだ</p>
 <p>注意</p>
 <ol>
-<li>ある状況について、「常識的に考えて〜だ」という評価を示す。</li>
+<li>ある状況について、「常識的に考えて〜だ」という評価を示す。話者の感情を表すには使わない。</li>
 </ol>
-<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>説明　nothing more than</p>
-<p>意味　ただ〜だけて、それ以上ではない。</p>
+<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>意味　ただ〜だけて、それ以上ではない。</p>
 <p>例文</p>
-<blockquote>
-<p>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></p>
-</blockquote>
+<ul>
+<li>一社員<u>にすぎない</u>わたしに、会社の経営のことなど決められない。</li>
+<li>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></li>
+</ul>
 <p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にすぎない</p>
 <p>注意</p>
 <ol>
 <li>話者が特別ではない・重要ではない・少ないと思っていることにつく。</li>
 </ol>
-<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>説明　nothing but; merely; none other than</p>
-<p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
+<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
 <p>例文</p>
-<blockquote>
-<p>将来この国を支えるのは、若い君たち<u>にほかなりません</u></p>
-</blockquote>
+<ul>
+<li>将来この国を支えるのは、若い君たち<u>にほかなりません</u></li>
+<li>人間も自然の一部<u>にほかならない</u>ということを忘れてはならない</li>
+</ul>
 <p>接続 名＋にほかならない</p>
 <p>注意</p>
 <ol>
@@ -8816,27 +8817,24 @@ deploy:
 </blockquote>
 <p>接続　普通形現在（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋に越したことはない</p>
 <p>注意　</p>
-<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>説明　</p>
-<ol>
-<li>having no choice but to …; all one can do is …; there’s nothing to do except …</li>
-<li>having nothing but …; there is only …; having only …; having no more than …​</li>
-</ol>
-<p>意味　〜以外に選択肢・可能性・方法がない</p>
+<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>意味　〜以外に選択肢・可能性・方法がない</p>
 <p>例文</p>
-<blockquote>
-<p>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u><br>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></p>
-</blockquote>
+<ul>
+<li>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u></li>
+<li>会議で企画の中止が決まったなら、この決定を受け入れる<u>よりほかない</u>でしょう</li>
+<li>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></li>
+</ul>
 <p>接続　動辞書形＋しかない・よりほかない</p>
 <p>注意</p>
 <ol>
 <li>「ほかに選択の余地がないので、仕方なくこの選択肢を選ぶ」という話者の気持ちを表す。</li>
 </ol>
-<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>説明　should (not); must (not)</p>
-<p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
+<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
 <p>例文</p>
-<blockquote>
-<p>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</p>
-</blockquote>
+<ul>
+<li>今日できることは明日に延ばさず今日する<u>べきだ</u></li>
+<li>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</li>
+</ul>
 <p>接続　<br>動辞書形＋べきだ・べきではない　<span style="color:red">する→するべき・すべき</span><br>動辞書形＋べき・べきではない＋名</p>
 <p>注意</p>
 <ol>
@@ -8849,7 +8847,7 @@ deploy:
       </categories>
       <tags>
         <tag>N2</tag>
-        <tag>express subjectivity</tag>
+        <tag>主観を述べる</tag>
       </tags>
   </entry>
   <entry>
@@ -10491,26 +10489,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>条件を表す文</title>
-    <url>/new-blog/ff8369b4.html</url>
-    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
-<span id="more"></span>
-
-<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
-<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
-<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
-<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
-<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>GrammaticalForm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>とき</title>
     <url>/new-blog/7971245b.html</url>
     <content><![CDATA[<h1 id="〜とき"><a href="#〜とき" class="headerlink" title="〜とき"></a>〜とき</h1><span id="more"></span>
@@ -10606,6 +10584,43 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>比べれば…・〜がいちばん</title>
+    <url>/new-blog/a457ced0.html</url>
+    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
+
+<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
+<blockquote>
+<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
+</blockquote>
+<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
+<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
+<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
+<blockquote>
+<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
+</blockquote>
+<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续　名+くらい…はない・ぐらい…はない</p>
+<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
+<blockquote>
+<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
+</blockquote>
+<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
+<p>接续 動詞辞书形+くらいなら…</p>
+<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
+<blockquote>
+<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
+</blockquote>
+<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜とは違って</title>
     <url>/new-blog/b9249d31.html</url>
     <content><![CDATA[<h1 id="〜とは違って"><a href="#〜とは違って" class="headerlink" title="〜とは違って"></a>〜とは違って</h1><span id="more"></span>
@@ -10640,43 +10655,6 @@ deploy:
 </blockquote>
 <p>説明　「〜ということがあるが、反対に、それと同じ程度の…ということもある」。「通常している・通常するはずの〜をしないで、それと同じ程度の…をする」</p>
 <p>接続　動・形普通形（ナ形<del>だ</del>ーな）＋かわりに</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>比べれば…・〜がいちばん</title>
-    <url>/new-blog/a457ced0.html</url>
-    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
-
-<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
-<blockquote>
-<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
-</blockquote>
-<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
-<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
-<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
-<blockquote>
-<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
-</blockquote>
-<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续　名+くらい…はない・ぐらい…はない</p>
-<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
-<blockquote>
-<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
-</blockquote>
-<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
-<p>接续 動詞辞书形+くらいなら…</p>
-<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
-<blockquote>
-<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
-</blockquote>
-<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -12125,6 +12103,26 @@ deploy:
       </categories>
       <tags>
         <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>条件を表す文</title>
+    <url>/new-blog/ff8369b4.html</url>
+    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
+<span id="more"></span>
+
+<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
+<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
+<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
+<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
+<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>GrammaticalForm</tag>
       </tags>
   </entry>
 </search>
