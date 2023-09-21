@@ -490,11 +490,6 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
-    <title>es6page03</title>
-    <url>/new-blog/3e9a14f6.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>arrow function</title>
     <url>/new-blog/499d2460.html</url>
     <content><![CDATA[<h1 id="arrow-function"><a href="#arrow-function" class="headerlink" title="arrow function"></a>arrow function</h1><span id="more"></span>
@@ -524,6 +519,1370 @@ funcs[0](); // 0
 </code></pre>
 <p>由于箭头函数没有 this，所以会向外层查找 this 的值，即 bindEvent 中的 this，此时 this 指向实例对象，所以可以正确的调用 this.setBgColor 方法， 而 this.setBgColor 中的 this 也会正确指向实例对象。</p>
 <h3 id="没有arguments"><a href="#没有arguments" class="headerlink" title="没有arguments"></a>没有arguments</h3><h3 id="不能通过new关键字调用"><a href="#不能通过new关键字调用" class="headerlink" title="不能通过new关键字调用"></a>不能通过new关键字调用</h3><h3 id="没有new-target"><a href="#没有new-target" class="headerlink" title="没有new.target"></a>没有new.target</h3><h3 id="没有原型"><a href="#没有原型" class="headerlink" title="没有原型"></a>没有原型</h3><h3 id="没有super"><a href="#没有super" class="headerlink" title="没有super"></a>没有super</h3>]]></content>
+  </entry>
+  <entry>
+    <title>es6page03</title>
+    <url>/new-blog/3e9a14f6.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>日本語の助詞</title>
+    <url>/new-blog/72a80842.html</url>
+    <content><![CDATA[<h1 id="助詞"><a href="#助詞" class="headerlink" title="助詞"></a>助詞</h1><span id="more"></span>
+
+<p>助詞は活用がなく、単独では使われず、名詞や動詞などに付いて、さまざまな働きをする。その働きによって、との文法関係を示す<b>格助詞</b>、文の成分に特別な意味を加える<b>取り立て助詞</b>、対等な関係で語を結び<u>列</u></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>第一週 みる①</title>
+    <url>/new-blog/57df7023.html</url>
+    <content><![CDATA[<h1 id="第一週-みる"><a href="#第一週-みる" class="headerlink" title="第一週　みる"></a>第一週　みる</h1><span id="more"></span>
+
+<h2 id="1日目-立て札・注意書き"><a href="#1日目-立て札・注意書き" class="headerlink" title="1日目　立て札・注意書き"></a>1日目　立て札・注意書き</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>禁</td>
+        <td>
+            キン
+        </td>
+        <td>禁止</td>
+        <td>prohibition</td>
+    </tr>
+    <tr>
+        <td>煙</td>
+        <td>
+            エン<br>
+            けむり
+        </td>
+        <td>
+            禁煙<br>
+            煙
+        </td>
+        <td>
+            no smoking<br>
+            smoke
+        </td>
+    </tr>
+    <tr>
+        <td>静</td>
+        <td>
+            セイ<br>
+            しずーか<br>
+            しずーまる
+        </td>
+        <td>
+            安静（な）<br>
+            静か（な）<br>
+            静まる
+        </td>
+        <td>
+            quietly<br>
+            quiet<br>
+            become quiet
+        </td>
+    </tr>
+    <tr>
+        <td>危</td>
+        <td>
+            キ<br>
+            あぶーない<br>
+            あやーうい
+        </td>
+        <td>
+            危機<br>
+            危ない<br>
+            危うい
+        </td>
+        <td>
+            a crisis<br>
+            dangerous<br>
+            dangerous(narrow escape)
+        </td>
+    </tr>
+    <tr>
+        <td>険</td>
+        <td>
+            ケン<br>
+            けわーしい
+        </td>
+        <td>
+            危険<br>
+            険しい
+        </td>
+        <td>
+            danger<br>
+            steep
+        </td>
+    </tr>
+    <tr>
+        <td>関</td>
+        <td>
+            カン<br>
+            かかーわる
+        </td>
+        <td>
+            関心<br>
+            関わる
+        </td>
+        <td>
+            an interest<br>
+            have to do with
+        </td>
+    </tr>
+    <tr>
+        <td>係</td>
+        <td>
+            ケイ<br>
+            かかり
+        </td>
+        <td>
+            関係<br>
+            係り
+        </td>
+        <td>
+            a relation<br>
+            person in charge
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>落</td>
+        <td>
+            ラク<br>
+            おーちる<br>
+            おーとす
+        </td>
+        <td>
+            転落<br>
+            落ちる<br>
+            落とす
+        </td>
+        <td>
+            a fall<br>
+            fall<br>
+            drop
+        </td>
+    </tr>
+    <tr>
+        <td>石</td>
+        <td>
+            セキ<br>
+            シャク<br>
+            いし
+        </td>
+        <td>
+            落石<br>
+            石<br>
+            磁石
+        </td>
+        <td>
+            falling rocks<br>
+            a stone<br>
+            a magnet
+        </td>
+    </tr>
+    <tr>
+        <td>飛</td>
+        <td>
+            ヒ<br>
+            とーぶ<br>
+            とーばす
+        </td>
+        <td>
+            飛行場<br>
+            飛ぶ<br>
+            飛び出す
+        </td>
+        <td>
+            an airport<br>
+            fly<br>
+            run out suddenly
+        </td>
+    </tr>
+    <tr>
+        <td>駐</td>
+        <td>
+            チュウ
+        </td>
+        <td>
+            駐車場
+        </td>
+        <td>
+            a parking lot
+        </td>
+    </tr>
+    <tr>
+        <td>捨</td>
+        <td>
+            シャ<br>
+            すーてる
+        </td>
+        <td>
+            四捨五入<br>
+            捨てる
+        </td>
+        <td>
+            round to the nearest<br>
+            throw away
+        </td>
+    </tr>
+    <tr>
+        <td>遊</td>
+        <td>
+            ユウ<br>
+            あそーぶ
+        </td>
+        <td>
+            遊泳<br>
+            遊ぶ
+        </td>
+        <td>
+            swimming<br>
+            play
+        </td>
+    </tr>
+    <tr>
+        <td>泳</td>
+        <td>
+            エイ<br>
+            あよーぐ
+        </td>
+        <td>
+            水泳<br>
+            泳ぐ
+        </td>
+        <td>
+            swimming<br>
+            swim
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="2日目-建物の中でよく見る表示"><a href="#2日目-建物の中でよく見る表示" class="headerlink" title="2日目　建物の中でよく見る表示"></a>2日目　建物の中でよく見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>喫</td>
+        <td>
+            キツ
+        </td>
+        <td>
+            喫茶店
+        </td>
+        <td>
+            a coffee shop
+        </td>
+    </tr>
+    <tr>
+        <td>非</td>
+        <td>
+            ヒ
+        </td>
+        <td>
+            非〜
+        </td>
+        <td>
+            nonー, antiー, disー
+        </td>
+    </tr>
+    <tr>
+        <td>御</td>
+        <td>
+            ゴ<br>
+            おん
+        </td>
+        <td>
+            御〜<br>
+            御中
+        </td>
+        <td>
+            (honorific form)<br>
+            (written on letters addressed to an organization)
+        </td>
+    </tr>
+    <tr>
+        <td>常</td>
+        <td>
+            ジョウ<br>
+            つね
+        </td>
+        <td>
+            日常<br>
+            常に
+        </td>
+        <td>
+            usual, everyday<br>
+            always
+        </td>
+    </tr>
+    <tr>
+        <td>受</td>
+        <td>
+            ジュ<br>
+            うーける
+        </td>
+        <td>
+            受験<br>
+            受ける
+        </td>
+        <td>
+            an examination<br>
+            receive
+        </td>
+    </tr>
+    <tr>
+        <td>付</td>
+        <td>
+            フ<br>
+            つーける<br>
+            つーく
+        </td>
+        <td>
+            付近<br>
+            受付<br>
+            〜付き
+        </td>
+        <td>
+            vicinity<br>
+            a reception<br>
+            attached, with
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>案</td>
+        <td>
+            アン
+        </td>
+        <td>
+            案内
+        </td>
+        <td>
+            information
+        </td>
+    </tr>
+    <tr>
+        <td>内</td>
+        <td>
+            ナイ<br>
+            うち
+        </td>
+        <td>
+            以内<br>
+            〜内<br>
+            内
+        </td>
+        <td>
+            within<br>
+            inside, within<br>
+            inside, within
+        </td>
+    </tr>
+    <tr>
+        <td>議</td>
+        <td>
+            ギ
+        </td>
+        <td>
+            議論
+        </td>
+        <td>
+            argument, discussion
+        </td>
+    </tr>
+    <tr>
+        <td>化</td>
+        <td>
+            カ<br>
+            ケ
+        </td>
+        <td>
+            文化<br>
+            〜化<br>
+            化粧室
+        </td>
+        <td>
+            culture<br>
+            -ize(change something into some-thing else)
+        </td>
+    </tr>
+    <tr>
+        <td>階</td>
+        <td>
+            カイ
+        </td>
+        <td>
+            階段<br>
+            段階<br>
+            〜階
+        </td>
+        <td>
+            stairs<br>
+            level<br>
+            floor
+        </td>
+    </tr>
+    <tr>
+        <td>段</td>
+        <td>
+            ダン
+        </td>
+        <td>
+            一段と<br>
+            だん
+        </td>
+        <td>
+            even more<br>
+            a step
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="3日目-建物の内外でよく見る表示"><a href="#3日目-建物の内外でよく見る表示" class="headerlink" title="3日目　建物の内外でよく見る表示"></a>3日目　建物の内外でよく見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>営</td>
+        <td>
+            エイ
+        </td>
+        <td>
+            営業
+        </td>
+        <td>
+            business
+        </td>
+    </tr>
+    <tr>
+        <td>放</td>
+        <td>
+            ホウ<br>
+            はなーす<br>
+            はなーれる
+        </td>
+        <td>
+            放送<br>
+            開放禁止<br>
+            放す
+        </td>
+        <td>
+            a broadcast<br>
+            don't leave...open(strictly prohibited)<br>
+            let go
+        </td>
+    </tr>
+    <tr>
+        <td>押</td>
+        <td>
+            おーす<br>
+            おーさえる
+        </td>
+        <td>
+            押す<br>
+            押さえる
+        </td>
+        <td>
+            push<br>
+            hold down
+        </td>
+    </tr>
+    <tr>
+        <td>準</td>
+        <td>
+            ジュン
+        </td>
+        <td>
+            準備<br>
+            準急<br>
+            水準
+        </td>
+        <td>
+            push<br>
+            a semi-express train<br>
+            a standard
+        </td>
+    </tr>
+    <tr>
+        <td>備</td>
+        <td>
+            ビ<br>
+            そなーえる
+        </td>
+        <td>
+            備品<br>
+            備える<br>
+            備え付けの
+        </td>
+        <td>
+            an equipment<br>
+            prepare<br>
+            furnished with / built-in
+        </td>
+    </tr>
+    <tr>
+        <td>定</td>
+        <td>
+            テイ<br>
+            ジョウ
+        </td>
+        <td>
+            定員<br>
+            定食<br>
+            定規
+        </td>
+        <td>
+            capacity, allowed number of people<br>
+            a set menu<br>
+            a ruler(for measuring)
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>流</td>
+        <td>
+            リュウ<br>
+            ながーれる<br>
+            ながーす
+        </td>
+        <td>
+            流行<br>
+            流れる<br>
+            流す
+        </td>
+        <td>
+            fashion<br>
+            flow<br>
+            let flow(water, etc.)
+        </td>
+    </tr>
+    <tr>
+        <td>清</td>
+        <td>
+            セイ<br>
+            きよーい
+        </td>
+        <td>
+            清書<br>
+            清い<br>
+            清流＝清い流れ
+        </td>
+        <td>
+            a clean copy<br>
+            clean, pure<br>
+            a clean stream
+        </td>
+    </tr>
+    <tr>
+        <td>掃</td>
+        <td>
+            ソウ<br>
+            はーく
+        </td>
+        <td>
+            清掃<br>
+            掃く
+        </td>
+        <td>
+            clean<br>
+            sweep
+        </td>
+    </tr>
+    <tr>
+        <td>閉</td>
+        <td>
+            ヘイ<br>
+            とーじる<br>
+            しーめる<br>
+            しーまる
+        </td>
+        <td>
+            閉会<br>
+            閉まる<br>
+            閉める<br>
+            （口・目・本を）閉じる
+        </td>
+        <td>
+            closing of a meeting<br>
+            shut / close<br>
+            shut / close<br>
+            shut / close
+        </td>
+    </tr>
+    <tr>
+        <td>点</td>
+        <td>
+            テン
+        </td>
+        <td>
+            点<br>
+            欠点<br>
+            〜点
+        </td>
+        <td>
+            a point<br>
+            a shortcoming<br>
+            ...points
+        </td>
+    </tr>
+    <tr>
+        <td>検</td>
+        <td>
+            ケン
+        </td>
+        <td>
+            点検<br>
+            検問
+        </td>
+        <td>
+            an inspection<br>
+            an inspection
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="4日目-駅でよく見る表示"><a href="#4日目-駅でよく見る表示" class="headerlink" title="4日目　駅でよく見る表示"></a>4日目　駅でよく見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>鉄</td>
+        <td>
+            テツ
+        </td>
+        <td>
+            地下鉄
+        </td>
+        <td>
+            subway
+        </td>
+    </tr>
+    <tr>
+        <td>窓</td>
+        <td>
+            ソウ<br>
+            まど
+        </td>
+        <td>
+            同窓会<br>
+            窓
+        </td>
+        <td>
+            a school reunion<br>
+            a window
+        </td>
+    </tr>
+    <tr>
+        <td>符</td>
+        <td>
+            フ
+        </td>
+        <td>
+            切符
+        </td>
+        <td>
+            a ticket
+        </td>
+    </tr>
+    <tr>
+        <td>精</td>
+        <td>
+            セイ
+        </td>
+        <td>
+            精算<br>
+            精神
+        </td>
+        <td>
+            a (fare) adjustment<br>
+            spirit, mind
+        </td>
+    </tr>
+    <tr>
+        <td>算</td>
+        <td>
+            サン
+        </td>
+        <td>
+            計算<br>
+            引き算<br>
+            足し算
+        </td>
+        <td>
+            calculation<br>
+            a shortcoming<br>
+            ...points
+        </td>
+    </tr>
+    <tr>
+        <td>改</td>
+        <td>
+            カイ<br>
+            あらたーめる<br>
+            あらたーまる
+        </td>
+        <td>
+            改正<br>
+            改める
+        </td>
+        <td>
+            an amendment<br>
+            change; check
+        </td>
+    </tr>
+    <tr>
+        <td>札</td>
+        <td>
+            サツ<br>
+            ふだ
+        </td>
+        <td>
+            改札口<br>
+            札
+        </td>
+        <td>
+            an ticket gate<br>
+            a card
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>線</td>
+        <td>
+            セン
+        </td>
+        <td>
+            下線
+        </td>
+        <td>
+            underline
+        </td>
+    </tr>
+    <tr>
+        <td>刻</td>
+        <td>
+            コク<br>
+            きざーむ
+        </td>
+        <td>
+            時刻<br>
+            刻む
+        </td>
+        <td>
+            time<br>
+            engrave
+        </td>
+    </tr>
+    <tr>
+        <td>番</td>
+        <td>
+            バン
+        </td>
+        <td>
+            番号
+        </td>
+        <td>
+            number
+        </td>
+    </tr>
+    <tr>
+        <td>号</td>
+        <td>
+            ゴウ
+        </td>
+        <td>
+            符号<br>
+            信号<br>
+        </td>
+        <td>
+            a symbol/sign<br>
+            a signal
+        </td>
+    </tr>
+    <tr>
+        <td>快</td>
+        <td>
+            カイ<br>
+            こころよーい
+        </td>
+        <td>
+            快速<br>
+            快い
+        </td>
+        <td>
+            high speed<br>
+            pleasant
+        </td>
+    </tr>
+    <tr>
+        <td>速</td>
+        <td>
+            ソク<br>
+            はやい
+        </td>
+        <td>
+            時速<br>
+            早速<br>
+            速い
+        </td>
+        <td>
+            speed<br>
+            at once<br>
+            fast
+        </td>
+    </tr>
+    <tr>
+        <td>路</td>
+        <td>
+            ロ
+        </td>
+        <td>
+            道路<br>
+            通路
+        </td>
+        <td>
+            an road<br>
+            a isle
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="5日目-乗り物でよく見る表示"><a href="#5日目-乗り物でよく見る表示" class="headerlink" title="5日目　乗り物でよく見る表示"></a>5日目　乗り物でよく見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>港</td>
+        <td>
+            コウ<br>
+            みなと
+        </td>
+        <td>
+            空港<br>
+            港
+        </td>
+        <td>
+            an airport<br>
+            a port
+        </td>
+    </tr>
+    <tr>
+        <td>由</td>
+        <td>
+            ユウ<br>
+            ユ
+        </td>
+        <td>
+            理由<br>
+            経由
+        </td>
+        <td>
+            a reason<br>
+            via
+        </td>
+    </tr>
+    <tr>
+        <td>深</td>
+        <td>
+            シン<br>
+            ふかーい
+        </td>
+        <td>
+            深夜<br>
+            深い
+        </td>
+        <td>
+            middle of the night<br>
+            deep
+        </td>
+    </tr>
+    <tr>
+        <td>降</td>
+        <td>
+            コウ<br>
+            おーりる<br>
+            おーろす<br>
+            ふーる
+        </td>
+        <td>
+            降車口<br>
+            降りる<br>
+            降る
+        </td>
+        <td>
+            an exit<br>
+            get off<br>
+            fall
+        </td>
+    </tr>
+    <tr>
+        <td>両</td>
+        <td>
+            リョウ<br>
+        </td>
+        <td>
+            両親<br>
+            両方<br>
+            両〜
+        </td>
+        <td>
+            parents<br>
+            both<br>
+            both...
+        </td>
+    </tr>
+    <tr>
+        <td>替</td>
+        <td>
+            かーえる<br>
+            かーわる
+        </td>
+        <td>
+            両替<br>
+            着替える<br>
+        </td>
+        <td>
+            exchange<br>
+            change your clothes
+        </td>
+    </tr>
+    <tr>
+        <td>賃</td>
+        <td>
+            チン
+        </td>
+        <td>
+            家賃<br>
+            運賃
+        </td>
+        <td>
+            rent<br>
+            fare
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>割</td>
+        <td>
+            カツ<br>
+            わーる<br>
+            わーれる<br>
+            わり
+        </td>
+        <td>
+            分割<br>
+            割れる<br>
+            割引<br>
+            時間割
+        </td>
+        <td>
+            a split / separation<br>
+            crack<br>
+            a discount<br>
+            time allocation
+        </td>
+    </tr>
+    <tr>
+        <td>増</td>
+        <td>
+            ゾウ<br>
+            ふーえる<br>
+            ふーやす<br>
+            まーす
+        </td>
+        <td>
+            増加<br>
+            増える<br>
+            割増
+        </td>
+        <td>
+            increase<br>
+            increase<br>
+            extra(proportional increase)
+        </td>
+    </tr>
+    <tr>
+        <td>優</td>
+        <td>
+            ユウ<br>
+            やさーしい<br>
+            すぐーれる
+        </td>
+        <td>
+            優先<br>
+            優しい<br>
+            優れる
+        </td>
+        <td>
+            priority<br>
+            kind<br>
+            excel
+        </td>
+    </tr>
+    <tr>
+        <td>席</td>
+        <td>
+            セキ
+        </td>
+        <td>
+            出席
+        </td>
+        <td>
+            attendance
+        </td>
+    </tr>
+    <tr>
+        <td>側</td>
+        <td>
+            ソク<br>
+            かわ
+        </td>
+        <td>
+            側面<br>
+            両側<br>
+            〜側
+        </td>
+        <td>
+            side<br>
+            both sides
+        </td>
+    </tr>
+    <tr>
+        <td>座</td>
+        <td>
+            ザ<br>
+            すわーる
+        </td>
+        <td>
+            座席<br>
+            銀行口座<br>
+            座る
+        </td>
+        <td>
+            a seat<br>
+            a bank count<br>
+            sit
+        </td>
+    </tr>
+    <tr>
+        <td>寄</td>
+        <td>
+            キ<br>
+            よーる<br>
+            よーせる
+        </td>
+        <td>
+            寄付<br>
+            取り寄せる<br>
+            立ち寄る<br>
+            年寄り
+        </td>
+        <td>
+            a　donation<br>
+            order...<br>
+            drop in<br>
+            an old person
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="6日目-郵便局・病院で見る表示"><a href="#6日目-郵便局・病院で見る表示" class="headerlink" title="6日目　郵便局・病院で見る表示"></a>6日目　郵便局・病院で見る表示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>郵</td>
+        <td>
+            ユウ
+        </td>
+        <td>
+            郵便<br>
+            郵送
+        </td>
+        <td>
+            mail<br>
+            send py post
+        </td>
+    </tr>
+    <tr>
+        <td>局</td>
+        <td>
+            キョク
+        </td>
+        <td>
+            郵便局<br>
+            薬局
+        </td>
+        <td>
+            a post office<br>
+            a drug store
+        </td>
+    </tr>
+    <tr>
+        <td>貯</td>
+        <td>
+            チョ
+        </td>
+        <td>
+            貯金
+        </td>
+        <td>
+            savings
+        </td>
+    </tr>
+    <tr>
+        <td>包</td>
+        <td>
+            ホウ<br>
+            つつーむ<br>
+            つつーみ
+        </td>
+        <td>
+            包帯<br>
+            包む<br>
+            小包
+        </td>
+        <td>
+            a bandage<br>
+            wrap<br>
+            a parcel
+        </td>
+    </tr>
+    <tr>
+        <td>達</td>
+        <td>
+            タツ<br>
+        </td>
+        <td>
+            発達<br>
+            速達
+        </td>
+        <td>
+            development<br>
+            a special dilivery
+        </td>
+    </tr>
+    <tr>
+        <td>際</td>
+        <td>
+            サイ
+        </td>
+        <td>
+            国際<br>
+            〜の際<br>
+            実際に
+        </td>
+        <td>
+            international<br>
+            at the time of...<br>
+            actually
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>初</td>
+        <td>
+            ショ<br>
+            はじーめ<br>
+            はじーめて<br>
+            はつ
+        </td>
+        <td>
+            初診<br>
+            初めて<br>
+            初恋
+        </td>
+        <td>
+            the first medical consultation<br>
+            the first time<br>
+            one's first love
+        </td>
+    </tr>
+    <tr>
+        <td>再</td>
+        <td>
+            サイ<br>
+            サ<br>
+            ふたたーび
+        </td>
+        <td>
+            再診<br>
+            再来年<br>
+            再び
+        </td>
+        <td>
+            a follow-up medical consultation<br>
+            the year after next<br>
+            again
+        </td>
+    </tr>
+    <tr>
+        <td>療</td>
+        <td>
+            リョウ
+        </td>
+        <td>
+            診療
+        </td>
+        <td>
+            medical examination and treatment
+        </td>
+    </tr>
+    <tr>
+        <td>科</td>
+        <td>
+            カ
+        </td>
+        <td>
+            科学<br>
+            外科<br>
+            内科
+        </td>
+        <td>
+            science<br>
+            a surgey department<br>
+            internal medicine department
+        </td>
+    </tr>
+    <tr>
+        <td>婦</td>
+        <td>
+            フ
+        </td>
+        <td>
+            産婦人科<br>
+            主婦<br>
+            婦人
+        </td>
+        <td>
+            obstetrics and gynecology department<br>
+            a housewife
+        </td>
+    </tr>
+    <tr>
+        <td>皮</td>
+        <td>
+            ヒ<br>
+            かわ
+        </td>
+        <td>
+            皮肉<br>
+            皮
+        </td>
+        <td>
+            irony / sarcasm<br>
+            skin
+        </td>
+    </tr>
+    <tr>
+        <td>膚</td>
+        <td>
+            フ
+        </td>
+        <td>
+            皮膚
+        </td>
+        <td>
+            skin
+        </td>
+    </tr>
+    <tr>
+        <td>救</td>
+        <td>
+            キュウ<br>
+            すくーう
+        </td>
+        <td>
+            救急<br>
+            救う
+        </td>
+        <td>
+            first aid<br>
+            save
+        </td>
+    </tr>
+</table>]]></content>
+      <categories>
+        <category>KanJi</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>KanJi</tag>
+      </tags>
   </entry>
   <entry>
     <title>第二週 つかう①</title>
@@ -5941,6 +7300,164 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>楽しく暮らしていますか？</title>
+    <url>/new-blog/5b99f67a.html</url>
+    <content><![CDATA[<h1 id="楽しく暮らしていますか？"><a href="#楽しく暮らしていますか？" class="headerlink" title="楽しく暮らしていますか？"></a>楽しく暮らしていますか？</h1><span id="more"></span>
+
+<h2 id="1日目-アパートを探しています"><a href="#1日目-アパートを探しています" class="headerlink" title="1日目　アパートを探しています"></a>1日目　アパートを探しています</h2><p><img src="/new-blog/images/vocw1d1.png"></p>
+<table>
+    <tr>
+        <td>
+            チラシ／びら
+        </td>
+        <td>
+            徒歩5分
+        </td>
+    </tr>
+    <tr>
+        <td>
+            賃貸アパート
+        </td>
+        <td>
+            3階建て
+        </td>
+    </tr>
+    <tr>
+        <td>
+            家賃
+        </td>
+        <td>
+            南向き
+        </td>
+    </tr>
+    <tr>
+        <td>
+            管理費
+        </td>
+        <td>
+            <ruby>築<rp>(</rp><rt>ちく</rt><rp>)</rp></ruby>10年
+        </td>
+    </tr>
+    <tr>
+        <td>
+            無料／ただ
+        </td>
+        <td>
+            自転車置き場
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            マンション
+            <ul>
+            <li>少し高級な感じがする
+            <ruby>集合<rp>(</rp><rt>しゅうごう</rt><rp>)</rp></ruby>
+            住宅。
+            <ruby>築分譲<rp>(</rp><rt>ぶんじょう</rt><rp>)</rp></ruby>
+            と賃貸がある。</li>
+            </ul>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <ruby>敷金<rp>(</rp><rt>しききん</rt><rp>)</rp></ruby>
+            <ul>
+            <li>家や部屋を借りるときに家主に預けておく保証金。</li>
+            </ul>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            礼金
+            <ul>
+            <li>家や部屋を借りるときに家主に払う一時金。ない場合もある。</li>
+            </ul>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            広々（と）している
+        </td>
+        <td>
+            一軒家／
+            <ruby>一戸建<rp>(</rp><rt>いっこだ</rt><rp>)</rp>て</ruby>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ながめがいい
+        </td>
+        <td>
+            物干し
+        </td>
+    </tr>
+    <tr>
+        <td>
+            日当たりがいい
+        </td>
+        <td>
+            風呂場
+        </td>
+    </tr>
+    <tr>
+        <td>
+            人通りが多い
+        </td>
+        <td>
+            洗面所
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            一人暮らし<br>
+            一人住まい
+        </td>
+        <td>
+            この辺り<br>
+            この付近
+        </td>
+    </tr>
+    <tr>
+        <td>
+            近所付き合い
+        </td>
+        <td rowspan="5">
+            真ん前<br>
+            ⇔真後ろ<br>
+            真ん中<br>
+            斜め前
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>引っ越しの荷造りをする</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>回覧板を回す</td>
+        <td></td>
+    </tr>
+</table>]]></content>
+  </entry>
+  <entry>
     <title>Explain localhost and 127.0.0.1</title>
     <url>/new-blog/915cd40c.html</url>
     <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
@@ -6013,7 +7530,7 @@ npm -v
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#x79;&#111;&#x75;&#x72;&#46;&#x65;&#x6d;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#x72;&#46;&#x65;&#x6d;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<p>“Your Name”と”<a href="mailto:&#121;&#111;&#117;&#114;&#x2e;&#101;&#109;&#97;&#105;&#x6c;&#x40;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#121;&#111;&#117;&#114;&#x2e;&#101;&#109;&#97;&#105;&#x6c;&#x40;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
 <h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
 <p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
@@ -6185,6 +7702,85 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>〜とき・〜直後に</title>
+    <url>/new-blog/73a2b435.html</url>
+    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
+<ul>
+<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
+<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
+<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
+</ul>
+<p>接続　名ーの・動辞書形／た形＋際（に）</p>
+<p>注意　</p>
+<ol>
+<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
+<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
+</ol>
+<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
+<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
+</ul>
+<p>接続　名・動辞書形＋に際して・にあたって</p>
+<p>注意</p>
+<ol>
+<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
+</ol>
+<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
+<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
+<p>例文</p>
+<ul>
+<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
+</ul>
+<p>接続　動た形＋とたん（に）</p>
+<p>注意</p>
+<ol>
+<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
+<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
+</ol>
+<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
+<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
+<p>例文</p>
+<ul>
+<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
+<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
+</ul>
+<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
+<p>注意</p>
+<ol>
+<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
+<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
+<p>例文</p>
+<ul>
+<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
+<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
+</ul>
+<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
+<p>注意</p>
+<ol>
+<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>文法</tag>
+        <tag>ことがらを説明する</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜している（進行中）</title>
     <url>/new-blog/2e6bc246.html</url>
     <content><![CDATA[<h1 id="〜している（進行中）"><a href="#〜している（進行中）" class="headerlink" title="〜している（進行中）"></a>〜している（進行中）</h1><p>[復習]</p>
@@ -6265,1436 +7861,6 @@ permalink: posts/:abbrlink.html
 <p>注意　</p>
 <ol>
 <li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>文法</tag>
-        <tag>ことがらを説明する</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一週 みる①</title>
-    <url>/new-blog/57df7023.html</url>
-    <content><![CDATA[<h1 id="第一週-みる"><a href="#第一週-みる" class="headerlink" title="第一週　みる"></a>第一週　みる</h1><span id="more"></span>
-
-<h2 id="1日目-立て札・注意書き"><a href="#1日目-立て札・注意書き" class="headerlink" title="1日目　立て札・注意書き"></a>1日目　立て札・注意書き</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>禁</td>
-        <td>
-            キン
-        </td>
-        <td>禁止</td>
-        <td>prohibition</td>
-    </tr>
-    <tr>
-        <td>煙</td>
-        <td>
-            エン<br>
-            けむり
-        </td>
-        <td>
-            禁煙<br>
-            煙
-        </td>
-        <td>
-            no smoking<br>
-            smoke
-        </td>
-    </tr>
-    <tr>
-        <td>静</td>
-        <td>
-            セイ<br>
-            しずーか<br>
-            しずーまる
-        </td>
-        <td>
-            安静（な）<br>
-            静か（な）<br>
-            静まる
-        </td>
-        <td>
-            quietly<br>
-            quiet<br>
-            become quiet
-        </td>
-    </tr>
-    <tr>
-        <td>危</td>
-        <td>
-            キ<br>
-            あぶーない<br>
-            あやーうい
-        </td>
-        <td>
-            危機<br>
-            危ない<br>
-            危うい
-        </td>
-        <td>
-            a crisis<br>
-            dangerous<br>
-            dangerous(narrow escape)
-        </td>
-    </tr>
-    <tr>
-        <td>険</td>
-        <td>
-            ケン<br>
-            けわーしい
-        </td>
-        <td>
-            危険<br>
-            険しい
-        </td>
-        <td>
-            danger<br>
-            steep
-        </td>
-    </tr>
-    <tr>
-        <td>関</td>
-        <td>
-            カン<br>
-            かかーわる
-        </td>
-        <td>
-            関心<br>
-            関わる
-        </td>
-        <td>
-            an interest<br>
-            have to do with
-        </td>
-    </tr>
-    <tr>
-        <td>係</td>
-        <td>
-            ケイ<br>
-            かかり
-        </td>
-        <td>
-            関係<br>
-            係り
-        </td>
-        <td>
-            a relation<br>
-            person in charge
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>落</td>
-        <td>
-            ラク<br>
-            おーちる<br>
-            おーとす
-        </td>
-        <td>
-            転落<br>
-            落ちる<br>
-            落とす
-        </td>
-        <td>
-            a fall<br>
-            fall<br>
-            drop
-        </td>
-    </tr>
-    <tr>
-        <td>石</td>
-        <td>
-            セキ<br>
-            シャク<br>
-            いし
-        </td>
-        <td>
-            落石<br>
-            石<br>
-            磁石
-        </td>
-        <td>
-            falling rocks<br>
-            a stone<br>
-            a magnet
-        </td>
-    </tr>
-    <tr>
-        <td>飛</td>
-        <td>
-            ヒ<br>
-            とーぶ<br>
-            とーばす
-        </td>
-        <td>
-            飛行場<br>
-            飛ぶ<br>
-            飛び出す
-        </td>
-        <td>
-            an airport<br>
-            fly<br>
-            run out suddenly
-        </td>
-    </tr>
-    <tr>
-        <td>駐</td>
-        <td>
-            チュウ
-        </td>
-        <td>
-            駐車場
-        </td>
-        <td>
-            a parking lot
-        </td>
-    </tr>
-    <tr>
-        <td>捨</td>
-        <td>
-            シャ<br>
-            すーてる
-        </td>
-        <td>
-            四捨五入<br>
-            捨てる
-        </td>
-        <td>
-            round to the nearest<br>
-            throw away
-        </td>
-    </tr>
-    <tr>
-        <td>遊</td>
-        <td>
-            ユウ<br>
-            あそーぶ
-        </td>
-        <td>
-            遊泳<br>
-            遊ぶ
-        </td>
-        <td>
-            swimming<br>
-            play
-        </td>
-    </tr>
-    <tr>
-        <td>泳</td>
-        <td>
-            エイ<br>
-            あよーぐ
-        </td>
-        <td>
-            水泳<br>
-            泳ぐ
-        </td>
-        <td>
-            swimming<br>
-            swim
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="2日目-建物の中でよく見る表示"><a href="#2日目-建物の中でよく見る表示" class="headerlink" title="2日目　建物の中でよく見る表示"></a>2日目　建物の中でよく見る表示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>喫</td>
-        <td>
-            キツ
-        </td>
-        <td>
-            喫茶店
-        </td>
-        <td>
-            a coffee shop
-        </td>
-    </tr>
-    <tr>
-        <td>非</td>
-        <td>
-            ヒ
-        </td>
-        <td>
-            非〜
-        </td>
-        <td>
-            nonー, antiー, disー
-        </td>
-    </tr>
-    <tr>
-        <td>御</td>
-        <td>
-            ゴ<br>
-            おん
-        </td>
-        <td>
-            御〜<br>
-            御中
-        </td>
-        <td>
-            (honorific form)<br>
-            (written on letters addressed to an organization)
-        </td>
-    </tr>
-    <tr>
-        <td>常</td>
-        <td>
-            ジョウ<br>
-            つね
-        </td>
-        <td>
-            日常<br>
-            常に
-        </td>
-        <td>
-            usual, everyday<br>
-            always
-        </td>
-    </tr>
-    <tr>
-        <td>受</td>
-        <td>
-            ジュ<br>
-            うーける
-        </td>
-        <td>
-            受験<br>
-            受ける
-        </td>
-        <td>
-            an examination<br>
-            receive
-        </td>
-    </tr>
-    <tr>
-        <td>付</td>
-        <td>
-            フ<br>
-            つーける<br>
-            つーく
-        </td>
-        <td>
-            付近<br>
-            受付<br>
-            〜付き
-        </td>
-        <td>
-            vicinity<br>
-            a reception<br>
-            attached, with
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>案</td>
-        <td>
-            アン
-        </td>
-        <td>
-            案内
-        </td>
-        <td>
-            information
-        </td>
-    </tr>
-    <tr>
-        <td>内</td>
-        <td>
-            ナイ<br>
-            うち
-        </td>
-        <td>
-            以内<br>
-            〜内<br>
-            内
-        </td>
-        <td>
-            within<br>
-            inside, within<br>
-            inside, within
-        </td>
-    </tr>
-    <tr>
-        <td>議</td>
-        <td>
-            ギ
-        </td>
-        <td>
-            議論
-        </td>
-        <td>
-            argument, discussion
-        </td>
-    </tr>
-    <tr>
-        <td>化</td>
-        <td>
-            カ<br>
-            ケ
-        </td>
-        <td>
-            文化<br>
-            〜化<br>
-            化粧室
-        </td>
-        <td>
-            culture<br>
-            -ize(change something into some-thing else)
-        </td>
-    </tr>
-    <tr>
-        <td>階</td>
-        <td>
-            カイ
-        </td>
-        <td>
-            階段<br>
-            段階<br>
-            〜階
-        </td>
-        <td>
-            stairs<br>
-            level<br>
-            floor
-        </td>
-    </tr>
-    <tr>
-        <td>段</td>
-        <td>
-            ダン
-        </td>
-        <td>
-            一段と<br>
-            だん
-        </td>
-        <td>
-            even more<br>
-            a step
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="3日目-建物の内外でよく見る表示"><a href="#3日目-建物の内外でよく見る表示" class="headerlink" title="3日目　建物の内外でよく見る表示"></a>3日目　建物の内外でよく見る表示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>営</td>
-        <td>
-            エイ
-        </td>
-        <td>
-            営業
-        </td>
-        <td>
-            business
-        </td>
-    </tr>
-    <tr>
-        <td>放</td>
-        <td>
-            ホウ<br>
-            はなーす<br>
-            はなーれる
-        </td>
-        <td>
-            放送<br>
-            開放禁止<br>
-            放す
-        </td>
-        <td>
-            a broadcast<br>
-            don't leave...open(strictly prohibited)<br>
-            let go
-        </td>
-    </tr>
-    <tr>
-        <td>押</td>
-        <td>
-            おーす<br>
-            おーさえる
-        </td>
-        <td>
-            押す<br>
-            押さえる
-        </td>
-        <td>
-            push<br>
-            hold down
-        </td>
-    </tr>
-    <tr>
-        <td>準</td>
-        <td>
-            ジュン
-        </td>
-        <td>
-            準備<br>
-            準急<br>
-            水準
-        </td>
-        <td>
-            push<br>
-            a semi-express train<br>
-            a standard
-        </td>
-    </tr>
-    <tr>
-        <td>備</td>
-        <td>
-            ビ<br>
-            そなーえる
-        </td>
-        <td>
-            備品<br>
-            備える<br>
-            備え付けの
-        </td>
-        <td>
-            an equipment<br>
-            prepare<br>
-            furnished with / built-in
-        </td>
-    </tr>
-    <tr>
-        <td>定</td>
-        <td>
-            テイ<br>
-            ジョウ
-        </td>
-        <td>
-            定員<br>
-            定食<br>
-            定規
-        </td>
-        <td>
-            capacity, allowed number of people<br>
-            a set menu<br>
-            a ruler(for measuring)
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>流</td>
-        <td>
-            リュウ<br>
-            ながーれる<br>
-            ながーす
-        </td>
-        <td>
-            流行<br>
-            流れる<br>
-            流す
-        </td>
-        <td>
-            fashion<br>
-            flow<br>
-            let flow(water, etc.)
-        </td>
-    </tr>
-    <tr>
-        <td>清</td>
-        <td>
-            セイ<br>
-            きよーい
-        </td>
-        <td>
-            清書<br>
-            清い<br>
-            清流＝清い流れ
-        </td>
-        <td>
-            a clean copy<br>
-            clean, pure<br>
-            a clean stream
-        </td>
-    </tr>
-    <tr>
-        <td>掃</td>
-        <td>
-            ソウ<br>
-            はーく
-        </td>
-        <td>
-            清掃<br>
-            掃く
-        </td>
-        <td>
-            clean<br>
-            sweep
-        </td>
-    </tr>
-    <tr>
-        <td>閉</td>
-        <td>
-            ヘイ<br>
-            とーじる<br>
-            しーめる<br>
-            しーまる
-        </td>
-        <td>
-            閉会<br>
-            閉まる<br>
-            閉める<br>
-            （口・目・本を）閉じる
-        </td>
-        <td>
-            closing of a meeting<br>
-            shut / close<br>
-            shut / close<br>
-            shut / close
-        </td>
-    </tr>
-    <tr>
-        <td>点</td>
-        <td>
-            テン
-        </td>
-        <td>
-            点<br>
-            欠点<br>
-            〜点
-        </td>
-        <td>
-            a point<br>
-            a shortcoming<br>
-            ...points
-        </td>
-    </tr>
-    <tr>
-        <td>検</td>
-        <td>
-            ケン
-        </td>
-        <td>
-            点検<br>
-            検問
-        </td>
-        <td>
-            an inspection<br>
-            an inspection
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="4日目-駅でよく見る表示"><a href="#4日目-駅でよく見る表示" class="headerlink" title="4日目　駅でよく見る表示"></a>4日目　駅でよく見る表示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>鉄</td>
-        <td>
-            テツ
-        </td>
-        <td>
-            地下鉄
-        </td>
-        <td>
-            subway
-        </td>
-    </tr>
-    <tr>
-        <td>窓</td>
-        <td>
-            ソウ<br>
-            まど
-        </td>
-        <td>
-            同窓会<br>
-            窓
-        </td>
-        <td>
-            a school reunion<br>
-            a window
-        </td>
-    </tr>
-    <tr>
-        <td>符</td>
-        <td>
-            フ
-        </td>
-        <td>
-            切符
-        </td>
-        <td>
-            a ticket
-        </td>
-    </tr>
-    <tr>
-        <td>精</td>
-        <td>
-            セイ
-        </td>
-        <td>
-            精算<br>
-            精神
-        </td>
-        <td>
-            a (fare) adjustment<br>
-            spirit, mind
-        </td>
-    </tr>
-    <tr>
-        <td>算</td>
-        <td>
-            サン
-        </td>
-        <td>
-            計算<br>
-            引き算<br>
-            足し算
-        </td>
-        <td>
-            calculation<br>
-            a shortcoming<br>
-            ...points
-        </td>
-    </tr>
-    <tr>
-        <td>改</td>
-        <td>
-            カイ<br>
-            あらたーめる<br>
-            あらたーまる
-        </td>
-        <td>
-            改正<br>
-            改める
-        </td>
-        <td>
-            an amendment<br>
-            change; check
-        </td>
-    </tr>
-    <tr>
-        <td>札</td>
-        <td>
-            サツ<br>
-            ふだ
-        </td>
-        <td>
-            改札口<br>
-            札
-        </td>
-        <td>
-            an ticket gate<br>
-            a card
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>線</td>
-        <td>
-            セン
-        </td>
-        <td>
-            下線
-        </td>
-        <td>
-            underline
-        </td>
-    </tr>
-    <tr>
-        <td>刻</td>
-        <td>
-            コク<br>
-            きざーむ
-        </td>
-        <td>
-            時刻<br>
-            刻む
-        </td>
-        <td>
-            time<br>
-            engrave
-        </td>
-    </tr>
-    <tr>
-        <td>番</td>
-        <td>
-            バン
-        </td>
-        <td>
-            番号
-        </td>
-        <td>
-            number
-        </td>
-    </tr>
-    <tr>
-        <td>号</td>
-        <td>
-            ゴウ
-        </td>
-        <td>
-            符号<br>
-            信号<br>
-        </td>
-        <td>
-            a symbol/sign<br>
-            a signal
-        </td>
-    </tr>
-    <tr>
-        <td>快</td>
-        <td>
-            カイ<br>
-            こころよーい
-        </td>
-        <td>
-            快速<br>
-            快い
-        </td>
-        <td>
-            high speed<br>
-            pleasant
-        </td>
-    </tr>
-    <tr>
-        <td>速</td>
-        <td>
-            ソク<br>
-            はやい
-        </td>
-        <td>
-            時速<br>
-            早速<br>
-            速い
-        </td>
-        <td>
-            speed<br>
-            at once<br>
-            fast
-        </td>
-    </tr>
-    <tr>
-        <td>路</td>
-        <td>
-            ロ
-        </td>
-        <td>
-            道路<br>
-            通路
-        </td>
-        <td>
-            an road<br>
-            a isle
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="5日目-乗り物でよく見る表示"><a href="#5日目-乗り物でよく見る表示" class="headerlink" title="5日目　乗り物でよく見る表示"></a>5日目　乗り物でよく見る表示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>港</td>
-        <td>
-            コウ<br>
-            みなと
-        </td>
-        <td>
-            空港<br>
-            港
-        </td>
-        <td>
-            an airport<br>
-            a port
-        </td>
-    </tr>
-    <tr>
-        <td>由</td>
-        <td>
-            ユウ<br>
-            ユ
-        </td>
-        <td>
-            理由<br>
-            経由
-        </td>
-        <td>
-            a reason<br>
-            via
-        </td>
-    </tr>
-    <tr>
-        <td>深</td>
-        <td>
-            シン<br>
-            ふかーい
-        </td>
-        <td>
-            深夜<br>
-            深い
-        </td>
-        <td>
-            middle of the night<br>
-            deep
-        </td>
-    </tr>
-    <tr>
-        <td>降</td>
-        <td>
-            コウ<br>
-            おーりる<br>
-            おーろす<br>
-            ふーる
-        </td>
-        <td>
-            降車口<br>
-            降りる<br>
-            降る
-        </td>
-        <td>
-            an exit<br>
-            get off<br>
-            fall
-        </td>
-    </tr>
-    <tr>
-        <td>両</td>
-        <td>
-            リョウ<br>
-        </td>
-        <td>
-            両親<br>
-            両方<br>
-            両〜
-        </td>
-        <td>
-            parents<br>
-            both<br>
-            both...
-        </td>
-    </tr>
-    <tr>
-        <td>替</td>
-        <td>
-            かーえる<br>
-            かーわる
-        </td>
-        <td>
-            両替<br>
-            着替える<br>
-        </td>
-        <td>
-            exchange<br>
-            change your clothes
-        </td>
-    </tr>
-    <tr>
-        <td>賃</td>
-        <td>
-            チン
-        </td>
-        <td>
-            家賃<br>
-            運賃
-        </td>
-        <td>
-            rent<br>
-            fare
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>割</td>
-        <td>
-            カツ<br>
-            わーる<br>
-            わーれる<br>
-            わり
-        </td>
-        <td>
-            分割<br>
-            割れる<br>
-            割引<br>
-            時間割
-        </td>
-        <td>
-            a split / separation<br>
-            crack<br>
-            a discount<br>
-            time allocation
-        </td>
-    </tr>
-    <tr>
-        <td>増</td>
-        <td>
-            ゾウ<br>
-            ふーえる<br>
-            ふーやす<br>
-            まーす
-        </td>
-        <td>
-            増加<br>
-            増える<br>
-            割増
-        </td>
-        <td>
-            increase<br>
-            increase<br>
-            extra(proportional increase)
-        </td>
-    </tr>
-    <tr>
-        <td>優</td>
-        <td>
-            ユウ<br>
-            やさーしい<br>
-            すぐーれる
-        </td>
-        <td>
-            優先<br>
-            優しい<br>
-            優れる
-        </td>
-        <td>
-            priority<br>
-            kind<br>
-            excel
-        </td>
-    </tr>
-    <tr>
-        <td>席</td>
-        <td>
-            セキ
-        </td>
-        <td>
-            出席
-        </td>
-        <td>
-            attendance
-        </td>
-    </tr>
-    <tr>
-        <td>側</td>
-        <td>
-            ソク<br>
-            かわ
-        </td>
-        <td>
-            側面<br>
-            両側<br>
-            〜側
-        </td>
-        <td>
-            side<br>
-            both sides
-        </td>
-    </tr>
-    <tr>
-        <td>座</td>
-        <td>
-            ザ<br>
-            すわーる
-        </td>
-        <td>
-            座席<br>
-            銀行口座<br>
-            座る
-        </td>
-        <td>
-            a seat<br>
-            a bank count<br>
-            sit
-        </td>
-    </tr>
-    <tr>
-        <td>寄</td>
-        <td>
-            キ<br>
-            よーる<br>
-            よーせる
-        </td>
-        <td>
-            寄付<br>
-            取り寄せる<br>
-            立ち寄る<br>
-            年寄り
-        </td>
-        <td>
-            a　donation<br>
-            order...<br>
-            drop in<br>
-            an old person
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="6日目-郵便局・病院で見る表示"><a href="#6日目-郵便局・病院で見る表示" class="headerlink" title="6日目　郵便局・病院で見る表示"></a>6日目　郵便局・病院で見る表示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>郵</td>
-        <td>
-            ユウ
-        </td>
-        <td>
-            郵便<br>
-            郵送
-        </td>
-        <td>
-            mail<br>
-            send py post
-        </td>
-    </tr>
-    <tr>
-        <td>局</td>
-        <td>
-            キョク
-        </td>
-        <td>
-            郵便局<br>
-            薬局
-        </td>
-        <td>
-            a post office<br>
-            a drug store
-        </td>
-    </tr>
-    <tr>
-        <td>貯</td>
-        <td>
-            チョ
-        </td>
-        <td>
-            貯金
-        </td>
-        <td>
-            savings
-        </td>
-    </tr>
-    <tr>
-        <td>包</td>
-        <td>
-            ホウ<br>
-            つつーむ<br>
-            つつーみ
-        </td>
-        <td>
-            包帯<br>
-            包む<br>
-            小包
-        </td>
-        <td>
-            a bandage<br>
-            wrap<br>
-            a parcel
-        </td>
-    </tr>
-    <tr>
-        <td>達</td>
-        <td>
-            タツ<br>
-        </td>
-        <td>
-            発達<br>
-            速達
-        </td>
-        <td>
-            development<br>
-            a special dilivery
-        </td>
-    </tr>
-    <tr>
-        <td>際</td>
-        <td>
-            サイ
-        </td>
-        <td>
-            国際<br>
-            〜の際<br>
-            実際に
-        </td>
-        <td>
-            international<br>
-            at the time of...<br>
-            actually
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>初</td>
-        <td>
-            ショ<br>
-            はじーめ<br>
-            はじーめて<br>
-            はつ
-        </td>
-        <td>
-            初診<br>
-            初めて<br>
-            初恋
-        </td>
-        <td>
-            the first medical consultation<br>
-            the first time<br>
-            one's first love
-        </td>
-    </tr>
-    <tr>
-        <td>再</td>
-        <td>
-            サイ<br>
-            サ<br>
-            ふたたーび
-        </td>
-        <td>
-            再診<br>
-            再来年<br>
-            再び
-        </td>
-        <td>
-            a follow-up medical consultation<br>
-            the year after next<br>
-            again
-        </td>
-    </tr>
-    <tr>
-        <td>療</td>
-        <td>
-            リョウ
-        </td>
-        <td>
-            診療
-        </td>
-        <td>
-            medical examination and treatment
-        </td>
-    </tr>
-    <tr>
-        <td>科</td>
-        <td>
-            カ
-        </td>
-        <td>
-            科学<br>
-            外科<br>
-            内科
-        </td>
-        <td>
-            science<br>
-            a surgey department<br>
-            internal medicine department
-        </td>
-    </tr>
-    <tr>
-        <td>婦</td>
-        <td>
-            フ
-        </td>
-        <td>
-            産婦人科<br>
-            主婦<br>
-            婦人
-        </td>
-        <td>
-            obstetrics and gynecology department<br>
-            a housewife
-        </td>
-    </tr>
-    <tr>
-        <td>皮</td>
-        <td>
-            ヒ<br>
-            かわ
-        </td>
-        <td>
-            皮肉<br>
-            皮
-        </td>
-        <td>
-            irony / sarcasm<br>
-            skin
-        </td>
-    </tr>
-    <tr>
-        <td>膚</td>
-        <td>
-            フ
-        </td>
-        <td>
-            皮膚
-        </td>
-        <td>
-            skin
-        </td>
-    </tr>
-    <tr>
-        <td>救</td>
-        <td>
-            キュウ<br>
-            すくーう
-        </td>
-        <td>
-            救急<br>
-            救う
-        </td>
-        <td>
-            first aid<br>
-            save
-        </td>
-    </tr>
-</table>]]></content>
-      <categories>
-        <category>KanJi</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>KanJi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜とき・〜直後に</title>
-    <url>/new-blog/73a2b435.html</url>
-    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
-<ul>
-<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
-<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
-<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
-</ul>
-<p>接続　名ーの・動辞書形／た形＋際（に）</p>
-<p>注意　</p>
-<ol>
-<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
-<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
-</ol>
-<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
-<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
-</ul>
-<p>接続　名・動辞書形＋に際して・にあたって</p>
-<p>注意</p>
-<ol>
-<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
-</ol>
-<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
-<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
-<p>例文</p>
-<ul>
-<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
-</ul>
-<p>接続　動た形＋とたん（に）</p>
-<p>注意</p>
-<ol>
-<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
-<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
-</ol>
-<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
-<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
-<p>例文</p>
-<ul>
-<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
-<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
-</ul>
-<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
-<p>注意</p>
-<ol>
-<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
-<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
-<p>例文</p>
-<ul>
-<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
-<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
-</ul>
-<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
-<p>注意</p>
-<ol>
-<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
 </ol>
 ]]></content>
       <categories>
@@ -7938,6 +8104,62 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>〜だけではなく・それに加えて</title>
+    <url>/new-blog/not%20only.html</url>
+    <content><![CDATA[<h1 id="〜だけではなく・それに加えて"><a href="#〜だけではなく・それに加えて" class="headerlink" title="〜だけではなく・それに加えて"></a>〜だけではなく・それに加えて</h1><p>[復習]</p>
+<ul>
+<li>この公園では、子供<u>だけでなく</u>大人も楽しむことができる。</li>
+<li>私は音楽を聞くのが好きな<u>ばかりでなく</u>、自分でも作曲します。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜に限らず"><a href="#〜に限らず" class="headerlink" title="〜に限らず"></a>〜に限らず</h2><p>意味　範囲は〜だけでなく、さらに広い範囲のもの含む</p>
+<p>例文</p>
+<blockquote>
+<p>食べ物<u>に限らず</u>、適度な運動も健康に重要です</p>
+</blockquote>
+<p>接続　名＋に限らず</p>
+<p>注意　</p>
+<ol>
+<li>後には、「ほかにも」という意味を表す「も」や、さらに広い範囲を表す言葉（みんな、さまざまな、いつも）を使った文が来る</li>
+</ol>
+<h2 id="〜のみならず"><a href="#〜のみならず" class="headerlink" title="〜のみならず"></a>〜のみならず</h2><p>意味　〜だけでなく、ほかにもある。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>彼は英語<u>のみならず</u>、フランス語も話せる</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>である・名<del>だ</del>である）＋のみならず</p>
+<p>注意　</p>
+<h2 id="〜ばかりか"><a href="#〜ばかりか" class="headerlink" title="〜ばかりか"></a>〜ばかりか</h2><p>意味　〜だけでも十分なのに、さらにほかのことも加わる</p>
+<p>例文</p>
+<blockquote>
+<p>彼は知識が豊富<u>ばかりか</u>、実践的な経験も豊富だ</p>
+</blockquote>
+<p>接続 名・普通形（ナ形<del>だ</del>な／である・名<del>だ</del>である）＋ばかりか</p>
+<p>注意　前の文で普通でなないことを言い、さらに後の分でも意外性を感じるほかのことを加える。また、後の分では、働きかけの文は来ない</p>
+<h2 id="〜はもとより"><a href="#〜はもとより" class="headerlink" title="〜はもとより"></a>〜はもとより</h2><p>意味　〜はもちろん、ほかもそうだ。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+</blockquote>
+<p>接続 名＋はもとより</p>
+<p>注意</p>
+<h2 id="〜上（に）"><a href="#〜上（に）" class="headerlink" title="〜上（に）"></a><a href="#〜上（で）">〜上（に）</a></h2><p>意味　〜だけでなく、さらにいいこと・悪いことが重なる</p>
+<p>例文</p>
+<blockquote>
+<p>ここに空気がきれいな<u>上</u>、近くに明るいところがないので星がよく見える。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>な／である・名<del>だ</del>の／である）＋上（に）</p>
+<p>注意</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜について・〜を相手にして</title>
     <url>/new-blog/90d9cc69.html</url>
     <content><![CDATA[<h1 id="〜について・〜を相手にして"><a href="#〜について・〜を相手にして" class="headerlink" title="〜について・〜を相手にして"></a>〜について・〜を相手にして</h1><p>[復習]</p>
@@ -7999,62 +8221,6 @@ permalink: posts/:abbrlink.html
 <p>その歌手は、会場の人々の気持ち<u>にこたえて</u>再び舞台に出てきた。</p>
 </blockquote>
 <p>接続<br>名＋にこたえて<br>名＋にこたえる＋名</p>
-<p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だけではなく・それに加えて</title>
-    <url>/new-blog/not%20only.html</url>
-    <content><![CDATA[<h1 id="〜だけではなく・それに加えて"><a href="#〜だけではなく・それに加えて" class="headerlink" title="〜だけではなく・それに加えて"></a>〜だけではなく・それに加えて</h1><p>[復習]</p>
-<ul>
-<li>この公園では、子供<u>だけでなく</u>大人も楽しむことができる。</li>
-<li>私は音楽を聞くのが好きな<u>ばかりでなく</u>、自分でも作曲します。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜に限らず"><a href="#〜に限らず" class="headerlink" title="〜に限らず"></a>〜に限らず</h2><p>意味　範囲は〜だけでなく、さらに広い範囲のもの含む</p>
-<p>例文</p>
-<blockquote>
-<p>食べ物<u>に限らず</u>、適度な運動も健康に重要です</p>
-</blockquote>
-<p>接続　名＋に限らず</p>
-<p>注意　</p>
-<ol>
-<li>後には、「ほかにも」という意味を表す「も」や、さらに広い範囲を表す言葉（みんな、さまざまな、いつも）を使った文が来る</li>
-</ol>
-<h2 id="〜のみならず"><a href="#〜のみならず" class="headerlink" title="〜のみならず"></a>〜のみならず</h2><p>意味　〜だけでなく、ほかにもある。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>彼は英語<u>のみならず</u>、フランス語も話せる</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>である・名<del>だ</del>である）＋のみならず</p>
-<p>注意　</p>
-<h2 id="〜ばかりか"><a href="#〜ばかりか" class="headerlink" title="〜ばかりか"></a>〜ばかりか</h2><p>意味　〜だけでも十分なのに、さらにほかのことも加わる</p>
-<p>例文</p>
-<blockquote>
-<p>彼は知識が豊富<u>ばかりか</u>、実践的な経験も豊富だ</p>
-</blockquote>
-<p>接続 名・普通形（ナ形<del>だ</del>な／である・名<del>だ</del>である）＋ばかりか</p>
-<p>注意　前の文で普通でなないことを言い、さらに後の分でも意外性を感じるほかのことを加える。また、後の分では、働きかけの文は来ない</p>
-<h2 id="〜はもとより"><a href="#〜はもとより" class="headerlink" title="〜はもとより"></a>〜はもとより</h2><p>意味　〜はもちろん、ほかもそうだ。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-</blockquote>
-<p>接続 名＋はもとより</p>
-<p>注意</p>
-<h2 id="〜上（に）"><a href="#〜上（に）" class="headerlink" title="〜上（に）"></a><a href="#〜上（で）">〜上（に）</a></h2><p>意味　〜だけでなく、さらにいいこと・悪いことが重なる</p>
-<p>例文</p>
-<blockquote>
-<p>ここに空気がきれいな<u>上</u>、近くに明るいところがないので星がよく見える。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>な／である・名<del>だ</del>の／である）＋上（に）</p>
 <p>注意</p>
 ]]></content>
       <categories>
@@ -8134,53 +8300,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜や〜など</title>
-    <url>/new-blog/58850c43.html</url>
-    <content><![CDATA[<h1 id="〜や〜など"><a href="#〜や〜など" class="headerlink" title="〜や〜など"></a>〜や〜など</h1><p>[復習]</p>
-<ul>
-<li>出張用のかばんの中にはパソコン<u>や</u>本<u>など</u>が入れっています。</li>
-<li>この町には図書館<u>とか</u>美術館<u>とか</u>公共の建物が多い。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜やら〜やら"><a href="#〜やら〜やら" class="headerlink" title="〜やら〜やら"></a>〜やら〜やら</h2><p>意味　〜や、ほかの〜などの例があるように、いろいろだ</p>
-<p>例文</p>
-<blockquote>
-<p>勝ったチームの選手たちは、泣き出す<u>やら</u>飛び上がる<u>やら</u>さまざまに喜びを表した</p>
-</blockquote>
-<p>接続　名・動辞書形・イ形い＋やら</p>
-<p>注意</p>
-<h2 id="〜というか〜というか"><a href="#〜というか〜というか" class="headerlink" title="〜というか〜というか"></a>〜というか〜というか</h2><p>意味　〜という言い方もできるし、ほかの〜という言い方もできる。</p>
-<p>例文</p>
-<blockquote>
-<p>あの子は元気がいい<u>というか</u>落ち着きがない<u>というか</u>、静かにじっとしていない子です。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というか</p>
-<p>注意</p>
-<h2 id="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"><a href="#〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ" class="headerlink" title="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"></a>〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ</h2><p>意味　〜を例にとっても、ほかの〜を例にとっても同じことが言える。</p>
-<p>例文</p>
-<blockquote>
-<p>勉強する<u>にしても</u>仕事をする<u>にしても</u>、計画を立て立ててからやったほうがいい。</p>
-</blockquote>
-<p>接続　名・動辞書／ない形＋にしても・にしろ・にせよ</p>
-<p>注意</p>
-<h2 id="〜といった"><a href="#〜といった" class="headerlink" title="〜といった"></a>〜といった</h2><p>意味　いくつかの例の後につけて、例をまとめる</p>
-<p>例文</p>
-<blockquote>
-<p>京都とか鎌倉<u>といった</u>古い街には寺が多い。</p>
-</blockquote>
-<p>接続　名＋といった</p>
-<p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜に関連して・〜に対応して</title>
     <url>/new-blog/2990d3a2.html</url>
     <content><![CDATA[<h1 id="〜に関連して・〜に対応して"><a href="#〜に関連して・〜に対応して" class="headerlink" title="〜に関連して・〜に対応して"></a>〜に関連して・〜に対応して</h1><p>[復習]</p>
@@ -8222,6 +8341,53 @@ permalink: posts/:abbrlink.html
 <p>この歌を聞く<u>につけて</u>、心に希望がわいてくる。</p>
 </blockquote>
 <p>接続　動辞書形＋につけて</p>
+<p>注意</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜や〜など</title>
+    <url>/new-blog/58850c43.html</url>
+    <content><![CDATA[<h1 id="〜や〜など"><a href="#〜や〜など" class="headerlink" title="〜や〜など"></a>〜や〜など</h1><p>[復習]</p>
+<ul>
+<li>出張用のかばんの中にはパソコン<u>や</u>本<u>など</u>が入れっています。</li>
+<li>この町には図書館<u>とか</u>美術館<u>とか</u>公共の建物が多い。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜やら〜やら"><a href="#〜やら〜やら" class="headerlink" title="〜やら〜やら"></a>〜やら〜やら</h2><p>意味　〜や、ほかの〜などの例があるように、いろいろだ</p>
+<p>例文</p>
+<blockquote>
+<p>勝ったチームの選手たちは、泣き出す<u>やら</u>飛び上がる<u>やら</u>さまざまに喜びを表した</p>
+</blockquote>
+<p>接続　名・動辞書形・イ形い＋やら</p>
+<p>注意</p>
+<h2 id="〜というか〜というか"><a href="#〜というか〜というか" class="headerlink" title="〜というか〜というか"></a>〜というか〜というか</h2><p>意味　〜という言い方もできるし、ほかの〜という言い方もできる。</p>
+<p>例文</p>
+<blockquote>
+<p>あの子は元気がいい<u>というか</u>落ち着きがない<u>というか</u>、静かにじっとしていない子です。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というか</p>
+<p>注意</p>
+<h2 id="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"><a href="#〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ" class="headerlink" title="〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ"></a>〜にしても〜にしても・〜にしろ〜にしろ・〜にせよ〜にせよ</h2><p>意味　〜を例にとっても、ほかの〜を例にとっても同じことが言える。</p>
+<p>例文</p>
+<blockquote>
+<p>勉強する<u>にしても</u>仕事をする<u>にしても</u>、計画を立て立ててからやったほうがいい。</p>
+</blockquote>
+<p>接続　名・動辞書／ない形＋にしても・にしろ・にせよ</p>
+<p>注意</p>
+<h2 id="〜といった"><a href="#〜といった" class="headerlink" title="〜といった"></a>〜といった</h2><p>意味　いくつかの例の後につけて、例をまとめる</p>
+<p>例文</p>
+<blockquote>
+<p>京都とか鎌倉<u>といった</u>古い街には寺が多い。</p>
+</blockquote>
+<p>接続　名＋といった</p>
 <p>注意</p>
 ]]></content>
       <categories>
@@ -8376,6 +8542,91 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>〜けれど</title>
+    <url>/new-blog/e772508f.html</url>
+    <content><![CDATA[<h1 id="〜けれど"><a href="#〜けれど" class="headerlink" title="〜けれど"></a>〜けれど</h1><p>[復習]</p>
+<ul>
+<li>返すのはいつでもいいと言いた<u>けど</u>、返さなくていいとは言っていない。</li>
+<li>せっかく富士山の近くまでに行った<u>のに</u>、天気が悪くてよく見えなかった。</li>
+<li>忙しく<u>ても</u>、メールの返事は必ず書きたい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜にもかかわらず"><a href="#〜にもかかわらず" class="headerlink" title="〜にもかかわらず"></a>〜にもかかわらず</h2><p>説明　despite; though; although; in spite of</p>
+<p>意味　〜には影響されないで、あることをする。</p>
+<p>例文</p>
+<blockquote>
+<p>悪天候<u>にもかかわらず</u>、作業を続けている。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋にもかかわらず</p>
+<p>注意　</p>
+<ol>
+<li>全体として、前の事実に影響きれないことに対する驚き・意外感を表す。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文は来ない。</li>
+</ol>
+<h2 id="〜ものの・〜とはいうものの"><a href="#〜ものの・〜とはいうものの" class="headerlink" title="〜ものの・〜とはいうものの"></a>〜ものの・〜とはいうものの</h2><p>意味　〜は事実なのだが、その事実から当然想像されることが起こらない。</p>
+<p>例文</p>
+<blockquote>
+<p>明日の天気です。関東地方は晴れる<u>ものの</u>、風が強いため寒く感じられるでしょう。<br>不景気<u>とはいうものの</u>、人々の表情は明るい。<br>手術は成功した<u>とはいうものの</u>、まだ心配だ。</p>
+</blockquote>
+<p>接続<br>    動・形普通形（ナ形<del>だ</del>ーな&#x2F;ーである）＋ものの<br>    名・普通形（ナ形（だ））＋とはいうものの</p>
+<p>注意</p>
+<ol>
+<li>事実または確実性が高いことにつく。後には、想像されるとおりではない・まだ問題がある、という意味の文が来る。働きかけの文が来ない。</li>
+</ol>
+<h2 id="〜ながら（も）"><a href="#〜ながら（も）" class="headerlink" title="〜ながら（も）"></a>〜ながら（も）</h2><p>意味　〜という状態から予想されることとは違う・「〜けれども」と前置きする。</p>
+<p>例文</p>
+<blockquote>
+<p>毎日この道を通ってい<u>ながら</u>、ここにこんなすてきな店があるとは気がつかなかった。</p>
+</blockquote>
+<p>接続　動<del>ます</del>・イ形・ナ形&#x2F;-であり・名-であり＋ながら（も）</p>
+<p>注意</p>
+<ol>
+<li>状態を表す言葉につくことが多い。</li>
+<li>マイナス評価の言葉につく。</li>
+</ol>
+<h3 id="〜つつ（も）"><a href="#〜つつ（も）" class="headerlink" title="〜つつ（も）"></a>〜つつ（も）</h3><p>意味　〜という心の動きとは、行動が違っている。</p>
+<p>例文</p>
+<blockquote>
+<p>早く返事を書かなければと気にし<u>つつ</u>、まだ書いていない。<br>危険だと知り<u>つつ</u>、山道を登り続けた。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋つつ（も）</p>
+<p>注意</p>
+<ol>
+<li>心の動きや言語活動に関係する動詞につく。</li>
+</ol>
+<h2 id="〜といっても"><a href="#〜といっても" class="headerlink" title="〜といっても"></a>〜といっても</h2><p>意味　実際は〜ということから想像されるイメージとは違っている</p>
+<p>例文</p>
+<blockquote>
+<p>料理ができる<u>といっても</u>、わたしが作れるのは簡単なものだけです。<br>今もわたしの仕事はきつい。でも、きつい<u>といっても</u>、前の会社にいたときほどではない。</p>
+</blockquote>
+<p>接続　名・普通形＋といっても</p>
+<p>注意</p>
+<ol>
+<li>後には、「〜」からイメージされることとは違うという意味の文が来る。</li>
+</ol>
+<h2 id="〜からといって"><a href="#〜からといって" class="headerlink" title="〜からといって"></a>〜からといって</h2><p>説明　just because A it is not enough to B</p>
+<p>意味　ただ〜という理由だけでは、その理由から普通に予想されることは成立しない</p>
+<p>例文　</p>
+<blockquote>
+<p>子供だ<u>からといって</u>許せない。</p>
+</blockquote>
+<p>接続　普通形＋からといって</p>
+<p>注意</p>
+<ol>
+<li>「〜だから当然…だ」という文を否定する言い方。</li>
+<li>後には、部分否定の表現（〜とは限らない・〜わけではない・〜とはいえない）が来ることが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜（話題）は</title>
     <url>/new-blog/b439c0f1.html</url>
     <content><![CDATA[<h1 id="〜（話題）は"><a href="#〜（話題）は" class="headerlink" title="〜（話題）は"></a>〜（話題）は</h1><p>[復習]</p>
@@ -8453,80 +8704,77 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜けれど</title>
-    <url>/new-blog/e772508f.html</url>
-    <content><![CDATA[<h1 id="〜けれど"><a href="#〜けれど" class="headerlink" title="〜けれど"></a>〜けれど</h1><p>[復習]</p>
+    <title>〜だから（理由）−１</title>
+    <url>/new-blog/745eec7b.html</url>
+    <content><![CDATA[<h1 id="〜だから（理由）−１"><a href="#〜だから（理由）−１" class="headerlink" title="〜だから（理由）−１"></a>〜だから（理由）−１</h1><p>[復習]</p>
 <ul>
-<li>返すのはいつでもいいと言いた<u>けど</u>、返さなくていいとは言っていない。</li>
-<li>せっかく富士山の近くまでに行った<u>のに</u>、天気が悪くてよく見えなかった。</li>
-<li>忙しく<u>ても</u>、メールの返事は必ず書きたい。</li>
+<li>時間がなかった<u>ので</u>、十分な準備ができなかった。</li>
+<li>試験のことが気になっ<u>て</u>、なかなか眠れなかった。</li>
+<li>事故があった<u>ために</u>、道路が渋滞した。</li>
 </ul>
 <span id="more"></span>
 
-<h2 id="〜にもかかわらず"><a href="#〜にもかかわらず" class="headerlink" title="〜にもかかわらず"></a>〜にもかかわらず</h2><p>説明　despite; though; although; in spite of</p>
-<p>意味　〜には影響されないで、あることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>悪天候<u>にもかかわらず</u>、作業を続けている。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋にもかかわらず</p>
+<h2 id="〜によって"><a href="#〜によって" class="headerlink" title="〜によって"></a>〜によって</h2><p>意味　〜が原因で、ある結果になる・〜という手段や方法であることをする。<span style="color:orange">硬い言い方</span></p>
+<p>例文　</p>
+<ul>
+<li>今朝、中央線は踏切内で起きた事故<u>によって</u>、ダイヤが大きく乱れた</li>
+<li>仕事をコンピューター化すること<u>により</u>、労働力不足は解決できるのではないか</li>
+</ul>
+<p>接続　<br>    名＋によって<br>    名＋による＋名</p>
 <p>注意　</p>
 <ol>
-<li>全体として、前の事実に影響きれないことに対する驚き・意外感を表す。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文は来ない。</li>
+<li>手段の意味では、日常的な道具などを個人的に使う場合は使いにくいが、</li>
 </ol>
-<h2 id="〜ものの・〜とはいうものの"><a href="#〜ものの・〜とはいうものの" class="headerlink" title="〜ものの・〜とはいうものの"></a>〜ものの・〜とはいうものの</h2><p>意味　〜は事実なのだが、その事実から当然想像されることが起こらない。</p>
+<p>練習</p>
+<h2 id="〜ものだから・〜もので・〜もの"><a href="#〜ものだから・〜もので・〜もの" class="headerlink" title="〜ものだから・〜もので・〜もの"></a>〜ものだから・〜もので・〜もの</h2><p>意味　「〜ので…」と言い訳をする。<span style="color:green">話し言葉</span></p>
+<p>例文</p>
+<ul>
+<li>すみません。昨日はちょっと熱があった<u>ものですから</u>、お休みしました。</li>
+<li>このところ忙しかった<u>もので</u>、お返事が遅れてしまいました。ごめんなさい。</li>
+<li>私、近眼な<u>もんで</u>、お顔がよく見えなかったんです。</li>
+<li>あの人の言うことはよくわからないよ。言葉が難しいんだ<u>もの</u>。</li>
+</ul>
+<p>接続<br>    普通形（ナ形<del>だ</del> ーな・名<del>だ</del> ーな）＋ものだから・もので<br>    普通形＋もの</p>
+<p>注意　</p>
+<ol>
+<li>個人的な言い訳を言う。</li>
+<li>後には命令や意向を表す文は来ない。「もの」は主に文末に使い、特に女性や子供が多く使う。</li>
+<li>「ものですから、もので」の後の文も、省略されることがある。「もんだから、もんで、もん」は、さらにくだけた言い方。</li>
+</ol>
+<h2 id="〜おかげだ／〜せいだ"><a href="#〜おかげだ／〜せいだ" class="headerlink" title="〜おかげだ／〜せいだ"></a>〜おかげだ／〜せいだ</h2><p>意味　〜の影響で、いい結果／悪い結果になった。</p>
 <p>例文</p>
 <blockquote>
-<p>明日の天気です。関東地方は晴れる<u>ものの</u>、風が強いため寒く感じられるでしょう。<br>不景気<u>とはいうものの</u>、人々の表情は明るい。<br>手術は成功した<u>とはいうものの</u>、まだ心配だ。</p>
+<p>いい天気が続いている<u>おかげで</u>、工事が思ったより早く進んでいます。<br>今年の春は気温が低い日が多かった<u>せいで</u>、桜の開花が遅い。</p>
 </blockquote>
-<p>接続<br>    動・形普通形（ナ形<del>だ</del>ーな&#x2F;ーである）＋ものの<br>    名・普通形（ナ形（だ））＋とはいうものの</p>
-<p>注意</p>
+<p>接続　名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋おかげだ／せいだ</p>
+<p>注意　</p>
 <ol>
-<li>事実または確実性が高いことにつく。後には、想像されるとおりではない・まだ問題がある、という意味の文が来る。働きかけの文が来ない。</li>
+<li>話者の意向を表す文や働きかけの文は来ない。</li>
 </ol>
-<h2 id="〜ながら（も）"><a href="#〜ながら（も）" class="headerlink" title="〜ながら（も）"></a>〜ながら（も）</h2><p>意味　〜という状態から予想されることとは違う・「〜けれども」と前置きする。</p>
-<p>例文</p>
-<blockquote>
-<p>毎日この道を通ってい<u>ながら</u>、ここにこんなすてきな店があるとは気がつかなかった。</p>
+<h2 id="〜あまり・あまりの〜に"><a href="#〜あまり・あまりの〜に" class="headerlink" title="〜あまり・あまりの〜に"></a>〜あまり・あまりの〜に</h2><p>意味　とても〜ので、普通ではない結果になってしまった。（Due to a condition&#x2F;state being in excess, a result occurs.）</p>
+<p>例文　</p>
+<ul>
+<li>自分の番が近づいてきたとき、わたしは緊張の<u>あまり</u>頭の中が真っ白になってしまった。<blockquote>
+<p>10年ぶりで兄に会った。兄の<u>あまりの</u>変化<u>に</u>言葉が出なかった。</p>
 </blockquote>
-<p>接続　動<del>ます</del>・イ形・ナ形&#x2F;-であり・名-であり＋ながら（も）</p>
-<p>注意</p>
+</li>
+</ul>
+<p>接続　<br>    名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋あまり<br>    あまりの＋名＋に</p>
+<p>注意　</p>
 <ol>
-<li>状態を表す言葉につくことが多い。</li>
-<li>マイナス評価の言葉につく。</li>
+<li>後には、普通ではない結果（悪い結果が多い）を表す文が来る。</li>
+<li>話者の希望・意向を表す文や働きかけの文は来ない。</li>
 </ol>
-<h3 id="〜つつ（も）"><a href="#〜つつ（も）" class="headerlink" title="〜つつ（も）"></a>〜つつ（も）</h3><p>意味　〜という心の動きとは、行動が違っている。</p>
-<p>例文</p>
-<blockquote>
-<p>早く返事を書かなければと気にし<u>つつ</u>、まだ書いていない。<br>危険だと知り<u>つつ</u>、山道を登り続けた。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋つつ（も）</p>
-<p>注意</p>
-<ol>
-<li>心の動きや言語活動に関係する動詞につく。</li>
-</ol>
-<h2 id="〜といっても"><a href="#〜といっても" class="headerlink" title="〜といっても"></a>〜といっても</h2><p>意味　実際は〜ということから想像されるイメージとは違っている</p>
-<p>例文</p>
-<blockquote>
-<p>料理ができる<u>といっても</u>、わたしが作れるのは簡単なものだけです。<br>今もわたしの仕事はきつい。でも、きつい<u>といっても</u>、前の会社にいたときほどではない。</p>
-</blockquote>
-<p>接続　名・普通形＋といっても</p>
-<p>注意</p>
-<ol>
-<li>後には、「〜」からイメージされることとは違うという意味の文が来る。</li>
-</ol>
-<h2 id="〜からといって"><a href="#〜からといって" class="headerlink" title="〜からといって"></a>〜からといって</h2><p>説明　just because A it is not enough to B</p>
-<p>意味　ただ〜という理由だけでは、その理由から普通に予想されることは成立しない</p>
+<h2 id="〜につき"><a href="#〜につき" class="headerlink" title="〜につき"></a>〜につき</h2><p>意味　「〜の理由で、ある状態になる」と公に知らせる。<span style="color:green">話し言葉</span></p>
 <p>例文　</p>
 <blockquote>
-<p>子供だ<u>からといって</u>許せない。</p>
+<p>トイレはただ今清掃中<u>につき</u>、ご利用になれません。</p>
 </blockquote>
-<p>接続　普通形＋からといって</p>
-<p>注意</p>
+<p>接続　名＋につき</p>
+<p>注意　</p>
 <ol>
-<li>「〜だから当然…だ」という文を否定する言い方。</li>
-<li>後には、部分否定の表現（〜とは限らない・〜わけではない・〜とはいえない）が来ることが多い。</li>
+<li>現時点での状況を表す言葉につく。</li>
+<li>張り紙や公式文書などに使う。</li>
 </ol>
 ]]></content>
       <categories>
@@ -8660,88 +8908,6 @@ permalink: posts/:abbrlink.html
 <p>練習<br>    Situation: You and your team have been preparing for a competition for months. Now that the day has arrived, you want to express your determination and commitment to giving your best performance. Use “〜からには” in your sentence to convey your strong resolve.</p>
 <pre><code>この日は待ち望んできたからには、最高のパフォーマンスを発揮します。
 </code></pre>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜だから（理由）−１</title>
-    <url>/new-blog/745eec7b.html</url>
-    <content><![CDATA[<h1 id="〜だから（理由）−１"><a href="#〜だから（理由）−１" class="headerlink" title="〜だから（理由）−１"></a>〜だから（理由）−１</h1><p>[復習]</p>
-<ul>
-<li>時間がなかった<u>ので</u>、十分な準備ができなかった。</li>
-<li>試験のことが気になっ<u>て</u>、なかなか眠れなかった。</li>
-<li>事故があった<u>ために</u>、道路が渋滞した。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜によって"><a href="#〜によって" class="headerlink" title="〜によって"></a>〜によって</h2><p>意味　〜が原因で、ある結果になる・〜という手段や方法であることをする。<span style="color:orange">硬い言い方</span></p>
-<p>例文　</p>
-<ul>
-<li>今朝、中央線は踏切内で起きた事故<u>によって</u>、ダイヤが大きく乱れた</li>
-<li>仕事をコンピューター化すること<u>により</u>、労働力不足は解決できるのではないか</li>
-</ul>
-<p>接続　<br>    名＋によって<br>    名＋による＋名</p>
-<p>注意　</p>
-<ol>
-<li>手段の意味では、日常的な道具などを個人的に使う場合は使いにくいが、</li>
-</ol>
-<p>練習</p>
-<h2 id="〜ものだから・〜もので・〜もの"><a href="#〜ものだから・〜もので・〜もの" class="headerlink" title="〜ものだから・〜もので・〜もの"></a>〜ものだから・〜もので・〜もの</h2><p>意味　「〜ので…」と言い訳をする。<span style="color:green">話し言葉</span></p>
-<p>例文</p>
-<ul>
-<li>すみません。昨日はちょっと熱があった<u>ものですから</u>、お休みしました。</li>
-<li>このところ忙しかった<u>もので</u>、お返事が遅れてしまいました。ごめんなさい。</li>
-<li>私、近眼な<u>もんで</u>、お顔がよく見えなかったんです。</li>
-<li>あの人の言うことはよくわからないよ。言葉が難しいんだ<u>もの</u>。</li>
-</ul>
-<p>接続<br>    普通形（ナ形<del>だ</del> ーな・名<del>だ</del> ーな）＋ものだから・もので<br>    普通形＋もの</p>
-<p>注意　</p>
-<ol>
-<li>個人的な言い訳を言う。</li>
-<li>後には命令や意向を表す文は来ない。「もの」は主に文末に使い、特に女性や子供が多く使う。</li>
-<li>「ものですから、もので」の後の文も、省略されることがある。「もんだから、もんで、もん」は、さらにくだけた言い方。</li>
-</ol>
-<h2 id="〜おかげだ／〜せいだ"><a href="#〜おかげだ／〜せいだ" class="headerlink" title="〜おかげだ／〜せいだ"></a>〜おかげだ／〜せいだ</h2><p>意味　〜の影響で、いい結果／悪い結果になった。</p>
-<p>例文</p>
-<blockquote>
-<p>いい天気が続いている<u>おかげで</u>、工事が思ったより早く進んでいます。<br>今年の春は気温が低い日が多かった<u>せいで</u>、桜の開花が遅い。</p>
-</blockquote>
-<p>接続　名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋おかげだ／せいだ</p>
-<p>注意　</p>
-<ol>
-<li>話者の意向を表す文や働きかけの文は来ない。</li>
-</ol>
-<h2 id="〜あまり・あまりの〜に"><a href="#〜あまり・あまりの〜に" class="headerlink" title="〜あまり・あまりの〜に"></a>〜あまり・あまりの〜に</h2><p>意味　とても〜ので、普通ではない結果になってしまった。（Due to a condition&#x2F;state being in excess, a result occurs.）</p>
-<p>例文　</p>
-<ul>
-<li>自分の番が近づいてきたとき、わたしは緊張の<u>あまり</u>頭の中が真っ白になってしまった。<blockquote>
-<p>10年ぶりで兄に会った。兄の<u>あまりの</u>変化<u>に</u>言葉が出なかった。</p>
-</blockquote>
-</li>
-</ul>
-<p>接続　<br>    名ーの・「動・形」普通形（ナ形<del>だ</del> ーな）＋あまり<br>    あまりの＋名＋に</p>
-<p>注意　</p>
-<ol>
-<li>後には、普通ではない結果（悪い結果が多い）を表す文が来る。</li>
-<li>話者の希望・意向を表す文や働きかけの文は来ない。</li>
-</ol>
-<h2 id="〜につき"><a href="#〜につき" class="headerlink" title="〜につき"></a>〜につき</h2><p>意味　「〜の理由で、ある状態になる」と公に知らせる。<span style="color:green">話し言葉</span></p>
-<p>例文　</p>
-<blockquote>
-<p>トイレはただ今清掃中<u>につき</u>、ご利用になれません。</p>
-</blockquote>
-<p>接続　名＋につき</p>
-<p>注意　</p>
-<ol>
-<li>現時点での状況を表す言葉につく。</li>
-<li>張り紙や公式文書などに使う。</li>
-</ol>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -9143,6 +9309,91 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>〜だろうと思う</title>
+    <url>/new-blog/1d9da295.html</url>
+    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
+<ul>
+<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
+<li>あしたは雨が降る<u>かもしれない</u>。</li>
+<li>林さんは今日ここに来る<u>はずだ</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
+<p>例文</p>
+<blockquote>
+<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
+</blockquote>
+<p>接続　普通形＋とみえる</p>
+<p>注意　</p>
+<ol>
+<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
+<li>推量した人は文中に表れない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
+<p>例文　</p>
+<blockquote>
+<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋かねない</p>
+<p>注意　</p>
+<ol>
+<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
+<li>「〜おそれがある」よりも原因がはっきりしている。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
+<p>例文　</p>
+<blockquote>
+<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
+</blockquote>
+<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
+<p>注意　</p>
+<ol>
+<li>ニュース、解説などで使う。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
+<p>例文</p>
+<blockquote>
+<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
+</blockquote>
+<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
+<p>注意</p>
+<ol>
+<li>丁寧形・過去形では使わない。</li>
+<li>ふつう、一人称が主語になることはない。</li>
+</ol>
+<p>練習</p>
+<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
+<p>練習</p>
+<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
+<p>例文　</p>
+<blockquote>
+<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
+<p>注意</p>
+<ol>
+<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
+</ol>
+<p>練習</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>主観を述べる</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>感想を言う・主張する</title>
     <url>/new-blog/52a5daa4.html</url>
     <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
@@ -9347,52 +9598,60 @@ permalink: posts/:abbrlink.html
 
 <h2 id="〜てしかたがない・〜てしょうがない・〜てたまらない"><a href="#〜てしかたがない・〜てしょうがない・〜てたまらない" class="headerlink" title="〜てしかたがない・〜てしょうがない・〜てたまらない"></a>〜てしかたがない・〜てしょうがない・〜てたまらない</h2><p>意味　非常に〜だと感じる。</p>
 <p>例文</p>
-<blockquote>
-<p>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u><br>朝から何も食べていないので、おなかがすい<u>てたまらない</u></p>
-</blockquote>
+<ul>
+<li>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u></li>
+<li>久しぶり彼女に会えるのがうれしく<u>てしょうがない</u></li>
+<li>朝から何も食べていないので、おなかがすい<u>てたまらない</u></li>
+</ul>
 <p>接続　動て形・イ形＜て・ナ形で＋しかたがない・しょうがない・たまらない</p>
 <p>注意</p>
 <ol>
-<li>話者の感情・欲求などを表すにつく。</li>
-<li>特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
+<li>話者の感情・欲求などを表すにつく。 特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
+<li>三人称が主語の時は、「ようだ・らしい」などをつける。</li>
 </ol>
 <h2 id="〜てならない"><a href="#〜てならない" class="headerlink" title="〜てならない"></a>〜てならない</h2><p>意味　気持ちが非常に〜だ。</p>
 <p>例文</p>
-<blockquote>
-<p>さっきから何か大切なことを忘れているような気がして<u>ならない</u></p>
-</blockquote>
+<ul>
+<li>この歌を聞くと、学生時代のことが思い出され<u>てならない</u></li>
+<li>さっきから何か大切なことを忘れているような気がして<u>ならない</u></li>
+</ul>
 <p>接続　動て形・イ形くて・ナ形で＋ならない</p>
 <p>注意</p>
 <ol>
-<li>マイナスの感情を表すことが多い。</li>
+<li>話者の感情・体の感覚などを表す言葉につく。マイナスの感情を表すことが多い。</li>
 </ol>
-<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>説明　feel compelled to; can’t help but feel; can’t help but do​</p>
-<p>意味　どうしても〜してしまって抑えられない。</p>
+<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>意味　どうしても〜してしまって抑えられない。</p>
 <p>例文</p>
-<blockquote>
-<p>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></p>
-</blockquote>
+<ul>
+<li>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></li>
+<li>ミカさんはケーキが大好きで、ケーキ屋の前を通ると買わ<u>ずにはいられない</u>そうだ。</li>
+</ul>
 <p>接続<br>動ない形＋ではいられない<br>動<del>ない</del>＋ずにはいられない<br><span style="color:red">する　→ せずに</span></p>
 <p>注意</p>
 <ol>
 <li>自然に出てくる個人的な感情や行動を表す。</li>
 </ol>
-<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>説明　cannot avoid (doing); cannot help (doing); have no other choice but to; must (do)​</p>
-<p>意味　事情があって〜しなければならない</p>
+<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>意味　事情があって〜しなければならない</p>
 <p>例文</p>
-<blockquote>
-<p>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></p>
-</blockquote>
+<ul>
+<li>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></li>
+</ul>
 <p>接続　動ない形＋わけに（は）いかない</p>
 <p>注意</p>
-<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>説明　have to; have no choice but to; cannot help (doing); be compelled to; be obliged to; be forced to​</p>
-<p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
+<ol>
+<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。社会的常識・義理などの事情を言う文が前か後に来ることが多い。</li>
+</ol>
+<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
 <p>例文</p>
-<blockquote>
-<p>週末も仕事で出かけ<u>ざるを得ない</u><br>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</p>
-</blockquote>
+<ul>
+<li>週末も仕事で出かけ<u>ざるを得ない</u></li>
+<li>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</li>
+</ul>
 <p>接続<br>動<del>ない</del>＋ざるを得ない<br><span style="color:red">する　→ せざる</span></p>
 <p>注意</p>
+<ol>
+<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。</li>
+</ol>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -9487,12 +9746,6 @@ permalink: posts/:abbrlink.html
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
-]]></content>
   </entry>
   <entry>
     <title>文法形式の整理</title>
@@ -10409,6 +10662,12 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>文の組み立て−3　「〜ない」がつく文法形式</title>
     <url>/new-blog/e6787bff.html</url>
     <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
@@ -10598,91 +10857,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜だろうと思う</title>
-    <url>/new-blog/1d9da295.html</url>
-    <content><![CDATA[<h1 id="〜だろうと思う"><a href="#〜だろうと思う" class="headerlink" title="〜だろうと思う"></a>〜だろうと思う</h1><p>[復習]</p>
-<ul>
-<li>来年はもっと仕事が増える<u>だろうと思う</u>。</li>
-<li>あしたは雨が降る<u>かもしれない</u>。</li>
-<li>林さんは今日ここに来る<u>はずだ</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜とみえる"><a href="#〜とみえる" class="headerlink" title="〜とみえる"></a>〜とみえる</h2><p>意味　ある根拠があって、〜らしい・〜ようだと思う</p>
-<p>例文</p>
-<blockquote>
-<p>朝からパチンコに行くなんて、ずいぶん暇だ<u>とみえる</u>。</p>
-</blockquote>
-<p>接続　普通形＋とみえる</p>
-<p>注意　</p>
-<ol>
-<li>主にほかの人様子を見て、それを根拠に推量したこと。</li>
-<li>推量した人は文中に表れない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜かねない"><a href="#〜かねない" class="headerlink" title="〜かねない"></a>〜かねない</h2><p>意味　〜という悪い結果になる可能性がある。</p>
-<p>例文　</p>
-<blockquote>
-<p>大事なことはみんなに相談しないと、後で文句を言われ<u>かねません</u>よ。<br>うわさはどんどん変な方向へ発展していき<u>かねない</u>。</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋かねない</p>
-<p>注意　</p>
-<ol>
-<li>現在の状態から考えてマイナスの結果になるかもしれないという意味で使う。</li>
-<li>「〜おそれがある」よりも原因がはっきりしている。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜おそれがある"><a href="#〜おそれがある" class="headerlink" title="〜おそれがある"></a>〜おそれがある</h2><p>意味　〜という悪いことが起こる可能性がある。<span style="color:orange">硬い言い方</span></p>
-<p>例文　</p>
-<blockquote>
-<p>機械で読み取れない<u>おそれがある</u>ので、郵便番号ははっきり書いてください。</p>
-</blockquote>
-<p>接続　名-の・動辞書形／ない形＋おそれがある</p>
-<p>注意　</p>
-<ol>
-<li>ニュース、解説などで使う。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜まい／〜ではあるまいか"><a href="#〜まい／〜ではあるまいか" class="headerlink" title="〜まい／〜ではあるまいか"></a>〜まい／〜ではあるまいか</h2><p>意味　〜ないだろう／〜ではないだろうか。<span style="color:orange">書き言葉</span></p>
-<p>例文</p>
-<blockquote>
-<p>何度も計算し直したのだから、間違いはある<u>まい</u>。<br>あの子はまだ小さいから、一人で行かせては迷子になる<u>まい</u>かと心配だ。<br>このまま何もしないでいたら、いつまでも問題は解決しないの<u>ではあるまいか</u></p>
-</blockquote>
-<p>接続<br>動辞書形・イ形くある・ナ形-ではある・名-ではある＋まい<br>普通形＋の（ナ形<del>だ</del>／-なの・名<del>だ</del>／-なの）＋ではあるまいか</p>
-<p>注意</p>
-<ol>
-<li>丁寧形・過去形では使わない。</li>
-<li>ふつう、一人称が主語になることはない。</li>
-</ol>
-<p>練習</p>
-<h2 id="〜に違いない・〜に相違ない"><a href="#〜に違いない・〜に相違ない" class="headerlink" title="〜に違いない・〜に相違ない"></a>〜に違いない・〜に相違ない</h2><p>意味　ある根拠があり、きっと〜だろうと確信をもって思う。「〜に相違ない」→　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>日本に一年住んでいるのだから、彼も少し生活に慣れた<u>に違いない</u>。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>／-である・名<del>だ</del>／-である）＋に違いない・に相違ない</p>
-<p>練習</p>
-<h2 id="〜にきまっている"><a href="#〜にきまっている" class="headerlink" title="〜にきまっている"></a>〜にきまっている</h2><p>意味　絶対に〜だと思う。<span style="color:orange">話し言葉</span></p>
-<p>例文　</p>
-<blockquote>
-<p>あの子の言うことなんかうそ<u>にきまっている</u>よ。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋にきまっている</p>
-<p>注意</p>
-<ol>
-<li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
-</ol>
-<p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>主観を述べる</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>始めと終わりが正しく対応した文</title>
     <url>/new-blog/c660853.html</url>
     <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
@@ -10863,6 +11037,26 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>条件を表す文</title>
+    <url>/new-blog/ff8369b4.html</url>
+    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
+<span id="more"></span>
+
+<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
+<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
+<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
+<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
+<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>時制</title>
     <url>/new-blog/956f59e9.html</url>
     <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
@@ -10980,26 +11174,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>条件を表す文</title>
-    <url>/new-blog/ff8369b4.html</url>
-    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
-<span id="more"></span>
-
-<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
-<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
-<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
-<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
-<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>GrammaticalForm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>とき</title>
     <url>/new-blog/7971245b.html</url>
     <content><![CDATA[<h1 id="〜とき"><a href="#〜とき" class="headerlink" title="〜とき"></a>〜とき</h1><span id="more"></span>
@@ -11095,6 +11269,43 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>比べれば…・〜がいちばん</title>
+    <url>/new-blog/a457ced0.html</url>
+    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
+
+<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
+<blockquote>
+<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
+</blockquote>
+<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
+<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
+<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
+<blockquote>
+<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
+</blockquote>
+<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续　名+くらい…はない・ぐらい…はない</p>
+<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
+<blockquote>
+<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
+</blockquote>
+<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
+<p>接续 動詞辞书形+くらいなら…</p>
+<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
+<blockquote>
+<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
+</blockquote>
+<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜とは違って</title>
     <url>/new-blog/b9249d31.html</url>
     <content><![CDATA[<h1 id="〜とは違って"><a href="#〜とは違って" class="headerlink" title="〜とは違って"></a>〜とは違って</h1><span id="more"></span>
@@ -11129,43 +11340,6 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>説明　「〜ということがあるが、反対に、それと同じ程度の…ということもある」。「通常している・通常するはずの〜をしないで、それと同じ程度の…をする」</p>
 <p>接続　動・形普通形（ナ形<del>だ</del>ーな）＋かわりに</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>比べれば…・〜がいちばん</title>
-    <url>/new-blog/a457ced0.html</url>
-    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
-
-<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
-<blockquote>
-<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
-</blockquote>
-<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
-<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
-<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
-<blockquote>
-<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
-</blockquote>
-<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续　名+くらい…はない・ぐらい…はない</p>
-<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
-<blockquote>
-<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
-</blockquote>
-<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
-<p>接续 動詞辞书形+くらいなら…</p>
-<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
-<blockquote>
-<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
-</blockquote>
-<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -11669,386 +11843,6 @@ permalink: posts/:abbrlink.html
 </table>
 
 <h2 id="職場でよく使う敬語の例をまとめました。"><a href="#職場でよく使う敬語の例をまとめました。" class="headerlink" title="職場でよく使う敬語の例をまとめました。"></a>職場でよく使う敬語の例をまとめました。</h2><table><tbody><tr><td width="209" style="text-align: left;"><strong>普段の言葉使い</strong></td><td width="333" style="text-align: left;"><strong>職場での言葉使い</strong></td></tr><tr><td><p>誰ですか　</p><p>どなたですか</p></td><td><p>どちらさまでしょうか　</p><p>どなたさまでしょうか　</p></td></tr><tr><td><p>ありません　</p><p>ないです</p></td><td>ございません</td></tr><tr><td>できません</td><td>いたしかねます</td></tr><tr><td>知りません</td><td>存じません</td></tr><tr><td>わかりません</td><td>わかりかねます</td></tr><tr><td>何の用ですか</td><td>どのようなご用件でしょうか</td></tr><tr><td>誰を呼べばいいですか</td><td>誰をお呼びいたしましょうか</td></tr><tr><td>今、見てきます</td><td>ただ今、見て参ります</td></tr><tr><td>今、外出していません</td><td>ただ今、外出しております</td></tr><tr><td>今、席にいません</td><td>ただ今、席を外しております</td></tr><tr><td>名前を教えてください</td><td>お名前を伺ってもよろしいでしょうか</td></tr><tr><td>何か聞いてますか</td><td>何かうけたまわっておりますでしょうか</td></tr><tr><td>こっちからいきます</td><td>こちらから伺います（参ります）</td></tr><tr><td>もう一度言ってください</td><td>もう一度おっしゃっていただけますか</td></tr><tr><td>食べます</td><td>いただきます</td></tr><tr><td>もらいます</td><td><p>いただきます　</p><p>頂戴いたします</p></td></tr><tr><td><p>ごめんなさい　</p><p>すみません</p></td><td>申し訳ございません</td></tr><tr><td>言います</td><td>申し上げます</td></tr></tbody></table>]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文の組み立て</title>
-    <url>/new-blog/562ffdb5.html</url>
-    <content><![CDATA[<h1 id="文の組み立て"><a href="#文の組み立て" class="headerlink" title="文の組み立て"></a>文の組み立て</h1><span id="more"></span>
-
-<h1 id="文の組み立てー1-引用"><a href="#文の組み立てー1-引用" class="headerlink" title="文の組み立てー1 引用"></a>文の組み立てー1 引用</h1><p>ある人が言ったこと、自分が思ったことの内容を一文の中に入れるには、つぎのような方法があります。</p>
-<h2 id="「言う・思う・感じる」など"><a href="#「言う・思う・感じる」など" class="headerlink" title="「言う・思う・感じる」など"></a>「言う・思う・感じる」など</h2><blockquote>
-<p>普通形＋と…</p>
-</blockquote>
-<ul>
-<li>わたしは思います。＋「リンさんはきっと合格するでしょう」<br>  →わたしは<u>リンさんはきっと合格するだろう</u>と思います。</li>
-</ul>
-<h2 id="「頼む・注意する・言う」など"><a href="#「頼む・注意する・言う」など" class="headerlink" title="「頼む・注意する・言う」など"></a>「頼む・注意する・言う」など</h2><blockquote>
-<p>「辞書形・ない形」＋ように（と）<br>「て形・ない形＋で」＋ほしい＋と<br>命令形・禁止形＋と</p>
-</blockquote>
-<ul>
-<li>医者はカンさんに勧めた。＋「ときどき運動をしたほうがいいです」<br>  →　医者はカンさんに<u>ときどき運動する</u>ように勧めた。</li>
-<li>わたしは先生に頼んだ。＋「もう一度説明してくださいませんか」<br>  → わたしは先生に<u>もう一度説明してほしい</u>と頼んだ。</li>
-</ul>
-<h2 id="「聞く・わからない・調べる」など"><a href="#「聞く・わからない・調べる」など" class="headerlink" title="「聞く・わからない・調べる」など"></a>「聞く・わからない・調べる」など</h2><blockquote>
-<p>普通形＋かどうか<br>疑問詞＋〜か</p>
-</blockquote>
-<ul>
-<li>わたしはカンさんに聞いた。＋「あした会えるでしょうか」。<br>  → わたしはカンさんに<u>あした会えるかどうか</u>（を）聞いた。</li>
-<li>わたしはわからない。＋「どうすれば日本語が上手になるでしょうか」<br>  → わたしは<u>どうすれば日本語が上手になるか</u>（が）わからない。</li>
-</ul>
-<h2 id="どうして／なぜ〜かというと、…からだ"><a href="#どうして／なぜ〜かというと、…からだ" class="headerlink" title="どうして／なぜ〜かというと、…からだ"></a>どうして／なぜ〜かというと、…からだ</h2><ul>
-<li>「どうしてこの店は人気がありますか」＋安くておいしいからです。<br>  → <u>どうしてこの店は人気があるか</u>というと、安くておいしいからです。</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー2-名詞の説明"><a href="#文の組み立てー2-名詞の説明" class="headerlink" title="文の組み立てー2　名詞の説明"></a>文の組み立てー2　名詞の説明</h1><h2 id="「普通形（ナ形だな・名だの）」＋名"><a href="#「普通形（ナ形だな・名だの）」＋名" class="headerlink" title="「普通形（ナ形だな・名だの）」＋名"></a>「普通形（ナ形<del>だ</del>な・名<del>だ</del>の）」＋名</h2><ul>
-<li>そのバスは東京駅に行く　→ 東京駅に<u>行く</u>バス</li>
-<li>そのニュースを聞いてショックを受けた　→ ショックを<u>受けた</u>ニュース</li>
-<li>にぎやかな声で子どもたちが話している　→ 子どもたちが<u>話しているにぎやかな</u>声</li>
-</ul>
-<h2 id="「助詞＋の」＋名"><a href="#「助詞＋の」＋名" class="headerlink" title="「助詞＋の」＋名"></a>「助詞＋の」＋名</h2><ul>
-<li>そのバスは駅<u>まで</u>行く　→ 駅<u>までの</u>バス</li>
-<li>母<u>から</u>手紙が来た　→ 母<u>からの</u>手紙</li>
-<li>友達<u>に</u>プレゼントをあげる　→ 友達<u>への</u>プレゼント</li>
-</ul>
-<h2 id="「助詞のような働きをする言葉」＋の＋名"><a href="#「助詞のような働きをする言葉」＋の＋名" class="headerlink" title="「助詞のような働きをする言葉」＋の＋名"></a>「助詞のような働きをする言葉」＋の＋名</h2><ul>
-<li>生命<u>について</u>本を書いた　→ 生命<u>についての</u>本</li>
-</ul>
-<h2 id="「助詞のような働きをする言葉の名詞につく形」＋名"><a href="#「助詞のような働きをする言葉の名詞につく形」＋名" class="headerlink" title="「助詞のような働きをする言葉の名詞につく形」＋名"></a>「助詞のような働きをする言葉の名詞につく形」＋名</h2><ul>
-<li>そのバスは市の運営に<u>よって</u>走っている　→ 市の運営<u>による</u>バス</li>
-</ul>
-<h2 id="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"><a href="#「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名" class="headerlink" title="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"></a>「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名</h2><ul>
-<li>そのバスは修理した<u>ばかりだ</u>　→ 修理した<u>ばかりの</u>バス</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー3-「〜という・〜といった」"><a href="#文の組み立てー3-「〜という・〜といった」" class="headerlink" title="文の組み立てー3　「〜という・〜といった」"></a>文の組み立てー3　「〜という・〜といった」</h1><p>「〜という…・〜といった…」の「〜」は「…名詞」の名前・内容・例を示します。はっきり言うのを避けるときは「という・といった」の後に「ような」をつけます。</p>
-<h2 id="名前を紹介する（〜という…）"><a href="#名前を紹介する（〜という…）" class="headerlink" title="名前を紹介する（〜という…）"></a>名前を紹介する（〜という…）</h2><ul>
-<li>私は松下<u>という</u>者です</li>
-<li>これ、珍しいですね。何<u>という</u>果物ですか</li>
-</ul>
-<h2 id="内容を示す（〜という…）"><a href="#内容を示す（〜という…）" class="headerlink" title="内容を示す（〜という…）"></a>内容を示す（〜という…）</h2><ul>
-<li>鈴木さんが会社を辞める<u>という</u>うわさを聞いた</li>
-<li>「ワンワン」<u>という</u>犬の鳴き声が聞こえます</li>
-<li>「三日坊主」はすぐにあきてしまうというような意味だと思います</li>
-</ul>
-<h2 id="知識・事実などを示す（〜ということ）"><a href="#知識・事実などを示す（〜ということ）" class="headerlink" title="知識・事実などを示す（〜ということ）"></a>知識・事実などを示す（〜ということ）</h2><ul>
-<li>かぜの予防には手洗いがいい<u>ということ</u>を知っていましたか</li>
-<li>まき子さんのお母さんは有名な女優だ<u>ということ</u>を初めて聞いた</li>
-<li>兄はこの前会ったとき、今月は忙しい<u>というようなこと</u>を言っていた</li>
-</ul>
-<h2 id="よく知らない言葉を示す（〜というの）"><a href="#よく知らない言葉を示す（〜というの）" class="headerlink" title="よく知らない言葉を示す（〜というの）"></a>よく知らない言葉を示す（〜というの）</h2><ul>
-<li>コンピューター用語で、アップデート<u>というの</u>は何ですか</li>
-</ul>
-<h2 id="いくつかの例を示す（〜といった…）"><a href="#いくつかの例を示す（〜といった…）" class="headerlink" title="いくつかの例を示す（〜といった…）"></a>いくつかの例を示す（〜といった…）</h2><ul>
-<li>私は数学、物理、化学<u>といった</u>理科系の科目が好きだ</li>
-<li>彼女は黒とか灰色といったような暗い色の服が似合う</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー4-決まった形"><a href="#文の組み立てー4-決まった形" class="headerlink" title="文の組み立てー4　決まった形"></a>文の組み立てー4　決まった形</h1><p>組み合わせが決めって文法形式があります、決まった形として覚えましょう。</p>
-<h2 id="〜から…にかけて-→-〜から…の間"><a href="#〜から…にかけて-→-〜から…の間" class="headerlink" title="〜から…にかけて　→ 〜から…の間"></a>〜から…にかけて　→ 〜から…の間</h2><ul>
-<li>年末<u>から</u>年始<u>にかけて</u>私はとても忙しい</li>
-<li>明日は関東地方から東北地方にかけて雨が降るでしょう</li>
-</ul>
-<h2 id="〜を…として・〜を…に-→-〜を…考えて（認めて）"><a href="#〜を…として・〜を…に-→-〜を…考えて（認めて）" class="headerlink" title="〜を…として・〜を…に　→　〜を…考えて（認めて）"></a>〜を…として・〜を…に　→　〜を…考えて（認めて）</h2><ul>
-<li>入院<u>を</u>きっかけ<u>として</u>私は健康に注意するようになった</li>
-<li>この小説家は家族をテーマとして小説をたくさん書いている</li>
-</ul>
-<h2 id="〜はもちろん…も-→-〜は当然だが、…も同じように"><a href="#〜はもちろん…も-→-〜は当然だが、…も同じように" class="headerlink" title="〜はもちろん…も　→ 〜は当然だが、…も同じように"></a>〜はもちろん…も　→ 〜は当然だが、…も同じように</h2><ul>
-<li>このゲームは子ども<u>はもちろん</u>大人<u>も</u>楽しめる</li>
-<li>夫は国内の山々<u>はもちろん</u>外国の山にもあちこち登っている</li>
-</ul>
-<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…</h2><ul>
-<li>考えれば考えるほどわからなくなってきた</li>
-</ul>
-<h2 id="〜くらい…はない・"><a href="#〜くらい…はない・" class="headerlink" title="〜くらい…はない・"></a>〜くらい…はない・</h2><h2 id="〜さえ〜ば…・〜さえ〜なら…"><a href="#〜さえ〜ば…・〜さえ〜なら…" class="headerlink" title="〜さえ〜ば…・〜さえ〜なら…"></a>〜さえ〜ば…・〜さえ〜なら…</h2><h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><h2 id="8-〜も…ば〜も…・〜も…なら〜も…"><a href="#8-〜も…ば〜も…・〜も…なら〜も…" class="headerlink" title="8.　〜も…ば〜も…・〜も…なら〜も…"></a>8.　〜も…ば〜も…・〜も…なら〜も…</h2>]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文の初めと終わりの対応</title>
-    <url>/new-blog/64912410.html</url>
-    <content><![CDATA[<h1 id="文の初めと終わりの対応"><a href="#文の初めと終わりの対応" class="headerlink" title="文の初めと終わりの対応"></a>文の初めと終わりの対応</h1><span id="more"></span>
-
-<h2 id="ポイント1-始めと終わりの対応にはいくつかの形があります"><a href="#ポイント1-始めと終わりの対応にはいくつかの形があります" class="headerlink" title="ポイント1　始めと終わりの対応にはいくつかの形があります"></a>ポイント1　始めと終わりの対応にはいくつかの形があります</h2><p>例1　〜には　＋…がいる・…がある・…が多い</p>
-<blockquote>
-<ul>
-<li>世界<u>には</u>いろいろな文化を持った国<u>がある</u></li>
-</ul>
-</blockquote>
-<p>例2 〜には・〜のに（は）　＋…が必要だ・…が便利だ・…なければならない・…がかかる</p>
-<blockquote>
-<ul>
-<li>この仕事をする<u>には</u>車の運転ができ<u>なければならない</u></li>
-</ul>
-</blockquote>
-<p>例3　〜のは　＋…だ・…からだ・…ためだ</p>
-<blockquote>
-<ul>
-<li>わたしが祖母について思い出せる<u>のは</u>、優しい笑顔だけ<u>だ</u></li>
-</ul>
-</blockquote>
-<p>例4 どうして／なぜ〜かというか　＋…からだ</p>
-<blockquote>
-<ul>
-<li>どうしてこの植物にあまり水をやらないかと言うと、その方がきれいな花が咲くからです。</li>
-</ul>
-</blockquote>
-<h2 id="ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"><a href="#ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう" class="headerlink" title="ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"></a>ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう</h2><hr>
-<h1 id="話者が見る位置を動かさない手段ー1-他動詞・自動詞"><a href="#話者が見る位置を動かさない手段ー1-他動詞・自動詞" class="headerlink" title="話者が見る位置を動かさない手段ー1 他動詞・自動詞"></a>話者が見る位置を動かさない手段ー1 他動詞・自動詞</h1><h2 id="ポイント1-他動詞・自動詞の使い分け"><a href="#ポイント1-他動詞・自動詞の使い分け" class="headerlink" title="ポイント1 他動詞・自動詞の使い分け"></a>ポイント1 他動詞・自動詞の使い分け</h2><table>
-    <tr>
-        <th>他動詞の文</th>
-        <th>自動詞の文</th>
-    </tr>
-    <tr>
-        <td>
-            <b>変化を起こす<u>動作</u>に注目して言う</b><br>
-            ヤンさんはタクシーを<b>止めた</b><br>
-            わたしはろうそくの火を<b>消した</b><br>
-            わたしはドアを<b>開けた</b>
-        </td>
-        <td>
-            <b>変化を起こす動作の<u>結果</u>に注目して言う</b><br>
-            タクシーが<b>止まった</b><br>
-            ろうそくの火が<b>消えた</b><br>
-            ドアが<b>開いた</b>
-        </td>
-    </tr>
-    <tr>
-        <td>（対応する他動詞がない場合が多い）</td>
-        <td>
-            <b>自然に起こることを表す</b><br>
-            雪が<b>降った</b><br>
-            花が<b>咲いた</b><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>人や物への働きかけがある動作を表す</b>
-            先生が子どもを<b>しかった</b><br>
-            わたしはリーさんに仕事を<b>頼んだ</b>
-        </td>
-        <td>（対応する他動詞がない場合が多い）</td>
-    </tr>
-    <tr>
-        <td>（対応する他動詞がない場合が多い）</td>
-        <td>
-            人や物への働きかけがない動作を表す<br>
-            子どもたちは椅子に<b>座った</b><br>
-            飛行機が空を<b>飛んでいる</b>
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h1 id="話者が見る位置を動かさない手段−3"><a href="#話者が見る位置を動かさない手段−3" class="headerlink" title="話者が見る位置を動かさない手段−3"></a>話者が見る位置を動かさない手段−3</h1><p>受身・使役・使役受身お使い分ければ、話者の立場を表すことができます。</p>
-<h2 id="ポイント-受身・使役・使役受身お使い分け"><a href="#ポイント-受身・使役・使役受身お使い分け" class="headerlink" title="ポイント　受身・使役・使役受身お使い分け"></a>ポイント　受身・使役・使役受身お使い分け</h2><table>
-    <tr>
-        <td colspan="2">「他の人の行為」や「出来事の影響」を受ける</td>
-    </tr>
-    <tr>
-        <td>人（話者または心理的に話者に近い人）が主語</td>
-        <td>
-            うちの子は先生に<b>しかられた</b><br>
-            わたしはだれかに肩を<b>たたかれた</b><br>
-            最後に点を<b>取られて</b>負けてしまった<br>
-            突然雨に<b>降られて</b>ぬれてしまった
-        </td>
-    </tr>
-    <tr>
-        <td>ものが主語</td>
-        <td>
-            ワインはぶどうから<b>作られる</b><br>
-            この工場では年間25万台の車が<b>生産されている</b>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">他の人の行為や感情を促す</td>
-    </tr>
-    <tr>
-        <td>行為を強制する</td>
-        <td>
-            わたしは犬にボールを取りに<b>行かせた</b><br>
-            親は子どもたちに家事を<b>手伝わせた</b><br>
-            田村さんはいつもみんなを<b>待たせる</b>
-        </td>
-    </tr>
-    <tr>
-        <td>行為を許す</td>
-        <td>
-            母は疲れている。あしたは一日<b>休ませて</b>あげよう<br>
-            監督はぼくたちにジュースを<b>飲ませて</b>くれた<br>
-            わたしにも意見を<b>言わせて</b>もらいたいです
-        </td>
-    </tr>
-    <tr>
-        <td>感情を引き出す</td>
-        <td>
-            弟はよく母を<b>怒らせる</b><br>
-            ヤンさんはいつもみんなを<b>笑わせている</b>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">促す行為を受ける、感情に影響を受ける</td>
-    </tr>
-    <tr>
-        <td>行為の強制を受ける</td>
-        <td>
-            わたしは監督にボールを取りに<b>行かされた</b><br>
-            わたしは親に家事を<b>手伝わされた</b><br>
-        </td>
-    </tr>
-    <tr>
-        <td>感情に影響を受ける</td>
-        <td>
-            わたしは弟によく<b>泣かされる</b>
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h1 id="接続表現"><a href="#接続表現" class="headerlink" title="接続表現"></a>接続表現</h1><h2 id="文章で使うの接続の表現の使い方は次のようなものです。"><a href="#文章で使うの接続の表現の使い方は次のようなものです。" class="headerlink" title="文章で使うの接続の表現の使い方は次のようなものです。"></a>文章で使うの接続の表現の使い方は次のようなものです。</h2><ol>
-<li>加えて言う</li>
-</ol>
-<ul>
-<li>ノートパソコンは場所を取らない。<b>また</b>、持ち運びにも便利だ。</li>
-<li>彼は料理を二人分も食べた。<b>さらに</b>、食後にケーキも食べた。</li>
-<li>毎日勉強が大変だ。<b>そのうえ</b>、アルバイトもしている。</li>
-<li>小川さんは仕事が早い。<b>しかも</b>、正確だ。</li>
-<li>作文を書き直させられた。<b>それも</b>、３回もだ。</li>
-</ul>
-<ol start="2">
-<li>結果・結論を言う</li>
-</ol>
-<ul>
-<li>事故があった。<b>そのため</b>、道が込んでいる。</li>
-<li>この調査方法には間違いがある。<b>したがって</b>、この結果は正しいとは言えない。</li>
-<li>部屋に本が増えてきた。<b>そこで</b>、ほんだなを買うことにした。</li>
-<li>紅茶にレモンを入れた。<b>すると</b>、色が変わった。</li>
-</ul>
-<ol start="3">
-<li>理由・根拠を言う</li>
-</ol>
-<ul>
-<li>大学では文学を勉強したい。<b>なぜなら／なぜかというと</b>、作家になりたいからだ。</li>
-</ul>
-<ol start="4">
-<li>別の言い方で言う</li>
-</ol>
-<ul>
-<li>この仕事は土曜日と日曜日が休みだ。<b>つまり</b>、週休二日だ。</li>
-</ul>
-<ol start="5">
-<li>比べて言う</li>
-</ol>
-<ul>
-<li>妹は明るい。<b>それに対して／一方</b>、姉はおとなしい。</li>
-</ul>
-<ol start="6">
-<li>どちらかであることを言う</li>
-</ol>
-<ul>
-<li>出欠の返事はメールで知らせてください。<b>または</b>、ファクスでもいいです。</li>
-</ul>
-<ol start="7">
-<li>前の文から予想されることと違うことを言う</li>
-</ol>
-<ul>
-<li>家に電話をかけた。<b>だが</b>、だれも出なかった。</li>
-<li>彼はもう空港に着いているはずだ。<b>ところが</b>、まだ何も連絡がない。</li>
-</ul>
-<ol start="8">
-<li>条件・例外などを加える</li>
-</ol>
-<ul>
-<li>このアパートはとてもいい。<b>ただ</b>、家賃が高い。</li>
-<li>試験に欠席したら不合格だ。<b>ただし</b>、特別な理由があれば別の日に受けられる。</li>
-</ul>
-<ol start="9">
-<li>話題を変える</li>
-</ol>
-<ul>
-<li>いい会社に就職が決まってよかったですね。<b>ところで</b>、ご家族はお元気ですか</li>
-</ul>
-<hr>
-<h1 id="文章の雰囲気の統一"><a href="#文章の雰囲気の統一" class="headerlink" title="文章の雰囲気の統一"></a>文章の雰囲気の統一</h1><h2 id="ポイント1-レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。"><a href="#ポイント1-レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。" class="headerlink" title="ポイント1 レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。"></a>ポイント1 レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。</h2><h2 id="ポイント2-硬い文章では、普通くだけた形を使ったり助詞を省略したりしません"><a href="#ポイント2-硬い文章では、普通くだけた形を使ったり助詞を省略したりしません" class="headerlink" title="ポイント2 硬い文章では、普通くだけた形を使ったり助詞を省略したりしません"></a>ポイント2 硬い文章では、普通くだけた形を使ったり助詞を省略したりしません</h2><h2 id="ポイント3"><a href="#ポイント3" class="headerlink" title="ポイント3"></a>ポイント3</h2><table>
-    <tr>   
-        <th></th>
-        <th>硬い文章で使う表現</th>
-        <th>日常会話で使う表現</th>
-    </tr>
-    <tr>   
-        <td rowspan="5">副詞・形容詞</td>
-        <td>
-            非常に・大変<br>
-            この計画は<b>非常に</b>困難だ
-        </td>
-        <td>すごく</td>
-    </tr>
-    <tr>   
-        <td>多く・大勢</td>
-        <td>いっぱい</td>
-    </tr>
-    <tr>   
-        <td>少し</td>
-        <td>ちょっと</td>
-    </tr>
-    <tr>   
-        <td>やはり</td>
-        <td>やっぱり</td>
-    </tr>
-    <tr>   
-        <td>さまざまな・いろいろな</td>
-        <td>いろんな</td>
-    </tr>
-    <tr>   
-        <td rowspan="2">動詞</td>
-        <td>述べる・話す・言う</td>
-        <td>しゃべる</td>
-    </tr>
-    <tr>   
-        <td>行う</td>
-        <td>やる</td>
-    </tr>
-    <tr>   
-        <td>接続表現</td>
-        <td>しかし・だが</td>
-        <td>でも・だけど</td>
-    </tr>
-    <tr>   
-        <td>疑問詞</td>
-        <td>なぜ</td>
-        <td>なんで</td>
-    </tr>
-    <tr>   
-        <td>助詞</td>
-        <td>〜など</td>
-        <td>なんか</td>
-    </tr>
-    <tr>   
-        <td rowspan="2">その他の表現</td>
-        <td>
-            〜と・〜という・〜そうだ<br>
-            それは事故だ<b>という</b>
-        </td>
-        <td>〜って</td>
-    </tr>
-    <tr>   
-        <td>
-            〜ようだ・〜らしい<br>
-            彼の言葉は真実ではない<b>ようだ</b>
-        </td>
-        <td>〜みたいだ</td>
-    </tr>
-</table>]]></content>
       <categories>
         <category>N3</category>
       </categories>
@@ -12608,6 +12402,386 @@ permalink: posts/:abbrlink.html
     <td>〜（いやなもの）がたくさんある</td>
     <td>返ってきたテストは間違い<b>だらけだった</b></td>
   </tr>
+</table>]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文の組み立て</title>
+    <url>/new-blog/562ffdb5.html</url>
+    <content><![CDATA[<h1 id="文の組み立て"><a href="#文の組み立て" class="headerlink" title="文の組み立て"></a>文の組み立て</h1><span id="more"></span>
+
+<h1 id="文の組み立てー1-引用"><a href="#文の組み立てー1-引用" class="headerlink" title="文の組み立てー1 引用"></a>文の組み立てー1 引用</h1><p>ある人が言ったこと、自分が思ったことの内容を一文の中に入れるには、つぎのような方法があります。</p>
+<h2 id="「言う・思う・感じる」など"><a href="#「言う・思う・感じる」など" class="headerlink" title="「言う・思う・感じる」など"></a>「言う・思う・感じる」など</h2><blockquote>
+<p>普通形＋と…</p>
+</blockquote>
+<ul>
+<li>わたしは思います。＋「リンさんはきっと合格するでしょう」<br>  →わたしは<u>リンさんはきっと合格するだろう</u>と思います。</li>
+</ul>
+<h2 id="「頼む・注意する・言う」など"><a href="#「頼む・注意する・言う」など" class="headerlink" title="「頼む・注意する・言う」など"></a>「頼む・注意する・言う」など</h2><blockquote>
+<p>「辞書形・ない形」＋ように（と）<br>「て形・ない形＋で」＋ほしい＋と<br>命令形・禁止形＋と</p>
+</blockquote>
+<ul>
+<li>医者はカンさんに勧めた。＋「ときどき運動をしたほうがいいです」<br>  →　医者はカンさんに<u>ときどき運動する</u>ように勧めた。</li>
+<li>わたしは先生に頼んだ。＋「もう一度説明してくださいませんか」<br>  → わたしは先生に<u>もう一度説明してほしい</u>と頼んだ。</li>
+</ul>
+<h2 id="「聞く・わからない・調べる」など"><a href="#「聞く・わからない・調べる」など" class="headerlink" title="「聞く・わからない・調べる」など"></a>「聞く・わからない・調べる」など</h2><blockquote>
+<p>普通形＋かどうか<br>疑問詞＋〜か</p>
+</blockquote>
+<ul>
+<li>わたしはカンさんに聞いた。＋「あした会えるでしょうか」。<br>  → わたしはカンさんに<u>あした会えるかどうか</u>（を）聞いた。</li>
+<li>わたしはわからない。＋「どうすれば日本語が上手になるでしょうか」<br>  → わたしは<u>どうすれば日本語が上手になるか</u>（が）わからない。</li>
+</ul>
+<h2 id="どうして／なぜ〜かというと、…からだ"><a href="#どうして／なぜ〜かというと、…からだ" class="headerlink" title="どうして／なぜ〜かというと、…からだ"></a>どうして／なぜ〜かというと、…からだ</h2><ul>
+<li>「どうしてこの店は人気がありますか」＋安くておいしいからです。<br>  → <u>どうしてこの店は人気があるか</u>というと、安くておいしいからです。</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー2-名詞の説明"><a href="#文の組み立てー2-名詞の説明" class="headerlink" title="文の組み立てー2　名詞の説明"></a>文の組み立てー2　名詞の説明</h1><h2 id="「普通形（ナ形だな・名だの）」＋名"><a href="#「普通形（ナ形だな・名だの）」＋名" class="headerlink" title="「普通形（ナ形だな・名だの）」＋名"></a>「普通形（ナ形<del>だ</del>な・名<del>だ</del>の）」＋名</h2><ul>
+<li>そのバスは東京駅に行く　→ 東京駅に<u>行く</u>バス</li>
+<li>そのニュースを聞いてショックを受けた　→ ショックを<u>受けた</u>ニュース</li>
+<li>にぎやかな声で子どもたちが話している　→ 子どもたちが<u>話しているにぎやかな</u>声</li>
+</ul>
+<h2 id="「助詞＋の」＋名"><a href="#「助詞＋の」＋名" class="headerlink" title="「助詞＋の」＋名"></a>「助詞＋の」＋名</h2><ul>
+<li>そのバスは駅<u>まで</u>行く　→ 駅<u>までの</u>バス</li>
+<li>母<u>から</u>手紙が来た　→ 母<u>からの</u>手紙</li>
+<li>友達<u>に</u>プレゼントをあげる　→ 友達<u>への</u>プレゼント</li>
+</ul>
+<h2 id="「助詞のような働きをする言葉」＋の＋名"><a href="#「助詞のような働きをする言葉」＋の＋名" class="headerlink" title="「助詞のような働きをする言葉」＋の＋名"></a>「助詞のような働きをする言葉」＋の＋名</h2><ul>
+<li>生命<u>について</u>本を書いた　→ 生命<u>についての</u>本</li>
+</ul>
+<h2 id="「助詞のような働きをする言葉の名詞につく形」＋名"><a href="#「助詞のような働きをする言葉の名詞につく形」＋名" class="headerlink" title="「助詞のような働きをする言葉の名詞につく形」＋名"></a>「助詞のような働きをする言葉の名詞につく形」＋名</h2><ul>
+<li>そのバスは市の運営に<u>よって</u>走っている　→ 市の運営<u>による</u>バス</li>
+</ul>
+<h2 id="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"><a href="#「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名" class="headerlink" title="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"></a>「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名</h2><ul>
+<li>そのバスは修理した<u>ばかりだ</u>　→ 修理した<u>ばかりの</u>バス</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー3-「〜という・〜といった」"><a href="#文の組み立てー3-「〜という・〜といった」" class="headerlink" title="文の組み立てー3　「〜という・〜といった」"></a>文の組み立てー3　「〜という・〜といった」</h1><p>「〜という…・〜といった…」の「〜」は「…名詞」の名前・内容・例を示します。はっきり言うのを避けるときは「という・といった」の後に「ような」をつけます。</p>
+<h2 id="名前を紹介する（〜という…）"><a href="#名前を紹介する（〜という…）" class="headerlink" title="名前を紹介する（〜という…）"></a>名前を紹介する（〜という…）</h2><ul>
+<li>私は松下<u>という</u>者です</li>
+<li>これ、珍しいですね。何<u>という</u>果物ですか</li>
+</ul>
+<h2 id="内容を示す（〜という…）"><a href="#内容を示す（〜という…）" class="headerlink" title="内容を示す（〜という…）"></a>内容を示す（〜という…）</h2><ul>
+<li>鈴木さんが会社を辞める<u>という</u>うわさを聞いた</li>
+<li>「ワンワン」<u>という</u>犬の鳴き声が聞こえます</li>
+<li>「三日坊主」はすぐにあきてしまうというような意味だと思います</li>
+</ul>
+<h2 id="知識・事実などを示す（〜ということ）"><a href="#知識・事実などを示す（〜ということ）" class="headerlink" title="知識・事実などを示す（〜ということ）"></a>知識・事実などを示す（〜ということ）</h2><ul>
+<li>かぜの予防には手洗いがいい<u>ということ</u>を知っていましたか</li>
+<li>まき子さんのお母さんは有名な女優だ<u>ということ</u>を初めて聞いた</li>
+<li>兄はこの前会ったとき、今月は忙しい<u>というようなこと</u>を言っていた</li>
+</ul>
+<h2 id="よく知らない言葉を示す（〜というの）"><a href="#よく知らない言葉を示す（〜というの）" class="headerlink" title="よく知らない言葉を示す（〜というの）"></a>よく知らない言葉を示す（〜というの）</h2><ul>
+<li>コンピューター用語で、アップデート<u>というの</u>は何ですか</li>
+</ul>
+<h2 id="いくつかの例を示す（〜といった…）"><a href="#いくつかの例を示す（〜といった…）" class="headerlink" title="いくつかの例を示す（〜といった…）"></a>いくつかの例を示す（〜といった…）</h2><ul>
+<li>私は数学、物理、化学<u>といった</u>理科系の科目が好きだ</li>
+<li>彼女は黒とか灰色といったような暗い色の服が似合う</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー4-決まった形"><a href="#文の組み立てー4-決まった形" class="headerlink" title="文の組み立てー4　決まった形"></a>文の組み立てー4　決まった形</h1><p>組み合わせが決めって文法形式があります、決まった形として覚えましょう。</p>
+<h2 id="〜から…にかけて-→-〜から…の間"><a href="#〜から…にかけて-→-〜から…の間" class="headerlink" title="〜から…にかけて　→ 〜から…の間"></a>〜から…にかけて　→ 〜から…の間</h2><ul>
+<li>年末<u>から</u>年始<u>にかけて</u>私はとても忙しい</li>
+<li>明日は関東地方から東北地方にかけて雨が降るでしょう</li>
+</ul>
+<h2 id="〜を…として・〜を…に-→-〜を…考えて（認めて）"><a href="#〜を…として・〜を…に-→-〜を…考えて（認めて）" class="headerlink" title="〜を…として・〜を…に　→　〜を…考えて（認めて）"></a>〜を…として・〜を…に　→　〜を…考えて（認めて）</h2><ul>
+<li>入院<u>を</u>きっかけ<u>として</u>私は健康に注意するようになった</li>
+<li>この小説家は家族をテーマとして小説をたくさん書いている</li>
+</ul>
+<h2 id="〜はもちろん…も-→-〜は当然だが、…も同じように"><a href="#〜はもちろん…も-→-〜は当然だが、…も同じように" class="headerlink" title="〜はもちろん…も　→ 〜は当然だが、…も同じように"></a>〜はもちろん…も　→ 〜は当然だが、…も同じように</h2><ul>
+<li>このゲームは子ども<u>はもちろん</u>大人<u>も</u>楽しめる</li>
+<li>夫は国内の山々<u>はもちろん</u>外国の山にもあちこち登っている</li>
+</ul>
+<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…</h2><ul>
+<li>考えれば考えるほどわからなくなってきた</li>
+</ul>
+<h2 id="〜くらい…はない・"><a href="#〜くらい…はない・" class="headerlink" title="〜くらい…はない・"></a>〜くらい…はない・</h2><h2 id="〜さえ〜ば…・〜さえ〜なら…"><a href="#〜さえ〜ば…・〜さえ〜なら…" class="headerlink" title="〜さえ〜ば…・〜さえ〜なら…"></a>〜さえ〜ば…・〜さえ〜なら…</h2><h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><h2 id="8-〜も…ば〜も…・〜も…なら〜も…"><a href="#8-〜も…ば〜も…・〜も…なら〜も…" class="headerlink" title="8.　〜も…ば〜も…・〜も…なら〜も…"></a>8.　〜も…ば〜も…・〜も…なら〜も…</h2>]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文の初めと終わりの対応</title>
+    <url>/new-blog/64912410.html</url>
+    <content><![CDATA[<h1 id="文の初めと終わりの対応"><a href="#文の初めと終わりの対応" class="headerlink" title="文の初めと終わりの対応"></a>文の初めと終わりの対応</h1><span id="more"></span>
+
+<h2 id="ポイント1-始めと終わりの対応にはいくつかの形があります"><a href="#ポイント1-始めと終わりの対応にはいくつかの形があります" class="headerlink" title="ポイント1　始めと終わりの対応にはいくつかの形があります"></a>ポイント1　始めと終わりの対応にはいくつかの形があります</h2><p>例1　〜には　＋…がいる・…がある・…が多い</p>
+<blockquote>
+<ul>
+<li>世界<u>には</u>いろいろな文化を持った国<u>がある</u></li>
+</ul>
+</blockquote>
+<p>例2 〜には・〜のに（は）　＋…が必要だ・…が便利だ・…なければならない・…がかかる</p>
+<blockquote>
+<ul>
+<li>この仕事をする<u>には</u>車の運転ができ<u>なければならない</u></li>
+</ul>
+</blockquote>
+<p>例3　〜のは　＋…だ・…からだ・…ためだ</p>
+<blockquote>
+<ul>
+<li>わたしが祖母について思い出せる<u>のは</u>、優しい笑顔だけ<u>だ</u></li>
+</ul>
+</blockquote>
+<p>例4 どうして／なぜ〜かというか　＋…からだ</p>
+<blockquote>
+<ul>
+<li>どうしてこの植物にあまり水をやらないかと言うと、その方がきれいな花が咲くからです。</li>
+</ul>
+</blockquote>
+<h2 id="ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"><a href="#ポイント2-長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう" class="headerlink" title="ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう"></a>ポイント2 長い文では助詞と、それに対応する動詞が離れていることがあります。受身文や使役文などでは助詞と動詞の対応を間違えると、言いたいことが正しく伝えられないことがあるので特に注意しましょう</h2><hr>
+<h1 id="話者が見る位置を動かさない手段ー1-他動詞・自動詞"><a href="#話者が見る位置を動かさない手段ー1-他動詞・自動詞" class="headerlink" title="話者が見る位置を動かさない手段ー1 他動詞・自動詞"></a>話者が見る位置を動かさない手段ー1 他動詞・自動詞</h1><h2 id="ポイント1-他動詞・自動詞の使い分け"><a href="#ポイント1-他動詞・自動詞の使い分け" class="headerlink" title="ポイント1 他動詞・自動詞の使い分け"></a>ポイント1 他動詞・自動詞の使い分け</h2><table>
+    <tr>
+        <th>他動詞の文</th>
+        <th>自動詞の文</th>
+    </tr>
+    <tr>
+        <td>
+            <b>変化を起こす<u>動作</u>に注目して言う</b><br>
+            ヤンさんはタクシーを<b>止めた</b><br>
+            わたしはろうそくの火を<b>消した</b><br>
+            わたしはドアを<b>開けた</b>
+        </td>
+        <td>
+            <b>変化を起こす動作の<u>結果</u>に注目して言う</b><br>
+            タクシーが<b>止まった</b><br>
+            ろうそくの火が<b>消えた</b><br>
+            ドアが<b>開いた</b>
+        </td>
+    </tr>
+    <tr>
+        <td>（対応する他動詞がない場合が多い）</td>
+        <td>
+            <b>自然に起こることを表す</b><br>
+            雪が<b>降った</b><br>
+            花が<b>咲いた</b><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>人や物への働きかけがある動作を表す</b>
+            先生が子どもを<b>しかった</b><br>
+            わたしはリーさんに仕事を<b>頼んだ</b>
+        </td>
+        <td>（対応する他動詞がない場合が多い）</td>
+    </tr>
+    <tr>
+        <td>（対応する他動詞がない場合が多い）</td>
+        <td>
+            人や物への働きかけがない動作を表す<br>
+            子どもたちは椅子に<b>座った</b><br>
+            飛行機が空を<b>飛んでいる</b>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h1 id="話者が見る位置を動かさない手段−3"><a href="#話者が見る位置を動かさない手段−3" class="headerlink" title="話者が見る位置を動かさない手段−3"></a>話者が見る位置を動かさない手段−3</h1><p>受身・使役・使役受身お使い分ければ、話者の立場を表すことができます。</p>
+<h2 id="ポイント-受身・使役・使役受身お使い分け"><a href="#ポイント-受身・使役・使役受身お使い分け" class="headerlink" title="ポイント　受身・使役・使役受身お使い分け"></a>ポイント　受身・使役・使役受身お使い分け</h2><table>
+    <tr>
+        <td colspan="2">「他の人の行為」や「出来事の影響」を受ける</td>
+    </tr>
+    <tr>
+        <td>人（話者または心理的に話者に近い人）が主語</td>
+        <td>
+            うちの子は先生に<b>しかられた</b><br>
+            わたしはだれかに肩を<b>たたかれた</b><br>
+            最後に点を<b>取られて</b>負けてしまった<br>
+            突然雨に<b>降られて</b>ぬれてしまった
+        </td>
+    </tr>
+    <tr>
+        <td>ものが主語</td>
+        <td>
+            ワインはぶどうから<b>作られる</b><br>
+            この工場では年間25万台の車が<b>生産されている</b>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">他の人の行為や感情を促す</td>
+    </tr>
+    <tr>
+        <td>行為を強制する</td>
+        <td>
+            わたしは犬にボールを取りに<b>行かせた</b><br>
+            親は子どもたちに家事を<b>手伝わせた</b><br>
+            田村さんはいつもみんなを<b>待たせる</b>
+        </td>
+    </tr>
+    <tr>
+        <td>行為を許す</td>
+        <td>
+            母は疲れている。あしたは一日<b>休ませて</b>あげよう<br>
+            監督はぼくたちにジュースを<b>飲ませて</b>くれた<br>
+            わたしにも意見を<b>言わせて</b>もらいたいです
+        </td>
+    </tr>
+    <tr>
+        <td>感情を引き出す</td>
+        <td>
+            弟はよく母を<b>怒らせる</b><br>
+            ヤンさんはいつもみんなを<b>笑わせている</b>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">促す行為を受ける、感情に影響を受ける</td>
+    </tr>
+    <tr>
+        <td>行為の強制を受ける</td>
+        <td>
+            わたしは監督にボールを取りに<b>行かされた</b><br>
+            わたしは親に家事を<b>手伝わされた</b><br>
+        </td>
+    </tr>
+    <tr>
+        <td>感情に影響を受ける</td>
+        <td>
+            わたしは弟によく<b>泣かされる</b>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h1 id="接続表現"><a href="#接続表現" class="headerlink" title="接続表現"></a>接続表現</h1><h2 id="文章で使うの接続の表現の使い方は次のようなものです。"><a href="#文章で使うの接続の表現の使い方は次のようなものです。" class="headerlink" title="文章で使うの接続の表現の使い方は次のようなものです。"></a>文章で使うの接続の表現の使い方は次のようなものです。</h2><ol>
+<li>加えて言う</li>
+</ol>
+<ul>
+<li>ノートパソコンは場所を取らない。<b>また</b>、持ち運びにも便利だ。</li>
+<li>彼は料理を二人分も食べた。<b>さらに</b>、食後にケーキも食べた。</li>
+<li>毎日勉強が大変だ。<b>そのうえ</b>、アルバイトもしている。</li>
+<li>小川さんは仕事が早い。<b>しかも</b>、正確だ。</li>
+<li>作文を書き直させられた。<b>それも</b>、３回もだ。</li>
+</ul>
+<ol start="2">
+<li>結果・結論を言う</li>
+</ol>
+<ul>
+<li>事故があった。<b>そのため</b>、道が込んでいる。</li>
+<li>この調査方法には間違いがある。<b>したがって</b>、この結果は正しいとは言えない。</li>
+<li>部屋に本が増えてきた。<b>そこで</b>、ほんだなを買うことにした。</li>
+<li>紅茶にレモンを入れた。<b>すると</b>、色が変わった。</li>
+</ul>
+<ol start="3">
+<li>理由・根拠を言う</li>
+</ol>
+<ul>
+<li>大学では文学を勉強したい。<b>なぜなら／なぜかというと</b>、作家になりたいからだ。</li>
+</ul>
+<ol start="4">
+<li>別の言い方で言う</li>
+</ol>
+<ul>
+<li>この仕事は土曜日と日曜日が休みだ。<b>つまり</b>、週休二日だ。</li>
+</ul>
+<ol start="5">
+<li>比べて言う</li>
+</ol>
+<ul>
+<li>妹は明るい。<b>それに対して／一方</b>、姉はおとなしい。</li>
+</ul>
+<ol start="6">
+<li>どちらかであることを言う</li>
+</ol>
+<ul>
+<li>出欠の返事はメールで知らせてください。<b>または</b>、ファクスでもいいです。</li>
+</ul>
+<ol start="7">
+<li>前の文から予想されることと違うことを言う</li>
+</ol>
+<ul>
+<li>家に電話をかけた。<b>だが</b>、だれも出なかった。</li>
+<li>彼はもう空港に着いているはずだ。<b>ところが</b>、まだ何も連絡がない。</li>
+</ul>
+<ol start="8">
+<li>条件・例外などを加える</li>
+</ol>
+<ul>
+<li>このアパートはとてもいい。<b>ただ</b>、家賃が高い。</li>
+<li>試験に欠席したら不合格だ。<b>ただし</b>、特別な理由があれば別の日に受けられる。</li>
+</ul>
+<ol start="9">
+<li>話題を変える</li>
+</ol>
+<ul>
+<li>いい会社に就職が決まってよかったですね。<b>ところで</b>、ご家族はお元気ですか</li>
+</ul>
+<hr>
+<h1 id="文章の雰囲気の統一"><a href="#文章の雰囲気の統一" class="headerlink" title="文章の雰囲気の統一"></a>文章の雰囲気の統一</h1><h2 id="ポイント1-レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。"><a href="#ポイント1-レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。" class="headerlink" title="ポイント1 レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。"></a>ポイント1 レポートや論文などの硬い文章では、「普通体（だ／である）」を使います。また、文を続けるとき、「て形」のかわりに以下のような形を使うことがあります。</h2><h2 id="ポイント2-硬い文章では、普通くだけた形を使ったり助詞を省略したりしません"><a href="#ポイント2-硬い文章では、普通くだけた形を使ったり助詞を省略したりしません" class="headerlink" title="ポイント2 硬い文章では、普通くだけた形を使ったり助詞を省略したりしません"></a>ポイント2 硬い文章では、普通くだけた形を使ったり助詞を省略したりしません</h2><h2 id="ポイント3"><a href="#ポイント3" class="headerlink" title="ポイント3"></a>ポイント3</h2><table>
+    <tr>   
+        <th></th>
+        <th>硬い文章で使う表現</th>
+        <th>日常会話で使う表現</th>
+    </tr>
+    <tr>   
+        <td rowspan="5">副詞・形容詞</td>
+        <td>
+            非常に・大変<br>
+            この計画は<b>非常に</b>困難だ
+        </td>
+        <td>すごく</td>
+    </tr>
+    <tr>   
+        <td>多く・大勢</td>
+        <td>いっぱい</td>
+    </tr>
+    <tr>   
+        <td>少し</td>
+        <td>ちょっと</td>
+    </tr>
+    <tr>   
+        <td>やはり</td>
+        <td>やっぱり</td>
+    </tr>
+    <tr>   
+        <td>さまざまな・いろいろな</td>
+        <td>いろんな</td>
+    </tr>
+    <tr>   
+        <td rowspan="2">動詞</td>
+        <td>述べる・話す・言う</td>
+        <td>しゃべる</td>
+    </tr>
+    <tr>   
+        <td>行う</td>
+        <td>やる</td>
+    </tr>
+    <tr>   
+        <td>接続表現</td>
+        <td>しかし・だが</td>
+        <td>でも・だけど</td>
+    </tr>
+    <tr>   
+        <td>疑問詞</td>
+        <td>なぜ</td>
+        <td>なんで</td>
+    </tr>
+    <tr>   
+        <td>助詞</td>
+        <td>〜など</td>
+        <td>なんか</td>
+    </tr>
+    <tr>   
+        <td rowspan="2">その他の表現</td>
+        <td>
+            〜と・〜という・〜そうだ<br>
+            それは事故だ<b>という</b>
+        </td>
+        <td>〜って</td>
+    </tr>
+    <tr>   
+        <td>
+            〜ようだ・〜らしい<br>
+            彼の言葉は真実ではない<b>ようだ</b>
+        </td>
+        <td>〜みたいだ</td>
+    </tr>
 </table>]]></content>
       <categories>
         <category>N3</category>
