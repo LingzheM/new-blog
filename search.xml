@@ -526,12 +526,12 @@ funcs[0](); // 0
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>日本語の助詞</title>
+    <title>日本語における品詞</title>
     <url>/new-blog/72a80842.html</url>
     <content><![CDATA[<h1 id="助詞"><a href="#助詞" class="headerlink" title="助詞"></a>助詞</h1><span id="more"></span>
 
 <p>助詞は活用がなく、単独では使われず、名詞や動詞などに付いて、さまざまな働きをする。その働きによって、との文法関係を示す<b>格助詞</b>、文の成分に特別な意味を加える<b>取り立て助詞</b>、対等な関係で語を結び<u>列</u></p>
-]]></content>
+<h2 id="格助詞"><a href="#格助詞" class="headerlink" title="格助詞"></a>格助詞</h2>]]></content>
   </entry>
   <entry>
     <title>第一週 みる①</title>
@@ -7977,115 +7977,90 @@ funcs[0](); // 0
 </table>
 
 <hr>
-<h2 id="2日目-引っ越しは大変です-1"><a href="#2日目-引っ越しは大変です-1" class="headerlink" title="2日目　引っ越しは大変です"></a>2日目　引っ越しは大変です</h2><p><img src="/new-blog/images/vocw1d2.png"></p>
-<p><img src="/new-blog/images/vocw1d2-2.png"></p>
+<h2 id="3日目-友人を招きました"><a href="#3日目-友人を招きました" class="headerlink" title="3日目　友人を招きました"></a>3日目　友人を招きました</h2><p><img src="/new-blog/images/vocw1d3.png"></p>
 <table>
     <tr>
         <td>
-            買い換える
-        </td>
-        <td rowspan="2">
-            燃えるごみ／可燃ごみ
-            燃やせるごみ
+            「よくいらっしゃいました。どうぞおあがりください」<br>
+            「おじゃまします」
         </td>
     </tr>
     <tr>
         <td>
-            家電製品
+            「ご無沙汰しています。お元気でしたか」<br>
+            「ええ、おかげさまで」
         </td>
     </tr>
     <tr>
         <td>
-            省エネ
-        </td>
-        <td rowspan="2">
-            燃えないごみ／不燃ごみ
-            燃やせないごみ
+            「つまらないものですが」<br>
+            「ありがとうございます。遠慮なくいただきます」
         </td>
     </tr>
     <tr>
         <td>
-            電気代を節約する
+            「お茶をお持ちします」<br>
+            「どうぞおかまいなく」
+        </td>
+    </tr>
+        <tr>
+        <td>
+            「ゆっくりしていってください」<br>
+            「ごゆっくりお召し上がりください」
         </td>
     </tr>
     <tr>
         <td>
-            ごみがたまる
+            友人を家に招く
         </td>
         <td>
-            生ごみ
-        </td>
-    </tr>
-    <tr>
-        <td>
-            リサイクルに出す
+            ゆっくりする
+            のんびりする
         </td>
     </tr>
     <tr>
         <td>
-            粗大ごみ
+            座り心地がいいソファー
+        </td>
+        <td>
+            くつろぐ
         </td>
     </tr>
     <tr>
         <td>
-            不用品を処分する
+            寝心地がいいベッド
         </td>
         <td>
-            資源ごみ
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ごみを分別する
-        </td>
-        <td>
-            指定のごみ袋
+            快適に暮らす
         </td>
     </tr>
     <tr>
         <td>
-            ペットボトルをすすぐ
+            居心地がいい家
         </td>
         <td>
-            水がもれる
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ラベルをはがす
-        </td>
-        <td>
-            水をもらす
+            半額セール
         </td>
     </tr>
     <tr>
         <td>
-            シールを貼る
+            家で過ごす
         </td>
         <td>
-            秘密がもれる
-        </td>
-    </tr>
-    <tr>
-        <td>
-            アルミ缶をつぶす
-        </td>
-        <td>
-            秘密をもらす
-        </td>
-    </tr>
-    <tr>
-        <td>
-            古新聞を再利用する
-        </td>
-        <td>
-            こぼれる
+            手ごろな価格
         </td>
     </tr>
 </table>
 
 <hr>
 ]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>語彙</tag>
+      </tags>
   </entry>
   <entry>
     <title>Explain localhost and 127.0.0.1</title>
@@ -8127,355 +8102,6 @@ funcs[0](); // 0
       </categories>
       <tags>
         <tag>Network</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
-    <url>/new-blog/66c5e938.html</url>
-    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
-<span id="more"></span>
-
-<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
-<ul>
-<li><code>Node.js</code> のローカルインストール</li>
-<li><code>Git</code> のローカルインストール</li>
-<li><code>GitHub</code> アカウント</li>
-<li><code>GitHub</code> リポジトリの作成</li>
-</ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
-<pre><code class="bash">brew install node
-</code></pre>
-<p>もしくは、</p>
-<pre><code class="bash">node -v
-npm -v
-</code></pre>
-<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
-<pre><code class="bash">brew install git
-</code></pre>
-<pre><code class="bash">git --version
-</code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
-<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;your.email@example.com&quot;
-</code></pre>
-<p>“Your Name”と”<a href="mailto:&#x79;&#111;&#x75;&#114;&#46;&#101;&#109;&#97;&#105;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;">&#x79;&#111;&#x75;&#114;&#46;&#101;&#109;&#97;&#105;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
-<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
-</code></pre>
-<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
-<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
-<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
-<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
-<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
-<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
-<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>以下のコマンドを使用して検証できます：</p>
-<pre><code class="bash">hexo -v
-</code></pre>
-<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
-<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
-<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
-</code></pre>
-<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
-<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
-<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
-</code></pre>
-<p>次に、作成されたディレクトリに移動します：</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-</code></pre>
-<p>移動したら、依存パッケージをインストールします：</p>
-<pre><code>npm install
-</code></pre>
-<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
-<pre><code>hexo generate
-</code></pre>
-<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
-<pre><code>hexo server
-</code></pre>
-<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
-<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
-<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
-<blockquote>
-<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
-</blockquote>
-<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-git init 
-git add . 
-git commit -am&quot;init blog&quot; 
-</code></pre>
-<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
-<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
-git branch -M main
-git push -u origin main
-</code></pre>
-<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
-<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
-<pre><code class="bash">git checkout -b pages
-git push -u origin pages
-</code></pre>
-<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
-<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
-<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
-<pre><code class="bash">url: https://ユーザー名.github.io/ 
-root: /breeze-blog/ 
-
-deploy: 
-  type: &#39;git&#39; 
-  repo: git@github.com:ユーザー名./ディレクトリ名
-  branch: pages
-</code></pre>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
-    <url>/new-blog/hexoThemeAndPlugin.html</url>
-    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
-<span id="more"></span>
-
-<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
-<ol>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
-</li>
-<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
-</li>
-<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
-</li>
-<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
-</li>
-</ol>
-<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
-<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
-</li>
-</ol>
-<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
-</code></pre>
-<ol start="3">
-<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
-</ol>
-<pre><code>mkdir themes/next
-</code></pre>
-<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
-<ol start="4">
-<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
-</ol>
-<pre><code>cp -r hexo-theme-next/* /themes/next
-</code></pre>
-<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
-<pre><code>theme: next
-</code></pre>
-<p>と設定することで、新しいテーマを使用できます。</p>
-<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-generator-searchdb --save
-</code></pre>
-<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
-<pre><code>search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
-<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
-<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
-<p><code>/2023/06/22/230622</code></p>
-<p>以下のような形式に変更したいです：</p>
-<p><code>/migrateopsmanager</code></p>
-<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
-<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-abbrlink --save
-</code></pre>
-<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
-<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
-<pre><code>permalink: posts/:abbrlink/ 
-# or
-permalink: posts/:abbrlink.html
-</code></pre>
-<blockquote>
-<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜とき・〜直後に</title>
-    <url>/new-blog/73a2b435.html</url>
-    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
-<ul>
-<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
-<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
-<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
-</ul>
-<p>接続　名ーの・動辞書形／た形＋際（に）</p>
-<p>注意　</p>
-<ol>
-<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
-<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
-</ol>
-<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
-<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
-</ul>
-<p>接続　名・動辞書形＋に際して・にあたって</p>
-<p>注意</p>
-<ol>
-<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
-</ol>
-<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
-<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
-<p>例文</p>
-<ul>
-<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
-</ul>
-<p>接続　動た形＋とたん（に）</p>
-<p>注意</p>
-<ol>
-<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
-<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
-</ol>
-<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
-<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
-<p>例文</p>
-<ul>
-<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
-<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
-</ul>
-<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
-<p>注意</p>
-<ol>
-<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
-<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
-<p>例文</p>
-<ul>
-<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
-<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
-</ul>
-<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
-<p>注意</p>
-<ol>
-<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>文法</tag>
-        <tag>ことがらを説明する</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
-<ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
-<p>例文</p>
-<blockquote>
-<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
-</blockquote>
-<p>接続　動て形＋はじめて</p>
-<p>注意　</p>
-<ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
-</ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
-<p>例文</p>
-<blockquote>
-<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
-</blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
-<ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
-</ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
-<ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
-</ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
-<blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
-</blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -8568,6 +8194,74 @@ permalink: posts/:abbrlink.html
         <tag>N2</tag>
         <tag>文法</tag>
         <tag>ことがらを説明する</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -11496,6 +11190,123 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>時制</title>
+    <url>/new-blog/956f59e9.html</url>
+    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
+<span id="more"></span>
+
+<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+        <th>動詞の種類</th>
+    </tr>
+    <tr>
+        <td>未来</td>
+        <td>私は来年、高校を<b>卒業する</b></td>
+        <td>動きを表す動詞</td>
+    </tr>
+    <tr>
+        <td rowspan="3">現在</td>
+        <td>彼女はトラックの運転が<b>できる</b></td>
+        <td>状態を表す動詞</td>
+    </tr>   
+    <tr>
+        <td>あなかが<b>痛む</b></td>
+        <td>感覚を表す動詞</td>
+    </tr>
+    <tr>
+        <td>選手としてしっかり戦うことを<b>誓います</b></td>
+        <td>行動の宣言を表す動詞</td>
+    </tr>    
+    <tr>
+        <td>時間に無関係</td>
+        <td>太陽は東からのぼって西に沈む</td>
+        <td></td>
+    </tr>    
+</table>
+
+
+<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>過去</td>
+        <td>先週、アメリカから友達が<b>来た</b></td>
+    </tr>
+    <tr>
+        <td>現在につながる過去</td>
+        <td>私はさっきからずっとここに<b>いた</b></td>
+    </tr>    
+    <tr>
+        <td>完了の結果</td>
+        <td>私は最近<b>太った</b></td>
+    </tr>    
+    <tr>
+        <td>未来完了</td>
+        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
+    </tr>
+    <tr>
+        <td>形状・状態</td>
+        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
+    </tr>
+    <tr>
+        <td>生理状態</td>
+        <td>あ、おなかが<b>すいた</b></td>
+    </tr>
+</table>
+
+<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
+    <tr>
+        <th>用法</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>動作・事態の継続</td>
+        <td>日本では子供の数が<b>減っている</b></td>
+    </tr>
+    <tr>
+        <td>結果の存続</td>
+        <td>電気が<b>消えている</b></td>
+    </tr>
+    <tr>
+        <td>形状・様子</td>
+        <td>この棒先に<b>曲がっている</b></td>
+    </tr>
+    <tr>
+        <td>完了</td>
+        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
+    </tr>
+    <tr>
+        <td>経験・記録</td>
+        <td>彼は10年前に同じ病気で<b>入院している</b></td>
+    </tr>
+</table>
+
+<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
+    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
+    <span class="rectangle">ハワイへ行った</span> → 訪ねる
+</p>
+
+<p>
+    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
+</p>
+
+<p>
+    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
+</p>
+
+<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>始めと終わりが正しく対応した文</title>
     <url>/new-blog/c660853.html</url>
     <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
@@ -11676,123 +11487,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>時制</title>
-    <url>/new-blog/956f59e9.html</url>
-    <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
-<span id="more"></span>
-
-<h2 id="動詞現在形の用法"><a href="#動詞現在形の用法" class="headerlink" title="動詞現在形の用法"></a>動詞現在形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-        <th>動詞の種類</th>
-    </tr>
-    <tr>
-        <td>未来</td>
-        <td>私は来年、高校を<b>卒業する</b></td>
-        <td>動きを表す動詞</td>
-    </tr>
-    <tr>
-        <td rowspan="3">現在</td>
-        <td>彼女はトラックの運転が<b>できる</b></td>
-        <td>状態を表す動詞</td>
-    </tr>   
-    <tr>
-        <td>あなかが<b>痛む</b></td>
-        <td>感覚を表す動詞</td>
-    </tr>
-    <tr>
-        <td>選手としてしっかり戦うことを<b>誓います</b></td>
-        <td>行動の宣言を表す動詞</td>
-    </tr>    
-    <tr>
-        <td>時間に無関係</td>
-        <td>太陽は東からのぼって西に沈む</td>
-        <td></td>
-    </tr>    
-</table>
-
-
-<h2 id="動詞の過去形の用法"><a href="#動詞の過去形の用法" class="headerlink" title="動詞の過去形の用法"></a>動詞の過去形の用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>過去</td>
-        <td>先週、アメリカから友達が<b>来た</b></td>
-    </tr>
-    <tr>
-        <td>現在につながる過去</td>
-        <td>私はさっきからずっとここに<b>いた</b></td>
-    </tr>    
-    <tr>
-        <td>完了の結果</td>
-        <td>私は最近<b>太った</b></td>
-    </tr>    
-    <tr>
-        <td>未来完了</td>
-        <td>明日集合時間に<b>遅れた</b>人は、自分で電車で来てください</td>
-    </tr>
-    <tr>
-        <td>形状・状態</td>
-        <td>あの丸い形を<b>した</b>建物は何ですか、</td>
-    </tr>
-    <tr>
-        <td>生理状態</td>
-        <td>あ、おなかが<b>すいた</b></td>
-    </tr>
-</table>
-
-<h2 id="「ている」用法"><a href="#「ている」用法" class="headerlink" title="「ている」用法"></a>「ている」用法</h2><table>
-    <tr>
-        <th>用法</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>動作・事態の継続</td>
-        <td>日本では子供の数が<b>減っている</b></td>
-    </tr>
-    <tr>
-        <td>結果の存続</td>
-        <td>電気が<b>消えている</b></td>
-    </tr>
-    <tr>
-        <td>形状・様子</td>
-        <td>この棒先に<b>曲がっている</b></td>
-    </tr>
-    <tr>
-        <td>完了</td>
-        <td>3時に会場に着いた。もうみんな<b>来ていた</b></td>
-    </tr>
-    <tr>
-        <td>経験・記録</td>
-        <td>彼は10年前に同じ病気で<b>入院している</b></td>
-    </tr>
-</table>
-
-<h2 id="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"><a href="#「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。" class="headerlink" title="「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。"></a>「〜とき・〜場合・〜際」などを使った復文や、名詞を説明する文を使った復文では、中の文の時制は話している時点に関係なく、主の文との時間的前後で決まります。</h2><h3 id="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"><a href="#中の文のことが主の文のことより時間的に前のとき、中の文は過去形" class="headerlink" title="中の文のことが主の文のことより時間的に前のとき、中の文は過去形"></a>中の文のことが主の文のことより時間的に前のとき、中の文は過去形</h3><p>
-    来月<span class="rectangle">ハワイへ行った</span>とき、ハワイにいる叔父を<u>訪ねる</u>予定だ。
-    <span class="rectangle">ハワイへ行った</span> → 訪ねる
-</p>
-
-<p>
-    <span class="rectangle">商品を間違って買った</span>場合、店に<u>返品する</u>ことができる。
-</p>
-
-<p>
-    以前は、<span class="rectangle">この大学に入学した</span>人は、全員寮に入った。
-</p>
-
-<h3 id="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"><a href="#中の文のことが主の文のことより時間的に後のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことより時間的に後のとき、中の文は現在形"></a>中の文のことが主の文のことより時間的に後のとき、中の文は現在形</h3><h3 id="中の文のことが主の文のことが同時のとき、中の文は現在形"><a href="#中の文のことが主の文のことが同時のとき、中の文は現在形" class="headerlink" title="中の文のことが主の文のことが同時のとき、中の文は現在形"></a>中の文のことが主の文のことが同時のとき、中の文は現在形</h3>]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>条件を表す文</title>
     <url>/new-blog/ff8369b4.html</url>
     <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
@@ -11810,6 +11504,208 @@ permalink: posts/:abbrlink.html
       <tags>
         <tag>N2</tag>
         <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
+    <url>/new-blog/66c5e938.html</url>
+    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+<span id="more"></span>
+
+<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
+<ul>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
+</ul>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<pre><code class="bash">brew install node
+</code></pre>
+<p>もしくは、</p>
+<pre><code class="bash">node -v
+npm -v
+</code></pre>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<pre><code class="bash">brew install git
+</code></pre>
+<pre><code class="bash">git --version
+</code></pre>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@example.com&quot;
+</code></pre>
+<p>“Your Name”と”<a href="mailto:&#x79;&#x6f;&#117;&#114;&#x2e;&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#114;&#x2e;&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
+</code></pre>
+<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
+<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
+<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
+<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
+<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
+<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
+<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+<p>以下のコマンドを使用して検証できます：</p>
+<pre><code class="bash">hexo -v
+</code></pre>
+<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
+<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
+<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
+</code></pre>
+<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
+<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
+<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
+</code></pre>
+<p>次に、作成されたディレクトリに移動します：</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+</code></pre>
+<p>移動したら、依存パッケージをインストールします：</p>
+<pre><code>npm install
+</code></pre>
+<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
+<pre><code>hexo generate
+</code></pre>
+<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
+<pre><code>hexo server
+</code></pre>
+<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
+<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
+<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
+<blockquote>
+<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
+</blockquote>
+<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+git init 
+git add . 
+git commit -am&quot;init blog&quot; 
+</code></pre>
+<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
+<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
+git branch -M main
+git push -u origin main
+</code></pre>
+<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
+<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
+<pre><code class="bash">git checkout -b pages
+git push -u origin pages
+</code></pre>
+<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
+<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
+<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
+<pre><code class="bash">url: https://ユーザー名.github.io/ 
+root: /breeze-blog/ 
+
+deploy: 
+  type: &#39;git&#39; 
+  repo: git@github.com:ユーザー名./ディレクトリ名
+  branch: pages
+</code></pre>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
+    <url>/new-blog/hexoThemeAndPlugin.html</url>
+    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
+<span id="more"></span>
+
+<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
+</li>
+<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
+</li>
+<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
+</li>
+<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
+</li>
+</ol>
+<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
+<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
+</li>
+</ol>
+<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
+</code></pre>
+<ol start="3">
+<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
+</ol>
+<pre><code>mkdir themes/next
+</code></pre>
+<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
+<ol start="4">
+<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
+</ol>
+<pre><code>cp -r hexo-theme-next/* /themes/next
+</code></pre>
+<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
+<pre><code>theme: next
+</code></pre>
+<p>と設定することで、新しいテーマを使用できます。</p>
+<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
+<ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
+</li>
+</ol>
+<pre><code>npm install hexo-generator-searchdb --save
+</code></pre>
+<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
+<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
+<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
+<p><code>/2023/06/22/230622</code></p>
+<p>以下のような形式に変更したいです：</p>
+<p><code>/migrateopsmanager</code></p>
+<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
+<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
+<ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
+</li>
+</ol>
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
+<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
+<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
+<pre><code>permalink: posts/:abbrlink/ 
+# or
+permalink: posts/:abbrlink.html
+</code></pre>
+<blockquote>
+<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -11848,6 +11744,57 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>説明　表示“在～即将发生的时候·～正在进行中·～刚刚发生或完成”。用于句中时，根据句末所使用的动词，后面可能使用不同的助词</p>
 <p>接続　动词辞書／ている／た＋ところだ・ところ（）</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜と関係して</title>
+    <url>/new-blog/9d184406.html</url>
+    <content><![CDATA[<h1 id="〜と関係して"><a href="#〜と関係して" class="headerlink" title="〜と関係して"></a>〜と関係して</h1><span id="more"></span>
+
+<h2 id="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"><a href="#〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…" class="headerlink" title="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"></a>〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…</h2><p>例句</p>
+<blockquote>
+<p>これから私が言う<u>とおり</u>にパソコンを操作してください<br>説明書<u>どおり</u>に組み立ててみたのですが、動かないんです</p>
+</blockquote>
+<p>说明　“如～那样”、“完全按照～做…”</p>
+<p>接续</p>
+<blockquote>
+<p>名詞の・动词辞书形／「た」／てある／ている＋とおりだ・とおり（に）<br>名詞＋どおりだ・どおり（に）</p>
+</blockquote>
+<p>注意　「〜とおりの」后续名詞作定语使用。注意前面直接接名詞时只能用「〜どおり（に）」</p>
+<h2 id="〜によって…・〜によっては…"><a href="#〜によって…・〜によっては…" class="headerlink" title="〜によって…・〜によっては…"></a>〜によって…・〜によっては…</h2><p>例文</p>
+<blockquote>
+<p>国<u>によって</u>習慣が違う。<br>感じ方は人<u>によって</u>さまざまだ。</p>
+</blockquote>
+<p>说明 「〜が違えば…」。…は一定でないことを表す文。</p>
+<p>接续 名詞＋によって・によっては</p>
+<h2 id="〜たびに…"><a href="#〜たびに…" class="headerlink" title="〜たびに…"></a>〜たびに…</h2><p>例句</p>
+<blockquote>
+<p>私は山田さんに会う<u>たび</u>に素敵な人だといつも思う<br>この写真を見るたび、故郷のことを思います</p>
+</blockquote>
+<p>说明　“每当。。。就。。。”</p>
+<p>接续　名詞の・动词辞书形+たびに</p>
+<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…</h2><p>例句：</p>
+<blockquote>
+<p>この問題について考えれ<u>ば</u>考える<u>ほど</u>、頭の中が混乱してきた<br>この本は読めば読むほど面白くなる</p>
+</blockquote>
+<p>说明　“越。。。越。。。”</p>
+<p>接续</p>
+<blockquote>
+<p>动词「ば」＋同一动词的辞书形＋ほど<br>い形容词词干＋ければ＋同一い形容词辞书形＋ほど<br>な形容词词干＋なら＋同一な形容词词干＋な＋ほど<br>イ形容詞い・ナ形容詞な＋名詞＋ほど</p>
+</blockquote>
+<p>注意　表示随着前项的变化，后项也相应地发生变化。注意这时候不能替换成「〜くらい」</p>
+<h2 id="〜ついでに…"><a href="#〜ついでに…" class="headerlink" title="〜ついでに…"></a>〜ついでに…</h2><p>例句</p>
+<blockquote>
+<p>散歩の<u>ついでに</u>このはがきをポストに出してきて<br>玄関の掃除をする<u>ついでに</u>靴の整理をしよう</p>
+</blockquote>
+<p>说明　“趁着～，顺道做…”，用于表示同时做两个不同的行为。〜是主要行为，…是附带行为</p>
+<p>接续　名詞 <del>する</del>の・動辞書&#x2F;た＋ついでに</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -12206,97 +12153,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>〜と関係して</title>
-    <url>/new-blog/9d184406.html</url>
-    <content><![CDATA[<h1 id="〜と関係して"><a href="#〜と関係して" class="headerlink" title="〜と関係して"></a>〜と関係して</h1><span id="more"></span>
-
-<h2 id="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"><a href="#〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…" class="headerlink" title="〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…"></a>〜とおりだ・〜とおり（に）…・〜どおりだ・〜どおり（に）…</h2><p>例句</p>
-<blockquote>
-<p>これから私が言う<u>とおり</u>にパソコンを操作してください<br>説明書<u>どおり</u>に組み立ててみたのですが、動かないんです</p>
-</blockquote>
-<p>说明　“如～那样”、“完全按照～做…”</p>
-<p>接续</p>
-<blockquote>
-<p>名詞の・动词辞书形／「た」／てある／ている＋とおりだ・とおり（に）<br>名詞＋どおりだ・どおり（に）</p>
-</blockquote>
-<p>注意　「〜とおりの」后续名詞作定语使用。注意前面直接接名詞时只能用「〜どおり（に）」</p>
-<h2 id="〜によって…・〜によっては…"><a href="#〜によって…・〜によっては…" class="headerlink" title="〜によって…・〜によっては…"></a>〜によって…・〜によっては…</h2><p>例文</p>
-<blockquote>
-<p>国<u>によって</u>習慣が違う。<br>感じ方は人<u>によって</u>さまざまだ。</p>
-</blockquote>
-<p>说明 「〜が違えば…」。…は一定でないことを表す文。</p>
-<p>接续 名詞＋によって・によっては</p>
-<h2 id="〜たびに…"><a href="#〜たびに…" class="headerlink" title="〜たびに…"></a>〜たびに…</h2><p>例句</p>
-<blockquote>
-<p>私は山田さんに会う<u>たび</u>に素敵な人だといつも思う<br>この写真を見るたび、故郷のことを思います</p>
-</blockquote>
-<p>说明　“每当。。。就。。。”</p>
-<p>接续　名詞の・动词辞书形+たびに</p>
-<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…・〜ほど…</h2><p>例句：</p>
-<blockquote>
-<p>この問題について考えれ<u>ば</u>考える<u>ほど</u>、頭の中が混乱してきた<br>この本は読めば読むほど面白くなる</p>
-</blockquote>
-<p>说明　“越。。。越。。。”</p>
-<p>接续</p>
-<blockquote>
-<p>动词「ば」＋同一动词的辞书形＋ほど<br>い形容词词干＋ければ＋同一い形容词辞书形＋ほど<br>な形容词词干＋なら＋同一な形容词词干＋な＋ほど<br>イ形容詞い・ナ形容詞な＋名詞＋ほど</p>
-</blockquote>
-<p>注意　表示随着前项的变化，后项也相应地发生变化。注意这时候不能替换成「〜くらい」</p>
-<h2 id="〜ついでに…"><a href="#〜ついでに…" class="headerlink" title="〜ついでに…"></a>〜ついでに…</h2><p>例句</p>
-<blockquote>
-<p>散歩の<u>ついでに</u>このはがきをポストに出してきて<br>玄関の掃除をする<u>ついでに</u>靴の整理をしよう</p>
-</blockquote>
-<p>说明　“趁着～，顺道做…”，用于表示同时做两个不同的行为。〜是主要行为，…是附带行为</p>
-<p>接续　名詞 <del>する</del>の・動辞書&#x2F;た＋ついでに</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜（よ）うと思う</title>
-    <url>/new-blog/c03e94d.html</url>
-    <content><![CDATA[<h1 id="〜（よ）うと思う"><a href="#〜（よ）うと思う" class="headerlink" title="〜（よ）うと思う"></a>〜（よ）うと思う</h1><span id="more"></span>
-
-<h2 id="〜ことにする・〜ことにしている"><a href="#〜ことにする・〜ことにしている" class="headerlink" title="〜ことにする・〜ことにしている"></a>〜ことにする・〜ことにしている</h2><p>例文</p>
-<blockquote>
-<p>口を出すと怒られるので、何も言わないで黙っている<u>ことにした</u><br>部長の言葉はいつもとても厳しいが、私は気にしない<u>ことにしている</u></p>
-</blockquote>
-<p>説明　「〜と決める。」「〜ことにした」という形で使うことが多い。</p>
-<p>接続</p>
-<blockquote>
-<p>  動辞書形／ている形／ない形＋ことにする<br>動辞書形／ない形＋ことにしている</p>
-</blockquote>
-<h2 id="〜ようにする・〜ようにしている"><a href="#〜ようにする・〜ようにしている" class="headerlink" title="〜ようにする・〜ようにしている"></a>〜ようにする・〜ようにしている</h2><p>例文</p>
-<blockquote>
-<p>水や電気は大切に使う<u>ようにしましょう</u><br>私はなるべく自分で料理を作って食べる<u>ようにしている</u></p>
-</blockquote>
-<p>説明　「〜する／しないことを心がける。」〜は意志的動作を表す動詞</p>
-<p>接続　動辞書形／ない形＋ようにする・ようにしている</p>
-<h2 id="〜（よ）うとする"><a href="#〜（よ）うとする" class="headerlink" title="〜（よ）うとする"></a>〜（よ）うとする</h2><p>例文</p>
-<blockquote>
-<p>昨日の夜は眠ろ<u>うとして</u>もなかなか眠れなかった<br>重い荷物を持ち上げ<u>ようとした</u>ら、腰が痛くなってしまった。<br>いくら勧めても夫は病院へ行こ<u>うとしない</u></p>
-</blockquote>
-<p>説明　「〜を実現させることを試みる。」</p>
-<p>接続　動う・よう形＋とする</p>
-<h2 id="〜つもりだ"><a href="#〜つもりだ" class="headerlink" title="〜つもりだ"></a>〜つもりだ</h2><p>例文</p>
-<blockquote>
-<p>冗談で言った<u>つもり</u>の言葉だったが、彼は怒ったような顔をした。</p>
-</blockquote>
-<p>説明　「（実際はそうではないが・ほかの人はそう思わないかもしれないが）自分では〜の気持ちを持っている。」</p>
-<p>接続　普通形（ナ形<del>だ</del>な・名<del>だ</del>の）＋つもりだ</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>敬語</title>
     <url>/new-blog/8b2a3cd9.html</url>
     <content><![CDATA[<h1 id="敬語"><a href="#敬語" class="headerlink" title="敬語"></a>敬語</h1><span id="more"></span>
@@ -12482,6 +12338,46 @@ permalink: posts/:abbrlink.html
 </table>
 
 <h2 id="職場でよく使う敬語の例をまとめました。"><a href="#職場でよく使う敬語の例をまとめました。" class="headerlink" title="職場でよく使う敬語の例をまとめました。"></a>職場でよく使う敬語の例をまとめました。</h2><table><tbody><tr><td width="209" style="text-align: left;"><strong>普段の言葉使い</strong></td><td width="333" style="text-align: left;"><strong>職場での言葉使い</strong></td></tr><tr><td><p>誰ですか　</p><p>どなたですか</p></td><td><p>どちらさまでしょうか　</p><p>どなたさまでしょうか　</p></td></tr><tr><td><p>ありません　</p><p>ないです</p></td><td>ございません</td></tr><tr><td>できません</td><td>いたしかねます</td></tr><tr><td>知りません</td><td>存じません</td></tr><tr><td>わかりません</td><td>わかりかねます</td></tr><tr><td>何の用ですか</td><td>どのようなご用件でしょうか</td></tr><tr><td>誰を呼べばいいですか</td><td>誰をお呼びいたしましょうか</td></tr><tr><td>今、見てきます</td><td>ただ今、見て参ります</td></tr><tr><td>今、外出していません</td><td>ただ今、外出しております</td></tr><tr><td>今、席にいません</td><td>ただ今、席を外しております</td></tr><tr><td>名前を教えてください</td><td>お名前を伺ってもよろしいでしょうか</td></tr><tr><td>何か聞いてますか</td><td>何かうけたまわっておりますでしょうか</td></tr><tr><td>こっちからいきます</td><td>こちらから伺います（参ります）</td></tr><tr><td>もう一度言ってください</td><td>もう一度おっしゃっていただけますか</td></tr><tr><td>食べます</td><td>いただきます</td></tr><tr><td>もらいます</td><td><p>いただきます　</p><p>頂戴いたします</p></td></tr><tr><td><p>ごめんなさい　</p><p>すみません</p></td><td>申し訳ございません</td></tr><tr><td>言います</td><td>申し上げます</td></tr></tbody></table>]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜（よ）うと思う</title>
+    <url>/new-blog/c03e94d.html</url>
+    <content><![CDATA[<h1 id="〜（よ）うと思う"><a href="#〜（よ）うと思う" class="headerlink" title="〜（よ）うと思う"></a>〜（よ）うと思う</h1><span id="more"></span>
+
+<h2 id="〜ことにする・〜ことにしている"><a href="#〜ことにする・〜ことにしている" class="headerlink" title="〜ことにする・〜ことにしている"></a>〜ことにする・〜ことにしている</h2><p>例文</p>
+<blockquote>
+<p>口を出すと怒られるので、何も言わないで黙っている<u>ことにした</u><br>部長の言葉はいつもとても厳しいが、私は気にしない<u>ことにしている</u></p>
+</blockquote>
+<p>説明　「〜と決める。」「〜ことにした」という形で使うことが多い。</p>
+<p>接続</p>
+<blockquote>
+<p>  動辞書形／ている形／ない形＋ことにする<br>動辞書形／ない形＋ことにしている</p>
+</blockquote>
+<h2 id="〜ようにする・〜ようにしている"><a href="#〜ようにする・〜ようにしている" class="headerlink" title="〜ようにする・〜ようにしている"></a>〜ようにする・〜ようにしている</h2><p>例文</p>
+<blockquote>
+<p>水や電気は大切に使う<u>ようにしましょう</u><br>私はなるべく自分で料理を作って食べる<u>ようにしている</u></p>
+</blockquote>
+<p>説明　「〜する／しないことを心がける。」〜は意志的動作を表す動詞</p>
+<p>接続　動辞書形／ない形＋ようにする・ようにしている</p>
+<h2 id="〜（よ）うとする"><a href="#〜（よ）うとする" class="headerlink" title="〜（よ）うとする"></a>〜（よ）うとする</h2><p>例文</p>
+<blockquote>
+<p>昨日の夜は眠ろ<u>うとして</u>もなかなか眠れなかった<br>重い荷物を持ち上げ<u>ようとした</u>ら、腰が痛くなってしまった。<br>いくら勧めても夫は病院へ行こ<u>うとしない</u></p>
+</blockquote>
+<p>説明　「〜を実現させることを試みる。」</p>
+<p>接続　動う・よう形＋とする</p>
+<h2 id="〜つもりだ"><a href="#〜つもりだ" class="headerlink" title="〜つもりだ"></a>〜つもりだ</h2><p>例文</p>
+<blockquote>
+<p>冗談で言った<u>つもり</u>の言葉だったが、彼は怒ったような顔をした。</p>
+</blockquote>
+<p>説明　「（実際はそうではないが・ほかの人はそう思わないかもしれないが）自分では〜の気持ちを持っている。」</p>
+<p>接続　普通形（ナ形<del>だ</del>な・名<del>だ</del>の）＋つもりだ</p>
+]]></content>
       <categories>
         <category>N3</category>
       </categories>
@@ -13427,6 +13323,85 @@ permalink: posts/:abbrlink.html
       </categories>
       <tags>
         <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜とき・〜直後に</title>
+    <url>/new-blog/73a2b435.html</url>
+    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
+<ul>
+<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
+<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
+<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
+</ul>
+<p>接続　名ーの・動辞書形／た形＋際（に）</p>
+<p>注意　</p>
+<ol>
+<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
+<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
+</ol>
+<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
+<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
+</ul>
+<p>接続　名・動辞書形＋に際して・にあたって</p>
+<p>注意</p>
+<ol>
+<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
+</ol>
+<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
+<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
+<p>例文</p>
+<ul>
+<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
+</ul>
+<p>接続　動た形＋とたん（に）</p>
+<p>注意</p>
+<ol>
+<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
+<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
+</ol>
+<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
+<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
+<p>例文</p>
+<ul>
+<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
+<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
+</ul>
+<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
+<p>注意</p>
+<ol>
+<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
+<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
+<p>例文</p>
+<ul>
+<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
+<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
+</ul>
+<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
+<p>注意</p>
+<ol>
+<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>文法</tag>
+        <tag>ことがらを説明する</tag>
       </tags>
   </entry>
 </search>
