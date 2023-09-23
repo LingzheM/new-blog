@@ -115,54 +115,6 @@ set root=(hd0,1)
       </tags>
   </entry>
   <entry>
-    <title>JavaScriptPageOne</title>
-    <url>/new-blog/c6a6ca50.html</url>
-    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
-<pre><code>let caught = 5 * 5;
-</code></pre>
-<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
-<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
-<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
-<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
-<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
-<pre><code>var name = &quot;Ayda&quot;;
-const greeting = &quot;Hello &quot;;
-</code></pre>
-<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
-<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>bit0101</title>
-    <url>/new-blog/f9f6dbe0.html</url>
-    <content><![CDATA[<h1 id="基本情報技術者試験-テクノロジ系"><a href="#基本情報技術者試験-テクノロジ系" class="headerlink" title="基本情報技術者試験-テクノロジ系"></a>基本情報技術者試験-テクノロジ系</h1><h2 id="基礎理論"><a href="#基礎理論" class="headerlink" title="基礎理論"></a>基礎理論</h2><div>
-
-</div>
-
-<div>
-文字列“ET”をASCIIでコード化したものを16進表記したものはどれか。ここで，文字コードの8ビット目には，偶数パリティビットが付く。
-〔ASCIIコード表の一部〕
-</div>
-
-
-<p>コンピュータで連立一次方程式の解を求めるのに，式に含まれる未知数の個数の3乗に比例する計算時間が掛かるとする。あるコンピュータで100元連立一次方程式の解を求めるのに2秒掛かったとすると，その4倍の演算速度をもつコンピュータで1,000元連立一次方程式の解を求めるときの計算時間は何秒か。</p>
-<p>通信回線の伝送誤りに対処するパリティチェック方式(垂直パリティ)の記述として，適切なものはどれか。</p>
-<p>5本のくじがあり，そのうち2本が当たりである。くじを同時に2本引いたとき，2本とも当たりと，なる確率は幾らか。</p>
-<p>AIにおける機械学習の説明として，最も適切なものはどれか。</p>
-<p>論理式 A・B・C＋A・B・C＋A・B・C＋A・B・C と恒等的に等しいものはどれか。ここで，・は論理積，＋は論理和，AはAの否定を表す。</p>
-<p>検索システムにおいて，最初にAという条件で検索したところ，検索結果は5,000件であった。更にBという条件で絞り込むと，その30％が残った。最初にBという条件で検索した検索結果が10,000件である場合，更にAという条件で絞り込むと何％が残ることになるか。</p>
-]]></content>
-      <categories>
-        <category>Basic Information Technician</category>
-      </categories>
-      <tags>
-        <tag>Basic Information Technician</tag>
-        <tag>Tecnology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chapter 3 Configuring Hardware</title>
     <url>/new-blog/50739f32.html</url>
     <content><![CDATA[<h1 id="Chapter-3-Configuring-Hardware"><a href="#Chapter-3-Configuring-Hardware" class="headerlink" title="Chapter 3 Configuring Hardware"></a>Chapter 3 Configuring Hardware</h1><p>[] </p>
@@ -341,6 +293,54 @@ rmmod btusb
       </categories>
       <tags>
         <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/c6a6ca50.html</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
+</code></pre>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bit0101</title>
+    <url>/new-blog/f9f6dbe0.html</url>
+    <content><![CDATA[<h1 id="基本情報技術者試験-テクノロジ系"><a href="#基本情報技術者試験-テクノロジ系" class="headerlink" title="基本情報技術者試験-テクノロジ系"></a>基本情報技術者試験-テクノロジ系</h1><h2 id="基礎理論"><a href="#基礎理論" class="headerlink" title="基礎理論"></a>基礎理論</h2><div>
+
+</div>
+
+<div>
+文字列“ET”をASCIIでコード化したものを16進表記したものはどれか。ここで，文字コードの8ビット目には，偶数パリティビットが付く。
+〔ASCIIコード表の一部〕
+</div>
+
+
+<p>コンピュータで連立一次方程式の解を求めるのに，式に含まれる未知数の個数の3乗に比例する計算時間が掛かるとする。あるコンピュータで100元連立一次方程式の解を求めるのに2秒掛かったとすると，その4倍の演算速度をもつコンピュータで1,000元連立一次方程式の解を求めるときの計算時間は何秒か。</p>
+<p>通信回線の伝送誤りに対処するパリティチェック方式(垂直パリティ)の記述として，適切なものはどれか。</p>
+<p>5本のくじがあり，そのうち2本が当たりである。くじを同時に2本引いたとき，2本とも当たりと，なる確率は幾らか。</p>
+<p>AIにおける機械学習の説明として，最も適切なものはどれか。</p>
+<p>論理式 A・B・C＋A・B・C＋A・B・C＋A・B・C と恒等的に等しいものはどれか。ここで，・は論理積，＋は論理和，AはAの否定を表す。</p>
+<p>検索システムにおいて，最初にAという条件で検索したところ，検索結果は5,000件であった。更にBという条件で絞り込むと，その30％が残った。最初にBという条件で検索した検索結果が10,000件である場合，更にAという条件で絞り込むと何％が残ることになるか。</p>
+]]></content>
+      <categories>
+        <category>Basic Information Technician</category>
+      </categories>
+      <tags>
+        <tag>Basic Information Technician</tag>
+        <tag>Tecnology</tag>
       </tags>
   </entry>
   <entry>
@@ -7150,7 +7150,7 @@ funcs[0](); // 0
         </td>
         <td>
             <ruby>神話<rp>(</rp><rt>しんわ</rt><rp>)</rp></ruby><br>
-            <ruby>神経<rp>(</rp><rt>しんけい</rt><rp>)</rp>かす</ruby><br>
+            <ruby>神経<rp>(</rp><rt>しんけい</rt><rp>)</rp></ruby><br>
             <ruby>神様<rp>(</rp><rt>かみさま</rt><rp>)</rp></ruby>
         </td>
         <td>
@@ -7271,6 +7271,7 @@ funcs[0](); // 0
         <td>
             <ruby>乾燥<rp>(</rp><rt>かんそう</rt><rp>)</rp></ruby>
         </td>
+        <td>
             dryness
         </td>
     </tr>
@@ -7498,6 +7499,7 @@ funcs[0](); // 0
             <ruby>繁栄<rp>(</rp><rt>はんえい</rt><rp>)</rp></ruby><br>
             <ruby>栄<rp>(</rp><rt>さか</rt><rp>)</rp>える</ruby>
         </td>
+        <td>
             nutrition<br>
             prosperity<br>
             flourish / prosper
@@ -7714,6 +7716,7 @@ funcs[0](); // 0
             <ruby>実<rp>(</rp><rt>み</rt><rp>)</rp></ruby><br>
             <ruby>実<rp>(</rp><rt>みの</rt><rp>)</rp>る</ruby>
         </td>
+        <td>
             practice, action<br>
             an experiment<br>
             a fruit, nut<br>
@@ -7730,257 +7733,7 @@ funcs[0](); // 0
             <ruby>列車<rp>(</rp><rt>れっしゃ</rt><rp>)</rp></ruby><br>
             <ruby>列島<rp>(</rp><rt>れっとう</rt><rp>)</rp></ruby>
         </td>
-            a procession<br>
-            a train<br>
-            an archipelago
-        </td>
-    </tr>
-</table>]]></content>
-      <categories>
-        <category>漢字</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>漢字</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>n2kan06</title>
-    <url>/new-blog/309add1a.html</url>
-    <content><![CDATA[<h1 id="みる②"><a href="#みる②" class="headerlink" title="みる②"></a>みる②</h1><h2 id="1日目-広告・チラシ"><a href="#1日目-広告・チラシ" class="headerlink" title="1日目　広告・チラシ"></a>1日目　広告・チラシ</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>得</td>
         <td>
-            トク<br>
-            うーる<br>
-            えーる
-        </td>
-        <td>
-            <ruby>納得<rp>(</rp><rt>なっとく</rt><rp>)</rp></ruby><br>
-            <ruby>得<rp>(</rp><rt>う／え</rt><rp>)</rp>る</ruby><br>
-            <ruby>心得る<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            assent, understanding<br>
-            obtain<br>
-            understand, be well aware
-        </td>
-    </tr>
-    <tr>
-        <td>告</td>
-        <td>
-            コウ<br>
-            つーげる
-        </td>
-        <td>
-            <ruby>広告<rp>(</rp><rt>こうこく</rt><rp>)</rp></ruby><br>
-            <ruby>報告<rp>(</rp><rt>ほうこく</rt><rp>)</rp>れる</ruby><br>
-            <ruby>警告<rp>(</rp><rt>けいこく</rt><rp>)</rp>ねる</ruby><br>
-            <ruby>告<rp>(</rp><rt>つ</rt><rp>)</rp>げる</ruby>
-        </td>
-        <td>
-            an advertisement<br>
-            a report<br>
-            warning, caution<br>
-            inform
-        </td>
-    </tr>
-    <tr>
-        <td>税</td>
-        <td>
-            ゼイ
-        </td>
-        <td>
-            <ruby>税金<rp>(</rp><rt>ぜいきん</rt><rp>)</rp></ruby><br>
-            <ruby>税関<rp>(</rp><rt>ぜいかん</rt><rp>)</rp></ruby><br>
-            <ruby>課税<rp>(</rp><rt>かぜい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a tax<br>
-            Customs<br>
-            taxation
-        </td>
-    </tr>
-    <tr>
-        <td>価</td>
-        <td>
-            カ
-        </td>
-        <td>
-            <ruby>定価<rp>(</rp><rt>ていか</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a fixed price
-        </td>
-    </tr>
-   <tr>
-        <td>格</td>
-        <td>
-            カク
-        </td>
-        <td>
-            <ruby>価格<rp>(</rp><rt>かかく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a price
-        </td>
-    </tr>
-    <tr>
-        <td>超</td>
-        <td>
-            チョウ<br>
-            こーえる<br>
-            こーす
-        </td>
-        <td>
-            <ruby>超過<rp>(</rp><rt>ちょうか</rt><rp>)</rp></ruby><br>
-            <ruby>超<rp>(</rp><rt>こ</rt><rp>)</rp>える</ruby><br>
-            <ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp>す</ruby>
-        </td>
-        <td>
-            excess, surplus<br>
-            get over, go over<br>
-            cross, pass, exceed
-        </td>
-    </tr>
-    <tr>
-        <td>均</td>
-        <td>
-            キン
-        </td>
-        <td>
-            <ruby>平均<rp>(</rp><rt>へいきん</rt><rp>)</rp></ruby><br>
-            <ruby>均一<rp>(</rp><rt>きんいつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            average<br>
-            uniformity, equality
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>差</td>
-        <td>
-            サ<br>
-            さーす
-        </td>
-        <td>
-            <ruby>差出人<rp>(</rp><rt>さしだしにん</rt><rp>)</rp></ruby><br>
-            <ruby>人差し指<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
-            <ruby>差別<rp>(</rp><rt>さべつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a sender<br>
-            an index finger<br>
-            discrimination
-        </td>
-    </tr>
-    <tr>
-        <td>続</td>
-        <td>
-            ゾク<br>
-            つづーく<br>
-            つづーける
-        </td>
-        <td>
-            <ruby>接続<rp>(</rp><rt>せつぞく</rt><rp>)</rp></ruby><br>
-            <ruby>継続<rp>(</rp><rt>けいぞく</rt><rp>)</rp></ruby>
-            <ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp>く</ruby><br>
-            <ruby>手続き<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a connection<br>
-            continuity<br>
-            continue<br>
-            a procedure
-        </td>
-    </tr>
-    <tr>
-        <td>辞</td>
-        <td>
-            ジ<br>
-            やーめる
-        </td>
-        <td>
-            <ruby>辞表<rp>(</rp><rt>じひょう</rt><rp>)</rp></ruby><br>
-            <ruby>辞<rp>(</rp><rt>や</rt><rp>)</rp>める</ruby>
-        </td>
-        <td>
-            resignation<br>
-            resign, retire
-        </td>
-    </tr>
-    <tr>
-        <td>面</td>
-        <td>
-            メン
-        </td>
-        <td>
-            <ruby>画面<rp>(</rp><rt>がめん</rt><rp>)</rp></ruby><br>
-            <ruby>方面<rp>(</rp><rt>ほうめん</rt><rp>)</rp></ruby><br>
-            <ruby>正面<rp>(</rp><rt>しょうめん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a screen<br>
-            direction<br>
-            front
-        </td>
-    </tr>
-   <tr>
-        <td>操</td>
-        <td>
-            ソウ
-        </td>
-        <td>
-            <ruby>操作<rp>(</rp><rt>そうさ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            operation
-        </td>
-    </tr>
-    <tr>
-        <td>実</td>
-        <td>
-            ジツ<br>
-            み<br>
-            みのーる
-        </td>
-        <td>
-            <ruby>実行<rp>(</rp><rt>じっこう</rt><rp>)</rp></ruby><br>
-            <ruby>実験<rp>(</rp><rt>じっけん</rt><rp>)</rp></ruby><br>
-            <ruby>実<rp>(</rp><rt>み</rt><rp>)</rp></ruby><br>
-            <ruby>実<rp>(</rp><rt>みの</rt><rp>)</rp>る</ruby>
-        </td>
-            practice, action<br>
-            an experiment<br>
-            a fruit, nut<br>
-            bear fruit
-        </td>
-    </tr>
-    <tr>
-        <td>列</td>
-        <td>
-            レツ
-        </td>
-        <td>
-            <ruby>行列<rp>(</rp><rt>ぎょうれつ</rt><rp>)</rp></ruby><br>
-            <ruby>列車<rp>(</rp><rt>れっしゃ</rt><rp>)</rp></ruby><br>
-            <ruby>列島<rp>(</rp><rt>れっとう</rt><rp>)</rp></ruby>
-        </td>
             a procession<br>
             a train<br>
             an archipelago
@@ -8457,6 +8210,259 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>第六週 みる②</title>
+    <url>/new-blog/309add1a.html</url>
+    <content><![CDATA[<h1 id="第六週-みる②"><a href="#第六週-みる②" class="headerlink" title="第六週 みる②"></a>第六週 みる②</h1><span id="more"></span>
+
+<h2 id="1日目-広告・チラシ"><a href="#1日目-広告・チラシ" class="headerlink" title="1日目　広告・チラシ"></a>1日目　広告・チラシ</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>得</td>
+        <td>
+            トク<br>
+            うーる<br>
+            えーる
+        </td>
+        <td>
+            <ruby>納得<rp>(</rp><rt>なっとく</rt><rp>)</rp></ruby><br>
+            <ruby>得<rp>(</rp><rt>う／え</rt><rp>)</rp>る</ruby><br>
+            <ruby>心得る<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            assent, understanding<br>
+            obtain<br>
+            understand, be well aware
+        </td>
+    </tr>
+    <tr>
+        <td>告</td>
+        <td>
+            コウ<br>
+            つーげる
+        </td>
+        <td>
+            <ruby>広告<rp>(</rp><rt>こうこく</rt><rp>)</rp></ruby><br>
+            <ruby>報告<rp>(</rp><rt>ほうこく</rt><rp>)</rp></ruby><br>
+            <ruby>警告<rp>(</rp><rt>けいこく</rt><rp>)</rp></ruby><br>
+            <ruby>告<rp>(</rp><rt>つ</rt><rp>)</rp>げる</ruby>
+        </td>
+        <td>
+            an advertisement<br>
+            a report<br>
+            warning, caution<br>
+            inform
+        </td>
+    </tr>
+    <tr>
+        <td>税</td>
+        <td>
+            ゼイ
+        </td>
+        <td>
+            <ruby>税金<rp>(</rp><rt>ぜいきん</rt><rp>)</rp></ruby><br>
+            <ruby>税関<rp>(</rp><rt>ぜいかん</rt><rp>)</rp></ruby><br>
+            <ruby>課税<rp>(</rp><rt>かぜい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a tax<br>
+            Customs<br>
+            taxation
+        </td>
+    </tr>
+    <tr>
+        <td>価</td>
+        <td>
+            カ
+        </td>
+        <td>
+            <ruby>定価<rp>(</rp><rt>ていか</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a fixed price
+        </td>
+    </tr>
+   <tr>
+        <td>格</td>
+        <td>
+            カク
+        </td>
+        <td>
+            <ruby>価格<rp>(</rp><rt>かかく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a price
+        </td>
+    </tr>
+    <tr>
+        <td>超</td>
+        <td>
+            チョウ<br>
+            こーえる<br>
+            こーす
+        </td>
+        <td>
+            <ruby>超過<rp>(</rp><rt>ちょうか</rt><rp>)</rp></ruby><br>
+            <ruby>超<rp>(</rp><rt>こ</rt><rp>)</rp>える</ruby><br>
+            <ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp>す</ruby>
+        </td>
+        <td>
+            excess, surplus<br>
+            get over, go over<br>
+            cross, pass, exceed
+        </td>
+    </tr>
+    <tr>
+        <td>均</td>
+        <td>
+            キン
+        </td>
+        <td>
+            <ruby>平均<rp>(</rp><rt>へいきん</rt><rp>)</rp></ruby><br>
+            <ruby>均一<rp>(</rp><rt>きんいつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            average<br>
+            uniformity, equality
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>差</td>
+        <td>
+            サ<br>
+            さーす
+        </td>
+        <td>
+            <ruby>差出人<rp>(</rp><rt>さしだしにん</rt><rp>)</rp></ruby><br>
+            <ruby>人差し指<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
+            <ruby>差別<rp>(</rp><rt>さべつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a sender<br>
+            an index finger<br>
+            discrimination
+        </td>
+    </tr>
+    <tr>
+        <td>続</td>
+        <td>
+            ゾク<br>
+            つづーく<br>
+            つづーける
+        </td>
+        <td>
+            <ruby>接続<rp>(</rp><rt>せつぞく</rt><rp>)</rp></ruby><br>
+            <ruby>継続<rp>(</rp><rt>けいぞく</rt><rp>)</rp></ruby>
+            <ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp>く</ruby><br>
+            <ruby>手続き<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a connection<br>
+            continuity<br>
+            continue<br>
+            a procedure
+        </td>
+    </tr>
+    <tr>
+        <td>辞</td>
+        <td>
+            ジ<br>
+            やーめる
+        </td>
+        <td>
+            <ruby>辞表<rp>(</rp><rt>じひょう</rt><rp>)</rp></ruby><br>
+            <ruby>辞<rp>(</rp><rt>や</rt><rp>)</rp>める</ruby>
+        </td>
+        <td>
+            resignation<br>
+            resign, retire
+        </td>
+    </tr>
+    <tr>
+        <td>面</td>
+        <td>
+            メン
+        </td>
+        <td>
+            <ruby>画面<rp>(</rp><rt>がめん</rt><rp>)</rp></ruby><br>
+            <ruby>方面<rp>(</rp><rt>ほうめん</rt><rp>)</rp></ruby><br>
+            <ruby>正面<rp>(</rp><rt>しょうめん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a screen<br>
+            direction<br>
+            front
+        </td>
+    </tr>
+   <tr>
+        <td>操</td>
+        <td>
+            ソウ
+        </td>
+        <td>
+            <ruby>操作<rp>(</rp><rt>そうさ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            operation
+        </td>
+    </tr>
+    <tr>
+        <td>実</td>
+        <td>
+            ジツ<br>
+            み<br>
+            みのーる
+        </td>
+        <td>
+            <ruby>実行<rp>(</rp><rt>じっこう</rt><rp>)</rp></ruby><br>
+            <ruby>実験<rp>(</rp><rt>じっけん</rt><rp>)</rp></ruby><br>
+            <ruby>実<rp>(</rp><rt>み</rt><rp>)</rp></ruby><br>
+            <ruby>実<rp>(</rp><rt>みの</rt><rp>)</rp>る</ruby>
+        </td>
+            practice, action<br>
+            an experiment<br>
+            a fruit, nut<br>
+            bear fruit
+        </td>
+    </tr>
+    <tr>
+        <td>列</td>
+        <td>
+            レツ
+        </td>
+        <td>
+            <ruby>行列<rp>(</rp><rt>ぎょうれつ</rt><rp>)</rp></ruby><br>
+            <ruby>列車<rp>(</rp><rt>れっしゃ</rt><rp>)</rp></ruby><br>
+            <ruby>列島<rp>(</rp><rt>れっとう</rt><rp>)</rp></ruby>
+        </td>
+            a procession<br>
+            a train<br>
+            an archipelago
+        </td>
+    </tr>
+</table>]]></content>
+      <categories>
+        <category>漢字</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>漢字</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Explain localhost and 127.0.0.1</title>
     <url>/new-blog/915cd40c.html</url>
     <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
@@ -8619,7 +8625,7 @@ npm -v
 <pre><code class="bash">git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;your.email@example.com&quot;
 </code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#x75;&#114;&#46;&#x65;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;">&#121;&#x6f;&#x75;&#114;&#46;&#x65;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<p>“Your Name”と”<a href="mailto:&#121;&#111;&#117;&#114;&#46;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;">&#121;&#111;&#117;&#114;&#46;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
 <h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
 <p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
 <p>最初に、ローカルでRSA鍵のペアを生成します。</p>
@@ -8698,6 +8704,153 @@ deploy:
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜とき・〜直後に</title>
+    <url>/new-blog/73a2b435.html</url>
+    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
+<ul>
+<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
+<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
+<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
+</ul>
+<p>接続　名ーの・動辞書形／た形＋際（に）</p>
+<p>注意　</p>
+<ol>
+<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
+<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
+</ol>
+<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
+<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
+</ul>
+<p>接続　名・動辞書形＋に際して・にあたって</p>
+<p>注意</p>
+<ol>
+<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
+</ol>
+<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
+<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
+<p>例文</p>
+<ul>
+<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
+</ul>
+<p>接続　動た形＋とたん（に）</p>
+<p>注意</p>
+<ol>
+<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
+<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
+</ol>
+<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
+<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
+<p>例文</p>
+<ul>
+<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
+<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
+</ul>
+<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
+<p>注意</p>
+<ol>
+<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
+<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
+<p>例文</p>
+<ul>
+<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
+<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
+</ul>
+<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
+<p>注意</p>
+<ol>
+<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>文法</tag>
+        <tag>ことがらを説明する</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -8793,64 +8946,83 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+    <title>範囲の始まりと終わり・その間</title>
+    <url>/new-blog/in%20the%20meantime.html</url>
+    <content><![CDATA[<h1 id="範囲の始まりと終わり・その間"><a href="#範囲の始まりと終わり・その間" class="headerlink" title="範囲の始まりと終わり・その間"></a>範囲の始まりと終わり・その間</h1><p>[復習]</p>
 <ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+<li>今日は夕方<u>から</u>夜<u>にかけて</u>小雨が降るそうだ。</li>
+<li>スポーツ大会は今日<u>で</u>終わります。</li>
 </ul>
 <span id="more"></span>
 
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<h2 id="〜をはじめ（として）"><a href="#〜をはじめ（として）" class="headerlink" title="〜をはじめ（として）"></a>〜をはじめ（として）</h2><p>意味　〜が代表例で、そのほうかにもいろいろある。<span style="color:orange">硬い言い方</span></p>
 <p>例文</p>
 <blockquote>
-<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
+<p>日本には「桃太郎」<u>をはじめとして</u>、おじいさん、おばあさんが出てくる昔話が多い。<br>このあたりには、市役所<u>をはじめとする</u>市の公共建物が多い。</p>
 </blockquote>
-<p>接続　動て形＋はじめて</p>
+<p>接続<br>名＋をはじめ（として）<br>名＋をはじめとする＋名</p>
+<p>注意</p>
+<ol>
+<li>いろいろある中の代表的なものを取り上げる。後には、その代表的なものを含めた複数のものを表す言葉が来る。</li>
+</ol>
+<h2 id="〜からして"><a href="#〜からして" class="headerlink" title="〜からして"></a>〜からして</h2><p>意味　〜という例一つを取ってもそうなのだから、全体的にももちろんそうだ</p>
+<p>例文</p>
+<blockquote>
+<p>さすがプロの選手は走り方<u>からして</u>わたしたちとは違う。</p>
+</blockquote>
+<p>接続　名＋からして</p>
+<p>注意</p>
+<ol>
+<li>問題の本質や重要なポイントでないことを例として取り上げる。後には、マイナス評価の文が来ることが多い。</li>
+</ol>
+<p>　</p>
+<h2 id="〜にわたって"><a href="#〜にわたって" class="headerlink" title="〜にわたって"></a>〜にわたって</h2><p>意味　〜の範囲全体にその状態が広がっている。</p>
+<p>例文</p>
+<blockquote>
+<p>連休の最終日、高速道路は20キロ<u>にわたって</u>渋滞が続いた。</p>
+</blockquote>
+<p>接続<br>名＋にわたって<br>名＋にわたる＋名</p>
+<p>注意</p>
+<ol>
+<li>場所・時間・回数・範囲など、幅が大きいことを表す語につく。</li>
+</ol>
+<h2 id="〜を通じて・〜を通して"><a href="#〜を通じて・〜を通して" class="headerlink" title="〜を通じて・〜を通して"></a>〜を通じて・〜を通して</h2><p>意味A 〜の期間ずっと同じ状態だ。</p>
+<p>例文A</p>
+<blockquote>
+<p>この町には四季<u>を通じて</u>観光客が訪れる。<br>この10年間<u>を通し</u>、彼はいつも新しいことに挑戦していた。</p>
+</blockquote>
+<p>接続A　名＋を通じて・通して</p>
 <p>注意　</p>
 <ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+<li>比較的長い期間を表す語につく。後には、継続していることを表す分が来る。</li>
 </ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>意味B 〜を手段にして、あることをする。</p>
+<p>例文B</p>
+<blockquote>
+<p>私たちは、ボランティア活動<u>を通して</u>いろいろな国の人たちと交流を深めている。</p>
+</blockquote>
+<p>接続B　名＋を通じて・通して</p>
+<h2 id="〜限り"><a href="#〜限り" class="headerlink" title="〜限り"></a>〜限り</h2><p>意味 〜の範囲は全部あることをする・ある状態だ。</p>
 <p>例文</p>
 <blockquote>
-<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+<p>君が知っている<u>限り</u>のことを全部私に話してほしい。</p>
 </blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
+<p>接続　名ーの・動辞書形／ている形＋限り</p>
+<p>注意</p>
 <ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+<li>動詞につく場合は、ている形や可能動詞につくことが多い。</li>
 </ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<h2 id="〜だけ"><a href="#〜だけ" class="headerlink" title="〜だけ"></a>〜だけ</h2><p>意味 〜の範囲の限界まであることをする。</p>
 <p>例文</p>
 <blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+<p>ここにあるダンボールを、車に積める<u>だけ</u>積んで持って帰ってください。</p>
 </blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
+<p>接続　動辞書形＋だけ</p>
+<p>注意</p>
 <ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+<li>可能動詞につくことが多い。</li>
+<li>瞬間的なことを表す動詞にはつかない。</li>
 </ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
-<blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
-</blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -8858,85 +9030,6 @@ deploy:
       <tags>
         <tag>N2</tag>
         <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜とき・〜直後に</title>
-    <url>/new-blog/73a2b435.html</url>
-    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
-<ul>
-<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
-<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
-<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
-</ul>
-<p>接続　名ーの・動辞書形／た形＋際（に）</p>
-<p>注意　</p>
-<ol>
-<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
-<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
-</ol>
-<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
-<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
-</ul>
-<p>接続　名・動辞書形＋に際して・にあたって</p>
-<p>注意</p>
-<ol>
-<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
-</ol>
-<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
-<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
-<p>例文</p>
-<ul>
-<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
-</ul>
-<p>接続　動た形＋とたん（に）</p>
-<p>注意</p>
-<ol>
-<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
-<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
-</ol>
-<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
-<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
-<p>例文</p>
-<ul>
-<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
-<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
-</ul>
-<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
-<p>注意</p>
-<ol>
-<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
-<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
-<p>例文</p>
-<ul>
-<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
-<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
-</ul>
-<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
-<p>注意</p>
-<ol>
-<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>文法</tag>
-        <tag>ことがらを説明する</tag>
       </tags>
   </entry>
   <entry>
@@ -9062,93 +9155,6 @@ deploy:
 </blockquote>
 <p>接続　普通形（ナ形<del>だ</del>な／である・名<del>だ</del>の／である）＋上（に）</p>
 <p>注意</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>範囲の始まりと終わり・その間</title>
-    <url>/new-blog/in%20the%20meantime.html</url>
-    <content><![CDATA[<h1 id="範囲の始まりと終わり・その間"><a href="#範囲の始まりと終わり・その間" class="headerlink" title="範囲の始まりと終わり・その間"></a>範囲の始まりと終わり・その間</h1><p>[復習]</p>
-<ul>
-<li>今日は夕方<u>から</u>夜<u>にかけて</u>小雨が降るそうだ。</li>
-<li>スポーツ大会は今日<u>で</u>終わります。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜をはじめ（として）"><a href="#〜をはじめ（として）" class="headerlink" title="〜をはじめ（として）"></a>〜をはじめ（として）</h2><p>意味　〜が代表例で、そのほうかにもいろいろある。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>日本には「桃太郎」<u>をはじめとして</u>、おじいさん、おばあさんが出てくる昔話が多い。<br>このあたりには、市役所<u>をはじめとする</u>市の公共建物が多い。</p>
-</blockquote>
-<p>接続<br>名＋をはじめ（として）<br>名＋をはじめとする＋名</p>
-<p>注意</p>
-<ol>
-<li>いろいろある中の代表的なものを取り上げる。後には、その代表的なものを含めた複数のものを表す言葉が来る。</li>
-</ol>
-<h2 id="〜からして"><a href="#〜からして" class="headerlink" title="〜からして"></a>〜からして</h2><p>意味　〜という例一つを取ってもそうなのだから、全体的にももちろんそうだ</p>
-<p>例文</p>
-<blockquote>
-<p>さすがプロの選手は走り方<u>からして</u>わたしたちとは違う。</p>
-</blockquote>
-<p>接続　名＋からして</p>
-<p>注意</p>
-<ol>
-<li>問題の本質や重要なポイントでないことを例として取り上げる。後には、マイナス評価の文が来ることが多い。</li>
-</ol>
-<p>　</p>
-<h2 id="〜にわたって"><a href="#〜にわたって" class="headerlink" title="〜にわたって"></a>〜にわたって</h2><p>意味　〜の範囲全体にその状態が広がっている。</p>
-<p>例文</p>
-<blockquote>
-<p>連休の最終日、高速道路は20キロ<u>にわたって</u>渋滞が続いた。</p>
-</blockquote>
-<p>接続<br>名＋にわたって<br>名＋にわたる＋名</p>
-<p>注意</p>
-<ol>
-<li>場所・時間・回数・範囲など、幅が大きいことを表す語につく。</li>
-</ol>
-<h2 id="〜を通じて・〜を通して"><a href="#〜を通じて・〜を通して" class="headerlink" title="〜を通じて・〜を通して"></a>〜を通じて・〜を通して</h2><p>意味A 〜の期間ずっと同じ状態だ。</p>
-<p>例文A</p>
-<blockquote>
-<p>この町には四季<u>を通じて</u>観光客が訪れる。<br>この10年間<u>を通し</u>、彼はいつも新しいことに挑戦していた。</p>
-</blockquote>
-<p>接続A　名＋を通じて・通して</p>
-<p>注意　</p>
-<ol>
-<li>比較的長い期間を表す語につく。後には、継続していることを表す分が来る。</li>
-</ol>
-<p>意味B 〜を手段にして、あることをする。</p>
-<p>例文B</p>
-<blockquote>
-<p>私たちは、ボランティア活動<u>を通して</u>いろいろな国の人たちと交流を深めている。</p>
-</blockquote>
-<p>接続B　名＋を通じて・通して</p>
-<h2 id="〜限り"><a href="#〜限り" class="headerlink" title="〜限り"></a>〜限り</h2><p>意味 〜の範囲は全部あることをする・ある状態だ。</p>
-<p>例文</p>
-<blockquote>
-<p>君が知っている<u>限り</u>のことを全部私に話してほしい。</p>
-</blockquote>
-<p>接続　名ーの・動辞書形／ている形＋限り</p>
-<p>注意</p>
-<ol>
-<li>動詞につく場合は、ている形や可能動詞につくことが多い。</li>
-</ol>
-<h2 id="〜だけ"><a href="#〜だけ" class="headerlink" title="〜だけ"></a>〜だけ</h2><p>意味 〜の範囲の限界まであることをする。</p>
-<p>例文</p>
-<blockquote>
-<p>ここにあるダンボールを、車に積める<u>だけ</u>積んで持って帰ってください。</p>
-</blockquote>
-<p>接続　動辞書形＋だけ</p>
-<p>注意</p>
-<ol>
-<li>可能動詞につくことが多い。</li>
-<li>瞬間的なことを表す動詞にはつかない。</li>
-</ol>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -10383,99 +10389,6 @@ deploy:
 <li>「〜に違いない」と違って、「だれが考えても〜だ」</li>
 </ol>
 <p>練習</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>主観を述べる</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>感想を言う・主張する</title>
-    <url>/new-blog/52a5daa4.html</url>
-    <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
-<ul>
-<li>これはいい作品だ<u>と思います</u></li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜ものだ"><a href="#〜ものだ" class="headerlink" title="〜ものだ"></a>〜ものだ</h2><p>意味　一般的に見て、本来〜だ・〜というのは真理だ。</p>
-<p>例文　</p>
-<ul>
-<li>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</li>
-</ul>
-<p>接続　動辞書形／ない形・イ形い・ナ形な＋ものだ</p>
-<p>注意　</p>
-<ol>
-<li>過去形では使わない。主語は個別のものではなく総称的なもの（人間・親・世の中）</li>
-</ol>
-<h2 id="〜というものだ"><a href="#〜というものだ" class="headerlink" title="〜というものだ"></a>〜というものだ</h2><p>意味　常識的に見て、まさに〜だ。</p>
-<p>例文</p>
-<ul>
-<li>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。</li>
-<li>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</li>
-</ul>
-<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というものだ</p>
-<p>注意</p>
-<ol>
-<li>ある状況について、「常識的に考えて〜だ」という評価を示す。話者の感情を表すには使わない。</li>
-</ol>
-<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>意味　ただ〜だけて、それ以上ではない。</p>
-<p>例文</p>
-<ul>
-<li>一社員<u>にすぎない</u>わたしに、会社の経営のことなど決められない。</li>
-<li>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></li>
-</ul>
-<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にすぎない</p>
-<p>注意</p>
-<ol>
-<li>話者が特別ではない・重要ではない・少ないと思っていることにつく。</li>
-</ol>
-<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>将来この国を支えるのは、若い君たち<u>にほかなりません</u></li>
-<li>人間も自然の一部<u>にほかならない</u>ということを忘れてはならない</li>
-</ul>
-<p>接続 名＋にほかならない</p>
-<p>注意</p>
-<ol>
-<li>話者の断定的な判断を表す言い方。</li>
-</ol>
-<h2 id="〜に越したことはない"><a href="#〜に越したことはない" class="headerlink" title="〜に越したことはない"></a>〜に越したことはない</h2><p>説明　it’s best to; it’s safest to; there’s nothing better than</p>
-<p>意味　当然のことだが〜ほうがいい。</p>
-<p>例文</p>
-<blockquote>
-<p>旅行の荷物は軽い<u>に越したことはない</u></p>
-</blockquote>
-<p>接続　普通形現在（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋に越したことはない</p>
-<p>注意　</p>
-<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>意味　〜以外に選択肢・可能性・方法がない</p>
-<p>例文</p>
-<ul>
-<li>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u></li>
-<li>会議で企画の中止が決まったなら、この決定を受け入れる<u>よりほかない</u>でしょう</li>
-<li>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></li>
-</ul>
-<p>接続　動辞書形＋しかない・よりほかない</p>
-<p>注意</p>
-<ol>
-<li>「ほかに選択の余地がないので、仕方なくこの選択肢を選ぶ」という話者の気持ちを表す。</li>
-</ol>
-<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
-<p>例文</p>
-<ul>
-<li>今日できることは明日に延ばさず今日する<u>べきだ</u></li>
-<li>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</li>
-</ul>
-<p>接続　<br>動辞書形＋べきだ・べきではない　<span style="color:red">する→するべき・すべき</span><br>動辞書形＋べき・べきではない＋名</p>
-<p>注意</p>
-<ol>
-<li>話者の主張を述べる。</li>
-<li>規則で決まっていることには使わない。</li>
-</ol>
 ]]></content>
       <categories>
         <category>N2</category>
@@ -12162,6 +12075,99 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>感想を言う・主張する</title>
+    <url>/new-blog/52a5daa4.html</url>
+    <content><![CDATA[<h1 id="感想を言う・主張する"><a href="#感想を言う・主張する" class="headerlink" title="感想を言う・主張する"></a>感想を言う・主張する</h1><p>[復習]</p>
+<ul>
+<li>これはいい作品だ<u>と思います</u></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜ものだ"><a href="#〜ものだ" class="headerlink" title="〜ものだ"></a>〜ものだ</h2><p>意味　一般的に見て、本来〜だ・〜というのは真理だ。</p>
+<p>例文　</p>
+<ul>
+<li>自分では気がつきにくいが、どんな人にもくせがある<u>ものだ</u>。</li>
+</ul>
+<p>接続　動辞書形／ない形・イ形い・ナ形な＋ものだ</p>
+<p>注意　</p>
+<ol>
+<li>過去形では使わない。主語は個別のものではなく総称的なもの（人間・親・世の中）</li>
+</ol>
+<h2 id="〜というものだ"><a href="#〜というものだ" class="headerlink" title="〜というものだ"></a>〜というものだ</h2><p>意味　常識的に見て、まさに〜だ。</p>
+<p>例文</p>
+<ul>
+<li>出版した本の評判がいいそうだ。苦労したかいがあった<u>というものだ</u>。</li>
+<li>他人の物を断りもなく使うなんて、あつかましい<u>というものだ</u>。</li>
+</ul>
+<p>接続　普通形（ナ形<del>だ</del>・名<del>だ</del>）＋というものだ</p>
+<p>注意</p>
+<ol>
+<li>ある状況について、「常識的に考えて〜だ」という評価を示す。話者の感情を表すには使わない。</li>
+</ol>
+<h2 id="〜にすぎない"><a href="#〜にすぎない" class="headerlink" title="〜にすぎない"></a>〜にすぎない</h2><p>意味　ただ〜だけて、それ以上ではない。</p>
+<p>例文</p>
+<ul>
+<li>一社員<u>にすぎない</u>わたしに、会社の経営のことなど決められない。</li>
+<li>お礼なんてとんでもない。わたしは当たり前のことをした<u>にすぎません</u></li>
+</ul>
+<p>接続　名・普通形（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋にすぎない</p>
+<p>注意</p>
+<ol>
+<li>話者が特別ではない・重要ではない・少ないと思っていることにつく。</li>
+</ol>
+<h2 id="〜にほかならない"><a href="#〜にほかならない" class="headerlink" title="〜にほかならない"></a>〜にほかならない</h2><p>意味　〜だ。それ以外ではない。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>将来この国を支えるのは、若い君たち<u>にほかなりません</u></li>
+<li>人間も自然の一部<u>にほかならない</u>ということを忘れてはならない</li>
+</ul>
+<p>接続 名＋にほかならない</p>
+<p>注意</p>
+<ol>
+<li>話者の断定的な判断を表す言い方。</li>
+</ol>
+<h2 id="〜に越したことはない"><a href="#〜に越したことはない" class="headerlink" title="〜に越したことはない"></a>〜に越したことはない</h2><p>説明　it’s best to; it’s safest to; there’s nothing better than</p>
+<p>意味　当然のことだが〜ほうがいい。</p>
+<p>例文</p>
+<blockquote>
+<p>旅行の荷物は軽い<u>に越したことはない</u></p>
+</blockquote>
+<p>接続　普通形現在（ナ形<del>だ</del>-である・名<del>だ</del>-である）＋に越したことはない</p>
+<p>注意　</p>
+<h2 id="〜しかない・〜よりほかない"><a href="#〜しかない・〜よりほかない" class="headerlink" title="〜しかない・〜よりほかない"></a>〜しかない・〜よりほかない</h2><p>意味　〜以外に選択肢・可能性・方法がない</p>
+<p>例文</p>
+<ul>
+<li>この道は一方通行だから、戻りたくてもまっすぐ行く<u>しかない</u></li>
+<li>会議で企画の中止が決まったなら、この決定を受け入れる<u>よりほかない</u>でしょう</li>
+<li>ずっと欲しかったかばんがセールで半額になっている。これは買う<u>しかない</u></li>
+</ul>
+<p>接続　動辞書形＋しかない・よりほかない</p>
+<p>注意</p>
+<ol>
+<li>「ほかに選択の余地がないので、仕方なくこの選択肢を選ぶ」という話者の気持ちを表す。</li>
+</ol>
+<h2 id="〜べきだ／〜べきではない"><a href="#〜べきだ／〜べきではない" class="headerlink" title="〜べきだ／〜べきではない"></a>〜べきだ／〜べきではない</h2><p>意味　〜するのが当然だ・〜しなければならない・〜したほうがいい／〜してはいけない</p>
+<p>例文</p>
+<ul>
+<li>今日できることは明日に延ばさず今日する<u>べきだ</u></li>
+<li>すべての国民の幸せを目指すのが、政治の本来ある<u>べき</u>姿である。</li>
+</ul>
+<p>接続　<br>動辞書形＋べきだ・べきではない　<span style="color:red">する→するべき・すべき</span><br>動辞書形＋べき・べきではない＋名</p>
+<p>注意</p>
+<ol>
+<li>話者の主張を述べる。</li>
+<li>規則で決まっていることには使わない。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>主観を述べる</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>条件を表す文</title>
     <url>/new-blog/ff8369b4.html</url>
     <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
@@ -12179,50 +12185,6 @@ deploy:
       <tags>
         <tag>N2</tag>
         <tag>GrammaticalForm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>とき</title>
-    <url>/new-blog/7971245b.html</url>
-    <content><![CDATA[<h1 id="〜とき"><a href="#〜とき" class="headerlink" title="〜とき"></a>〜とき</h1><span id="more"></span>
-
-<h2 id="～うちに…"><a href="#～うちに…" class="headerlink" title="～うちに…"></a>～うちに…</h2><p>例文A</p>
-<blockquote>
-<p>明るい<u>うちに</u>庭の掃除をしてしまおう<br>日本にいる<u>うちに</u>一度富士山に登ってみたい</p>
-</blockquote>
-<p>説明A　「〜の状態が変わる前に、…する。」</p>
-<p>接続A　名詞の・動詞辞書形／ている形／ない形・イ形い・ナ形な＋うちに</p>
-<p>例文B</p>
-<blockquote>
-<p>音楽を聞いている<u>うちに</u>眠ってしまった</p>
-</blockquote>
-<p>説明B　「〜の状態が続いているときに、…に変わる」</p>
-<p>接続B　動詞辞書形／ている形／ない形＋うちに</p>
-<h2 id="〜間…・〜間…に"><a href="#〜間…・〜間…に" class="headerlink" title="〜間…・〜間…に"></a>〜間…・〜間…に</h2><p>例文　</p>
-<blockquote>
-<p>山田先生の講演の<u>間</u>、皆熱心に話を聞いていた<br>赤ちゃんが寝ている<u>間に</u>、洗濯をしました</p>
-</blockquote>
-<p>説明　<br>「〜間…」：表示”在状态～持续期间一直做…，或一直保持…“。～表示某种持续的状态，…也表示某种持续的状态。<br>「〜間に…」：表示”在状态～持续期间做…，或发生…“。…表示某个瞬间动作或变化</p>
-<p>接続　名词の・动词辞書&#x2F;ている&#x2F;ない＋間・間に</p>
-<p>注意　<br>    「間」表示在某一段时间里，某种动作或状态一直在持续着，谓语动词是持续动词。<br>    「間に」表示持续在某一点或一段时间里，发生了某个动作，谓语是瞬间性动词。</p>
-<h2 id="〜てからでないと…・～てからでなければ…"><a href="#〜てからでないと…・～てからでなければ…" class="headerlink" title="〜てからでないと…・～てからでなければ…"></a>〜てからでないと…・～てからでなければ…</h2><p>例文</p>
-<blockquote>
-<p>運転免許を取っ<u>てからでなければ</u>車を運転してはいけない</p>
-</blockquote>
-<p>説明　”如果不先（做）～就“。…带有消极或负面色彩。</p>
-<p>接続　動て＋からでないと・からでなければ</p>
-<h2 id="～ところだ・〜ところ（＋助詞）"><a href="#～ところだ・〜ところ（＋助詞）" class="headerlink" title="～ところだ・〜ところ（＋助詞）"></a>～ところだ・〜ところ（＋助詞）</h2><p>例文</p>
-<blockquote>
-<p>ロケットは間もなく飛び立つ<u>ところです</u>。緊張の瞬間です。<br>試験中、となりの人の答えを見ている<u>ところを</u>先生に注意された</p>
-</blockquote>
-<p>説明　表示“在～即将发生的时候·～正在进行中·～刚刚发生或完成”。用于句中时，根据句末所使用的动词，后面可能使用不同的助词</p>
-<p>接続　动词辞書／ている／た＋ところだ・ところ（）</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
       </tags>
   </entry>
   <entry>
@@ -13791,6 +13753,50 @@ deploy:
         <td>〜みたいだ</td>
     </tr>
 </table>]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>とき</title>
+    <url>/new-blog/7971245b.html</url>
+    <content><![CDATA[<h1 id="〜とき"><a href="#〜とき" class="headerlink" title="〜とき"></a>〜とき</h1><span id="more"></span>
+
+<h2 id="～うちに…"><a href="#～うちに…" class="headerlink" title="～うちに…"></a>～うちに…</h2><p>例文A</p>
+<blockquote>
+<p>明るい<u>うちに</u>庭の掃除をしてしまおう<br>日本にいる<u>うちに</u>一度富士山に登ってみたい</p>
+</blockquote>
+<p>説明A　「〜の状態が変わる前に、…する。」</p>
+<p>接続A　名詞の・動詞辞書形／ている形／ない形・イ形い・ナ形な＋うちに</p>
+<p>例文B</p>
+<blockquote>
+<p>音楽を聞いている<u>うちに</u>眠ってしまった</p>
+</blockquote>
+<p>説明B　「〜の状態が続いているときに、…に変わる」</p>
+<p>接続B　動詞辞書形／ている形／ない形＋うちに</p>
+<h2 id="〜間…・〜間…に"><a href="#〜間…・〜間…に" class="headerlink" title="〜間…・〜間…に"></a>〜間…・〜間…に</h2><p>例文　</p>
+<blockquote>
+<p>山田先生の講演の<u>間</u>、皆熱心に話を聞いていた<br>赤ちゃんが寝ている<u>間に</u>、洗濯をしました</p>
+</blockquote>
+<p>説明　<br>「〜間…」：表示”在状态～持续期间一直做…，或一直保持…“。～表示某种持续的状态，…也表示某种持续的状态。<br>「〜間に…」：表示”在状态～持续期间做…，或发生…“。…表示某个瞬间动作或变化</p>
+<p>接続　名词の・动词辞書&#x2F;ている&#x2F;ない＋間・間に</p>
+<p>注意　<br>    「間」表示在某一段时间里，某种动作或状态一直在持续着，谓语动词是持续动词。<br>    「間に」表示持续在某一点或一段时间里，发生了某个动作，谓语是瞬间性动词。</p>
+<h2 id="〜てからでないと…・～てからでなければ…"><a href="#〜てからでないと…・～てからでなければ…" class="headerlink" title="〜てからでないと…・～てからでなければ…"></a>〜てからでないと…・～てからでなければ…</h2><p>例文</p>
+<blockquote>
+<p>運転免許を取っ<u>てからでなければ</u>車を運転してはいけない</p>
+</blockquote>
+<p>説明　”如果不先（做）～就“。…带有消极或负面色彩。</p>
+<p>接続　動て＋からでないと・からでなければ</p>
+<h2 id="～ところだ・〜ところ（＋助詞）"><a href="#～ところだ・〜ところ（＋助詞）" class="headerlink" title="～ところだ・〜ところ（＋助詞）"></a>～ところだ・〜ところ（＋助詞）</h2><p>例文</p>
+<blockquote>
+<p>ロケットは間もなく飛び立つ<u>ところです</u>。緊張の瞬間です。<br>試験中、となりの人の答えを見ている<u>ところを</u>先生に注意された</p>
+</blockquote>
+<p>説明　表示“在～即将发生的时候·～正在进行中·～刚刚发生或完成”。用于句中时，根据句末所使用的动词，后面可能使用不同的助词</p>
+<p>接続　动词辞書／ている／た＋ところだ・ところ（）</p>
+]]></content>
       <categories>
         <category>N3</category>
       </categories>
