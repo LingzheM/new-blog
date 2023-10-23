@@ -344,26 +344,6 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
-    <title>chapter04</title>
-    <url>/new-blog/f276717.html</url>
-    <content><![CDATA[<h1 id="Compressing-File-Commands"><a href="#Compressing-File-Commands" class="headerlink" title="Compressing File Commands"></a>Compressing File Commands</h1><ul>
-<li>gzip</li>
-<li>bzip2</li>
-<li>xz</li>
-<li>zip</li>
-</ul>
-<h1 id="Archiving-File-Commands"><a href="#Archiving-File-Commands" class="headerlink" title="Archiving File Commands"></a>Archiving File Commands</h1><ul>
-<li>cpio</li>
-<li>dd</li>
-<li>tar</li>
-</ul>
-<p>tarball </p>
-<h1 id="Managing-Links"><a href="#Managing-Links" class="headerlink" title="Managing Links"></a>Managing Links</h1><h2 id="symbolic-link-soft-link"><a href="#symbolic-link-soft-link" class="headerlink" title="symbolic link (soft link)"></a>symbolic link (soft link)</h2><h2 id="hard-link"><a href="#hard-link" class="headerlink" title="hard link"></a>hard link</h2><p>A hard link is a file or directory that has one index (inode) number but at least two different filenames.</p>
-<p>To create a hard link, use the ln command. For hard links, the original file must exist prior to issuing the ln command.</p>
-<h3 id="Constructing-a-Soft-Link"><a href="#Constructing-a-Soft-Link" class="headerlink" title="Constructing a Soft Link"></a>Constructing a Soft Link</h3><p>a soft link fi le provides a pointer to a fi le that may reside on another fi lesystem.<br>The two fi les do not share inode numbers because they do not point to the same data.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>let和const命令</title>
     <url>/new-blog/ced66c.html</url>
     <content><![CDATA[<h1 id="let和const命令"><a href="#let和const命令" class="headerlink" title="let和const命令"></a>let和const命令</h1><span id="more"></span>
@@ -490,6 +470,26 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>chapter04</title>
+    <url>/new-blog/f276717.html</url>
+    <content><![CDATA[<h1 id="Compressing-File-Commands"><a href="#Compressing-File-Commands" class="headerlink" title="Compressing File Commands"></a>Compressing File Commands</h1><ul>
+<li>gzip</li>
+<li>bzip2</li>
+<li>xz</li>
+<li>zip</li>
+</ul>
+<h1 id="Archiving-File-Commands"><a href="#Archiving-File-Commands" class="headerlink" title="Archiving File Commands"></a>Archiving File Commands</h1><ul>
+<li>cpio</li>
+<li>dd</li>
+<li>tar</li>
+</ul>
+<p>tarball </p>
+<h1 id="Managing-Links"><a href="#Managing-Links" class="headerlink" title="Managing Links"></a>Managing Links</h1><h2 id="symbolic-link-soft-link"><a href="#symbolic-link-soft-link" class="headerlink" title="symbolic link (soft link)"></a>symbolic link (soft link)</h2><h2 id="hard-link"><a href="#hard-link" class="headerlink" title="hard link"></a>hard link</h2><p>A hard link is a file or directory that has one index (inode) number but at least two different filenames.</p>
+<p>To create a hard link, use the ln command. For hard links, the original file must exist prior to issuing the ln command.</p>
+<h3 id="Constructing-a-Soft-Link"><a href="#Constructing-a-Soft-Link" class="headerlink" title="Constructing a Soft Link"></a>Constructing a Soft Link</h3><p>a soft link fi le provides a pointer to a fi le that may reside on another fi lesystem.<br>The two fi les do not share inode numbers because they do not point to the same data.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>arrow function</title>
     <url>/new-blog/499d2460.html</url>
     <content><![CDATA[<h1 id="arrow-function"><a href="#arrow-function" class="headerlink" title="arrow function"></a>arrow function</h1><span id="more"></span>
@@ -521,17 +521,17 @@ funcs[0](); // 0
 <h3 id="没有arguments"><a href="#没有arguments" class="headerlink" title="没有arguments"></a>没有arguments</h3><h3 id="不能通过new关键字调用"><a href="#不能通过new关键字调用" class="headerlink" title="不能通过new关键字调用"></a>不能通过new关键字调用</h3><h3 id="没有new-target"><a href="#没有new-target" class="headerlink" title="没有new.target"></a>没有new.target</h3><h3 id="没有原型"><a href="#没有原型" class="headerlink" title="没有原型"></a>没有原型</h3><h3 id="没有super"><a href="#没有super" class="headerlink" title="没有super"></a>没有super</h3>]]></content>
   </entry>
   <entry>
-    <title>es6page03</title>
-    <url>/new-blog/3e9a14f6.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>日本語における品詞</title>
     <url>/new-blog/72a80842.html</url>
     <content><![CDATA[<h1 id="助詞"><a href="#助詞" class="headerlink" title="助詞"></a>助詞</h1><span id="more"></span>
 
 <p>助詞は活用がなく、単独では使われず、名詞や動詞などに付いて、さまざまな働きをする。その働きによって、との文法関係を示す<b>格助詞</b>、文の成分に特別な意味を加える<b>取り立て助詞</b>、対等な関係で語を結び<u>列</u></p>
 <h2 id="格助詞"><a href="#格助詞" class="headerlink" title="格助詞"></a>格助詞</h2>]]></content>
+  </entry>
+  <entry>
+    <title>es6page03</title>
+    <url>/new-blog/3e9a14f6.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>第一週 みる①</title>
@@ -7751,1426 +7751,6 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
-    <title>第六週 みる②</title>
-    <url>/new-blog/309add1a.html</url>
-    <content><![CDATA[<h1 id="第六週-みる②"><a href="#第六週-みる②" class="headerlink" title="第六週 みる②"></a>第六週 みる②</h1><span id="more"></span>
-
-<h2 id="1日目-広告・チラシ"><a href="#1日目-広告・チラシ" class="headerlink" title="1日目　広告・チラシ"></a>1日目　広告・チラシ</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>得</td>
-        <td>
-            トク<br>
-            うーる<br>
-            えーる
-        </td>
-        <td>
-            <ruby>納得<rp>(</rp><rt>なっとく</rt><rp>)</rp></ruby><br>
-            <ruby>得<rp>(</rp><rt>う／え</rt><rp>)</rp>る</ruby><br>
-            <ruby>心得る<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            assent, understanding<br>
-            obtain<br>
-            understand, be well aware
-        </td>
-    </tr>
-    <tr>
-        <td>告</td>
-        <td>
-            コウ<br>
-            つーげる
-        </td>
-        <td>
-            <ruby>広告<rp>(</rp><rt>こうこく</rt><rp>)</rp></ruby><br>
-            <ruby>報告<rp>(</rp><rt>ほうこく</rt><rp>)</rp></ruby><br>
-            <ruby>警告<rp>(</rp><rt>けいこく</rt><rp>)</rp></ruby><br>
-            <ruby>告<rp>(</rp><rt>つ</rt><rp>)</rp>げる</ruby>
-        </td>
-        <td>
-            an advertisement<br>
-            a report<br>
-            warning, caution<br>
-            inform
-        </td>
-    </tr>
-    <tr>
-        <td>税</td>
-        <td>
-            ゼイ
-        </td>
-        <td>
-            <ruby>税金<rp>(</rp><rt>ぜいきん</rt><rp>)</rp></ruby><br>
-            <ruby>税関<rp>(</rp><rt>ぜいかん</rt><rp>)</rp></ruby><br>
-            <ruby>課税<rp>(</rp><rt>かぜい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a tax<br>
-            Customs<br>
-            taxation
-        </td>
-    </tr>
-    <tr>
-        <td>価</td>
-        <td>
-            カ
-        </td>
-        <td>
-            <ruby>定価<rp>(</rp><rt>ていか</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a fixed price
-        </td>
-    </tr>
-   <tr>
-        <td>格</td>
-        <td>
-            カク
-        </td>
-        <td>
-            <ruby>価格<rp>(</rp><rt>かかく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a price
-        </td>
-    </tr>
-    <tr>
-        <td>超</td>
-        <td>
-            チョウ<br>
-            こーえる<br>
-            こーす
-        </td>
-        <td>
-            <ruby>超過<rp>(</rp><rt>ちょうか</rt><rp>)</rp></ruby><br>
-            <ruby>超<rp>(</rp><rt>こ</rt><rp>)</rp>える</ruby><br>
-            <ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp>す</ruby>
-        </td>
-        <td>
-            excess, surplus<br>
-            get over, go over<br>
-            cross, pass, exceed
-        </td>
-    </tr>
-    <tr>
-        <td>均</td>
-        <td>
-            キン
-        </td>
-        <td>
-            <ruby>平均<rp>(</rp><rt>へいきん</rt><rp>)</rp></ruby><br>
-            <ruby>均一<rp>(</rp><rt>きんいつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            average<br>
-            uniformity, equality
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>靴</td>
-        <td>
-            くつ
-        </td>
-        <td>
-            <ruby>靴<rp>(</rp><rt>くつ</rt><rp>)</rp></ruby><br>
-            <ruby>靴下<rp>(</rp><rt>くつした</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            shoes<br>
-            socks
-        </td>
-    </tr>
-    <tr>
-        <td>供</td>
-        <td>
-            キョウ<br>
-            とも
-        </td>
-        <td>
-            <ruby>提供<rp>(</rp><rt>ていきょう</rt><rp>)</rp></ruby><br>
-            <ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            offer, tender<br>
-            a child
-        </td>
-    </tr>
-    <tr>
-        <td>象</td>
-        <td>
-            ショウ<br>
-            ゾウ
-        </td>
-        <td>
-            <ruby>印象<rp>(</rp><rt>いんしょう</rt><rp>)</rp></ruby><br>
-            <ruby>現象<rp>(</rp><rt>げんしょう</rt><rp>)</rp></ruby><br>
-            <ruby>象<rp>(</rp><rt>ぞう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an impression<br>
-            a phenomenon<br>
-            an elephant
-        </td>
-    </tr>
-    <tr>
-        <td>組</td>
-        <td>
-            ソ<br>
-            くーむ<br>
-            くーみ
-        </td>
-        <td>
-            <ruby>組織<rp>(</rp><rt>そしき</rt><rp>)</rp></ruby><br>
-            <ruby>番組<rp>(</rp><rt>ばんぐみ</rt><rp>)</rp></ruby><br>
-            <ruby>組み合わせ<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
-            <ruby>組合<rp>(</rp><rt>くみあい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an organization<br>
-            a (TV) program<br>
-            combination<br>
-            an association
-        </td>
-    </tr>
-   <tr>
-        <td>値</td>
-        <td>
-            チ<br>
-            ね<br>
-            あたい
-        </td>
-        <td>
-            <ruby>価値<rp>(</rp><rt>かち</rt><rp>)</rp></ruby><br>
-            <ruby>数値<rp>(</rp><rt>すうち</rt><rp>)</rp></ruby><br>
-            <ruby>値段<rp>(</rp><rt>ねだん</rt><rp>)</rp></ruby><br>
-            <ruby>値<rp>(</rp><rt>あたい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            value<brr>
-            an numerical value<br>
-            a price<br>
-            value
-        </td>
-    </tr>
-    <tr>
-        <td>募</td>
-        <td>
-            ボ<br>
-            つのーる
-        </td>
-        <td>
-            <ruby>募集<rp>(</rp><rt>ぼしゅう</rt><rp>)</rp></ruby><br>
-            <ruby>応募<rp>(</rp><rt>おうぼ</rt><rp>)</rp></ruby><br>
-            <ruby>募<rp>(</rp><rt>つの</rt><rp>)</rp>る</ruby>
-        </td>
-        <td>
-            recruitment<br>
-            an application<br>
-            collect / raise(money)
-        </td>
-    </tr>
-    <tr>
-        <td>無</td>
-        <td>
-            ム<br>
-            ブ<br>
-            なーい
-        </td>
-        <td>
-            <ruby>無料<rp>(</rp><rt>むりょう</rt><rp>)</rp></ruby><br>
-            <ruby>無事<rp>(</rp><rt>ぶじ</rt><rp>)</rp></ruby><br>
-            <ruby>無<rp>(</rp><rt>な</rt><rp>)</rp>し</ruby>
-        </td>
-        <td>
-            free of charge<br>
-            unharmed, safe<br>
-            without
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="2日目-折り込み広告"><a href="#2日目-折り込み広告" class="headerlink" title="2日目　折り込み広告"></a>2日目　折り込み広告</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>詰</td>
-        <td>
-            つーめる<br>
-            つーまる
-        </td>
-        <td>
-            <ruby>詰<rp>(</rp><rt>つ</rt><rp>)</rp>める</ruby><br>
-            <ruby>缶詰<rp>(</rp><rt>かんづめ</rt><rp>)</rp></ruby><br>
-            <ruby>箱詰め<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            stuff / cram / package<br>
-            food etc. in a can<br>
-            food etc. in a box
-        </td>
-    </tr>
-    <tr>
-        <td>麦</td>
-        <td>
-            むぎ
-        </td>
-        <td>
-            <ruby>麦畑<rp>(</rp><rt>むぎはたけ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a wheat field
-        </td>
-    </tr>
-    <tr>
-        <td>純</td>
-        <td>
-            ジュン
-        </td>
-        <td>
-            <ruby>純粋<rp>(</rp><rt>じゅんすい</rt><rp>)</rp></ruby><br>
-            <ruby>純情<rp>(</rp><rt>じゅんじょう</rt><rp>)</rp>（な）</ruby><br>
-            <ruby>単純<rp>(</rp><rt>たんじゅん</rt><rp>)</rp>（な）</ruby>
-        </td>
-        <td>
-            pure<br>
-            a pure heart<br>
-            simple (minded)
-        </td>
-    </tr>
-    <tr>
-        <td>草</td>
-        <td>
-            ソウ<br>
-            くさ
-        </td>
-        <td>
-            <ruby>雑草<rp>(</rp><rt>ざっそう</rt><rp>)</rp></ruby><br>
-            <ruby>除草<rp>(</rp><rt>じょそう</rt><rp>)</rp></ruby><br>
-            <ruby>草花<rp>(</rp><rt>くさばな</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            weed<br>
-            weeding<br>
-            a flower
-        </td>
-    </tr>
-   <tr>
-        <td>塩</td>
-        <td>
-            エン<br>
-            しお
-        </td>
-        <td>
-            <ruby>食塩<rp>(</rp><rt>しょくえん</rt><rp>)</rp></ruby><br>
-            <ruby>塩<rp>(</rp><rt>しお</rt><rp>)</rp></ruby><br>
-        </td>
-        <td>
-            table salt<br>
-            salt
-        </td>
-    </tr>
-    <tr>
-        <td>固</td>
-        <td>
-            コ<br>
-            かたーい<br>
-            かたーまる
-        </td>
-        <td>
-            <ruby>固定<rp>(</rp><rt>こてい</rt><rp>)</rp></ruby><br>
-            <ruby>固形<rp>(</rp><rt>こけい</rt><rp>)</rp></ruby><br>
-            <ruby>固<rp>(</rp><rt>かた</rt><rp>)</rp>い</ruby>
-        </td>
-        <td>
-            stability, fixation<br>
-            solid<br>
-            hard
-        </td>
-    </tr>
-    <tr>
-        <td>演</td>
-        <td>
-            エン
-        </td>
-        <td>
-            <ruby>実演<rp>(</rp><rt>じつえん</rt><rp>)</rp></ruby><br>
-            <ruby>演習<rp>(</rp><rt>えんしゅう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a demonstration<br>
-            exercises
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>菓</td>
-        <td>
-            カ
-        </td>
-        <td>
-            <ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            sweets
-        </td>
-    </tr>
-    <tr>
-        <td>贈</td>
-        <td>
-            おくーる
-        </td>
-        <td>
-            <ruby>贈<rp>(</rp><rt>おく</rt><rp>)</rp>る</ruby>
-        </td>
-        <td>
-            present,give
-        </td>
-    </tr>
-    <tr>
-        <td>省</td>
-        <td>
-            セイ<br>
-            ショウ<br>
-            はぶーく
-        </td>
-        <td>
-            <ruby>帰省<rp>(</rp><rt>きせい</rt><rp>)</rp></ruby><br>
-            <ruby>反省<rp>(</rp><rt>はんせい</rt><rp>)</rp></ruby><br>
-            <ruby>省略<rp>(</rp><rt>しょうりゃく</rt><rp>)</rp></ruby><br>
-            <ruby>省<rp>(</rp><rt>はぶ</rt><rp>)</rp>く</ruby><br>
-        </td>
-        <td>
-            homecoming<br>
-            self-examnination<br>
-            an abbreviation, omission<br>
-            delete / omit
-        </td>
-    </tr>
-    <tr>
-        <td>承</td>
-        <td>
-            ショウ<br>
-            うけたまわーる
-        </td>
-        <td>
-            <ruby>了承<rp>(</rp><rt>りょうしょう</rt><rp>)</rp></ruby><br>
-            <ruby>承認<rp>(</rp><rt>しょうにん</rt><rp>)</rp></ruby><br>
-            <ruby>承<rp>(</rp><rt>うけたまわ</rt><rp>)</rp>る</ruby>
-        </td>
-        <td>
-            consent, approval<br>
-            approval, confirmation<br>
-            receive,listen
-        </td>
-    </tr>
-   <tr>
-        <td>展</td>
-        <td>
-            テン
-        </td>
-        <td>
-            <ruby>展示<rp>(</rp><rt>てんじ</rt><rp>)</rp></ruby><br>
-            <ruby>発展<rp>(</rp><rt>はってん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an exhibition<brr>
-            development
-        </td>
-    </tr>
-    <tr>
-        <td>破</td>
-        <td>
-            ハ<br>
-            やぶーれる<br>
-            やぶーる
-        </td>
-        <td>
-            <ruby>破片<rp>(</rp><rt>はへん</rt><rp>)</rp></ruby><br>
-            <ruby>破格<rp>(</rp><rt>はかく</rt><rp>)</rp></ruby><br>
-            <ruby>破<rp>(</rp><rt>やぶ</rt><rp>)</rp>れる</ruby><br>
-            <ruby>破<rp>(</rp><rt>やぶ</rt><rp>)</rp>る</ruby>
-        </td>
-        <td>
-            a fragment<br>
-            exceptional<br>
-            break,rip<br>
-            break/rip/violate(something)
-        </td>
-    </tr>
-    <tr>
-        <td>処</td>
-        <td>
-            ショ
-        </td>
-        <td>
-            <ruby>処理<rp>(</rp><rt>しょり</rt><rp>)</rp></ruby><br>
-            <ruby>処分<rp>(</rp><rt>しょぶん</rt><rp>)</rp></ruby><br>
-            <ruby>処置<rp>(</rp><rt>しょち</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            disposal<br>
-            disposal<br>
-            management
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="3日目-広告"><a href="#3日目-広告" class="headerlink" title="3日目　広告"></a>3日目　広告</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>泉</td>
-        <td>
-            セン<br>
-            いずみ
-        </td>
-        <td>
-            <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby><br>
-            <ruby>泉<rp>(</rp><rt>いずみ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a hot spring<br>
-            a spring
-        </td>
-    </tr>
-    <tr>
-        <td>宿</td>
-        <td>
-            シュク<br>
-            やど
-        </td>
-        <td>
-            <ruby>下宿<rp>(</rp><rt>げしゅく</rt><rp>)</rp></ruby><br>
-            <ruby>宿<rp>(</rp><rt>やど</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            lodgings<br>
-            an inn
-        </td>
-    </tr>
-    <tr>
-        <td>季</td>
-        <td>
-            キ
-        </td>
-        <td>
-            <ruby>季節<rp>(</rp><rt>きせつ</rt><rp>)</rp></ruby><br>
-            <ruby>四季<rp>(</rp><rt>しき</rt><rp>)</rp></ruby><br>
-            <ruby>冬季<rp>(</rp><rt>とうき</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a season<br>
-            four seasons<br>
-            winter
-        </td>
-    </tr>
-    <tr>
-        <td>豊</td>
-        <td>
-            ホウ<br>
-            ゆたーか
-        </td>
-        <td>
-            <ruby>豊作<rp>(</rp><rt>ほうさく</rt><rp>)</rp></ruby><br>
-            <ruby>豊<rp>(</rp><rt>ゆた</rt><rp>)</rp>か（な）</ruby>
-        </td>
-        <td>
-            a bumper crop<br>
-            abundant
-        </td>
-    </tr>
-   <tr>
-        <td>富</td>
-        <td>
-            フ<br>
-            とーむ<br>
-            とみ
-        </td>
-        <td>
-            <ruby>豊富<rp>(</rp><rt>ほうふ</rt><rp>)</rp></ruby><br>
-            <ruby>富<rp>(</rp><rt>とみ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            abundance<br>
-            wealth
-        </td>
-    </tr>
-    <tr>
-        <td>迎</td>
-        <td>
-            ゲイ<br>
-            むかーえる
-        </td>
-        <td>
-            <ruby>送迎<rp>(</rp><rt>そうげい</rt><rp>)</rp></ruby><br>
-            <ruby>歓迎<rp>(</rp><rt>かんげい</rt><rp>)</rp></ruby><br>
-            <ruby>迎<rp>(</rp><rt>むか</rt><rp>)</rp>える</ruby>
-        </td>
-        <td>
-            a pick up service<br>
-            welcome<br>
-            meet, welcome
-        </td>
-    </tr>
-    <tr>
-        <td>泊</td>
-        <td>
-            ハク<br>
-            とーまる<br>
-            とーめる
-        </td>
-        <td>
-            <ruby>宿泊<rp>(</rp><rt>しゅくはく</rt><rp>)</rp></ruby><br>
-            <ruby>泊<rp>(</rp><rt>と</rt><rp>)</rp>まる</ruby>
-        </td>
-        <td>
-            lodging<br>
-            stay
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>居</td>
-        <td>
-            キョ<br>
-            いーる
-        </td>
-        <td>
-            <ruby>入居<rp>(</rp><rt>にゅうきょ</rt><rp>)</rp></ruby><br>
-            <ruby>居間<rp>(</rp><rt>いま</rt><rp>)</rp></ruby><br>
-            <ruby>居眠り<rp>(</rp><rt></rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            moving into<br>
-            a living room<br>
-            doze
-        </td>
-    </tr>
-    <tr>
-        <td>築</td>
-        <td>
-            チク
-        </td>
-        <td>
-            <ruby>建築<rp>(</rp><rt>けんちく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            architecture
-        </td>
-    </tr>
-    <tr>
-        <td>角</td>
-        <td>
-            カク<br>
-            かど
-        </td>
-        <td>
-            <ruby>三角<rp>(</rp><rt>さんかく</rt><rp>)</rp></ruby><br>
-            <ruby>角度<rp>(</rp><rt>かくど</rt><rp>)</rp></ruby><br>
-            <ruby>方角<rp>(</rp><rt>ほうがく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a triangle<br>
-            an angle<br>
-            direction, way
-        </td>
-    </tr>
-    <tr>
-        <td>徒</td>
-        <td>
-            ト
-        </td>
-        <td>
-            <ruby>生徒<rp>(</rp><rt>せいと</rt><rp>)</rp></ruby><br>
-            <ruby>徒歩<rp>(</rp><rt>とほ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a student<br>
-            on foot
-        </td>
-    </tr>
-   <tr>
-        <td>畳</td>
-        <td>
-            ジョウ<br>
-            たたーむ<br>
-            たたみ
-        </td>
-        <td>
-            <ruby>畳<rp>(</rp><rt>たたみ</rt><rp>)</rp></ruby><br>
-            <ruby>畳<rp>(</rp><rt>たた</rt><rp>)</rp>む</ruby><br>
-            〜<ruby>畳<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            tatami<br>
-            fold<br>
-            ...mats
-        </td>
-    </tr>
-    <tr>
-        <td>米</td>
-        <td>
-            ベイ<br>
-            マイ<br>
-            こめ
-        </td>
-        <td>
-            <ruby>欧米<rp>(</rp><rt>おうべい</rt><rp>)</rp></ruby><br>
-            <ruby>新米<rp>(</rp><rt>しんまい</rt><rp>)</rp></ruby><br>
-            <ruby>米<rp>(</rp><rt>こめ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            europe and america, the West<br>
-            square meters<br>
-            new face<br>
-            rice
-        </td>
-    </tr>
-    <tr>
-        <td>解</td>
-        <td>
-            カイ<br>
-            とーく
-        </td>
-        <td>
-            <ruby>解説<rp>(</rp><rt>かいせつ</rt><rp>)</rp></ruby><br>
-            <ruby>解放<rp>(</rp><rt>かいほう</rt><rp>)</rp></ruby><br>
-            <ruby>解決<rp>(</rp><rt>かいけつ</rt><rp>)</rp></ruby><br>
-            <ruby>解約<rp>(</rp><rt>かいやく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an explanation<br>
-            a solution<br>
-            a release<br>
-            a cencellation
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="4日目-地図"><a href="#4日目-地図" class="headerlink" title="4日目　地図"></a>4日目　地図</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>辺</td>
-        <td>
-            ヘン<br>
-            あたーり<br>
-            べ
-        </td>
-        <td>
-            この<ruby>辺<rp>(</rp><rt>へん</rt><rp>)</rp></ruby><br>
-            <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby><br>
-            <ruby>辺<rp>(</rp><rt>あた</rt><rp>)</rp>り</ruby><br>
-            <ruby>海辺<rp>(</rp><rt>うみべ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            around here<br>
-            vicnity<br>
-            around<br>
-            a beach
-        </td>
-    </tr>
-    <tr>
-        <td>察</td>
-        <td>
-            サツ
-        </td>
-        <td>
-            <ruby>診察<rp>(</rp><rt>しんさつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an (medical) consultations
-        </td>
-    </tr>
-    <tr>
-        <td>役</td>
-        <td>
-            ヤク<br>
-            エキ
-        </td>
-        <td>
-            <ruby>役目<rp>(</rp><rt>やくめ</rt><rp>)</rp></ruby><br>
-            <ruby>役者<rp>(</rp><rt>やくしゃ</rt><rp>)</rp></ruby><br>
-            <ruby>現役<rp>(</rp><rt>げんえき</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a role, duty<br>
-            an actor<br>
-            active
-        </td>
-    </tr>
-    <tr>
-        <td>美</td>
-        <td>
-            ビ<br>
-            うつくーしい
-        </td>
-        <td>
-            <ruby>美人<rp>(</rp><rt>びじん</rt><rp>)</rp></ruby><br>
-            <ruby>美<rp>(</rp><rt>うつく</rt><rp>)</rp>しい</ruby>
-        </td>
-        <td>
-            a beautiful woman<br>
-            beautiful
-        </td>
-    </tr>
-   <tr>
-        <td>術</td>
-        <td>
-            ジュツ
-        </td>
-        <td>
-            <ruby>美術<rp>(</rp><rt>びじゅつ</rt><rp>)</rp></ruby><br>
-            <ruby>技術<rp>(</rp><rt>ぎじゅつ</rt><rp>)</rp></ruby><br>
-            <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            art<br>
-            techique, technology<br>
-            surgery
-        </td>
-    </tr>
-    <tr>
-        <td>坂</td>
-        <td>
-            さか
-        </td>
-        <td>
-            <ruby>坂<rp>(</rp><rt>さか</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            hill,slope
-        </td>
-    </tr>
-    <tr>
-        <td>寺</td>
-        <td>
-            ジ<br>
-            てら
-        </td>
-        <td>
-            <ruby>寺院<rp>(</rp><rt>じいん</rt><rp>)</rp></ruby><br>
-            <ruby>寺<rp>(</rp><rt>てら</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a temple, abbey<br>
-            a temple
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>湾</td>
-        <td>
-            ワン
-        </td>
-        <td>
-            <ruby>湾<rp>(</rp><rt>わん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a bay
-        </td>
-    </tr>
-    <tr>
-        <td>島</td>
-        <td>
-            トウ<br>
-            しま
-        </td>
-        <td>
-            <ruby>半島<rp>(</rp><rt>はんとう</rt><rp>)</rp></ruby><br>
-            <ruby>列島<rp>(</rp><rt>れっとう</rt><rp>)</rp></ruby><br>
-            <ruby>島<rp>(</rp><rt>しま</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a penisula<br>
-            an archipelago<br>
-            an island
-        </td>
-    </tr>
-    <tr>
-        <td>岸</td>
-        <td>
-            ガン<br>
-            きし
-        </td>
-        <td>
-            <ruby>海岸<rp>(</rp><rt>かいがん</rt><rp>)</rp></ruby><br>
-            <ruby>湾岸<rp>(</rp><rt>わんがん</rt><rp>)</rp></ruby><br>
-            <ruby>川岸<rp>(</rp><rt>かわぎし</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a sea shore<br>
-            a gulf<br>
-            a river bank
-        </td>
-    </tr>
-    <tr>
-        <td>園</td>
-        <td>
-            エン
-        </td>
-        <td>
-            <ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a park
-        </td>
-    </tr>
-   <tr>
-        <td>湖</td>
-        <td>
-            コ<br>
-            みずうみ
-        </td>
-        <td>
-            <ruby>湖<rp>(</rp><rt>みずうみ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a lake
-        </td>
-    </tr>
-    <tr>
-        <td>城</td>
-        <td>
-            ジョウ<br>
-            しろ
-        </td>
-        <td>
-            <ruby>城<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a castle
-        </td>
-    </tr>
-    <tr>
-        <td>谷</td>
-        <td>
-            コク<br>
-            たに
-        </td>
-        <td>
-            <ruby>渓谷<rp>(</rp><rt>けいこく</rt><rp>)</rp></ruby><br>
-            <ruby>谷間<rp>(</rp><rt>たにま</rt><rp>)</rp></ruby><br>
-            <ruby>谷川<rp>(</rp><rt>たにがわ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a gorge, ravine<br>
-            a valley, ravine<br>
-            a mountain stream
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="5日目-文化財・展示"><a href="#5日目-文化財・展示" class="headerlink" title="5日目　文化財・展示"></a>5日目　文化財・展示</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>財</td>
-        <td>
-            ザイ<br>
-            サイ
-        </td>
-        <td>
-            <ruby>財産<rp>(</rp><rt>ざいさん</rt><rp>)</rp></ruby><br>
-            <ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            property, fortune<br>
-            a wallet, purse
-        </td>
-    </tr>
-    <tr>
-        <td>観</td>
-        <td>
-            カン
-        </td>
-        <td>
-            <ruby>観察<rp>(</rp><rt>かんさつ</rt><rp>)</rp></ruby><br>
-            <ruby>観音<rp>(</rp><rt>かんのん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            observation<br>
-            Kannon
-        </td>
-    </tr>
-    <tr>
-        <td>宝</td>
-        <td>
-            ホウ<br>
-            たから
-        </td>
-        <td>
-            <ruby>宝石<rp>(</rp><rt>ほうせき</rt><rp>)</rp></ruby><br>
-            <ruby>宝<rp>(</rp><rt>たから</rt><rp>)</rp>物</ruby>
-        </td>
-        <td>
-            a jewel, gem<br>
-            treasure
-        </td>
-    </tr>
-    <tr>
-        <td>仏</td>
-        <td>
-            ブツ<br>
-            ほとけ
-        </td>
-        <td>
-            <ruby>仏教<rp>(</rp><rt>ぶっきょう</rt><rp>)</rp></ruby><br>
-            <ruby>仏像<rp>(</rp><rt>ぶつぞう</rt><rp>)</rp></ruby><br>
-            <ruby>仏<rp>(</rp><rt>ほとけ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            Buddhism<br>
-            a statue of Buddha<br>
-            Buddha
-        </td>
-    </tr>
-   <tr>
-        <td>王</td>
-        <td>
-            オウ
-        </td>
-        <td>
-            <ruby>国王<rp>(</rp><rt>こくおう</rt><rp>)</rp></ruby><br>
-            <ruby>王女<rp>(</rp><rt>おうじょ</rt><rp>)</rp></ruby><br>
-            <ruby>王子<rp>(</rp><rt>おうじ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a king<br>
-            a princess<br>
-            a prince
-        </td>
-    </tr>
-    <tr>
-        <td>銅</td>
-        <td>
-            ドウ
-        </td>
-        <td>
-            <ruby>銅<rp>(</rp><rt>どう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            copper,bronze
-        </td>
-    </tr>
-    <tr>
-        <td>塔</td>
-        <td>
-            トウ
-        </td>
-        <td>
-            <ruby>塔<rp>(</rp><rt>とう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a tower
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>絵</td>
-        <td>
-            エ<br>
-            カイ
-        </td>
-        <td>
-            <ruby>絵<rp>(</rp><rt>え</rt><rp>)</rp></ruby><br>
-            <ruby>絵画<rp>(</rp><rt>かいが</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a picture<br>
-            a painting
-        </td>
-    </tr>
-    <tr>
-        <td>略</td>
-        <td>
-            リャク
-        </td>
-        <td>
-            <ruby>略<rp>(</rp><rt>りゃく</rt><rp>)</rp></ruby><br>
-            <ruby>略<rp>(</rp><rt>りゃく</rt><rp>)</rp>す</ruby><br>
-            <ruby>省略<rp>(</rp><rt>しょうりゃく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            an abbreviation<br>
-            abbreviate<br>
-            abbreviation
-        </td>
-    </tr>
-    <tr>
-        <td>順</td>
-        <td>
-            ジュン
-        </td>
-        <td>
-            <ruby>順路<rp>(</rp><rt>じゅんろ</rt><rp>)</rp></ruby><br>
-            <ruby>順番<rp>(</rp><rt>じゅんばん</rt><rp>)</rp></ruby><br>
-            <ruby>順調<rp>(</rp><rt>じゅんちょう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            order<br>
-            a turn, order<br>
-            a route
-        </td>
-    </tr>
-    <tr>
-        <td>版</td>
-        <td>
-            ハン
-        </td>
-        <td>
-            <ruby>出版<rp>(</rp><rt>しゅっぱん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a publication
-        </td>
-    </tr>
-   <tr>
-        <td>芸</td>
-        <td>
-            ゲイ
-        </td>
-        <td>
-            <ruby>芸術<rp>(</rp><rt>げいじゅつ</rt><rp>)</rp></ruby><br>
-            <ruby>芸能<rp>(</rp><rt>げいのう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            art<br>
-            public entertainments
-        </td>
-    </tr>
-    <tr>
-        <td>複</td>
-        <td>
-            フク
-        </td>
-        <td>
-            <ruby>複製<rp>(</rp><rt>ふくせい</rt><rp>)</rp></ruby><br>
-            <ruby>複雑<rp>(</rp><rt>ふくざつ</rt><rp>)</rp></ruby><br>
-            <ruby>複写<rp>(</rp><rt>ふくしゃ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a duplicate, replica<br>
-            complex, complicated<br>
-            a duplicate, copy
-        </td>
-    </tr>
-    <tr>
-        <td>刊</td>
-        <td>
-            カン
-        </td>
-        <td>
-            <ruby>刊行物<rp>(</rp><rt>かんこうぶつ</rt><rp>)</rp></ruby><br>
-            <ruby>朝刊<rp>(</rp><rt>ちょうかん</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a magazine, journal<br>
-            a morning newspaper
-        </td>
-    </tr>
-</table>
-
-<hr>
-<h2 id="6日目-どっち？"><a href="#6日目-どっち？" class="headerlink" title="6日目　どっち？"></a>6日目　どっち？</h2><table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>層</td>
-        <td>
-            ソウ
-        </td>
-        <td>
-            <ruby>高層<rp>(</rp><rt>こうそう</rt><rp>)</rp></ruby><br>
-            <ruby>一層<rp>(</rp><rt>いっそう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            high-rise<br>
-            more, still more
-        </td>
-    </tr>
-    <tr>
-        <td>束</td>
-        <td>
-            ソク<br>
-            たば
-        </td>
-        <td>
-            <ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby><br>
-            <ruby>花束<rp>(</rp><rt>はなたば</rt><rp>)</rp></ruby><br>
-            <ruby>束<rp>(</rp><rt>たば</rt><rp>)</rp>ねる</ruby>
-        </td>
-        <td>
-            promise,appointment<br>
-            bunch of flowers<br>
-            bind in bunch / bundle
-        </td>
-    </tr>
-    <tr>
-        <td>甘</td>
-        <td>
-            あまーい<br>
-            あまーやかす
-        </td>
-        <td>
-            <ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp></ruby><br>
-            <ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp>やかす</ruby>
-        </td>
-        <td>
-            sweet<br>
-            spoll (a child)
-        </td>
-    </tr>
-    <tr>
-        <td>辛</td>
-        <td>
-            からーい
-        </td>
-        <td>
-            <ruby>辛<rp>(</rp><rt>から</rt><rp>)</rp>い</ruby>
-        </td>
-        <td>
-            (spicy) hot
-        </td>
-    </tr>
-   <tr>
-        <td>皿</td>
-        <td>
-            さら
-        </td>
-        <td>
-            <ruby>大皿<rp>(</rp><rt>おおさら</rt><rp>)</rp></ruby><br>
-            <ruby>小皿<rp>(</rp><rt>こざら</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            a big plate<br>
-            a small plate
-        </td>
-    </tr>
-    <tr>
-        <td>綿</td>
-        <td>
-            メン<br>
-            わた
-        </td>
-        <td>
-            <ruby>綿<rp>(</rp><rt>めん</rt><rp>)</rp></ruby><br>
-            <ruby>綿<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            cotton (meterial)<br>
-            cotton (plant)
-        </td>
-    </tr>
-    <tr>
-        <td>旧</td>
-        <td>
-            キュウ
-        </td>
-        <td>
-            <ruby>旧館<rp>(</rp><rt>きゅうかん</rt><rp>)</rp></ruby><br>
-            <ruby>復旧<rp>(</rp><rt>ふっきゅう</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            the older building<br>
-            restoration
-        </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <th>漢字</th>
-        <th>音読み・訓読み</th>
-        <th>単語</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>厚</td>
-        <td>
-            コウ<br>
-            あつーい
-        </td>
-        <td>
-            <ruby>厚生<rp>(</rp><rt>こうせい</rt><rp>)</rp>労働省</ruby><br>
-            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>い</ruby><br>
-            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>かましい</ruby><br>
-            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>切り</ruby>
-        </td>
-        <td>
-            ministry of Health<br>
-            thick<br>
-            impudent<br>
-            thick slice
-        </td>
-    </tr>
-    <tr>
-        <td>薄</td>
-        <td>
-            うすーい<br>
-            うすーめる
-        </td>
-        <td>
-            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>い</ruby><br>
-            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>切り</ruby><br>
-            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>める</ruby>
-        </td>
-        <td>
-            thin(material), light(color), weak<br>
-            thin slice<br>
-            dilute
-        </td>
-    </tr>
-    <tr>
-        <td>粒</td>
-        <td>
-            つぶ
-        </td>
-        <td>
-            <ruby>粒<rp>(</rp><rt>つぶ</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            grain
-        </td>
-    </tr>
-    <tr>
-        <td>極</td>
-        <td>
-            キョク<br>
-            ゴク
-        </td>
-        <td>
-            <ruby>積極的<rp>(</rp><rt>せっきょくてき</rt><rp>)</rp></ruby><br>
-            <ruby>消極的<rp>(</rp><rt>しょうきょくてき</rt><rp>)</rp></ruby><br>
-            <ruby>極<rp>(</rp><rt>ごく</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            active,positive<br>
-            passive,negative<br>
-            very
-        </td>
-    </tr>
-   <tr>
-        <td>革</td>
-        <td>
-            カク<br>
-            かわ
-        </td>
-        <td>
-            <ruby>改革<rp>(</rp><rt>かいかく</rt><rp>)</rp></ruby><br>
-            <ruby>革命<rp>(</rp><rt>かくめい</rt><rp>)</rp></ruby><br>
-            <ruby>革製<rp>(</rp><rt>かわせい</rt><rp>)</rp></ruby>
-        </td>
-        <td>
-            reform<br>
-            a revolution<br>
-            made of leather
-        </td>
-    </tr>
-    <tr>
-        <td>苦</td>
-        <td>
-            ク<br>
-            くるーしい<br>
-            くるーしむ<br>
-            にがーい
-        </td>
-        <td>
-            <ruby>苦痛<rp>(</rp><rt>くつう</rt><rp>)</rp></ruby><br>
-            <ruby>苦<rp>(</rp><rt>にが</rt><rp>)</rp>い</ruby><br>
-            <ruby>苦<rp>(</rp><rt>くる</rt><rp>)</rp>しい</ruby><br>
-            <ruby>苦<rp>(</rp><rt>くる</rt><rp>)</rp>しむ</ruby>
-        </td>
-        <td>
-            pain, suffering<br>
-            bitter<br>
-            distressful, trying<br>
-            suffer
-        </td>
-    </tr>
-</table>
-
-<hr>
-]]></content>
-      <categories>
-        <category>漢字</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>漢字</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第7週 よむ②</title>
     <url>/new-blog/65d56e24.html</url>
     <content><![CDATA[<h1 id="第7週-よむ②"><a href="#第7週-よむ②" class="headerlink" title="第7週 よむ②"></a>第7週 よむ②</h1><span id="more"></span>
@@ -12278,6 +10858,1426 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>第六週 みる②</title>
+    <url>/new-blog/309add1a.html</url>
+    <content><![CDATA[<h1 id="第六週-みる②"><a href="#第六週-みる②" class="headerlink" title="第六週 みる②"></a>第六週 みる②</h1><span id="more"></span>
+
+<h2 id="1日目-広告・チラシ"><a href="#1日目-広告・チラシ" class="headerlink" title="1日目　広告・チラシ"></a>1日目　広告・チラシ</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>得</td>
+        <td>
+            トク<br>
+            うーる<br>
+            えーる
+        </td>
+        <td>
+            <ruby>納得<rp>(</rp><rt>なっとく</rt><rp>)</rp></ruby><br>
+            <ruby>得<rp>(</rp><rt>う／え</rt><rp>)</rp>る</ruby><br>
+            <ruby>心得る<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            assent, understanding<br>
+            obtain<br>
+            understand, be well aware
+        </td>
+    </tr>
+    <tr>
+        <td>告</td>
+        <td>
+            コウ<br>
+            つーげる
+        </td>
+        <td>
+            <ruby>広告<rp>(</rp><rt>こうこく</rt><rp>)</rp></ruby><br>
+            <ruby>報告<rp>(</rp><rt>ほうこく</rt><rp>)</rp></ruby><br>
+            <ruby>警告<rp>(</rp><rt>けいこく</rt><rp>)</rp></ruby><br>
+            <ruby>告<rp>(</rp><rt>つ</rt><rp>)</rp>げる</ruby>
+        </td>
+        <td>
+            an advertisement<br>
+            a report<br>
+            warning, caution<br>
+            inform
+        </td>
+    </tr>
+    <tr>
+        <td>税</td>
+        <td>
+            ゼイ
+        </td>
+        <td>
+            <ruby>税金<rp>(</rp><rt>ぜいきん</rt><rp>)</rp></ruby><br>
+            <ruby>税関<rp>(</rp><rt>ぜいかん</rt><rp>)</rp></ruby><br>
+            <ruby>課税<rp>(</rp><rt>かぜい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a tax<br>
+            Customs<br>
+            taxation
+        </td>
+    </tr>
+    <tr>
+        <td>価</td>
+        <td>
+            カ
+        </td>
+        <td>
+            <ruby>定価<rp>(</rp><rt>ていか</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a fixed price
+        </td>
+    </tr>
+   <tr>
+        <td>格</td>
+        <td>
+            カク
+        </td>
+        <td>
+            <ruby>価格<rp>(</rp><rt>かかく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a price
+        </td>
+    </tr>
+    <tr>
+        <td>超</td>
+        <td>
+            チョウ<br>
+            こーえる<br>
+            こーす
+        </td>
+        <td>
+            <ruby>超過<rp>(</rp><rt>ちょうか</rt><rp>)</rp></ruby><br>
+            <ruby>超<rp>(</rp><rt>こ</rt><rp>)</rp>える</ruby><br>
+            <ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp>す</ruby>
+        </td>
+        <td>
+            excess, surplus<br>
+            get over, go over<br>
+            cross, pass, exceed
+        </td>
+    </tr>
+    <tr>
+        <td>均</td>
+        <td>
+            キン
+        </td>
+        <td>
+            <ruby>平均<rp>(</rp><rt>へいきん</rt><rp>)</rp></ruby><br>
+            <ruby>均一<rp>(</rp><rt>きんいつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            average<br>
+            uniformity, equality
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>靴</td>
+        <td>
+            くつ
+        </td>
+        <td>
+            <ruby>靴<rp>(</rp><rt>くつ</rt><rp>)</rp></ruby><br>
+            <ruby>靴下<rp>(</rp><rt>くつした</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            shoes<br>
+            socks
+        </td>
+    </tr>
+    <tr>
+        <td>供</td>
+        <td>
+            キョウ<br>
+            とも
+        </td>
+        <td>
+            <ruby>提供<rp>(</rp><rt>ていきょう</rt><rp>)</rp></ruby><br>
+            <ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            offer, tender<br>
+            a child
+        </td>
+    </tr>
+    <tr>
+        <td>象</td>
+        <td>
+            ショウ<br>
+            ゾウ
+        </td>
+        <td>
+            <ruby>印象<rp>(</rp><rt>いんしょう</rt><rp>)</rp></ruby><br>
+            <ruby>現象<rp>(</rp><rt>げんしょう</rt><rp>)</rp></ruby><br>
+            <ruby>象<rp>(</rp><rt>ぞう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an impression<br>
+            a phenomenon<br>
+            an elephant
+        </td>
+    </tr>
+    <tr>
+        <td>組</td>
+        <td>
+            ソ<br>
+            くーむ<br>
+            くーみ
+        </td>
+        <td>
+            <ruby>組織<rp>(</rp><rt>そしき</rt><rp>)</rp></ruby><br>
+            <ruby>番組<rp>(</rp><rt>ばんぐみ</rt><rp>)</rp></ruby><br>
+            <ruby>組み合わせ<rp>(</rp><rt></rt><rp>)</rp></ruby><br>
+            <ruby>組合<rp>(</rp><rt>くみあい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an organization<br>
+            a (TV) program<br>
+            combination<br>
+            an association
+        </td>
+    </tr>
+   <tr>
+        <td>値</td>
+        <td>
+            チ<br>
+            ね<br>
+            あたい
+        </td>
+        <td>
+            <ruby>価値<rp>(</rp><rt>かち</rt><rp>)</rp></ruby><br>
+            <ruby>数値<rp>(</rp><rt>すうち</rt><rp>)</rp></ruby><br>
+            <ruby>値段<rp>(</rp><rt>ねだん</rt><rp>)</rp></ruby><br>
+            <ruby>値<rp>(</rp><rt>あたい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            value<brr>
+            an numerical value<br>
+            a price<br>
+            value
+        </td>
+    </tr>
+    <tr>
+        <td>募</td>
+        <td>
+            ボ<br>
+            つのーる
+        </td>
+        <td>
+            <ruby>募集<rp>(</rp><rt>ぼしゅう</rt><rp>)</rp></ruby><br>
+            <ruby>応募<rp>(</rp><rt>おうぼ</rt><rp>)</rp></ruby><br>
+            <ruby>募<rp>(</rp><rt>つの</rt><rp>)</rp>る</ruby>
+        </td>
+        <td>
+            recruitment<br>
+            an application<br>
+            collect / raise(money)
+        </td>
+    </tr>
+    <tr>
+        <td>無</td>
+        <td>
+            ム<br>
+            ブ<br>
+            なーい
+        </td>
+        <td>
+            <ruby>無料<rp>(</rp><rt>むりょう</rt><rp>)</rp></ruby><br>
+            <ruby>無事<rp>(</rp><rt>ぶじ</rt><rp>)</rp></ruby><br>
+            <ruby>無<rp>(</rp><rt>な</rt><rp>)</rp>し</ruby>
+        </td>
+        <td>
+            free of charge<br>
+            unharmed, safe<br>
+            without
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="2日目-折り込み広告"><a href="#2日目-折り込み広告" class="headerlink" title="2日目　折り込み広告"></a>2日目　折り込み広告</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>詰</td>
+        <td>
+            つーめる<br>
+            つーまる
+        </td>
+        <td>
+            <ruby>詰<rp>(</rp><rt>つ</rt><rp>)</rp>める</ruby><br>
+            <ruby>缶詰<rp>(</rp><rt>かんづめ</rt><rp>)</rp></ruby><br>
+            <ruby>箱詰め<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            stuff / cram / package<br>
+            food etc. in a can<br>
+            food etc. in a box
+        </td>
+    </tr>
+    <tr>
+        <td>麦</td>
+        <td>
+            むぎ
+        </td>
+        <td>
+            <ruby>麦畑<rp>(</rp><rt>むぎはたけ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a wheat field
+        </td>
+    </tr>
+    <tr>
+        <td>純</td>
+        <td>
+            ジュン
+        </td>
+        <td>
+            <ruby>純粋<rp>(</rp><rt>じゅんすい</rt><rp>)</rp></ruby><br>
+            <ruby>純情<rp>(</rp><rt>じゅんじょう</rt><rp>)</rp>（な）</ruby><br>
+            <ruby>単純<rp>(</rp><rt>たんじゅん</rt><rp>)</rp>（な）</ruby>
+        </td>
+        <td>
+            pure<br>
+            a pure heart<br>
+            simple (minded)
+        </td>
+    </tr>
+    <tr>
+        <td>草</td>
+        <td>
+            ソウ<br>
+            くさ
+        </td>
+        <td>
+            <ruby>雑草<rp>(</rp><rt>ざっそう</rt><rp>)</rp></ruby><br>
+            <ruby>除草<rp>(</rp><rt>じょそう</rt><rp>)</rp></ruby><br>
+            <ruby>草花<rp>(</rp><rt>くさばな</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            weed<br>
+            weeding<br>
+            a flower
+        </td>
+    </tr>
+   <tr>
+        <td>塩</td>
+        <td>
+            エン<br>
+            しお
+        </td>
+        <td>
+            <ruby>食塩<rp>(</rp><rt>しょくえん</rt><rp>)</rp></ruby><br>
+            <ruby>塩<rp>(</rp><rt>しお</rt><rp>)</rp></ruby><br>
+        </td>
+        <td>
+            table salt<br>
+            salt
+        </td>
+    </tr>
+    <tr>
+        <td>固</td>
+        <td>
+            コ<br>
+            かたーい<br>
+            かたーまる
+        </td>
+        <td>
+            <ruby>固定<rp>(</rp><rt>こてい</rt><rp>)</rp></ruby><br>
+            <ruby>固形<rp>(</rp><rt>こけい</rt><rp>)</rp></ruby><br>
+            <ruby>固<rp>(</rp><rt>かた</rt><rp>)</rp>い</ruby>
+        </td>
+        <td>
+            stability, fixation<br>
+            solid<br>
+            hard
+        </td>
+    </tr>
+    <tr>
+        <td>演</td>
+        <td>
+            エン
+        </td>
+        <td>
+            <ruby>実演<rp>(</rp><rt>じつえん</rt><rp>)</rp></ruby><br>
+            <ruby>演習<rp>(</rp><rt>えんしゅう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a demonstration<br>
+            exercises
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>菓</td>
+        <td>
+            カ
+        </td>
+        <td>
+            <ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            sweets
+        </td>
+    </tr>
+    <tr>
+        <td>贈</td>
+        <td>
+            おくーる
+        </td>
+        <td>
+            <ruby>贈<rp>(</rp><rt>おく</rt><rp>)</rp>る</ruby>
+        </td>
+        <td>
+            present,give
+        </td>
+    </tr>
+    <tr>
+        <td>省</td>
+        <td>
+            セイ<br>
+            ショウ<br>
+            はぶーく
+        </td>
+        <td>
+            <ruby>帰省<rp>(</rp><rt>きせい</rt><rp>)</rp></ruby><br>
+            <ruby>反省<rp>(</rp><rt>はんせい</rt><rp>)</rp></ruby><br>
+            <ruby>省略<rp>(</rp><rt>しょうりゃく</rt><rp>)</rp></ruby><br>
+            <ruby>省<rp>(</rp><rt>はぶ</rt><rp>)</rp>く</ruby><br>
+        </td>
+        <td>
+            homecoming<br>
+            self-examnination<br>
+            an abbreviation, omission<br>
+            delete / omit
+        </td>
+    </tr>
+    <tr>
+        <td>承</td>
+        <td>
+            ショウ<br>
+            うけたまわーる
+        </td>
+        <td>
+            <ruby>了承<rp>(</rp><rt>りょうしょう</rt><rp>)</rp></ruby><br>
+            <ruby>承認<rp>(</rp><rt>しょうにん</rt><rp>)</rp></ruby><br>
+            <ruby>承<rp>(</rp><rt>うけたまわ</rt><rp>)</rp>る</ruby>
+        </td>
+        <td>
+            consent, approval<br>
+            approval, confirmation<br>
+            receive,listen
+        </td>
+    </tr>
+   <tr>
+        <td>展</td>
+        <td>
+            テン
+        </td>
+        <td>
+            <ruby>展示<rp>(</rp><rt>てんじ</rt><rp>)</rp></ruby><br>
+            <ruby>発展<rp>(</rp><rt>はってん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an exhibition<brr>
+            development
+        </td>
+    </tr>
+    <tr>
+        <td>破</td>
+        <td>
+            ハ<br>
+            やぶーれる<br>
+            やぶーる
+        </td>
+        <td>
+            <ruby>破片<rp>(</rp><rt>はへん</rt><rp>)</rp></ruby><br>
+            <ruby>破格<rp>(</rp><rt>はかく</rt><rp>)</rp></ruby><br>
+            <ruby>破<rp>(</rp><rt>やぶ</rt><rp>)</rp>れる</ruby><br>
+            <ruby>破<rp>(</rp><rt>やぶ</rt><rp>)</rp>る</ruby>
+        </td>
+        <td>
+            a fragment<br>
+            exceptional<br>
+            break,rip<br>
+            break/rip/violate(something)
+        </td>
+    </tr>
+    <tr>
+        <td>処</td>
+        <td>
+            ショ
+        </td>
+        <td>
+            <ruby>処理<rp>(</rp><rt>しょり</rt><rp>)</rp></ruby><br>
+            <ruby>処分<rp>(</rp><rt>しょぶん</rt><rp>)</rp></ruby><br>
+            <ruby>処置<rp>(</rp><rt>しょち</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            disposal<br>
+            disposal<br>
+            management
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="3日目-広告"><a href="#3日目-広告" class="headerlink" title="3日目　広告"></a>3日目　広告</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>泉</td>
+        <td>
+            セン<br>
+            いずみ
+        </td>
+        <td>
+            <ruby>温泉<rp>(</rp><rt>おんせん</rt><rp>)</rp></ruby><br>
+            <ruby>泉<rp>(</rp><rt>いずみ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a hot spring<br>
+            a spring
+        </td>
+    </tr>
+    <tr>
+        <td>宿</td>
+        <td>
+            シュク<br>
+            やど
+        </td>
+        <td>
+            <ruby>下宿<rp>(</rp><rt>げしゅく</rt><rp>)</rp></ruby><br>
+            <ruby>宿<rp>(</rp><rt>やど</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            lodgings<br>
+            an inn
+        </td>
+    </tr>
+    <tr>
+        <td>季</td>
+        <td>
+            キ
+        </td>
+        <td>
+            <ruby>季節<rp>(</rp><rt>きせつ</rt><rp>)</rp></ruby><br>
+            <ruby>四季<rp>(</rp><rt>しき</rt><rp>)</rp></ruby><br>
+            <ruby>冬季<rp>(</rp><rt>とうき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a season<br>
+            four seasons<br>
+            winter
+        </td>
+    </tr>
+    <tr>
+        <td>豊</td>
+        <td>
+            ホウ<br>
+            ゆたーか
+        </td>
+        <td>
+            <ruby>豊作<rp>(</rp><rt>ほうさく</rt><rp>)</rp></ruby><br>
+            <ruby>豊<rp>(</rp><rt>ゆた</rt><rp>)</rp>か（な）</ruby>
+        </td>
+        <td>
+            a bumper crop<br>
+            abundant
+        </td>
+    </tr>
+   <tr>
+        <td>富</td>
+        <td>
+            フ<br>
+            とーむ<br>
+            とみ
+        </td>
+        <td>
+            <ruby>豊富<rp>(</rp><rt>ほうふ</rt><rp>)</rp></ruby><br>
+            <ruby>富<rp>(</rp><rt>とみ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            abundance<br>
+            wealth
+        </td>
+    </tr>
+    <tr>
+        <td>迎</td>
+        <td>
+            ゲイ<br>
+            むかーえる
+        </td>
+        <td>
+            <ruby>送迎<rp>(</rp><rt>そうげい</rt><rp>)</rp></ruby><br>
+            <ruby>歓迎<rp>(</rp><rt>かんげい</rt><rp>)</rp></ruby><br>
+            <ruby>迎<rp>(</rp><rt>むか</rt><rp>)</rp>える</ruby>
+        </td>
+        <td>
+            a pick up service<br>
+            welcome<br>
+            meet, welcome
+        </td>
+    </tr>
+    <tr>
+        <td>泊</td>
+        <td>
+            ハク<br>
+            とーまる<br>
+            とーめる
+        </td>
+        <td>
+            <ruby>宿泊<rp>(</rp><rt>しゅくはく</rt><rp>)</rp></ruby><br>
+            <ruby>泊<rp>(</rp><rt>と</rt><rp>)</rp>まる</ruby>
+        </td>
+        <td>
+            lodging<br>
+            stay
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>居</td>
+        <td>
+            キョ<br>
+            いーる
+        </td>
+        <td>
+            <ruby>入居<rp>(</rp><rt>にゅうきょ</rt><rp>)</rp></ruby><br>
+            <ruby>居間<rp>(</rp><rt>いま</rt><rp>)</rp></ruby><br>
+            <ruby>居眠り<rp>(</rp><rt></rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            moving into<br>
+            a living room<br>
+            doze
+        </td>
+    </tr>
+    <tr>
+        <td>築</td>
+        <td>
+            チク
+        </td>
+        <td>
+            <ruby>建築<rp>(</rp><rt>けんちく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            architecture
+        </td>
+    </tr>
+    <tr>
+        <td>角</td>
+        <td>
+            カク<br>
+            かど
+        </td>
+        <td>
+            <ruby>三角<rp>(</rp><rt>さんかく</rt><rp>)</rp></ruby><br>
+            <ruby>角度<rp>(</rp><rt>かくど</rt><rp>)</rp></ruby><br>
+            <ruby>方角<rp>(</rp><rt>ほうがく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a triangle<br>
+            an angle<br>
+            direction, way
+        </td>
+    </tr>
+    <tr>
+        <td>徒</td>
+        <td>
+            ト
+        </td>
+        <td>
+            <ruby>生徒<rp>(</rp><rt>せいと</rt><rp>)</rp></ruby><br>
+            <ruby>徒歩<rp>(</rp><rt>とほ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a student<br>
+            on foot
+        </td>
+    </tr>
+   <tr>
+        <td>畳</td>
+        <td>
+            ジョウ<br>
+            たたーむ<br>
+            たたみ
+        </td>
+        <td>
+            <ruby>畳<rp>(</rp><rt>たたみ</rt><rp>)</rp></ruby><br>
+            <ruby>畳<rp>(</rp><rt>たた</rt><rp>)</rp>む</ruby><br>
+            〜<ruby>畳<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            tatami<br>
+            fold<br>
+            ...mats
+        </td>
+    </tr>
+    <tr>
+        <td>米</td>
+        <td>
+            ベイ<br>
+            マイ<br>
+            こめ
+        </td>
+        <td>
+            <ruby>欧米<rp>(</rp><rt>おうべい</rt><rp>)</rp></ruby><br>
+            <ruby>新米<rp>(</rp><rt>しんまい</rt><rp>)</rp></ruby><br>
+            <ruby>米<rp>(</rp><rt>こめ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            europe and america, the West<br>
+            square meters<br>
+            new face<br>
+            rice
+        </td>
+    </tr>
+    <tr>
+        <td>解</td>
+        <td>
+            カイ<br>
+            とーく
+        </td>
+        <td>
+            <ruby>解説<rp>(</rp><rt>かいせつ</rt><rp>)</rp></ruby><br>
+            <ruby>解放<rp>(</rp><rt>かいほう</rt><rp>)</rp></ruby><br>
+            <ruby>解決<rp>(</rp><rt>かいけつ</rt><rp>)</rp></ruby><br>
+            <ruby>解約<rp>(</rp><rt>かいやく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an explanation<br>
+            a solution<br>
+            a release<br>
+            a cencellation
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="4日目-地図"><a href="#4日目-地図" class="headerlink" title="4日目　地図"></a>4日目　地図</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>辺</td>
+        <td>
+            ヘン<br>
+            あたーり<br>
+            べ
+        </td>
+        <td>
+            この<ruby>辺<rp>(</rp><rt>へん</rt><rp>)</rp></ruby><br>
+            <ruby>周辺<rp>(</rp><rt>しゅうへん</rt><rp>)</rp></ruby><br>
+            <ruby>辺<rp>(</rp><rt>あた</rt><rp>)</rp>り</ruby><br>
+            <ruby>海辺<rp>(</rp><rt>うみべ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            around here<br>
+            vicnity<br>
+            around<br>
+            a beach
+        </td>
+    </tr>
+    <tr>
+        <td>察</td>
+        <td>
+            サツ
+        </td>
+        <td>
+            <ruby>診察<rp>(</rp><rt>しんさつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an (medical) consultations
+        </td>
+    </tr>
+    <tr>
+        <td>役</td>
+        <td>
+            ヤク<br>
+            エキ
+        </td>
+        <td>
+            <ruby>役目<rp>(</rp><rt>やくめ</rt><rp>)</rp></ruby><br>
+            <ruby>役者<rp>(</rp><rt>やくしゃ</rt><rp>)</rp></ruby><br>
+            <ruby>現役<rp>(</rp><rt>げんえき</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a role, duty<br>
+            an actor<br>
+            active
+        </td>
+    </tr>
+    <tr>
+        <td>美</td>
+        <td>
+            ビ<br>
+            うつくーしい
+        </td>
+        <td>
+            <ruby>美人<rp>(</rp><rt>びじん</rt><rp>)</rp></ruby><br>
+            <ruby>美<rp>(</rp><rt>うつく</rt><rp>)</rp>しい</ruby>
+        </td>
+        <td>
+            a beautiful woman<br>
+            beautiful
+        </td>
+    </tr>
+   <tr>
+        <td>術</td>
+        <td>
+            ジュツ
+        </td>
+        <td>
+            <ruby>美術<rp>(</rp><rt>びじゅつ</rt><rp>)</rp></ruby><br>
+            <ruby>技術<rp>(</rp><rt>ぎじゅつ</rt><rp>)</rp></ruby><br>
+            <ruby>手術<rp>(</rp><rt>しゅじゅつ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            art<br>
+            techique, technology<br>
+            surgery
+        </td>
+    </tr>
+    <tr>
+        <td>坂</td>
+        <td>
+            さか
+        </td>
+        <td>
+            <ruby>坂<rp>(</rp><rt>さか</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            hill,slope
+        </td>
+    </tr>
+    <tr>
+        <td>寺</td>
+        <td>
+            ジ<br>
+            てら
+        </td>
+        <td>
+            <ruby>寺院<rp>(</rp><rt>じいん</rt><rp>)</rp></ruby><br>
+            <ruby>寺<rp>(</rp><rt>てら</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a temple, abbey<br>
+            a temple
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>湾</td>
+        <td>
+            ワン
+        </td>
+        <td>
+            <ruby>湾<rp>(</rp><rt>わん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a bay
+        </td>
+    </tr>
+    <tr>
+        <td>島</td>
+        <td>
+            トウ<br>
+            しま
+        </td>
+        <td>
+            <ruby>半島<rp>(</rp><rt>はんとう</rt><rp>)</rp></ruby><br>
+            <ruby>列島<rp>(</rp><rt>れっとう</rt><rp>)</rp></ruby><br>
+            <ruby>島<rp>(</rp><rt>しま</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a penisula<br>
+            an archipelago<br>
+            an island
+        </td>
+    </tr>
+    <tr>
+        <td>岸</td>
+        <td>
+            ガン<br>
+            きし
+        </td>
+        <td>
+            <ruby>海岸<rp>(</rp><rt>かいがん</rt><rp>)</rp></ruby><br>
+            <ruby>湾岸<rp>(</rp><rt>わんがん</rt><rp>)</rp></ruby><br>
+            <ruby>川岸<rp>(</rp><rt>かわぎし</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a sea shore<br>
+            a gulf<br>
+            a river bank
+        </td>
+    </tr>
+    <tr>
+        <td>園</td>
+        <td>
+            エン
+        </td>
+        <td>
+            <ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a park
+        </td>
+    </tr>
+   <tr>
+        <td>湖</td>
+        <td>
+            コ<br>
+            みずうみ
+        </td>
+        <td>
+            <ruby>湖<rp>(</rp><rt>みずうみ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a lake
+        </td>
+    </tr>
+    <tr>
+        <td>城</td>
+        <td>
+            ジョウ<br>
+            しろ
+        </td>
+        <td>
+            <ruby>城<rp>(</rp><rt>しろ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a castle
+        </td>
+    </tr>
+    <tr>
+        <td>谷</td>
+        <td>
+            コク<br>
+            たに
+        </td>
+        <td>
+            <ruby>渓谷<rp>(</rp><rt>けいこく</rt><rp>)</rp></ruby><br>
+            <ruby>谷間<rp>(</rp><rt>たにま</rt><rp>)</rp></ruby><br>
+            <ruby>谷川<rp>(</rp><rt>たにがわ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a gorge, ravine<br>
+            a valley, ravine<br>
+            a mountain stream
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="5日目-文化財・展示"><a href="#5日目-文化財・展示" class="headerlink" title="5日目　文化財・展示"></a>5日目　文化財・展示</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>財</td>
+        <td>
+            ザイ<br>
+            サイ
+        </td>
+        <td>
+            <ruby>財産<rp>(</rp><rt>ざいさん</rt><rp>)</rp></ruby><br>
+            <ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            property, fortune<br>
+            a wallet, purse
+        </td>
+    </tr>
+    <tr>
+        <td>観</td>
+        <td>
+            カン
+        </td>
+        <td>
+            <ruby>観察<rp>(</rp><rt>かんさつ</rt><rp>)</rp></ruby><br>
+            <ruby>観音<rp>(</rp><rt>かんのん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            observation<br>
+            Kannon
+        </td>
+    </tr>
+    <tr>
+        <td>宝</td>
+        <td>
+            ホウ<br>
+            たから
+        </td>
+        <td>
+            <ruby>宝石<rp>(</rp><rt>ほうせき</rt><rp>)</rp></ruby><br>
+            <ruby>宝<rp>(</rp><rt>たから</rt><rp>)</rp>物</ruby>
+        </td>
+        <td>
+            a jewel, gem<br>
+            treasure
+        </td>
+    </tr>
+    <tr>
+        <td>仏</td>
+        <td>
+            ブツ<br>
+            ほとけ
+        </td>
+        <td>
+            <ruby>仏教<rp>(</rp><rt>ぶっきょう</rt><rp>)</rp></ruby><br>
+            <ruby>仏像<rp>(</rp><rt>ぶつぞう</rt><rp>)</rp></ruby><br>
+            <ruby>仏<rp>(</rp><rt>ほとけ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            Buddhism<br>
+            a statue of Buddha<br>
+            Buddha
+        </td>
+    </tr>
+   <tr>
+        <td>王</td>
+        <td>
+            オウ
+        </td>
+        <td>
+            <ruby>国王<rp>(</rp><rt>こくおう</rt><rp>)</rp></ruby><br>
+            <ruby>王女<rp>(</rp><rt>おうじょ</rt><rp>)</rp></ruby><br>
+            <ruby>王子<rp>(</rp><rt>おうじ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a king<br>
+            a princess<br>
+            a prince
+        </td>
+    </tr>
+    <tr>
+        <td>銅</td>
+        <td>
+            ドウ
+        </td>
+        <td>
+            <ruby>銅<rp>(</rp><rt>どう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            copper,bronze
+        </td>
+    </tr>
+    <tr>
+        <td>塔</td>
+        <td>
+            トウ
+        </td>
+        <td>
+            <ruby>塔<rp>(</rp><rt>とう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a tower
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>絵</td>
+        <td>
+            エ<br>
+            カイ
+        </td>
+        <td>
+            <ruby>絵<rp>(</rp><rt>え</rt><rp>)</rp></ruby><br>
+            <ruby>絵画<rp>(</rp><rt>かいが</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a picture<br>
+            a painting
+        </td>
+    </tr>
+    <tr>
+        <td>略</td>
+        <td>
+            リャク
+        </td>
+        <td>
+            <ruby>略<rp>(</rp><rt>りゃく</rt><rp>)</rp></ruby><br>
+            <ruby>略<rp>(</rp><rt>りゃく</rt><rp>)</rp>す</ruby><br>
+            <ruby>省略<rp>(</rp><rt>しょうりゃく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            an abbreviation<br>
+            abbreviate<br>
+            abbreviation
+        </td>
+    </tr>
+    <tr>
+        <td>順</td>
+        <td>
+            ジュン
+        </td>
+        <td>
+            <ruby>順路<rp>(</rp><rt>じゅんろ</rt><rp>)</rp></ruby><br>
+            <ruby>順番<rp>(</rp><rt>じゅんばん</rt><rp>)</rp></ruby><br>
+            <ruby>順調<rp>(</rp><rt>じゅんちょう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            order<br>
+            a turn, order<br>
+            a route
+        </td>
+    </tr>
+    <tr>
+        <td>版</td>
+        <td>
+            ハン
+        </td>
+        <td>
+            <ruby>出版<rp>(</rp><rt>しゅっぱん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a publication
+        </td>
+    </tr>
+   <tr>
+        <td>芸</td>
+        <td>
+            ゲイ
+        </td>
+        <td>
+            <ruby>芸術<rp>(</rp><rt>げいじゅつ</rt><rp>)</rp></ruby><br>
+            <ruby>芸能<rp>(</rp><rt>げいのう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            art<br>
+            public entertainments
+        </td>
+    </tr>
+    <tr>
+        <td>複</td>
+        <td>
+            フク
+        </td>
+        <td>
+            <ruby>複製<rp>(</rp><rt>ふくせい</rt><rp>)</rp></ruby><br>
+            <ruby>複雑<rp>(</rp><rt>ふくざつ</rt><rp>)</rp></ruby><br>
+            <ruby>複写<rp>(</rp><rt>ふくしゃ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a duplicate, replica<br>
+            complex, complicated<br>
+            a duplicate, copy
+        </td>
+    </tr>
+    <tr>
+        <td>刊</td>
+        <td>
+            カン
+        </td>
+        <td>
+            <ruby>刊行物<rp>(</rp><rt>かんこうぶつ</rt><rp>)</rp></ruby><br>
+            <ruby>朝刊<rp>(</rp><rt>ちょうかん</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a magazine, journal<br>
+            a morning newspaper
+        </td>
+    </tr>
+</table>
+
+<hr>
+<h2 id="6日目-どっち？"><a href="#6日目-どっち？" class="headerlink" title="6日目　どっち？"></a>6日目　どっち？</h2><table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>層</td>
+        <td>
+            ソウ
+        </td>
+        <td>
+            <ruby>高層<rp>(</rp><rt>こうそう</rt><rp>)</rp></ruby><br>
+            <ruby>一層<rp>(</rp><rt>いっそう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            high-rise<br>
+            more, still more
+        </td>
+    </tr>
+    <tr>
+        <td>束</td>
+        <td>
+            ソク<br>
+            たば
+        </td>
+        <td>
+            <ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby><br>
+            <ruby>花束<rp>(</rp><rt>はなたば</rt><rp>)</rp></ruby><br>
+            <ruby>束<rp>(</rp><rt>たば</rt><rp>)</rp>ねる</ruby>
+        </td>
+        <td>
+            promise,appointment<br>
+            bunch of flowers<br>
+            bind in bunch / bundle
+        </td>
+    </tr>
+    <tr>
+        <td>甘</td>
+        <td>
+            あまーい<br>
+            あまーやかす
+        </td>
+        <td>
+            <ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp></ruby><br>
+            <ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp>やかす</ruby>
+        </td>
+        <td>
+            sweet<br>
+            spoll (a child)
+        </td>
+    </tr>
+    <tr>
+        <td>辛</td>
+        <td>
+            からーい
+        </td>
+        <td>
+            <ruby>辛<rp>(</rp><rt>から</rt><rp>)</rp>い</ruby>
+        </td>
+        <td>
+            (spicy) hot
+        </td>
+    </tr>
+   <tr>
+        <td>皿</td>
+        <td>
+            さら
+        </td>
+        <td>
+            <ruby>大皿<rp>(</rp><rt>おおさら</rt><rp>)</rp></ruby><br>
+            <ruby>小皿<rp>(</rp><rt>こざら</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            a big plate<br>
+            a small plate
+        </td>
+    </tr>
+    <tr>
+        <td>綿</td>
+        <td>
+            メン<br>
+            わた
+        </td>
+        <td>
+            <ruby>綿<rp>(</rp><rt>めん</rt><rp>)</rp></ruby><br>
+            <ruby>綿<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            cotton (meterial)<br>
+            cotton (plant)
+        </td>
+    </tr>
+    <tr>
+        <td>旧</td>
+        <td>
+            キュウ
+        </td>
+        <td>
+            <ruby>旧館<rp>(</rp><rt>きゅうかん</rt><rp>)</rp></ruby><br>
+            <ruby>復旧<rp>(</rp><rt>ふっきゅう</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            the older building<br>
+            restoration
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>漢字</th>
+        <th>音読み・訓読み</th>
+        <th>単語</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>厚</td>
+        <td>
+            コウ<br>
+            あつーい
+        </td>
+        <td>
+            <ruby>厚生<rp>(</rp><rt>こうせい</rt><rp>)</rp>労働省</ruby><br>
+            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>い</ruby><br>
+            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>かましい</ruby><br>
+            <ruby>厚<rp>(</rp><rt>あつ</rt><rp>)</rp>切り</ruby>
+        </td>
+        <td>
+            ministry of Health<br>
+            thick<br>
+            impudent<br>
+            thick slice
+        </td>
+    </tr>
+    <tr>
+        <td>薄</td>
+        <td>
+            うすーい<br>
+            うすーめる
+        </td>
+        <td>
+            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>い</ruby><br>
+            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>切り</ruby><br>
+            <ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp>める</ruby>
+        </td>
+        <td>
+            thin(material), light(color), weak<br>
+            thin slice<br>
+            dilute
+        </td>
+    </tr>
+    <tr>
+        <td>粒</td>
+        <td>
+            つぶ
+        </td>
+        <td>
+            <ruby>粒<rp>(</rp><rt>つぶ</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            grain
+        </td>
+    </tr>
+    <tr>
+        <td>極</td>
+        <td>
+            キョク<br>
+            ゴク
+        </td>
+        <td>
+            <ruby>積極的<rp>(</rp><rt>せっきょくてき</rt><rp>)</rp></ruby><br>
+            <ruby>消極的<rp>(</rp><rt>しょうきょくてき</rt><rp>)</rp></ruby><br>
+            <ruby>極<rp>(</rp><rt>ごく</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            active,positive<br>
+            passive,negative<br>
+            very
+        </td>
+    </tr>
+   <tr>
+        <td>革</td>
+        <td>
+            カク<br>
+            かわ
+        </td>
+        <td>
+            <ruby>改革<rp>(</rp><rt>かいかく</rt><rp>)</rp></ruby><br>
+            <ruby>革命<rp>(</rp><rt>かくめい</rt><rp>)</rp></ruby><br>
+            <ruby>革製<rp>(</rp><rt>かわせい</rt><rp>)</rp></ruby>
+        </td>
+        <td>
+            reform<br>
+            a revolution<br>
+            made of leather
+        </td>
+    </tr>
+    <tr>
+        <td>苦</td>
+        <td>
+            ク<br>
+            くるーしい<br>
+            くるーしむ<br>
+            にがーい
+        </td>
+        <td>
+            <ruby>苦痛<rp>(</rp><rt>くつう</rt><rp>)</rp></ruby><br>
+            <ruby>苦<rp>(</rp><rt>にが</rt><rp>)</rp>い</ruby><br>
+            <ruby>苦<rp>(</rp><rt>くる</rt><rp>)</rp>しい</ruby><br>
+            <ruby>苦<rp>(</rp><rt>くる</rt><rp>)</rp>しむ</ruby>
+        </td>
+        <td>
+            pain, suffering<br>
+            bitter<br>
+            distressful, trying<br>
+            suffer
+        </td>
+    </tr>
+</table>
+
+<hr>
+]]></content>
+      <categories>
+        <category>漢字</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>漢字</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第二週　仕事は順調ですか？</title>
     <url>/new-blog/61e1157.html</url>
     <content><![CDATA[<h1 id="第二週-仕事は順調ですか？"><a href="#第二週-仕事は順調ですか？" class="headerlink" title="第二週　仕事は順調ですか？"></a>第二週　仕事は順調ですか？</h1><span id="more"></span>
@@ -14055,128 +14055,202 @@ funcs[0](); // 0
 
 <hr>
 <h2 id="2日目-いずれ覚えられる"><a href="#2日目-いずれ覚えられる" class="headerlink" title="2日目　いずれ覚えられる"></a>2日目　いずれ覚えられる</h2><p><img src="/new-blog/images/vocw4d2.png"></p>
+<ul>
+    <li>時に関係がある言葉</li>
+</ul>
 <table>
     <tr>
         <td>
-            ときに関係がある言葉
+            まもなく
         </td>
     </tr>
     <tr>
         <td>
-            まもなく  コンサートがまもなく始まる
+            コンサートがまもなく（＝もうすぐ）始まる
+            <br>家に帰ってまもなく客が来た
         </td>
     </tr>
     <tr>
         <td>
-            近々    近々お伺いします
+            <ruby>近々<rp>(</rp><rt>ちかぢか</rt><rp>)</rp></ruby>    
+        </td>
+        <td>
+            近々お<ruby>伺<rp>(</rp><rt>うかが</rt><rp>)</rp></ruby>いします
         </td>
     </tr>
     <tr>
         <td>
-            そのうち    そのうちわかるようになるでしょう
+            そのうち    
+        </td>
+        <td>
+            そのうちわかるようになるでしょう    (you will understand someday)
         </td>
     </tr>
     <tr>
         <td>
-            やがて  やがて夏休みも終わる<br>父が死んでやがて一年になる
+            やがて  
+        </td>
+        <td>
+            やがて夏休みも終わる
+            <br>父が死んでやがて一年になる
         </td>
     </tr>
     <tr>
         <td>
-           ようやく   ようやく（＝やっと）暖かくなってきた
+           ようやく   
+        </td>
+        <td>
+            ようやく（＝やっと）暖かくなってきた
         </td>
     </tr>
     <tr>
         <td>
-            いずれ  いずれ（＝いつか）こうなると思っていた
+            いずれ  
+        </td>
+        <td>
+            いずれ（＝いつか）こうなると思っていた
         </td>
     </tr>
     <tr>
         <td>
-            たちまち  チケットはたちまち（すぐに）売り切れた
+            たちまち  
         </td>
         <td>
-            ただちに    ただちに（すぐに）出発したほうがいい
-        </td>
-    </tr>
-    <tr>
-        <td>
-            にわかに    にわかに空が曇ってきた  
+            チケットはたちまち（=すぐに）売り切れた
         </td>
     </tr>
     <tr>
         <td>
-            絶えず  絶えず水が流れている
+            ただちに    
+        </td>
+        <td>
+            ただちに（=すぐに）出発したほうがいい
         </td>
     </tr>
     <tr>
         <td>
-            つねに  つねに（＝いつも）健康に注意する  
+            にわかに      
+        </td>
+        <td>
+            にわかに(＝急に)空が曇ってきた
         </td>
     </tr>
     <tr>
         <td>
-            しきりに    しきりに（＝何度も）電話が鳴る<br>しきりにほめる
+            <ruby>絶<rp>(</rp><rt>た</rt><rp>)</rp></ruby>えず  
+        </td>
+        <td>
+            絶えず水が流れている
         </td>
     </tr>
     <tr>
         <td>
-            しょっちゅう    しょっちゅう（よく）酒を飲む
+            つねに    
+        </td>
+        <td>
+            つねに（＝いつも）健康に注意する
         </td>
     </tr>
     <tr>
         <td>
-            （もう）すでに    その絵がすでに売れてしまった
+            しきりに    
+        </td>
+        <td>
+            しきりに（＝何度も）電話が鳴る
+            <br>しきりにほめる
         </td>
     </tr>
     <tr>
         <td>
-            とっくに    期限はとっくに（＝ずいぶん前に）過ぎている
+            しょっちゅう    
+        </td>
+        <td>
+            しょっちゅう（=よく）酒を飲む
         </td>
     </tr>
     <tr>
         <td>
-            前もって    前もって調べておく
+            （もう）すでに    
+        </td>
+        <td>
+            その絵がすでに売れてしまった
+        </td>
+    </tr>
+    <tr>
+        <td>
+            とっくに    
+        </td>
+        <td>
+            期限はとっくに（＝ずいぶん前に）過ぎている
+            <br>&#8594; とっくの（ずっと）昔
+        </td>
+    </tr>
+    <tr>
+        <td>
+            前もって    
+        </td>
+        <td>
+            前もって調べておく（事先做好调查）
         </td>
     </tr>
      <tr>
         <td>
-            数字や量が後に来る言葉
         </td>
     </tr>
     <tr>
         <td>
-            ほぼ    ほぼ（＝約）一万円
+            ほぼ    
+        </td>
+        <td>
+            ほぼ（＝約）一万円  ほぼ読み終わる
         </td>
     </tr>
     <tr>
         <td>
-            およそ    およそ（＝だいたい）二週間
+            お（お）よそ    
+        </td>
+        <td>
+            およそ（＝だいたい）二週間
         </td>
     </tr>
     <tr>
         <td>
-            ほんの    ほんの少し
+            ほんの    
+        </td>
+        <td>
+            ほんの少し（就一点点）
         </td>
     </tr>
     <tr>
         <td>
-            たった    たった一人で
+            たった    
+        </td>
+        <td>
+            たった一人で（就一个人）
         </td>
     </tr>
     <tr>
         <td>
-            せいぜい    出席者はせいぜい三十人程度だ
+            せいぜい    
+        </td>
+        <td>
+            出席者はせいぜい三十人程度だ(出席人数最多30人左右)
         </td>
     </tr>
      <tr>
         <td>
-            少なくとも    少なくとも三十人に来る
+            少なくとも    
+        </td>
+        <td>
+            少なくとも三十人は来る
         </td>
     </tr>
      <tr>
         <td>
-            せめて    せめて五位以内になりたかった
+            せめて    
+        </td>
+        <td>
+            せめて五位以内になりたかった
         </td>
     </tr>
 </table>
@@ -14864,6 +14938,48 @@ funcs[0](); // 0
     <title>n2vocab06</title>
     <url>/new-blog/c5fd63d9.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Explain localhost and 127.0.0.1</title>
+    <url>/new-blog/915cd40c.html</url>
+    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
+
+<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
+<blockquote>
+<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
+</blockquote>
+<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
+<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
+<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
+<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
+<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
+</code></pre>
+<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
+<ol>
+<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
+</li>
+<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
+</li>
+</ol>
+<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
+<pre><code>127.0.0.1   localhost
+</code></pre>
+<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
+<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
+<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
+<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
+<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
+<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
+<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
+<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
+<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
+]]></content>
+      <categories>
+        <category>Network</category>
+      </categories>
+      <tags>
+        <tag>Network</tag>
+      </tags>
   </entry>
   <entry>
     <title>第七週 まとめて覚えましょう②</title>
@@ -15712,329 +15828,6 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
-    <title>Explain localhost and 127.0.0.1</title>
-    <url>/new-blog/915cd40c.html</url>
-    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
-
-<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
-<blockquote>
-<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
-</blockquote>
-<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
-<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
-<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
-<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
-<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
-</code></pre>
-<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
-<ol>
-<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
-</li>
-<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
-</li>
-</ol>
-<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
-<pre><code>127.0.0.1   localhost
-</code></pre>
-<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
-<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
-<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
-<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
-<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
-<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
-<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
-<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
-<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
-]]></content>
-      <categories>
-        <category>Network</category>
-      </categories>
-      <tags>
-        <tag>Network</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
-    <url>/new-blog/66c5e938.html</url>
-    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
-<span id="more"></span>
-
-<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
-<ul>
-<li><code>Node.js</code> のローカルインストール</li>
-<li><code>Git</code> のローカルインストール</li>
-<li><code>GitHub</code> アカウント</li>
-<li><code>GitHub</code> リポジトリの作成</li>
-</ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
-<pre><code class="bash">brew install node
-</code></pre>
-<p>もしくは、</p>
-<pre><code class="bash">node -v
-npm -v
-</code></pre>
-<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
-<pre><code class="bash">brew install git
-</code></pre>
-<pre><code class="bash">git --version
-</code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
-<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;your.email@example.com&quot;
-</code></pre>
-<p>“Your Name”と”<a href="mailto:&#x79;&#x6f;&#x75;&#114;&#x2e;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#x79;&#x6f;&#x75;&#114;&#x2e;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
-<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
-</code></pre>
-<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
-<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
-<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
-<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
-<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
-<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
-<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>以下のコマンドを使用して検証できます：</p>
-<pre><code class="bash">hexo -v
-</code></pre>
-<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
-<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
-<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
-</code></pre>
-<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
-<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
-<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
-</code></pre>
-<p>次に、作成されたディレクトリに移動します：</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-</code></pre>
-<p>移動したら、依存パッケージをインストールします：</p>
-<pre><code>npm install
-</code></pre>
-<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
-<pre><code>hexo generate
-</code></pre>
-<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
-<pre><code>hexo server
-</code></pre>
-<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
-<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
-<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
-<blockquote>
-<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
-</blockquote>
-<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-git init 
-git add . 
-git commit -am&quot;init blog&quot; 
-</code></pre>
-<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
-<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
-git branch -M main
-git push -u origin main
-</code></pre>
-<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
-<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
-<pre><code class="bash">git checkout -b pages
-git push -u origin pages
-</code></pre>
-<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
-<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
-<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
-<pre><code class="bash">url: https://ユーザー名.github.io/ 
-root: /breeze-blog/ 
-
-deploy: 
-  type: &#39;git&#39; 
-  repo: git@github.com:ユーザー名./ディレクトリ名
-  branch: pages
-</code></pre>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
-    <url>/new-blog/hexoThemeAndPlugin.html</url>
-    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
-<span id="more"></span>
-
-<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
-<ol>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
-</li>
-<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
-</li>
-<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
-</li>
-<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
-</li>
-</ol>
-<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
-<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
-</li>
-</ol>
-<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
-</code></pre>
-<ol start="3">
-<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
-</ol>
-<pre><code>mkdir themes/next
-</code></pre>
-<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
-<ol start="4">
-<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
-</ol>
-<pre><code>cp -r hexo-theme-next/* /themes/next
-</code></pre>
-<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
-<pre><code>theme: next
-</code></pre>
-<p>と設定することで、新しいテーマを使用できます。</p>
-<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-generator-searchdb --save
-</code></pre>
-<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
-<pre><code>search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
-<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
-<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
-<p><code>/2023/06/22/230622</code></p>
-<p>以下のような形式に変更したいです：</p>
-<p><code>/migrateopsmanager</code></p>
-<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
-<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
-<ol>
-<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
-</li>
-<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
-</li>
-</ol>
-<pre><code>npm install hexo-abbrlink --save
-</code></pre>
-<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
-<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
-<pre><code>permalink: posts/:abbrlink/ 
-# or
-permalink: posts/:abbrlink.html
-</code></pre>
-<blockquote>
-<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜とき・〜直後に</title>
-    <url>/new-blog/73a2b435.html</url>
-    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
-<ul>
-<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
-<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
-<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
-</ul>
-<p>接続　名ーの・動辞書形／た形＋際（に）</p>
-<p>注意　</p>
-<ol>
-<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
-<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
-</ol>
-<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<ul>
-<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
-<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
-</ul>
-<p>接続　名・動辞書形＋に際して・にあたって</p>
-<p>注意</p>
-<ol>
-<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
-</ol>
-<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
-<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
-<p>例文</p>
-<ul>
-<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
-</ul>
-<p>接続　動た形＋とたん（に）</p>
-<p>注意</p>
-<ol>
-<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
-<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
-</ol>
-<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
-<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
-<p>例文</p>
-<ul>
-<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
-<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
-</ul>
-<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
-<p>注意</p>
-<ol>
-<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
-<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
-</ol>
-<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
-<p>例文</p>
-<ul>
-<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
-<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
-</ul>
-<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
-<p>注意</p>
-<ol>
-<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>文法</tag>
-        <tag>ことがらを説明する</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜している（進行中）</title>
     <url>/new-blog/2e6bc246.html</url>
     <content><![CDATA[<h1 id="〜している（進行中）"><a href="#〜している（進行中）" class="headerlink" title="〜している（進行中）"></a>〜している（進行中）</h1><p>[復習]</p>
@@ -16115,6 +15908,85 @@ permalink: posts/:abbrlink.html
 <p>注意　</p>
 <ol>
 <li>時間の幅のある行為を表す動詞（考える）につく。「〜つつ」の前後の文は同じ主語</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>文法</tag>
+        <tag>ことがらを説明する</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜とき・〜直後に</title>
+    <url>/new-blog/73a2b435.html</url>
+    <content><![CDATA[<h1 id="〜とき・〜直後に"><a href="#〜とき・〜直後に" class="headerlink" title="〜とき・〜直後に"></a>〜とき・〜直後に</h1><p>[復習]</p>
+<ul>
+<li>母は新聞を読む<u>とき</u>、眼鏡をかけます。</li>
+<li>窓を開ける<u>と</u>すぐに、涼しい風が入ってき<u>た</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜際（に）"><a href="#〜際（に）" class="headerlink" title="〜際（に）"></a>〜際（に）</h2><p>意味　〜とき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>この整理券は、商品受け取りの<u>際</u>、必要です。</li>
+<li>こちらの会議室をご利用になる<u>際</u>は、受付で必要事項をご記入ください。</li>
+</ul>
+<p>接続　名ーの・動辞書形／た形＋際（に）</p>
+<p>注意　</p>
+<ol>
+<li>主に行為や出来事を表す動詞（使う・完成するなど）・名詞（搭乗・外出など）につく。</li>
+<li>公的な場面などで多く使い、日常の普通のことにはあまり使わない</li>
+</ol>
+<h2 id="〜に際して・〜にあたって"><a href="#〜に際して・〜にあたって" class="headerlink" title="〜に際して・〜にあたって"></a>〜に際して・〜にあたって</h2><p>意味　〜するとき　<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<ul>
+<li>当ショップングサイトのご利用<u>に際して</u>、以下のご利用条件をよくお読みください</li>
+<li>新しく事業を始める<u>にあたって</u>、しっかり準備をしようと思っております</li>
+</ul>
+<p>接続　名・動辞書形＋に際して・にあたって</p>
+<p>注意</p>
+<ol>
+<li>その場１回だけの、意志的で特別な時を表す言葉（結婚・店を開く）につく。後には、主に行為を表す文が来る。<br>「〜にあたって」は、より積極的な行動を表す言葉につき。</li>
+</ol>
+<h2 id="〜たとたん（に）"><a href="#〜たとたん（に）" class="headerlink" title="〜たとたん（に）"></a>〜たとたん（に）</h2><p>意味　〜したら、直後に意外なことが起こる。特定の出来事や状況が突然・予告なく起こったり変わったりする瞬間を表現するために使われます。</p>
+<p>使用　この表現は、何かが予期せず、急に起こる状況や出来事を説明するのに役立ちます。</p>
+<p>例文</p>
+<ul>
+<li>僕が「さよなら」と言っ<u>たとたん</u>、彼女は走っていってしまった。</li>
+</ul>
+<p>接続　動た形＋とたん（に）</p>
+<p>注意</p>
+<ol>
+<li>瞬間的な動きや変化を表す動詞（立ち上がる・変わる）につく。</li>
+<li>後の文は意外性のある内容。話者の希望・意向を表す文や働きかけの文（〜ませんか・〜なさい）は来ない。</li>
+</ol>
+<h2 id="〜（か）と思うと・〜（か）と思ったら"><a href="#〜（か）と思うと・〜（か）と思ったら" class="headerlink" title="〜（か）と思うと・〜（か）と思ったら"></a>〜（か）と思うと・〜（か）と思ったら</h2><p>意味　〜の後、すぐに続いて次の出来事や大きな変化が起こる。ある状況や出来事が予想されたり、期待されたりしたが、実際にはそうではなかったことを表現するためのフレーズです。</p>
+<p>使用　この表現は、期待と現実のギャップを示すのに使われます。</p>
+<p>例文</p>
+<ul>
+<li>赤ちゃんは今泣いた<u>と思うと</u>、もう笑っている。</li>
+<li>このごろは気温の差が大きい。昨日は暑くなった<u>かと思ったら</u>、今日は涼しい。</li>
+</ul>
+<p>接続 動た形＋（か）と思うと・（か）と思ったら　</p>
+<p>注意</p>
+<ol>
+<li>話者の行為については使わない。後の文は少し意外性のある内容。</li>
+<li>話者の希望・意向を表す文や働きかけの文が来ない。</li>
+</ol>
+<h2 id="〜か〜ないかのうちに"><a href="#〜か〜ないかのうちに" class="headerlink" title="〜か〜ないかのうちに"></a>〜か〜ないかのうちに</h2><p>意味　〜が終わると同時に、次のことが起こる</p>
+<p>例文</p>
+<ul>
+<li>私は夜が明けた<u>か</u>明け<u>ないのうちに</u>家を出て、空港へ向かった。</li>
+<li>あの作家は今売れっ子だ。話題作を発表した<u>か</u>し<u>ないかのうちに</u>、もう次の作品に取り掛かっているそうだ。</li>
+</ul>
+<p>接続　動辞書形／た形＋か＋動ない形＋かのうちに</p>
+<p>注意</p>
+<ol>
+<li>「〜（か）と思うと・〜（か）と思ったら」より、「ほとんど同時に」という気持ちが強い。</li>
 </ol>
 ]]></content>
       <categories>
@@ -16727,6 +16599,75 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>強く否定する・強く否定しない</title>
+    <url>/new-blog/c2c9751e.html</url>
+    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
+<ul>
+<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
+<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
+<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
+<p>例文</p>
+<blockquote>
+<p>この仕事を今日中に全部ですか。わたし一人でできる<u>わけがありません</u>よ。</p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
+<p>注意　</p>
+<ol>
+<li>話者が絶対そうではないと確信しているときの言い方。</li>
+</ol>
+<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
+<p>例文</p>
+<blockquote>
+<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。<br>こんな下手なチームでは、何度試合をしても一度も勝てない<u>どころか</u>、1点も入れられないだろう。</p>
+</blockquote>
+<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
+<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。前件よりも悪い状況を言うことが多い。</p>
+<h2 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h2><p>意味　絶対〜ない(話し言葉)</p>
+<p>例文</p>
+<blockquote>
+<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。<br>駅から歩いて40分。バスもない。こんな不便な所に住める<u>ものか</u></p>
+</blockquote>
+<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
+<p>注意　</p>
+<ol>
+<li>少し感情的に強く否定する文。「〜もんか」はさらにくだけた言い方。</li>
+</ol>
+<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
+<p>例文</p>
+<blockquote>
+<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
+</blockquote>
+<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
+<p>注意　</p>
+<ol>
+<li>部分的否定する場合は、「全部」という意味の言葉（いつも・だれでも・どこでも）や「必ずしも」を一緒に使うことが多い。</li>
+</ol>
+<h2 id="〜というものではない・〜というものでもない"><a href="#〜というものではない・〜というものでもない" class="headerlink" title="〜というものではない・〜というものでもない"></a>〜というものではない・〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
+<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
+<p>例文</p>
+<blockquote>
+<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。<br>努力すれば必ず成功する<u>というものでもない</u>。チャンスも必要だ。</p>
+</blockquote>
+<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
+<p>注意　</p>
+<ol>
+<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
+<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜（話題）は</title>
     <url>/new-blog/b439c0f1.html</url>
     <content><![CDATA[<h1 id="〜（話題）は"><a href="#〜（話題）は" class="headerlink" title="〜（話題）は"></a>〜（話題）は</h1><p>[復習]</p>
@@ -16802,131 +16743,6 @@ permalink: posts/:abbrlink.html
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>強く否定する・強く否定しない</title>
-    <url>/new-blog/c2c9751e.html</url>
-    <content><![CDATA[<h1 id="12課-強く否定する・強く否定しない"><a href="#12課-強く否定する・強く否定しない" class="headerlink" title="12課　強く否定する・強く否定しない"></a>12課　強く否定する・強く否定しない</h1><p>[復習]</p>
-<ul>
-<li>その案には<u>絶対</u>賛成でき<u>ない</u>。</li>
-<li>りーさんが今、日本にいる<u>はずがない</u>。先週帰国したんだから。</li>
-<li>今から頑張れば締め切りまでに完成でき<u>ないことはない</u>。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜わけがない"><a href="#〜わけがない" class="headerlink" title="〜わけがない"></a>〜わけがない</h2><p>意味　絶対〜ない・〜とは考えられない</p>
-<p>例文</p>
-<blockquote>
-<p>この仕事を今日中に全部ですか。わたし一人でできる<u>わけがありません</u>よ。</p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な／ーである・名<del>だ</del>　-の／-である）＋わけがない</p>
-<p>注意　</p>
-<ol>
-<li>話者が絶対そうではないと確信しているときの言い方。</li>
-</ol>
-<h2 id="〜どころではない・〜どころか"><a href="#〜どころではない・〜どころか" class="headerlink" title="〜どころではない・〜どころか"></a>〜どころではない・〜どころか</h2><p>意味　〜の程度ではなく、実際はそれとは大違いだ</p>
-<p>例文</p>
-<blockquote>
-<p>休日なのでちょっと道が込むだろうと思っていたが、ちょっと<u>どころではなかった</u>。<br>こんな下手なチームでは、何度試合をしても一度も勝てない<u>どころか</u>、1点も入れられないだろう。</p>
-</blockquote>
-<p>接続　名・普通形（ナ形<del>だ</del>-な／-である・名<del>だ</del>-である）＋どころではない・どころか</p>
-<p>注意　<br>2. 「〜どころか」の前後には程度が大きく違うことや反対のことが来る。前件よりも悪い状況を言うことが多い。</p>
-<h2 id="〜ものか"><a href="#〜ものか" class="headerlink" title="〜ものか"></a>〜ものか</h2><p>意味　絶対〜ない(話し言葉)</p>
-<p>例文</p>
-<blockquote>
-<p>山田が時間どおりに来る<u>ものか</u>、あいつはいつも遅刻なんだから。<br>駅から歩いて40分。バスもない。こんな不便な所に住める<u>ものか</u></p>
-</blockquote>
-<p>接続　普通形（ナ形<del>だ</del>-な・名<del>だ</del>-な）＋ものか</p>
-<p>注意　</p>
-<ol>
-<li>少し感情的に強く否定する文。「〜もんか」はさらにくだけた言い方。</li>
-</ol>
-<h2 id="〜わけではない・〜というわけではない"><a href="#〜わけではない・〜というわけではない" class="headerlink" title="〜わけではない・〜というわけではない"></a>〜わけではない・〜というわけではない</h2><p>意味　全部〜とは言えない・特に〜ということではない</p>
-<p>例文</p>
-<blockquote>
-<p>親の気持ちもわからない<u>わけではない</u>が、自分の進路は自分で決めたい。</p>
-</blockquote>
-<p>接続　<br>    普通形（ナ形<del>だ</del>　-な／-である・名<del>だ</del>　-の／-な／-である）＋わけではない<br>    普通形（ナ形（だ）・名（だ））＋というわけではない</p>
-<p>注意　</p>
-<ol>
-<li>部分的否定する場合は、「全部」という意味の言葉（いつも・だれでも・どこでも）や「必ずしも」を一緒に使うことが多い。</li>
-</ol>
-<h2 id="〜というものではない・〜というものでもない"><a href="#〜というものではない・〜というものでもない" class="headerlink" title="〜というものではない・〜というものでもない"></a>〜というものではない・〜というものでもない</h2><p>説明　Doesn’t mean that; It’s not (true) that; Not necessarily</p>
-<p>意味　ある条件が整えば必ず〜ということになるとは言えない。</p>
-<p>例文</p>
-<blockquote>
-<p>練習問題は一度やれば終わりだ<u>というものでもない</u>。間違ったところをよく復習することが大切だ。<br>努力すれば必ず成功する<u>というものでもない</u>。チャンスも必要だ。</p>
-</blockquote>
-<p>接続　普通形（ナ形（だ）・名（だ））＋というものではない・というものでもない</p>
-<p>注意　</p>
-<ol>
-<li>具体的な事実ではなく、物事の本質についての話者の主張・感想を言う文。</li>
-<li>条件を表す言い方（〜ば）や「〜からといって」を一緒に使うことが多い。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>もしそうなら・たとえそうでも</title>
-    <url>/new-blog/393daec8.html</url>
-    <content><![CDATA[<h1 id="もしそうなら・たとえそうでも"><a href="#もしそうなら・たとえそうでも" class="headerlink" title="もしそうなら・たとえそうでも"></a>もしそうなら・たとえそうでも</h1><p>[復習]</p>
-<ul>
-<li>もし事故を起こし<u>たら</u>どうするんですか</li>
-<li>ヨーロッパへ行く<u>なら</u>秋がいいですよ</li>
-<li>今から走っていっ<u>ても</u>間に合わないでしょう</li>
-</ul>
-<hr>
-<h2 id="〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると"><a href="#〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると" class="headerlink" title="〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると"></a>〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると</h2><p>意味　〜と仮定した場合・〜ということになった場合、そうする・そうなる</p>
-<p>例文</p>
-<ul>
-<li>無人島に何か一つだけ持っていける<u>としたら</u>、何を持っていきたいですか</li>
-<li>彼が犯人ではない<u>とすると</u>、どこか本当の犯人がいるはずだ。</li>
-<li>税金が上がる<u>となれば</u>、国民の生活はますます大変になるだろう。</li>
-</ul>
-<p>接続</p>
-<blockquote>
-<p>普通形＋〜としたら・〜とすれば・〜とすると<br>名・普通形＋〜となったら・〜となれば・〜となると</p>
-</blockquote>
-<p>注意</p>
-<p>「〜としたら・〜とすれば・〜とすると」は家庭の意味が強い。<br>「〜となったら・〜となれば・〜となると」は、実現する可能性があることにつき、それが実現した場合を考えている。どちらも後には話者の判断などを表す文が来る。<br>「〜とすると・〜となると」の後には、話者の希望・意向を表す文は来ない</p>
-<h2 id="〜ものなら"><a href="#〜ものなら" class="headerlink" title="〜ものなら"></a>〜ものなら</h2><p>意味　もし〜できるなら、そうしたい・そうしてほしい。</p>
-<p>例文</p>
-<ul>
-<li>あの日の出来事を忘れられる<u>ものなら</u>忘れたいのに</li>
-<li>やれる<u>ものなら</u>やってみろ</li>
-</ul>
-<p>接続　動辞書形＋ものなら</p>
-<p>注意　無理そうなことを仮定して言う。前には、可能の意味を表す動詞がくる。後には、話者の希望や期待を表す文が来る。</p>
-<h2 id="〜（よ）うものなら"><a href="#〜（よ）うものなら" class="headerlink" title="〜（よ）うものなら"></a>〜（よ）うものなら</h2><p>意味　もし〜たら、大変なことになる。</p>
-<p>例文</p>
-<ul>
-<li>わたしはアレルギー体質なので、合わない食品を食べ<u>ようものなら</u>、体のあちこちがかゆくなる。</li>
-</ul>
-<p>接続 動う・よう形＋ものなら</p>
-<p>注意　後には、「きっと大変なことになる」という意味の推量を表す文が来る。</p>
-<h2 id="〜ないことには"><a href="#〜ないことには" class="headerlink" title="〜ないことには"></a>〜ないことには</h2><p>意味　〜なければ、あることが実現しない。</p>
-<p>例文</p>
-<ul>
-<li>一度会って<u>ないことには</u>、仕事を任せられる人がどうかわからない。</li>
-</ul>
-<p>接続　動ない形・イ形くない・ナ形でない・名でない＋ことには</p>
-<p>注意　後には、否定的な意味の文が来る。</p>
-<h2 id="〜を抜きにしては"><a href="#〜を抜きにしては" class="headerlink" title="〜を抜きにしては"></a>〜を抜きにしては</h2><p>意味　〜がなければ、〜を考えに入れない状態では、あることが実現しない</p>
-<p>例文　</p>
-<ul>
-<li>インタネットとメール<u>を抜きにしては</u>、現代社会は成り立たないと言ってもいい</li>
-</ul>
-<p>接続　名＋を抜きにしては</p>
-<p>注意　話者が高く評価するものを表す言葉につく。後には、実現しないという意味の文が来る</p>
-<h2 id="〜としても・〜にしても・〜にしろ・〜にせよ"><a href="#〜としても・〜にしても・〜にしろ・〜にせよ" class="headerlink" title="〜としても・〜にしても・〜にしろ・〜にせよ"></a>〜としても・〜にしても・〜にしろ・〜にせよ</h2><p>意味　たとえ〜ということが事実でも、話者の気持ちはそれに影響されない</p>
-<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p>接続</p>
-]]></content>
   </entry>
   <entry>
     <title>〜けれど</title>
@@ -17012,6 +16828,62 @@ permalink: posts/:abbrlink.html
         <tag>N2</tag>
         <tag>SubjectiveExplain</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>もしそうなら・たとえそうでも</title>
+    <url>/new-blog/393daec8.html</url>
+    <content><![CDATA[<h1 id="もしそうなら・たとえそうでも"><a href="#もしそうなら・たとえそうでも" class="headerlink" title="もしそうなら・たとえそうでも"></a>もしそうなら・たとえそうでも</h1><p>[復習]</p>
+<ul>
+<li>もし事故を起こし<u>たら</u>どうするんですか</li>
+<li>ヨーロッパへ行く<u>なら</u>秋がいいですよ</li>
+<li>今から走っていっ<u>ても</u>間に合わないでしょう</li>
+</ul>
+<hr>
+<h2 id="〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると"><a href="#〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると" class="headerlink" title="〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると"></a>〜としたら・〜とすれば・〜とすると・〜となったら・〜となれば・〜となると</h2><p>意味　〜と仮定した場合・〜ということになった場合、そうする・そうなる</p>
+<p>例文</p>
+<ul>
+<li>無人島に何か一つだけ持っていける<u>としたら</u>、何を持っていきたいですか</li>
+<li>彼が犯人ではない<u>とすると</u>、どこか本当の犯人がいるはずだ。</li>
+<li>税金が上がる<u>となれば</u>、国民の生活はますます大変になるだろう。</li>
+</ul>
+<p>接続</p>
+<blockquote>
+<p>普通形＋〜としたら・〜とすれば・〜とすると<br>名・普通形＋〜となったら・〜となれば・〜となると</p>
+</blockquote>
+<p>注意</p>
+<p>「〜としたら・〜とすれば・〜とすると」は家庭の意味が強い。<br>「〜となったら・〜となれば・〜となると」は、実現する可能性があることにつき、それが実現した場合を考えている。どちらも後には話者の判断などを表す文が来る。<br>「〜とすると・〜となると」の後には、話者の希望・意向を表す文は来ない</p>
+<h2 id="〜ものなら"><a href="#〜ものなら" class="headerlink" title="〜ものなら"></a>〜ものなら</h2><p>意味　もし〜できるなら、そうしたい・そうしてほしい。</p>
+<p>例文</p>
+<ul>
+<li>あの日の出来事を忘れられる<u>ものなら</u>忘れたいのに</li>
+<li>やれる<u>ものなら</u>やってみろ</li>
+</ul>
+<p>接続　動辞書形＋ものなら</p>
+<p>注意　無理そうなことを仮定して言う。前には、可能の意味を表す動詞がくる。後には、話者の希望や期待を表す文が来る。</p>
+<h2 id="〜（よ）うものなら"><a href="#〜（よ）うものなら" class="headerlink" title="〜（よ）うものなら"></a>〜（よ）うものなら</h2><p>意味　もし〜たら、大変なことになる。</p>
+<p>例文</p>
+<ul>
+<li>わたしはアレルギー体質なので、合わない食品を食べ<u>ようものなら</u>、体のあちこちがかゆくなる。</li>
+</ul>
+<p>接続 動う・よう形＋ものなら</p>
+<p>注意　後には、「きっと大変なことになる」という意味の推量を表す文が来る。</p>
+<h2 id="〜ないことには"><a href="#〜ないことには" class="headerlink" title="〜ないことには"></a>〜ないことには</h2><p>意味　〜なければ、あることが実現しない。</p>
+<p>例文</p>
+<ul>
+<li>一度会って<u>ないことには</u>、仕事を任せられる人がどうかわからない。</li>
+</ul>
+<p>接続　動ない形・イ形くない・ナ形でない・名でない＋ことには</p>
+<p>注意　後には、否定的な意味の文が来る。</p>
+<h2 id="〜を抜きにしては"><a href="#〜を抜きにしては" class="headerlink" title="〜を抜きにしては"></a>〜を抜きにしては</h2><p>意味　〜がなければ、〜を考えに入れない状態では、あることが実現しない</p>
+<p>例文　</p>
+<ul>
+<li>インタネットとメール<u>を抜きにしては</u>、現代社会は成り立たないと言ってもいい</li>
+</ul>
+<p>接続　名＋を抜きにしては</p>
+<p>注意　話者が高く評価するものを表す言葉につく。後には、実現しないという意味の文が来る</p>
+<h2 id="〜としても・〜にしても・〜にしろ・〜にせよ"><a href="#〜としても・〜にしても・〜にしろ・〜にせよ" class="headerlink" title="〜としても・〜にしても・〜にしろ・〜にせよ"></a>〜としても・〜にしても・〜にしろ・〜にせよ</h2><p>意味　たとえ〜ということが事実でも、話者の気持ちはそれに影響されない</p>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p>接続</p>
+]]></content>
   </entry>
   <entry>
     <title>〜だから（理由）−１</title>
@@ -18011,6 +17883,381 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>文の組み立て−3　「〜ない」がつく文法形式</title>
+    <url>/new-blog/e6787bff.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
+
+<table>
+    <tr>
+        <th colspan="2">ないにつながる形</th>
+        <th></th>
+        <th>課</th>
+    </tr>
+    <tr>
+        <td>〜わけが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけがない">〜わけがない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜どころでは</td>
+        <td>ない</td>
+        <td>「逆の意味を強調するために使われます。具体的には、予想や期待とは逆の状況や結果を示す際に使用されます。」</td>
+        <td>
+            <a href="#〜どころではない・〜どころか">〜どころではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜わけでは</td>
+        <td>ない</td>
+        <td>「否定的な意味を表すために使われます。具体的には、先行する文や文脈に対しての否定や修正を示す役割を果たします。」</td>
+        <td>
+            <a href="#〜わけではない・〜というわけではない">〜わけではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜というわけでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけではない・〜というわけではない">〜というわけではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜というものでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜というものではない・〜というものでもない">〜というものではない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜ようが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ようがない">〜ようがない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜どころでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜どころではない">〜どころではない</a>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            〜しか<br>
+            〜よりほか
+        </td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜しかない・〜よりほかない">〜しかない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜ものでは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ものだ／〜ものではない">〜ものではない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜ことは</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ことはない">〜ことはない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜てしかたが</td>
+        <td>ない</td>
+        <td></td>
+        <td>
+            <a href="#〜てしかたがない・〜てしょうがない・〜てたまらない">〜てしかたがない</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>〜わけには</td>
+        <td>いかない</td>
+        <td></td>
+        <td>
+            <a href="#〜わけにはいかない・〜わけにもいかない">〜わけにはいかない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜に</td>
+        <td>
+            違いない<br>
+            相違ない
+        </td>
+        <td></td>
+        <td>
+            <a href="#〜に違いない・〜に相違ない">〜に違いない・〜に相違ない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>すぎない</td>
+        <td></td>
+        <td>
+            <a href="#〜にすぎない">〜にすぎない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>ほかならない</td>
+        <td></td>
+        <td>
+            <a href="#〜にほかならない">〜にほかならない</a>
+        </td>
+    </tr>    
+    <tr>
+        <td>〜に</td>
+        <td>越したことはない</td>
+        <td></td>
+        <td>
+            <a href="#〜に越したことはない">〜に越したことはない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜て</td>
+        <td>たまらない</td>
+        <td></td>
+        <td>
+            <a href="#〜てたまらな">〜てたまらない</a>
+        </td>
+    </tr>  
+    <tr>
+        <td>
+            〜ないでは<br>
+            〜ずには
+        </td>
+        <td>いられない</td>
+        <td></td>
+        <td>
+            <a href="#〜ないではいられない・〜ずにはいられない">〜ないではいられない・〜ずにはいられない</a>
+        </td>
+    </tr>  
+    <tr>
+        <td>〜ないわけに（は）</td>
+        <td>いかない</td>
+        <td></td>
+        <td>
+            <a href="#〜ないわけに（は）いかない">〜ないわけに（は）いかない</a>
+        </td>
+    </tr>
+    <tr>
+        <td>〜ざるを</td>
+        <td>得ない</td>
+        <td></td>
+        <td>
+            <a href="#〜ざるを得ない">〜ざるを得ない</a>
+        </td>
+    </tr>
+</table>]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>始めと終わりが正しく対応した文</title>
+    <url>/new-blog/c660853.html</url>
+    <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
+
+<h2 id="A-主語と述語の対応"><a href="#A-主語と述語の対応" class="headerlink" title="A 主語と述語の対応"></a>A 主語と述語の対応</h2><p>主語と述語の関係は次の四つの形があります。</p>
+<table>
+    <tr>
+        <th>主語</th>
+        <th>述語</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>何　だ<br>名詞</td>
+        <td>事故の原因はスピードの<u>出しすぎである</u></td>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>どうだ。<br>イ・ナ形容詞</td>
+        <td>健康な生活をおくるには、良い生活習慣が<u>大切だ</u></td>
+    </tr>
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>どうする<br>動詞</td>
+        <td>今年は、この地方は４回も台風の被害を<u>受けた</u></td>
+    </tr>    
+    <tr>
+        <td>何　が（は）<br>名詞</td>
+        <td>ある・いる</td>
+        <td>駅前には自転車置き場が数か所<u>ある</u></td>
+    </tr>
+</table>
+
+<h2 id="B-文末の制限−1-決まった文末をとる表現"><a href="#B-文末の制限−1-決まった文末をとる表現" class="headerlink" title="B 文末の制限−1 決まった文末をとる表現"></a>B 文末の制限−1 決まった文末をとる表現</h2><h3 id="1-なぜなら・というのは・なぜというと＋〜から（ため）である"><a href="#1-なぜなら・というのは・なぜというと＋〜から（ため）である" class="headerlink" title="1. なぜなら・というのは・なぜというと＋〜から（ため）である"></a>1. なぜなら・というのは・なぜというと＋〜から（ため）である</h3><blockquote>
+<p>私は結局国へは帰らないで、日本に残ることにした。<u>というのは</u>、日本の精神風土が私に合っていると思われた<u>からである</u></p>
+</blockquote>
+<h3 id="2-〜かというと＋「〜」を否定する文"><a href="#2-〜かというと＋「〜」を否定する文" class="headerlink" title="2. 〜かというと＋「〜」を否定する文"></a>2. 〜かというと＋「〜」を否定する文</h3><blockquote>
+<p>この作家の作品が全て歴史的なものばかり<u>かというと</u>、<u>そんなことはない</u>。中には軽いタッチの旅行案内もある。</p>
+</blockquote>
+<h3 id="3-〜の（＝理由・原因）は＋…から（ため）である・…である"><a href="#3-〜の（＝理由・原因）は＋…から（ため）である・…である" class="headerlink" title="3. 〜の（＝理由・原因）は＋…から（ため）である・…である"></a>3. 〜の（＝理由・原因）は＋…から（ため）である・…である</h3><blockquote>
+<p>今年の米の収穫量がいつもの年より少なかった<u>のは</u>、夏、天候が安定しなかった<u>ためである</u></p>
+</blockquote>
+<h3 id="4-〜には＋…がいる・…がある・…が多い・…が見られる"><a href="#4-〜には＋…がいる・…がある・…が多い・…が見られる" class="headerlink" title="4. 〜には＋…がいる・…がある・…が多い・…が見られる"></a>4. 〜には＋…がいる・…がある・…が多い・…が見られる</h3><blockquote>
+<p>このアンケート調査<u>には</u>、いくつか不十分な点<u>がある</u></p>
+</blockquote>
+<h3 id="5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"><a href="#5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない" class="headerlink" title="5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"></a>5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない</h3><blockquote>
+<p>我々は大きな仕事を頼まれた。期待に応える<u>には</u>しっかり協力し合うこと<u>が必要だ</u></p>
+</blockquote>
+<h2 id="C-文末の制限−2-決まった文末をとる副詞"><a href="#C-文末の制限−2-決まった文末をとる副詞" class="headerlink" title="C. 文末の制限−2 決まった文末をとる副詞"></a>C. 文末の制限−2 決まった文末をとる副詞</h2><table>
+    <tr>
+        <th>副詞</th>
+        <th>文末</th>
+        <th>例</th>
+    </tr>
+    <tr>
+        <td>全く</td>
+        <td rowspan="9">否定</td>
+        <td>
+            私は進学することは<b>全く</b>考えて<u>いない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>そうなに</td>
+        <td>
+            この問題は<b>そうなに</b>難しく<u>ないです</u>
+        </td>
+    </tr>  
+    <tr>
+        <td>そう</td>
+        <td>
+            病気のことは<b>そう</b>心配する必要は<u>ない</u>
+        </td>
+    </tr>  
+    <tr>
+        <td>たいして</td>
+        <td>
+            車の修理には<b>たいして</b>費用はかから<u>なかった</u>
+        </td>
+    </tr>   
+    <tr>
+        <td>めったに</td>
+        <td>
+            こんな素晴らしい景色<b>めったに</b>見られ<u>ない</u>
+        </td>
+    </tr>    
+    <tr>
+        <td>少しも</td>
+        <td>
+            健康については私は<b>少しも</b>心配してい<u>ない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>決して</td>
+        <td>
+            私は料理に化学調味料は<b>決して</b>使い<u>ません</u>
+        </td>
+    </tr>   
+    <tr>
+        <td>なにも</td>
+        <td>
+            <b>なにも</b>そんな怒ることは<u>ない</u>でしょう
+        </td>
+    </tr>    
+    <tr>
+        <td>必ずしも</td>
+        <td>
+            値段が高いものが<b>必ずしも</b>いいとは限ら<u>ない</u>
+        </td>
+    </tr>
+    <tr>
+        <td>どうも・どうやら</td>
+        <td rowspan="5">推量・否定推量</td>
+        <td>あの二人は<b>どうやら</b>恋人同士の<u>ようだ</u></td>
+    </tr>
+    <tr>
+        <td>もしかしたら・もしかすると</td>
+        <td><b>もしかしたら</b>、林さんは今日来ない<u>かもしれない</u></td>
+    </tr>
+    <tr>
+        <td>恐らく</td>
+        <td><b>恐らく</b>週末は忙しくなる<u>だろう</u></td>
+    </tr>
+    <tr>
+        <td>まさか</td>
+        <td><b>まさか</b>林さんは不合格にはなら<u>ないだろう</u></td>
+    </tr>
+    <tr>
+        <td>きっと</td>
+        <td>彼は今ごろ<b>きっと</b>困っている<u>に違いない</u></td>
+    </tr>
+    <tr>
+        <td>まるで</td>
+        <td rowspan="2">様態</td>
+        <td>地面に桜が散って、<b>まるで</b>雪が降った<u>かのようだ</u></td>
+    </tr>
+    <tr>
+        <td>今にも</td>
+        <td>あの子<b>今にも</b>泣き出し<u>そうな</u>顔をしている</td>
+    </tr>
+    <tr>
+        <td>一段と・ますます</td>
+        <td rowspan="2">変化（くなる・増える・やせる）</td>
+        <td>最近、太郎は<b>一段と</b>大人っぽく<u>なった</u></td>
+    </tr>    
+    <tr>
+        <td>次第に・徐々に</td>
+        <td>今後、経済は<b>次第に</b><u>回復して</u>いくだろう</td>
+    </tr>
+    <tr>
+        <td>いったい</td>
+        <td rowspan="2">質問</td>
+        <td><b>いったい</b>君は何を考えているの<u>か</u></td>
+    </tr>    
+    <tr>
+        <td>果たして</td>
+        <td><b>果たして</b>私の予想は当たるだろう<u>か</u></td>
+    </tr>    
+    <tr>
+        <td　rowspan="3">すでに</td>
+        <td>完了（ている）</td>
+        <td><b>すでに</b>会場の準備は整って<u>いる</u></td>
+    </tr>
+    <tr>
+        <td>完了（てある）</td>
+        <td>ホテルは<b>すでに</b>予約し<u>てある</u></td>
+    </tr>
+    <tr>
+        <td>完了（た）</td>
+        <td>この問題は<b>すでに</b>解決<u>した</u></td>
+    </tr>
+</table>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>文法形式の整理</title>
     <url>/new-blog/n236c105c5.html</url>
     <content><![CDATA[<h1 id="A-元の言葉に着目"><a href="#A-元の言葉に着目" class="headerlink" title="A 元の言葉に着目"></a>A 元の言葉に着目</h1><span id="more"></span>
@@ -18935,381 +19182,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>文の組み立て−3　「〜ない」がつく文法形式</title>
-    <url>/new-blog/e6787bff.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
-
-<table>
-    <tr>
-        <th colspan="2">ないにつながる形</th>
-        <th></th>
-        <th>課</th>
-    </tr>
-    <tr>
-        <td>〜わけが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけがない">〜わけがない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜どころでは</td>
-        <td>ない</td>
-        <td>「逆の意味を強調するために使われます。具体的には、予想や期待とは逆の状況や結果を示す際に使用されます。」</td>
-        <td>
-            <a href="#〜どころではない・〜どころか">〜どころではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜わけでは</td>
-        <td>ない</td>
-        <td>「否定的な意味を表すために使われます。具体的には、先行する文や文脈に対しての否定や修正を示す役割を果たします。」</td>
-        <td>
-            <a href="#〜わけではない・〜というわけではない">〜わけではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜というわけでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけではない・〜というわけではない">〜というわけではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜というものでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜というものではない・〜というものでもない">〜というものではない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜ようが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ようがない">〜ようがない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜どころでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜どころではない">〜どころではない</a>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            〜しか<br>
-            〜よりほか
-        </td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜しかない・〜よりほかない">〜しかない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜ものでは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ものだ／〜ものではない">〜ものではない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜ことは</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ことはない">〜ことはない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜てしかたが</td>
-        <td>ない</td>
-        <td></td>
-        <td>
-            <a href="#〜てしかたがない・〜てしょうがない・〜てたまらない">〜てしかたがない</a>
-        </td>
-    </tr> 
-    <tr>
-        <td>〜わけには</td>
-        <td>いかない</td>
-        <td></td>
-        <td>
-            <a href="#〜わけにはいかない・〜わけにもいかない">〜わけにはいかない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜に</td>
-        <td>
-            違いない<br>
-            相違ない
-        </td>
-        <td></td>
-        <td>
-            <a href="#〜に違いない・〜に相違ない">〜に違いない・〜に相違ない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>すぎない</td>
-        <td></td>
-        <td>
-            <a href="#〜にすぎない">〜にすぎない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>ほかならない</td>
-        <td></td>
-        <td>
-            <a href="#〜にほかならない">〜にほかならない</a>
-        </td>
-    </tr>    
-    <tr>
-        <td>〜に</td>
-        <td>越したことはない</td>
-        <td></td>
-        <td>
-            <a href="#〜に越したことはない">〜に越したことはない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜て</td>
-        <td>たまらない</td>
-        <td></td>
-        <td>
-            <a href="#〜てたまらな">〜てたまらない</a>
-        </td>
-    </tr>  
-    <tr>
-        <td>
-            〜ないでは<br>
-            〜ずには
-        </td>
-        <td>いられない</td>
-        <td></td>
-        <td>
-            <a href="#〜ないではいられない・〜ずにはいられない">〜ないではいられない・〜ずにはいられない</a>
-        </td>
-    </tr>  
-    <tr>
-        <td>〜ないわけに（は）</td>
-        <td>いかない</td>
-        <td></td>
-        <td>
-            <a href="#〜ないわけに（は）いかない">〜ないわけに（は）いかない</a>
-        </td>
-    </tr>
-    <tr>
-        <td>〜ざるを</td>
-        <td>得ない</td>
-        <td></td>
-        <td>
-            <a href="#〜ざるを得ない">〜ざるを得ない</a>
-        </td>
-    </tr>
-</table>]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>GrammaticalForm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>始めと終わりが正しく対応した文</title>
-    <url>/new-blog/c660853.html</url>
-    <content><![CDATA[<h1 id="始めと終わりが正しく対応した文"><a href="#始めと終わりが正しく対応した文" class="headerlink" title="始めと終わりが正しく対応した文"></a>始めと終わりが正しく対応した文</h1><span id="more"></span>
-
-<h2 id="A-主語と述語の対応"><a href="#A-主語と述語の対応" class="headerlink" title="A 主語と述語の対応"></a>A 主語と述語の対応</h2><p>主語と述語の関係は次の四つの形があります。</p>
-<table>
-    <tr>
-        <th>主語</th>
-        <th>述語</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>何　だ<br>名詞</td>
-        <td>事故の原因はスピードの<u>出しすぎである</u></td>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>どうだ。<br>イ・ナ形容詞</td>
-        <td>健康な生活をおくるには、良い生活習慣が<u>大切だ</u></td>
-    </tr>
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>どうする<br>動詞</td>
-        <td>今年は、この地方は４回も台風の被害を<u>受けた</u></td>
-    </tr>    
-    <tr>
-        <td>何　が（は）<br>名詞</td>
-        <td>ある・いる</td>
-        <td>駅前には自転車置き場が数か所<u>ある</u></td>
-    </tr>
-</table>
-
-<h2 id="B-文末の制限−1-決まった文末をとる表現"><a href="#B-文末の制限−1-決まった文末をとる表現" class="headerlink" title="B 文末の制限−1 決まった文末をとる表現"></a>B 文末の制限−1 決まった文末をとる表現</h2><h3 id="1-なぜなら・というのは・なぜというと＋〜から（ため）である"><a href="#1-なぜなら・というのは・なぜというと＋〜から（ため）である" class="headerlink" title="1. なぜなら・というのは・なぜというと＋〜から（ため）である"></a>1. なぜなら・というのは・なぜというと＋〜から（ため）である</h3><blockquote>
-<p>私は結局国へは帰らないで、日本に残ることにした。<u>というのは</u>、日本の精神風土が私に合っていると思われた<u>からである</u></p>
-</blockquote>
-<h3 id="2-〜かというと＋「〜」を否定する文"><a href="#2-〜かというと＋「〜」を否定する文" class="headerlink" title="2. 〜かというと＋「〜」を否定する文"></a>2. 〜かというと＋「〜」を否定する文</h3><blockquote>
-<p>この作家の作品が全て歴史的なものばかり<u>かというと</u>、<u>そんなことはない</u>。中には軽いタッチの旅行案内もある。</p>
-</blockquote>
-<h3 id="3-〜の（＝理由・原因）は＋…から（ため）である・…である"><a href="#3-〜の（＝理由・原因）は＋…から（ため）である・…である" class="headerlink" title="3. 〜の（＝理由・原因）は＋…から（ため）である・…である"></a>3. 〜の（＝理由・原因）は＋…から（ため）である・…である</h3><blockquote>
-<p>今年の米の収穫量がいつもの年より少なかった<u>のは</u>、夏、天候が安定しなかった<u>ためである</u></p>
-</blockquote>
-<h3 id="4-〜には＋…がいる・…がある・…が多い・…が見られる"><a href="#4-〜には＋…がいる・…がある・…が多い・…が見られる" class="headerlink" title="4. 〜には＋…がいる・…がある・…が多い・…が見られる"></a>4. 〜には＋…がいる・…がある・…が多い・…が見られる</h3><blockquote>
-<p>このアンケート調査<u>には</u>、いくつか不十分な点<u>がある</u></p>
-</blockquote>
-<h3 id="5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"><a href="#5-〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない" class="headerlink" title="5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない"></a>5. 〜には＋…が必要だ・…が便利だ・…がかかる・…なかればならない</h3><blockquote>
-<p>我々は大きな仕事を頼まれた。期待に応える<u>には</u>しっかり協力し合うこと<u>が必要だ</u></p>
-</blockquote>
-<h2 id="C-文末の制限−2-決まった文末をとる副詞"><a href="#C-文末の制限−2-決まった文末をとる副詞" class="headerlink" title="C. 文末の制限−2 決まった文末をとる副詞"></a>C. 文末の制限−2 決まった文末をとる副詞</h2><table>
-    <tr>
-        <th>副詞</th>
-        <th>文末</th>
-        <th>例</th>
-    </tr>
-    <tr>
-        <td>全く</td>
-        <td rowspan="9">否定</td>
-        <td>
-            私は進学することは<b>全く</b>考えて<u>いない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>そうなに</td>
-        <td>
-            この問題は<b>そうなに</b>難しく<u>ないです</u>
-        </td>
-    </tr>  
-    <tr>
-        <td>そう</td>
-        <td>
-            病気のことは<b>そう</b>心配する必要は<u>ない</u>
-        </td>
-    </tr>  
-    <tr>
-        <td>たいして</td>
-        <td>
-            車の修理には<b>たいして</b>費用はかから<u>なかった</u>
-        </td>
-    </tr>   
-    <tr>
-        <td>めったに</td>
-        <td>
-            こんな素晴らしい景色<b>めったに</b>見られ<u>ない</u>
-        </td>
-    </tr>    
-    <tr>
-        <td>少しも</td>
-        <td>
-            健康については私は<b>少しも</b>心配してい<u>ない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>決して</td>
-        <td>
-            私は料理に化学調味料は<b>決して</b>使い<u>ません</u>
-        </td>
-    </tr>   
-    <tr>
-        <td>なにも</td>
-        <td>
-            <b>なにも</b>そんな怒ることは<u>ない</u>でしょう
-        </td>
-    </tr>    
-    <tr>
-        <td>必ずしも</td>
-        <td>
-            値段が高いものが<b>必ずしも</b>いいとは限ら<u>ない</u>
-        </td>
-    </tr>
-    <tr>
-        <td>どうも・どうやら</td>
-        <td rowspan="5">推量・否定推量</td>
-        <td>あの二人は<b>どうやら</b>恋人同士の<u>ようだ</u></td>
-    </tr>
-    <tr>
-        <td>もしかしたら・もしかすると</td>
-        <td><b>もしかしたら</b>、林さんは今日来ない<u>かもしれない</u></td>
-    </tr>
-    <tr>
-        <td>恐らく</td>
-        <td><b>恐らく</b>週末は忙しくなる<u>だろう</u></td>
-    </tr>
-    <tr>
-        <td>まさか</td>
-        <td><b>まさか</b>林さんは不合格にはなら<u>ないだろう</u></td>
-    </tr>
-    <tr>
-        <td>きっと</td>
-        <td>彼は今ごろ<b>きっと</b>困っている<u>に違いない</u></td>
-    </tr>
-    <tr>
-        <td>まるで</td>
-        <td rowspan="2">様態</td>
-        <td>地面に桜が散って、<b>まるで</b>雪が降った<u>かのようだ</u></td>
-    </tr>
-    <tr>
-        <td>今にも</td>
-        <td>あの子<b>今にも</b>泣き出し<u>そうな</u>顔をしている</td>
-    </tr>
-    <tr>
-        <td>一段と・ますます</td>
-        <td rowspan="2">変化（くなる・増える・やせる）</td>
-        <td>最近、太郎は<b>一段と</b>大人っぽく<u>なった</u></td>
-    </tr>    
-    <tr>
-        <td>次第に・徐々に</td>
-        <td>今後、経済は<b>次第に</b><u>回復して</u>いくだろう</td>
-    </tr>
-    <tr>
-        <td>いったい</td>
-        <td rowspan="2">質問</td>
-        <td><b>いったい</b>君は何を考えているの<u>か</u></td>
-    </tr>    
-    <tr>
-        <td>果たして</td>
-        <td><b>果たして</b>私の予想は当たるだろう<u>か</u></td>
-    </tr>    
-    <tr>
-        <td　rowspan="3">すでに</td>
-        <td>完了（ている）</td>
-        <td><b>すでに</b>会場の準備は整って<u>いる</u></td>
-    </tr>
-    <tr>
-        <td>完了（てある）</td>
-        <td>ホテルは<b>すでに</b>予約し<u>てある</u></td>
-    </tr>
-    <tr>
-        <td>完了（た）</td>
-        <td>この問題は<b>すでに</b>解決<u>した</u></td>
-    </tr>
-</table>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>時制</title>
     <url>/new-blog/956f59e9.html</url>
     <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
@@ -19447,6 +19319,208 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
+    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
+    <url>/new-blog/66c5e938.html</url>
+    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+<span id="more"></span>
+
+<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
+<ul>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
+</ul>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<pre><code class="bash">brew install node
+</code></pre>
+<p>もしくは、</p>
+<pre><code class="bash">node -v
+npm -v
+</code></pre>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<pre><code class="bash">brew install git
+</code></pre>
+<pre><code class="bash">git --version
+</code></pre>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@example.com&quot;
+</code></pre>
+<p>“Your Name”と”<a href="mailto:&#x79;&#111;&#x75;&#x72;&#x2e;&#101;&#109;&#97;&#105;&#108;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#x72;&#x2e;&#101;&#109;&#97;&#105;&#108;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
+</code></pre>
+<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
+<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
+<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
+<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
+<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
+<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
+<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+<p>以下のコマンドを使用して検証できます：</p>
+<pre><code class="bash">hexo -v
+</code></pre>
+<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
+<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
+<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
+</code></pre>
+<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
+<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
+<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
+</code></pre>
+<p>次に、作成されたディレクトリに移動します：</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+</code></pre>
+<p>移動したら、依存パッケージをインストールします：</p>
+<pre><code>npm install
+</code></pre>
+<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
+<pre><code>hexo generate
+</code></pre>
+<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
+<pre><code>hexo server
+</code></pre>
+<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
+<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
+<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
+<blockquote>
+<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
+</blockquote>
+<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+git init 
+git add . 
+git commit -am&quot;init blog&quot; 
+</code></pre>
+<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
+<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
+git branch -M main
+git push -u origin main
+</code></pre>
+<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
+<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
+<pre><code class="bash">git checkout -b pages
+git push -u origin pages
+</code></pre>
+<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
+<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
+<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
+<pre><code class="bash">url: https://ユーザー名.github.io/ 
+root: /breeze-blog/ 
+
+deploy: 
+  type: &#39;git&#39; 
+  repo: git@github.com:ユーザー名./ディレクトリ名
+  branch: pages
+</code></pre>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
+    <url>/new-blog/hexoThemeAndPlugin.html</url>
+    <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
+<span id="more"></span>
+
+<h2 id="デフォルトのテーマを変更すること"><a href="#デフォルトのテーマを変更すること" class="headerlink" title="デフォルトのテーマを変更すること"></a>デフォルトのテーマを変更すること</h2><h3 id="新しいテーマを選ぶ"><a href="#新しいテーマを選ぶ" class="headerlink" title="新しいテーマを選ぶ"></a>新しいテーマを選ぶ</h3><p>以下の手順でお好みのテーマを選び、そのGitHubリポジトリのアドレスをコピーできます。</p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">ここ</a>に好みのテーマを選んでください。</p>
+</li>
+<li><p>テーマのタイトルをクリックしてください。（画像をクリックするとデモサイトに移動してしまいますので、タイトルをクリックしてください。）</p>
+</li>
+<li><p>タイトルをクリックすると、GitHubのリポジトリに移動します。</p>
+</li>
+<li><p>ブラウザのアドレスバーに表示されているリポジトリのURLをコピーしてください。</p>
+</li>
+</ol>
+<p>例えば、僕は使用しているテーマが「<code>Next</code>」であり、そのプロジェクトのアドレスが「<code>git@github.com:next-theme/hexo-theme-next.git</code>」であることがわかりました。</p>
+<h3 id="テーマのインストール"><a href="#テーマのインストール" class="headerlink" title="テーマのインストール"></a>テーマのインストール</h3><ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、テーマのプロジェクトをローカルにクローンします：</p>
+</li>
+</ol>
+<pre><code>git clone git@github.com:next-theme/hexo-theme-next.git
+</code></pre>
+<ol start="3">
+<li>テーマのファイルを含む<code>next</code>という名前のフォルダを作成します。次のコマンドを実行します：</li>
+</ol>
+<pre><code>mkdir themes/next
+</code></pre>
+<p>これにより、<code>themes</code>フォルダ内に<code>next</code>という名前の新しいフォルダが作成されます。</p>
+<ol start="4">
+<li>次に、テーマ ファイルをこのフォルダーにコピーします。以下のコマンドを使って、ファイルをコピーすることもできます：</li>
+</ol>
+<pre><code>cp -r hexo-theme-next/* /themes/next
+</code></pre>
+<p>これで、テーマのファイルがHexoプロジェクトの<code>themes/next</code>フォルダにコピーされました。テーマのファイルが正しく配置されていることを確認してください。その後、Hexoの設定ファイルである<code>_config.yml</code>を編集し、</p>
+<pre><code>theme: next
+</code></pre>
+<p>と設定することで、新しいテーマを使用できます。</p>
+<h2 id="検索プラグイン"><a href="#検索プラグイン" class="headerlink" title="検索プラグイン"></a>検索プラグイン</h2><h3 id="インストールする方法"><a href="#インストールする方法" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoブログにローカル検索を作成する手順をご案内します：</p>
+<ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoの検索プラグインをインストールします：</p>
+</li>
+</ol>
+<pre><code>npm install hexo-generator-searchdb --save
+</code></pre>
+<h3 id="設定変更"><a href="#設定変更" class="headerlink" title="設定変更"></a>設定変更</h3><p>このプラグインは、ルートの <code>_config.yml</code> ファイルで簡単に設定できます。すべての引数はオプションです。次のような形式を追加します:</p>
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<h2 id="永久リンク"><a href="#永久リンク" class="headerlink" title="永久リンク"></a>永久リンク</h2><p>Hexoのデフォルトの永久リンクは、<code>_config.yml</code>ファイルで設定されており、生成規則は「<code>permalink: :year/:month/:day/:title/</code>」です。年、月、日、タイトルの順に生成されます。</p>
+<p>このデフォルトの設定には、非常に受け入れがたい欠点があります。ファイル名が外国語の場合、URLリンクにも外国語が表示されてしまいます。コピーした後のリンクはエンコードされ、読みにくく、簡潔ではありません。</p>
+<p>最近、各投稿の永久リンクを簡素化したいと思っています。以下のような形式から：</p>
+<p><code>/2023/06/22/230622</code></p>
+<p>以下のような形式に変更したいです：</p>
+<p><code>/migrateopsmanager</code></p>
+<p>短いURLはより簡潔で読みやすくなります。日付の文字列はユーザーにとって意味がないためです。便利で使いやすい解決策として、<code>hexo-abbrlink</code>プラグインを使用することができます。</p>
+<h3 id="インストールする方法-1"><a href="#インストールする方法-1" class="headerlink" title="インストールする方法"></a>インストールする方法</h3><p>Hexoへのプラグインの追加方法は以下の通りです：</p>
+<ol>
+<li><p>コマンドプロンプトやターミナルを開き、Hexoプロジェクトのディレクトリに移動します。</p>
+</li>
+<li><p>次のコマンドを実行して、Hexoプロジェクトにプラグインを追加します：</p>
+</li>
+</ol>
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
+<p>This command will install the “hexo-abbrlink” plugin using the npm package manager and add it to your dependencies using the –save option.</p>
+<h3 id="設定変更-1"><a href="#設定変更-1" class="headerlink" title="設定変更"></a>設定変更</h3><p>プラグインのインストールが完了したら、Hexoの設定ファイルである<code>_config.yml</code>を開きます。<code>_config.yml</code>ファイル内で、<code>permalink</code>のセクションを探し、以下のような形式に変更します</p>
+<pre><code>permalink: posts/:abbrlink/ 
+# or
+permalink: posts/:abbrlink.html
+</code></pre>
+<blockquote>
+<p>プラグインの設定が完了した後、古い記事のリンクが “undefined” となってしまう問題が発生しました。しかし、この問題についてよく考えてみると、解決策が見えてきます。まず、古い記事のキャッシュをクリアするために <code>hexo clean</code> コマンドを実行し、その後 <code>hexo g</code> コマンドを使用して再度レンダリングする必要があります。これにより問題が解消されるはずです。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>とき</title>
     <url>/new-blog/7971245b.html</url>
     <content><![CDATA[<h1 id="〜とき"><a href="#〜とき" class="headerlink" title="〜とき"></a>〜とき</h1><span id="more"></span>
@@ -19542,43 +19616,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>比べれば…・〜がいちばん</title>
-    <url>/new-blog/a457ced0.html</url>
-    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
-
-<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
-<blockquote>
-<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
-</blockquote>
-<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
-<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
-<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
-<blockquote>
-<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
-</blockquote>
-<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续　名+くらい…はない・ぐらい…はない</p>
-<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
-<blockquote>
-<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
-</blockquote>
-<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
-<p>接续 動詞辞书形+くらいなら…</p>
-<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
-<blockquote>
-<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
-</blockquote>
-<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
-<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜とは違って</title>
     <url>/new-blog/b9249d31.html</url>
     <content><![CDATA[<h1 id="〜とは違って"><a href="#〜とは違って" class="headerlink" title="〜とは違って"></a>〜とは違って</h1><span id="more"></span>
@@ -19613,6 +19650,43 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>説明　「〜ということがあるが、反対に、それと同じ程度の…ということもある」。「通常している・通常するはずの〜をしないで、それと同じ程度の…をする」</p>
 <p>接続　動・形普通形（ナ形<del>だ</del>ーな）＋かわりに</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>比べれば…・〜がいちばん</title>
+    <url>/new-blog/a457ced0.html</url>
+    <content><![CDATA[<h1 id="比べれば…・〜がいちばん"><a href="#比べれば…・〜がいちばん" class="headerlink" title="比べれば…・〜がいちばん"></a>比べれば…・〜がいちばん</h1><span id="more"></span>
+
+<h2 id="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"><a href="#〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…" class="headerlink" title="〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…"></a>〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…</h2><p>例文</p>
+<blockquote>
+<p>この店のパンはおいしい、毎日食べたい<u>くらいだ</u><br>よう子さんの腕は折れそうな<u>くらい</u>細い。</p>
+</blockquote>
+<p>説明　「〜と同じ程度だ・〜と同じに…」。程度の強さを表すために、ある状況に例えて言うときに使う。</p>
+<p>接续　名詞・動詞・形普通形（ナ形<del>だ</del>ーな）＋くらい・ぐらい</p>
+<h2 id="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"><a href="#〜くらい…はない・〜ぐらい…はない・〜ほど…はない" class="headerlink" title="〜くらい…はない・〜ぐらい…はない・〜ほど…はない"></a>〜くらい…はない・〜ぐらい…はない・〜ほど…はない</h2><p>例句</p>
+<blockquote>
+<p>リーさん<u>ぐらい</u>動物好きな人は<u>いない</u><br>私は料理を作ること<u>ぐらい</u>楽しいことは<u>ない</u>と思っています</p>
+</blockquote>
+<p>説明 「〜がいちばん…」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续　名+くらい…はない・ぐらい…はない</p>
+<h2 id="～くらいなら…・ぐらいなら…"><a href="#～くらいなら…・ぐらいなら…" class="headerlink" title="～くらいなら…・ぐらいなら…"></a>～くらいなら…・ぐらいなら…</h2><p>例句</p>
+<blockquote>
+<p>毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい<br>気が合わない人と一緒に生活する<u>くらいなら</u>、このまま独身でいたい。</p>
+</blockquote>
+<p>説明 「〜という良くない状況に比べれば、…の方が少しはいい」</p>
+<p>接续 動詞辞书形+くらいなら…</p>
+<h2 id="に限る"><a href="#に限る" class="headerlink" title="に限る"></a>に限る</h2><p>例句</p>
+<blockquote>
+<p>やっぱり映画は映画館で見る<u>に限る</u><br>かぜがはやっている時は、人が多い所には行かない<u>に限る</u></p>
+</blockquote>
+<p>説明「〜がいちばんいい、〜がいちばんいい方法だ」客観的な事実ではなくて、話者の主観的に言うときに使う。</p>
+<p>接续 名·动辞书形&#x2F;ない形+に限る</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -19657,56 +19731,6 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>说明 「〜が事実だから、当然…。」<br>表示”因为存在～的事实，所以当然…“。～为听话人应当知道的事实的小句，…表示说话人的判断、愿望、意愿的表达方式。</p>
 <p>接続　普通形（ナ形<del>だ</del>ーな）＋のだから</p>
-]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>もし</title>
-    <url>/new-blog/e715b1f8.html</url>
-    <content><![CDATA[<h1 id="もし"><a href="#もし" class="headerlink" title="もし"></a>もし</h1><span id="more"></span>
-
-<h2 id="〜（の）なら"><a href="#〜（の）なら" class="headerlink" title="〜（の）なら"></a>〜（の）なら</h2><p>例文</p>
-<blockquote>
-<p>その本、読んでしまった<u>のなら</u>私に貸してくれませんか</p>
-</blockquote>
-<p>说明　「〜という情報を受けて、…。」〜はほかの人の話や様子などからわかったこと、…は話者の判断・意志・相手への働きかけの文</p>
-<p>接续　普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋（の）なら</p>
-<h2 id="〜ては・〜（の）では"><a href="#〜ては・〜（の）では" class="headerlink" title="〜ては・〜（の）では"></a>〜ては・〜（の）では</h2><p>例文</p>
-<blockquote>
-<p>山中さんは手術したばかりだから、お見舞い行っ<u>ては</u>かえって迷惑だろう。<br>今から家を建て始める<u>のでは</u>年内にはできあがらない。</p>
-</blockquote>
-<p>说明　「〜という事実（または仮定の状況）だと、…という良くない結果になる」。</p>
-<p>接続　<br>    動て形・イ形<del>い</del>くて・ナ形<del>な</del>で・名で＋は<br>    普通形（ナ形<del>だ</del>ーな）＋のでは</p>
-<h2 id="〜さえ〜ば・〜さえ〜なら"><a href="#〜さえ〜ば・〜さえ〜なら" class="headerlink" title="〜さえ〜ば・〜さえ〜なら"></a>〜さえ〜ば・〜さえ〜なら</h2><p>例句</p>
-<blockquote>
-<p>太郎は漫画<u>さえ</u>読んでいれ<u>ば</u>退屈しないようだ。<br>体<u>さえ</u>丈夫<u>なら</u>どんなことにも挑戦できる。</p>
-</blockquote>
-<p>说明　「〜が実現すれば、それだけで…が実現する。」「〜さえ〜ば」は…が成り立つための必要最低限の条件を示す。</p>
-<p>接续<br>    名さえ＋動ば形・イ形ければ<br>    名さえ＋ナ形なら・名なら<br>    動<del>ます</del>＋さえ＋すれば</p>
-<h2 id="たとえ〜ても・たとえ〜でも"><a href="#たとえ〜ても・たとえ〜でも" class="headerlink" title="たとえ〜ても・たとえ〜でも"></a>たとえ〜ても・たとえ〜でも</h2><p>例句</p>
-<blockquote>
-<p><u>たとえ</u>みんなに反対され<u>ても</u>、私は絶対にこの計画を実行したい。<br><u>たとえ</u>高<u>くても</u>、必要なものは買わなければならない</p>
-</blockquote>
-<p>接续　</p>
-<blockquote>
-<p>たとえ＋动词「て」＋も<br>たとえ＋イ形<del>い</del>＋くて＋も<br>たとえ＋ナ形<del>な</del>＋で＋も<br>たとえ＋名词＋で＋も</p>
-</blockquote>
-<p>说明 「〜が事実だと仮定した場合でも、それに関係なく…」。<br>“即使。。。也。。。”。表示就算前项成立，后项也不会受此影响。</p>
-<h2 id="〜ば・〜たら・〜なら"><a href="#〜ば・〜たら・〜なら" class="headerlink" title="〜ば・〜たら・〜なら"></a>〜ば・〜たら・〜なら</h2><p>例文</p>
-<blockquote>
-<p>お金とひまがあれ<u>ば</u>わたしも海外旅行するだけど</p>
-</blockquote>
-<p>说明　「もし〜の場合、…という結果になるはずだが、実際にはそうではない。」</p>
-<p>接続</p>
-<blockquote>
-<p>動ば形・イ形<del>い</del>ければ・ナ形なら・名なら<br>動<del>ない</del>なければ・イ形<del>い</del>くなければ・ナ形<del>な</del>でなければ・名でなければ<br>普通形（過去形だけ）＋ら</p>
-</blockquote>
-<p>注意　表示虚拟语气。经常和助词「もし」搭配使用。</p>
 ]]></content>
       <categories>
         <category>N3</category>
@@ -19790,6 +19814,56 @@ permalink: posts/:abbrlink.html
 </blockquote>
 <p>说明　「確かに〜だが、その事実はあまり重要ではなくて、…」表明”虽说～是事实，但更重要的是……“</p>
 <p>接续　【动·形】普通形（ナ<del>だ</del>ーな）＋ことは＋【動・形】普通形&#x2F;丁宁形＋が</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>もし</title>
+    <url>/new-blog/e715b1f8.html</url>
+    <content><![CDATA[<h1 id="もし"><a href="#もし" class="headerlink" title="もし"></a>もし</h1><span id="more"></span>
+
+<h2 id="〜（の）なら"><a href="#〜（の）なら" class="headerlink" title="〜（の）なら"></a>〜（の）なら</h2><p>例文</p>
+<blockquote>
+<p>その本、読んでしまった<u>のなら</u>私に貸してくれませんか</p>
+</blockquote>
+<p>说明　「〜という情報を受けて、…。」〜はほかの人の話や様子などからわかったこと、…は話者の判断・意志・相手への働きかけの文</p>
+<p>接续　普通形（ナ形<del>だ</del>ーである・名<del>だ</del>ーである）＋（の）なら</p>
+<h2 id="〜ては・〜（の）では"><a href="#〜ては・〜（の）では" class="headerlink" title="〜ては・〜（の）では"></a>〜ては・〜（の）では</h2><p>例文</p>
+<blockquote>
+<p>山中さんは手術したばかりだから、お見舞い行っ<u>ては</u>かえって迷惑だろう。<br>今から家を建て始める<u>のでは</u>年内にはできあがらない。</p>
+</blockquote>
+<p>说明　「〜という事実（または仮定の状況）だと、…という良くない結果になる」。</p>
+<p>接続　<br>    動て形・イ形<del>い</del>くて・ナ形<del>な</del>で・名で＋は<br>    普通形（ナ形<del>だ</del>ーな）＋のでは</p>
+<h2 id="〜さえ〜ば・〜さえ〜なら"><a href="#〜さえ〜ば・〜さえ〜なら" class="headerlink" title="〜さえ〜ば・〜さえ〜なら"></a>〜さえ〜ば・〜さえ〜なら</h2><p>例句</p>
+<blockquote>
+<p>太郎は漫画<u>さえ</u>読んでいれ<u>ば</u>退屈しないようだ。<br>体<u>さえ</u>丈夫<u>なら</u>どんなことにも挑戦できる。</p>
+</blockquote>
+<p>说明　「〜が実現すれば、それだけで…が実現する。」「〜さえ〜ば」は…が成り立つための必要最低限の条件を示す。</p>
+<p>接续<br>    名さえ＋動ば形・イ形ければ<br>    名さえ＋ナ形なら・名なら<br>    動<del>ます</del>＋さえ＋すれば</p>
+<h2 id="たとえ〜ても・たとえ〜でも"><a href="#たとえ〜ても・たとえ〜でも" class="headerlink" title="たとえ〜ても・たとえ〜でも"></a>たとえ〜ても・たとえ〜でも</h2><p>例句</p>
+<blockquote>
+<p><u>たとえ</u>みんなに反対され<u>ても</u>、私は絶対にこの計画を実行したい。<br><u>たとえ</u>高<u>くても</u>、必要なものは買わなければならない</p>
+</blockquote>
+<p>接续　</p>
+<blockquote>
+<p>たとえ＋动词「て」＋も<br>たとえ＋イ形<del>い</del>＋くて＋も<br>たとえ＋ナ形<del>な</del>＋で＋も<br>たとえ＋名词＋で＋も</p>
+</blockquote>
+<p>说明 「〜が事実だと仮定した場合でも、それに関係なく…」。<br>“即使。。。也。。。”。表示就算前项成立，后项也不会受此影响。</p>
+<h2 id="〜ば・〜たら・〜なら"><a href="#〜ば・〜たら・〜なら" class="headerlink" title="〜ば・〜たら・〜なら"></a>〜ば・〜たら・〜なら</h2><p>例文</p>
+<blockquote>
+<p>お金とひまがあれ<u>ば</u>わたしも海外旅行するだけど</p>
+</blockquote>
+<p>说明　「もし〜の場合、…という結果になるはずだが、実際にはそうではない。」</p>
+<p>接続</p>
+<blockquote>
+<p>動ば形・イ形<del>い</del>ければ・ナ形なら・名なら<br>動<del>ない</del>なければ・イ形<del>い</del>くなければ・ナ形<del>な</del>でなければ・名でなければ<br>普通形（過去形だけ）＋ら</p>
+</blockquote>
+<p>注意　表示虚拟语气。经常和助词「もし」搭配使用。</p>
 ]]></content>
       <categories>
         <category>N3</category>
