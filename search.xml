@@ -39,6 +39,82 @@
       </tags>
   </entry>
   <entry>
+    <title>BootTheSystem</title>
+    <url>/new-blog/3ef0ab2f.html</url>
+    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
+<span id="more"></span>
+
+<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
+<ol>
+<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
+<li>The boot loader runs and determines what Linux kernel program to load.</li>
+<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
+<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
+</ol>
+<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
+<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
+<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
+<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
+<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
+<ul>
+<li>An internal hard drive</li>
+<li>An external hard drive</li>
+<li>A CD&#x2F;DVD drive</li>
+<li>A USB flash drive</li>
+<li>A network server</li>
+</ul>
+<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
+<blockquote>
+<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
+</blockquote>
+<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
+<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
+<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
+<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
+<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
+<p>The GRUB Legacy configuration file consists of two sections:</p>
+<ul>
+<li>Global definitions</li>
+<li>Operating system boot definitions</li>
+</ul>
+<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
+<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
+<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
+<ul>
+<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
+<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
+</ul>
+<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
+[…]
+set root=(hd1,1)
+linux16 /vmlinuz[…]
+initrd /initramfs[…]
+&#125;
+menuentry &quot;Windows&quot; &#123;
+set root=(hd0,1)
+[…]
+&#125;
+</code></pre>
+<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
+<p>For GRUB2, the commands to remember are as follows:</p>
+<ul>
+<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
+<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
+<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
+<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
+</ul>
+<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
+<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
+      <categories>
+        <category>LPIC</category>
+      </categories>
+      <tags>
+        <tag>LPIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chapter 3 Configuring Hardware</title>
     <url>/new-blog/50739f32.html</url>
     <content><![CDATA[<h1 id="Chapter-3-Configuring-Hardware"><a href="#Chapter-3-Configuring-Hardware" class="headerlink" title="Chapter 3 Configuring Hardware"></a>Chapter 3 Configuring Hardware</h1><p>[] </p>
@@ -220,26 +296,6 @@ rmmod btusb
       </tags>
   </entry>
   <entry>
-    <title>JavaScriptPageOne</title>
-    <url>/new-blog/c6a6ca50.html</url>
-    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
-<pre><code>let caught = 5 * 5;
-</code></pre>
-<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
-<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
-<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
-<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
-<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
-<pre><code>var name = &quot;Ayda&quot;;
-const greeting = &quot;Hello &quot;;
-</code></pre>
-<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
-<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bit0101</title>
     <url>/new-blog/f9f6dbe0.html</url>
     <content><![CDATA[<h1 id="基本情報技術者試験-テクノロジ系"><a href="#基本情報技術者試験-テクノロジ系" class="headerlink" title="基本情報技術者試験-テクノロジ系"></a>基本情報技術者試験-テクノロジ系</h1><h2 id="基礎理論"><a href="#基礎理論" class="headerlink" title="基礎理論"></a>基礎理論</h2><div>
@@ -268,6 +324,26 @@ const greeting = &quot;Hello &quot;;
       </tags>
   </entry>
   <entry>
+    <title>JavaScriptPageOne</title>
+    <url>/new-blog/c6a6ca50.html</url>
+    <content><![CDATA[<h1 id="CHAPTER2-PROGRAM-STRUCTURE"><a href="#CHAPTER2-PROGRAM-STRUCTURE" class="headerlink" title="CHAPTER2 PROGRAM STRUCTURE"></a>CHAPTER2 PROGRAM STRUCTURE</h1><h2 id="BINDINGS"><a href="#BINDINGS" class="headerlink" title="BINDINGS"></a>BINDINGS</h2><p>To catch and hold values, JavaScript provides a thing called a <code>binding</code>, or <code>variable</code>:</p>
+<pre><code>let caught = 5 * 5;
+</code></pre>
+<p>That’s a second kind of statement. The special word (keyword) let indicates that this sentence is going to define a binding.</p>
+<p>After a binding has been defined, its name can be used as an expression. The value of such an expression is the value the binding currently holds.</p>
+<p>You should imagine bindings as tentacles, rather than boxes. They do not <code>contain</code> values; they <code>grasp</code> them—two bindings can refer to the same value.</p>
+<p>When you define a binding without giving it a value, the tentacle has nothing to grasp, so it ends in thin air. If you ask for the value of an empty binding, you’ll get the value <strong>undefined</strong>.</p>
+<p>The words <code>var</code> and const can also be used to create bindings, in a way similar to <code>let</code>.</p>
+<pre><code>var name = &quot;Ayda&quot;;
+const greeting = &quot;Hello &quot;;
+</code></pre>
+<p>The word const stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.</p>
+<h1 id="CHAPTER3-FUNCTIONS"><a href="#CHAPTER3-FUNCTIONS" class="headerlink" title="CHAPTER3 FUNCTIONS"></a>CHAPTER3 FUNCTIONS</h1>]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>chapter04</title>
     <url>/new-blog/f276717.html</url>
     <content><![CDATA[<h1 id="Compressing-File-Commands"><a href="#Compressing-File-Commands" class="headerlink" title="Compressing File Commands"></a>Compressing File Commands</h1><ul>
@@ -286,82 +362,6 @@ const greeting = &quot;Hello &quot;;
 <p>To create a hard link, use the ln command. For hard links, the original file must exist prior to issuing the ln command.</p>
 <h3 id="Constructing-a-Soft-Link"><a href="#Constructing-a-Soft-Link" class="headerlink" title="Constructing a Soft Link"></a>Constructing a Soft Link</h3><p>a soft link fi le provides a pointer to a fi le that may reside on another fi lesystem.<br>The two fi les do not share inode numbers because they do not point to the same data.</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>BootTheSystem</title>
-    <url>/new-blog/3ef0ab2f.html</url>
-    <content><![CDATA[<h1 id="Chapter-5-Booting-Initializing-and-Virtualizing-Linux"><a href="#Chapter-5-Booting-Initializing-and-Virtualizing-Linux" class="headerlink" title="Chapter 5 Booting, Initializing, and Virtualizing Linux"></a>Chapter 5 Booting, Initializing, and Virtualizing Linux</h1><p>[] 101.3 Change runlevels&#x2F;boot targets and shutdown or reboot system<br>[x] 102.2 Install a boot manager<br>[x] 102.6 Linux as a virtualization guest<br>[] 101.2 Boot the system</p>
-<span id="more"></span>
-
-<h1 id="Understanding-the-Boot-Process"><a href="#Understanding-the-Boot-Process" class="headerlink" title="Understanding the Boot Process"></a>Understanding the Boot Process</h1><h2 id="The-Boot-Process"><a href="#The-Boot-Process" class="headerlink" title="The Boot Process"></a>The Boot Process</h2><p>The Linux boot process can be split into these main steps:</p>
-<ol>
-<li>The server firmware starts, performing a quick check of the hardware, called a Power-On Self-Test (POST), and then it looks for a boot loader program to run from a bootable device.</li>
-<li>The boot loader runs and determines what Linux kernel program to load.</li>
-<li>The kernel program loads into memory; prepares the system, such as mounting the root partition; and then runs the initialization program.</li>
-<li>The initialization process starts the necessary background programs required for the system to operate (such as a graphical desktop manager for desktops, or web and database applications for servers).</li>
-</ol>
-<h2 id="Extracting-Information-about-the-Boot-Process"><a href="#Extracting-Information-about-the-Boot-Process" class="headerlink" title="Extracting Information about the Boot Process"></a>Extracting Information about the Boot Process</h2><p>If you need to troubleshoot boot problems, you can review the boot-time messages using the <code>dmesg</code> command. Most Linux distributions copy the boot kernel messages into a special ring buffer in memory called the <code>kernel ring buffer</code> . The buffer is circular and set to a predetermined size. As new messages are logged into the buffer, older messages are rotated out.</p>
-<h1 id="Looking-at-Firmware"><a href="#Looking-at-Firmware" class="headerlink" title="Looking at Firmware"></a>Looking at Firmware</h1><h2 id="The-BIOS-Startup"><a href="#The-BIOS-Startup" class="headerlink" title="The BIOS Startup"></a>The BIOS Startup</h2><p>One limitation of the original BIOS firmware was that <strong>it could read only one sector’s worth of data from a hard drive into memory in order to run</strong>.</p>
-<p>As you can probably guess, that’s not enough space to load an entire operating system. To get around that limitation, most operating systems split the boot process into two parts.</p>
-<p>First, the BIOS runs a boot loader (sometimes written as bootloader) program.</p>
-<p>To get things started, the BIOS must know where to find the boot loader program on an<br>installed storage device. Most BIOS setups allow you to load the boot loader program from<br>several locations:</p>
-<ul>
-<li>An internal hard drive</li>
-<li>An external hard drive</li>
-<li>A CD&#x2F;DVD drive</li>
-<li>A USB flash drive</li>
-<li>A network server</li>
-</ul>
-<p><strong>The MBR is the first sector on the first hard drive partition on the system</strong>. There is onlyone MBR for the computer system. The BIOS looks for the MBR and reads the program stored there into memory.</p>
-<blockquote>
-<p>The boot loader program isn’t required to point directly to an operating system kernel file—it can point to any type of program, including another boot loader program.</p>
-</blockquote>
-<h2 id="The-UEFI-Startup"><a href="#The-UEFI-Startup" class="headerlink" title="The UEFI Startup"></a>The UEFI Startup</h2><p>Intel created the Extensible Firmware Interface (EFI) in 1998 to address some of the limitations of BIOS. UEFI specifies a special disk partition called the EFI System Partition (ESP) to store boot loader programs.</p>
-<h1 id="Looking-at-Boot-Loaders"><a href="#Looking-at-Boot-Loaders" class="headerlink" title="Looking at Boot Loaders"></a>Looking at Boot Loaders</h1><p>The boot loader program helps bridge the gap between the system fi rmware and the full Linux operating system kernel.</p>
-<h2 id="Boot-Loader-Principles"><a href="#Boot-Loader-Principles" class="headerlink" title="Boot Loader Principles"></a>Boot Loader Principles</h2><p>GRand Unified Bootloader (GRUB) boot loader (now called GRUB<br>Legacy) was created to provide a robust and confi gurable boot loader.</p>
-<h2 id="Using-GRUB-Legacy-as-the-Boot-Loader"><a href="#Using-GRUB-Legacy-as-the-Boot-Loader" class="headerlink" title="Using GRUB Legacy as the Boot Loader"></a>Using GRUB Legacy as the Boot Loader</h2><h3 id="Configuring-GRUB-Legacy"><a href="#Configuring-GRUB-Legacy" class="headerlink" title="Configuring GRUB Legacy"></a>Configuring GRUB Legacy</h3><p>When you use the GRUB Legacy interactive menu, you need to tell it what options to show. You do that using special GRUB menu commands.</p>
-<p>The GRUB Legacy system stores the menu commands in a standard text configuration file called <code>menu.lst</code> ; it is stored in the <code>/boot/grub/</code> directory.</p>
-<p>The GRUB Legacy configuration file consists of two sections:</p>
-<ul>
-<li>Global definitions</li>
-<li>Operating system boot definitions</li>
-</ul>
-<p>After the global definitions, you place definitions for the individual operating systems that are installed on the system. Each operating system should have its own definition section.</p>
-<h3 id="Installing-GRUB-Legacy"><a href="#Installing-GRUB-Legacy" class="headerlink" title="Installing GRUB Legacy"></a>Installing GRUB Legacy</h3><p>After you build the GRUB Legacy confi guration fi le, you must install the GRUB Legacy program in the MBR. The command to do this is <code>grub-install</code> .</p>
-<h3 id="Interacting-with-GRUB-Legacy"><a href="#Interacting-with-GRUB-Legacy" class="headerlink" title="Interacting with GRUB Legacy"></a>Interacting with GRUB Legacy</h3><h2 id="Using-GRUB-2-as-the-Boot-Loader"><a href="#Using-GRUB-2-as-the-Boot-Loader" class="headerlink" title="Using GRUB 2 as the Boot Loader"></a>Using GRUB 2 as the Boot Loader</h2><p>the GRUB2 system changes the configuration file name to grub.cfg. Where the file is stored depends on your system’s firmware:</p>
-<ul>
-<li>BIOS: The grub.cfg file is stored in the <code>/boot/grub/</code> or <code>/boot/grub2/</code> directory. (This allows you to have both GRUB Legacy and GRUB2 installed at the same time.)</li>
-<li>UEFI: The grub.cfg file is stored in the <code>/boot/efi/EFI/distro-name/</code> directory.</li>
-</ul>
-<h3 id="Configuring-GRUB2"><a href="#Configuring-GRUB2" class="headerlink" title="Configuring GRUB2"></a>Configuring GRUB2</h3><pre><code class="Shell">menuentry &quot;CentOS Linux&quot; &#123;
-[…]
-set root=(hd1,1)
-linux16 /vmlinuz[…]
-initrd /initramfs[…]
-&#125;
-menuentry &quot;Windows&quot; &#123;
-set root=(hd0,1)
-[…]
-&#125;
-</code></pre>
-<p>Although it still uses 0 for the first hard drive, the first partition is set to 1. So to define the &#x2F;boot directory on the first partition of the first hard drive, you now need to use <code>set root=(hd0,1)</code></p>
-<p>For GRUB2, the commands to remember are as follows:</p>
-<ul>
-<li>Menuentry : The first line for each boot definition section; this is what appears in the boot menu.</li>
-<li>set root : Defines the disk and partition where the GRUB2 &#x2F;boot directory partition is located on the system.</li>
-<li>linux, linux16 : For BIOS systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Linuxefi : For UEFI systems, defines the kernel image file stored in the &#x2F; boot directory to load.</li>
-<li>Initrd : For BIOS systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-<li>Initrdefi : For UEFI systems, defines the initial RAM filesystem, which contains drivers necessary for the kernel to interact with the system hardware.</li>
-</ul>
-<p>Instead, there are separate confi guration fi les stored in the &#x2F;etc&#x2F;grub.d folder. This allows you (or the system) to create individual configuration files for each boot option.</p>
-<h3 id="Installing-GRUB2"><a href="#Installing-GRUB2" class="headerlink" title="Installing GRUB2"></a>Installing GRUB2</h3>]]></content>
-      <categories>
-        <category>LPIC</category>
-      </categories>
-      <tags>
-        <tag>LPIC</tag>
-      </tags>
   </entry>
   <entry>
     <title>let和const命令</title>
@@ -521,8 +521,23 @@ funcs[0](); // 0
 <h3 id="没有arguments"><a href="#没有arguments" class="headerlink" title="没有arguments"></a>没有arguments</h3><h3 id="不能通过new关键字调用"><a href="#不能通过new关键字调用" class="headerlink" title="不能通过new关键字调用"></a>不能通过new关键字调用</h3><h3 id="没有new-target"><a href="#没有new-target" class="headerlink" title="没有new.target"></a>没有new.target</h3><h3 id="没有原型"><a href="#没有原型" class="headerlink" title="没有原型"></a>没有原型</h3><h3 id="没有super"><a href="#没有super" class="headerlink" title="没有super"></a>没有super</h3>]]></content>
   </entry>
   <entry>
+    <title>es6page03</title>
+    <url>/new-blog/3e9a14f6.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>fe-security</title>
     <url>/new-blog/372f4dff.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>n1vocw1</title>
+    <url>/new-blog/e7255486.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>n2adv</title>
+    <url>/new-blog/4be0d5a6.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -11109,11 +11124,6 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
-    <title>es6page03</title>
-    <url>/new-blog/3e9a14f6.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>第八週　しる</title>
     <url>/new-blog/11b4bd8b.html</url>
     <content><![CDATA[<h1 id="第八週-しる"><a href="#第八週-しる" class="headerlink" title="第八週　しる"></a>第八週　しる</h1><span id="more"></span>
@@ -14098,11 +14108,6 @@ funcs[0](); // 0
         <tag>N2</tag>
         <tag>語彙</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>n2adv</title>
-    <url>/new-blog/4be0d5a6.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>第四週 副詞をたっぷり覚えましょう</title>
@@ -17889,6 +17894,160 @@ funcs[0](); // 0
       </tags>
   </entry>
   <entry>
+    <title>Explain localhost and 127.0.0.1</title>
+    <url>/new-blog/915cd40c.html</url>
+    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
+
+<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
+<blockquote>
+<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
+</blockquote>
+<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
+<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
+<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
+<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
+<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
+</code></pre>
+<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
+<ol>
+<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
+</li>
+<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
+</li>
+</ol>
+<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
+<pre><code>127.0.0.1   localhost
+</code></pre>
+<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
+<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
+<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
+<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
+<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
+<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
+<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
+<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
+<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
+]]></content>
+      <categories>
+        <category>Network</category>
+      </categories>
+      <tags>
+        <tag>Network</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
+    <url>/new-blog/66c5e938.html</url>
+    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
+<span id="more"></span>
+
+<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
+<ul>
+<li><code>Node.js</code> のローカルインストール</li>
+<li><code>Git</code> のローカルインストール</li>
+<li><code>GitHub</code> アカウント</li>
+<li><code>GitHub</code> リポジトリの作成</li>
+</ul>
+<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
+<pre><code class="bash">brew install node
+</code></pre>
+<p>もしくは、</p>
+<pre><code class="bash">node -v
+npm -v
+</code></pre>
+<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
+<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
+<pre><code class="bash">brew install git
+</code></pre>
+<pre><code class="bash">git --version
+</code></pre>
+<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
+<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@example.com&quot;
+</code></pre>
+<p>“Your Name”と”<a href="mailto:&#x79;&#111;&#x75;&#114;&#46;&#101;&#109;&#x61;&#105;&#108;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#x6d;">&#x79;&#111;&#x75;&#114;&#46;&#101;&#109;&#x61;&#105;&#108;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#x6d;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
+<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
+<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
+<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
+</code></pre>
+<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
+<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
+<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
+<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
+<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
+<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
+<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
+<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
+<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+<p>以下のコマンドを使用して検証できます：</p>
+<pre><code class="bash">hexo -v
+</code></pre>
+<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
+<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
+<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
+<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
+</code></pre>
+<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
+<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
+<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
+</code></pre>
+<p>次に、作成されたディレクトリに移動します：</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+</code></pre>
+<p>移動したら、依存パッケージをインストールします：</p>
+<pre><code>npm install
+</code></pre>
+<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
+<pre><code>hexo generate
+</code></pre>
+<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
+<pre><code>hexo server
+</code></pre>
+<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
+<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
+<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
+<blockquote>
+<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
+</blockquote>
+<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
+<pre><code class="bash">cd &lt;ディレクトリ名&gt;
+git init 
+git add . 
+git commit -am&quot;init blog&quot; 
+</code></pre>
+<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
+<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
+git branch -M main
+git push -u origin main
+</code></pre>
+<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
+<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
+<pre><code class="bash">git checkout -b pages
+git push -u origin pages
+</code></pre>
+<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
+<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
+<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
+<pre><code class="bash">url: https://ユーザー名.github.io/ 
+root: /breeze-blog/ 
+
+deploy: 
+  type: &#39;git&#39; 
+  repo: git@github.com:ユーザー名./ディレクトリ名
+  branch: pages
+</code></pre>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</title>
     <url>/new-blog/hexoThemeAndPlugin.html</url>
     <content><![CDATA[<h1 id="Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"><a href="#Hexo-Theme-のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします" class="headerlink" title="Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします"></a>Hexo Theme のインストールと有用なプラグインの導入、そして投稿リンクについてご案内いたします</h1><p>hexo のインストールが完了してブログを開始した後、追加の操作を使用してブログをより美しく、読みやすくすることができます。以下のような操作がいくつかあります。 テーマを変更してサイトをより見やすくする 美しいです。サイトの使用率を上げるためにプラグインを追加してください</p>
@@ -17979,160 +18138,6 @@ permalink: posts/:abbrlink.html
       </tags>
   </entry>
   <entry>
-    <title>Explain localhost and 127.0.0.1</title>
-    <url>/new-blog/915cd40c.html</url>
-    <content><![CDATA[<h1 id="Explain-Localhost-and-127-0-0-1-In-a-Easy-Way"><a href="#Explain-Localhost-and-127-0-0-1-In-a-Easy-Way" class="headerlink" title="Explain Localhost and 127.0.0.1 In a Easy Way"></a>Explain Localhost and 127.0.0.1 In a Easy Way</h1><span id="more"></span>
-
-<h2 id="localhost-Makes-Life-Easier-for-Beginners"><a href="#localhost-Makes-Life-Easier-for-Beginners" class="headerlink" title="localhost Makes Life Easier for Beginners"></a><code>localhost</code> Makes Life Easier for Beginners</h2><p>Let’s start with an example: </p>
-<blockquote>
-<p>when you write a server application, and you don’t have a remote server running yet, you might ask yourself: “ How can I test my server app? “. That is the moment when <code>localhost</code> comes to the rescue, because you don’t need a remote server yet, to test your application.</p>
-</blockquote>
-<h2 id="How-Does-localhost-Work"><a href="#How-Does-localhost-Work" class="headerlink" title="How Does localhost Work ?"></a>How Does <code>localhost</code> Work ?</h2><p>When you try to call a website, your computer tries to connect to a remote computer (aka server) somewhere on the internet. It sends a request and, as a result, receives a response with some content.</p>
-<p>When you call <code>localhost</code> (or <code>127.0.0.1</code>), you send a request to your own device. Your computer recognizes the address (<code>localhost</code> or <code>127.0.0.1</code>), and instead of sending it out over the internet, it returns the request back through a loopback mechanism. Keeping the server app example in mind, now your server (on the same machine) can receive the request and send a response with some content.</p>
-<p>The requests&#x2F;responses will never leave your computer. <strong>In other words: By calling <code>localhost</code>, your computer always talks with itself.</strong></p>
-<h2 id="The-Difference-Between-127-0-0-1-and-localhost"><a href="#The-Difference-Between-127-0-0-1-and-localhost" class="headerlink" title="The Difference Between 127.0.0.1 and localhost"></a>The Difference Between 127.0.0.1 and localhost</h2><h3 id="IP-address-representation-and-Special-IP-address"><a href="#IP-address-representation-and-Special-IP-address" class="headerlink" title="IP address representation and Special IP address"></a>IP address representation and Special IP address</h3><p>The IP address consists of two parts, net-id, and host-id, namely the network and host numbers. net-id: Indicates the network number where the IP address is located. host-id: Indicates a host number in the network where the IP address is located.</p>
-<pre><code>IP-address ::=  &#123; &lt;Network-number&gt;, &lt;Host-number&gt; &#125;
-</code></pre>
-<p>Special IP addresses are used to do some special things. The following special IP addresses are defined in RFC1700.</p>
-<ol>
-<li><p>{0,0}: Both the network number and the host number are 0, which means “this host on this network”, and can only be used as the source address.</p>
-</li>
-<li><p>{127,}: Any IP address whose network number is 127. They are all internal host loopback addresses (loopback), which can never appear in the network outside the host.</p>
-</li>
-</ol>
-<h3 id="Answers-to-questions"><a href="#Answers-to-questions" class="headerlink" title="Answers to questions"></a>Answers to questions</h3><p>Compared to <code>127.0.0.1</code>, localhost has more meaning. <strong>localhost is a domain name, not an IP address.</strong> We often think of localhost and 127.0.0.1 as the same because most of the computers we use say that localhost points to the address 127.0.0.1. In the ubuntu system, the <code>/etc/hosts</code> file will have the following content:</p>
-<pre><code>127.0.0.1   localhost
-</code></pre>
-<p>However, configuring the host file can easily link <strong>localhost</strong> with a different IP address, as this file contains the mappings of IP addresses to hostnames.</p>
-<h2 id="Let-me-explain-a-little-bit-of-Bind"><a href="#Let-me-explain-a-little-bit-of-Bind" class="headerlink" title="Let me explain a little bit of Bind"></a>Let me explain a little bit of Bind</h2><h3 id="Networking"><a href="#Networking" class="headerlink" title="Networking:"></a>Networking:</h3><p>Networking refers to the practice of connecting multiple computers and devices to create a network. It enables communication and data exchange between these devices, allowing them to share resources and information. Networks can be classified into different types, such as Local Area Networks (LANs) or Wide Area Networks (WANs), depending on their geographical scope.</p>
-<p>In computer networks, devices are identified by unique addresses called IP (Internet Protocol) addresses. IP addresses can be either <code>IPv4</code> (e.g., <code>192.168.0.1</code>) or <code>IPv6</code> (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>) format.</p>
-<h3 id="Bind-Berkeley-Internet-Name-Domain"><a href="#Bind-Berkeley-Internet-Name-Domain" class="headerlink" title="Bind (Berkeley Internet Name Domain):"></a>Bind (Berkeley Internet Name Domain):</h3><p>BIND is the most widely used <code>DNS</code> (Domain Name System) software on the internet. DNS translates domain names (e.g., example.com) into IP addresses that computers can understand. It enables us to access websites, send emails, and perform various internet-related activities using easy-to-remember domain names instead of complex IP addresses.</p>
-<p>BIND consists of two main components: a DNS server (named) and a DNS resolver (named-resolver). The DNS server handles domain name queries and provides authoritative answers, while the resolver processes queries from clients and interacts with the DNS server to resolve domain names.</p>
-<p>Configuration files, such as <code>named.conf</code>, are used to specify how BIND operates. These files contain various directives and options to control the DNS server’s behavior, including the ‘listen-on’ directive you mentioned earlier.</p>
-<h3 id="The-‘listen-on’-directive"><a href="#The-‘listen-on’-directive" class="headerlink" title="The ‘listen-on’ directive:"></a>The ‘listen-on’ directive:</h3><p>The ‘listen-on’ directive in BIND’s <code>named.conf</code> file specifies the IP address and port number on which the DNS server should listen for incoming queries. By default, it restricts BIND to listen on the loopback address (127.0.0.1) on port 53, which means it will only accept queries from the local machine.</p>
-<p>When you replaced ‘127.0.0.1’ with <code>localhost</code> in the ‘listen-on’ directive, BIND interpreted it as the loopback address and allowed external queries. This behavior occurred because <code>localhost</code> typically resolves to the loopback address in most systems.</p>
-<p>It’s important to note that BIND’s behavior may vary based on its version, configuration, and platform-specific settings. It’s always recommended to consult BIND’s official documentation or seek assistance from experienced administrators when working with complex BIND configurations.</p>
-]]></content>
-      <categories>
-        <category>Network</category>
-      </categories>
-      <tags>
-        <tag>Network</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoとGitHubを使用して個人のブログを作成する方法</title>
-    <url>/new-blog/66c5e938.html</url>
-    <content><![CDATA[<p>この文章では、<code>Hexo</code>と<code>GitHub Pages</code>を使用して個人ブログを構築する方法について詳しく説明します。あなたは美しいながらも無料の個人ブログを手に入れ、構築、執筆、展開の全プロセスに精通し、いくつかの便利なツールも活用できるようになります。</p>
-<span id="more"></span>
-
-<h2 id="事前の準備"><a href="#事前の準備" class="headerlink" title="事前の準備"></a>事前の準備</h2><p>構築を始める前に、以下のいくつかのものを準備する必要があります：</p>
-<ul>
-<li><code>Node.js</code> のローカルインストール</li>
-<li><code>Git</code> のローカルインストール</li>
-<li><code>GitHub</code> アカウント</li>
-<li><code>GitHub</code> リポジトリの作成</li>
-</ul>
-<h3 id="Node-js-のインストール"><a href="#Node-js-のインストール" class="headerlink" title="Node.js のインストール"></a>Node.js のインストール</h3><p>Macの場合、Homebrewを使用して<code>Node.js</code>をインストールし、次にターミナルで以下のコマンドを入力して正しくインストールされたか確認できます。</p>
-<pre><code class="bash">brew install node
-</code></pre>
-<p>もしくは、</p>
-<pre><code class="bash">node -v
-npm -v
-</code></pre>
-<p>このコマンドは<code>Node.js</code>のバージョンまたはnpm（Node Package Manager）のバージョンを表示します。正常にインストールされていれば、バージョン番号が表示されます。</p>
-<h3 id="Git-のインストール"><a href="#Git-のインストール" class="headerlink" title="Git のインストール"></a>Git のインストール</h3><p>Homebrewを使用して<code>Git</code>をインストールすることもできます。以下のコマンドを入力して<code>Git</code>が正しくインストールされたかどうかを確認し、その後、ユーザー名とメールアドレスを設定します。</p>
-<pre><code class="bash">brew install git
-</code></pre>
-<pre><code class="bash">git --version
-</code></pre>
-<p>このコマンドはGitのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<p>ユーザー名の設定とメールアドレスの設定には以下のコマンドを使用します：</p>
-<pre><code class="bash">git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;your.email@example.com&quot;
-</code></pre>
-<p>“Your Name”と”<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#46;&#x65;&#x6d;&#97;&#x69;&#x6c;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#121;&#x6f;&#x75;&#x72;&#46;&#x65;&#x6d;&#97;&#x69;&#x6c;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;</a>“の部分を自分の名前とメールアドレスに置き換えてください。</p>
-<h3 id="GitHub-アカウント"><a href="#GitHub-アカウント" class="headerlink" title="GitHub アカウント"></a>GitHub アカウント</h3><p>最初に、GitHubアカウントを登録する必要があります。<a target="_blank" rel="noopener" href="https://github.com/">ここをクリックして</a>、ユーザー名とパスワードを入力し、確認が完了したら、GitHubアカウントを作成できます。</p>
-<p>アカウントを作成した後、次に、ローカルの<code>SSHキー</code>をGitHubに追加する必要があります。これにより、後でローカルのコードをGitHubにプッシュする権限が与えられます。</p>
-<p>最初に、ローカルでRSA鍵のペアを生成します。</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;your.email@example.com&quot;&quot;
-</code></pre>
-<p>それでは、デフォルトのオプションを使用して、Enterキーを3回押してください。</p>
-<p>その後、先ほど生成した鍵を見つけます。Macユーザーの場合、<code>~/.ssh</code>ディレクトリに鍵が保存されています。<code>id_rsa.pub</code>ファイルの内容をコピーし、ここの<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHubの設定</a>に新しいSSHキーを追加してください。</p>
-<h3 id="GitHub-リポジトリの作成"><a href="#GitHub-リポジトリの作成" class="headerlink" title="GitHub リポジトリの作成"></a>GitHub リポジトリの作成</h3><p><a target="_blank" rel="noopener" href="https://github.com/new">こちら</a>をクリックして、新しいリポジトリを作成してください。</p>
-<p>リポジトリ名は、”blog”や”my-blog”のように識別しやすい名前を選ぶと良いです。リポジトリの説明には、このリポジトリが何に使用されるのかを簡単に記述してください。</p>
-<p>その後、リポジトリのアドレスをメモしておいてください。アドレスは、画像中の矢印で示されている、”git”で始まるアドレスです。後で使用することになります。</p>
-<p>リポジトリの作成が完了したら、準備作業は基本的に完了ですので、次のステップに進むことができます。</p>
-<h2 id="Hexo-のインストール"><a href="#Hexo-のインストール" class="headerlink" title="Hexo のインストール"></a>Hexo のインストール</h2><p><code>Hexo</code>は、設定されたテーマスタイルと設定ファイルに基づいて、多彩なウェブページを生成するための静的ウェブサイト生成ツールです。通常、設定ファイルを設定した後は頻繁に変更する必要はありません。私たちの責任は、良い記事を書くことであり、それを書いた後にコマンドを使用してウェブサイトを簡単に生成することができます。また、自由にテーマを切り替えることもできるため、ブログ執筆には非常に便利です。</p>
-<p>Hexoのインストールは非常に簡単です。以下のコマンドを入力するだけです：</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>以下のコマンドを使用して検証できます：</p>
-<pre><code class="bash">hexo -v
-</code></pre>
-<p>このコマンドは、Hexoのバージョンを表示します。正しくインストールされていれば、バージョン番号が表示されます。</p>
-<h2 id="Hexoを用いて個人のブログを構築します"><a href="#Hexoを用いて個人のブログを構築します" class="headerlink" title="Hexoを用いて個人のブログを構築します"></a>Hexoを用いて個人のブログを構築します</h2><p>Hexoを使用して博客を構築します。</p>
-<p>まず、以下のコマンドを使用してHexoの初期設定を行います：</p>
-<pre><code class="bash">hexo init &lt;ディレクトリ名&gt;
-</code></pre>
-<p>&lt;ディレクトリ名&gt;は、作成する博客のディレクトリ名を指定します。例えば、”my-blog”などです。このコマンドは、現在のディレクトリに「breeze-blog」という名前の新しいディレクトリを生成し、Hexoの初期化ファイルをその中に書き込みます。</p>
-<p>新しく作成されたフォルダのディレクトリは以下のようになります：</p>
-<pre><code class="bash">. ├── _config.yml ├── package.json ├── node_modules ├── scaffolds ├── source | ├── _drafts | └── _posts └── themes
-</code></pre>
-<p>次に、作成されたディレクトリに移動します：</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-</code></pre>
-<p>移動したら、依存パッケージをインストールします：</p>
-<pre><code>npm install
-</code></pre>
-<p>依存パッケージのインストールが完了したら、博客を生成します：</p>
-<pre><code>hexo generate
-</code></pre>
-<p>生成が完了したら、以下のコマンドでローカルサーバーを起動します：</p>
-<pre><code>hexo server
-</code></pre>
-<p>デフォルトでは、サービスはポート番号4000を使用します。もし既に使用されている場合は、-pオプションを追加して別のポートを指定することもできます。</p>
-<p>これで、Hexoを使用して博客の構築が始まりました。ブラウザで <code>http://localhost:4000</code> を開くと、ローカルで作成した博客を確認できます。</p>
-<h2 id="部署到-github-pages"><a href="#部署到-github-pages" class="headerlink" title="部署到 github pages"></a>部署到 github pages</h2><p>GitHub Pagesは、GitHubが提供する無料のウェブページホスティングサービスであり、静的なウェブページファイルを格納するために使用することができます。また、<code>https://ユーザー名.github.io/プロジェクト名/</code> の形式でアクセスすることができます。</p>
-<blockquote>
-<p>注意：GitHub Pagesには2つのタイプがあります。一つはユーザー名.github.ioをプロジェクト名として使用するものであり、もう一つは他の名前を使用するものです。名前が異なるだけのように見えますが、実際には違いがあります。前者の場合、ウェブページの静的ファイルはマスターブランチにのみ保存できるため、ブログのソースファイルも同じリポジトリに保存する場合は、別のブランチに保存する必要があります。また、それに対応するトラビスCIの監視とプッシュのブランチも変更する必要があります。もちろん、別の新しいリポジトリを使用して保存することもできます。後者の場合、この制限はありません。通常、<code>pages</code>という名前のブランチが使用されます。Hexoのデフォルトの設定でもこの名前のブランチが使用されます。ここでは、後者の方法を使用します。つまり、ソースファイルと生成された静的ウェブファイルが同じリポジトリに保存されます。ソースファイルはマスターブランチに、静的ファイルは<code>pagesブランチ</code>に保存されます。</p>
-</blockquote>
-<p>まず、ローカルのファイルをGitHubにプッシュします。&lt;ディレクトリ名&gt;のディレクトリ内で、Gitリポジトリを初期化し、既存のファイルをGitリポジトリに追加し、pagesブランチを作成します。</p>
-<pre><code class="bash">cd &lt;ディレクトリ名&gt;
-git init 
-git add . 
-git commit -am&quot;init blog&quot; 
-</code></pre>
-<p>その後、以下のようにgitコマンドを使用してコードをリポジトリにプッシュします。</p>
-<pre><code class="bash">git remote add origin &lt;リポジトリのアドレス&gt;
-git branch -M main
-git push -u origin main
-</code></pre>
-<p>&lt;リポジトリのアドレス&gt;には、先ほど作成したリポジトリのアドレスを指定します。</p>
-<p>その後、以下のようにコマンドを使用して新しいローカルブランチ「pages」を作成し、リモートブランチと関連付けます。</p>
-<pre><code class="bash">git checkout -b pages
-git push -u origin pages
-</code></pre>
-<p>これにより、新しいローカルブランチ「pages」が作成され、リモートブランチと関連付けられます。</p>
-<p>その後、プロジェクトの「Settings」ページでGitHub Pagesを有効にします。</p>
-<p>その後、Hexoの設定ファイル（<code>_config.yml</code>）を編集し、該当箇所を見つけてリポジトリ情報を指定し、rootとurlの情報を変更します。</p>
-<pre><code class="bash">url: https://ユーザー名.github.io/ 
-root: /breeze-blog/ 
-
-deploy: 
-  type: &#39;git&#39; 
-  repo: git@github.com:ユーザー名./ディレクトリ名
-  branch: pages
-</code></pre>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>〜とき・〜直後に</title>
     <url>/new-blog/73a2b435.html</url>
     <content><![CDATA[<h1 id="一課-〜とき・〜直後に"><a href="#一課-〜とき・〜直後に" class="headerlink" title="一課 〜とき・〜直後に"></a>一課 〜とき・〜直後に</h1><p>[復習]</p>
@@ -18209,6 +18214,74 @@ deploy:
         <tag>N2</tag>
         <tag>文法</tag>
         <tag>ことがらを説明する</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>〜後で</title>
+    <url>/new-blog/119ef46d.html</url>
+    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
+<ul>
+<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
+<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
+<p>例文</p>
+<blockquote>
+<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
+</blockquote>
+<p>接続　動て形＋はじめて</p>
+<p>注意　</p>
+<ol>
+<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
+</ol>
+<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
+<p>例文</p>
+<blockquote>
+<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
+</blockquote>
+<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
+<p>注意　</p>
+<ol>
+<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
+</ol>
+<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
+<p>例文</p>
+<blockquote>
+<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
+</blockquote>
+<p>接続　動<del>ます</del>＋次第</p>
+<p>注意　</p>
+<ol>
+<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
+<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
+</ol>
+<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
+<p>例文</p>
+<blockquote>
+<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
+</blockquote>
+<p>接続　動て形＋以来・このかた</p>
+<p>注意　</p>
+<ol>
+<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
+<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
+</ol>
+<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
+<p>例文</p>
+<blockquote>
+<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
+</blockquote>
+<p>接続　動て形＋からでないと・からでなければ</p>
+<p>注意　後には、否定的な意味の文が来る</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -18301,74 +18374,6 @@ deploy:
         <tag>N2</tag>
         <tag>文法</tag>
         <tag>ことがらを説明する</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜後で</title>
-    <url>/new-blog/119ef46d.html</url>
-    <content><![CDATA[<h1 id="〜後で"><a href="#〜後で" class="headerlink" title="〜後で"></a>〜後で</h1><p>[復習]</p>
-<ul>
-<li>白いコートを買っ<u>た後で</u>、私は後悔した。</li>
-<li>水泳を始め<u>てから</u>、その後ずっと体調がいい。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てはじめて"><a href="#〜てはじめて" class="headerlink" title="〜てはじめて"></a>〜てはじめて</h2><p>意味　〜を経験した後や、〜という状態になった後で、今までになかったことが起こる</p>
-<p>例文</p>
-<blockquote>
-<p>山田先生の指導を受け<u>てはじめて</u>、生物の観察が面白いと思うよになった。<br>相手の話の途中で話を始めるくせがあると、人に言われ<u>てはじめて</u>気がついた。</p>
-</blockquote>
-<p>接続　動て形＋はじめて</p>
-<p>注意　</p>
-<ol>
-<li>後には、「新しいことが起こる・気がつく・実現する」という意味の文が来る</li>
-</ol>
-<h2 id="〜上（で）"><a href="#〜上（で）" class="headerlink" title="〜上（で）"></a>〜上（で）</h2><p>意味　準備としてまず〜してから、その後で次に続く行動をする</p>
-<p>例文</p>
-<blockquote>
-<p>文書が保存されていることを確かめた<u>上で</u>、パソコンをシャットダウンしてください<br>この列車には特急券が必要です。あらかじめ特急券をお買い求めの<u>上</u>、こ乗車ください。</p>
-</blockquote>
-<p>接続　<br>動た形＋上で<br>名ーの＋上（で）</p>
-<p>注意　</p>
-<ol>
-<li>前後の文は同じ主語。後には、前の動作の結果から続く、意志的な行為を表す文が来る。2. 「〜てから」と同様、前後の行動が当然の順序で起こる場合は使わない。</li>
-</ol>
-<h2 id="〜次第"><a href="#〜次第" class="headerlink" title="〜次第"></a>〜次第</h2><p>意味　〜が実現した後、すぐに続けてある行動をする。<span style="color:orange">硬い言い方</span></p>
-<p>例文</p>
-<blockquote>
-<p>詳しいことがわかり<u>次第</u>、ご連絡いたします。　</p>
-</blockquote>
-<p>接続　動<del>ます</del>＋次第</p>
-<p>注意　</p>
-<ol>
-<li>時間が来れば当然そうなるとわかっていることが実現した瞬間を表す言葉につく。</li>
-<li>後には、話者の希望・意向を表す文や働きかけの文が来る</li>
-</ol>
-<h2 id="〜て以来・〜てこのかた"><a href="#〜て以来・〜てこのかた" class="headerlink" title="〜て以来・〜てこのかた"></a>〜て以来・〜てこのかた</h2><p>意味　〜してから今まで、ずっと同じ状態が続いている</p>
-<p>例文</p>
-<blockquote>
-<p>あの山の写真を見<u>以来</u>、いつかは登ってみたいとずっと思い続けてきた。</p>
-</blockquote>
-<p>接続　動て形＋以来・このかた</p>
-<p>注意　</p>
-<ol>
-<li>過去のある時点を表す言葉につくが、あまり近い過去からの期間には使わない。</li>
-<li>後には、「ずっと今まで続いている」という意味の文が来る。未来のことを言う文は来ない</li>
-</ol>
-<h2 id="〜てからでないと・〜てからでなければ"><a href="#〜てからでないと・〜てからでなければ" class="headerlink" title="〜てからでないと・〜てからでなければ"></a>〜てからでないと・〜てからでなければ</h2><p>意味　〜した後でなければ、あることが実現しない</p>
-<p>例文</p>
-<blockquote>
-<p>もっと情報を集め<u>てからでないと</u>、その話が本当かどうか判断できない。</p>
-</blockquote>
-<p>接続　動て形＋からでないと・からでなければ</p>
-<p>注意　後には、否定的な意味の文が来る</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>ExplainThings</tag>
       </tags>
   </entry>
   <entry>
@@ -19356,6 +19361,95 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>〜できない・困難だ・〜できる</title>
+    <url>/new-blog/e1ec0a2a.html</url>
+    <content><![CDATA[<h1 id="〜できない・困難だ・〜できる"><a href="#〜できない・困難だ・〜できる" class="headerlink" title="〜できない・困難だ・〜できる"></a>〜できない・困難だ・〜できる</h1><p>[復習]</p>
+<ul>
+<li>あの人の話は信じ<u>られない</u>。</li>
+<li>この文は複雑でわかり<u>にくい</u>。</li>
+<li>社長室に一人ではちょっと入り<u>づらい</u>ですよ。</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜がたい"><a href="#〜がたい" class="headerlink" title="〜がたい"></a>〜がたい</h2><p>意味 〜することが難しい・〜できない。</p>
+<p>例文</p>
+<ul>
+<li>留学中、自分の国では得<u>がたい</u>経験をたくさんした。</li>
+<li>これは正解ではないが、間違っているとも言い<u>がたい</u>。</li>
+</ul>
+<p>接続　動<del>ます</del>＋がたい</p>
+<p>注意　</p>
+<ol>
+<li>能力的にできないという意味では使わない。主に心の働きを表す動詞（想像する・理解する・信じる）や発言を表す動詞につく。</li>
+</ol>
+<h2 id="〜わけにはいかない・〜わけにもいかない"><a href="#〜わけにはいかない・〜わけにもいかない" class="headerlink" title="〜わけにはいかない・〜わけにもいかない"></a>〜わけにはいかない・〜わけにもいかない</h2><p>意味　社会的常識に反する・心理的抵抗があるなどの事情があって、〜できない。</p>
+<p>例文　</p>
+<ul>
+<li>いくらお金に困っていても、そんな大金をあなたから借りる<u>わけにはいかない</u></li>
+<li>もう終電は終わってしまった。会社に泊まる<u>わけにもいかず</u>、困っている。</li>
+<li>大切な試験が明日あるので、パーティーに行くわけにはいきません。</li>
+</ul>
+<p>接続　動辞書形＋わけにはいかない・わけにもいかない</p>
+<p>注意　</p>
+<ol>
+<li>能力的にできないという意味では使わない。</li>
+</ol>
+<h2 id="〜かねる"><a href="#〜かねる" class="headerlink" title="〜かねる"></a>〜かねる</h2><p>意味　その状況・その条件・話者の立場では〜できない。</p>
+<p>例文　</p>
+<ul>
+<li>あなたの気持ちも理解できますが、その案には賛成し<u>かねます</u><blockquote>
+<p>子供が泣いているのを見<u>かねて</u>、結局宿題を手伝ってやった。</p>
+</blockquote>
+</li>
+</ul>
+<p>接続　動<del>ます</del>＋かねる</p>
+<p>注意</p>
+<ol>
+<li>能力的にできないという意味では使わない。</li>
+<li>丁寧に断る場合などに使う。</li>
+</ol>
+<h2 id="〜ようがない"><a href="#〜ようがない" class="headerlink" title="〜ようがない"></a>〜ようがない</h2><p>意味　〜したくても、どのようにしたらいいかわからない・可能性が全くない</p>
+<p>例文</p>
+<ul>
+<li>これだけしっかり準備したのだ。悪い結果になり<u>ようがない</u>だろう。</li>
+<li>駅からここまではまっすぐ歩いてくるだけだから、迷い<u>ようがない</u>と思うけどね。</li>
+</ul>
+<p>接続　動<del>ます</del>＋ようがない</p>
+<p>注意　</p>
+<ol>
+<li>方法が全くないという意味、または「〜はずがない」という意味で使う。</li>
+<li>不可能であるというニュアンスを強調する。</li>
+</ol>
+<h2 id="〜どころではない"><a href="#〜どころではない" class="headerlink" title="〜どころではない"></a>〜どころではない</h2><p>意味　〜できる状況ではない。</p>
+<p>例文</p>
+<ul>
+<li>仕事が忙しくて、旅行<u>どころではない</u></li>
+</ul>
+<p>接続　名・動辞書形＋どころではない</p>
+<p>注意　</p>
+<ol>
+<li>余裕がないという事情（お金がない・時間がない・うるさい・）のため、期待していることや想像していることが全くできないという意味で使う。</li>
+</ol>
+<h2 id="〜得る／〜得ない"><a href="#〜得る／〜得ない" class="headerlink" title="〜得る／〜得ない"></a>〜得る／〜得ない</h2><p>意味　〜できる・その可能性がある／〜できない・その可能性がない。</p>
+<p>例文</p>
+<ul>
+<li>経済の成長と環境保護は両立し<u>得る</u>はずだ。</li>
+</ul>
+<p>接続　動<del>ます</del>＋得る・得ない</p>
+<p>注意</p>
+<ol>
+<li>特定の人の日常的な能力（英語が話せる）や状況的可能について言うときは使いにくい。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>SubjectiveExplain</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜を見て評価すると・〜の立場で評価すると</title>
     <url>/new-blog/ee11027c.html</url>
     <content><![CDATA[<h1 id="〜を見て評価すると・〜の立場で評価すると"><a href="#〜を見て評価すると・〜の立場で評価すると" class="headerlink" title="〜を見て評価すると・〜の立場で評価すると"></a>〜を見て評価すると・〜の立場で評価すると</h1><p>[復習]</p>
@@ -19437,95 +19531,6 @@ deploy:
 <ol>
 <li>ふつう、話者以外の人を表す言葉につく。</li>
 <li>後には、その人の立場に立って、その人の気持ちを推量して言う文が来る。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>SubjectiveExplain</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>〜できない・困難だ・〜できる</title>
-    <url>/new-blog/e1ec0a2a.html</url>
-    <content><![CDATA[<h1 id="〜できない・困難だ・〜できる"><a href="#〜できない・困難だ・〜できる" class="headerlink" title="〜できない・困難だ・〜できる"></a>〜できない・困難だ・〜できる</h1><p>[復習]</p>
-<ul>
-<li>あの人の話は信じ<u>られない</u>。</li>
-<li>この文は複雑でわかり<u>にくい</u>。</li>
-<li>社長室に一人ではちょっと入り<u>づらい</u>ですよ。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜がたい"><a href="#〜がたい" class="headerlink" title="〜がたい"></a>〜がたい</h2><p>意味 〜することが難しい・〜できない。</p>
-<p>例文</p>
-<ul>
-<li>留学中、自分の国では得<u>がたい</u>経験をたくさんした。</li>
-<li>これは正解ではないが、間違っているとも言い<u>がたい</u>。</li>
-</ul>
-<p>接続　動<del>ます</del>＋がたい</p>
-<p>注意　</p>
-<ol>
-<li>能力的にできないという意味では使わない。主に心の働きを表す動詞（想像する・理解する・信じる）や発言を表す動詞につく。</li>
-</ol>
-<h2 id="〜わけにはいかない・〜わけにもいかない"><a href="#〜わけにはいかない・〜わけにもいかない" class="headerlink" title="〜わけにはいかない・〜わけにもいかない"></a>〜わけにはいかない・〜わけにもいかない</h2><p>意味　社会的常識に反する・心理的抵抗があるなどの事情があって、〜できない。</p>
-<p>例文　</p>
-<ul>
-<li>いくらお金に困っていても、そんな大金をあなたから借りる<u>わけにはいかない</u></li>
-<li>もう終電は終わってしまった。会社に泊まる<u>わけにもいかず</u>、困っている。</li>
-<li>大切な試験が明日あるので、パーティーに行くわけにはいきません。</li>
-</ul>
-<p>接続　動辞書形＋わけにはいかない・わけにもいかない</p>
-<p>注意　</p>
-<ol>
-<li>能力的にできないという意味では使わない。</li>
-</ol>
-<h2 id="〜かねる"><a href="#〜かねる" class="headerlink" title="〜かねる"></a>〜かねる</h2><p>意味　その状況・その条件・話者の立場では〜できない。</p>
-<p>例文　</p>
-<ul>
-<li>あなたの気持ちも理解できますが、その案には賛成し<u>かねます</u><blockquote>
-<p>子供が泣いているのを見<u>かねて</u>、結局宿題を手伝ってやった。</p>
-</blockquote>
-</li>
-</ul>
-<p>接続　動<del>ます</del>＋かねる</p>
-<p>注意</p>
-<ol>
-<li>能力的にできないという意味では使わない。</li>
-<li>丁寧に断る場合などに使う。</li>
-</ol>
-<h2 id="〜ようがない"><a href="#〜ようがない" class="headerlink" title="〜ようがない"></a>〜ようがない</h2><p>意味　〜したくても、どのようにしたらいいかわからない・可能性が全くない</p>
-<p>例文</p>
-<ul>
-<li>これだけしっかり準備したのだ。悪い結果になり<u>ようがない</u>だろう。</li>
-<li>駅からここまではまっすぐ歩いてくるだけだから、迷い<u>ようがない</u>と思うけどね。</li>
-</ul>
-<p>接続　動<del>ます</del>＋ようがない</p>
-<p>注意　</p>
-<ol>
-<li>方法が全くないという意味、または「〜はずがない」という意味で使う。</li>
-<li>不可能であるというニュアンスを強調する。</li>
-</ol>
-<h2 id="〜どころではない"><a href="#〜どころではない" class="headerlink" title="〜どころではない"></a>〜どころではない</h2><p>意味　〜できる状況ではない。</p>
-<p>例文</p>
-<ul>
-<li>仕事が忙しくて、旅行<u>どころではない</u></li>
-</ul>
-<p>接続　名・動辞書形＋どころではない</p>
-<p>注意　</p>
-<ol>
-<li>余裕がないという事情（お金がない・時間がない・うるさい・）のため、期待していることや想像していることが全くできないという意味で使う。</li>
-</ol>
-<h2 id="〜得る／〜得ない"><a href="#〜得る／〜得ない" class="headerlink" title="〜得る／〜得ない"></a>〜得る／〜得ない</h2><p>意味　〜できる・その可能性がある／〜できない・その可能性がない。</p>
-<p>例文</p>
-<ul>
-<li>経済の成長と環境保護は両立し<u>得る</u>はずだ。</li>
-</ul>
-<p>接続　動<del>ます</del>＋得る・得ない</p>
-<p>注意</p>
-<ol>
-<li>特定の人の日常的な能力（英語が話せる）や状況的可能について言うときは使いにくい。</li>
 </ol>
 ]]></content>
       <categories>
@@ -19925,6 +19930,81 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>強くそう感じる・思いが強いられる</title>
+    <url>/new-blog/d03492c8.html</url>
+    <content><![CDATA[<h1 id="強くそう感じる・思いが強いられる"><a href="#強くそう感じる・思いが強いられる" class="headerlink" title="強くそう感じる・思いが強いられる"></a>強くそう感じる・思いが強いられる</h1><p>[復習]</p>
+<ul>
+<li>歯が<u>とても</u>痛い。</li>
+<li>仕事があるので、日曜日にも会社行か<u>なければならない</u></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="〜てしかたがない・〜てしょうがない・〜てたまらない"><a href="#〜てしかたがない・〜てしょうがない・〜てたまらない" class="headerlink" title="〜てしかたがない・〜てしょうがない・〜てたまらない"></a>〜てしかたがない・〜てしょうがない・〜てたまらない</h2><p>意味　非常に〜だと感じる。</p>
+<p>例文</p>
+<ul>
+<li>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u></li>
+<li>久しぶり彼女に会えるのがうれしく<u>てしょうがない</u></li>
+<li>朝から何も食べていないので、おなかがすい<u>てたまらない</u></li>
+</ul>
+<p>接続　動て形・イ形＜て・ナ形で＋しかたがない・しょうがない・たまらない</p>
+<p>注意</p>
+<ol>
+<li>話者の感情・欲求などを表すにつく。 特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
+<li>三人称が主語の時は、「ようだ・らしい」などをつける。</li>
+</ol>
+<h2 id="〜てならない"><a href="#〜てならない" class="headerlink" title="〜てならない"></a>〜てならない</h2><p>意味　気持ちが非常に〜だ。</p>
+<p>例文</p>
+<ul>
+<li>この歌を聞くと、学生時代のことが思い出され<u>てならない</u></li>
+<li>さっきから何か大切なことを忘れているような気がして<u>ならない</u></li>
+</ul>
+<p>接続　動て形・イ形くて・ナ形で＋ならない</p>
+<p>注意</p>
+<ol>
+<li>話者の感情・体の感覚などを表す言葉につく。マイナスの感情を表すことが多い。</li>
+</ol>
+<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>意味　どうしても〜してしまって抑えられない。</p>
+<p>例文</p>
+<ul>
+<li>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></li>
+<li>ミカさんはケーキが大好きで、ケーキ屋の前を通ると買わ<u>ずにはいられない</u>そうだ。</li>
+</ul>
+<p>接続<br>動ない形＋ではいられない<br>動<del>ない</del>＋ずにはいられない<br><span style="color:red">する　→ せずに</span></p>
+<p>注意</p>
+<ol>
+<li>自然に出てくる個人的な感情や行動を表す。</li>
+</ol>
+<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>意味　事情があって〜しなければならない</p>
+<p>例文</p>
+<ul>
+<li>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></li>
+</ul>
+<p>接続　動ない形＋わけに（は）いかない</p>
+<p>注意</p>
+<ol>
+<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。社会的常識・義理などの事情を言う文が前か後に来ることが多い。</li>
+</ol>
+<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
+<p>例文</p>
+<ul>
+<li>週末も仕事で出かけ<u>ざるを得ない</u></li>
+<li>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</li>
+</ul>
+<p>接続<br>動<del>ない</del>＋ざるを得ない<br><span style="color:red">する　→ せざる</span></p>
+<p>注意</p>
+<ol>
+<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>主観を述べる</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提案する・いしを表す</title>
     <url>/new-blog/392ec375.html</url>
     <content><![CDATA[<h1 id="提案する・いしを表す"><a href="#提案する・いしを表す" class="headerlink" title="提案する・いしを表す"></a>提案する・いしを表す</h1><p>[復習]</p>
@@ -20120,79 +20200,10 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>強くそう感じる・思いが強いられる</title>
-    <url>/new-blog/d03492c8.html</url>
-    <content><![CDATA[<h1 id="強くそう感じる・思いが強いられる"><a href="#強くそう感じる・思いが強いられる" class="headerlink" title="強くそう感じる・思いが強いられる"></a>強くそう感じる・思いが強いられる</h1><p>[復習]</p>
-<ul>
-<li>歯が<u>とても</u>痛い。</li>
-<li>仕事があるので、日曜日にも会社行か<u>なければならない</u></li>
-</ul>
-<span id="more"></span>
-
-<h2 id="〜てしかたがない・〜てしょうがない・〜てたまらない"><a href="#〜てしかたがない・〜てしょうがない・〜てたまらない" class="headerlink" title="〜てしかたがない・〜てしょうがない・〜てたまらない"></a>〜てしかたがない・〜てしょうがない・〜てたまらない</h2><p>意味　非常に〜だと感じる。</p>
-<p>例文</p>
-<ul>
-<li>さっき聞いた面白い話をだれかに話したく<u>てしかたがない</u></li>
-<li>久しぶり彼女に会えるのがうれしく<u>てしょうがない</u></li>
-<li>朝から何も食べていないので、おなかがすい<u>てたまらない</u></li>
-</ul>
-<p>接続　動て形・イ形＜て・ナ形で＋しかたがない・しょうがない・たまらない</p>
-<p>注意</p>
-<ol>
-<li>話者の感情・欲求などを表すにつく。 特に「〜てたまらない」は体が感じることについて使うことが多い。</li>
-<li>三人称が主語の時は、「ようだ・らしい」などをつける。</li>
-</ol>
-<h2 id="〜てならない"><a href="#〜てならない" class="headerlink" title="〜てならない"></a>〜てならない</h2><p>意味　気持ちが非常に〜だ。</p>
-<p>例文</p>
-<ul>
-<li>この歌を聞くと、学生時代のことが思い出され<u>てならない</u></li>
-<li>さっきから何か大切なことを忘れているような気がして<u>ならない</u></li>
-</ul>
-<p>接続　動て形・イ形くて・ナ形で＋ならない</p>
-<p>注意</p>
-<ol>
-<li>話者の感情・体の感覚などを表す言葉につく。マイナスの感情を表すことが多い。</li>
-</ol>
-<h2 id="〜ないではいられない・〜ずにはいられない"><a href="#〜ないではいられない・〜ずにはいられない" class="headerlink" title="〜ないではいられない・〜ずにはいられない"></a>〜ないではいられない・〜ずにはいられない</h2><p>意味　どうしても〜してしまって抑えられない。</p>
-<p>例文</p>
-<ul>
-<li>この曲が聞こえてくると、体を動かさ<u>ないではいられない</u></li>
-<li>ミカさんはケーキが大好きで、ケーキ屋の前を通ると買わ<u>ずにはいられない</u>そうだ。</li>
-</ul>
-<p>接続<br>動ない形＋ではいられない<br>動<del>ない</del>＋ずにはいられない<br><span style="color:red">する　→ せずに</span></p>
-<p>注意</p>
-<ol>
-<li>自然に出てくる個人的な感情や行動を表す。</li>
-</ol>
-<h2 id="〜ないわけに（は）いかない"><a href="#〜ないわけに（は）いかない" class="headerlink" title="〜ないわけに（は）いかない"></a>〜ないわけに（は）いかない</h2><p>意味　事情があって〜しなければならない</p>
-<p>例文</p>
-<ul>
-<li>親友の結婚式だから、忙しくても出席し<u>ないわけにはいかない</u></li>
-</ul>
-<p>接続　動ない形＋わけに（は）いかない</p>
-<p>注意</p>
-<ol>
-<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。社会的常識・義理などの事情を言う文が前か後に来ることが多い。</li>
-</ol>
-<h2 id="〜ざるを得ない"><a href="#〜ざるを得ない" class="headerlink" title="〜ざるを得ない"></a>〜ざるを得ない</h2><p>意味　そうしたくはないが、どうにもならない事情があってしかたなく〜する</p>
-<p>例文</p>
-<ul>
-<li>週末も仕事で出かけ<u>ざるを得ない</u></li>
-<li>このまま赤字が続けば、経営方針を変更せ<u>ざるを得ない</u>だろう。</li>
-</ul>
-<p>接続<br>動<del>ない</del>＋ざるを得ない<br><span style="color:red">する　→ せざる</span></p>
-<p>注意</p>
-<ol>
-<li>意志動詞につく。主語は特定の三人称ではなk一人称が多いが、文中に表れることは少ない。</li>
-</ol>
+    <title>course28</title>
+    <url>/new-blog/6ca181b6.html</url>
+    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
 ]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>主観を述べる</tag>
-      </tags>
   </entry>
   <entry>
     <title>文法形式の整理</title>
@@ -21119,12 +21130,6 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>course28</title>
-    <url>/new-blog/6ca181b6.html</url>
-    <content><![CDATA[<h1 id="文の組み立て−１-決まった形"><a href="#文の組み立て−１-決まった形" class="headerlink" title="文の組み立て−１　決まった形"></a>文の組み立て−１　決まった形</h1><p><a href="#〜といったら">〜といったら</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>文の組み立て−3　「〜ない」がつく文法形式</title>
     <url>/new-blog/e6787bff.html</url>
     <content><![CDATA[<h1 id="文の組み立て−3-「〜ない」がつく文法形式"><a href="#文の組み立て−3-「〜ない」がつく文法形式" class="headerlink" title="文の組み立て−3　「〜ない」がつく文法形式"></a>文の組み立て−3　「〜ない」がつく文法形式</h1><span id="more"></span>
@@ -21494,6 +21499,26 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>条件を表す文</title>
+    <url>/new-blog/ff8369b4.html</url>
+    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
+<span id="more"></span>
+
+<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
+<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
+<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
+<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
+<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
+]]></content>
+      <categories>
+        <category>N2</category>
+      </categories>
+      <tags>
+        <tag>N2</tag>
+        <tag>GrammaticalForm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>時制</title>
     <url>/new-blog/956f59e9.html</url>
     <content><![CDATA[<h1 id="時制"><a href="#時制" class="headerlink" title="時制"></a>時制</h1><p>文章としてのまとまりを持たせるためには、時間の流れに矛盾がないよう文を続ける必要があります。また、ある時点での出来事を言っているのか、ある時間幅における状態のことを言っているのかをはっきりさせることも大切です。</p>
@@ -21608,26 +21633,6 @@ deploy:
       </categories>
       <tags>
         <tag>N2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>条件を表す文</title>
-    <url>/new-blog/ff8369b4.html</url>
-    <content><![CDATA[<h1 id="条件を表す文"><a href="#条件を表す文" class="headerlink" title="条件を表す文"></a>条件を表す文</h1><p>文章としてのまとまりを持たせるために、ある条件をどう扱うかがポイントになることがあります。あることを仮定するのか、実現した条件として考えるのか、後に来る文はどうつながるのか</p>
-<span id="more"></span>
-
-<h2 id="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"><a href="#条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法" class="headerlink" title="条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法"></a>条件を表す文（「と、ば、たら、なら」「ても」を使う文）の用法</h2><p>文末の制限：話者の希望・意向を表す文や働きかけの文が来るか・来ないかに注意する必要があります</p>
-<p>❌　夏休みになると、国に<u>帰りたい</u>。<br>⭕️ 夏休みになると、寮が<u>静かになる</u>。<br>⭕️　夏休みに<u>なったら</u>、国に帰りたい。</p>
-<p>❌　そのDVDを借りれば、後で私にも<u>見せてください</u><br>⭕️　そのDVDを借りれば、連休中<u>退屈しないだろう</u><br>⭕️　そのDVDを<u>借りるなら</u>、後で私にも見せてください<br>⭕️　そのDVDを<u>借りたら</u>、後で私にも見せてください</p>
-<p>❌　テレビを見たいのに、今日は<u>我慢しよう</u><br>⭕️　テレビを見たいのに、<u>見られない</u><br>⭕️　テレビを見たく<u>ても</u>、今日は我慢しよう</p>
-<h2 id="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"><a href="#前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります" class="headerlink" title="前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります"></a>前の文との関係：まだ実現していないこと（仮定）か・実現したこと（確定）かに注意する必要があります</h2><h3 id="実現していないこと"><a href="#実現していないこと" class="headerlink" title="実現していないこと"></a>実現していないこと</h3><p>将来医者になりたい。</p>
-]]></content>
-      <categories>
-        <category>N2</category>
-      </categories>
-      <tags>
-        <tag>N2</tag>
-        <tag>GrammaticalForm</tag>
       </tags>
   </entry>
   <entry>
@@ -22029,6 +22034,52 @@ deploy:
       </tags>
   </entry>
   <entry>
+    <title>〜したほうがいい・〜なさい</title>
+    <url>/new-blog/79554273.html</url>
+    <content><![CDATA[<h1 id="〜したほうがいい・〜なさい"><a href="#〜したほうがいい・〜なさい" class="headerlink" title="〜したほうがいい・〜なさい"></a>〜したほうがいい・〜なさい</h1><span id="more"></span>
+
+<h2 id="命令（しろ）-x2F-禁止（〜な）"><a href="#命令（しろ）-x2F-禁止（〜な）" class="headerlink" title="命令（しろ）&#x2F;禁止（〜な）"></a>命令（しろ）&#x2F;禁止（〜な）</h2><p>例文</p>
+<blockquote>
+<p>「試合で」監督「<u>走れ、走れ</u>！」<br>赤信号は<u>止まれ</u>という意味です。<br>父は医者にお酒を<u>飲むな</u>と言われている。</p>
+</blockquote>
+<p>説明　「〜しなさい／〜してはいけない。」特に男性が強く命令する時に使うが、張り紙などにも使う。</p>
+<p>接続</p>
+<blockquote>
+<p>命令　</p>
+<blockquote>
+<p>   動詞I 動<del>ば</del><br>    動詞II 動<del>ます</del>ろ<br>    動詞III する→しろ　来る→来い</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>禁止　動辞書形＋な</p>
+</blockquote>
+<h2 id="〜こと"><a href="#〜こと" class="headerlink" title="〜こと"></a>〜こと</h2><p>例文</p>
+<blockquote>
+<p>申込書を書く前に注意が書きをよく読む<u>こと</u></p>
+</blockquote>
+<p>説明　「〜しなさい／〜してはいけない。」主に注意や指示を張り紙などに書いて伝えるときに使う。</p>
+<p>接続 動辞書形／ない形＋こと</p>
+<h2 id="〜べきだ・〜べき／〜べきではない"><a href="#〜べきだ・〜べき／〜べきではない" class="headerlink" title="〜べきだ・〜べき／〜べきではない"></a>〜べきだ・〜べき／〜べきではない</h2><p>例文</p>
+<blockquote>
+<p>これは大事なことですから、もう少し話し合ってから決める<u>べきだ</u>と思いますよ。<br>仕事はたくさんあるが、まず、今日中にやる<u>べき</u>ことから始めよう。</p>
+</blockquote>
+<p>説明　「〜するのが当然だ・〜したほうがいい／〜してはいけない・〜しないほうがいい。」規則で決まっていることではなく、話者の主張を言う時に使う。</p>
+<p>接続　動辞書形＋べきだ・べきではない</p>
+<h2 id="たらどうか"><a href="#たらどうか" class="headerlink" title="たらどうか"></a>たらどうか</h2><p>例文</p>
+<blockquote>
+<p>体のことが心配なら、一度健康診断を受け<u>たらどうでしょうか</u><br>悪いのはそっちですよ。一言謝っ<u>たらどうですか</u></p>
+</blockquote>
+<p>説明　「〜するのがいいですよ。」助言や忠告の気持ちで相手にある行為を軽く勧めるときに使う。</p>
+<p>接続　動たら＋どうか</p>
+]]></content>
+      <categories>
+        <category>N3</category>
+      </categories>
+      <tags>
+        <tag>N3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>〜（よ）うと思う</title>
     <url>/new-blog/c03e94d.html</url>
     <content><![CDATA[<h1 id="〜（よ）うと思う"><a href="#〜（よ）うと思う" class="headerlink" title="〜（よ）うと思う"></a>〜（よ）うと思う</h1><span id="more"></span>
@@ -22069,44 +22120,191 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>〜したほうがいい・〜なさい</title>
-    <url>/new-blog/79554273.html</url>
-    <content><![CDATA[<h1 id="〜したほうがいい・〜なさい"><a href="#〜したほうがいい・〜なさい" class="headerlink" title="〜したほうがいい・〜なさい"></a>〜したほうがいい・〜なさい</h1><span id="more"></span>
+    <title>敬語</title>
+    <url>/new-blog/8b2a3cd9.html</url>
+    <content><![CDATA[<h1 id="敬語"><a href="#敬語" class="headerlink" title="敬語"></a>敬語</h1><span id="more"></span>
 
-<h2 id="命令（しろ）-x2F-禁止（〜な）"><a href="#命令（しろ）-x2F-禁止（〜な）" class="headerlink" title="命令（しろ）&#x2F;禁止（〜な）"></a>命令（しろ）&#x2F;禁止（〜な）</h2><p>例文</p>
-<blockquote>
-<p>「試合で」監督「<u>走れ、走れ</u>！」<br>赤信号は<u>止まれ</u>という意味です。<br>父は医者にお酒を<u>飲むな</u>と言われている。</p>
-</blockquote>
-<p>説明　「〜しなさい／〜してはいけない。」特に男性が強く命令する時に使うが、張り紙などにも使う。</p>
-<p>接続</p>
-<blockquote>
-<p>命令　</p>
-<blockquote>
-<p>   動詞I 動<del>ば</del><br>    動詞II 動<del>ます</del>ろ<br>    動詞III する→しろ　来る→来い</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>禁止　動辞書形＋な</p>
-</blockquote>
-<h2 id="〜こと"><a href="#〜こと" class="headerlink" title="〜こと"></a>〜こと</h2><p>例文</p>
-<blockquote>
-<p>申込書を書く前に注意が書きをよく読む<u>こと</u></p>
-</blockquote>
-<p>説明　「〜しなさい／〜してはいけない。」主に注意や指示を張り紙などに書いて伝えるときに使う。</p>
-<p>接続 動辞書形／ない形＋こと</p>
-<h2 id="〜べきだ・〜べき／〜べきではない"><a href="#〜べきだ・〜べき／〜べきではない" class="headerlink" title="〜べきだ・〜べき／〜べきではない"></a>〜べきだ・〜べき／〜べきではない</h2><p>例文</p>
-<blockquote>
-<p>これは大事なことですから、もう少し話し合ってから決める<u>べきだ</u>と思いますよ。<br>仕事はたくさんあるが、まず、今日中にやる<u>べき</u>ことから始めよう。</p>
-</blockquote>
-<p>説明　「〜するのが当然だ・〜したほうがいい／〜してはいけない・〜しないほうがいい。」規則で決まっていることではなく、話者の主張を言う時に使う。</p>
-<p>接続　動辞書形＋べきだ・べきではない</p>
-<h2 id="たらどうか"><a href="#たらどうか" class="headerlink" title="たらどうか"></a>たらどうか</h2><p>例文</p>
-<blockquote>
-<p>体のことが心配なら、一度健康診断を受け<u>たらどうでしょうか</u><br>悪いのはそっちですよ。一言謝っ<u>たらどうですか</u></p>
-</blockquote>
-<p>説明　「〜するのがいいですよ。」助言や忠告の気持ちで相手にある行為を軽く勧めるときに使う。</p>
-<p>接続　動たら＋どうか</p>
-]]></content>
+<h2 id="尊敬語（目上の人の行為を言う）"><a href="#尊敬語（目上の人の行為を言う）" class="headerlink" title="尊敬語（目上の人の行為を言う）"></a>尊敬語（目上の人の行為を言う）</h2><table>
+    <tr>
+        <th>先生は</th>
+        <th>ふつうの言い方</th>
+    </tr>
+    <tr>
+        <td>今日は何時ごろ<b>お</b>帰り<b>になります</b>か</td>
+        <td rowspan="3">一般の動詞文</td>
+    </tr>
+    <tr>
+        <td>何年に大学を<b>ご</b>卒業<b>になった</b>のですか</td>
+    </tr>    
+    <tr>
+        <td>明日の会議には出席<b>されます</b>か</td>
+    </tr>    
+    <tr>
+        <td>こちらにお名前を<b>お</b>書き<b>ください</b></td>
+        <td rowspan="2">〜てください</td>
+    </tr>    
+    <tr>
+        <td>ぜひ<b>ご</b>連絡<b>ください</b></td>
+    </tr>    
+    <tr>
+        <td>研究会の会長<b>でいらっしゃいます</b></td>
+        <td rowspan="2">〜だ</td>
+    </tr>    
+    <tr>
+        <td>お元気<b>でいらっしゃる</b>そうです</td>
+    </tr>    
+    <tr>
+        <td>京都に住ん<b>でいらっしゃいます</b></td>
+        <td rowspan="3">〜ている</td>
+    </tr>
+    <tr>
+        <td>何を<b>お</b>探し<b>です</b>か</td>
+    </tr>
+    <tr>
+        <td>新エネルギーを研究し<b>ておいでになります</b></td>
+    </tr>    
+    <tr>
+        <td>推薦書を書い<b>てくださいました</b></td>
+        <td>〜てくれる</td>
+    </tr>    
+    <tr>
+        <td>いつわたしの国へ<b>いらっしゃいました</b>か</td>
+        <td rowspan="3">来る</td>
+    </tr>    
+    <tr>
+        <td>いつわたしの国へ<b>おいでになります</b>か</td>
+    </tr>
+    <tr>
+        <td>さきほど<b>見えました</b>よ</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>来月アメリカへ<b>いらっしゃいます</b></td>
+        <td rowspan="2">行く</td>
+    </tr>
+    <tr>
+        <td>来月アメリカへ<b>おいでになる</b>ようです</td>
+    </tr>
+    <tr>
+        <td>今晩はお宅に<b>いらっしゃる</b>でしょう</td>
+        <td rowspan="2">いる</td>
+    </tr>
+    <tr>
+        <td>今晩はお宅に<b>おいでになります</b>か</td>
+    </tr>
+    <tr>
+        <td>ゴルフを<b>なさいます</b>か</td>
+        <td>する</td>
+    </tr>
+    <tr>
+        <td>この雑誌を<b>ご覧になります</b>か</td>
+        <td>見る</td>
+    </tr>
+    <tr>
+        <td>食べる、飲む</td>
+        <td>和食を<b>召し上がります</b>、お酒も<b>召し上がります</b></td>
+    </tr>
+    <tr>
+        <td>お名前は何と<b>おっしゃいます</b>か</td>
+        <td>言う</td>
+    </tr>
+</table>
+
+<h2 id="謙譲語1（目上の人に関係のある、自分の行為を言う）"><a href="#謙譲語1（目上の人に関係のある、自分の行為を言う）" class="headerlink" title="謙譲語1（目上の人に関係のある、自分の行為を言う）"></a>謙譲語1（目上の人に関係のある、自分の行為を言う）</h2><table>
+    <tr>
+        <th>わたしは</th>
+        <th>ふつうの言い方</th>
+    </tr>
+    <tr>
+        <td>（先生の）ご本を<b>お</b>借り<b>します</b></td>
+        <td>一般の動詞文</td>
+    </tr>
+    <tr>
+        <td>完成品はまだ（先生に）<b>お</b>見せ<b>できません</b></td>
+        <td>可能の動詞文</td>
+    </tr>    
+    <tr>
+        <td>（先生に）ピアノを教え<b>ていただきました</b></td>
+        <td>〜てもらう</td>
+    </tr>    
+    <tr>
+        <td>（先生の写真を）ちょっと<b>拝見</b>します</td>
+        <td>見る</td>
+    </tr>    
+    <tr>
+        <td>（先生に）お礼を<b>申し上げます</b></td>
+        <td>言う</td>
+    </tr>    
+    <tr>
+        <td>あした3時に（先生の）お宅に<b>伺います</b></td>
+        <td>訪ねる</td>
+    </tr>    
+    <tr>
+        <td>（先生に）ちょっと<b>伺います</b>が</td>
+        <td>聞く</td>
+    </tr>
+    <tr>
+        <td>あした3時に（先生に）<b>お目にかかります</b></td>
+        <td>会う</td>
+    </tr>
+    <tr>
+        <td>（先生に）本を<b>さしあげます</b></td>
+        <td>あげる</td>
+    </tr>
+</table>
+
+
+<h2 id="謙譲語2（自分の行為をていねいに言う）"><a href="#謙譲語2（自分の行為をていねいに言う）" class="headerlink" title="謙譲語2（自分の行為をていねいに言う）"></a>謙譲語2（自分の行為をていねいに言う）</h2><table>
+    <tr>
+        <th>わたしは</th>
+        <th>ふつうの言い方</th>
+    </tr>
+    <tr>
+        <td>あした3時に<b>参ります</b></td>
+        <td>来る・行く</td>
+    </tr>
+    <tr>
+        <td>夜は家に<b>おります</b></td>
+        <td>いる</td>
+    </tr>   
+    <tr>
+        <td>片付けは後でわたしが<b>いたします</b></td>
+        <td>する</td>
+    </tr>    
+    <tr>
+        <td>刺身も日本酒も<b>いただきます</b></td>
+        <td>食べる・飲む</td>
+    </tr>    
+    <tr>
+        <td>山中と<b>申します</b></td>
+        <td>言う</td>
+    </tr>
+    <tr>
+        <td>行き先はよく<b>存じております</b></td>
+        <td>知っている</td>
+    </tr>    
+    <tr>
+        <td>いくつか方法があると<b>存じます</b></td>
+        <td>思う</td>
+    </tr>
+</table>
+
+<h2 id="丁寧語（自分や相手に関係なく、ものごとをていねいに言う）"><a href="#丁寧語（自分や相手に関係なく、ものごとをていねいに言う）" class="headerlink" title="丁寧語（自分や相手に関係なく、ものごとをていねいに言う）"></a>丁寧語（自分や相手に関係なく、ものごとをていねいに言う）</h2><table>
+    <tr>
+        <th></th>
+        <th>ふつうの言い方</th>
+    </tr>
+    <tr>
+        <td>これは新製品<b>でございます</b></td>
+        <td>〜だ</td>
+    </tr>
+    <tr>
+        <td>パソコン用品は三階に<b>ございます</b></td>
+        <td>ある</td>
+    </tr>
+</table>
+
+<h2 id="職場でよく使う敬語の例をまとめました。"><a href="#職場でよく使う敬語の例をまとめました。" class="headerlink" title="職場でよく使う敬語の例をまとめました。"></a>職場でよく使う敬語の例をまとめました。</h2><table><tbody><tr><td width="209" style="text-align: left;"><strong>普段の言葉使い</strong></td><td width="333" style="text-align: left;"><strong>職場での言葉使い</strong></td></tr><tr><td><p>誰ですか　</p><p>どなたですか</p></td><td><p>どちらさまでしょうか　</p><p>どなたさまでしょうか　</p></td></tr><tr><td><p>ありません　</p><p>ないです</p></td><td>ございません</td></tr><tr><td>できません</td><td>いたしかねます</td></tr><tr><td>知りません</td><td>存じません</td></tr><tr><td>わかりません</td><td>わかりかねます</td></tr><tr><td>何の用ですか</td><td>どのようなご用件でしょうか</td></tr><tr><td>誰を呼べばいいですか</td><td>誰をお呼びいたしましょうか</td></tr><tr><td>今、見てきます</td><td>ただ今、見て参ります</td></tr><tr><td>今、外出していません</td><td>ただ今、外出しております</td></tr><tr><td>今、席にいません</td><td>ただ今、席を外しております</td></tr><tr><td>名前を教えてください</td><td>お名前を伺ってもよろしいでしょうか</td></tr><tr><td>何か聞いてますか</td><td>何かうけたまわっておりますでしょうか</td></tr><tr><td>こっちからいきます</td><td>こちらから伺います（参ります）</td></tr><tr><td>もう一度言ってください</td><td>もう一度おっしゃっていただけますか</td></tr><tr><td>食べます</td><td>いただきます</td></tr><tr><td>もらいます</td><td><p>いただきます　</p><p>頂戴いたします</p></td></tr><tr><td><p>ごめんなさい　</p><p>すみません</p></td><td>申し訳ございません</td></tr><tr><td>言います</td><td>申し上げます</td></tr></tbody></table>]]></content>
       <categories>
         <category>N3</category>
       </categories>
@@ -22675,191 +22873,95 @@ deploy:
       </tags>
   </entry>
   <entry>
-    <title>敬語</title>
-    <url>/new-blog/8b2a3cd9.html</url>
-    <content><![CDATA[<h1 id="敬語"><a href="#敬語" class="headerlink" title="敬語"></a>敬語</h1><span id="more"></span>
+    <title>文の組み立て</title>
+    <url>/new-blog/562ffdb5.html</url>
+    <content><![CDATA[<h1 id="文の組み立て"><a href="#文の組み立て" class="headerlink" title="文の組み立て"></a>文の組み立て</h1><span id="more"></span>
 
-<h2 id="尊敬語（目上の人の行為を言う）"><a href="#尊敬語（目上の人の行為を言う）" class="headerlink" title="尊敬語（目上の人の行為を言う）"></a>尊敬語（目上の人の行為を言う）</h2><table>
-    <tr>
-        <th>先生は</th>
-        <th>ふつうの言い方</th>
-    </tr>
-    <tr>
-        <td>今日は何時ごろ<b>お</b>帰り<b>になります</b>か</td>
-        <td rowspan="3">一般の動詞文</td>
-    </tr>
-    <tr>
-        <td>何年に大学を<b>ご</b>卒業<b>になった</b>のですか</td>
-    </tr>    
-    <tr>
-        <td>明日の会議には出席<b>されます</b>か</td>
-    </tr>    
-    <tr>
-        <td>こちらにお名前を<b>お</b>書き<b>ください</b></td>
-        <td rowspan="2">〜てください</td>
-    </tr>    
-    <tr>
-        <td>ぜひ<b>ご</b>連絡<b>ください</b></td>
-    </tr>    
-    <tr>
-        <td>研究会の会長<b>でいらっしゃいます</b></td>
-        <td rowspan="2">〜だ</td>
-    </tr>    
-    <tr>
-        <td>お元気<b>でいらっしゃる</b>そうです</td>
-    </tr>    
-    <tr>
-        <td>京都に住ん<b>でいらっしゃいます</b></td>
-        <td rowspan="3">〜ている</td>
-    </tr>
-    <tr>
-        <td>何を<b>お</b>探し<b>です</b>か</td>
-    </tr>
-    <tr>
-        <td>新エネルギーを研究し<b>ておいでになります</b></td>
-    </tr>    
-    <tr>
-        <td>推薦書を書い<b>てくださいました</b></td>
-        <td>〜てくれる</td>
-    </tr>    
-    <tr>
-        <td>いつわたしの国へ<b>いらっしゃいました</b>か</td>
-        <td rowspan="3">来る</td>
-    </tr>    
-    <tr>
-        <td>いつわたしの国へ<b>おいでになります</b>か</td>
-    </tr>
-    <tr>
-        <td>さきほど<b>見えました</b>よ</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>来月アメリカへ<b>いらっしゃいます</b></td>
-        <td rowspan="2">行く</td>
-    </tr>
-    <tr>
-        <td>来月アメリカへ<b>おいでになる</b>ようです</td>
-    </tr>
-    <tr>
-        <td>今晩はお宅に<b>いらっしゃる</b>でしょう</td>
-        <td rowspan="2">いる</td>
-    </tr>
-    <tr>
-        <td>今晩はお宅に<b>おいでになります</b>か</td>
-    </tr>
-    <tr>
-        <td>ゴルフを<b>なさいます</b>か</td>
-        <td>する</td>
-    </tr>
-    <tr>
-        <td>この雑誌を<b>ご覧になります</b>か</td>
-        <td>見る</td>
-    </tr>
-    <tr>
-        <td>食べる、飲む</td>
-        <td>和食を<b>召し上がります</b>、お酒も<b>召し上がります</b></td>
-    </tr>
-    <tr>
-        <td>お名前は何と<b>おっしゃいます</b>か</td>
-        <td>言う</td>
-    </tr>
-</table>
-
-<h2 id="謙譲語1（目上の人に関係のある、自分の行為を言う）"><a href="#謙譲語1（目上の人に関係のある、自分の行為を言う）" class="headerlink" title="謙譲語1（目上の人に関係のある、自分の行為を言う）"></a>謙譲語1（目上の人に関係のある、自分の行為を言う）</h2><table>
-    <tr>
-        <th>わたしは</th>
-        <th>ふつうの言い方</th>
-    </tr>
-    <tr>
-        <td>（先生の）ご本を<b>お</b>借り<b>します</b></td>
-        <td>一般の動詞文</td>
-    </tr>
-    <tr>
-        <td>完成品はまだ（先生に）<b>お</b>見せ<b>できません</b></td>
-        <td>可能の動詞文</td>
-    </tr>    
-    <tr>
-        <td>（先生に）ピアノを教え<b>ていただきました</b></td>
-        <td>〜てもらう</td>
-    </tr>    
-    <tr>
-        <td>（先生の写真を）ちょっと<b>拝見</b>します</td>
-        <td>見る</td>
-    </tr>    
-    <tr>
-        <td>（先生に）お礼を<b>申し上げます</b></td>
-        <td>言う</td>
-    </tr>    
-    <tr>
-        <td>あした3時に（先生の）お宅に<b>伺います</b></td>
-        <td>訪ねる</td>
-    </tr>    
-    <tr>
-        <td>（先生に）ちょっと<b>伺います</b>が</td>
-        <td>聞く</td>
-    </tr>
-    <tr>
-        <td>あした3時に（先生に）<b>お目にかかります</b></td>
-        <td>会う</td>
-    </tr>
-    <tr>
-        <td>（先生に）本を<b>さしあげます</b></td>
-        <td>あげる</td>
-    </tr>
-</table>
-
-
-<h2 id="謙譲語2（自分の行為をていねいに言う）"><a href="#謙譲語2（自分の行為をていねいに言う）" class="headerlink" title="謙譲語2（自分の行為をていねいに言う）"></a>謙譲語2（自分の行為をていねいに言う）</h2><table>
-    <tr>
-        <th>わたしは</th>
-        <th>ふつうの言い方</th>
-    </tr>
-    <tr>
-        <td>あした3時に<b>参ります</b></td>
-        <td>来る・行く</td>
-    </tr>
-    <tr>
-        <td>夜は家に<b>おります</b></td>
-        <td>いる</td>
-    </tr>   
-    <tr>
-        <td>片付けは後でわたしが<b>いたします</b></td>
-        <td>する</td>
-    </tr>    
-    <tr>
-        <td>刺身も日本酒も<b>いただきます</b></td>
-        <td>食べる・飲む</td>
-    </tr>    
-    <tr>
-        <td>山中と<b>申します</b></td>
-        <td>言う</td>
-    </tr>
-    <tr>
-        <td>行き先はよく<b>存じております</b></td>
-        <td>知っている</td>
-    </tr>    
-    <tr>
-        <td>いくつか方法があると<b>存じます</b></td>
-        <td>思う</td>
-    </tr>
-</table>
-
-<h2 id="丁寧語（自分や相手に関係なく、ものごとをていねいに言う）"><a href="#丁寧語（自分や相手に関係なく、ものごとをていねいに言う）" class="headerlink" title="丁寧語（自分や相手に関係なく、ものごとをていねいに言う）"></a>丁寧語（自分や相手に関係なく、ものごとをていねいに言う）</h2><table>
-    <tr>
-        <th></th>
-        <th>ふつうの言い方</th>
-    </tr>
-    <tr>
-        <td>これは新製品<b>でございます</b></td>
-        <td>〜だ</td>
-    </tr>
-    <tr>
-        <td>パソコン用品は三階に<b>ございます</b></td>
-        <td>ある</td>
-    </tr>
-</table>
-
-<h2 id="職場でよく使う敬語の例をまとめました。"><a href="#職場でよく使う敬語の例をまとめました。" class="headerlink" title="職場でよく使う敬語の例をまとめました。"></a>職場でよく使う敬語の例をまとめました。</h2><table><tbody><tr><td width="209" style="text-align: left;"><strong>普段の言葉使い</strong></td><td width="333" style="text-align: left;"><strong>職場での言葉使い</strong></td></tr><tr><td><p>誰ですか　</p><p>どなたですか</p></td><td><p>どちらさまでしょうか　</p><p>どなたさまでしょうか　</p></td></tr><tr><td><p>ありません　</p><p>ないです</p></td><td>ございません</td></tr><tr><td>できません</td><td>いたしかねます</td></tr><tr><td>知りません</td><td>存じません</td></tr><tr><td>わかりません</td><td>わかりかねます</td></tr><tr><td>何の用ですか</td><td>どのようなご用件でしょうか</td></tr><tr><td>誰を呼べばいいですか</td><td>誰をお呼びいたしましょうか</td></tr><tr><td>今、見てきます</td><td>ただ今、見て参ります</td></tr><tr><td>今、外出していません</td><td>ただ今、外出しております</td></tr><tr><td>今、席にいません</td><td>ただ今、席を外しております</td></tr><tr><td>名前を教えてください</td><td>お名前を伺ってもよろしいでしょうか</td></tr><tr><td>何か聞いてますか</td><td>何かうけたまわっておりますでしょうか</td></tr><tr><td>こっちからいきます</td><td>こちらから伺います（参ります）</td></tr><tr><td>もう一度言ってください</td><td>もう一度おっしゃっていただけますか</td></tr><tr><td>食べます</td><td>いただきます</td></tr><tr><td>もらいます</td><td><p>いただきます　</p><p>頂戴いたします</p></td></tr><tr><td><p>ごめんなさい　</p><p>すみません</p></td><td>申し訳ございません</td></tr><tr><td>言います</td><td>申し上げます</td></tr></tbody></table>]]></content>
+<h1 id="文の組み立てー1-引用"><a href="#文の組み立てー1-引用" class="headerlink" title="文の組み立てー1 引用"></a>文の組み立てー1 引用</h1><p>ある人が言ったこと、自分が思ったことの内容を一文の中に入れるには、つぎのような方法があります。</p>
+<h2 id="「言う・思う・感じる」など"><a href="#「言う・思う・感じる」など" class="headerlink" title="「言う・思う・感じる」など"></a>「言う・思う・感じる」など</h2><blockquote>
+<p>普通形＋と…</p>
+</blockquote>
+<ul>
+<li>わたしは思います。＋「リンさんはきっと合格するでしょう」<br>  →わたしは<u>リンさんはきっと合格するだろう</u>と思います。</li>
+</ul>
+<h2 id="「頼む・注意する・言う」など"><a href="#「頼む・注意する・言う」など" class="headerlink" title="「頼む・注意する・言う」など"></a>「頼む・注意する・言う」など</h2><blockquote>
+<p>「辞書形・ない形」＋ように（と）<br>「て形・ない形＋で」＋ほしい＋と<br>命令形・禁止形＋と</p>
+</blockquote>
+<ul>
+<li>医者はカンさんに勧めた。＋「ときどき運動をしたほうがいいです」<br>  →　医者はカンさんに<u>ときどき運動する</u>ように勧めた。</li>
+<li>わたしは先生に頼んだ。＋「もう一度説明してくださいませんか」<br>  → わたしは先生に<u>もう一度説明してほしい</u>と頼んだ。</li>
+</ul>
+<h2 id="「聞く・わからない・調べる」など"><a href="#「聞く・わからない・調べる」など" class="headerlink" title="「聞く・わからない・調べる」など"></a>「聞く・わからない・調べる」など</h2><blockquote>
+<p>普通形＋かどうか<br>疑問詞＋〜か</p>
+</blockquote>
+<ul>
+<li>わたしはカンさんに聞いた。＋「あした会えるでしょうか」。<br>  → わたしはカンさんに<u>あした会えるかどうか</u>（を）聞いた。</li>
+<li>わたしはわからない。＋「どうすれば日本語が上手になるでしょうか」<br>  → わたしは<u>どうすれば日本語が上手になるか</u>（が）わからない。</li>
+</ul>
+<h2 id="どうして／なぜ〜かというと、…からだ"><a href="#どうして／なぜ〜かというと、…からだ" class="headerlink" title="どうして／なぜ〜かというと、…からだ"></a>どうして／なぜ〜かというと、…からだ</h2><ul>
+<li>「どうしてこの店は人気がありますか」＋安くておいしいからです。<br>  → <u>どうしてこの店は人気があるか</u>というと、安くておいしいからです。</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー2-名詞の説明"><a href="#文の組み立てー2-名詞の説明" class="headerlink" title="文の組み立てー2　名詞の説明"></a>文の組み立てー2　名詞の説明</h1><h2 id="「普通形（ナ形だな・名だの）」＋名"><a href="#「普通形（ナ形だな・名だの）」＋名" class="headerlink" title="「普通形（ナ形だな・名だの）」＋名"></a>「普通形（ナ形<del>だ</del>な・名<del>だ</del>の）」＋名</h2><ul>
+<li>そのバスは東京駅に行く　→ 東京駅に<u>行く</u>バス</li>
+<li>そのニュースを聞いてショックを受けた　→ ショックを<u>受けた</u>ニュース</li>
+<li>にぎやかな声で子どもたちが話している　→ 子どもたちが<u>話しているにぎやかな</u>声</li>
+</ul>
+<h2 id="「助詞＋の」＋名"><a href="#「助詞＋の」＋名" class="headerlink" title="「助詞＋の」＋名"></a>「助詞＋の」＋名</h2><ul>
+<li>そのバスは駅<u>まで</u>行く　→ 駅<u>までの</u>バス</li>
+<li>母<u>から</u>手紙が来た　→ 母<u>からの</u>手紙</li>
+<li>友達<u>に</u>プレゼントをあげる　→ 友達<u>への</u>プレゼント</li>
+</ul>
+<h2 id="「助詞のような働きをする言葉」＋の＋名"><a href="#「助詞のような働きをする言葉」＋の＋名" class="headerlink" title="「助詞のような働きをする言葉」＋の＋名"></a>「助詞のような働きをする言葉」＋の＋名</h2><ul>
+<li>生命<u>について</u>本を書いた　→ 生命<u>についての</u>本</li>
+</ul>
+<h2 id="「助詞のような働きをする言葉の名詞につく形」＋名"><a href="#「助詞のような働きをする言葉の名詞につく形」＋名" class="headerlink" title="「助詞のような働きをする言葉の名詞につく形」＋名"></a>「助詞のような働きをする言葉の名詞につく形」＋名</h2><ul>
+<li>そのバスは市の運営に<u>よって</u>走っている　→ 市の運営<u>による</u>バス</li>
+</ul>
+<h2 id="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"><a href="#「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名" class="headerlink" title="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"></a>「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名</h2><ul>
+<li>そのバスは修理した<u>ばかりだ</u>　→ 修理した<u>ばかりの</u>バス</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー3-「〜という・〜といった」"><a href="#文の組み立てー3-「〜という・〜といった」" class="headerlink" title="文の組み立てー3　「〜という・〜といった」"></a>文の組み立てー3　「〜という・〜といった」</h1><p>「〜という…・〜といった…」の「〜」は「…名詞」の名前・内容・例を示します。はっきり言うのを避けるときは「という・といった」の後に「ような」をつけます。</p>
+<h2 id="名前を紹介する（〜という…）"><a href="#名前を紹介する（〜という…）" class="headerlink" title="名前を紹介する（〜という…）"></a>名前を紹介する（〜という…）</h2><ul>
+<li>私は松下<u>という</u>者です</li>
+<li>これ、珍しいですね。何<u>という</u>果物ですか</li>
+</ul>
+<h2 id="内容を示す（〜という…）"><a href="#内容を示す（〜という…）" class="headerlink" title="内容を示す（〜という…）"></a>内容を示す（〜という…）</h2><ul>
+<li>鈴木さんが会社を辞める<u>という</u>うわさを聞いた</li>
+<li>「ワンワン」<u>という</u>犬の鳴き声が聞こえます</li>
+<li>「三日坊主」はすぐにあきてしまうというような意味だと思います</li>
+</ul>
+<h2 id="知識・事実などを示す（〜ということ）"><a href="#知識・事実などを示す（〜ということ）" class="headerlink" title="知識・事実などを示す（〜ということ）"></a>知識・事実などを示す（〜ということ）</h2><ul>
+<li>かぜの予防には手洗いがいい<u>ということ</u>を知っていましたか</li>
+<li>まき子さんのお母さんは有名な女優だ<u>ということ</u>を初めて聞いた</li>
+<li>兄はこの前会ったとき、今月は忙しい<u>というようなこと</u>を言っていた</li>
+</ul>
+<h2 id="よく知らない言葉を示す（〜というの）"><a href="#よく知らない言葉を示す（〜というの）" class="headerlink" title="よく知らない言葉を示す（〜というの）"></a>よく知らない言葉を示す（〜というの）</h2><ul>
+<li>コンピューター用語で、アップデート<u>というの</u>は何ですか</li>
+</ul>
+<h2 id="いくつかの例を示す（〜といった…）"><a href="#いくつかの例を示す（〜といった…）" class="headerlink" title="いくつかの例を示す（〜といった…）"></a>いくつかの例を示す（〜といった…）</h2><ul>
+<li>私は数学、物理、化学<u>といった</u>理科系の科目が好きだ</li>
+<li>彼女は黒とか灰色といったような暗い色の服が似合う</li>
+</ul>
+<hr>
+<h1 id="文の組み立てー4-決まった形"><a href="#文の組み立てー4-決まった形" class="headerlink" title="文の組み立てー4　決まった形"></a>文の組み立てー4　決まった形</h1><p>組み合わせが決めって文法形式があります、決まった形として覚えましょう。</p>
+<h2 id="〜から…にかけて-→-〜から…の間"><a href="#〜から…にかけて-→-〜から…の間" class="headerlink" title="〜から…にかけて　→ 〜から…の間"></a>〜から…にかけて　→ 〜から…の間</h2><ul>
+<li>年末<u>から</u>年始<u>にかけて</u>私はとても忙しい</li>
+<li>明日は関東地方から東北地方にかけて雨が降るでしょう</li>
+</ul>
+<h2 id="〜を…として・〜を…に-→-〜を…考えて（認めて）"><a href="#〜を…として・〜を…に-→-〜を…考えて（認めて）" class="headerlink" title="〜を…として・〜を…に　→　〜を…考えて（認めて）"></a>〜を…として・〜を…に　→　〜を…考えて（認めて）</h2><ul>
+<li>入院<u>を</u>きっかけ<u>として</u>私は健康に注意するようになった</li>
+<li>この小説家は家族をテーマとして小説をたくさん書いている</li>
+</ul>
+<h2 id="〜はもちろん…も-→-〜は当然だが、…も同じように"><a href="#〜はもちろん…も-→-〜は当然だが、…も同じように" class="headerlink" title="〜はもちろん…も　→ 〜は当然だが、…も同じように"></a>〜はもちろん…も　→ 〜は当然だが、…も同じように</h2><ul>
+<li>このゲームは子ども<u>はもちろん</u>大人<u>も</u>楽しめる</li>
+<li>夫は国内の山々<u>はもちろん</u>外国の山にもあちこち登っている</li>
+</ul>
+<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…</h2><ul>
+<li>考えれば考えるほどわからなくなってきた</li>
+</ul>
+<h2 id="〜くらい…はない・"><a href="#〜くらい…はない・" class="headerlink" title="〜くらい…はない・"></a>〜くらい…はない・</h2><h2 id="〜さえ〜ば…・〜さえ〜なら…"><a href="#〜さえ〜ば…・〜さえ〜なら…" class="headerlink" title="〜さえ〜ば…・〜さえ〜なら…"></a>〜さえ〜ば…・〜さえ〜なら…</h2><h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><h2 id="8-〜も…ば〜も…・〜も…なら〜も…"><a href="#8-〜も…ば〜も…・〜も…なら〜も…" class="headerlink" title="8.　〜も…ば〜も…・〜も…なら〜も…"></a>8.　〜も…ば〜も…・〜も…なら〜も…</h2>]]></content>
       <categories>
         <category>N3</category>
       </categories>
@@ -23143,103 +23245,6 @@ deploy:
         <td>〜みたいだ</td>
     </tr>
 </table>]]></content>
-      <categories>
-        <category>N3</category>
-      </categories>
-      <tags>
-        <tag>N3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文の組み立て</title>
-    <url>/new-blog/562ffdb5.html</url>
-    <content><![CDATA[<h1 id="文の組み立て"><a href="#文の組み立て" class="headerlink" title="文の組み立て"></a>文の組み立て</h1><span id="more"></span>
-
-<h1 id="文の組み立てー1-引用"><a href="#文の組み立てー1-引用" class="headerlink" title="文の組み立てー1 引用"></a>文の組み立てー1 引用</h1><p>ある人が言ったこと、自分が思ったことの内容を一文の中に入れるには、つぎのような方法があります。</p>
-<h2 id="「言う・思う・感じる」など"><a href="#「言う・思う・感じる」など" class="headerlink" title="「言う・思う・感じる」など"></a>「言う・思う・感じる」など</h2><blockquote>
-<p>普通形＋と…</p>
-</blockquote>
-<ul>
-<li>わたしは思います。＋「リンさんはきっと合格するでしょう」<br>  →わたしは<u>リンさんはきっと合格するだろう</u>と思います。</li>
-</ul>
-<h2 id="「頼む・注意する・言う」など"><a href="#「頼む・注意する・言う」など" class="headerlink" title="「頼む・注意する・言う」など"></a>「頼む・注意する・言う」など</h2><blockquote>
-<p>「辞書形・ない形」＋ように（と）<br>「て形・ない形＋で」＋ほしい＋と<br>命令形・禁止形＋と</p>
-</blockquote>
-<ul>
-<li>医者はカンさんに勧めた。＋「ときどき運動をしたほうがいいです」<br>  →　医者はカンさんに<u>ときどき運動する</u>ように勧めた。</li>
-<li>わたしは先生に頼んだ。＋「もう一度説明してくださいませんか」<br>  → わたしは先生に<u>もう一度説明してほしい</u>と頼んだ。</li>
-</ul>
-<h2 id="「聞く・わからない・調べる」など"><a href="#「聞く・わからない・調べる」など" class="headerlink" title="「聞く・わからない・調べる」など"></a>「聞く・わからない・調べる」など</h2><blockquote>
-<p>普通形＋かどうか<br>疑問詞＋〜か</p>
-</blockquote>
-<ul>
-<li>わたしはカンさんに聞いた。＋「あした会えるでしょうか」。<br>  → わたしはカンさんに<u>あした会えるかどうか</u>（を）聞いた。</li>
-<li>わたしはわからない。＋「どうすれば日本語が上手になるでしょうか」<br>  → わたしは<u>どうすれば日本語が上手になるか</u>（が）わからない。</li>
-</ul>
-<h2 id="どうして／なぜ〜かというと、…からだ"><a href="#どうして／なぜ〜かというと、…からだ" class="headerlink" title="どうして／なぜ〜かというと、…からだ"></a>どうして／なぜ〜かというと、…からだ</h2><ul>
-<li>「どうしてこの店は人気がありますか」＋安くておいしいからです。<br>  → <u>どうしてこの店は人気があるか</u>というと、安くておいしいからです。</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー2-名詞の説明"><a href="#文の組み立てー2-名詞の説明" class="headerlink" title="文の組み立てー2　名詞の説明"></a>文の組み立てー2　名詞の説明</h1><h2 id="「普通形（ナ形だな・名だの）」＋名"><a href="#「普通形（ナ形だな・名だの）」＋名" class="headerlink" title="「普通形（ナ形だな・名だの）」＋名"></a>「普通形（ナ形<del>だ</del>な・名<del>だ</del>の）」＋名</h2><ul>
-<li>そのバスは東京駅に行く　→ 東京駅に<u>行く</u>バス</li>
-<li>そのニュースを聞いてショックを受けた　→ ショックを<u>受けた</u>ニュース</li>
-<li>にぎやかな声で子どもたちが話している　→ 子どもたちが<u>話しているにぎやかな</u>声</li>
-</ul>
-<h2 id="「助詞＋の」＋名"><a href="#「助詞＋の」＋名" class="headerlink" title="「助詞＋の」＋名"></a>「助詞＋の」＋名</h2><ul>
-<li>そのバスは駅<u>まで</u>行く　→ 駅<u>までの</u>バス</li>
-<li>母<u>から</u>手紙が来た　→ 母<u>からの</u>手紙</li>
-<li>友達<u>に</u>プレゼントをあげる　→ 友達<u>への</u>プレゼント</li>
-</ul>
-<h2 id="「助詞のような働きをする言葉」＋の＋名"><a href="#「助詞のような働きをする言葉」＋の＋名" class="headerlink" title="「助詞のような働きをする言葉」＋の＋名"></a>「助詞のような働きをする言葉」＋の＋名</h2><ul>
-<li>生命<u>について</u>本を書いた　→ 生命<u>についての</u>本</li>
-</ul>
-<h2 id="「助詞のような働きをする言葉の名詞につく形」＋名"><a href="#「助詞のような働きをする言葉の名詞につく形」＋名" class="headerlink" title="「助詞のような働きをする言葉の名詞につく形」＋名"></a>「助詞のような働きをする言葉の名詞につく形」＋名</h2><ul>
-<li>そのバスは市の運営に<u>よって</u>走っている　→ 市の運営<u>による</u>バス</li>
-</ul>
-<h2 id="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"><a href="#「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名" class="headerlink" title="「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名"></a>「状態や様子を表す言葉（ばかり・とおり・まま・はず）」＋の＋名</h2><ul>
-<li>そのバスは修理した<u>ばかりだ</u>　→ 修理した<u>ばかりの</u>バス</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー3-「〜という・〜といった」"><a href="#文の組み立てー3-「〜という・〜といった」" class="headerlink" title="文の組み立てー3　「〜という・〜といった」"></a>文の組み立てー3　「〜という・〜といった」</h1><p>「〜という…・〜といった…」の「〜」は「…名詞」の名前・内容・例を示します。はっきり言うのを避けるときは「という・といった」の後に「ような」をつけます。</p>
-<h2 id="名前を紹介する（〜という…）"><a href="#名前を紹介する（〜という…）" class="headerlink" title="名前を紹介する（〜という…）"></a>名前を紹介する（〜という…）</h2><ul>
-<li>私は松下<u>という</u>者です</li>
-<li>これ、珍しいですね。何<u>という</u>果物ですか</li>
-</ul>
-<h2 id="内容を示す（〜という…）"><a href="#内容を示す（〜という…）" class="headerlink" title="内容を示す（〜という…）"></a>内容を示す（〜という…）</h2><ul>
-<li>鈴木さんが会社を辞める<u>という</u>うわさを聞いた</li>
-<li>「ワンワン」<u>という</u>犬の鳴き声が聞こえます</li>
-<li>「三日坊主」はすぐにあきてしまうというような意味だと思います</li>
-</ul>
-<h2 id="知識・事実などを示す（〜ということ）"><a href="#知識・事実などを示す（〜ということ）" class="headerlink" title="知識・事実などを示す（〜ということ）"></a>知識・事実などを示す（〜ということ）</h2><ul>
-<li>かぜの予防には手洗いがいい<u>ということ</u>を知っていましたか</li>
-<li>まき子さんのお母さんは有名な女優だ<u>ということ</u>を初めて聞いた</li>
-<li>兄はこの前会ったとき、今月は忙しい<u>というようなこと</u>を言っていた</li>
-</ul>
-<h2 id="よく知らない言葉を示す（〜というの）"><a href="#よく知らない言葉を示す（〜というの）" class="headerlink" title="よく知らない言葉を示す（〜というの）"></a>よく知らない言葉を示す（〜というの）</h2><ul>
-<li>コンピューター用語で、アップデート<u>というの</u>は何ですか</li>
-</ul>
-<h2 id="いくつかの例を示す（〜といった…）"><a href="#いくつかの例を示す（〜といった…）" class="headerlink" title="いくつかの例を示す（〜といった…）"></a>いくつかの例を示す（〜といった…）</h2><ul>
-<li>私は数学、物理、化学<u>といった</u>理科系の科目が好きだ</li>
-<li>彼女は黒とか灰色といったような暗い色の服が似合う</li>
-</ul>
-<hr>
-<h1 id="文の組み立てー4-決まった形"><a href="#文の組み立てー4-決まった形" class="headerlink" title="文の組み立てー4　決まった形"></a>文の組み立てー4　決まった形</h1><p>組み合わせが決めって文法形式があります、決まった形として覚えましょう。</p>
-<h2 id="〜から…にかけて-→-〜から…の間"><a href="#〜から…にかけて-→-〜から…の間" class="headerlink" title="〜から…にかけて　→ 〜から…の間"></a>〜から…にかけて　→ 〜から…の間</h2><ul>
-<li>年末<u>から</u>年始<u>にかけて</u>私はとても忙しい</li>
-<li>明日は関東地方から東北地方にかけて雨が降るでしょう</li>
-</ul>
-<h2 id="〜を…として・〜を…に-→-〜を…考えて（認めて）"><a href="#〜を…として・〜を…に-→-〜を…考えて（認めて）" class="headerlink" title="〜を…として・〜を…に　→　〜を…考えて（認めて）"></a>〜を…として・〜を…に　→　〜を…考えて（認めて）</h2><ul>
-<li>入院<u>を</u>きっかけ<u>として</u>私は健康に注意するようになった</li>
-<li>この小説家は家族をテーマとして小説をたくさん書いている</li>
-</ul>
-<h2 id="〜はもちろん…も-→-〜は当然だが、…も同じように"><a href="#〜はもちろん…も-→-〜は当然だが、…も同じように" class="headerlink" title="〜はもちろん…も　→ 〜は当然だが、…も同じように"></a>〜はもちろん…も　→ 〜は当然だが、…も同じように</h2><ul>
-<li>このゲームは子ども<u>はもちろん</u>大人<u>も</u>楽しめる</li>
-<li>夫は国内の山々<u>はもちろん</u>外国の山にもあちこち登っている</li>
-</ul>
-<h2 id="（〜ば）〜ほど…・（〜なら）〜ほど…"><a href="#（〜ば）〜ほど…・（〜なら）〜ほど…" class="headerlink" title="（〜ば）〜ほど…・（〜なら）〜ほど…"></a>（〜ば）〜ほど…・（〜なら）〜ほど…</h2><ul>
-<li>考えれば考えるほどわからなくなってきた</li>
-</ul>
-<h2 id="〜くらい…はない・"><a href="#〜くらい…はない・" class="headerlink" title="〜くらい…はない・"></a>〜くらい…はない・</h2><h2 id="〜さえ〜ば…・〜さえ〜なら…"><a href="#〜さえ〜ば…・〜さえ〜なら…" class="headerlink" title="〜さえ〜ば…・〜さえ〜なら…"></a>〜さえ〜ば…・〜さえ〜なら…</h2><h2 id="〜ことは〜が、…"><a href="#〜ことは〜が、…" class="headerlink" title="〜ことは〜が、…"></a>〜ことは〜が、…</h2><h2 id="8-〜も…ば〜も…・〜も…なら〜も…"><a href="#8-〜も…ば〜も…・〜も…なら〜も…" class="headerlink" title="8.　〜も…ば〜も…・〜も…なら〜も…"></a>8.　〜も…ば〜も…・〜も…なら〜も…</h2>]]></content>
       <categories>
         <category>N3</category>
       </categories>
